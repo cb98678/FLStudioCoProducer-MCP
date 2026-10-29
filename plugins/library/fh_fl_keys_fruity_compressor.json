@@ -1,0 +1,44 @@
+{
+ "name": "fh FL Keys Fruity Compressor",
+ "plugin": "Fruity Compressor",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 10,
+  "slot": 3
+ },
+ "notes": "from FutureHouse_open.flp insert 10 slot 3",
+ "params": {
+  "Threshold": "-16.8 dB",
+  "Ratio": "22.6 : 1",
+  "Gain": "-4.0 dB",
+  "Attack": "6.0 ms",
+  "Release": "575 ms",
+  "Type": "Medium/R"
+ },
+ "events": [
+  [
+   201,
+   "460072007500690074007900200043006f006d00700072006500730073006f0072000000"
+  ],
+  [
+   212,
+   "0a00000003000000020000000000000040010000000000000000000000000000000000008a000000cd0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "0300000058ffffffe2000000d8ffffff3c0000003f020000050000000100000000000000"
+  ]
+ ]
+}

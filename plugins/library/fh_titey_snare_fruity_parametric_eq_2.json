@@ -1,0 +1,74 @@
+{
+ "name": "fh Titey Snare Fruity Parametric EQ 2",
+ "plugin": "Fruity Parametric EQ 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 8,
+  "slot": 0
+ },
+ "notes": "from FutureHouse_open.flp insert 8 slot 0",
+ "params": {
+  "Band 1 level": "-4.0dB",
+  "Band 2 level": "-2.3dB",
+  "Band 3 level": "6.0dB",
+  "Band 4 level": "0.0dB",
+  "Band 5 level": "-2.1dB",
+  "Band 6 level": "0.0dB",
+  "Band 7 level": "0.0dB",
+  "Band 1 freq": "67Hz",
+  "Band 2 freq": "149Hz",
+  "Band 3 freq": "9944Hz",
+  "Band 4 freq": "632Hz",
+  "Band 5 freq": "720Hz",
+  "Band 6 freq": "2936Hz",
+  "Band 7 freq": "9260Hz",
+  "Band 1 width": "56%",
+  "Band 2 width": "14%",
+  "Band 3 width": "39%",
+  "Band 4 width": "39%",
+  "Band 5 width": "14%",
+  "Band 6 width": "39%",
+  "Band 7 width": "61%",
+  "Band 1 type": "High pass",
+  "Band 2 type": "Peaking",
+  "Band 3 type": "Peaking",
+  "Band 4 type": "Peaking",
+  "Band 5 type": "Peaking",
+  "Band 6 type": "Peaking",
+  "Band 7 type": "High shelf",
+  "Band 1 order": "Steep 8",
+  "Band 2 order": "2",
+  "Band 3 order": "2",
+  "Band 4 order": "2",
+  "Band 5 order": "2",
+  "Band 6 order": "2",
+  "Band 7 order": "2",
+  "Main level": "0.0dB"
+ },
+ "events": [
+  [
+   201,
+   "460072007500690074007900200050006100720061006d0065007400720069006300200045005100200032000000"
+  ],
+  [
+   212,
+   "08000000000000000200000000000000400100000000000000000000000000000000000040000000940000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "0800000073feffff1effffff59020000000000002dffffff0000000000000000c42c0000584a00001be6000000800000c8840000e4b8000076e30000f08f00004823000044630000446300004823000044630000bc9c000003000000060000000600000006000000060000000600000007000000fdffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ab2a00001c4700008e63000000800000729c0000e4b8000055d50000bc9c00004463000044630000446300004463000044630000bc9c000005000000060000000600000006000000060000000600000007000000000000000000000000000000000000000000000000000000000000000000000001000000000000000102000000000000000200000000000000607f0000000100000000000000030000000100000002000000020000000200000000000000"
+  ]
+ ]
+}

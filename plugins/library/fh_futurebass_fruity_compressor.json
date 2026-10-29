@@ -1,0 +1,44 @@
+{
+ "name": "fh FutureBass Fruity Compressor",
+ "plugin": "Fruity Compressor",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 11,
+  "slot": 0
+ },
+ "notes": "from FutureHouse_open.flp insert 11 slot 0",
+ "params": {
+  "Threshold": "-9.0 dB",
+  "Ratio": "12.7 : 1",
+  "Gain": "3.2 dB",
+  "Attack": "28.4 ms",
+  "Release": "499 ms",
+  "Type": "Medium/R"
+ },
+ "events": [
+  [
+   201,
+   "460072007500690074007900200043006f006d00700072006500730073006f0072000000"
+  ],
+  [
+   212,
+   "0b00000000000000020000000000000040010000000000000000000000000000000000000a0000004d0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "03000000a6ffffff7f000000200000001c010000f3010000050000000100000000000000"
+  ]
+ ]
+}

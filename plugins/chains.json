@@ -1,0 +1,31 @@
+{
+ "source": "Asher Postman 'Future House' (FL demo, stock plugins), effect settings copied into plugins/library with the person's approval (2026-10-25). Each chain is a part's tone chain in the reference's slot order; automation targets (Love Philter, Gross Beat, Balance), meters and Edison are left out because they do nothing without their automation or pump. The chains were tuned for the reference's sounds: they are starting points, so measure the part on a render after a chain goes in and rebalance it (gain-staging), since compressors and saturators change level.",
+ "chains": {
+  "chops": {"part": "vocal chops", "entries": ["fh Vocal Chop Fruity WaveShaper", "fh Vocal Chop Fruity Parametric EQ 2", "fh Vocal Chop Fruity Reeverb 2", "fh Vocal Chop Fruity Compressor", "fh Vocal Chop Fruity Multiband Compressor", "fh Vocal Chop Soundgoodizer", "fh Vocal Chop Fruity Parametric EQ 2 7"],
+            "why": "light shaping, high-pass 126 Hz with cuts at 300 Hz, 1 kHz and 2.8 kHz and a 5.4 kHz shelf, a 1 s insert reverb at 25%, 5.8:1 compression then multiband, saturation, a cleanup EQ"},
+  "vocal": {"part": "lead or sung vocal", "entries": ["fh Vocal Chop Fruity Parametric EQ 2", "fh Vocal Chop Fruity Compressor", "fh Vocal Chop Fruity Multiband Compressor", "fh Vocal Chop Fruity Reeverb 2"],
+            "why": "the reference has no lead vocal: its chop chain without the shaper and saturation, compression before the reverb"},
+  "kick": {"part": "kick", "entries": ["fh Grv Kick 18_2 Fruity Parametric EQ 2", "fh Grv Kick 18_2 Fruity Multiband Compressor"],
+           "why": "high-pass 35 Hz, cuts at 147 and 396 Hz, a 9.8 kHz lift, gentle three-band control"},
+  "clap": {"part": "clap and snare", "entries": ["fh Attack Clap 12 Fruity Parametric EQ 2", "fh Attack Clap 12 Fruity Reeverb 2", "fh Attack Clap 12 Soundgoodizer"],
+           "why": "high-pass 140 Hz, cuts, a 0.4 s room at 32%, saturation"},
+  "hats": {"part": "hats and shakers", "entries": ["fh Attack Hat 06 Fruity Parametric EQ 2", "fh Attack Hat 06 Fruity Reeverb 2"],
+           "why": "small cuts and a high shelf down, a 0.2 s reverb at 40%"},
+  "perc": {"part": "crash, rides and percussion", "entries": ["fh Crash Fruity Parametric EQ 2", "fh Crash Fruity Delay 2", "fh Crash Fruity Reeverb 2"],
+           "why": "high-pass 306 Hz, a ping-pong delay, a 2.1 s reverb"},
+  "stab": {"part": "keys, chords and stabs", "entries": ["fh FL Keys Fruity Parametric EQ 2", "fh FL Keys Fruity Compressor", "fh FL Keys Fruity Multiband Compressor", "fh FL Keys Fruity Reeverb 2", "fh FL Keys Soundgoodizer", "fh FL Keys Fruity Parametric EQ 2 7"],
+           "why": "cut the low mids, squash hard (22.6:1), a wide 1.5 s reverb at 82%, saturation, a cleanup EQ; the reference's Maximus used as a -10 dB trim is left out (set the level with gain staging)"},
+  "bass": {"part": "mid bass", "entries": ["fh FutureBass Fruity Compressor", "fh FutureBass Fruity Fast Dist", "fh FutureBass Fruity Parametric EQ 2", "fh FutureBass Fruity Reeverb 2", "fh FutureBass Soundgoodizer"],
+           "why": "compression 12.7:1, distortion at 71% mix, high-pass 82 Hz, a short room, saturation"},
+  "reese": {"same_as": "bass"},
+  "sub": {"part": "sub bass", "entries": ["fh FutureSub Fruity Parametric EQ 2", "fh FutureSub Fruity Compressor", "fh FutureSub Fruity Multiband Compressor"],
+          "why": "+6.4 dB at 66 Hz, -9.6 dB at 163 Hz, low-pass 2.4 kHz, heavy compression with +15 dB makeup (rebalance after)"},
+  "arp": {"part": "lead synth, arp, pluck", "entries": ["fh Wow Synth Fruity Parametric EQ 2", "fh Wow Synth Fruity Reeverb 2", "fh Wow Synth Soundgoodizer"],
+          "why": "cuts from 171 Hz up, a short reverb with 98 ms predelay, saturation"},
+  "synth": {"same_as": "arp"},
+  "fx": {"part": "risers, impacts and FX", "entries": ["fh Sidechain FX Fruity Parametric EQ 2", "fh Sidechain FX Fruity Reeverb 2", "fh Sidechain FX Soundgoodizer"],
+         "why": "bright EQ, a 4.1 s reverb at 75% with dry at 50%, saturation"},
+  "music_bus": {"part": "the music bus (create_bus_routing kind music)", "entries": ["fh Sidechain Fruity Filter", "fh Sidechain Fruity Reeverb 2"],
+                "why": "the sweepable high-pass (cutoff 0 passes everything) and the throw reverb (wet 0 until a transition raises it); add_transition_automation drives both"}
+ }
+}

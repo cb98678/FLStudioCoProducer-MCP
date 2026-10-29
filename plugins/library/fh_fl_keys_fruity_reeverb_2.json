@@ -1,0 +1,53 @@
+{
+ "name": "fh FL Keys Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 10,
+  "slot": 5
+ },
+ "notes": "from FutureHouse_open.flp insert 10 slot 5",
+ "params": {
+  "Low cut": "531Hz",
+  "High cut": "2.8kHz",
+  "Predelay": "0ms",
+  "Room size": "77",
+  "Diffusion": "100",
+  "Decay time": "1.5sec",
+  "High damping": "6.1kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "82%",
+  "Mod Speed": "33%",
+  "Mod Depth": "34%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "0a0000000500000002000000000000004001000000000000000000000000000000000000a3000000e60000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "11270000130200001c000000000000004d000000640000000f0000003d00000064000000f401000000000000800000004000000069000000ac020000b90200000000"
+  ]
+ ]
+}

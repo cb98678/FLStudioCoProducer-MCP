@@ -1,0 +1,53 @@
+{
+ "name": "fh Attack Hat 06 Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 5,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 5 slot 1",
+ "params": {
+  "Low cut": "75Hz",
+  "High cut": "5.8kHz",
+  "Predelay": "0ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "0.2sec",
+  "High damping": "8.0kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "40%",
+  "Mod Speed": "33%",
+  "Mod Depth": "0%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "0500000001000000020000000000000040010000000000000000000000000000000000008e000000e20000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "112700004b0000003a000000000000003200000064000000020000005000000064000000f401000000000000800000004000000033000000ac020000000000000000"
+  ]
+ ]
+}

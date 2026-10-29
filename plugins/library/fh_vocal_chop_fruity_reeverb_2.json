@@ -1,0 +1,53 @@
+{
+ "name": "fh Vocal Chop Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 1,
+  "slot": 2
+ },
+ "notes": "from FutureHouse_open.flp insert 1 slot 2",
+ "params": {
+  "Low cut": "238Hz",
+  "High cut": "6.4kHz",
+  "Predelay": "75ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "1.0sec",
+  "High damping": "8.8kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "25%",
+  "Mod Speed": "33%",
+  "Mod Depth": "0%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "010000000200000002000000000000004001000000000000000000000000000000000000a8000000fc0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "11270000ee000000400000001d00000032000000640000000a0000005800000064000000f401000000000000800000004000000020000000ac020000000000000000"
+  ]
+ ]
+}

@@ -1,0 +1,232 @@
+{
+ "bank": "Gross Beat time slots of the library entry 'fh Vocal Chop Gross Beat' (the Future House reference's vocal chop Gross Beat: 0 Empty, then Basic 1 to 11, Complex 1 to 12, Chaos 1 to 12)",
+ "measured": "2026-10-25, sandbox/gbcal: a chirp rising 200 to 800 Hz every beat at 126 BPM through the plugin, the time slot automated one bar per slot (value slot / 35, as the reference's own clips do), the pitch read every eighth of a beat. Per beat: plain (unchanged), repeat (a part of the beat plays again), reverse, stop (falls to silence like a tape stop), slow (half speed, an octave down), fast (pitched up), gap (silent), warp (anything else). The time mix is 100%; the reference's mid-bass Gross Beat has its time mix at 0% and changes nothing.",
+ "slots": {
+  "0": [
+   "plain",
+   "plain",
+   "plain",
+   "plain"
+  ],
+  "1": [
+   "plain",
+   "repeat",
+   "plain",
+   "plain"
+  ],
+  "2": [
+   "repeat",
+   "plain",
+   "plain",
+   "repeat"
+  ],
+  "3": [
+   "plain",
+   "repeat",
+   "repeat",
+   "plain"
+  ],
+  "4": [
+   "plain",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "5": [
+   "plain",
+   "plain",
+   "repeat",
+   "repeat"
+  ],
+  "6": [
+   "plain",
+   "plain",
+   "plain",
+   "warp"
+  ],
+  "7": [
+   "warp",
+   "plain",
+   "plain",
+   "slow"
+  ],
+  "8": [
+   "plain",
+   "plain",
+   "plain",
+   "reverse"
+  ],
+  "9": [
+   "warp",
+   "plain",
+   "plain",
+   "plain"
+  ],
+  "10": [
+   "repeat",
+   "warp",
+   "plain",
+   "plain"
+  ],
+  "11": [
+   "plain",
+   "plain",
+   "plain",
+   "repeat"
+  ],
+  "12": [
+   "plain",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "13": [
+   "plain",
+   "warp",
+   "plain",
+   "warp"
+  ],
+  "14": [
+   "repeat",
+   "repeat",
+   "fast",
+   "warp"
+  ],
+  "15": [
+   "plain",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "16": [
+   "slow",
+   "warp",
+   "warp",
+   "repeat"
+  ],
+  "17": [
+   "plain",
+   "warp",
+   "repeat",
+   "warp"
+  ],
+  "18": [
+   "warp",
+   "plain",
+   "plain",
+   "stop"
+  ],
+  "19": [
+   "stop",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "20": [
+   "plain",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "21": [
+   "repeat",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "22": [
+   "plain",
+   "repeat",
+   "repeat",
+   "fast"
+  ],
+  "23": [
+   "repeat",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "24": [
+   "warp",
+   "warp",
+   "warp",
+   "warp"
+  ],
+  "25": [
+   "plain",
+   "warp",
+   "reverse",
+   "warp"
+  ],
+  "26": [
+   "warp",
+   "warp",
+   "warp",
+   "warp"
+  ],
+  "27": [
+   "warp",
+   "warp",
+   "slow",
+   "fast"
+  ],
+  "28": [
+   "warp",
+   "stop",
+   "plain",
+   "reverse"
+  ],
+  "29": [
+   "plain",
+   "fast",
+   "plain",
+   "reverse"
+  ],
+  "30": [
+   "plain",
+   "stop",
+   "repeat",
+   "repeat"
+  ],
+  "31": [
+   "warp",
+   "warp",
+   "warp",
+   "stop"
+  ],
+  "32": [
+   "repeat",
+   "repeat",
+   "repeat",
+   "repeat"
+  ],
+  "33": [
+   "plain",
+   "warp",
+   "warp",
+   "warp"
+  ],
+  "34": [
+   "fast",
+   "warp",
+   "fast",
+   "warp"
+  ],
+  "35": [
+   "plain",
+   "fast",
+   "warp",
+   "fast"
+  ]
+ },
+ "fills": {
+  "stutter": 4,
+  "reverse": 8,
+  "tape_stop": 18
+ },
+ "fills_why": {
+  "stutter": "slot 4: plain first beat, then repeats on beats 2 to 4",
+  "reverse": "slot 8: three plain beats, the last beat reversed",
+  "tape_stop": "slot 18: the last beat falls to silence"
+ }
+}

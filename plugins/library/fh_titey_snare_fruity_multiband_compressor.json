@@ -1,0 +1,66 @@
+{
+ "name": "fh Titey Snare Fruity Multiband Compressor",
+ "plugin": "Fruity Multiband Compressor",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 8,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 8 slot 1",
+ "params": {
+  "Master volume": "2.9dB",
+  "Limiter": "ON",
+  "Filter type": "LP FIR",
+  "High band state": "ON",
+  "H Freq": "467Hz",
+  "H Output": "3.5dB",
+  "H Threshold": "-11.4dB",
+  "H Ratio": "1.8:1",
+  "H Attack": "9.1ms",
+  "H Release": "178.3ms",
+  "H Knee": "57%",
+  "Mid band state": "muted",
+  "M Freq H": "20Hz",
+  "M Freq L": "20Hz",
+  "M Output": "-oo",
+  "M Threshold": "-60.0dB",
+  "M Ratio": "1.0:1",
+  "M Attack": "0.1ms",
+  "M Release": "10.0ms",
+  "M Knee": "0%",
+  "Low band state": "ON",
+  "L Freq": "467Hz",
+  "L Output": "2.6dB",
+  "L Threshold": "-12.0dB",
+  "L Ratio": "1.6:1",
+  "L Attack": "53.0ms",
+  "L Release": "495.1ms",
+  "L Knee": "63%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020004d0075006c0074006900620061006e006400200043006f006d00700072006500730073006f0072000000"
+  ],
+  [
+   212,
+   "0800000001000000020000000000000040010000000000000000000000000000000000005a000000ae0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "0000000048a10000010000000100000000000000bc1d0000a47000005ccf0000a47000005b000000f7060000ec91000001000000140000001400000000000000000000000000000001000000640000000000000000000000bc1d0000f6680000cdcc000048610000120200005713000048a100000000000032000000"
+  ]
+ ]
+}

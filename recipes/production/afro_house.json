@@ -1,0 +1,76 @@
+{
+ "name": "afro_house",
+ "what": "Afro house production from Africa's Calling (docs/demo_study): the filter is the build (a low-pass opening over eight bars into each drop), swells and throws instead of risers, no gaps or stutters, and a medium pump on the music bus only (its loudest section swings 2.6 dB): the percussion keeps rolling through every change.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "medium"
+  }
+ ],
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: after the first render read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, aiming from the measured slope (tools/remix_song.py does this).",
+ "transitions": {
+  "groove>drop": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "break>drop": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   },
+   {
+    "recipe": "fx_swell",
+    "on": "drum_bus",
+    "beats": 8
+   }
+  ],
+  "build>drop": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   },
+   {
+    "recipe": "fade_in",
+    "on": "sub",
+    "bars": 4
+   }
+  ],
+  "drop>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 4
+   },
+   {
+    "recipe": "lowpass_dip",
+    "on": "music_bus",
+    "bars": 2
+   }
+  ],
+  "groove>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ]
+ }
+}

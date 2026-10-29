@@ -1,0 +1,306 @@
+{
+ "name": "fh noise riser",
+ "kind": "channel",
+ "plugin": "3x Osc",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "channel": 30
+ },
+ "notes": "3x Osc noise riser (White Breakdown 02): band-pass noise, volume and pitch envelopes rise over the note, pitch envelope +100%",
+ "params": {
+  "Osc 1 panning": "Centered",
+  "Osc 1 shape": "",
+  "Osc 1 coarse pitch": "-24 semitones",
+  "Osc 1 fine pitch": "+0 cent",
+  "Osc 1 stereo phase offset": "0%",
+  "Osc 1 stereo detune": "+14 cents",
+  "Osc 2 mix level": "0%",
+  "Osc 2 panning": "Centered",
+  "Osc 2 shape": "",
+  "Osc 2 coarse pitch": "+24 semitones",
+  "Osc 2 fine pitch": "+0 cent",
+  "Osc 2 stereo phase offset": "0%",
+  "Osc 2 stereo detune": "-7 cents",
+  "Osc 3 mix level": "0%",
+  "Osc 3 panning": "Centered",
+  "Osc 3 shape": "",
+  "Osc 3 coarse pitch": "+24 semitones",
+  "Osc 3 fine pitch": "+0 cent",
+  "Osc 3 stereo phase offset": "0%",
+  "Osc 3 stereo detune": "+0 cent",
+  "Stereo phase randomness": "100%",
+  "Panning envelope - Use envelope": "0%",
+  "Panning envelope - Predelay time": "0%",
+  "Panning envelope - Attack time": "31%",
+  "Panning envelope - Hold time": "31%",
+  "Panning envelope - Decay time": "46%",
+  "Panning envelope - Sustain level": "39%",
+  "Panning envelope - Release time": "31%",
+  "Panning envelope - Modulation amount": "0%",
+  "Panning LFO - Predelay time": "0%",
+  "Panning LFO - Attack time": "31%",
+  "Panning LFO - Amount": "0%",
+  "Panning LFO - Speed": "50%",
+  "Panning LFO - Shape": "sine",
+  "Panning envelope - Attack tension": "0%",
+  "Panning envelope - Decay tension": "0%",
+  "Panning envelope - Release tension": "0%",
+  "Volume envelope - Use envelope": "-100%",
+  "Volume envelope - Predelay time": "0%",
+  "Volume envelope - Attack time": "49%",
+  "Volume envelope - Hold time": "100%",
+  "Volume envelope - Decay time": "0%",
+  "Volume envelope - Sustain level": "0%",
+  "Volume envelope - Release time": "0%",
+  "Volume envelope - Modulation amount": "0%",
+  "Volume LFO - Predelay time": "0%",
+  "Volume LFO - Attack time": "31%",
+  "Volume LFO - Amount": "0%",
+  "Volume LFO - Speed": "50%",
+  "Volume LFO - Shape": "sine",
+  "Volume envelope - Attack tension": "65%",
+  "Volume envelope - Decay tension": "-64%",
+  "Volume envelope - Release tension": "-79%",
+  "Filter cutoff envelope - Use envelope": "-100%",
+  "Filter cutoff envelope - Predelay time": "0%",
+  "Filter cutoff envelope - Attack time": "0%",
+  "Filter cutoff envelope - Hold time": "0%",
+  "Filter cutoff envelope - Decay time": "67%",
+  "Filter cutoff envelope - Sustain level": "0%",
+  "Filter cutoff envelope - Release time": "0%",
+  "Filter cutoff envelope - Modulation amount": "-100%",
+  "Filter cutoff LFO - Predelay time": "0%",
+  "Filter cutoff LFO - Attack time": "31%",
+  "Filter cutoff LFO - Amount": "0%",
+  "Filter cutoff LFO - Speed": "50%",
+  "Filter cutoff LFO - Shape": "sine",
+  "Filter cutoff envelope - Attack tension": "0%",
+  "Filter cutoff envelope - Decay tension": "-11%",
+  "Filter cutoff envelope - Release tension": "0%",
+  "Filter resonance envelope - Use envelope": "0%",
+  "Filter resonance envelope - Predelay time": "0%",
+  "Filter resonance envelope - Attack time": "31%",
+  "Filter resonance envelope - Hold time": "31%",
+  "Filter resonance envelope - Decay time": "46%",
+  "Filter resonance envelope - Sustain level": "39%",
+  "Filter resonance envelope - Release time": "31%",
+  "Filter resonance envelope - Modulation amount": "0%",
+  "Filter resonance LFO - Predelay time": "0%",
+  "Filter resonance LFO - Attack time": "31%",
+  "Filter resonance LFO - Amount": "0%",
+  "Filter resonance LFO - Speed": "50%",
+  "Filter resonance LFO - Shape": "sine",
+  "Filter resonance envelope - Attack tension": "0%",
+  "Filter resonance envelope - Decay tension": "0%",
+  "Filter resonance envelope - Release tension": "0%",
+  "Pitch envelope - Use envelope": "-100%",
+  "Pitch envelope - Predelay time": "0%",
+  "Pitch envelope - Attack time": "66%",
+  "Pitch envelope - Hold time": "100%",
+  "Pitch envelope - Decay time": "0%",
+  "Pitch envelope - Sustain level": "0%",
+  "Pitch envelope - Release time": "31%",
+  "Pitch envelope - Modulation amount": "100%",
+  "Pitch LFO - Predelay time": "0%",
+  "Pitch LFO - Attack time": "31%",
+  "Pitch LFO - Amount": "0%",
+  "Pitch LFO - Speed": "50%",
+  "Pitch LFO - Shape": "sine",
+  "Pitch envelope - Attack tension": "0%",
+  "Pitch envelope - Decay tension": "0%",
+  "Pitch envelope - Release tension": "0%",
+  "Filter frequency (modulation X)": "100%",
+  "Filter bandwidth (modulation Y)": "75%",
+  "Filter type": "BP"
+ },
+ "events": [
+  [
+   64,
+   "1e00"
+  ],
+  [
+   21,
+   "02"
+  ],
+  [
+   201,
+   "3300780020004f00730063000000"
+  ],
+  [
+   212,
+   "0000000000000000020000000000000050000000000000000000000000000000000000008d000000b60100000000000000000000"
+  ],
+  [
+   203,
+   "57006800690074006500200042007200650061006b0064006f0077006e002000300032000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "514e5d00"
+  ],
+  [
+   41,
+   "01"
+  ],
+  [
+   213,
+   "0e0000000000000005000000e8ffffff00000000000000000e000000000000000000000003000000180000000000000000000000f9ffffff00000000000000000300000018000000000000000000000000000000400000000000000100000000000000000000000064000000204e0000204e00003075000032000000204e00000000000064000000204e000000000000b68000000000000000000000000000000000000005000000ffffffff64000000597e0000000001006400000000000000640000000000000064000000204e000000000000b68000000000000053000000aeffffff9bffffff00000000ffffffff64000000640000006400000093ab0000000000006400000080ffffff64000000204e000000000000b68000000000000000000000f2ffffff00000000000000000000000064000000204e0000204e00003075000032000000204e00000000000064000000204e000000000000b68000000000000000000000000000000000000000000000ffffffff64000000eca90000000001006400000000000000204e00006009000064000000204e000000000000b680000000000000000000000000000000000000000000000000000000010000bf0000000000000002000000"
+  ],
+  [
+   0,
+   "01"
+  ],
+  [
+   209,
+   "0000000000190000000000000400000090000000"
+  ],
+  [
+   138,
+   "80008000"
+  ],
+  [
+   139,
+   "00000100"
+  ],
+  [
+   89,
+   "0000"
+  ],
+  [
+   97,
+   "8000"
+  ],
+  [
+   48,
+   "00"
+  ],
+  [
+   69,
+   "8000"
+  ],
+  [
+   86,
+   "0001"
+  ],
+  [
+   71,
+   "0004"
+  ],
+  [
+   83,
+   "0000"
+  ],
+  [
+   74,
+   "0000"
+  ],
+  [
+   75,
+   "0000"
+  ],
+  [
+   76,
+   "0000"
+  ],
+  [
+   85,
+   "0008"
+  ],
+  [
+   131,
+   "00008000"
+  ],
+  [
+   70,
+   "0000"
+  ],
+  [
+   104,
+   "1200"
+  ],
+  [
+   50,
+   "01"
+  ],
+  [
+   219,
+   "00190000511200000000000000010000bf00000002000000"
+  ],
+  [
+   229,
+   "0000000000320000000000000000000000000000"
+  ],
+  [
+   221,
+   "00000000f401000000"
+  ],
+  [
+   215,
+   "ffffffff0000000001000001ffffffff3c0000000000803f0000803f0000803f0000803f0000803f0000000001000000ffffffff000400003000000000000100a7050000000000000001000000000000000000000000000000000000010000000000000000000000000000000000000002000000feffffffffffffff000000000000000000000000000000000000f03f0000000000000000ffffffff01000000000000000000e03f"
+  ],
+  [
+   132,
+   "08000800"
+  ],
+  [
+   144,
+   "00000000"
+  ],
+  [
+   145,
+   "03000000"
+  ],
+  [
+   32,
+   "00"
+  ],
+  [
+   228,
+   "64000000000000000000000000000000"
+  ],
+  [
+   228,
+   "3c000000000000000000000000000000"
+  ],
+  [
+   218,
+   "000000000000000064000000204e0000204e00003075000032000000204e00000000000064000000204e000000000000b680000000000000000000000000000000000000"
+  ],
+  [
+   218,
+   "05000000ffffffff64000000597e0000000001006400000000000000640000000000000064000000204e000000000000b68000000000000053000000aeffffff9bffffff"
+  ],
+  [
+   218,
+   "00000000ffffffff64000000640000006400000093ab0000000000006400000080ffffff64000000204e000000000000b68000000000000000000000f2ffffff00000000"
+  ],
+  [
+   218,
+   "000000000000000064000000204e0000204e00003075000032000000204e00000000000064000000204e000000000000b680000000000000000000000000000000000000"
+  ],
+  [
+   218,
+   "00000000ffffffff64000000eca90000000001006400000000000000204e00006009000064000000204e000000000000b680000000000000000000000000000000000000"
+  ],
+  [
+   143,
+   "0a000000"
+  ],
+  [
+   20,
+   "00"
+  ],
+  [
+   170,
+   "ffffffff"
+  ],
+  [
+   51,
+   "00"
+  ]
+ ]
+}

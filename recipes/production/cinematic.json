@@ -1,0 +1,68 @@
+{
+ "name": "cinematic",
+ "what": "Soundtrack production from Secret Agent Rendezvous (docs/demo_study): no pump at all (its loudest section swings 1.2 dB), swells and one hit instead of risers, a beat of silence before the big entrance, a reverb throw out of each cue, and an ending that stops on a hit. Meter and tempo changes are by hand (form.cinematic_cues).",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [],
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: after the first render read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, aiming from the measured slope (tools/remix_song.py does this).",
+ "transitions": {
+  "intro>groove": [
+   {
+    "recipe": "fx_swell",
+    "on": "drum_bus",
+    "beats": 8
+   }
+  ],
+  "groove>drop": [
+   {
+    "recipe": "fx_swell",
+    "on": "drum_bus",
+    "beats": 8
+   },
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 9000
+   }
+  ],
+  "break>drop": [
+   {
+    "recipe": "fx_swell",
+    "on": "drum_bus",
+    "beats": 8
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 9000
+   }
+  ],
+  "drop>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 4
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "impact_synth",
+    "volume": 8000
+   }
+  ]
+ }
+}

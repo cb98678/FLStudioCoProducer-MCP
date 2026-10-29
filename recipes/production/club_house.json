@@ -1,0 +1,117 @@
+{
+ "name": "club_house",
+ "what": "The Future House reference's production moves for any house or tech-house arrangement: a music bus that takes the melodic parts (not the sub, drums or FX), the reference's effect chains by role, one pump on the kick for the music bus and the sub, transitions at every section change by the kinds of the two sections, the section-gain map the person approved (2026-10-25), and the house standard. Sections are the project's time markers; a section's kind is the start of its name (Build 1 and Buildup are builds).",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "deep"
+  },
+  {
+   "on": "sub",
+   "depth": "full"
+  }
+ ],
+ "transitions": {
+  "build>drop": [
+   {
+    "recipe": "filter_sweep",
+    "on": "music_bus",
+    "bars": 4
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "pitch_rise",
+    "on": "snare",
+    "bars": 4,
+    "semitones": 12
+   },
+   {
+    "recipe": "fade_in",
+    "on": "sub",
+    "bars": 2
+   },
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "synth": "noise_riser",
+    "bars": 4,
+    "volume": 10000
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   },
+   {
+    "recipe": "stutter_fill",
+    "on": "chops",
+    "bars": 1
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 4
+   }
+  ],
+  "drop>break": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "tape_stop",
+    "on": "music_bus",
+    "bars": 1
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   }
+  ],
+  "groove>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "intro>groove": [
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: the same map took the Friends remix's builds 3.7 LU down and the Future House demo's 6.2 (the demo's buildup ended 9 LU under its drop, twice the reference's 4.5). After the first render, read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, x about (target minus measured) / 5, then render and repeat.",
+ "flanger_note": "The drum-bus flanger swell (fx_swell) is out of the default: the person switched it off on the techno remix as too persistent and distracting (2026-10-26). Add it back per song only when asked."
+}

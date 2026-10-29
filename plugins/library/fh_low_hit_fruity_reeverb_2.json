@@ -1,0 +1,53 @@
+{
+ "name": "fh Low Hit Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 19,
+  "slot": 2
+ },
+ "notes": "from FutureHouse_open.flp insert 19 slot 2",
+ "params": {
+  "Low cut": "Off",
+  "High cut": "3.8kHz",
+  "Predelay": "0ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "2.8sec",
+  "High damping": "3.5kHz",
+  "Bass multiplier": "300%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "70%",
+  "Mod Speed": "33%",
+  "Mod Depth": "0%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "130000000200000002000000000000004001000000000000000000000000000000000000aa020000060200000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "1127000013000000260000000000000032000000640000001c000000230000002c010000f40100000000000080000000400000005a000000ac020000000000000000"
+  ]
+ ]
+}

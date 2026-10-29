@@ -1,0 +1,53 @@
+{
+ "name": "fh Sidechain FX Crash Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 17,
+  "slot": 0
+ },
+ "notes": "from FutureHouse_open.flp insert 17 slot 0",
+ "params": {
+  "Low cut": "409Hz",
+  "High cut": "Off",
+  "Predelay": "0ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "8.0sec",
+  "High damping": "Off",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "80%",
+  "Early reflection level": "50%",
+  "Wet level": "80%",
+  "Mod Speed": "33%",
+  "Mod Depth": "0%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "1100000000000000020000000000000040010000000000000000000000000000000000000c000000600000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "1127000099010000dd00000000000000320000006400000050000000dd00000064000000f401000000000000670000004000000066000000ac020000000000000000"
+  ]
+ ]
+}

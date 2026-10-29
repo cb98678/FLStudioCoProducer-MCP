@@ -1,0 +1,74 @@
+{
+ "name": "fh FutureSub Fruity Parametric EQ 2",
+ "plugin": "Fruity Parametric EQ 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 12,
+  "slot": 3
+ },
+ "notes": "from FutureHouse_open.flp insert 12 slot 3",
+ "params": {
+  "Band 1 level": "6.4dB",
+  "Band 2 level": "-9.6dB",
+  "Band 3 level": "0.0dB",
+  "Band 4 level": "-3.9dB",
+  "Band 5 level": "3.3dB",
+  "Band 6 level": "1.1dB",
+  "Band 7 level": "-1.2dB",
+  "Band 1 freq": "66Hz",
+  "Band 2 freq": "163Hz",
+  "Band 3 freq": "294Hz",
+  "Band 4 freq": "864Hz",
+  "Band 5 freq": "1557Hz",
+  "Band 6 freq": "4259Hz",
+  "Band 7 freq": "2411Hz",
+  "Band 1 width": "46%",
+  "Band 2 width": "34%",
+  "Band 3 width": "39%",
+  "Band 4 width": "24%",
+  "Band 5 width": "39%",
+  "Band 6 width": "39%",
+  "Band 7 width": "56%",
+  "Band 1 type": "Peaking",
+  "Band 2 type": "Peaking",
+  "Band 3 type": "Disabled",
+  "Band 4 type": "Peaking",
+  "Band 5 type": "Disabled",
+  "Band 6 type": "Disabled",
+  "Band 7 type": "Low pass",
+  "Band 1 order": "Gentle 6",
+  "Band 2 order": "2",
+  "Band 3 order": "Steep 8",
+  "Band 4 order": "2",
+  "Band 5 order": "2",
+  "Band 6 order": "2",
+  "Band 7 order": "Steep 6",
+  "Main level": "0.0dB"
+ },
+ "events": [
+  [
+   201,
+   "460072007500690074007900200050006100720061006d0065007400720069006300200045005100200032000000"
+  ],
+  [
+   212,
+   "0c000000030000000200000000000000400100000000000000000000000000000000000074000000c80000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "080000008402000045fcffff0000000079feffff490100006f00000085ffffff422c0000c04d00008e630000938b000061a10000aec6000097b10000587600007856000044630000e03c00004463000044630000f08f0000060000000600000000000000060000000000000000000000010000000200000000000000fdffffff000000000000000000000000feffffff0000000000000000000000000000000000000000000000000000000000000000ab2a00001c4700008e63000000800000729c0000e4b8000055d50000bc9c00004463000044630000446300004463000044630000bc9c000005000000060000000600000006000000060000000600000007000000000000000000000000000000000000000000000000000000000000000000000001000000000000000002000000000000000200000000000000607f0000000100000000000000030000000100000002000000020000000200000000000000"
+  ]
+ ]
+}

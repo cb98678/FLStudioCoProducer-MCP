@@ -1,0 +1,53 @@
+{
+ "name": "fh Sidechain FX Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 16,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 16 slot 1",
+ "params": {
+  "Low cut": "742Hz",
+  "High cut": "18.6kHz",
+  "Predelay": "0ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "4.1sec",
+  "High damping": "16.9kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "50%",
+  "Early reflection level": "20%",
+  "Wet level": "75%",
+  "Mod Speed": "75%",
+  "Mod Depth": "73%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "10000000010000000200000000000000400100000000000000000000000000000000000070000000b30000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "11270000e6020000ba00000000000000320000006400000029000000a900000064000000f401000000000000400000001a0000006000000008060000db0500000000"
+  ]
+ ]
+}

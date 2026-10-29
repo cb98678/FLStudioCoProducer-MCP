@@ -1,0 +1,68 @@
+{
+ "name": "lofi",
+ "what": "Lo-fi production from the two Inner Days demos (docs/demo_study): parts enter and leave instead of building, a tape stop into each break and at the end, a low-pass dip as the only transition into a section, and the bass ducked lightly (the rework keys a limiter on the music from a kick and snare bus; mix.limiter_gate_bus adds it).",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "bass",
+   "depth": "medium"
+  }
+ ],
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: after the first render read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, aiming from the measured slope (tools/remix_song.py does this).",
+ "transitions": {
+  "groove>break": [
+   {
+    "recipe": "tape_stop",
+    "on": "music_bus",
+    "bars": 1
+   }
+  ],
+  "drop>break": [
+   {
+    "recipe": "tape_stop",
+    "on": "music_bus",
+    "bars": 1
+   }
+  ],
+  "break>groove": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 2
+   }
+  ],
+  "break>drop": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 2
+   }
+  ],
+  "groove>drop": [
+   {
+    "recipe": "lowpass_dip",
+    "on": "music_bus",
+    "bars": 1
+   }
+  ],
+  "drop>outro": [
+   {
+    "recipe": "tape_stop",
+    "on": "music_bus",
+    "bars": 2
+   }
+  ]
+ }
+}

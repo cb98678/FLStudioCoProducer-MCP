@@ -1,0 +1,53 @@
+{
+ "name": "fh Fill Samples Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 6,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 6 slot 1",
+ "params": {
+  "Low cut": "666Hz",
+  "High cut": "4.0kHz",
+  "Predelay": "0ms",
+  "Room size": "60",
+  "Diffusion": "100",
+  "Decay time": "0.4sec",
+  "High damping": "3.3kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "20%",
+  "Mod Speed": "33%",
+  "Mod Depth": "31%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "06000000010000000200000000000000400100000000000000000000000000000000000074000000c80000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "112700009a02000028000000000000003c00000064000000040000002100000064000000f401000000000000800000004000000019000000ac020000720200000000"
+  ]
+ ]
+}

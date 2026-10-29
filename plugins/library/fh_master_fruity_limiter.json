@@ -1,0 +1,56 @@
+{
+ "name": "fh master Fruity Limiter",
+ "plugin": "Fruity Limiter",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 0,
+  "slot": 3
+ },
+ "notes": "from FutureHouse_open.flp insert 0 slot 3",
+ "params": {
+  "Gain": "5.0dB",
+  "Soft saturation threshold": "-0.1dB",
+  "Limiter ceiling": "4.0dB",
+  "Limiter attack time": "2.00ms",
+  "Limiter attack curve": "3",
+  "Limiter release time": "85.53ms",
+  "Limiter release curve": "3",
+  "Limiter peak window": "10.00ms",
+  "Comp threshold": "0.0dB",
+  "Comp ratio": "1:1.0",
+  "Comp knee": "0%",
+  "Comp attack time": "0.00ms",
+  "Comp release time": "248.22ms",
+  "Comp curve": "",
+  "Comp RMS window": "1.00ms",
+  "Noise gain": "0.0dB",
+  "Noise threshold": "-INFdB",
+  "Noise release time": "50.01ms"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020004c0069006d0069007400650072000000"
+  ],
+  [
+   212,
+   "0000000003000000020000000000000040010000000000000000000000000000000000005a000000ae0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "07000000ed040000e3030000170500005b040000030000008813000003000000420b0000e80300000000000000000000000000000a1a0000010000008a020000e8030000000000005b100000e8030000e8030000e80300005b040000030000008813000003000000420b0000e80300000000000000000000000000000a1a0000010000008a020000e8030000000000005b100000320000000000000001010101000000000000000000"
+  ]
+ ]
+}

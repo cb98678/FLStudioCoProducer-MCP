@@ -1,0 +1,77 @@
+{
+ "name": "latin_pop",
+ "what": "Reggaeton and latin pop production from Bien Duro (docs/demo_study): the dembow drops out for a beat before each chorus with an impact on the one, a reverse fill on the vocal chops into the chorus, a filter dip into the verse, and a medium pump on the bass and the music bus (Bien Duro pumps with Gross Beat; its loudest section swings 4.9 dB).",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "bass",
+   "depth": "medium"
+  },
+  {
+   "on": "music_bus",
+   "depth": "medium"
+  }
+ ],
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: after the first render read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, aiming from the measured slope (tools/remix_song.py does this).",
+ "transitions": {
+  "groove>drop": [
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "recipe": "reverse_fill",
+    "on": "chops",
+    "bars": 1
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 9000
+   }
+  ],
+  "build>drop": [
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ],
+  "drop>groove": [
+   {
+    "recipe": "lowpass_dip",
+    "on": "music_bus",
+    "bars": 1
+   }
+  ],
+  "break>drop": [
+   {
+    "synth": "impact_synth",
+    "volume": 9000
+   }
+  ],
+  "drop>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ]
+ }
+}

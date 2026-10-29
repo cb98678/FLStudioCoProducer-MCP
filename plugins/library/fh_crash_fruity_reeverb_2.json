@@ -1,0 +1,53 @@
+{
+ "name": "fh Crash Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 9,
+  "slot": 2
+ },
+ "notes": "from FutureHouse_open.flp insert 9 slot 2",
+ "params": {
+  "Low cut": "497Hz",
+  "High cut": "6.4kHz",
+  "Predelay": "0ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "2.1sec",
+  "High damping": "7.7kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "70%",
+  "Mod Speed": "33%",
+  "Mod Depth": "0%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "0900000002000000020000000000000040010000000000000000000000000000000000000a0000004d0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "11270000f101000040000000000000003200000064000000150000004d00000064000000f40100000000000080000000400000005a000000ac020000000000000000"
+  ]
+ ]
+}

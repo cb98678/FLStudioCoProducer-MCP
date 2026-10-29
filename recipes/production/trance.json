@@ -1,0 +1,88 @@
+{
+ "name": "trance",
+ "what": "Trance production from the Exoplanet demo (docs/demo_study): long filter openings instead of short sweeps (its 85 automation clips open filters over 130 to 260 beats), a 16-bar build with a snare that rises an octave, an impact on the drop, a reverb throw and a long downlifter into each breakdown. The loudest section of Exoplanet's render swings only 0.9 dB over a beat, so the pump is on the bass alone and kept medium.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "bass",
+   "depth": "medium"
+  }
+ ],
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: after the first render read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, aiming from the measured slope (tools/remix_song.py does this).",
+ "transitions": {
+  "intro>groove": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 16
+   }
+  ],
+  "build>drop": [
+   {
+    "recipe": "pitch_rise",
+    "on": "snare",
+    "bars": 8,
+    "semitones": 12
+   },
+   {
+    "recipe": "fade_in",
+    "on": "sub",
+    "bars": 2
+   },
+   {
+    "synth": "noise_riser",
+    "bars": 8,
+    "volume": 9000
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ],
+  "drop>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 4
+   },
+   {
+    "synth": "noise_downlifter",
+    "bars": 8,
+    "volume": 8000
+   }
+  ],
+  "groove>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 8,
+    "volume": 8000
+   }
+  ]
+ }
+}

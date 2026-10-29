@@ -1,0 +1,66 @@
+{
+ "name": "fh Grv Kick 18_2 Fruity Multiband Compressor",
+ "plugin": "Fruity Multiband Compressor",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 3,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 3 slot 1",
+ "params": {
+  "Master volume": "0.0dB",
+  "Limiter": "OFF",
+  "Filter type": "LP FIR",
+  "High band state": "ON",
+  "H Freq": "896Hz",
+  "H Output": "0.0dB",
+  "H Threshold": "-12.6dB",
+  "H Ratio": "1.2:1",
+  "H Attack": "10.0ms",
+  "H Release": "100.0ms",
+  "H Knee": "80%",
+  "Mid band state": "ON",
+  "M Freq H": "896Hz",
+  "M Freq L": "125Hz",
+  "M Output": "0.0dB",
+  "M Threshold": "-22.8dB",
+  "M Ratio": "1.2:1",
+  "M Attack": "10.0ms",
+  "M Release": "100.0ms",
+  "M Knee": "80%",
+  "Low band state": "ON",
+  "L Freq": "125Hz",
+  "L Output": "1.0dB",
+  "L Threshold": "-27.4dB",
+  "L Ratio": "1.3:1",
+  "L Attack": "15.2ms",
+  "L Release": "100.0ms",
+  "L Knee": "80%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020004d0075006c0074006900620061006e006400200043006f006d00700072006500730073006f0072000000"
+  ],
+  [
+   212,
+   "030000000100000002000000000000004001000000000000000000000000000000000000260000007a0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "00000000008000000000000001000000000000009f2400005555000059ca00001033000064000000e8030000cdcc0000000000009f2400006411000055550000eb9e0000b425000064000000e8030000cdcc00000000000064110000d35c0000078b0000983c000098000000e8030000cdcc00000000000032000000"
+  ]
+ ]
+}

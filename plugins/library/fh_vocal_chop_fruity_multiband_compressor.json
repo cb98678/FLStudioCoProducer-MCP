@@ -1,0 +1,66 @@
+{
+ "name": "fh Vocal Chop Fruity Multiband Compressor",
+ "plugin": "Fruity Multiband Compressor",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 1,
+  "slot": 4
+ },
+ "notes": "from FutureHouse_open.flp insert 1 slot 4",
+ "params": {
+  "Master volume": "0.0dB",
+  "Limiter": "OFF",
+  "Filter type": "BW IIR",
+  "High band state": "ON",
+  "H Freq": "5931Hz",
+  "H Output": "4.4dB",
+  "H Threshold": "-40.7dB",
+  "H Ratio": "1.2:1",
+  "H Attack": "13.8ms",
+  "H Release": "293.4ms",
+  "H Knee": "80%",
+  "Mid band state": "ON",
+  "M Freq H": "9237Hz",
+  "M Freq L": "164Hz",
+  "M Output": "8.7dB",
+  "M Threshold": "-34.7dB",
+  "M Ratio": "1.5:1",
+  "M Attack": "18.6ms",
+  "M Release": "100.0ms",
+  "M Knee": "80%",
+  "Low band state": "muted",
+  "L Freq": "20Hz",
+  "L Output": "0.0dB",
+  "L Threshold": "-18.0dB",
+  "L Ratio": "2.0:1",
+  "L Attack": "10.0ms",
+  "L Release": "100.0ms",
+  "L Knee": "80%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020004d0075006c0074006900620061006e006400200043006f006d00700072006500730073006f0072000000"
+  ],
+  [
+   212,
+   "0100000004000000020000000000000040010000000000000000000000000000000000000c000000600000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "00000000008000000000000000000000000000001c3c00008378000086520000252b00008a000000760b0000cdcc00000000000068420000c713000045a20000db6b000000540000ba000000e8030000cdcc000001000000140000005555000033b300000080000064000000e8030000cdcc00000000000032000000"
+  ]
+ ]
+}

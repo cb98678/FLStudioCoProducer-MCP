@@ -1,0 +1,898 @@
+{
+ "name": "friends_in_low_places",
+ "bpm": 124.0,
+ "source_bpm": 108.478,
+ "key_pc": 9,
+ "origin_s": 27.3085,
+ "roots8": [
+  9,
+  9,
+  9,
+  9,
+  11,
+  11,
+  4,
+  4
+ ],
+ "sections": [
+  {
+   "name": "intro",
+   "start": 0,
+   "end": 8
+  },
+  {
+   "name": "groove",
+   "start": 8,
+   "end": 24
+  },
+  {
+   "name": "break",
+   "start": 24,
+   "end": 32
+  },
+  {
+   "name": "build",
+   "start": 32,
+   "end": 40
+  },
+  {
+   "name": "drop",
+   "start": 40,
+   "end": 56
+  },
+  {
+   "name": "break",
+   "start": 56,
+   "end": 64
+  },
+  {
+   "name": "build",
+   "start": 64,
+   "end": 72
+  },
+  {
+   "name": "drop",
+   "start": 72,
+   "end": 96
+  },
+  {
+   "name": "outro",
+   "start": 96,
+   "end": 104
+  }
+ ],
+ "chops": {
+  "hook": {
+   "start": 133.55,
+   "end": 137.05,
+   "end_mode": "word",
+   "words": "i got friends in low places",
+   "prev": "cause",
+   "after": "the whiskey"
+  },
+  "friends": {
+   "start": 134.05,
+   "end": 134.45,
+   "end_mode": "word",
+   "words": "friends",
+   "prev": "got",
+   "next": "in"
+  },
+  "lowplaces": {
+   "start": 135.15,
+   "end": 137.05,
+   "end_mode": "word",
+   "words": "low places",
+   "prev": "in",
+   "after": "the whiskey"
+  },
+  "whiskey": {
+   "start": 137.65,
+   "end": 138.7,
+   "end_mode": "word",
+   "words": "whiskey",
+   "prev": "the",
+   "next": "drowns"
+  },
+  "drowns": {
+   "start": 137.66,
+   "end": 139.6,
+   "end_mode": "word",
+   "words": "whiskey drowns",
+   "prev": "the",
+   "next": "and the beer"
+  },
+  "bluesaway": {
+   "start": 141.8,
+   "end": 143.2,
+   "end_mode": "phrase",
+   "max_gap": 0.35,
+   "words": "my blues away",
+   "prev": "beer chases"
+  },
+  "blues": {
+   "start": 141.8,
+   "end": 142.5,
+   "end_mode": "word",
+   "words": "my blues",
+   "prev": "beer chases",
+   "next": "away"
+  },
+  "okay": {
+   "start": 145.9,
+   "end": 148.2,
+   "end_mode": "phrase",
+   "words": "i'll be okay"
+  },
+  "oasis": {
+   "start": 69.0,
+   "end": 70.7,
+   "end_mode": "word",
+   "words": "oasis",
+   "prev": "to the",
+   "after": "cause"
+  },
+  "pickup": {
+   "start": 132.9,
+   "end": 133.9,
+   "end_mode": "word",
+   "words": "cause i've got",
+   "next": "friends"
+  }
+ },
+ "echoed": [
+  "hook",
+  "bluesaway",
+  "drowns",
+  "friends",
+  "okay",
+  "whiskey"
+ ],
+ "vocal_clips": [
+  [
+   24,
+   48,
+   132.9,
+   148.2,
+   "Vocal chorus (break)",
+   "phrase"
+  ],
+  [
+   56,
+   16,
+   61.4,
+   78.2,
+   "Vocal verse (break 2)",
+   "phrase"
+  ],
+  [
+   72,
+   48,
+   132.9,
+   143.86,
+   "Vocal chorus (drop 2)",
+   "phrase"
+  ]
+ ],
+ "clip_words": [
+  {
+   "head": "cause i've got friends",
+   "tail": "i'll be okay"
+  },
+  {
+   "head": "well i'm not big",
+   "tail": "low places"
+  },
+  {
+   "head": "cause i've got friends",
+   "tail": "my blues away"
+  }
+ ],
+ "chop_events": [
+  [
+   5,
+   8,
+   "blues",
+   70,
+   60
+  ],
+  [
+   6,
+   12,
+   "friends_echo",
+   80,
+   60
+  ],
+  [
+   7,
+   0,
+   "lowplaces",
+   85,
+   60
+  ],
+  [
+   8,
+   0,
+   "hook",
+   108,
+   60
+  ],
+  [
+   10,
+   8,
+   "bluesaway_echo",
+   96,
+   60
+  ],
+  [
+   12,
+   0,
+   "hook",
+   108,
+   60
+  ],
+  [
+   14,
+   8,
+   "whiskey",
+   96,
+   60
+  ],
+  [
+   16,
+   0,
+   "hook",
+   108,
+   60
+  ],
+  [
+   18,
+   8,
+   "bluesaway",
+   96,
+   60
+  ],
+  [
+   20,
+   0,
+   "hook",
+   108,
+   60
+  ],
+  [
+   22,
+   8,
+   "drowns_echo",
+   96,
+   60
+  ],
+  [
+   23,
+   8,
+   "friends_echo",
+   100,
+   67
+  ],
+  [
+   32,
+   0,
+   "whiskey",
+   82,
+   60
+  ],
+  [
+   32,
+   8,
+   "blues",
+   78,
+   60
+  ],
+  [
+   33,
+   0,
+   "whiskey",
+   86,
+   61
+  ],
+  [
+   33,
+   8,
+   "blues",
+   82,
+   61
+  ],
+  [
+   34,
+   0,
+   "whiskey",
+   90,
+   62
+  ],
+  [
+   34,
+   8,
+   "blues",
+   86,
+   62
+  ],
+  [
+   35,
+   0,
+   "whiskey",
+   94,
+   63
+  ],
+  [
+   35,
+   8,
+   "blues",
+   90,
+   63
+  ],
+  [
+   36,
+   0,
+   "whiskey",
+   98,
+   64
+  ],
+  [
+   36,
+   8,
+   "blues",
+   94,
+   64
+  ],
+  [
+   37,
+   0,
+   "whiskey",
+   102,
+   65
+  ],
+  [
+   37,
+   8,
+   "blues",
+   98,
+   65
+  ],
+  [
+   38,
+   0,
+   "friends",
+   88,
+   66
+  ],
+  [
+   38,
+   4,
+   "friends",
+   96,
+   66
+  ],
+  [
+   38,
+   8,
+   "friends",
+   104,
+   66
+  ],
+  [
+   38,
+   12,
+   "friends_echo",
+   112,
+   66
+  ],
+  [
+   39,
+   0,
+   "friends",
+   100,
+   72
+  ],
+  [
+   39,
+   2,
+   "friends",
+   102,
+   72
+  ],
+  [
+   39,
+   4,
+   "friends",
+   104,
+   72
+  ],
+  [
+   39,
+   6,
+   "friends",
+   106,
+   72
+  ],
+  [
+   39,
+   8,
+   "friends",
+   108,
+   72
+  ],
+  [
+   39,
+   10,
+   "friends",
+   110,
+   72
+  ],
+  [
+   39,
+   12,
+   "friends",
+   112,
+   72
+  ],
+  [
+   40,
+   2,
+   "hook",
+   112,
+   60
+  ],
+  [
+   42,
+   10,
+   "bluesaway_echo",
+   100,
+   60
+  ],
+  [
+   44,
+   2,
+   "hook_echo",
+   112,
+   60
+  ],
+  [
+   46,
+   10,
+   "drowns",
+   100,
+   60
+  ],
+  [
+   48,
+   2,
+   "hook",
+   112,
+   60
+  ],
+  [
+   50,
+   10,
+   "bluesaway_echo",
+   100,
+   60
+  ],
+  [
+   52,
+   2,
+   "hook",
+   112,
+   60
+  ],
+  [
+   54,
+   0,
+   "okay",
+   100,
+   60
+  ],
+  [
+   64,
+   0,
+   "whiskey",
+   82,
+   60
+  ],
+  [
+   64,
+   8,
+   "blues",
+   78,
+   60
+  ],
+  [
+   65,
+   0,
+   "whiskey",
+   86,
+   61
+  ],
+  [
+   65,
+   8,
+   "blues",
+   82,
+   61
+  ],
+  [
+   66,
+   0,
+   "whiskey",
+   90,
+   62
+  ],
+  [
+   66,
+   8,
+   "blues",
+   86,
+   62
+  ],
+  [
+   67,
+   0,
+   "whiskey",
+   94,
+   63
+  ],
+  [
+   67,
+   8,
+   "blues",
+   90,
+   63
+  ],
+  [
+   68,
+   0,
+   "whiskey",
+   98,
+   64
+  ],
+  [
+   68,
+   8,
+   "blues",
+   94,
+   64
+  ],
+  [
+   69,
+   0,
+   "whiskey",
+   102,
+   65
+  ],
+  [
+   69,
+   8,
+   "blues",
+   98,
+   65
+  ],
+  [
+   70,
+   0,
+   "friends",
+   88,
+   66
+  ],
+  [
+   70,
+   4,
+   "friends",
+   96,
+   66
+  ],
+  [
+   70,
+   8,
+   "friends",
+   104,
+   66
+  ],
+  [
+   70,
+   12,
+   "friends_echo",
+   112,
+   66
+  ],
+  [
+   71,
+   0,
+   "friends",
+   100,
+   72
+  ],
+  [
+   71,
+   2,
+   "friends",
+   102,
+   72
+  ],
+  [
+   71,
+   4,
+   "friends",
+   104,
+   72
+  ],
+  [
+   71,
+   6,
+   "friends",
+   106,
+   72
+  ],
+  [
+   71,
+   8,
+   "friends",
+   108,
+   72
+  ],
+  [
+   71,
+   10,
+   "friends",
+   110,
+   72
+  ],
+  [
+   71,
+   12,
+   "friends",
+   112,
+   72
+  ],
+  [
+   72,
+   2,
+   "hook",
+   112,
+   60
+  ],
+  [
+   74,
+   10,
+   "bluesaway_echo",
+   100,
+   60
+  ],
+  [
+   76,
+   2,
+   "hook_echo",
+   112,
+   60
+  ],
+  [
+   78,
+   10,
+   "drowns",
+   100,
+   60
+  ],
+  [
+   80,
+   2,
+   "hook",
+   112,
+   60
+  ],
+  [
+   82,
+   10,
+   "bluesaway_echo",
+   100,
+   60
+  ],
+  [
+   84,
+   2,
+   "hook_echo",
+   112,
+   60
+  ],
+  [
+   86,
+   10,
+   "drowns",
+   100,
+   60
+  ],
+  [
+   88,
+   2,
+   "hook",
+   112,
+   60
+  ],
+  [
+   90,
+   10,
+   "bluesaway_echo",
+   100,
+   60
+  ],
+  [
+   92,
+   2,
+   "hook",
+   112,
+   60
+  ],
+  [
+   94,
+   0,
+   "okay_echo",
+   100,
+   60
+  ],
+  [
+   98,
+   0,
+   "okay_echo",
+   80,
+   60
+  ]
+ ],
+ "fx_cues": [
+  {
+   "kind": "impact",
+   "bar": 40,
+   "gain_db": 0.0
+  },
+  {
+   "kind": "air_sweep",
+   "bar": 39,
+   "beats": 8,
+   "gain_db": -3.0
+  },
+  {
+   "kind": "impact",
+   "bar": 72,
+   "gain_db": 0.0
+  },
+  {
+   "kind": "air_sweep",
+   "bar": 71,
+   "beats": 8,
+   "gain_db": -3.0
+  },
+  {
+   "kind": "impact",
+   "bar": 8,
+   "gain_db": -9.0,
+   "seconds": 2.2
+  },
+  {
+   "kind": "impact",
+   "bar": 24,
+   "gain_db": -9.0,
+   "seconds": 2.2
+  },
+  {
+   "kind": "impact",
+   "bar": 56,
+   "gain_db": -6.0,
+   "seconds": 2.2
+  },
+  {
+   "kind": "impact",
+   "bar": 96,
+   "gain_db": -9.0,
+   "seconds": 2.2
+  },
+  {
+   "kind": "noise_riser",
+   "bar": 32,
+   "bars": 8,
+   "f0": 400,
+   "f1": 15000,
+   "gain_db": -10.0
+  },
+  {
+   "kind": "tone_riser",
+   "bar": 32,
+   "bars": 8,
+   "f0": 220.0,
+   "f1": 1760.0,
+   "gain_db": -20.0
+  },
+  {
+   "kind": "noise_riser",
+   "bar": 64,
+   "bars": 8,
+   "f0": 400,
+   "f1": 15000,
+   "gain_db": -10.0
+  },
+  {
+   "kind": "tone_riser",
+   "bar": 64,
+   "bars": 8,
+   "f0": 220.0,
+   "f1": 1760.0,
+   "gain_db": -20.0
+  },
+  {
+   "kind": "noise_riser",
+   "bar": 28,
+   "bars": 4,
+   "f0": 300,
+   "f1": 9000,
+   "gain_db": -15.0
+  },
+  {
+   "kind": "noise_riser",
+   "bar": 4,
+   "bars": 4,
+   "f0": 500,
+   "f1": 7000,
+   "gain_db": -18.0
+  },
+  {
+   "kind": "noise_riser",
+   "bar": 60,
+   "bars": 4,
+   "f0": 300,
+   "f1": 9000,
+   "gain_db": -15.0
+  },
+  {
+   "kind": "downlifter",
+   "bar": 24,
+   "beats": 8,
+   "gain_db": -12.0
+  },
+  {
+   "kind": "downlifter",
+   "bar": 56,
+   "beats": 8,
+   "gain_db": -12.0
+  },
+  {
+   "kind": "downlifter",
+   "bar": 96,
+   "beats": 8,
+   "gain_db": -12.0
+  }
+ ],
+ "roles": {
+  "teasers": [
+   "blues",
+   "friends_echo",
+   "lowplaces"
+  ],
+  "hook": "hook",
+  "hook_echo": "hook_echo",
+  "groove_answers": [
+   "bluesaway_echo",
+   "whiskey",
+   "bluesaway",
+   "drowns_echo"
+  ],
+  "groove_tail": "friends_echo",
+  "stutter_a": "whiskey",
+  "stutter_b": "blues",
+  "stab": "friends",
+  "stab_echo": "friends_echo",
+  "drop_answers": [
+   "bluesaway_echo",
+   "drowns"
+  ],
+  "closers": [
+   "okay",
+   "okay_echo"
+  ],
+  "outro_closer": "okay_echo"
+ },
+ "pitch_ratio": 0.99424
+}

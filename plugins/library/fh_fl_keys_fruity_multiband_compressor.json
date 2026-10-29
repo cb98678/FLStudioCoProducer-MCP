@@ -1,0 +1,66 @@
+{
+ "name": "fh FL Keys Fruity Multiband Compressor",
+ "plugin": "Fruity Multiband Compressor",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 10,
+  "slot": 4
+ },
+ "notes": "from FutureHouse_open.flp insert 10 slot 4",
+ "params": {
+  "Master volume": "-3.1dB",
+  "Limiter": "OFF",
+  "Filter type": "BW IIR",
+  "High band state": "ON",
+  "H Freq": "6866Hz",
+  "H Output": "2.8dB",
+  "H Threshold": "-12.4dB",
+  "H Ratio": "3.0:1",
+  "H Attack": "10.0ms",
+  "H Release": "100.0ms",
+  "H Knee": "80%",
+  "Mid band state": "ON",
+  "M Freq H": "6866Hz",
+  "M Freq L": "295Hz",
+  "M Output": "0.0dB",
+  "M Threshold": "-5.3dB",
+  "M Ratio": "2.0:1",
+  "M Attack": "10.0ms",
+  "M Release": "100.0ms",
+  "M Knee": "80%",
+  "Low band state": "ON",
+  "L Freq": "295Hz",
+  "L Output": "-0.6dB",
+  "L Threshold": "-8.4dB",
+  "L Ratio": "2.0:1",
+  "L Attack": "10.0ms",
+  "L Release": "100.0ms",
+  "L Knee": "80%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020004d0075006c0074006900620061006e006400200043006f006d00700072006500730073006f0072000000"
+  ],
+  [
+   212,
+   "0a0000000400000002000000000000004001000000000000000000000000000000000000bd000000000100000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "000000000b620000000000000000000000000000283e0000706a000007cb000052ab000064000000e8030000cdcc000000000000283e000038190000555500008ee900000080000064000000e8030000cdcc000000000000381900003f5100000ddc00000080000064000000e8030000cdcc00000000000032000000"
+  ]
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "name": "dubstep",
+ "what": "Dubstep moves: a clean, not pumping, dip of the music bus and the bass on the kick, the build's riser and snare pitch rise, a two-beat gap of silence before the drop, an impact on it, a stutter on the chops, a tape stop and a downlifter out of each drop.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "medium"
+  },
+  {
+   "on": "bass",
+   "depth": "medium"
+  }
+ ],
+ "transitions": {
+  "build>drop": [
+   {
+    "recipe": "pitch_rise",
+    "on": "snare",
+    "bars": 4,
+    "semitones": 12
+   },
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "synth": "noise_riser",
+    "bars": 8,
+    "volume": 10000
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   },
+   {
+    "recipe": "stutter_fill",
+    "on": "chops",
+    "bars": 1
+   }
+  ],
+  "drop>break": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   },
+   {
+    "recipe": "tape_stop",
+    "on": "music_bus",
+    "bars": 1
+   }
+  ],
+  "intro>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 4
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: the same map took the Friends remix's builds 3.7 LU down and the Future House demo's 6.2 (the demo's buildup ended 9 LU under its drop, twice the reference's 4.5). After the first render, read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, x about (target minus measured) / 5, then render and repeat."
+}

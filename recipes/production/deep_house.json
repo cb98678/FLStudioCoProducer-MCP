@@ -1,0 +1,85 @@
+{
+ "name": "deep_house",
+ "what": "Deep house production: the club_house buses and chains, a gentler pump, and soft transitions (filter sweeps, reverb throws, a quiet riser, no snare pitch rise and no stutter fills), so the builds stay subtle and the breaks breathe.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "medium"
+  },
+  {
+   "on": "sub",
+   "depth": "deep"
+  }
+ ],
+ "transitions": {
+  "build>drop": [
+   {
+    "recipe": "filter_sweep",
+    "on": "music_bus",
+    "bars": 8
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "fade_in",
+    "on": "sub",
+    "bars": 2
+   },
+   {
+    "synth": "noise_riser",
+    "bars": 8,
+    "volume": 6500
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "drop>break": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 6500
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 6500
+   }
+  ],
+  "groove>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: the same map took the Friends remix's builds 3.7 LU down and the Future House demo's 6.2 (the demo's buildup ended 9 LU under its drop, twice the reference's 4.5). After the first render, read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, x about (target minus measured) / 5, then render and repeat."
+}

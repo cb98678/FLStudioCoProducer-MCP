@@ -1,0 +1,53 @@
+{
+ "name": "fh Wow Synth Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 14,
+  "slot": 2
+ },
+ "notes": "from FutureHouse_open.flp insert 14 slot 2",
+ "params": {
+  "Low cut": "756Hz",
+  "High cut": "10.3kHz",
+  "Predelay": "98ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "0.1sec",
+  "High damping": "7.2kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "52%",
+  "Mod Speed": "51%",
+  "Mod Depth": "74%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "0e000000020000000200000000000000400100000000000000000000000000000000000070000000b30000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "11270000f402000067000000260000003200000064000000010000004800000064000000f40100000000000080000000400000004300000013040000f50500000000"
+  ]
+ ]
+}

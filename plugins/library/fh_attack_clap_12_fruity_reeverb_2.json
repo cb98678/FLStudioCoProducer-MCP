@@ -1,0 +1,53 @@
+{
+ "name": "fh Attack Clap 12 Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 4,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 4 slot 1",
+ "params": {
+  "Low cut": "736Hz",
+  "High cut": "4.0kHz",
+  "Predelay": "26ms",
+  "Room size": "50",
+  "Diffusion": "100",
+  "Decay time": "0.4sec",
+  "High damping": "4.0kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "50%",
+  "Wet level": "32%",
+  "Mod Speed": "62%",
+  "Mod Depth": "47%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "040000000100000002000000000000004001000000000000000000000000000000000000260000007a0000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "11270000e0020000280000000a0000003200000064000000040000002800000064000000f401000000000000800000004000000029000000fe040000bf0300000000"
+  ]
+ ]
+}

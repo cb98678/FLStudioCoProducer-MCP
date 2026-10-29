@@ -1,0 +1,46 @@
+{
+ "name": "fh Crash Fruity Delay 2",
+ "plugin": "Fruity Delay 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 9,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 9 slot 1",
+ "params": {
+  "Input panning": "-30%",
+  "Input volume": "51%",
+  "Dry level": "80%",
+  "Feedback level": "61%",
+  "Time": "4:00",
+  "Time stereo offset": "0.0ms right",
+  "Feedback mode": "P.Pong",
+  "Cutoff freq": "100%"
+ },
+ "events": [
+  [
+   201,
+   "4600720075006900740079002000440065006c0061007900200032000000"
+  ],
+  [
+   212,
+   "090000000100000002000000000000004001000000000000000000000000000000000000bd000000000100000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "d9ffffff51000000800000004d000000c0000000000000000200000080000000"
+  ]
+ ]
+}

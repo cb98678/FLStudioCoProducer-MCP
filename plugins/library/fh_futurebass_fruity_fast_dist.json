@@ -1,0 +1,43 @@
+{
+ "name": "fh FutureBass Fruity Fast Dist",
+ "plugin": "Fruity Fast Dist",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 11,
+  "slot": 1
+ },
+ "notes": "from FutureHouse_open.flp insert 11 slot 1",
+ "params": {
+  "Pre amp": "48%",
+  "Threshold": "80%",
+  "Distortion type": "A",
+  "Mix level": "71%",
+  "Post gain": "100%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020004600610073007400200044006900730074000000"
+  ],
+  [
+   212,
+   "0b0000000100000002000000000000004001000000000000000000000000000000000000a3000000e60000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "5c00000008000000000000005b00000080000000"
+  ]
+ ]
+}

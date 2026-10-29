@@ -1,0 +1,53 @@
+{
+ "name": "fh FutureBass Fruity Reeverb 2",
+ "plugin": "Fruity Reeverb 2",
+ "source": "FutureHouse_open.flp",
+ "from": {
+  "insert": 11,
+  "slot": 3
+ },
+ "notes": "from FutureHouse_open.flp insert 11 slot 3",
+ "params": {
+  "Low cut": "75Hz",
+  "High cut": "4.0kHz",
+  "Predelay": "0ms",
+  "Room size": "54",
+  "Diffusion": "99",
+  "Decay time": "0.3sec",
+  "High damping": "4.0kHz",
+  "Bass multiplier": "100%",
+  "Crossover": "500Hz",
+  "Stereo separation": "Original",
+  "Dry level": "100%",
+  "Early reflection level": "24%",
+  "Wet level": "80%",
+  "Mod Speed": "33%",
+  "Mod Depth": "0%"
+ },
+ "events": [
+  [
+   201,
+   "46007200750069007400790020005200650065007600650072006200200032000000"
+  ],
+  [
+   212,
+   "0b00000003000000020000000000000040010000000000000000000000000000000000004d000000650000000000000000000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "112700004b00000028000000000000003600000063000000030000002800000064000000f401000000000000800000001f00000066000000ac020000000000000000"
+  ]
+ ]
+}

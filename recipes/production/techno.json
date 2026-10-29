@@ -1,0 +1,96 @@
+{
+ "name": "techno",
+ "what": "Peak-time techno moves: a deep pump on the bass and the music bus from the kick (the rumble ducks), a long low-pass opening on the music bus over each build, a high-pass sweep and reverb throw into the drop, an 8-bar noise riser and an impact, a downlifter out of each drop. Starting points from the techno style's sources; check against the person's references.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "deep"
+  },
+  {
+   "on": "bass",
+   "depth": "deep"
+  }
+ ],
+ "transitions": {
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "build>drop": [
+   {
+    "recipe": "filter_sweep",
+    "on": "music_bus",
+    "bars": 4
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "synth": "noise_riser",
+    "bars": 8,
+    "volume": 10000
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ],
+  "drop>break": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "groove>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "intro>groove": [
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: the same map took the Friends remix's builds 3.7 LU down and the Future House demo's 6.2 (the demo's buildup ended 9 LU under its drop, twice the reference's 4.5). After the first render, read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, x about (target minus measured) / 5, then render and repeat.",
+ "flanger_note": "The drum-bus flanger swell (fx_swell) is out of the default: the person switched it off on the techno remix as too persistent and distracting (2026-10-26). Add it back per song only when asked."
+}

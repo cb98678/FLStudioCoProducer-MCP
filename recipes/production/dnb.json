@@ -1,0 +1,95 @@
+{
+ "name": "dnb",
+ "what": "Drum and bass moves: a medium pump of the bass and the music bus on the kick, a high-pass sweep and reverb throw into the drop with a one-beat gap and an impact, a snare pitch rise and noise riser through the build, a downlifter out of each drop.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "medium"
+  },
+  {
+   "on": "bass",
+   "depth": "medium"
+  }
+ ],
+ "transitions": {
+  "build>drop": [
+   {
+    "recipe": "filter_sweep",
+    "on": "music_bus",
+    "bars": 4
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "recipe": "pitch_rise",
+    "on": "snare",
+    "bars": 4,
+    "semitones": 12
+   },
+   {
+    "synth": "noise_riser",
+    "bars": 8,
+    "volume": 10000
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ],
+  "intro>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 4
+   }
+  ],
+  "drop>break": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: the same map took the Friends remix's builds 3.7 LU down and the Future House demo's 6.2 (the demo's buildup ended 9 LU under its drop, twice the reference's 4.5). After the first render, read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, x about (target minus measured) / 5, then render and repeat."
+}
