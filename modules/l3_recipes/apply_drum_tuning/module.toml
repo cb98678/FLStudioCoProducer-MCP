@@ -1,0 +1,27 @@
+[module]
+name = "apply_drum_tuning"
+layer = "L3"
+summary = "Tune drum samples (kicks, toms, 808s) to the song's key with each channel's pitch knob, measuring each sample's pitch first, in a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project","key"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"key":{"type":"string","minLength":1},"channels":{"type":"array","items":{"type":["string","integer"]}},"tune_to":{"type":"string","enum":["root_fifth","root"]},"dry_run":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = ["numpy", "scipy", "soundfile"]
+
+[tests]
+golden = "test_apply_drum_tuning.py::test_tunes_a_kick_to_the_key"
+failure = "test_apply_drum_tuning.py::test_failures"

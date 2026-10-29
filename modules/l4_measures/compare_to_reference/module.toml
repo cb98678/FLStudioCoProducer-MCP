@@ -1,0 +1,27 @@
+[module]
+name = "compare_to_reference"
+layer = "L4"
+summary = "Compare a measure report with target values and report each difference."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["report","target"],"properties":{"report":{"type":"object"},"target":{"type":"object","additionalProperties":{"type":"object","required":["value","tolerance"],"properties":{"value":{"type":"number"},"tolerance":{"type":"number","minimum":0}}}}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_compare_to_reference.py::test_scores_each_target"
+failure = "test_compare_to_reference.py::test_missing_metrics_are_reported"

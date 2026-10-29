@@ -1,0 +1,27 @@
+[module]
+name = "op_ui_set_browser_auto_hide"
+layer = "L1"
+summary = "Write through ui.setBrowserAutoHide in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"value":{"type":"boolean"}},"required":["value"],"additionalProperties":false}'''
+output = '''{}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 20
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_ui_set_browser_auto_hide.py::test_matches_fake"
+failure = "test_op_ui_set_browser_auto_hide.py::test_failures"

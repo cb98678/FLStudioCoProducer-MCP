@@ -1,0 +1,27 @@
+[module]
+name = "build_wavetable"
+layer = "L4"
+summary = "Build a Serum 2 wavetable (2048-sample frames) in the sandbox from a held note of a stem, loop or one-shot, or from a Serum formula."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["out_path"],"properties":{"out_path":{"type":"string","x-path":true,"minLength":1},"path":{"type":"string","x-path":true},"formula":{"type":"string","maxLength":400},"options":{"type":"object","properties":{"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0},"frames":{"type":"integer","minimum":1,"maximum":256},"fmin":{"type":"number","minimum":20,"maximum":2000},"fmax":{"type":"number","minimum":40,"maximum":4000},"periods":{"type":"integer","minimum":1,"maximum":16},"f0_hz":{"type":"number","minimum":20,"maximum":4000}},"additionalProperties":false}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["path","frames","oscillator"],"properties":{"path":{"type":"string"},"frames":{"type":"integer"},"oscillator":{"type":"object"},"f0_hz":{"type":"number"},"note":{"type":"string"},"cents":{"type":"number"},"edge_loss_db":{"type":"number"},"wrap_jump":{"type":"number"},"first":{"type":"array"},"last":{"type":"array"}}}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = ["numpy", "soundfile"]
+
+[tests]
+golden = "test_build_wavetable.py::test_a_held_bass_note_and_a_formula_become_tables"
+failure = "test_build_wavetable.py::test_failures"

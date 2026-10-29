@@ -1,0 +1,27 @@
+[module]
+name = "estimate_key_bpm_ml"
+layer = "L5"
+summary = "Ask the audio-language model for the key and tempo of a track."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["run_model_op"]
+models = ["flamingo"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_estimate_key_bpm_ml.py::test_parses_the_reply"
+failure = "test_estimate_key_bpm_ml.py::test_unparseable_reply"

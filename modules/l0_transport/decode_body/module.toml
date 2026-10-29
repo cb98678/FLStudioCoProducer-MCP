@@ -1,0 +1,27 @@
+[module]
+name = "decode_body"
+layer = "L0"
+summary = "Split message bytes into an operation name and its dict."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["body"],"properties":{"body":{"type":"array","items":{"type":"integer"}}}}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_decode_body.py::test_round_trip"
+failure = "test_decode_body.py::test_rejects_bad_bodies"

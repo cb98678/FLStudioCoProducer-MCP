@@ -1,0 +1,27 @@
+[module]
+name = "add_transition_automation"
+layer = "L3"
+summary = "Add transition automation (filter sweep, reverb throw, pitch rise, fade in, gap, low-pass open or dip, filter wobble, flanger swell) around section markers in a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project","transitions_list"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"transitions_list":{"type":"array","items":{"type":"object","required":["recipe","at"],"properties":{"recipe":{"type":"string","enum":["filter_sweep","reverb_throw","pitch_rise","fade_in","gap","lowpass_open","lowpass_dip","filter_wobble","fx_swell","stutter_fill","reverse_fill","tape_stop"]},"at":{"type":["string","number"]},"insert":{"type":"integer","minimum":1,"maximum":126},"channel":{"type":"integer","minimum":0},"bars":{"type":"number","exclusiveMinimum":0,"maximum":64},"beats":{"type":"number","exclusiveMinimum":0,"maximum":64},"semitones":{"type":"integer","minimum":1,"maximum":48},"period":{"type":"number","exclusiveMinimum":0,"maximum":16},"low":{"type":"number","minimum":0,"maximum":0.99}}}},"row":{"type":"integer","minimum":0,"maximum":499}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_add_transition_automation.py::test_adds_each_recipe"
+failure = "test_add_transition_automation.py::test_failures"

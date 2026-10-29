@@ -1,0 +1,27 @@
+[module]
+name = "set_pattern_length_verified"
+layer = "L2"
+summary = "Set a pattern's length and confirm by reading it back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","length"],"properties":{"index":{"type":"integer","minimum":1},"length":{"type":"integer","minimum":1,"maximum":4096}},"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 45
+calls = ["op_patterns_set_pattern_length", "op_patterns_get_pattern_length"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_pattern_length_verified.py::test_sets_length"
+failure = "test_set_pattern_length_verified.py::test_failures"

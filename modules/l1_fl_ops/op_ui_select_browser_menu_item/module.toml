@@ -1,0 +1,27 @@
+[module]
+name = "op_ui_select_browser_menu_item"
+layer = "L1"
+summary = "Write through ui.selectBrowserMenuItem in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"required":[],"additionalProperties":false}'''
+output = '''{}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 20
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_ui_select_browser_menu_item.py::test_matches_fake"
+failure = "test_op_ui_select_browser_menu_item.py::test_failures"

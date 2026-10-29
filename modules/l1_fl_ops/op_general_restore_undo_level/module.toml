@@ -1,0 +1,27 @@
+[module]
+name = "op_general_restore_undo_level"
+layer = "L1"
+summary = "Write through general.restoreUndoLevel in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"level":{"type":"integer"}},"required":["level"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_general_restore_undo_level.py::test_matches_fake"
+failure = "test_op_general_restore_undo_level.py::test_failures"

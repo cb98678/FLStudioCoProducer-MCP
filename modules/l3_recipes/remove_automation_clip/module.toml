@@ -1,0 +1,30 @@
+[module]
+name = "remove_automation_clip"
+layer = "L3"
+summary = "Remove one automation clip (channel, link and playlist items) from a project file in the sandbox."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","channel"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"channel":{"type":"integer","minimum":0,"maximum":65535}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_remove_automation_clip.py::test_removes_only_the_named_clip"
+failure = "test_remove_automation_clip.py::test_refuses_non_automation_channel"
+
+[budget]
+lines = 45

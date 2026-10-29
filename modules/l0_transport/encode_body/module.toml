@@ -1,0 +1,27 @@
+[module]
+name = "encode_body"
+layer = "L0"
+summary = "Turn an operation name and a dict into message bytes."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["name","data"],"properties":{"name":{"type":"string"},"data":{"type":"object"}}}'''
+output = '''{"type":"array","items":{"type":"integer","minimum":0,"maximum":255}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_encode_body.py::test_encodes"
+failure = "test_encode_body.py::test_rejects_bad_input"

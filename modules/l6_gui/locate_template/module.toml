@@ -1,0 +1,28 @@
+[module]
+name = "locate_template"
+layer = "L6"
+summary = "Find a stored interface picture in a screenshot by normalised cross-correlation and return its centre."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["image_path","template_name"],"properties":{"image_path":{"type":"string","minLength":1,"maxLength":400},"template_name":{"type":"string","x-path":true,"pattern":"^[a-z_0-9]+$"},"min_score":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "screenshot"
+expose = false
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = ["numpy", "scipy", "pillow"]
+
+[tests]
+golden = "test_locate_template.py::test_finds_the_template_centre"
+failure = "test_locate_template.py::test_refuses_missing_absent_and_ambiguous"

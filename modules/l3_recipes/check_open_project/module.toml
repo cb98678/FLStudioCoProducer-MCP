@@ -1,0 +1,27 @@
+[module]
+name = "check_open_project"
+layer = "L3"
+summary = "Confirm the project open in FL matches a saved project by comparing the names of its mixer inserts."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["inserts"],"properties":{"inserts":{"type":"array","items":{"type":"object"},"maxItems":126}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_get_track_name"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_check_open_project.py::test_matches"
+failure = "test_check_open_project.py::test_failures"

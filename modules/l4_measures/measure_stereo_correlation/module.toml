@@ -1,0 +1,27 @@
+[module]
+name = "measure_stereo_correlation"
+layer = "L4"
+summary = "Measure the stereo correlation coefficient of a stereo file, from -1 to 1."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_stereo_correlation.py::test_known_signal"
+failure = "test_measure_stereo_correlation.py::test_failures"

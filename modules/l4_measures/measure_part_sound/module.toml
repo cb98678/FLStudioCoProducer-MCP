@@ -1,0 +1,27 @@
+[module]
+name = "measure_part_sound"
+layer = "L4"
+summary = "Measure how a part of the original sounds (envelope, brightness, harmonics, noise, width, register) and draft a matching Serum 2 sound."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0},"role":{"type":"string","enum":["","bass","sub","chords","stab","pluck","lead","arp","pad","keys","riff","other"]},"name":{"type":"string"},"max_notes":{"type":"integer","minimum":1,"maximum":64}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["sound","starting_point"],"properties":{"sound":{"type":"object"},"starting_point":{"type":"object"}}}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_part_sound.py::test_a_pluck_and_a_pad_read_as_themselves"
+failure = "test_measure_part_sound.py::test_failures"

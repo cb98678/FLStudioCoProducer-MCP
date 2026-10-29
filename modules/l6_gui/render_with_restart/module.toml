@@ -1,0 +1,27 @@
+[module]
+name = "render_with_restart"
+layer = "L6"
+summary = "Render a saved sandbox project to WAV by closing FL, rendering from the command line, restarting FL and waiting for the bridge."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_dir"],"properties":{"project":{"type":"string","minLength":1},"out_dir":{"type":"string","minLength":1},"wait_s":{"type":"number","minimum":1,"maximum":600}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A1"
+cost = "minutes"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "op_general_get_changed_flag", "render_via_cli", "ping_fl"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_render_with_restart.py::test_closes_renders_restarts_and_reconnects"
+failure = "test_render_with_restart.py::test_refusals_leave_fl_alone"

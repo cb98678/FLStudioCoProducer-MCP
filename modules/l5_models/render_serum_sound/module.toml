@@ -1,0 +1,30 @@
+[module]
+name = "render_serum_sound"
+layer = "L5"
+summary = "Play notes on a Serum 2 preset headless (no FL) and write the audio plus the channel state Serum saves for it, ready for build_remix_project."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["notes","out_path"],"properties":{"preset_path":{"type":"string","x-path":true},"state_path":{"type":"string","x-path":true},"notes":{"type":"array","minItems":1,"items":{"type":"object","required":["pitch","start","duration"],"properties":{"pitch":{"type":"integer","minimum":0,"maximum":127},"start":{"type":"number","minimum":0},"duration":{"type":"number","exclusiveMinimum":0},"velocity":{"type":"integer","minimum":1,"maximum":127}}}},"bpm":{"type":"number","minimum":20,"maximum":300},"out_path":{"type":"string","x-path":true,"minLength":1},"template_project":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["wav","state"],"properties":{"wav":{"type":"string"},"state":{"type":"string"},"rms_db":{"type":"number"},"peak":{"type":"number"},"preset":{}}}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "run_model_op"]
+models = ["serum"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_render_serum_sound.py::test_a_preset_is_rendered_and_its_state_kept"
+failure = "test_render_serum_sound.py::test_errors"
+
+[budget]
+lines = 50

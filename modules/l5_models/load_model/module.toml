@@ -1,0 +1,27 @@
+[module]
+name = "load_model"
+layer = "L5"
+summary = "Load a registered model through the GPU scheduler."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["model"],"properties":{"model":{"type":"string","minLength":1},"variant":{"type":"string"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_load_model.py::test_loads_and_reuses"
+failure = "test_load_model.py::test_errors"

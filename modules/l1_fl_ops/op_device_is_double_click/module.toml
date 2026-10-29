@@ -1,0 +1,27 @@
+[module]
+name = "op_device_is_double_click"
+layer = "L1"
+summary = "Read device.isDoubleClick from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"}},"required":["index"],"additionalProperties":false}'''
+output = '''{"type":"boolean"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_device_is_double_click.py::test_matches_fake"
+failure = "test_op_device_is_double_click.py::test_failures"

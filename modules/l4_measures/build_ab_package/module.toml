@@ -1,0 +1,30 @@
+[module]
+name = "build_ab_package"
+layer = "L4"
+summary = "Write two loudness-matched copies of two bounces for fair A/B listening."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["a_path","b_path","out_dir"],"properties":{"a_path":{"type":"string","minLength":1},"b_path":{"type":"string","minLength":1},"out_dir":{"type":"string","minLength":1},"target_lufs":{"type":"number","minimum":-40,"maximum":0},"ceiling_db":{"type":"number","minimum":-12,"maximum":0}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_ab_package.py::test_matches_loudness"
+failure = "test_build_ab_package.py::test_errors"
+
+[budget]
+lines = 45

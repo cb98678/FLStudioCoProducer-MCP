@@ -1,0 +1,27 @@
+[module]
+name = "apply_production_recipe"
+layer = "L3"
+summary = "Apply a whole production recipe (buses, chains, pump, transitions by section kind, risers, section gains, standard) to an arrangement in a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"recipe":{"type":"string","pattern":"^[a-z0-9_]+$"},"key":{"type":"string","minLength":1},"dry_run":{"type":"boolean"},"plan_file":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_production_recipe.py::test_club_house_on_a_small_arrangement"
+failure = "test_apply_production_recipe.py::test_failures"

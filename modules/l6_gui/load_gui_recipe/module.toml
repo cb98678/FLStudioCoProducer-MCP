@@ -1,0 +1,28 @@
+[module]
+name = "load_gui_recipe"
+layer = "L6"
+summary = "Read one GUI recipe and check its shape."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["name"],"properties":{"name":{"type":"string","x-path":true,"pattern":"^[a-z_]+$"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+expose = false
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_load_gui_recipe.py::test_loads_every_shipped_recipe"
+failure = "test_load_gui_recipe.py::test_unknown_and_broken_recipes"

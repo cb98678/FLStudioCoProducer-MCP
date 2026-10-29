@@ -1,0 +1,27 @@
+[module]
+name = "wait_for_reply"
+layer = "L0"
+summary = "Wait for the complete reply to one request on the bridge transport."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["req_id"],"properties":{"req_id":{"type":"integer"},"timeout_s":{"type":"number","exclusiveMinimum":0,"maximum":60}}}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["parse_frame", "match_reply"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_wait_for_reply.py::test_collects_split_reply"
+failure = "test_wait_for_reply.py::test_times_out"

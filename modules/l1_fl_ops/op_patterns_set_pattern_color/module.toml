@@ -1,0 +1,27 @@
+[module]
+name = "op_patterns_set_pattern_color"
+layer = "L1"
+summary = "Write through patterns.setPatternColor in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"color":{"type":"integer"}},"required":["index","color"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_patterns_set_pattern_color.py::test_matches_fake"
+failure = "test_op_patterns_set_pattern_color.py::test_failures"

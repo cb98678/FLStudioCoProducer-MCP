@@ -1,0 +1,27 @@
+[module]
+name = "set_eq_frequency_verified"
+layer = "L2"
+summary = "Set one mixer EQ band's frequency (0.0 to 1.0, normalized) and confirm it."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","band","value"],"properties":{"index":{"type":"integer","minimum":0},"band":{"type":"integer","minimum":0,"maximum":2},"value":{"type":"number","minimum":0.0,"maximum":1.0}},"additionalProperties":false}'''
+output = '''{"type":["number","string","boolean","integer"]}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 1
+calls = ["op_mixer_set_eq_frequency", "op_mixer_get_eq_frequency"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_eq_frequency_verified.py::test_reads_back_and_changes_fake"
+failure = "test_set_eq_frequency_verified.py::test_failures"

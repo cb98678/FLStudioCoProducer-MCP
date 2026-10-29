@@ -1,0 +1,27 @@
+[module]
+name = "get_plugin_param_by_name"
+layer = "L2"
+summary = "Read one plugin parameter and its display text by parameter name."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","name"],"properties":{"index":{"type":"integer","minimum":0},"name":{"type":"string","minLength":1},"slot_index":{"type":"integer","minimum":-1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["build_param_map", "op_plugins_get_param_value", "op_plugins_get_param_value_string"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_get_plugin_param_by_name.py::test_reads_by_name"
+failure = "test_get_plugin_param_by_name.py::test_unknown_and_ambiguous"

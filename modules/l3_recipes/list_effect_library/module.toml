@@ -1,0 +1,27 @@
+[module]
+name = "list_effect_library"
+layer = "L3"
+summary = "List saved effect settings (the effect library) by plugin or text, optionally with their parameter texts."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"plugin":{"type":"string"},"text":{"type":"string"},"with_params":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_effect_library.py::test_filters"
+failure = "test_list_effect_library.py::test_no_match"

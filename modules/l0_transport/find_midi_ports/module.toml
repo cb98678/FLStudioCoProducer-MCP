@@ -1,0 +1,27 @@
+[module]
+name = "find_midi_ports"
+layer = "L0"
+summary = "Find the virtual MIDI ports the bridge uses."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"prefix":{"type":"string"}}}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_find_midi_ports.py::test_finds_ports_with_index_suffix"
+failure = "test_find_midi_ports.py::test_reports_missing_port"

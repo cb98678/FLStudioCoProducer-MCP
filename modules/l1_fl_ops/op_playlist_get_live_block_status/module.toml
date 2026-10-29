@@ -1,0 +1,27 @@
+[module]
+name = "op_playlist_get_live_block_status"
+layer = "L1"
+summary = "Read playlist.getLiveBlockStatus from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"blockNum":{"type":"integer"},"mode":{"type":"integer"}},"required":["index","blockNum"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_playlist_get_live_block_status.py::test_matches_fake"
+failure = "test_op_playlist_get_live_block_status.py::test_failures"

@@ -1,0 +1,30 @@
+[module]
+name = "call_agent_llm"
+layer = "L5"
+summary = "Send one chat turn to the local LLM endpoint and return the reply."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["prompt"],"properties":{"prompt":{"type":"string","minLength":1},"system":{"type":"string"},"tools":{"type":"array","items":{"type":"object"}},"temperature":{"type":"number","minimum":0,"maximum":2},"max_tokens":{"type":"integer","minimum":1,"maximum":32768}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "gpu"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_call_agent_llm.py::test_round_trip"
+failure = "test_call_agent_llm.py::test_unreachable_and_unset"
+
+[budget]
+lines = 45

@@ -1,0 +1,27 @@
+[module]
+name = "measure_short_term_loudness"
+layer = "L4"
+summary = "Measure short-term loudness (3 second window) over time in LUFS."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"hop_s":{"type":"number","minimum":0.1,"maximum":30}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_short_term_loudness.py::test_known_signal"
+failure = "test_measure_short_term_loudness.py::test_failures"

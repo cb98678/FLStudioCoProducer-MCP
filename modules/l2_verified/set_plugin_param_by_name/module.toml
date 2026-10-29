@@ -1,0 +1,27 @@
+[module]
+name = "set_plugin_param_by_name"
+layer = "L2"
+summary = "Set one plugin parameter by name and confirm by reading it back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","name","value"],"properties":{"index":{"type":"integer","minimum":0},"name":{"type":"string","minLength":1},"value":{"type":"number","minimum":0,"maximum":1},"slot_index":{"type":"integer","minimum":-1}},"additionalProperties":false}'''
+output = '''{"type":"number"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["build_param_map", "op_plugins_set_param_value", "op_plugins_get_param_value"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_plugin_param_by_name.py::test_sets_by_name"
+failure = "test_set_plugin_param_by_name.py::test_failures"

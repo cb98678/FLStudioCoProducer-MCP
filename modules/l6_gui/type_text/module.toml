@@ -1,0 +1,27 @@
+[module]
+name = "type_text"
+layer = "L6"
+summary = "Type text into the focused FL Studio control."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["text"],"properties":{"text":{"type":"string","minLength":1,"maxLength":300},"interval_s":{"type":"number","minimum":0,"maximum":0.5}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_type_text.py::test_types_text"
+failure = "test_type_text.py::test_refuses_control_characters"

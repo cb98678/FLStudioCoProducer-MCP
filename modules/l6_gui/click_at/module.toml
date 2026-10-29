@@ -1,0 +1,27 @@
+[module]
+name = "click_at"
+layer = "L6"
+summary = "Click at a point inside FL Studio's window."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["x","y"],"properties":{"x":{"type":"integer","minimum":0},"y":{"type":"integer","minimum":0},"button":{"type":"string","enum":["left","right","middle"]},"clicks":{"type":"integer","minimum":1,"maximum":3}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_click_at.py::test_clicks_inside_the_window"
+failure = "test_click_at.py::test_refuses_outside_and_when_halted"

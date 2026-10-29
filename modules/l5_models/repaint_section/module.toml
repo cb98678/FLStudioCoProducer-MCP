@@ -1,0 +1,30 @@
+[module]
+name = "repaint_section"
+layer = "L5"
+summary = "Regenerate one time range of an audio file with ACE-Step."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["src_path","start_s","end_s","prompt","out_dir"],"properties":{"src_path":{"type":"string","minLength":1},"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","exclusiveMinimum":0},"prompt":{"type":"string","minLength":3,"maxLength":512},"out_dir":{"type":"string","minLength":1},"seed":{"type":"integer"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = false
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "run_model_op", "detect_silence"]
+models = ["acestep"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_repaint_section.py::test_repaints_a_range"
+failure = "test_repaint_section.py::test_bad_range"
+
+[budget]
+lines = 45

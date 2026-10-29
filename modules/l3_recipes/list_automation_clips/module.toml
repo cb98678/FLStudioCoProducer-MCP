@@ -1,0 +1,27 @@
+[module]
+name = "list_automation_clips"
+layer = "L3"
+summary = "List the automation clips in a project file: channel id, name, the parameter each one drives, and its points."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project"],"properties":{"project":{"type":"string","x-path":true,"minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_automation_clips.py::test_lists_clips_with_targets"
+failure = "test_list_automation_clips.py::test_missing_or_bad_file"

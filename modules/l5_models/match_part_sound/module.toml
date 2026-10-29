@@ -1,0 +1,30 @@
+[module]
+name = "match_part_sound"
+layer = "L5"
+summary = "Design a Serum 2 sound that matches a part of the original: measure it, generate a preset, play it headless, compare, revise (three rounds at most)."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["stem","role","name","out_dir","subfolder"],"properties":{"stem":{"type":"string","x-path":true,"minLength":1},"role":{"type":"string","enum":["sub","bass","stab","chords","pad","arp","pluck","lead","keys"]},"name":{"type":"string","minLength":1,"maxLength":64},"out_dir":{"type":"string","x-path":true,"minLength":1},"subfolder":{"type":"string","x-path":true,"pattern":"^sandbox(/[A-Za-z0-9 _.-]+)*$"},"options":{"type":"object","properties":{"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0},"rounds":{"type":"integer","minimum":1,"maximum":3},"key_pc":{"type":"integer","minimum":0,"maximum":11},"notes":{"type":"array"},"template_project":{"type":"string"},"presets_dir":{"type":"string"},"direction":{"type":"object"}},"additionalProperties":false}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["state","wav","preset","rounds"],"properties":{"state":{"type":"string"},"wav":{"type":"string"},"preset":{"type":"string"},"rounds":{"type":"array"},"best":{"type":"integer"},"match":{"type":"boolean"},"words":{"type":"array"}}}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "measure_part_sound", "generate_serum_preset", "render_serum_sound"]
+models = ["serum", "serummcp"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_match_part_sound.py::test_a_part_is_matched_in_rounds_and_the_best_kept"
+failure = "test_match_part_sound.py::test_errors"
+
+[budget]
+lines = 55

@@ -1,0 +1,27 @@
+[module]
+name = "op_mixer_set_active_track"
+layer = "L1"
+summary = "Write through mixer.setActiveTrack in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"}},"required":["index"],"additionalProperties":false}'''
+output = '''{}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 27
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_mixer_set_active_track.py::test_matches_fake"
+failure = "test_op_mixer_set_active_track.py::test_failures"

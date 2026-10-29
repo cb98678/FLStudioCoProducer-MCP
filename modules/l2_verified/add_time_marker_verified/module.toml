@@ -1,0 +1,27 @@
+[module]
+name = "add_time_marker_verified"
+layer = "L2"
+summary = "Add a named time marker to the arrangement and confirm it exists."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["time","name"],"properties":{"time":{"type":"integer","minimum":0},"name":{"type":"string","minLength":1,"maxLength":64}},"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_arrangement_add_auto_time_marker", "op_arrangement_get_marker_name"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_add_time_marker_verified.py::test_adds_and_finds_marker"
+failure = "test_add_time_marker_verified.py::test_failures"

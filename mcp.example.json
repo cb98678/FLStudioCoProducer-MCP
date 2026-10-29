@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "fl-bridge": {
+      "command": "coproducer-fl-bridge",
+      "args": ["--home", "C:/coproducer", "--run", "default"]
+    },
+    "studio-audio": {
+      "command": "coproducer-studio-audio",
+      "args": ["--home", "C:/coproducer", "--run", "default"]
+    },
+    "studio-ml": {
+      "command": "coproducer-studio-ml",
+      "args": ["--home", "C:/coproducer", "--run", "default"]
+    },
+    "desktop-control": {
+      "command": "coproducer-desktop-control",
+      "args": ["--home", "C:/coproducer", "--run", "default", "--ceiling", "A2"]
+    }
+  }
+}

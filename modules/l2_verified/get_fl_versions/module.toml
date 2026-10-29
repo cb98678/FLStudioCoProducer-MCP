@@ -1,0 +1,27 @@
+[module]
+name = "get_fl_versions"
+layer = "L2"
+summary = "Return the FL version and API level recorded by the last probe."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["get_config_value"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_get_fl_versions.py::test_returns_recorded_values"
+failure = "test_get_fl_versions.py::test_not_recorded"

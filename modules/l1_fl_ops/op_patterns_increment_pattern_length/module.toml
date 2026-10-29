@@ -1,0 +1,27 @@
+[module]
+name = "op_patterns_increment_pattern_length"
+layer = "L1"
+summary = "Write through patterns.incrementPatternLength in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"delta":{"type":"integer"}},"required":["index","delta"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 45
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_patterns_increment_pattern_length.py::test_matches_fake"
+failure = "test_op_patterns_increment_pattern_length.py::test_failures"

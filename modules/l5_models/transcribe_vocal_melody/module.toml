@@ -1,0 +1,30 @@
+[module]
+name = "transcribe_vocal_melody"
+layer = "L5"
+summary = "Notes of a separated vocal stem from its pitch (torchcrepe), with a key estimate, optionally written as MIDI."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"offset_s":{"type":"number","minimum":0},"duration_s":{"type":"number","exclusiveMinimum":0},"min_conf":{"type":"number","minimum":0.1,"maximum":0.95},"out_midi_path":{"type":"string"},"bpm":{"type":"number","minimum":20,"maximum":300}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["run_model_op", "write_midi_file"]
+models = ["mir"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_transcribe_vocal_melody.py::test_notes_key_and_midi"
+failure = "test_transcribe_vocal_melody.py::test_errors"
+
+[budget]
+lines = 45

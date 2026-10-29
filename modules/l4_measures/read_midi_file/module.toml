@@ -1,0 +1,30 @@
+[module]
+name = "read_midi_file"
+layer = "L4"
+summary = "Read a MIDI file into a note list in beats."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_read_midi_file.py::test_reads_notes_tempo_and_signature"
+failure = "test_read_midi_file.py::test_missing_and_garbage_files"
+
+[budget]
+lines = 50

@@ -1,0 +1,27 @@
+[module]
+name = "set_rough_balance"
+layer = "L3"
+summary = "Set starting fader levels in dB for many mixer tracks, each verified."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["levels_db"],"properties":{"levels_db":{"type":"object","propertyNames":{"pattern":"^[0-9]{1,4}$"},"maxProperties":500,"additionalProperties":{"type":"number","minimum":-60,"maximum":6}}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["set_track_volume_db_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_rough_balance.py::test_sets_all_levels"
+failure = "test_set_rough_balance.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "add_transition_synths"
+layer = "L3"
+summary = "Add editable 3x Osc risers, downlifters and impact chords around section markers in a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project","synths"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"synths":{"type":"array","items":{"type":"object","required":["kind","at"],"properties":{"kind":{"type":"string","enum":["noise_riser","noise_downlifter","impact_synth"]},"at":{"type":["string","number"]},"bars":{"type":"number","exclusiveMinimum":0,"maximum":32},"insert":{"type":"integer","minimum":0,"maximum":126},"volume":{"type":"integer","minimum":0,"maximum":12800}}}},"key":{"type":"string","minLength":1},"row":{"type":"integer","minimum":0,"maximum":499}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_add_transition_synths.py::test_adds_each_synth"
+failure = "test_add_transition_synths.py::test_failures"

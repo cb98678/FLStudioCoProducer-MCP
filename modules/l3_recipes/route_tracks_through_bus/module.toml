@@ -1,0 +1,27 @@
+[module]
+name = "route_tracks_through_bus"
+layer = "L3"
+summary = "Name a mixer track as a bus, send source tracks through it instead of straight to the master, and send the bus to the master, verified."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["sources","bus_index","name"],"properties":{"sources":{"type":"array","items":{"type":"integer","minimum":1},"minItems":1,"maxItems":125},"bus_index":{"type":"integer","minimum":1},"name":{"type":"string","minLength":1,"maxLength":64},"level":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["set_track_name_verified", "create_send_route", "op_mixer_set_route_to", "op_mixer_get_route_send_active", "op_mixer_get_route_to_level"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_route_tracks_through_bus.py::test_routes_through_the_bus"
+failure = "test_route_tracks_through_bus.py::test_failures"

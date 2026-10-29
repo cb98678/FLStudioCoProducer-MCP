@@ -1,0 +1,27 @@
+[module]
+name = "solo_group"
+layer = "L3"
+summary = "Solo a set of mixer tracks and un-solo the rest, remembering the previous state."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["indexes"],"properties":{"indexes":{"type":"array","items":{"type":"integer","minimum":0}}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_track_count", "op_mixer_is_track_solo", "solo_track_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_solo_group.py::test_solos_group_and_remembers"
+failure = "test_solo_group.py::test_failures"

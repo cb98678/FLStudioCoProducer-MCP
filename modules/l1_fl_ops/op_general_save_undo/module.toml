@@ -1,0 +1,27 @@
+[module]
+name = "op_general_save_undo"
+layer = "L1"
+summary = "Write through general.saveUndo in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"undoName":{"type":"string"},"flags":{"type":"integer"},"update":{"type":"boolean"}},"required":["undoName","flags"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_general_save_undo.py::test_matches_fake"
+failure = "test_op_general_save_undo.py::test_failures"

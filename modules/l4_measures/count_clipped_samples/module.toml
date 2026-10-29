@@ -1,0 +1,27 @@
+[module]
+name = "count_clipped_samples"
+layer = "L4"
+summary = "Count samples at or beyond a clipping threshold and report the longest run of consecutive clipped samples."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"threshold":{"type":"number","minimum":0.5,"maximum":1.0}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_count_clipped_samples.py::test_known_signal"
+failure = "test_count_clipped_samples.py::test_failures"

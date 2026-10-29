@@ -1,0 +1,30 @@
+"""Tests for op_ui_preview_browser_menu_item: golden against the fake FL, and failure handling."""
+import pytest
+
+from coproducer.fakefl import FakeFL
+from coproducer.l1load import load_l1
+
+OP = "op_ui_preview_browser_menu_item"
+SAMPLE = ()
+
+
+@pytest.fixture
+def fl():
+    f = FakeFL().install()
+    yield f
+    f.uninstall()
+
+
+def test_matches_fake(fl):
+    r = load_l1(OP)(*SAMPLE)
+    assert r['ok'] is True
+    assert fl.calls('ui', 'previewBrowserMenuItem')
+
+
+def test_failures(fl):
+    def boom(*a, **k):
+        raise RuntimeError("fl broke")
+
+    setattr(fl.modules["ui"], "previewBrowserMenuItem", boom)
+    r = load_l1(OP)(*SAMPLE)
+    assert r["ok"] is False and r["error"]["code"] == "E_INTERNAL"

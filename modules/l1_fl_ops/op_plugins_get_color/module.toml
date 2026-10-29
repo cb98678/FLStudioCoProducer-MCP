@@ -1,0 +1,27 @@
+[module]
+name = "op_plugins_get_color"
+layer = "L1"
+summary = "Read plugins.getColor from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"slotIndex":{"type":"integer"},"flag":{"type":"integer"},"useGlobalIndex":{"type":"boolean"}},"required":["index"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 12
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_plugins_get_color.py::test_matches_fake"
+failure = "test_op_plugins_get_color.py::test_failures"

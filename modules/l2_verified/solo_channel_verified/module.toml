@@ -1,0 +1,27 @@
+[module]
+name = "solo_channel_verified"
+layer = "L2"
+summary = "Set a channel's solo state to an explicit value and confirm."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","solo"],"properties":{"index":{"type":"integer","minimum":0},"solo":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"boolean"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_channels_is_channel_solo", "op_channels_solo_channel"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_solo_channel_verified.py::test_toggles_only_when_needed"
+failure = "test_solo_channel_verified.py::test_failures"

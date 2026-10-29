@@ -1,0 +1,27 @@
+[module]
+name = "op_playlist_select_all"
+layer = "L1"
+summary = "Write through playlist.selectAll in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"required":[],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 12
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_playlist_select_all.py::test_matches_fake"
+failure = "test_op_playlist_select_all.py::test_failures"

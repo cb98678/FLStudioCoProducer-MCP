@@ -1,0 +1,27 @@
+[module]
+name = "diff_state_snapshots"
+layer = "L2"
+summary = "Compare two state snapshots and list every value that changed."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["before","after"],"properties":{"before":{"type":"object"},"after":{"type":"object"}},"additionalProperties":false}'''
+output = '''{"type":"array","items":{"type":"object"}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_diff_state_snapshots.py::test_lists_changes"
+failure = "test_diff_state_snapshots.py::test_equal_snapshots_have_no_changes"

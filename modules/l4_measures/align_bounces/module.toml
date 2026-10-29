@@ -1,0 +1,27 @@
+[module]
+name = "align_bounces"
+layer = "L4"
+summary = "Find the delay that best aligns two bounces by cross-correlation."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path_a","path_b"],"properties":{"path_a":{"type":"string","minLength":1},"path_b":{"type":"string","minLength":1},"max_lag_s":{"type":"number","minimum":0.001,"maximum":10}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_align_bounces.py::test_recovers_the_delay"
+failure = "test_align_bounces.py::test_failures"

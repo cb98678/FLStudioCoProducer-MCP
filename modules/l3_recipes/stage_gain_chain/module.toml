@@ -1,0 +1,27 @@
+[module]
+name = "stage_gain_chain"
+layer = "L3"
+summary = "Trim a chain of gain stages toward target peak levels, reading the meters at each stage."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["stages"],"properties":{"stages":{"type":"array","items":{"type":"object","required":["index","target_peak_db"],"properties":{"index":{"type":"integer","minimum":0},"target_peak_db":{"type":"number","maximum":0}},"additionalProperties":false}},"hold_s":{"type":"number","minimum":0,"maximum":30},"max_delta_db":{"type":"number","minimum":0.1,"maximum":12}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["get_track_peak_db", "apply_gain_trim"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_stage_gain_chain.py::test_trims_each_stage_toward_its_target"
+failure = "test_stage_gain_chain.py::test_silence_is_skipped_and_errors_surface"

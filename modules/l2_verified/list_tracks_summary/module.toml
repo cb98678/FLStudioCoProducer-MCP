@@ -1,0 +1,27 @@
+[module]
+name = "list_tracks_summary"
+layer = "L2"
+summary = "List mixer tracks with name, volume in raw and dB form, pan, mute and solo."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"start":{"type":"integer","minimum":0},"count":{"type":"integer","minimum":0},"only_named":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"array","items":{"type":"object"}}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_track_count", "op_mixer_get_track_name", "op_mixer_get_track_volume", "op_mixer_get_track_pan", "op_mixer_is_track_muted", "op_mixer_is_track_solo"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_tracks_summary.py::test_lists_all_tracks"
+failure = "test_list_tracks_summary.py::test_surfaces_read_error"

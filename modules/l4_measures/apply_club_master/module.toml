@@ -1,0 +1,30 @@
+[module]
+name = "apply_club_master"
+layer = "L4"
+summary = "Master a mixdown to a targets file: an optional broad EQ toward the person's reference profile, gain into a soft clipper and a look-ahead true-peak limiter until the loudness lands, then check it independently."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","targets_file","out_path"],"properties":{"path":{"type":"string","x-path":true,"minLength":1},"targets_file":{"type":"string","x-path":true,"minLength":1},"out_path":{"type":"string","x-path":true,"minLength":1},"lufs":{"type":"number","minimum":-30,"maximum":-4},"profile":{"type":"string","x-path":true},"match_amount":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "load_targets_file", "measure_integrated_loudness", "measure_true_peak", "measure_crest_factor"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_club_master.py::test_masters_to_the_club_target"
+failure = "test_apply_club_master.py::test_errors_and_crest_floor"
+
+[budget]
+lines = 45

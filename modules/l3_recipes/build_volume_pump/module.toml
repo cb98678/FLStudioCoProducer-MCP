@@ -1,0 +1,27 @@
+[module]
+name = "build_volume_pump"
+layer = "L3"
+summary = "Make chosen inserts pump on the kick with automation clips on a Fruity Balance in each (no compressor sidechain), in a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project","targets"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"targets":{"type":"array","items":{"type":"object","required":["insert"],"properties":{"insert":{"type":"integer","minimum":1,"maximum":126},"depth":{"type":"string","enum":["full","deep","medium"]},"depth_db":{"type":"number","minimum":-40,"maximum":0},"slot":{"type":"integer","minimum":0,"maximum":9}}}},"kick_channel":{"type":"integer","minimum":-1},"row":{"type":"integer","minimum":0,"maximum":499}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_volume_pump.py::test_builds_the_pump"
+failure = "test_build_volume_pump.py::test_failures"

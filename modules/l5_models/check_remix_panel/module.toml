@@ -1,0 +1,30 @@
+[module]
+name = "check_remix_panel"
+layer = "L5"
+summary = "Judge a remix with a panel that checks itself: measures against the targets, section contrast, length against the plan, and the audio critic graded on questions the plan already answers."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","plan_file","targets_file"],"properties":{"path":{"type":"string","minLength":1},"plan_file":{"type":"string","minLength":1},"targets_file":{"type":"string","minLength":1},"mixdown":{"type":"string"},"references":{"type":"array","items":{"type":"string"}},"options":{"type":"object"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A1"
+cost = "gpu"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "build_measure_report", "load_targets_file", "check_report_limits", "measure_section_levels", "run_model_op", "compare_to_references_ml", "measure_dc_offset", "measure_integrated_loudness"]
+models = ["flamingo", "mir", "roformer"]
+binaries = ["ffmpeg"]
+packages = []
+
+[tests]
+golden = "test_check_remix_panel.py::test_panel_passes_a_good_master_and_grades_the_critic"
+failure = "test_check_remix_panel.py::test_problems_stand_and_a_failed_critic_is_not_trusted"
+
+[budget]
+lines = 70

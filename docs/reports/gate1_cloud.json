@@ -1,0 +1,3325 @@
+{
+ "g1_1": {
+  "fixtures": 19,
+  "checks": 108,
+  "failed": 0,
+  "rows": [
+   {
+    "fixture": "sine_1k_-6dB",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -6.02,
+      "want": -6.02,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -9.03,
+      "want": -9.03,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "correlation",
+      "got": 1.0,
+      "want": 1.0,
+      "tol": 0.02,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -6.01,
+      "want": -6.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -6.02,
+      "want": -6.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -6.01,
+      "want": -6.055,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "sine_1k_-20dB",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -20.0,
+      "want": -20.0,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -23.01,
+      "want": -23.01,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "correlation",
+      "got": 1.0,
+      "want": 1.0,
+      "tol": 0.02,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -19.99,
+      "want": -20.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -19.99,
+      "want": -20.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -19.99,
+      "want": -20.035,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "sine_100_-12dB",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -12.04,
+      "want": -12.04,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -15.05,
+      "want": -15.05,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "correlation",
+      "got": 1.0,
+      "want": 1.0,
+      "tol": 0.02,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -13.87,
+      "want": -13.9,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -12.04,
+      "want": -12.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -13.87,
+      "want": -13.904,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "sine_1k_-60dB",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -60.0,
+      "want": -60.0,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -63.01,
+      "want": -63.01,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "correlation",
+      "got": 1.0,
+      "want": 1.0,
+      "tol": 0.02,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -59.99,
+      "want": -60.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -59.99,
+      "want": -60.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -59.99,
+      "want": -60.035,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "white_noise",
+    "checks": [
+     {
+      "what": "correlation near 0",
+      "got": -0.001,
+      "want": "|c| < 0.1",
+      "ok": true,
+      "ref": "maths"
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -7.83,
+      "want": -7.8,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.01,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": 1.01,
+      "want": 1.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -7.83,
+      "want": -7.869,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "drum_loop_140",
+    "checks": [
+     {
+      "what": "correlation",
+      "got": 1.0,
+      "want": 1.0,
+      "tol": 0.02,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -12.13,
+      "want": -12.1,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -1.04,
+      "want": -1.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -12.13,
+      "want": -12.161,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "drum_loop_mono",
+    "checks": [
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -15.53,
+      "want": -15.5,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.6,
+      "want": 0.6,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -1.04,
+      "want": -1.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -15.53,
+      "want": -15.568,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "out_of_phase",
+    "checks": [
+     {
+      "what": "correlation",
+      "got": -1.0,
+      "want": -1.0,
+      "tol": 0.02,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -7.95,
+      "want": -8.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -7.95,
+      "want": -8.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -7.95,
+      "want": -7.994,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "side_only",
+    "checks": [
+     {
+      "what": "correlation",
+      "got": -1.0,
+      "want": -1.0,
+      "tol": 0.02,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -7.95,
+      "want": -8.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -7.95,
+      "want": -8.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -7.95,
+      "want": -7.994,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "hard_clipped",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "clipped_samples",
+      "got": 329280,
+      "want": ">= 1000",
+      "ok": true,
+      "ref": "maths"
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": 0.97,
+      "want": 1.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": 0.06,
+      "want": 0.1,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": 0.97,
+      "want": 0.932,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "intersample_over",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -1.43,
+      "want": -1.427,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "true_peak_dbtp",
+      "got": 1.6,
+      "want": 1.584,
+      "tol": 0.35,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "intersample_over flagged",
+      "got": true,
+      "want": true,
+      "ok": true,
+      "ref": "maths"
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": 4.63,
+      "want": 4.6,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.35,
+      "want": 0.4,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": 1.6,
+      "want": 1.6,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": 4.63,
+      "want": 4.584,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "silence_gap",
+    "checks": [
+     {
+      "what": "silent regions",
+      "got": 1,
+      "want": 1,
+      "ok": true,
+      "ref": "maths"
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -11.33,
+      "want": -11.3,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 4.62,
+      "want": 4.6,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -10.45,
+      "want": -10.5,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -11.33,
+      "want": -11.372,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "loudness_steps",
+    "checks": [
+     {
+      "what": "loudness range",
+      "got": 20.0,
+      "want": ">= 10.0",
+      "ok": true,
+      "ref": "maths"
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -14.22,
+      "want": -14.2,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 20.0,
+      "want": 20.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -13.97,
+      "want": -14.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -14.22,
+      "want": -14.265,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "dc_offset",
+    "checks": [
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -10.45,
+      "want": -10.5,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -6.02,
+      "want": -6.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -10.45,
+      "want": -10.492,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "rate_44k_sine",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -6.02,
+      "want": -6.02,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -9.03,
+      "want": -9.03,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -6.01,
+      "want": -6.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -6.02,
+      "want": -6.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -6.01,
+      "want": -6.056,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "rate_96k_sine",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -6.02,
+      "want": -6.02,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -9.03,
+      "want": -9.03,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -6.03,
+      "want": -6.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -6.02,
+      "want": -6.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -6.03,
+      "want": -6.052,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "pcm16_sine",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -6.02,
+      "want": -6.02,
+      "tol": 0.12000000000000001,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -9.03,
+      "want": -9.03,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -6.01,
+      "want": -6.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -6.02,
+      "want": -6.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -6.01,
+      "want": -6.055,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "pcm24_sine",
+    "checks": [
+     {
+      "what": "sample_peak_db",
+      "got": -6.02,
+      "want": -6.02,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "rms_db",
+      "got": -9.03,
+      "want": -9.03,
+      "tol": 0.1,
+      "ref": "maths",
+      "ok": true
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -6.01,
+      "want": -6.0,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -6.02,
+      "want": -6.0,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -6.01,
+      "want": -6.055,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   },
+   {
+    "fixture": "bass_in_side",
+    "checks": [
+     {
+      "what": "low end mono flag",
+      "got": false,
+      "want": false,
+      "ok": true,
+      "ref": "maths"
+     },
+     {
+      "what": "lufs vs ffmpeg",
+      "got": -14.05,
+      "want": -14.1,
+      "tol": 0.15,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lra vs ffmpeg",
+      "got": 0.0,
+      "want": 0.0,
+      "tol": 0.6,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "true peak vs ffmpeg",
+      "got": -10.45,
+      "want": -10.5,
+      "tol": 0.35,
+      "ref": "ffmpeg ebur128",
+      "ok": true
+     },
+     {
+      "what": "lufs vs pyloudnorm",
+      "got": -14.05,
+      "want": -14.079,
+      "tol": 0.15,
+      "ref": "pyloudnorm",
+      "ok": true
+     }
+    ]
+   }
+  ],
+  "tolerances": {
+   "peak": 0.1,
+   "rms": 0.1,
+   "lufs": 0.15,
+   "lra": 0.6,
+   "tp": 0.35,
+   "corr": 0.02
+  },
+  "ffmpeg": true
+ },
+ "g1_5": {
+  "tempo": {
+   "cases": 68,
+   "exact": 50,
+   "octave_error": 16,
+   "wrong": 2,
+   "exact_rate": 0.735,
+   "exact_or_octave_rate": 0.971,
+   "truth_in_candidates_rate": 1.0,
+   "silent_wrong": 0,
+   "silent_wrong_cases": [],
+   "flagged_when_correct": 41,
+   "correct": 50,
+   "genre_guided_cases": 20,
+   "genre_guided_exact_rate": 1.0,
+   "rows": [
+    {
+     "bpm": 70,
+     "case": "plain",
+     "top": 70.06,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      70.06,
+      140.16
+     ],
+     "strengths": [
+      0.7266,
+      0.4226
+     ]
+    },
+    {
+     "bpm": 70,
+     "case": "swing",
+     "top": 70.05,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      70.05,
+      107.39,
+      86.24
+     ],
+     "strengths": [
+      0.7276,
+      0.1665,
+      -0.036
+     ]
+    },
+    {
+     "bpm": 70,
+     "case": "noisy",
+     "top": 70.06,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      70.06,
+      140.15,
+      155.51,
+      127.49,
+      65.91
+     ],
+     "strengths": [
+      0.6886,
+      0.5532,
+      -0.0098,
+      -0.0109,
+      -0.0231
+     ]
+    },
+    {
+     "bpm": 85,
+     "case": "plain",
+     "top": 85.06,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      85.06,
+      170.1
+     ],
+     "strengths": [
+      0.8655,
+      0.4113
+     ]
+    },
+    {
+     "bpm": 85,
+     "case": "swing",
+     "top": 85.06,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      85.06,
+      130.38,
+      63.12,
+      78.38
+     ],
+     "strengths": [
+      0.8654,
+      0.1819,
+      0.1366,
+      -0.0384
+     ]
+    },
+    {
+     "bpm": 85,
+     "case": "noisy",
+     "top": 85.07,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      85.07,
+      170.1,
+      195.26,
+      150.92,
+      64.51
+     ],
+     "strengths": [
+      0.8469,
+      0.5498,
+      -0.024,
+      -0.0259,
+      -0.0342
+     ]
+    },
+    {
+     "bpm": 90,
+     "case": "plain",
+     "top": 90.01,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      90.01,
+      180.29,
+      123.63
+     ],
+     "strengths": [
+      0.7723,
+      0.385,
+      -0.0657
+     ]
+    },
+    {
+     "bpm": 90,
+     "case": "swing",
+     "top": 90.01,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      90.01,
+      137.64,
+      66.86
+     ],
+     "strengths": [
+      0.7703,
+      0.1822,
+      0.1396
+     ]
+    },
+    {
+     "bpm": 90,
+     "case": "noisy",
+     "top": 90.0,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      90.0,
+      180.27,
+      62.51,
+      64.34,
+      160.84
+     ],
+     "strengths": [
+      0.7095,
+      0.5076,
+      -0.0197,
+      -0.0267,
+      -0.0268
+     ]
+    },
+    {
+     "bpm": 100,
+     "case": "plain",
+     "top": 100.1,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      100.1,
+      66.72,
+      86.2,
+      119.24
+     ],
+     "strengths": [
+      0.9039,
+      0.2984,
+      -0.059,
+      -0.0639
+     ]
+    },
+    {
+     "bpm": 100,
+     "case": "swing",
+     "top": 100.1,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      100.1,
+      152.81,
+      74.2
+     ],
+     "strengths": [
+      0.904,
+      0.1722,
+      0.1408
+     ]
+    },
+    {
+     "bpm": 100,
+     "case": "noisy",
+     "top": 100.13,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      100.13,
+      66.71,
+      63.39,
+      70.22,
+      175.33
+     ],
+     "strengths": [
+      0.8792,
+      0.399,
+      -0.0251,
+      -0.0261,
+      -0.0317
+     ]
+    },
+    {
+     "bpm": 110,
+     "case": "plain",
+     "top": 110.08,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      110.08,
+      73.28,
+      61.94,
+      89.49,
+      142.17
+     ],
+     "strengths": [
+      0.9519,
+      0.3253,
+      -0.0522,
+      -0.0663,
+      -0.0723
+     ]
+    },
+    {
+     "bpm": 110,
+     "case": "swing",
+     "top": 110.08,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      110.08,
+      81.65,
+      168.41,
+      66.48
+     ],
+     "strengths": [
+      0.9519,
+      0.1488,
+      0.1413,
+      0.1145
+     ]
+    },
+    {
+     "bpm": 110,
+     "case": "noisy",
+     "top": 110.1,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      110.1,
+      73.28,
+      69.75,
+      61.02,
+      64.47
+     ],
+     "strengths": [
+      0.9408,
+      0.4339,
+      -0.0331,
+      -0.044,
+      -0.0456
+     ]
+    },
+    {
+     "bpm": 120,
+     "case": "plain",
+     "top": 119.92,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      119.92,
+      80.07,
+      70.35,
+      92.4,
+      170.87
+     ],
+     "strengths": [
+      0.9658,
+      0.338,
+      -0.0615,
+      -0.0731,
+      -0.0738
+     ]
+    },
+    {
+     "bpm": 120,
+     "case": "swing",
+     "top": 119.92,
+     "class": "exact",
+     "ambiguous": false,
+     "in_candidates": true,
+     "candidates": [
+      119.92,
+      89.18,
+      183.07,
+      72.52,
+      64.43
+     ],
+     "strengths": [
+      0.9657,
+      0.1534,
+      0.1448,
+      0.1132,
+      -0.0606
+     ]
+    },
+    {
+     "bpm": 120,
+     "case": "noisy",
+     "top": 119.89,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      119.89,
+      80.07,
+      75.06,
+      85.15,
+      63.71
+     ],
+     "strengths": [
+      0.956,
+      0.4602,
+      -0.0388,
+      -0.0424,
+      -0.0457
+     ]
+    },
+    {
+     "bpm": 125,
+     "case": "plain",
+     "top": 125.0,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      125.0,
+      62.5,
+      83.34,
+      74.89,
+      187.73
+     ],
+     "strengths": [
+      0.9792,
+      0.7221,
+      0.3106,
+      -0.0636,
+      -0.071
+     ]
+    },
+    {
+     "bpm": 125,
+     "case": "swing",
+     "top": 125.0,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      125.0,
+      62.5,
+      191.43,
+      92.79,
+      75.63
+     ],
+     "strengths": [
+      0.9792,
+      0.7221,
+      0.1283,
+      0.1278,
+      0.1175
+     ]
+    },
+    {
+     "bpm": 125,
+     "case": "noisy",
+     "top": 125.0,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      125.0,
+      62.5,
+      83.34,
+      78.9,
+      88.17
+     ],
+     "strengths": [
+      0.9701,
+      0.7148,
+      0.4436,
+      -0.0467,
+      -0.0502
+     ]
+    },
+    {
+     "bpm": 128,
+     "case": "plain",
+     "top": 127.96,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      127.96,
+      63.98,
+      85.31,
+      77.78,
+      94.65
+     ],
+     "strengths": [
+      0.9784,
+      0.7295,
+      0.3718,
+      -0.0642,
+      -0.0704
+     ]
+    },
+    {
+     "bpm": 128,
+     "case": "swing",
+     "top": 127.96,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      127.96,
+      63.98,
+      95.17,
+      195.21,
+      77.31
+     ],
+     "strengths": [
+      0.9782,
+      0.7294,
+      0.1548,
+      0.1442,
+      0.1293
+     ]
+    },
+    {
+     "bpm": 128,
+     "case": "noisy",
+     "top": 127.95,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      127.95,
+      63.98,
+      85.31,
+      80.28,
+      91.15
+     ],
+     "strengths": [
+      0.9695,
+      0.7203,
+      0.503,
+      -0.0459,
+      -0.05
+     ]
+    },
+    {
+     "bpm": 130,
+     "case": "plain",
+     "top": 130.17,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      130.17,
+      64.99,
+      86.63,
+      79.65,
+      94.61
+     ],
+     "strengths": [
+      0.9349,
+      0.6439,
+      0.3701,
+      -0.0616,
+      -0.0681
+     ]
+    },
+    {
+     "bpm": 130,
+     "case": "swing",
+     "top": 130.17,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      130.17,
+      64.99,
+      96.7,
+      78.52,
+      85.95
+     ],
+     "strengths": [
+      0.9348,
+      0.6445,
+      0.1463,
+      0.1183,
+      -0.0655
+     ]
+    },
+    {
+     "bpm": 130,
+     "case": "noisy",
+     "top": 130.22,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      130.22,
+      64.98,
+      86.64,
+      81.52,
+      79.56
+     ],
+     "strengths": [
+      0.9106,
+      0.5983,
+      0.5075,
+      -0.0457,
+      -0.0485
+     ]
+    },
+    {
+     "bpm": 135,
+     "case": "plain",
+     "top": 134.81,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      134.81,
+      67.55,
+      90.01
+     ],
+     "strengths": [
+      0.911,
+      0.714,
+      0.3154
+     ]
+    },
+    {
+     "bpm": 135,
+     "case": "swing",
+     "top": 134.81,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      134.81,
+      67.55,
+      100.35,
+      81.59,
+      77.0
+     ],
+     "strengths": [
+      0.9111,
+      0.7138,
+      0.1513,
+      0.1404,
+      -0.0765
+     ]
+    },
+    {
+     "bpm": 135,
+     "case": "noisy",
+     "top": 134.76,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      134.76,
+      67.57,
+      90.01,
+      84.17,
+      96.51
+     ],
+     "strengths": [
+      0.8733,
+      0.6869,
+      0.4368,
+      -0.0527,
+      -0.0563
+     ]
+    },
+    {
+     "bpm": 140,
+     "case": "plain",
+     "top": 140.15,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      140.15,
+      70.05,
+      93.43
+     ],
+     "strengths": [
+      0.9583,
+      0.7244,
+      0.3559
+     ]
+    },
+    {
+     "bpm": 140,
+     "case": "swing",
+     "top": 140.15,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      140.15,
+      70.05,
+      104.04,
+      84.68
+     ],
+     "strengths": [
+      0.9583,
+      0.7243,
+      0.1453,
+      0.1068
+     ]
+    },
+    {
+     "bpm": 140,
+     "case": "noisy",
+     "top": 140.19,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      140.19,
+      70.07,
+      93.42,
+      88.13,
+      65.34
+     ],
+     "strengths": [
+      0.9413,
+      0.6911,
+      0.493,
+      -0.048,
+      -0.0594
+     ]
+    },
+    {
+     "bpm": 150,
+     "case": "plain",
+     "top": 75.0,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      75.0,
+      149.98,
+      100.11
+     ],
+     "strengths": [
+      0.8232,
+      0.8228,
+      0.3666
+     ]
+    },
+    {
+     "bpm": 150,
+     "case": "swing",
+     "top": 149.98,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      149.98,
+      75.0,
+      90.69,
+      111.6,
+      63.94
+     ],
+     "strengths": [
+      0.8239,
+      0.8232,
+      0.1366,
+      0.1153,
+      0.1094
+     ]
+    },
+    {
+     "bpm": 150,
+     "case": "noisy",
+     "top": 75.0,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      75.0,
+      149.99,
+      100.1,
+      62.3,
+      94.11
+     ],
+     "strengths": [
+      0.8169,
+      0.7557,
+      0.5012,
+      -0.0467,
+      -0.0604
+     ]
+    },
+    {
+     "bpm": 160,
+     "case": "plain",
+     "top": 160.17,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      160.17,
+      80.07,
+      106.55,
+      63.98
+     ],
+     "strengths": [
+      0.9455,
+      0.802,
+      0.3569,
+      0.2874
+     ]
+    },
+    {
+     "bpm": 160,
+     "case": "swing",
+     "top": 160.17,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      160.17,
+      80.07,
+      96.8,
+      119.08,
+      68.26
+     ],
+     "strengths": [
+      0.9453,
+      0.8018,
+      0.1259,
+      0.1231,
+      0.0842
+     ]
+    },
+    {
+     "bpm": 160,
+     "case": "noisy",
+     "top": 160.23,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      160.23,
+      80.09,
+      106.55,
+      63.98,
+      61.38
+     ],
+     "strengths": [
+      0.9343,
+      0.7763,
+      0.5046,
+      0.4064,
+      -0.0532
+     ]
+    },
+    {
+     "bpm": 170,
+     "case": "plain",
+     "top": 170.1,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      170.1,
+      85.06,
+      113.21,
+      67.95
+     ],
+     "strengths": [
+      0.9427,
+      0.8646,
+      0.3357,
+      0.2794
+     ]
+    },
+    {
+     "bpm": 170,
+     "case": "swing",
+     "top": 170.1,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      170.1,
+      85.06,
+      102.64,
+      64.01,
+      126.39
+     ],
+     "strengths": [
+      0.9427,
+      0.8646,
+      0.1165,
+      0.0946,
+      0.0907
+     ]
+    },
+    {
+     "bpm": 170,
+     "case": "noisy",
+     "top": 170.14,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      170.14,
+      85.08,
+      113.21,
+      67.95,
+      70.83
+     ],
+     "strengths": [
+      0.9357,
+      0.8539,
+      0.479,
+      0.3984,
+      -0.0594
+     ]
+    },
+    {
+     "bpm": 174,
+     "case": "plain",
+     "top": 174.27,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      174.27,
+      86.93,
+      116.02,
+      69.56
+     ],
+     "strengths": [
+      0.8724,
+      0.8198,
+      0.3211,
+      0.3067
+     ]
+    },
+    {
+     "bpm": 174,
+     "case": "swing",
+     "top": 174.28,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      174.28,
+      86.93,
+      74.13,
+      129.43,
+      65.51
+     ],
+     "strengths": [
+      0.8722,
+      0.8193,
+      0.1083,
+      0.1004,
+      0.0997
+     ]
+    },
+    {
+     "bpm": 174,
+     "case": "noisy",
+     "top": 174.38,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      174.38,
+      86.9,
+      116.02,
+      69.56,
+      65.74
+     ],
+     "strengths": [
+      0.8392,
+      0.7874,
+      0.4602,
+      0.4374,
+      -0.0639
+     ]
+    },
+    {
+     "bpm": 180,
+     "case": "plain",
+     "top": 180.28,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      180.28,
+      90.01,
+      119.91,
+      72.03,
+      100.94
+     ],
+     "strengths": [
+      0.8906,
+      0.7638,
+      0.3556,
+      0.2927,
+      -0.126
+     ]
+    },
+    {
+     "bpm": 180,
+     "case": "swing",
+     "top": 180.28,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      180.28,
+      90.01,
+      133.8,
+      108.65,
+      67.8
+     ],
+     "strengths": [
+      0.8907,
+      0.764,
+      0.1164,
+      0.1043,
+      0.0924
+     ]
+    },
+    {
+     "bpm": 180,
+     "case": "noisy",
+     "top": 180.39,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      180.39,
+      90.01,
+      119.92,
+      72.04,
+      68.64
+     ],
+     "strengths": [
+      0.8708,
+      0.7039,
+      0.5158,
+      0.4243,
+      -0.0565
+     ]
+    },
+    {
+     "bpm": 124,
+     "case": "techno",
+     "guided_top": 124.14,
+     "guided_class": "exact",
+     "top": 61.97,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      61.97,
+      82.69,
+      124.14
+     ],
+     "strengths": [
+      0.6897,
+      0.3712,
+      0.1674
+     ]
+    },
+    {
+     "bpm": 128,
+     "case": "techno",
+     "guided_top": 127.96,
+     "guided_class": "exact",
+     "top": 63.99,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      63.99,
+      85.31,
+      127.96
+     ],
+     "strengths": [
+      0.7293,
+      0.3592,
+      0.1696
+     ]
+    },
+    {
+     "bpm": 130,
+     "case": "techno",
+     "guided_top": 130.16,
+     "guided_class": "exact",
+     "top": 65.0,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      65.0,
+      86.64,
+      130.16
+     ],
+     "strengths": [
+      0.6727,
+      0.3734,
+      0.1704
+     ]
+    },
+    {
+     "bpm": 132,
+     "case": "techno",
+     "guided_top": 131.84,
+     "guided_class": "exact",
+     "top": 66.04,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      66.04,
+      87.98,
+      131.84
+     ],
+     "strengths": [
+      0.7345,
+      0.3744,
+      0.1581
+     ]
+    },
+    {
+     "bpm": 135,
+     "case": "techno",
+     "guided_top": 134.81,
+     "guided_class": "exact",
+     "top": 67.55,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      67.55,
+      90.01,
+      134.81
+     ],
+     "strengths": [
+      0.7272,
+      0.3201,
+      0.1569
+     ]
+    },
+    {
+     "bpm": 120,
+     "case": "house",
+     "guided_top": 119.92,
+     "guided_class": "exact",
+     "top": 80.07,
+     "class": "wrong",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      80.07,
+      119.92,
+      99.04,
+      152.05
+     ],
+     "strengths": [
+      0.3415,
+      0.1793,
+      -0.0867,
+      -0.0933
+     ]
+    },
+    {
+     "bpm": 124,
+     "case": "house",
+     "guided_top": 124.14,
+     "guided_class": "exact",
+     "top": 61.97,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      61.97,
+      82.69,
+      124.14
+     ],
+     "strengths": [
+      0.6897,
+      0.3712,
+      0.1674
+     ]
+    },
+    {
+     "bpm": 126,
+     "case": "house",
+     "guided_top": 125.84,
+     "guided_class": "exact",
+     "top": 63.04,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      63.04,
+      83.99,
+      125.84
+     ],
+     "strengths": [
+      0.698,
+      0.3589,
+      0.1542
+     ]
+    },
+    {
+     "bpm": 128,
+     "case": "house",
+     "guided_top": 127.96,
+     "guided_class": "exact",
+     "top": 63.99,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      63.99,
+      85.31,
+      127.96
+     ],
+     "strengths": [
+      0.7293,
+      0.3592,
+      0.1696
+     ]
+    },
+    {
+     "bpm": 138,
+     "case": "dubstep",
+     "guided_top": 137.82,
+     "guided_class": "exact",
+     "top": 137.82,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      137.82,
+      92.06,
+      69.0
+     ],
+     "strengths": [
+      0.5897,
+      0.5651,
+      0.4562
+     ]
+    },
+    {
+     "bpm": 140,
+     "case": "dubstep",
+     "guided_top": 140.15,
+     "guided_class": "exact",
+     "top": 140.15,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      140.15,
+      93.42,
+      70.05
+     ],
+     "strengths": [
+      0.5866,
+      0.5377,
+      0.4856
+     ]
+    },
+    {
+     "bpm": 142,
+     "case": "dubstep",
+     "guided_top": 141.83,
+     "guided_class": "exact",
+     "top": 141.83,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      141.83,
+      71.05,
+      94.74,
+      63.01
+     ],
+     "strengths": [
+      0.5125,
+      0.4916,
+      0.4779,
+      -0.0752
+     ]
+    },
+    {
+     "bpm": 150,
+     "case": "dubstep",
+     "guided_top": 149.98,
+     "guided_class": "exact",
+     "top": 100.1,
+     "class": "wrong",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      100.1,
+      75.0,
+      149.98
+     ],
+     "strengths": [
+      0.5462,
+      0.5446,
+      0.4982
+     ]
+    },
+    {
+     "bpm": 170,
+     "case": "dnb",
+     "guided_top": 170.09,
+     "guided_class": "exact",
+     "top": 85.06,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      85.06,
+      170.09,
+      113.29,
+      67.94
+     ],
+     "strengths": [
+      0.8537,
+      0.4945,
+      0.4314,
+      0.3649
+     ]
+    },
+    {
+     "bpm": 172,
+     "case": "dnb",
+     "guided_top": 171.67,
+     "guided_class": "exact",
+     "top": 86.06,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      86.06,
+      114.75,
+      171.67,
+      68.74
+     ],
+     "strengths": [
+      0.8016,
+      0.4864,
+      0.4703,
+      0.375
+     ]
+    },
+    {
+     "bpm": 174,
+     "case": "dnb",
+     "guided_top": 174.26,
+     "guided_class": "exact",
+     "top": 86.94,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      86.94,
+      174.26,
+      116.12,
+      69.55
+     ],
+     "strengths": [
+      0.8184,
+      0.4507,
+      0.4064,
+      0.3765
+     ]
+    },
+    {
+     "bpm": 176,
+     "case": "dnb",
+     "guided_top": 175.91,
+     "guided_class": "exact",
+     "top": 87.98,
+     "class": "half",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      87.98,
+      175.91,
+      117.35,
+      70.36
+     ],
+     "strengths": [
+      0.8765,
+      0.4974,
+      0.4871,
+      0.3943
+     ]
+    },
+    {
+     "bpm": 80,
+     "case": "hiphop",
+     "guided_top": 80.07,
+     "guided_class": "exact",
+     "top": 160.15,
+     "class": "double",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      160.15,
+      80.07,
+      67.08
+     ],
+     "strengths": [
+      0.5386,
+      0.4574,
+      -0.0569
+     ]
+    },
+    {
+     "bpm": 90,
+     "case": "hiphop",
+     "guided_top": 90.01,
+     "guided_class": "exact",
+     "top": 180.24,
+     "class": "double",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      180.24,
+      90.01,
+      118.86
+     ],
+     "strengths": [
+      0.5168,
+      0.4457,
+      -0.0865
+     ]
+    },
+    {
+     "bpm": 95,
+     "case": "hiphop",
+     "guided_top": 95.08,
+     "guided_class": "exact",
+     "top": 95.08,
+     "class": "exact",
+     "ambiguous": true,
+     "in_candidates": true,
+     "candidates": [
+      95.08,
+      189.62,
+      63.31
+     ],
+     "strengths": [
+      0.5113,
+      0.4778,
+      0.4128
+     ]
+    }
+   ],
+   "librosa_comparison": [
+    {
+     "bpm": 90,
+     "librosa": 89.29,
+     "class": "exact"
+    },
+    {
+     "bpm": 128,
+     "librosa": 127.84,
+     "class": "exact"
+    },
+    {
+     "bpm": 140,
+     "librosa": 140.62,
+     "class": "exact"
+    },
+    {
+     "bpm": 174,
+     "librosa": 175.78,
+     "class": "wrong"
+    }
+   ]
+  },
+  "key": {
+   "cases": 96,
+   "exact": 96,
+   "relative_confusion": 0,
+   "wrong": 0,
+   "exact_rate": 1.0,
+   "exact_or_relative_rate": 1.0,
+   "by_condition": {
+    "clean": 1.0,
+    "detuned": 1.0,
+    "noisy": 1.0,
+    "with_drums": 1.0
+   },
+   "rows": [
+    {
+     "truth": "C major",
+     "condition": "clean",
+     "got": "C major",
+     "class": "exact",
+     "score": 0.9402,
+     "margin": 0.3021,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "C major",
+     "condition": "detuned",
+     "got": "C major",
+     "class": "exact",
+     "score": 0.7093,
+     "margin": 0.2441,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "C major",
+     "condition": "noisy",
+     "got": "C major",
+     "class": "exact",
+     "score": 0.9401,
+     "margin": 0.3021,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "C major",
+     "condition": "with_drums",
+     "got": "C major",
+     "class": "exact",
+     "score": 0.9398,
+     "margin": 0.3027,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "C minor",
+     "condition": "clean",
+     "got": "C minor",
+     "class": "exact",
+     "score": 0.8537,
+     "margin": 0.1906,
+     "runner_up": "C major"
+    },
+    {
+     "truth": "C minor",
+     "condition": "detuned",
+     "got": "C minor",
+     "class": "exact",
+     "score": 0.6363,
+     "margin": 0.1018,
+     "runner_up": "F minor"
+    },
+    {
+     "truth": "C minor",
+     "condition": "noisy",
+     "got": "C minor",
+     "class": "exact",
+     "score": 0.8537,
+     "margin": 0.1907,
+     "runner_up": "C major"
+    },
+    {
+     "truth": "C minor",
+     "condition": "with_drums",
+     "got": "C minor",
+     "class": "exact",
+     "score": 0.8553,
+     "margin": 0.1949,
+     "runner_up": "C major"
+    },
+    {
+     "truth": "C# major",
+     "condition": "clean",
+     "got": "C# major",
+     "class": "exact",
+     "score": 0.9801,
+     "margin": 0.3823,
+     "runner_up": "G# major"
+    },
+    {
+     "truth": "C# major",
+     "condition": "detuned",
+     "got": "C# major",
+     "class": "exact",
+     "score": 0.9487,
+     "margin": 0.3885,
+     "runner_up": "C# minor"
+    },
+    {
+     "truth": "C# major",
+     "condition": "noisy",
+     "got": "C# major",
+     "class": "exact",
+     "score": 0.98,
+     "margin": 0.3825,
+     "runner_up": "G# major"
+    },
+    {
+     "truth": "C# major",
+     "condition": "with_drums",
+     "got": "C# major",
+     "class": "exact",
+     "score": 0.9801,
+     "margin": 0.3839,
+     "runner_up": "G# major"
+    },
+    {
+     "truth": "C# minor",
+     "condition": "clean",
+     "got": "C# minor",
+     "class": "exact",
+     "score": 0.8828,
+     "margin": 0.1287,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "C# minor",
+     "condition": "detuned",
+     "got": "C# minor",
+     "class": "exact",
+     "score": 0.8397,
+     "margin": 0.1294,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "C# minor",
+     "condition": "noisy",
+     "got": "C# minor",
+     "class": "exact",
+     "score": 0.8826,
+     "margin": 0.1287,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "C# minor",
+     "condition": "with_drums",
+     "got": "C# minor",
+     "class": "exact",
+     "score": 0.8829,
+     "margin": 0.128,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "D major",
+     "condition": "clean",
+     "got": "D major",
+     "class": "exact",
+     "score": 0.951,
+     "margin": 0.2988,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "D major",
+     "condition": "detuned",
+     "got": "D major",
+     "class": "exact",
+     "score": 0.8693,
+     "margin": 0.2924,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "D major",
+     "condition": "noisy",
+     "got": "D major",
+     "class": "exact",
+     "score": 0.9511,
+     "margin": 0.299,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "D major",
+     "condition": "with_drums",
+     "got": "D major",
+     "class": "exact",
+     "score": 0.95,
+     "margin": 0.2958,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "D minor",
+     "condition": "clean",
+     "got": "D minor",
+     "class": "exact",
+     "score": 0.8759,
+     "margin": 0.1597,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "D minor",
+     "condition": "detuned",
+     "got": "D minor",
+     "class": "exact",
+     "score": 0.8284,
+     "margin": 0.2108,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "D minor",
+     "condition": "noisy",
+     "got": "D minor",
+     "class": "exact",
+     "score": 0.8759,
+     "margin": 0.1597,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "D minor",
+     "condition": "with_drums",
+     "got": "D minor",
+     "class": "exact",
+     "score": 0.8758,
+     "margin": 0.1603,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "D# major",
+     "condition": "clean",
+     "got": "D# major",
+     "class": "exact",
+     "score": 0.9778,
+     "margin": 0.3877,
+     "runner_up": "A# major"
+    },
+    {
+     "truth": "D# major",
+     "condition": "detuned",
+     "got": "D# major",
+     "class": "exact",
+     "score": 0.9413,
+     "margin": 0.3678,
+     "runner_up": "D# minor"
+    },
+    {
+     "truth": "D# major",
+     "condition": "noisy",
+     "got": "D# major",
+     "class": "exact",
+     "score": 0.9777,
+     "margin": 0.3875,
+     "runner_up": "A# major"
+    },
+    {
+     "truth": "D# major",
+     "condition": "with_drums",
+     "got": "D# major",
+     "class": "exact",
+     "score": 0.9775,
+     "margin": 0.3867,
+     "runner_up": "A# major"
+    },
+    {
+     "truth": "D# minor",
+     "condition": "clean",
+     "got": "D# minor",
+     "class": "exact",
+     "score": 0.8876,
+     "margin": 0.1436,
+     "runner_up": "D# major"
+    },
+    {
+     "truth": "D# minor",
+     "condition": "detuned",
+     "got": "D# minor",
+     "class": "exact",
+     "score": 0.8454,
+     "margin": 0.1387,
+     "runner_up": "D# major"
+    },
+    {
+     "truth": "D# minor",
+     "condition": "noisy",
+     "got": "D# minor",
+     "class": "exact",
+     "score": 0.8876,
+     "margin": 0.1436,
+     "runner_up": "D# major"
+    },
+    {
+     "truth": "D# minor",
+     "condition": "with_drums",
+     "got": "D# minor",
+     "class": "exact",
+     "score": 0.8873,
+     "margin": 0.1445,
+     "runner_up": "D# major"
+    },
+    {
+     "truth": "E major",
+     "condition": "clean",
+     "got": "E major",
+     "class": "exact",
+     "score": 0.9568,
+     "margin": 0.3074,
+     "runner_up": "B major"
+    },
+    {
+     "truth": "E major",
+     "condition": "detuned",
+     "got": "E major",
+     "class": "exact",
+     "score": 0.8192,
+     "margin": 0.2436,
+     "runner_up": "B major"
+    },
+    {
+     "truth": "E major",
+     "condition": "noisy",
+     "got": "E major",
+     "class": "exact",
+     "score": 0.9568,
+     "margin": 0.3072,
+     "runner_up": "B major"
+    },
+    {
+     "truth": "E major",
+     "condition": "with_drums",
+     "got": "E major",
+     "class": "exact",
+     "score": 0.9562,
+     "margin": 0.3064,
+     "runner_up": "B major"
+    },
+    {
+     "truth": "E minor",
+     "condition": "clean",
+     "got": "E minor",
+     "class": "exact",
+     "score": 0.8644,
+     "margin": 0.1738,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "E minor",
+     "condition": "detuned",
+     "got": "E minor",
+     "class": "exact",
+     "score": 0.7071,
+     "margin": 0.1646,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "E minor",
+     "condition": "noisy",
+     "got": "E minor",
+     "class": "exact",
+     "score": 0.8645,
+     "margin": 0.1737,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "E minor",
+     "condition": "with_drums",
+     "got": "E minor",
+     "class": "exact",
+     "score": 0.8616,
+     "margin": 0.1706,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "F major",
+     "condition": "clean",
+     "got": "F major",
+     "class": "exact",
+     "score": 0.9807,
+     "margin": 0.3731,
+     "runner_up": "C major"
+    },
+    {
+     "truth": "F major",
+     "condition": "detuned",
+     "got": "F major",
+     "class": "exact",
+     "score": 0.9479,
+     "margin": 0.3715,
+     "runner_up": "C major"
+    },
+    {
+     "truth": "F major",
+     "condition": "noisy",
+     "got": "F major",
+     "class": "exact",
+     "score": 0.9807,
+     "margin": 0.3734,
+     "runner_up": "C major"
+    },
+    {
+     "truth": "F major",
+     "condition": "with_drums",
+     "got": "F major",
+     "class": "exact",
+     "score": 0.9815,
+     "margin": 0.3764,
+     "runner_up": "C major"
+    },
+    {
+     "truth": "F minor",
+     "condition": "clean",
+     "got": "F minor",
+     "class": "exact",
+     "score": 0.8786,
+     "margin": 0.1291,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "F minor",
+     "condition": "detuned",
+     "got": "F minor",
+     "class": "exact",
+     "score": 0.8451,
+     "margin": 0.1636,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "F minor",
+     "condition": "noisy",
+     "got": "F minor",
+     "class": "exact",
+     "score": 0.8788,
+     "margin": 0.1292,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "F minor",
+     "condition": "with_drums",
+     "got": "F minor",
+     "class": "exact",
+     "score": 0.8775,
+     "margin": 0.1277,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "F# major",
+     "condition": "clean",
+     "got": "F# major",
+     "class": "exact",
+     "score": 0.972,
+     "margin": 0.3495,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "F# major",
+     "condition": "detuned",
+     "got": "F# major",
+     "class": "exact",
+     "score": 0.9271,
+     "margin": 0.3148,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "F# major",
+     "condition": "noisy",
+     "got": "F# major",
+     "class": "exact",
+     "score": 0.9721,
+     "margin": 0.3497,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "F# major",
+     "condition": "with_drums",
+     "got": "F# major",
+     "class": "exact",
+     "score": 0.9723,
+     "margin": 0.3489,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "F# minor",
+     "condition": "clean",
+     "got": "F# minor",
+     "class": "exact",
+     "score": 0.8843,
+     "margin": 0.1396,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "F# minor",
+     "condition": "detuned",
+     "got": "F# minor",
+     "class": "exact",
+     "score": 0.8543,
+     "margin": 0.2107,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "F# minor",
+     "condition": "noisy",
+     "got": "F# minor",
+     "class": "exact",
+     "score": 0.8844,
+     "margin": 0.1395,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "F# minor",
+     "condition": "with_drums",
+     "got": "F# minor",
+     "class": "exact",
+     "score": 0.8838,
+     "margin": 0.138,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "G major",
+     "condition": "clean",
+     "got": "G major",
+     "class": "exact",
+     "score": 0.978,
+     "margin": 0.3699,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "G major",
+     "condition": "detuned",
+     "got": "G major",
+     "class": "exact",
+     "score": 0.9525,
+     "margin": 0.3199,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "G major",
+     "condition": "noisy",
+     "got": "G major",
+     "class": "exact",
+     "score": 0.9781,
+     "margin": 0.37,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "G major",
+     "condition": "with_drums",
+     "got": "G major",
+     "class": "exact",
+     "score": 0.9786,
+     "margin": 0.371,
+     "runner_up": "D major"
+    },
+    {
+     "truth": "G minor",
+     "condition": "clean",
+     "got": "G minor",
+     "class": "exact",
+     "score": 0.8837,
+     "margin": 0.1363,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "G minor",
+     "condition": "detuned",
+     "got": "G minor",
+     "class": "exact",
+     "score": 0.8483,
+     "margin": 0.1427,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "G minor",
+     "condition": "noisy",
+     "got": "G minor",
+     "class": "exact",
+     "score": 0.8839,
+     "margin": 0.1365,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "G minor",
+     "condition": "with_drums",
+     "got": "G minor",
+     "class": "exact",
+     "score": 0.8849,
+     "margin": 0.1374,
+     "runner_up": "G major"
+    },
+    {
+     "truth": "G# major",
+     "condition": "clean",
+     "got": "G# major",
+     "class": "exact",
+     "score": 0.9757,
+     "margin": 0.3837,
+     "runner_up": "G# minor"
+    },
+    {
+     "truth": "G# major",
+     "condition": "detuned",
+     "got": "G# major",
+     "class": "exact",
+     "score": 0.9517,
+     "margin": 0.3808,
+     "runner_up": "D# major"
+    },
+    {
+     "truth": "G# major",
+     "condition": "noisy",
+     "got": "G# major",
+     "class": "exact",
+     "score": 0.9757,
+     "margin": 0.3836,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "G# major",
+     "condition": "with_drums",
+     "got": "G# major",
+     "class": "exact",
+     "score": 0.9753,
+     "margin": 0.3814,
+     "runner_up": "C# major"
+    },
+    {
+     "truth": "G# minor",
+     "condition": "clean",
+     "got": "G# minor",
+     "class": "exact",
+     "score": 0.8882,
+     "margin": 0.1415,
+     "runner_up": "G# major"
+    },
+    {
+     "truth": "G# minor",
+     "condition": "detuned",
+     "got": "G# minor",
+     "class": "exact",
+     "score": 0.8639,
+     "margin": 0.1702,
+     "runner_up": "G# major"
+    },
+    {
+     "truth": "G# minor",
+     "condition": "noisy",
+     "got": "G# minor",
+     "class": "exact",
+     "score": 0.8881,
+     "margin": 0.1411,
+     "runner_up": "G# major"
+    },
+    {
+     "truth": "G# minor",
+     "condition": "with_drums",
+     "got": "G# minor",
+     "class": "exact",
+     "score": 0.8876,
+     "margin": 0.1415,
+     "runner_up": "G# major"
+    },
+    {
+     "truth": "A major",
+     "condition": "clean",
+     "got": "A major",
+     "class": "exact",
+     "score": 0.9738,
+     "margin": 0.365,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "A major",
+     "condition": "detuned",
+     "got": "A major",
+     "class": "exact",
+     "score": 0.9627,
+     "margin": 0.3691,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "A major",
+     "condition": "noisy",
+     "got": "A major",
+     "class": "exact",
+     "score": 0.9738,
+     "margin": 0.3648,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "A major",
+     "condition": "with_drums",
+     "got": "A major",
+     "class": "exact",
+     "score": 0.9742,
+     "margin": 0.3656,
+     "runner_up": "E major"
+    },
+    {
+     "truth": "A minor",
+     "condition": "clean",
+     "got": "A minor",
+     "class": "exact",
+     "score": 0.8948,
+     "margin": 0.1583,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "A minor",
+     "condition": "detuned",
+     "got": "A minor",
+     "class": "exact",
+     "score": 0.8863,
+     "margin": 0.1932,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "A minor",
+     "condition": "noisy",
+     "got": "A minor",
+     "class": "exact",
+     "score": 0.8946,
+     "margin": 0.158,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "A minor",
+     "condition": "with_drums",
+     "got": "A minor",
+     "class": "exact",
+     "score": 0.8949,
+     "margin": 0.1573,
+     "runner_up": "A major"
+    },
+    {
+     "truth": "A# major",
+     "condition": "clean",
+     "got": "A# major",
+     "class": "exact",
+     "score": 0.9736,
+     "margin": 0.3725,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "A# major",
+     "condition": "detuned",
+     "got": "A# major",
+     "class": "exact",
+     "score": 0.9123,
+     "margin": 0.2775,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "A# major",
+     "condition": "noisy",
+     "got": "A# major",
+     "class": "exact",
+     "score": 0.9736,
+     "margin": 0.373,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "A# major",
+     "condition": "with_drums",
+     "got": "A# major",
+     "class": "exact",
+     "score": 0.9728,
+     "margin": 0.3727,
+     "runner_up": "F major"
+    },
+    {
+     "truth": "A# minor",
+     "condition": "clean",
+     "got": "A# minor",
+     "class": "exact",
+     "score": 0.8878,
+     "margin": 0.1524,
+     "runner_up": "A# major"
+    },
+    {
+     "truth": "A# minor",
+     "condition": "detuned",
+     "got": "A# minor",
+     "class": "exact",
+     "score": 0.8177,
+     "margin": 0.2025,
+     "runner_up": "A# major"
+    },
+    {
+     "truth": "A# minor",
+     "condition": "noisy",
+     "got": "A# minor",
+     "class": "exact",
+     "score": 0.8882,
+     "margin": 0.1531,
+     "runner_up": "A# major"
+    },
+    {
+     "truth": "A# minor",
+     "condition": "with_drums",
+     "got": "A# minor",
+     "class": "exact",
+     "score": 0.889,
+     "margin": 0.155,
+     "runner_up": "A# major"
+    },
+    {
+     "truth": "B major",
+     "condition": "clean",
+     "got": "B major",
+     "class": "exact",
+     "score": 0.9794,
+     "margin": 0.3772,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "B major",
+     "condition": "detuned",
+     "got": "B major",
+     "class": "exact",
+     "score": 0.9743,
+     "margin": 0.3791,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "B major",
+     "condition": "noisy",
+     "got": "B major",
+     "class": "exact",
+     "score": 0.9794,
+     "margin": 0.3767,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "B major",
+     "condition": "with_drums",
+     "got": "B major",
+     "class": "exact",
+     "score": 0.9795,
+     "margin": 0.3738,
+     "runner_up": "F# major"
+    },
+    {
+     "truth": "B minor",
+     "condition": "clean",
+     "got": "B minor",
+     "class": "exact",
+     "score": 0.8806,
+     "margin": 0.1161,
+     "runner_up": "B major"
+    },
+    {
+     "truth": "B minor",
+     "condition": "detuned",
+     "got": "B minor",
+     "class": "exact",
+     "score": 0.8963,
+     "margin": 0.184,
+     "runner_up": "B major"
+    },
+    {
+     "truth": "B minor",
+     "condition": "noisy",
+     "got": "B minor",
+     "class": "exact",
+     "score": 0.8805,
+     "margin": 0.1157,
+     "runner_up": "B major"
+    },
+    {
+     "truth": "B minor",
+     "condition": "with_drums",
+     "got": "B minor",
+     "class": "exact",
+     "score": 0.881,
+     "margin": 0.117,
+     "runner_up": "B major"
+    }
+   ]
+  },
+  "verdict": {
+   "thresholds": {
+    "tempo_truth_in_candidates": 0.99,
+    "tempo_silent_wrong": 0,
+    "tempo_genre_guided_exact": 0.95,
+    "tempo_blind_exact": 0.7,
+    "key_exact": 0.9,
+    "key_exact_or_relative": 0.95
+   },
+   "checks": {
+    "tempo_truth_in_candidates": true,
+    "tempo_silent_wrong": true,
+    "tempo_genre_guided_exact": true,
+    "tempo_blind_exact": true,
+    "key_exact": true,
+    "key_exact_or_relative": true
+   },
+   "pass": true
+  }
+ }
+}

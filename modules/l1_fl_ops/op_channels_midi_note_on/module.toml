@@ -1,0 +1,27 @@
+[module]
+name = "op_channels_midi_note_on"
+layer = "L1"
+summary = "Write through channels.midiNoteOn in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"indexGlobal":{"type":"integer"},"note":{"type":"integer"},"velocity":{"type":"integer"},"channel":{"type":"integer"}},"required":["indexGlobal","note","velocity"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_channels_midi_note_on.py::test_matches_fake"
+failure = "test_op_channels_midi_note_on.py::test_failures"

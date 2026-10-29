@@ -1,0 +1,27 @@
+[module]
+name = "list_open_dialogs"
+layer = "L6"
+summary = "List the windows FL Studio has open besides its main window."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_open_dialogs.py::test_lists_dialogs"
+failure = "test_list_open_dialogs.py::test_no_fl_window"

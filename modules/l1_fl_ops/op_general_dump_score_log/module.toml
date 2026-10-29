@@ -1,0 +1,27 @@
+[module]
+name = "op_general_dump_score_log"
+layer = "L1"
+summary = "Write through general.dumpScoreLog in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"time":{"type":"integer"},"silent":{"type":"boolean"}},"required":["time"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 15
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_general_dump_score_log.py::test_matches_fake"
+failure = "test_op_general_dump_score_log.py::test_failures"

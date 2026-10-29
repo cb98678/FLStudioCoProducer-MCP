@@ -1,0 +1,27 @@
+[module]
+name = "prepare_sampler_sound"
+layer = "L4"
+summary = "Cut a vocal phrase, drum hit, bass note or melodic part into a sandbox WAV for Serum 2's sample oscillator, with its pitch, level and loop."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","out_path","role"],"properties":{"path":{"type":"string","x-path":true,"minLength":1},"out_path":{"type":"string","x-path":true,"minLength":1},"role":{"type":"string","enum":["vocal","drum","bass","melodic","texture"]},"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0},"target_midi":{"type":"number","minimum":0,"maximum":127}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["path","oscillator","play_note"],"properties":{"path":{"type":"string"},"oscillator":{"type":"object"},"play_note":{"type":"integer"},"pitch_midi":{"type":"number"},"pitch_note":{"type":"string"},"seconds":{"type":"number"},"peak_dbfs":{"type":"number"},"rms_dbfs":{"type":"number"},"lr_balance_db":{"type":"number"},"warnings":{"type":"array"}}}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = ["numpy", "soundfile"]
+
+[tests]
+golden = "test_prepare_sampler_sound.py::test_a_bass_note_and_a_vocal_phrase_are_planned"
+failure = "test_prepare_sampler_sound.py::test_failures"

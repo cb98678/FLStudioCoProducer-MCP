@@ -1,0 +1,27 @@
+[module]
+name = "check_sandbox_path"
+layer = "L0"
+summary = "Confirm that a path is inside the sandbox folder."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","sandbox_root"],"properties":{"path":{"type":"string"},"sandbox_root":{"type":"string"}}}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_check_sandbox_path.py::test_inside_ok"
+failure = "test_check_sandbox_path.py::test_outside_and_traversal_refused"

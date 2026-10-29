@@ -1,0 +1,27 @@
+[module]
+name = "find_channel_by_name"
+layer = "L2"
+summary = "Find channel indexes whose name contains a text."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["pattern"],"properties":{"pattern":{"type":"string","minLength":1},"ignore_case":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"array","items":{"type":"object"}}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_channels_channel_count", "op_channels_get_channel_name"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_find_channel_by_name.py::test_finds_matches"
+failure = "test_find_channel_by_name.py::test_empty_pattern_rejected"

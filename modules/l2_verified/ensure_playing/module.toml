@@ -1,0 +1,27 @@
+[module]
+name = "ensure_playing"
+layer = "L2"
+summary = "Make the transport play if it is not already playing, then confirm."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"wait_s":{"type":"number","minimum":0,"maximum":30}},"additionalProperties":false}'''
+output = '''{"type":"boolean"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_transport_is_playing", "op_transport_start"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_ensure_playing.py::test_starts_once"
+failure = "test_ensure_playing.py::test_reports_a_start_that_does_not_happen"

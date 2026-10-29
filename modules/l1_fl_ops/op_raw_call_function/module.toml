@@ -1,0 +1,28 @@
+[module]
+name = "op_raw_call_function"
+layer = "L1"
+summary = "Call one allowlisted FL function by name when no generated op exists for it."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"module":{"type":"string"},"function":{"type":"string"},"args":{"type":"array"}},"required":["module","function","args"],"additionalProperties":false}'''
+output = '''{}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+expose = false
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_raw_call_function.py::test_calls_allowlisted_function"
+failure = "test_op_raw_call_function.py::test_refuses_unlisted_and_missing"

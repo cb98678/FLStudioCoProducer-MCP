@@ -1,0 +1,27 @@
+[module]
+name = "ping_fl"
+layer = "L2"
+summary = "Return FL Studio's version, scripting API level and the active project name."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_general_get_version", "op_ui_get_version", "op_ui_get_prog_title"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_ping_fl.py::test_reports_versions"
+failure = "test_ping_fl.py::test_reports_bridge_failure"

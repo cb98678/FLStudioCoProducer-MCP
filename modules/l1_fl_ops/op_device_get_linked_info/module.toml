@@ -1,0 +1,27 @@
+[module]
+name = "op_device_get_linked_info"
+layer = "L1"
+summary = "Read device.getLinkedInfo from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"eventID":{"type":"integer"}},"required":["eventID"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_device_get_linked_info.py::test_matches_fake"
+failure = "test_op_device_get_linked_info.py::test_failures"

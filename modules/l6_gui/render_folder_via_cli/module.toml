@@ -1,0 +1,30 @@
+[module]
+name = "render_folder_via_cli"
+layer = "L6"
+summary = "Render every .flp project in a sandbox folder to WAV in one FL Studio launch (used for solo renders of each part)."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["folder","out_dir"],"properties":{"folder":{"type":"string","minLength":1,"x-path":true},"out_dir":{"type":"string","minLength":1},"timeout_s":{"type":"integer","minimum":1,"maximum":7200},"stall_s":{"type":"integer","minimum":1,"maximum":7200}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "minutes"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "detect_silence", "check_project_health"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_render_folder_via_cli.py::test_renders_each_project"
+failure = "test_render_folder_via_cli.py::test_errors"
+
+[budget]
+lines = 50

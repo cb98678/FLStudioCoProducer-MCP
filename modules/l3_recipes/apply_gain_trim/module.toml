@@ -1,0 +1,27 @@
+[module]
+name = "apply_gain_trim"
+layer = "L3"
+summary = "Change a mixer track's fader by a capped number of dB and confirm the new level."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","delta_db"],"properties":{"index":{"type":"integer","minimum":0},"delta_db":{"type":"number"},"max_delta_db":{"type":"number","minimum":0.1,"maximum":12}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_get_track_volume", "set_track_volume_db_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_gain_trim.py::test_applies_and_caps_the_step"
+failure = "test_apply_gain_trim.py::test_failures"

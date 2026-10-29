@@ -1,0 +1,27 @@
+[module]
+name = "detect_leakage"
+layer = "L4"
+summary = "Estimate how much of a stem is linearly predictable from other audio files."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","others"],"properties":{"path":{"type":"string","minLength":1},"others":{"type":"array","items":{"type":"string","minLength":1},"minItems":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_detect_leakage.py::test_measures_known_leakage"
+failure = "test_detect_leakage.py::test_failures"

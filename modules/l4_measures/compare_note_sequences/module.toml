@@ -1,0 +1,30 @@
+[module]
+name = "compare_note_sequences"
+layer = "L4"
+summary = "Score the similarity of two note lists in ways that survive transposition and re-voicing."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["a","b"],"properties":{"a":{"type":"array","items":{"type":"object","required":["pitch","start","duration"],"properties":{"pitch":{"type":"integer","minimum":0,"maximum":127},"start":{"type":"number","minimum":0},"duration":{"type":"number","exclusiveMinimum":0},"velocity":{"type":"integer","minimum":1,"maximum":127}}}},"b":{"type":"array","items":{"type":"object","required":["pitch","start","duration"],"properties":{"pitch":{"type":"integer","minimum":0,"maximum":127},"start":{"type":"number","minimum":0},"duration":{"type":"number","exclusiveMinimum":0},"velocity":{"type":"integer","minimum":1,"maximum":127}}}},"tolerance_beats":{"type":"number","exclusiveMinimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_compare_note_sequences.py::test_scores_similar_and_different"
+failure = "test_compare_note_sequences.py::test_empty_input"
+
+[budget]
+lines = 55

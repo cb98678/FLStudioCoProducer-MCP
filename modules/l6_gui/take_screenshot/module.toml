@@ -1,0 +1,27 @@
+[module]
+name = "take_screenshot"
+layer = "L6"
+summary = "Capture FL Studio's window to a PNG file in the sandbox."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["out_path"],"properties":{"out_path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_take_screenshot.py::test_writes_a_png"
+failure = "test_take_screenshot.py::test_outside_sandbox_and_not_ready"

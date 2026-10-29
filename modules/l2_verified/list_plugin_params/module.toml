@@ -1,0 +1,27 @@
+[module]
+name = "list_plugin_params"
+layer = "L2"
+summary = "List one page of a plugin's non-empty parameter names with their indexes."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index"],"properties":{"index":{"type":"integer","minimum":0},"slot_index":{"type":"integer","minimum":-1},"offset":{"type":"integer","minimum":0},"limit":{"type":"integer","minimum":1,"maximum":4096}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_plugins_get_param_count", "op_plugins_get_param_name"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_plugin_params.py::test_lists_named_params"
+failure = "test_list_plugin_params.py::test_missing_plugin_fails"

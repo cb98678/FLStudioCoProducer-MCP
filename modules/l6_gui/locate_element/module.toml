@@ -1,0 +1,27 @@
+[module]
+name = "locate_element"
+layer = "L6"
+summary = "Find a described element in FL Studio's window with the vision model."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["description"],"properties":{"description":{"type":"string","minLength":2,"maxLength":200},"min_confidence":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A0"
+cost = "gpu"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["take_screenshot", "ground_gui_element"]
+models = ["vision"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_locate_element.py::test_locates_an_element"
+failure = "test_locate_element.py::test_failures_pass_through"

@@ -1,0 +1,27 @@
+[module]
+name = "measure_dc_offset"
+layer = "L4"
+summary = "Measure the DC offset of an audio file per channel: over the whole file, the worst one-second window, and the last second."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_dc_offset.py::test_offset_found_and_located"
+failure = "test_measure_dc_offset.py::test_failures"

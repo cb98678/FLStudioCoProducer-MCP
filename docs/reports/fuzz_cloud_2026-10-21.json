@@ -1,0 +1,2199 @@
+{
+ "seconds": 515.7,
+ "world": "full",
+ "modules": 269,
+ "calls": 22422,
+ "defects": 0,
+ "fragile": 20,
+ "by_module": {
+  "add_audio_clip_to_playlist_gui": {
+   "calls": 60,
+   "ok": 0,
+   "refused": 60,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "add_mixer_insert_gui": {
+   "calls": 124,
+   "ok": 80,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "add_time_marker_verified": {
+   "calls": 106,
+   "ok": 70,
+   "refused": 36,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "align_bounces": {
+   "calls": 156,
+   "ok": 9,
+   "refused": 147,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "apply_eq_recipe": {
+   "calls": 75,
+   "ok": 25,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "apply_gain_trim": {
+   "calls": 113,
+   "ok": 29,
+   "refused": 84,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "apply_param_recipe": {
+   "calls": 104,
+   "ok": 41,
+   "refused": 63,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "arm_piano_roll_script_gui": {
+   "calls": 76,
+   "ok": 0,
+   "refused": 76,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "build_ab_package": {
+   "calls": 233,
+   "ok": 0,
+   "refused": 233,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "build_bus": {
+   "calls": 151,
+   "ok": 49,
+   "refused": 102,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "build_frame": {
+   "calls": 194,
+   "ok": 7,
+   "refused": 187,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "build_measure_report": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "build_param_map": {
+   "calls": 99,
+   "ok": 6,
+   "refused": 93,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "call_agent_llm": {
+   "calls": 200,
+   "ok": 0,
+   "refused": 200,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "check_desktop_ready": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "check_gpu_budget": {
+   "calls": 75,
+   "ok": 12,
+   "refused": 63,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "check_notes_written": {
+   "calls": 123,
+   "ok": 0,
+   "refused": 123,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "check_report_limits": {
+   "calls": 61,
+   "ok": 0,
+   "refused": 61,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "check_sandbox_path": {
+   "calls": 124,
+   "ok": 0,
+   "refused": 124,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "check_sandbox_project_open": {
+   "calls": 3,
+   "ok": 0,
+   "refused": 3,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "clean_midi_notes": {
+   "calls": 101,
+   "ok": 24,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "clear_pattern_verified": {
+   "calls": 58,
+   "ok": 10,
+   "refused": 48,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "click_at": {
+   "calls": 158,
+   "ok": 22,
+   "refused": 136,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "compare_note_sequences": {
+   "calls": 88,
+   "ok": 0,
+   "refused": 88,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "compare_to_reference": {
+   "calls": 60,
+   "ok": 15,
+   "refused": 45,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "copy_project_to_sandbox": {
+   "calls": 165,
+   "ok": 0,
+   "refused": 165,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "count_clipped_samples": {
+   "calls": 105,
+   "ok": 6,
+   "refused": 99,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "create_send_route": {
+   "calls": 116,
+   "ok": 22,
+   "refused": 94,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "critique_audio": {
+   "calls": 124,
+   "ok": 79,
+   "refused": 45,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "critique_audio_dsp": {
+   "calls": 135,
+   "ok": 0,
+   "refused": 135,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "decode_body": {
+   "calls": 44,
+   "ok": 0,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "decode_sysex": {
+   "calls": 44,
+   "ok": 15,
+   "refused": 29,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "detect_chord_loop": {
+   "calls": 77,
+   "ok": 12,
+   "refused": 65,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "detect_leakage": {
+   "calls": 94,
+   "ok": 0,
+   "refused": 94,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "detect_sections_dsp": {
+   "calls": 107,
+   "ok": 0,
+   "refused": 107,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "detect_silence": {
+   "calls": 136,
+   "ok": 15,
+   "refused": 121,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "diff_state_snapshots": {
+   "calls": 60,
+   "ok": 35,
+   "refused": 25,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "dismiss_dialog_gui": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "drag_between": {
+   "calls": 178,
+   "ok": 41,
+   "refused": 137,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "encode_body": {
+   "calls": 91,
+   "ok": 61,
+   "refused": 30,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "encode_sysex": {
+   "calls": 44,
+   "ok": 15,
+   "refused": 29,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "ensure_loop_mode": {
+   "calls": 40,
+   "ok": 29,
+   "refused": 11,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "ensure_playing": {
+   "calls": 57,
+   "ok": 28,
+   "refused": 29,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "ensure_stopped": {
+   "calls": 57,
+   "ok": 28,
+   "refused": 29,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "estimate_bpm_dsp": {
+   "calls": 166,
+   "ok": 0,
+   "refused": 166,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "estimate_key_bpm_ml": {
+   "calls": 77,
+   "ok": 49,
+   "refused": 28,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "estimate_key_dsp": {
+   "calls": 77,
+   "ok": 2,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "export_split_stems_gui": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "extract_melody_contour": {
+   "calls": 84,
+   "ok": 0,
+   "refused": 84,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "find_channel_by_name": {
+   "calls": 87,
+   "ok": 60,
+   "refused": 27,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "find_midi_ports": {
+   "calls": 74,
+   "ok": 0,
+   "refused": 74,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "find_track_by_name": {
+   "calls": 87,
+   "ok": 60,
+   "refused": 27,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "generate_audio": {
+   "calls": 260,
+   "ok": 100,
+   "refused": 158,
+   "defect": 0,
+   "fragile": 2,
+   "examples": [
+    {
+     "status": "fragile",
+     "code": "SLOW",
+     "case": "duration_s=600.0",
+     "note": "7.3 s",
+     "args": "{'prompt': 'xxx', 'out_dir': '/tmp/coproducer_fuzz_esnqvbap/sandbox/out', 'duration_s': 600.0}"
+    },
+    {
+     "status": "fragile",
+     "code": "SLOW",
+     "case": "duration_s=599.999999999",
+     "note": "6.6 s",
+     "args": "{'prompt': 'xxx', 'out_dir': '/tmp/coproducer_fuzz_esnqvbap/sandbox/out', 'duration_s': 599.999999999}"
+    }
+   ]
+  },
+  "generate_cover": {
+   "calls": 231,
+   "ok": 61,
+   "refused": 170,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "get_config_value": {
+   "calls": 76,
+   "ok": 0,
+   "refused": 76,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "get_fl_versions": {
+   "calls": 3,
+   "ok": 0,
+   "refused": 3,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "get_plugin_param_by_name": {
+   "calls": 136,
+   "ok": 0,
+   "refused": 136,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "get_track_peak_db": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "ground_gui_element": {
+   "calls": 153,
+   "ok": 38,
+   "refused": 115,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "halt_input": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "import_audio_clip_gui": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "import_midi_gui": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "join_frames": {
+   "calls": 44,
+   "ok": 20,
+   "refused": 24,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "list_channels_summary": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "list_open_dialogs": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "list_patterns_summary": {
+   "calls": 60,
+   "ok": 28,
+   "refused": 32,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "list_playlist_tracks": {
+   "calls": 71,
+   "ok": 31,
+   "refused": 40,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "list_plugin_params": {
+   "calls": 149,
+   "ok": 31,
+   "refused": 118,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "list_tracks_summary": {
+   "calls": 97,
+   "ok": 59,
+   "refused": 38,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "load_genre_profile": {
+   "calls": 88,
+   "ok": 0,
+   "refused": 88,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "load_gui_recipe": {
+   "calls": 76,
+   "ok": 0,
+   "refused": 76,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "load_invariants_file": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "load_model": {
+   "calls": 123,
+   "ok": 0,
+   "refused": 123,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "load_plugin_gui": {
+   "calls": 76,
+   "ok": 56,
+   "refused": 20,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "load_sample_gui": {
+   "calls": 76,
+   "ok": 44,
+   "refused": 32,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "load_targets_file": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "locate_element": {
+   "calls": 104,
+   "ok": 50,
+   "refused": 54,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "locate_template": {
+   "calls": 153,
+   "ok": 0,
+   "refused": 153,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "match_reply": {
+   "calls": 74,
+   "ok": 42,
+   "refused": 32,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_band_energy": {
+   "calls": 92,
+   "ok": 4,
+   "refused": 88,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_crest_factor": {
+   "calls": 77,
+   "ok": 2,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_integrated_loudness": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_loudness_range": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_low_end_mono_ratio": {
+   "calls": 107,
+   "ok": 0,
+   "refused": 107,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_masking_overlap": {
+   "calls": 126,
+   "ok": 2,
+   "refused": 124,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_mid_side_ratio": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_rms": {
+   "calls": 77,
+   "ok": 2,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_sample_peak": {
+   "calls": 77,
+   "ok": 2,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_short_term_loudness": {
+   "calls": 107,
+   "ok": 0,
+   "refused": 107,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_spectral_centroid": {
+   "calls": 77,
+   "ok": 2,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_stereo_correlation": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "measure_true_peak": {
+   "calls": 97,
+   "ok": 3,
+   "refused": 94,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "mute_channel_verified": {
+   "calls": 70,
+   "ok": 14,
+   "refused": 56,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "mute_playlist_track_verified": {
+   "calls": 70,
+   "ok": 13,
+   "refused": 57,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "mute_track_verified": {
+   "calls": 70,
+   "ok": 14,
+   "refused": 56,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_arrangement_add_auto_time_marker": {
+   "calls": 106,
+   "ok": 82,
+   "refused": 24,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_arrangement_current_time": {
+   "calls": 58,
+   "ok": 47,
+   "refused": 11,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_arrangement_get_marker_name": {
+   "calls": 58,
+   "ok": 0,
+   "refused": 58,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_arrangement_jump_to_marker": {
+   "calls": 70,
+   "ok": 49,
+   "refused": 21,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_channel_count": {
+   "calls": 39,
+   "ok": 29,
+   "refused": 10,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_get_channel_color": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_get_channel_name": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_get_channel_pan": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_get_channel_type": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_get_channel_volume": {
+   "calls": 80,
+   "ok": 17,
+   "refused": 63,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_get_swing": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_get_target_fx_track": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_is_channel_muted": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_is_channel_solo": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_midi_note_on": {
+   "calls": 147,
+   "ok": 75,
+   "refused": 72,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_mute_channel": {
+   "calls": 98,
+   "ok": 34,
+   "refused": 64,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_select_one_channel": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_set_channel_color": {
+   "calls": 99,
+   "ok": 36,
+   "refused": 63,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_set_channel_name": {
+   "calls": 117,
+   "ok": 52,
+   "refused": 65,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_set_channel_pan": {
+   "calls": 123,
+   "ok": 44,
+   "refused": 79,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_set_channel_volume": {
+   "calls": 123,
+   "ok": 44,
+   "refused": 79,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_set_swing": {
+   "calls": 53,
+   "ok": 38,
+   "refused": 15,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_set_target_fx_track": {
+   "calls": 99,
+   "ok": 15,
+   "refused": 84,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_channels_solo_channel": {
+   "calls": 69,
+   "ok": 18,
+   "refused": 51,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_device_get_name": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_device_is_assigned": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_general_get_changed_flag": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_general_get_version": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_general_save_undo": {
+   "calls": 117,
+   "ok": 82,
+   "refused": 35,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_general_undo": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_current_tempo": {
+   "calls": 39,
+   "ok": 29,
+   "refused": 10,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_eq_bandwidth": {
+   "calls": 88,
+   "ok": 13,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_eq_frequency": {
+   "calls": 117,
+   "ok": 33,
+   "refused": 84,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_eq_gain": {
+   "calls": 117,
+   "ok": 33,
+   "refused": 84,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_route_send_active": {
+   "calls": 88,
+   "ok": 28,
+   "refused": 60,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_route_to_level": {
+   "calls": 88,
+   "ok": 3,
+   "refused": 85,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_track_color": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_track_name": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_track_pan": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_track_peaks": {
+   "calls": 88,
+   "ok": 31,
+   "refused": 57,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_track_stereo_sep": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_get_track_volume": {
+   "calls": 87,
+   "ok": 33,
+   "refused": 54,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_is_track_armed": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_is_track_muted": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_is_track_solo": {
+   "calls": 58,
+   "ok": 14,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_mute_track": {
+   "calls": 87,
+   "ok": 33,
+   "refused": 54,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_current_tempo": {
+   "calls": 58,
+   "ok": 4,
+   "refused": 54,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_eq_bandwidth": {
+   "calls": 113,
+   "ok": 26,
+   "refused": 87,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_eq_frequency": {
+   "calls": 113,
+   "ok": 26,
+   "refused": 87,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_eq_gain": {
+   "calls": 113,
+   "ok": 26,
+   "refused": 87,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_route_to": {
+   "calls": 111,
+   "ok": 16,
+   "refused": 95,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_route_to_level": {
+   "calls": 113,
+   "ok": 3,
+   "refused": 110,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_track_color": {
+   "calls": 88,
+   "ok": 31,
+   "refused": 57,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_track_name": {
+   "calls": 106,
+   "ok": 50,
+   "refused": 56,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_track_pan": {
+   "calls": 112,
+   "ok": 46,
+   "refused": 66,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_track_stereo_sep": {
+   "calls": 112,
+   "ok": 46,
+   "refused": 66,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_set_track_volume": {
+   "calls": 112,
+   "ok": 46,
+   "refused": 66,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_solo_track": {
+   "calls": 116,
+   "ok": 50,
+   "refused": 66,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_mixer_track_count": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_clear_pattern": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_find_first_next_empty_pat": {
+   "calls": 116,
+   "ok": 87,
+   "refused": 29,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_get_pattern_length": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_get_pattern_name": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_increment_pattern_length": {
+   "calls": 88,
+   "ok": 8,
+   "refused": 80,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_is_pattern_default": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_is_pattern_selected": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_jump_to_pattern": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_pattern_count": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_pattern_number": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_select_pattern": {
+   "calls": 98,
+   "ok": 8,
+   "refused": 90,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_set_pattern_length": {
+   "calls": 88,
+   "ok": 5,
+   "refused": 83,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_patterns_set_pattern_name": {
+   "calls": 106,
+   "ok": 10,
+   "refused": 96,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_get_track_color": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_get_track_name": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_is_track_muted": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_is_track_solo": {
+   "calls": 58,
+   "ok": 8,
+   "refused": 50,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_mute_track": {
+   "calls": 87,
+   "ok": 8,
+   "refused": 79,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_set_track_color": {
+   "calls": 88,
+   "ok": 8,
+   "refused": 80,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_set_track_name": {
+   "calls": 106,
+   "ok": 10,
+   "refused": 96,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_solo_track": {
+   "calls": 98,
+   "ok": 8,
+   "refused": 90,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_playlist_track_count": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_get_color": {
+   "calls": 127,
+   "ok": 26,
+   "refused": 101,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_get_param_count": {
+   "calls": 98,
+   "ok": 6,
+   "refused": 92,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_get_param_name": {
+   "calls": 128,
+   "ok": 9,
+   "refused": 119,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_get_param_value": {
+   "calls": 128,
+   "ok": 9,
+   "refused": 119,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_get_param_value_string": {
+   "calls": 157,
+   "ok": 30,
+   "refused": 127,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_get_plugin_name": {
+   "calls": 109,
+   "ok": 8,
+   "refused": 101,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_is_valid": {
+   "calls": 98,
+   "ok": 62,
+   "refused": 36,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_plugins_set_param_value": {
+   "calls": 182,
+   "ok": 42,
+   "refused": 140,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_raw_call_function": {
+   "calls": 141,
+   "ok": 0,
+   "refused": 141,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_get_loop_mode": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_get_song_length": {
+   "calls": 58,
+   "ok": 47,
+   "refused": 11,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_get_song_pos": {
+   "calls": 57,
+   "ok": 47,
+   "refused": 10,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_is_playing": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_is_recording": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_record": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_set_loop_mode": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_set_song_pos": {
+   "calls": 82,
+   "ok": 57,
+   "refused": 25,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_start": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_transport_stop": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_ui_get_prog_title": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_ui_get_version": {
+   "calls": 57,
+   "ok": 47,
+   "refused": 10,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_ui_hide_window": {
+   "calls": 58,
+   "ok": 36,
+   "refused": 22,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "op_ui_show_window": {
+   "calls": 58,
+   "ok": 36,
+   "refused": 22,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "open_plugin_ui_gui": {
+   "calls": 76,
+   "ok": 44,
+   "refused": 32,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "open_project_copy": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "parse_frame": {
+   "calls": 44,
+   "ok": 0,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "ping_fl": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "prepare_for_render": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "press_hotkey": {
+   "calls": 45,
+   "ok": 5,
+   "refused": 40,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "quantize_notes": {
+   "calls": 111,
+   "ok": 22,
+   "refused": 89,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "read_audio_file": {
+   "calls": 106,
+   "ok": 9,
+   "refused": 97,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "read_midi_file": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "read_project_summary": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "render_via_cli": {
+   "calls": 141,
+   "ok": 0,
+   "refused": 141,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "render_with_restart": {
+   "calls": 154,
+   "ok": 0,
+   "refused": 154,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "repaint_section": {
+   "calls": 255,
+   "ok": 67,
+   "refused": 188,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "restore_after_render": {
+   "calls": 79,
+   "ok": 36,
+   "refused": 43,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "restore_channel_values": {
+   "calls": 44,
+   "ok": 0,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "restore_solo_group": {
+   "calls": 44,
+   "ok": 9,
+   "refused": 35,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "restore_state_values": {
+   "calls": 44,
+   "ok": 0,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "restore_track_values": {
+   "calls": 44,
+   "ok": 0,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "rollback_to": {
+   "calls": 44,
+   "ok": 0,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "route_channel_to_track_verified": {
+   "calls": 88,
+   "ok": 13,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "run_gui_recipe": {
+   "calls": 91,
+   "ok": 0,
+   "refused": 91,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "run_model_op": {
+   "calls": 159,
+   "ok": 0,
+   "refused": 159,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "run_piano_roll_script_gui": {
+   "calls": 3,
+   "ok": 0,
+   "refused": 3,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "save_project_copy": {
+   "calls": 77,
+   "ok": 0,
+   "refused": 77,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "save_sandbox_project": {
+   "calls": 105,
+   "ok": 0,
+   "refused": 105,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "screenshot_verify": {
+   "calls": 44,
+   "ok": 0,
+   "refused": 44,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "select_pattern_verified": {
+   "calls": 58,
+   "ok": 10,
+   "refused": 48,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "send_request": {
+   "calls": 44,
+   "ok": 17,
+   "refused": 27,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "separate_stems": {
+   "calls": 224,
+   "ok": 2,
+   "refused": 222,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_channel_pan_verified": {
+   "calls": 88,
+   "ok": 24,
+   "refused": 64,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_channel_volume_verified": {
+   "calls": 87,
+   "ok": 17,
+   "refused": 70,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_eq_bandwidth_verified": {
+   "calls": 118,
+   "ok": 22,
+   "refused": 96,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_eq_frequency_verified": {
+   "calls": 118,
+   "ok": 22,
+   "refused": 96,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_eq_gain_verified": {
+   "calls": 118,
+   "ok": 22,
+   "refused": 96,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_pattern_length_verified": {
+   "calls": 91,
+   "ok": 18,
+   "refused": 73,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_playlist_track_name_verified": {
+   "calls": 106,
+   "ok": 44,
+   "refused": 62,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_plugin_param_by_name": {
+   "calls": 165,
+   "ok": 0,
+   "refused": 165,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_rough_balance": {
+   "calls": 44,
+   "ok": 9,
+   "refused": 35,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_route_level_verified": {
+   "calls": 117,
+   "ok": 3,
+   "refused": 114,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_sidechain_send_gui": {
+   "calls": 94,
+   "ok": 0,
+   "refused": 94,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_sidechain_source_gui": {
+   "calls": 93,
+   "ok": 0,
+   "refused": 93,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_song_position_verified": {
+   "calls": 55,
+   "ok": 34,
+   "refused": 21,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_swing_verified": {
+   "calls": 57,
+   "ok": 21,
+   "refused": 36,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_tempo_and_swing": {
+   "calls": 88,
+   "ok": 16,
+   "refused": 72,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_tempo_verified": {
+   "calls": 59,
+   "ok": 6,
+   "refused": 53,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_track_name_verified": {
+   "calls": 106,
+   "ok": 46,
+   "refused": 60,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_track_pan_verified": {
+   "calls": 88,
+   "ok": 24,
+   "refused": 64,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_track_stereo_sep_verified": {
+   "calls": 88,
+   "ok": 24,
+   "refused": 64,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_track_volume_db_verified": {
+   "calls": 89,
+   "ok": 22,
+   "refused": 67,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "set_track_volume_verified": {
+   "calls": 87,
+   "ok": 17,
+   "refused": 70,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "setup_sidechain_route": {
+   "calls": 94,
+   "ok": 0,
+   "refused": 94,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "snapshot_channels": {
+   "calls": 3,
+   "ok": 2,
+   "refused": 1,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "snapshot_state": {
+   "calls": 68,
+   "ok": 43,
+   "refused": 25,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "snapshot_tracks": {
+   "calls": 57,
+   "ok": 41,
+   "refused": 16,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "solo_channel_verified": {
+   "calls": 70,
+   "ok": 14,
+   "refused": 56,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "solo_group": {
+   "calls": 45,
+   "ok": 18,
+   "refused": 27,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "solo_track_verified": {
+   "calls": 70,
+   "ok": 14,
+   "refused": 56,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "split_frames": {
+   "calls": 74,
+   "ok": 32,
+   "refused": 42,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "stage_gain_chain": {
+   "calls": 104,
+   "ok": 22,
+   "refused": 82,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "take_screenshot": {
+   "calls": 77,
+   "ok": 2,
+   "refused": 75,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "transcribe_to_midi": {
+   "calls": 241,
+   "ok": 29,
+   "refused": 212,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "transpose_notes": {
+   "calls": 92,
+   "ok": 16,
+   "refused": 76,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "type_text": {
+   "calls": 104,
+   "ok": 58,
+   "refused": 46,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "undo_last_verified": {
+   "calls": 57,
+   "ok": 0,
+   "refused": 57,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "unload_model": {
+   "calls": 76,
+   "ok": 59,
+   "refused": 17,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "wait_for_change": {
+   "calls": 105,
+   "ok": 9,
+   "refused": 78,
+   "defect": 0,
+   "fragile": 18,
+   "examples": [
+    {
+     "status": "fragile",
+     "code": "SLOW",
+     "case": "baseline",
+     "note": "5.1 s",
+     "args": "{}"
+    },
+    {
+     "status": "fragile",
+     "code": "SLOW",
+     "case": "threshold=0.0",
+     "note": "5.1 s",
+     "args": "{'threshold': 0.0}"
+    },
+    {
+     "status": "fragile",
+     "code": "SLOW",
+     "case": "threshold=-0.0",
+     "note": "5.1 s",
+     "args": "{'threshold': -0.0}"
+    }
+   ]
+  },
+  "wait_for_reply": {
+   "calls": 76,
+   "ok": 0,
+   "refused": 76,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "write_midi_file": {
+   "calls": 159,
+   "ok": 15,
+   "refused": 144,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "write_notes_via_script": {
+   "calls": 103,
+   "ok": 0,
+   "refused": 103,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  },
+  "write_report_file": {
+   "calls": 169,
+   "ok": 8,
+   "refused": 161,
+   "defect": 0,
+   "fragile": 0,
+   "examples": []
+  }
+ }
+}

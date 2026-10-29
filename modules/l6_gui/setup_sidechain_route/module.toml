@@ -1,0 +1,27 @@
+[module]
+name = "setup_sidechain_route"
+layer = "L6"
+summary = "Route a trigger track to a target track and make that send a sidechain send."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"source":{"type":"integer","minimum":1,"maximum":16},"dest":{"type":"integer","minimum":1,"maximum":16}},"required":["source","dest"],"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["create_send_route", "set_sidechain_send_gui"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_setup_sidechain_route.py::test_routes_then_flags_the_send"
+failure = "test_setup_sidechain_route.py::test_stops_when_the_route_fails"

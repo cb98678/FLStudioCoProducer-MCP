@@ -1,0 +1,27 @@
+[module]
+name = "check_notes_written"
+layer = "L3"
+summary = "Confirm the piano roll script wrote the expected notes, and optionally that each one matches."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["result_path","expected"],"properties":{"result_path":{"type":"string","minLength":1},"expected":{"type":"integer","minimum":1},"notes":{"type":"array","items":{"type":"object"}}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_check_notes_written.py::test_matching_counts_and_notes"
+failure = "test_check_notes_written.py::test_missing_short_broken_and_wrong_notes"

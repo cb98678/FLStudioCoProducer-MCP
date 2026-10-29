@@ -1,0 +1,27 @@
+[module]
+name = "list_channels_summary"
+layer = "L2"
+summary = "List channels with name, type, volume, pan, mute state and target mixer track."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"array","items":{"type":"object"}}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_channels_channel_count", "op_channels_get_channel_name", "op_channels_get_channel_type", "op_channels_get_channel_volume", "op_channels_get_channel_pan", "op_channels_is_channel_muted", "op_channels_get_target_fx_track"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_channels_summary.py::test_lists_channels"
+failure = "test_list_channels_summary.py::test_surfaces_read_error"

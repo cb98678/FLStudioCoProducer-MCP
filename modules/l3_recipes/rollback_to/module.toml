@@ -1,0 +1,27 @@
+[module]
+name = "rollback_to"
+layer = "L3"
+summary = "Restore tracks, channels and tempo to a snapshot and prove the project matches it."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["snapshot"],"properties":{"snapshot":{"type":"object"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["restore_state_values", "snapshot_state", "diff_state_snapshots"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_rollback_to.py::test_rolls_back_and_proves_it"
+failure = "test_rollback_to.py::test_reports_what_cannot_be_restored"

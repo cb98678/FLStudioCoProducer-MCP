@@ -1,0 +1,27 @@
+[module]
+name = "snapshot_project_params"
+layer = "L2"
+summary = "Read every effect slot and parameter on chosen mixer inserts, their levels and routes, and every channel with its generator parameters."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["inserts"],"properties":{"inserts":{"type":"array","items":{"type":"integer","minimum":0,"maximum":126}},"max_params":{"type":"integer","minimum":1,"maximum":4096},"include_channels":{"type":"boolean"},"channel_params":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "minutes"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_track_count", "op_mixer_get_current_tempo", "op_mixer_get_track_name", "op_mixer_get_track_color", "op_mixer_get_track_volume", "op_mixer_get_track_pan", "op_mixer_get_track_stereo_sep", "op_mixer_get_route_send_active", "op_mixer_get_route_to_level", "op_plugins_is_valid", "op_plugins_get_plugin_name", "op_mixer_get_plugin_mix_level", "op_mixer_get_plugin_mute_state", "op_plugins_get_param_count", "op_plugins_get_param_name", "op_plugins_get_param_value", "op_plugins_get_param_value_string", "op_channels_channel_count", "op_channels_get_channel_name", "op_channels_get_channel_type", "op_channels_get_channel_volume", "op_channels_get_channel_pan", "op_channels_get_target_fx_track"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_snapshot_project_params.py::test_reads_slots_params_and_channels"
+failure = "test_snapshot_project_params.py::test_failures"

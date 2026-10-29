@@ -1,0 +1,27 @@
+[module]
+name = "set_channel_pan_verified"
+layer = "L2"
+summary = "Set a channel's pan from -1.0 to 1.0 and confirm by reading it back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","pan"],"properties":{"index":{"type":"integer","minimum":0},"pan":{"type":"number","minimum":-1.0,"maximum":1.0}},"additionalProperties":false}'''
+output = '''{"type":["number","string","boolean","integer"]}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 1
+calls = ["op_channels_set_channel_pan", "op_channels_get_channel_pan"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_channel_pan_verified.py::test_reads_back_and_changes_fake"
+failure = "test_set_channel_pan_verified.py::test_failures"

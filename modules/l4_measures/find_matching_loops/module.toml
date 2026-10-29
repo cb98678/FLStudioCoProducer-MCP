@@ -1,0 +1,27 @@
+[module]
+name = "find_matching_loops"
+layer = "L4"
+summary = "Rank drum loops (and kick samples) on this computer, FL Studio's factory Packs by default, against a song's extracted patterns."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["patterns_path","section"],"properties":{"patterns_path":{"type":"string","minLength":1},"section":{"type":"string","minLength":1},"folders":{"type":"array","items":{"type":"string"},"maxItems":16},"kick_path":{"type":"string"},"kick_folders":{"type":"array","items":{"type":"string"},"maxItems":16},"top":{"type":"integer","minimum":1,"maximum":50}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["loops","kicks"],"properties":{"section":{"type":"string"},"target":{"type":"object"},"loops":{"type":"array"},"searched":{"type":"integer"},"kick_target":{},"kicks":{"type":"array"},"unreadable":{"type":"array"},"folders":{"type":"array"},"summary":{"type":"string"}}}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = ["numpy", "scipy", "soundfile"]
+
+[tests]
+golden = "test_find_matching_loops.py::test_the_matching_groove_ranks_first"
+failure = "test_find_matching_loops.py::test_failures"

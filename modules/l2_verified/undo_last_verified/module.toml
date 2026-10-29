@@ -1,0 +1,27 @@
+[module]
+name = "undo_last_verified"
+layer = "L2"
+summary = "Undo one step in FL and confirm that a mixer value changed back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"track_limit":{"type":"integer","minimum":0}},"additionalProperties":false}'''
+output = '''{"type":"array","items":{"type":"object"}}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["snapshot_tracks", "op_general_undo", "diff_state_snapshots"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_undo_last_verified.py::test_undo_reverts_a_change"
+failure = "test_undo_last_verified.py::test_nothing_to_undo"

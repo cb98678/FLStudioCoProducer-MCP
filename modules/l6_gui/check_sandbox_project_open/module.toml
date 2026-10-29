@@ -1,0 +1,28 @@
+[module]
+name = "check_sandbox_project_open"
+layer = "L6"
+summary = "Check that FL has a saved project from the sandbox open before any GUI step changes it."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+expose = false
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_check_sandbox_project_open.py::test_accepts_a_sandbox_project"
+failure = "test_check_sandbox_project_open.py::test_refuses_unsaved_and_foreign_projects"

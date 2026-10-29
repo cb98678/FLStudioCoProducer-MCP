@@ -1,0 +1,27 @@
+[module]
+name = "critique_audio"
+layer = "L5"
+summary = "Critique an audio file with the audio-language model, or with rules if it is absent."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"focus":{"type":"string","maxLength":200}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A1"
+cost = "gpu"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["run_model_op", "critique_audio_dsp"]
+models = ["flamingo"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_critique_audio.py::test_uses_the_model"
+failure = "test_critique_audio.py::test_falls_back_to_rules"

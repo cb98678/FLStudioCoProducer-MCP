@@ -1,0 +1,27 @@
+[module]
+name = "restore_solo_group"
+layer = "L3"
+summary = "Put mixer track solo states back to a map saved by solo_group."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["previous"],"properties":{"previous":{"type":"object","propertyNames":{"pattern":"^[0-9]{1,4}$"},"additionalProperties":{"type":"boolean"},"maxProperties":500}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["solo_track_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_restore_solo_group.py::test_restores_states"
+failure = "test_restore_solo_group.py::test_failures"

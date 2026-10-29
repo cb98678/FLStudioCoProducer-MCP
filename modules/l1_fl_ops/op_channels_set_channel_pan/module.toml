@@ -1,0 +1,27 @@
+[module]
+name = "op_channels_set_channel_pan"
+layer = "L1"
+summary = "Write through channels.setChannelPan in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"pan":{"type":"number"},"pickupMode":{"type":"integer"},"useGlobalIndex":{"type":"boolean"}},"required":["index","pan"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_channels_set_channel_pan.py::test_matches_fake"
+failure = "test_op_channels_set_channel_pan.py::test_failures"

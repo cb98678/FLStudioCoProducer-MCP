@@ -1,0 +1,27 @@
+[module]
+name = "save_project_copy"
+layer = "L6"
+summary = "Save the open project to a new file inside the sandbox with Save As."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1,"maxLength":300}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_save_project_copy.py::test_runs_its_recipe"
+failure = "test_save_project_copy.py::test_refuses_bad_input"

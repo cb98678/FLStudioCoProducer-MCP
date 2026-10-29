@@ -1,0 +1,27 @@
+[module]
+name = "build_remix_project"
+layer = "L3"
+summary = "Build the remix project from a song plan: editable drums, bass, stabs, vocal chops and clips, saved as a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["base_project","sytrus_project","audio_dir","out_project"],"properties":{"base_project":{"type":"string","x-path":true,"minLength":1},"sytrus_project":{"type":"string","x-path":true,"minLength":1},"audio_dir":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"plan_file":{"type":"string","x-path":true},"options":{"type":"object"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_remix_project.py::test_builds_and_reads_back"
+failure = "test_build_remix_project.py::test_failures"

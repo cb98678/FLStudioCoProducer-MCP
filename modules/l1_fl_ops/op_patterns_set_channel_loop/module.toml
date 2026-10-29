@@ -1,0 +1,27 @@
+[module]
+name = "op_patterns_set_channel_loop"
+layer = "L1"
+summary = "Write through patterns.setChannelLoop in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"channel":{"type":"integer"},"loopPoint":{"type":"integer"}},"required":["channel","loopPoint"],"additionalProperties":false}'''
+output = '''{"type":"string"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_patterns_set_channel_loop.py::test_matches_fake"
+failure = "test_op_patterns_set_channel_loop.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "op_device_get_device_i_d"
+layer = "L1"
+summary = "Read device.getDeviceID from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"required":[],"additionalProperties":false}'''
+output = '''{}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 25
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_device_get_device_i_d.py::test_matches_fake"
+failure = "test_op_device_get_device_i_d.py::test_failures"

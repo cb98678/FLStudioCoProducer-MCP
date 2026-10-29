@@ -1,0 +1,27 @@
+[module]
+name = "load_genre_profile"
+layer = "L4"
+summary = "Read and validate a genre profile file."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"allow_blanks":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_load_genre_profile.py::test_reads_complete_profile"
+failure = "test_load_genre_profile.py::test_blanks_and_missing_tables"

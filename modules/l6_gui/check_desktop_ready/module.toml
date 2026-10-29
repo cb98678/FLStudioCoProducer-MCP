@@ -1,0 +1,30 @@
+[module]
+name = "check_desktop_ready"
+layer = "L6"
+summary = "Check that FL Studio's window can receive input right now."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_check_desktop_ready.py::test_ready_and_window_info"
+failure = "test_check_desktop_ready.py::test_every_refusal"
+
+[budget]
+lines = 45

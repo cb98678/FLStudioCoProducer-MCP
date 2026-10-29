@@ -1,0 +1,27 @@
+[module]
+name = "join_frames"
+layer = "L0"
+summary = "Concatenate ordered byte chunks into one message."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["frames"],"properties":{"frames":{"type":"array","items":{"type":"array"}}}}'''
+output = '''{"type":"array","items":{"type":"integer"}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_join_frames.py::test_joins"
+failure = "test_join_frames.py::test_rejects_bad_input"

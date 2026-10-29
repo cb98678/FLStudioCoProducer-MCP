@@ -1,0 +1,27 @@
+[module]
+name = "measure_part_levels"
+layer = "L4"
+summary = "Measure the loudness of each solo-rendered part and its level relative to the kick; the result is a profile when the mix is an approved one."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["solo_dir","render_dir"],"properties":{"solo_dir":{"type":"string","x-path":true,"minLength":1},"render_dir":{"type":"string","x-path":true,"minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_part_levels.py::test_measures_parts"
+failure = "test_measure_part_levels.py::test_failures"

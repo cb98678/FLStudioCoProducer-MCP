@@ -1,0 +1,27 @@
+[module]
+name = "clear_pattern_verified"
+layer = "L2"
+summary = "Clear a pattern and confirm FL reports it as default; FL asks for confirmation when it has data."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index"],"properties":{"index":{"type":"integer","minimum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 45
+calls = ["op_patterns_is_pattern_default", "op_patterns_clear_pattern"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_clear_pattern_verified.py::test_clears_a_pattern_with_data"
+failure = "test_clear_pattern_verified.py::test_failures"

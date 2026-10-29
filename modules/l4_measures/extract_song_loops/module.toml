@@ -1,0 +1,27 @@
+[module]
+name = "extract_song_loops"
+layer = "L4"
+summary = "Cut a song's clean loops (every repeat averaged), its drum kit and its drum and bass patterns (MIDI) from its stems into the sandbox."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["song_dir","sections"],"properties":{"song_dir":{"type":"string","minLength":1},"sections":{"type":"string","minLength":5},"out_dir":{"type":"string"},"loop_bars":{"type":"array","items":{"type":"integer","minimum":1,"maximum":8},"maxItems":4},"kit_from":{"type":"string"},"hook":{"type":"string"}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["out_dir","sections","kit"],"properties":{"out_dir":{"type":"string"},"bpm":{"type":"number"},"files":{"type":"integer"},"sections":{"type":"object"},"kit":{"type":"object"},"readme":{"type":"string"}}}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = ["numpy", "scipy", "soundfile", "mido"]
+
+[tests]
+golden = "test_extract_song_loops.py::test_loops_kit_and_patterns_from_a_house_groove"
+failure = "test_extract_song_loops.py::test_failures"

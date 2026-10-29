@@ -1,0 +1,30 @@
+[module]
+name = "wait_for_change"
+layer = "L6"
+summary = "Wait until FL Studio's window changes, or time out."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"timeout_s":{"type":"number","exclusiveMinimum":0,"maximum":120},"threshold":{"type":"number","minimum":0,"maximum":1},"poll_s":{"type":"number","minimum":0.01,"maximum":5}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_wait_for_change.py::test_detects_a_change"
+failure = "test_wait_for_change.py::test_times_out_without_error"
+
+[budget]
+lines = 45

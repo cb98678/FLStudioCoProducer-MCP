@@ -1,0 +1,27 @@
+[module]
+name = "read_project_anatomy"
+layer = "L4"
+summary = "Read a whole FL project file: channels and Layer children, inserts with routing and effect slots, automation and controller links resolved to names, arrangements with markers."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project"],"properties":{"project":{"type":"string","minLength":1},"include":{"type":"array","items":{"type":"string","enum":["project","channels","inserts","automation","arrangements","groups"]}}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_read_project_anatomy.py::test_reads_layers_routes_and_links"
+failure = "test_read_project_anatomy.py::test_failures"

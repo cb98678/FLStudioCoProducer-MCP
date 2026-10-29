@@ -1,0 +1,27 @@
+[module]
+name = "find_final_s_end"
+layer = "L4"
+summary = "Find where a vocal cut should end to include the closing s or z hiss of a word like blues, places or friends."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","end_s"],"properties":{"path":{"type":"string","minLength":1},"end_s":{"type":"number","minimum":0},"reach_s":{"type":"number","minimum":0.05,"maximum":1.0}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_find_final_s_end.py::test_finds_the_hiss_after_a_dip"
+failure = "test_find_final_s_end.py::test_failures"

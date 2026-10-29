@@ -1,0 +1,27 @@
+[module]
+name = "detect_sections_dsp"
+layer = "L4"
+summary = "Estimate section boundaries from changes in the spectrum over time."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"min_len_s":{"type":"number","minimum":2,"maximum":60}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_detect_sections_dsp.py::test_finds_boundaries"
+failure = "test_detect_sections_dsp.py::test_failures"

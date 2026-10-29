@@ -1,0 +1,27 @@
+[module]
+name = "op_mixer_is_track_rev_polarity"
+layer = "L1"
+summary = "Read mixer.isTrackRevPolarity from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"}},"required":["index"],"additionalProperties":false}'''
+output = '''{"type":"boolean"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 19
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_mixer_is_track_rev_polarity.py::test_matches_fake"
+failure = "test_op_mixer_is_track_rev_polarity.py::test_failures"

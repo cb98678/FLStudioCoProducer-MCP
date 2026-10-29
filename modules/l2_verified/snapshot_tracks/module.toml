@@ -1,0 +1,27 @@
+[module]
+name = "snapshot_tracks"
+layer = "L2"
+summary = "Capture the main settings of mixer tracks into a plain dictionary."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"track_limit":{"type":"integer","minimum":0}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_track_count", "op_mixer_get_track_name", "op_mixer_get_track_volume", "op_mixer_get_track_pan", "op_mixer_get_track_stereo_sep", "op_mixer_is_track_muted", "op_mixer_is_track_solo"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_snapshot_tracks.py::test_captures_tracks"
+failure = "test_snapshot_tracks.py::test_surfaces_read_error"

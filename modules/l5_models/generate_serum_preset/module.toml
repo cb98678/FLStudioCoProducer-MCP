@@ -1,0 +1,27 @@
+[module]
+name = "generate_serum_preset"
+layer = "L5"
+summary = "Write a Serum 2 preset from a serum-mcp spec with serum-mcp's own code, into a subfolder named sandbox of the Serum user presets."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["spec","subfolder"],"properties":{"spec":{"type":"object","required":["name","description","oscillators"]},"subfolder":{"type":"string","x-path":true,"pattern":"^sandbox(/[A-Za-z0-9 _.-]+)*$"},"presets_dir":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string"},"depends_on":{"type":"array"},"name":{"type":"string"}}}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["run_model_op"]
+models = ["serummcp"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_generate_serum_preset.py::test_a_spec_becomes_a_preset_in_the_sandbox_subfolder"
+failure = "test_generate_serum_preset.py::test_errors"

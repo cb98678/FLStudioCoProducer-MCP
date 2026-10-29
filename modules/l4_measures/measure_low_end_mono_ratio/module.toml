@@ -1,0 +1,27 @@
+[module]
+name = "measure_low_end_mono_ratio"
+layer = "L4"
+summary = "Measure how mono a stereo file is below a cutoff frequency, as side energy relative to mid energy in dB."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"cutoff_hz":{"type":"number","minimum":20,"maximum":500}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_low_end_mono_ratio.py::test_known_signal"
+failure = "test_measure_low_end_mono_ratio.py::test_failures"

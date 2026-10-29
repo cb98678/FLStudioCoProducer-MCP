@@ -1,0 +1,27 @@
+[module]
+name = "encode_sysex"
+layer = "L0"
+summary = "Pack bytes into 7-bit form so they can travel inside a SysEx message."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["data"],"properties":{"data":{"type":"array","items":{"type":"integer","minimum":0,"maximum":255}}}}'''
+output = '''{"type":"array","items":{"type":"integer","minimum":0,"maximum":127}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_encode_sysex.py::test_known_vectors"
+failure = "test_encode_sysex.py::test_rejects_bad_input"

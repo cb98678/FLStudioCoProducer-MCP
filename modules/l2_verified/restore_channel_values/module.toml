@@ -1,0 +1,27 @@
+[module]
+name = "restore_channel_values"
+layer = "L2"
+summary = "Put channel settings back to the values in a snapshot, using verified writes."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["snapshot"],"properties":{"snapshot":{"type":"object"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["snapshot_channels", "diff_state_snapshots", "set_channel_volume_verified", "set_channel_pan_verified", "mute_channel_verified", "route_channel_to_track_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_restore_channel_values.py::test_restores_changed_values"
+failure = "test_restore_channel_values.py::test_reports_values_that_do_not_stick"

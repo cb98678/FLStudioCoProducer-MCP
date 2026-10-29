@@ -1,0 +1,27 @@
+[module]
+name = "unload_model"
+layer = "L5"
+summary = "Unload a model and free its GPU memory."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["model"],"properties":{"model":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_unload_model.py::test_unloads"
+failure = "test_unload_model.py::test_not_loaded_is_fine"

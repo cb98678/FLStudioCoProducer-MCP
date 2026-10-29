@@ -1,0 +1,30 @@
+[module]
+name = "load_targets_file"
+layer = "L4"
+summary = "Read a targets file into limits on the measure report."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_load_targets_file.py::test_reads_filled_targets"
+failure = "test_load_targets_file.py::test_refuses_blanks_and_bad_files"
+
+[budget]
+lines = 45

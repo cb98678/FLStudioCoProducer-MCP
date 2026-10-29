@@ -1,0 +1,27 @@
+[module]
+name = "op_arrangement_current_time"
+layer = "L1"
+summary = "Read arrangement.currentTime from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"snap":{"type":"integer"}},"required":["snap"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_arrangement_current_time.py::test_matches_fake"
+failure = "test_op_arrangement_current_time.py::test_failures"

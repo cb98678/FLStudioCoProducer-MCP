@@ -1,0 +1,27 @@
+[module]
+name = "list_effect_slots"
+layer = "L2"
+summary = "List the effect slots on a mixer track with plugin name, active flag and mix level."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index"],"properties":{"index":{"type":"integer","minimum":0},"slots":{"type":"integer","minimum":1,"maximum":10}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_plugins_get_plugin_name", "op_mixer_get_plugin_mute_state", "op_mixer_get_plugin_mix_level"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_effect_slots.py::test_lists_filled_slots_with_state"
+failure = "test_list_effect_slots.py::test_empty_track_gives_no_slots"

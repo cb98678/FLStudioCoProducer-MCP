@@ -1,0 +1,27 @@
+[module]
+name = "measure_mid_side_ratio"
+layer = "L4"
+summary = "Measure the mid to side energy ratio of a stereo file in dB."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_mid_side_ratio.py::test_known_signal"
+failure = "test_measure_mid_side_ratio.py::test_failures"

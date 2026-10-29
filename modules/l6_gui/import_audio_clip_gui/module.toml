@@ -1,0 +1,27 @@
+[module]
+name = "import_audio_clip_gui"
+layer = "L6"
+summary = "Load a sandbox audio file into a new Audio Clip channel through FL's add menu and open dialog."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1,"maxLength":400}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_import_audio_clip_gui.py::test_runs_its_recipe_with_the_resolved_path"
+failure = "test_import_audio_clip_gui.py::test_refuses_paths_outside_the_sandbox"

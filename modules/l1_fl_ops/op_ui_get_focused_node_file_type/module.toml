@@ -1,0 +1,27 @@
+[module]
+name = "op_ui_get_focused_node_file_type"
+layer = "L1"
+summary = "Read ui.getFocusedNodeFileType from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"required":[],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 20
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_ui_get_focused_node_file_type.py::test_matches_fake"
+failure = "test_op_ui_get_focused_node_file_type.py::test_failures"

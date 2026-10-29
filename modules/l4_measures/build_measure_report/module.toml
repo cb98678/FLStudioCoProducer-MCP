@@ -1,0 +1,30 @@
+[module]
+name = "build_measure_report"
+layer = "L4"
+summary = "Run the standard measures on one audio file and assemble a single report."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["measure_sample_peak", "measure_true_peak", "measure_rms", "measure_crest_factor", "measure_integrated_loudness", "measure_loudness_range", "measure_band_energy", "measure_spectral_centroid", "count_clipped_samples", "detect_silence", "measure_dc_offset", "measure_stereo_correlation", "measure_mid_side_ratio", "measure_low_end_mono_ratio"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_measure_report.py::test_report_has_every_section"
+failure = "test_build_measure_report.py::test_failures"
+
+[budget]
+lines = 45

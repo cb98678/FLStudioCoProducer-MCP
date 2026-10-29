@@ -1,0 +1,27 @@
+[module]
+name = "op_general_undo_up"
+layer = "L1"
+summary = "Write through general.undoUp in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"required":[],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_general_undo_up.py::test_matches_fake"
+failure = "test_op_general_undo_up.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "op_transport_fast_forward"
+layer = "L1"
+summary = "Write through transport.fastForward in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"startStop":{"type":"integer"},"flags":{"type":"integer"}},"required":["startStop"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_transport_fast_forward.py::test_matches_fake"
+failure = "test_op_transport_fast_forward.py::test_failures"

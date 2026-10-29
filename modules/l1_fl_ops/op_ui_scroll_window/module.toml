@@ -1,0 +1,27 @@
+[module]
+name = "op_ui_scroll_window"
+layer = "L1"
+summary = "Write through ui.scrollWindow in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"value":{"type":"integer"},"directionFlag":{"type":"integer"}},"required":["index","value"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 13
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_ui_scroll_window.py::test_matches_fake"
+failure = "test_op_ui_scroll_window.py::test_failures"

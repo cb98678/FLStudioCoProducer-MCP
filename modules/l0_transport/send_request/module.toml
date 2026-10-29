@@ -1,0 +1,27 @@
+[module]
+name = "send_request"
+layer = "L0"
+summary = "Send framed messages on the bridge transport."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["frames"],"properties":{"frames":{"type":"array","items":{"type":"array"}}}}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_send_request.py::test_sends_in_order"
+failure = "test_send_request.py::test_no_transport_and_send_error"

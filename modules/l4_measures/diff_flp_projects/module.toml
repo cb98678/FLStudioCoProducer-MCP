@@ -1,0 +1,27 @@
+[module]
+name = "diff_flp_projects"
+layer = "L4"
+summary = "Compare two FL projects (a build and the copy a person hand-fixed): channels, samples, Serum presets, mixer dB, note rhythm and audio clips."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["before","after"],"properties":{"before":{"type":"string","minLength":1},"after":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_diff_flp_projects.py::test_reports_changes"
+failure = "test_diff_flp_projects.py::test_failures"

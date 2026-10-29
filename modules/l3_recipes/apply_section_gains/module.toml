@@ -1,0 +1,27 @@
+[module]
+name = "apply_section_gains"
+layer = "L3"
+summary = "Shape level section by section before the master with a Fruity Balance and one automation clip per insert, in a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"gains":{"type":"array","items":{"type":"object","required":["insert","sections"],"properties":{"insert":{"type":"integer","minimum":0,"maximum":126},"sections":{"type":"object","additionalProperties":{"type":"number","minimum":-60,"maximum":5.5}},"label":{"type":"string"}}}},"sections":{"type":"array","items":{"type":"object","required":["name","start_bar","end_bar"],"properties":{"name":{"type":"string","minLength":1},"start_bar":{"type":"number","minimum":1},"end_bar":{"type":"number","minimum":1}}}},"by_role":{"type":"object","properties":{"scale":{"type":"number","minimum":0,"maximum":3}},"additionalProperties":{"type":"object","additionalProperties":{"type":"number","minimum":-60,"maximum":5.5}}},"row":{"type":"integer","minimum":0,"maximum":499}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_section_gains.py::test_shapes_two_inserts_by_marker"
+failure = "test_apply_section_gains.py::test_failures"

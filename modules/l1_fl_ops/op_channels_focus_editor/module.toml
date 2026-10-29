@@ -1,0 +1,27 @@
+[module]
+name = "op_channels_focus_editor"
+layer = "L1"
+summary = "Write through channels.focusEditor in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"useGlobalIndex":{"type":"boolean"}},"required":["index"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_channels_focus_editor.py::test_matches_fake"
+failure = "test_op_channels_focus_editor.py::test_failures"

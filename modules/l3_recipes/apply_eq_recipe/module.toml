@@ -1,0 +1,27 @@
+[module]
+name = "apply_eq_recipe"
+layer = "L3"
+summary = "Apply a list of EQ band settings to a mixer track through verified setters."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","bands"],"properties":{"index":{"type":"integer","minimum":0},"bands":{"type":"array","items":{"type":"object","required":["band"],"properties":{"band":{"type":"integer","minimum":0,"maximum":2},"gain":{"type":"number","minimum":0,"maximum":1},"freq":{"type":"number","minimum":0,"maximum":1},"bandwidth":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["set_eq_gain_verified", "set_eq_frequency_verified", "set_eq_bandwidth_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_eq_recipe.py::test_applies_bands"
+failure = "test_apply_eq_recipe.py::test_failures"

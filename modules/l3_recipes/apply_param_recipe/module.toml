@@ -1,0 +1,27 @@
+[module]
+name = "apply_param_recipe"
+layer = "L3"
+summary = "Set several plugin parameters by name, each verified by readback."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","params"],"properties":{"index":{"type":"integer","minimum":0},"params":{"type":"object","additionalProperties":{"type":"number","minimum":0,"maximum":1}},"slot_index":{"type":"integer","minimum":-1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["set_plugin_param_by_name"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_param_recipe.py::test_sets_named_params"
+failure = "test_apply_param_recipe.py::test_failures"

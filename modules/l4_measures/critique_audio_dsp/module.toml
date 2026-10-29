@@ -1,0 +1,30 @@
+[module]
+name = "critique_audio_dsp"
+layer = "L4"
+summary = "Critique an audio file with rules over measurements, without a model."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"loudness_target_lufs":{"type":"number","minimum":-40,"maximum":0},"peak_ceiling_db":{"type":"number","minimum":-12,"maximum":0}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["build_measure_report"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_critique_audio_dsp.py::test_flags_problems"
+failure = "test_critique_audio_dsp.py::test_clean_and_missing_files"
+
+[budget]
+lines = 45

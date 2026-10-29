@@ -1,0 +1,27 @@
+[module]
+name = "ground_gui_element"
+layer = "L5"
+summary = "Find a described interface element on a screenshot and return its coordinates."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["image_path","description"],"properties":{"image_path":{"type":"string","minLength":1},"description":{"type":"string","minLength":2,"maxLength":200},"min_confidence":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "gpu"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["run_model_op"]
+models = ["vision"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_ground_gui_element.py::test_finds_an_element_and_applies_the_confidence_floor"
+failure = "test_ground_gui_element.py::test_missing_screenshot_and_model_not_configured"

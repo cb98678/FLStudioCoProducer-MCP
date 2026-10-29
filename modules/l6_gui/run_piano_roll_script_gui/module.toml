@@ -1,0 +1,27 @@
+[module]
+name = "run_piano_roll_script_gui"
+layer = "L6"
+summary = "Run the armed piano roll script again and confirm it closed cleanly."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":[],"properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_run_piano_roll_script_gui.py::test_runs_its_recipe"
+failure = "test_run_piano_roll_script_gui.py::test_refuses_bad_input"

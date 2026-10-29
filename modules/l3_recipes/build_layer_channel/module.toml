@@ -1,0 +1,27 @@
+[module]
+name = "build_layer_channel"
+layer = "L3"
+summary = "Add a Layer channel (a kick or clap stack, a bass layer) that plays several channels from one set of notes, to a sandbox copy."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project","name","children"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"name":{"type":"string","minLength":1},"children":{"type":"array","items":{"type":["string","integer"]}},"stack":{"type":"array","items":{"type":"object","required":["sample"],"properties":{"sample":{"type":"string","x-path":true,"minLength":1},"name":{"type":"string"},"like":{"type":["string","integer"]},"pitch_cents":{"type":"integer","minimum":-4800,"maximum":4800},"volume":{"type":"integer","minimum":0,"maximum":12800},"band":{"type":"string","enum":["full","top","body"]},"pan":{"type":"number","minimum":-100,"maximum":100}}}},"take_notes_from":{"type":"string"}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_layer_channel.py::test_builds_a_kick_stack"
+failure = "test_build_layer_channel.py::test_failures"

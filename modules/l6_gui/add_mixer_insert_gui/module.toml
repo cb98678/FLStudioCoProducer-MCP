@@ -1,0 +1,27 @@
+[module]
+name = "add_mixer_insert_gui"
+layer = "L6"
+summary = "Add a plugin to an effect slot of a mixer track."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["track_label","plugin"],"properties":{"track_label":{"type":"string","minLength":1,"maxLength":300},"plugin":{"type":"string","minLength":1,"maxLength":300}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_add_mixer_insert_gui.py::test_runs_its_recipe"
+failure = "test_add_mixer_insert_gui.py::test_refuses_bad_input"

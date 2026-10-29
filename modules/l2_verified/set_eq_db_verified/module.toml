@@ -1,0 +1,27 @@
+[module]
+name = "set_eq_db_verified"
+layer = "L2"
+summary = "Set a built-in mixer EQ band to a gain in dB (31 dB per raw unit, measured) and confirm it by readback."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","band","db"],"properties":{"index":{"type":"integer","minimum":0},"band":{"type":"integer","minimum":0,"maximum":2},"db":{"type":"number","minimum":-15,"maximum":15}},"additionalProperties":false}'''
+output = '''{"type":["number","string","boolean","integer"]}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 1
+calls = ["set_eq_gain_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_eq_db_verified.py::test_db_maps_to_raw_and_reads_back"
+failure = "test_set_eq_db_verified.py::test_rejects_bad_band_and_range"

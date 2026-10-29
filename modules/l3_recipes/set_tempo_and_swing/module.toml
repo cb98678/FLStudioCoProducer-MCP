@@ -1,0 +1,27 @@
+[module]
+name = "set_tempo_and_swing"
+layer = "L3"
+summary = "Set the tempo and the global channel swing together and confirm both."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["bpm","swing"],"properties":{"bpm":{"type":"number","minimum":20,"maximum":999},"swing":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 45
+calls = ["set_tempo_verified", "set_swing_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_tempo_and_swing.py::test_sets_both"
+failure = "test_set_tempo_and_swing.py::test_failures"

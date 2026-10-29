@@ -1,0 +1,27 @@
+[module]
+name = "restore_after_render"
+layer = "L3"
+summary = "Put loop mode, song position and play state back after a render."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["was_playing","position","loop_song"],"properties":{"was_playing":{"type":"boolean"},"position":{"type":"number","minimum":0},"loop_song":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["ensure_loop_mode", "set_song_position_verified", "ensure_playing", "ensure_stopped"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_restore_after_render.py::test_restores_transport"
+failure = "test_restore_after_render.py::test_failures"

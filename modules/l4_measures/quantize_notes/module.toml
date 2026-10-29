@@ -1,0 +1,27 @@
+[module]
+name = "quantize_notes"
+layer = "L4"
+summary = "Snap note starts and lengths to a grid."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["notes"],"properties":{"notes":{"type":"array","items":{"type":"object","required":["pitch","start","duration"],"properties":{"pitch":{"type":"integer","minimum":0,"maximum":127},"start":{"type":"number","minimum":0},"duration":{"type":"number","exclusiveMinimum":0},"velocity":{"type":"integer","minimum":1,"maximum":127}}}},"grid_beats":{"type":"number","exclusiveMinimum":0,"maximum":4},"strength":{"type":"number","minimum":0,"maximum":1},"quantize_length":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"array","items":{"type":"object"}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_quantize_notes.py::test_snaps_to_grid"
+failure = "test_quantize_notes.py::test_rejects_bad_grid"

@@ -1,0 +1,27 @@
+[module]
+name = "create_send_route"
+layer = "L3"
+summary = "Route one mixer track to another and set the send level, verified."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["source_index","bus_index"],"properties":{"source_index":{"type":"integer","minimum":0},"bus_index":{"type":"integer","minimum":0},"level":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_set_route_to", "op_mixer_get_route_send_active", "set_route_level_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_create_send_route.py::test_creates_route_and_level"
+failure = "test_create_send_route.py::test_failures"

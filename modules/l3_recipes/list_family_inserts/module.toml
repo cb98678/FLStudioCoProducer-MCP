@@ -1,0 +1,27 @@
+[module]
+name = "list_family_inserts"
+layer = "L3"
+summary = "List a saved project's mixer inserts by family with their names and the standard colours, and the first free insert."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"families":{"type":"array","items":{"type":"string"},"maxItems":5}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_list_family_inserts.py::test_lists_by_family"
+failure = "test_list_family_inserts.py::test_failures"

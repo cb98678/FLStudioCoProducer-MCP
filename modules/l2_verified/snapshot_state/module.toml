@@ -1,0 +1,27 @@
+[module]
+name = "snapshot_state"
+layer = "L2"
+summary = "Capture mixer tracks, channels and tempo into one snapshot dictionary."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"track_limit":{"type":"integer","minimum":0},"include_channels":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["snapshot_tracks", "snapshot_channels", "op_mixer_get_current_tempo"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_snapshot_state.py::test_snapshot_has_all_parts"
+failure = "test_snapshot_state.py::test_surfaces_read_error"

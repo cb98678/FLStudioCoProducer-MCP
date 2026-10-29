@@ -1,0 +1,27 @@
+[module]
+name = "op_mixer_set_eq_gain"
+layer = "L1"
+summary = "Write through mixer.setEqGain in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"band":{"type":"integer"},"value":{"type":"number"}},"required":["index","band","value"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 35
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_mixer_set_eq_gain.py::test_matches_fake"
+failure = "test_op_mixer_set_eq_gain.py::test_failures"

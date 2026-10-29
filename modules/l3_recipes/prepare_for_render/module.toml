@@ -1,0 +1,27 @@
+[module]
+name = "prepare_for_render"
+layer = "L3"
+summary = "Stop the transport, rewind, and report the state and unsaved changes before a render."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_transport_get_song_pos", "op_transport_get_loop_mode", "op_general_get_changed_flag", "ensure_stopped", "set_song_position_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_prepare_for_render.py::test_stops_rewinds_and_reports_state"
+failure = "test_prepare_for_render.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "build_family_buses"
+layer = "L3"
+summary = "Build a yellow bus insert per family (drums, vocals, fx) in the open FL project, send the family's inserts through it and the bus to the master, verified."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"families":{"type":"array","items":{"type":"string"},"maxItems":5},"level":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["list_family_inserts", "check_open_project", "op_mixer_get_track_name", "route_tracks_through_bus", "set_track_color_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_family_buses.py::test_builds_family_buses"
+failure = "test_build_family_buses.py::test_failures"

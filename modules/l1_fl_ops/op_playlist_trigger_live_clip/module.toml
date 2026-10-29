@@ -1,0 +1,27 @@
+[module]
+name = "op_playlist_trigger_live_clip"
+layer = "L1"
+summary = "Write through playlist.triggerLiveClip in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"subNum":{"type":"integer"},"flags":{"type":"integer"},"velocity":{"type":"integer"}},"required":["index","subNum","flags"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_playlist_trigger_live_clip.py::test_matches_fake"
+failure = "test_op_playlist_trigger_live_clip.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "load_invariants_file"
+layer = "L4"
+summary = "Read and validate the invariants file for a restyle."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_load_invariants_file.py::test_reads_complete_invariants"
+failure = "test_load_invariants_file.py::test_blank_policy_and_missing"

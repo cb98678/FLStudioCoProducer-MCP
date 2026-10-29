@@ -1,0 +1,27 @@
+[module]
+name = "build_param_map"
+layer = "L2"
+summary = "Build and cache a name to parameter-index map for one plugin."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index"],"properties":{"index":{"type":"integer","minimum":0},"slot_index":{"type":"integer","minimum":-1},"refresh":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_plugins_get_plugin_name", "list_plugin_params"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_param_map.py::test_builds_and_caches"
+failure = "test_build_param_map.py::test_duplicates_and_missing"

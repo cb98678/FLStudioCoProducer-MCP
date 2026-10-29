@@ -1,0 +1,27 @@
+[module]
+name = "ensure_loop_mode"
+layer = "L2"
+summary = "Make the transport loop the song or the pattern, then confirm."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["song"],"properties":{"song":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_transport_get_loop_mode", "op_transport_set_loop_mode"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_ensure_loop_mode.py::test_toggles_only_when_needed"
+failure = "test_ensure_loop_mode.py::test_reports_ignored_toggle"

@@ -1,0 +1,30 @@
+[module]
+name = "set_track_volume_db_verified"
+layer = "L2"
+summary = "Set a mixer track's fader to a level in dB and confirm by reading the dB value back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","db"],"properties":{"index":{"type":"integer","minimum":0},"db":{"type":"number","minimum":-60,"maximum":6}},"additionalProperties":false}'''
+output = '''{"type":"number"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_get_track_volume", "op_mixer_set_track_volume"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_track_volume_db_verified.py::test_converges_even_with_a_different_fader_law"
+failure = "test_set_track_volume_db_verified.py::test_failures"
+
+[budget]
+lines = 45

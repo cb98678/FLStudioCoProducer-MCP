@@ -1,0 +1,27 @@
+[module]
+name = "op_playlist_live_time_to_block_num"
+layer = "L1"
+summary = "Read playlist.liveTimeToBlockNum from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"time":{"type":"integer"}},"required":["time"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_playlist_live_time_to_block_num.py::test_matches_fake"
+failure = "test_op_playlist_live_time_to_block_num.py::test_failures"

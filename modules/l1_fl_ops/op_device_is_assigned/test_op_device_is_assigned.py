@@ -1,0 +1,31 @@
+"""Tests for op_device_is_assigned: golden against the fake FL, and failure handling."""
+import pytest
+
+from coproducer.fakefl import FakeFL
+from coproducer.l1load import load_l1
+
+OP = "op_device_is_assigned"
+SAMPLE = ()
+
+
+@pytest.fixture
+def fl():
+    f = FakeFL().install()
+    yield f
+    f.uninstall()
+
+
+def test_matches_fake(fl):
+    r = load_l1(OP)(*SAMPLE)
+    want = fl.modules['device'].isAssigned(*SAMPLE)
+    assert r['ok'] is True
+    assert r['value'] == want
+
+
+def test_failures(fl):
+    def boom(*a, **k):
+        raise RuntimeError("fl broke")
+
+    setattr(fl.modules["device"], "isAssigned", boom)
+    r = load_l1(OP)(*SAMPLE)
+    assert r["ok"] is False and r["error"]["code"] == "E_INTERNAL"

@@ -1,0 +1,27 @@
+[module]
+name = "op_mixer_get_eq_bandwidth"
+layer = "L1"
+summary = "Read mixer.getEqBandwidth from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"band":{"type":"integer"}},"required":["index","band"],"additionalProperties":false}'''
+output = '''{"type":"number"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 35
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_mixer_get_eq_bandwidth.py::test_matches_fake"
+failure = "test_op_mixer_get_eq_bandwidth.py::test_failures"

@@ -1,0 +1,30 @@
+[module]
+name = "generate_audio"
+layer = "L5"
+summary = "Generate audio from a text prompt with ACE-Step."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["prompt","out_dir"],"properties":{"prompt":{"type":"string","minLength":3,"maxLength":512},"out_dir":{"type":"string","minLength":1},"duration_s":{"type":"number","minimum":10,"maximum":600},"bpm":{"type":"number","minimum":0,"maximum":300},"key":{"type":"string"},"seed":{"type":"integer"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = false
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "run_model_op", "detect_silence"]
+models = ["acestep"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_generate_audio.py::test_generates_checked_audio"
+failure = "test_generate_audio.py::test_sandbox_and_input_errors"
+
+[budget]
+lines = 45

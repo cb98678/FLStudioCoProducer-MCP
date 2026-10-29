@@ -1,0 +1,27 @@
+[module]
+name = "press_hotkey"
+layer = "L6"
+summary = "Press a key chord in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["keys"],"properties":{"keys":{"type":"array","items":{"type":"string","minLength":1},"minItems":1,"maxItems":4}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_press_hotkey.py::test_presses_chords"
+failure = "test_press_hotkey.py::test_refuses_unknown_and_dangerous_keys"

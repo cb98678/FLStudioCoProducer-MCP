@@ -1,0 +1,27 @@
+[module]
+name = "set_sidechain_source_gui"
+layer = "L6"
+summary = "Pick the sidechain source in an open Fruity Limiter window on a mixer track."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"dest":{"type":"integer","minimum":1,"maximum":125},"position":{"type":"integer","minimum":1,"maximum":8}},"required":["dest"],"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_sidechain_source_gui.py::test_clicks_the_listed_source"
+failure = "test_set_sidechain_source_gui.py::test_refuses_missing_window"

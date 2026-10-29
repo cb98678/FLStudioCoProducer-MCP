@@ -1,0 +1,27 @@
+[module]
+name = "op_ui_navigate_browser"
+layer = "L1"
+summary = "Write through ui.navigateBrowser in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"direction":{"type":"integer"},"shiftHeld":{"type":"boolean"}},"required":["direction","shiftHeld"],"additionalProperties":false}'''
+output = '''{"type":"string"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 22
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_ui_navigate_browser.py::test_matches_fake"
+failure = "test_op_ui_navigate_browser.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "measure_pump_depth"
+layer = "L4"
+summary = "How much a part ducks on each beat: its level folded over one beat, the depth in dB and where the dip sits."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","bpm"],"properties":{"path":{"type":"string","minLength":1},"bpm":{"type":"number","exclusiveMinimum":0},"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_pump_depth.py::test_pumped_against_flat"
+failure = "test_measure_pump_depth.py::test_failures"

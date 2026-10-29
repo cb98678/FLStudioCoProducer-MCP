@@ -1,0 +1,352 @@
+{
+ "ref1_dontellmecalmdown": {
+  "report": {
+   "sample_peak": {
+    "peak_db": -3.2,
+    "per_channel_db": [
+     -3.55,
+     -3.2
+    ]
+   },
+   "true_peak": {
+    "true_peak_dbtp": -3.12,
+    "sample_peak_db": -3.2,
+    "intersample_over": false
+   },
+   "rms": {
+    "rms_db": -14.49,
+    "per_channel_db": [
+     -14.59,
+     -14.4
+    ]
+   },
+   "crest": {
+    "crest_db": 11.3,
+    "peak_db": -3.2,
+    "rms_db": -14.49
+   },
+   "loudness": {
+    "lufs": -13.94
+   },
+   "range": {
+    "lra_lu": 5.22,
+    "low_lufs": -17.33,
+    "high_lufs": -12.11
+   },
+   "bands": {
+    "sub": -2.8,
+    "bass": -4.27,
+    "low_mid": -15.09,
+    "mid": -14.03,
+    "high_mid": -18.31,
+    "presence": -20.99,
+    "air": -22.42
+   },
+   "centroid": {
+    "centroid_hz": 262.2
+   },
+   "clipping": {
+    "clipped_samples": 0,
+    "longest_run": 0,
+    "clipped_fraction": 0.0
+   },
+   "silence": {
+    "regions": [],
+    "silent_fraction": 0.0,
+    "mostly_silent": false
+   },
+   "correlation": {
+    "correlation": 0.928,
+    "mono_compatible": true
+   },
+   "mid_side": {
+    "mid_side_db": 14.28,
+    "mono": false
+   },
+   "low_end_mono": {
+    "side_over_mid_db": -21.52,
+    "mono_below_cutoff": true
+   }
+  },
+  "bpm_candidates": {
+   "candidates": [
+    {
+     "bpm": 159.8,
+     "strength": 0.6877
+    },
+    {
+     "bpm": 79.8,
+     "strength": 0.6547
+    },
+    {
+     "bpm": 106.32,
+     "strength": 0.5439
+    },
+    {
+     "bpm": 63.84,
+     "strength": 0.4169
+    },
+    {
+     "bpm": 127.83,
+     "strength": -0.0414
+    }
+   ],
+   "ambiguous": true,
+   "relatives": [
+    {
+     "bpm": 79.8,
+     "relation": "half",
+     "strength_vs_top": 0.95
+    },
+    {
+     "bpm": 106.32,
+     "relation": "2:3",
+     "strength_vs_top": 0.79
+    }
+   ],
+   "bpm": 159.8
+  },
+  "key": {
+   "key": "B minor",
+   "score": 0.5286,
+   "margin": 0.0728,
+   "runner_up": "A major"
+  },
+  "short_term_max_lufs": -11.77
+ },
+ "ref2_howiesim": {
+  "report": {
+   "sample_peak": {
+    "peak_db": -1.81,
+    "per_channel_db": [
+     -1.81,
+     -1.81
+    ]
+   },
+   "true_peak": {
+    "true_peak_dbtp": -1.81,
+    "sample_peak_db": -1.81,
+    "intersample_over": false
+   },
+   "rms": {
+    "rms_db": -14.31,
+    "per_channel_db": [
+     -14.46,
+     -14.17
+    ]
+   },
+   "crest": {
+    "crest_db": 12.5,
+    "peak_db": -1.81,
+    "rms_db": -14.31
+   },
+   "loudness": {
+    "lufs": -13.72
+   },
+   "range": {
+    "lra_lu": 3.63,
+    "low_lufs": -15.83,
+    "high_lufs": -12.2
+   },
+   "bands": {
+    "sub": -2.36,
+    "bass": -4.99,
+    "low_mid": -16.57,
+    "mid": -14.97,
+    "high_mid": -16.17,
+    "presence": -18.63,
+    "air": -21.15
+   },
+   "centroid": {
+    "centroid_hz": 334.4
+   },
+   "clipping": {
+    "clipped_samples": 0,
+    "longest_run": 0,
+    "clipped_fraction": 0.0
+   },
+   "silence": {
+    "regions": [
+     {
+      "start_s": 0.04,
+      "end_s": 0.55
+     }
+    ],
+    "silent_fraction": 0.003,
+    "mostly_silent": false
+   },
+   "correlation": {
+    "correlation": 0.964,
+    "mono_compatible": true
+   },
+   "mid_side": {
+    "mid_side_db": 17.29,
+    "mono": false
+   },
+   "low_end_mono": {
+    "side_over_mid_db": -20.98,
+    "mono_below_cutoff": true
+   }
+  },
+  "bpm_candidates": {
+   "candidates": [
+    {
+     "bpm": 130.19,
+     "strength": 0.6791
+    },
+    {
+     "bpm": 86.64,
+     "strength": 0.602
+    },
+    {
+     "bpm": 65.0,
+     "strength": 0.5175
+    },
+    {
+     "bpm": 173.82,
+     "strength": 0.1004
+    },
+    {
+     "bpm": 104.02,
+     "strength": 0.0919
+    }
+   ],
+   "ambiguous": true,
+   "relatives": [
+    {
+     "bpm": 86.64,
+     "relation": "2:3",
+     "strength_vs_top": 0.89
+    },
+    {
+     "bpm": 65.0,
+     "relation": "half",
+     "strength_vs_top": 0.76
+    }
+   ],
+   "bpm": 130.19
+  },
+  "key": {
+   "key": "G major",
+   "score": 0.7242,
+   "margin": 0.0033,
+   "runner_up": "G minor"
+  },
+  "short_term_max_lufs": -12.06
+ },
+ "ref3_notorious": {
+  "report": {
+   "sample_peak": {
+    "peak_db": -3.63,
+    "per_channel_db": [
+     -3.91,
+     -3.63
+    ]
+   },
+   "true_peak": {
+    "true_peak_dbtp": -3.57,
+    "sample_peak_db": -3.63,
+    "intersample_over": false
+   },
+   "rms": {
+    "rms_db": -14.3,
+    "per_channel_db": [
+     -14.42,
+     -14.19
+    ]
+   },
+   "crest": {
+    "crest_db": 10.68,
+    "peak_db": -3.63,
+    "rms_db": -14.3
+   },
+   "loudness": {
+    "lufs": -13.9
+   },
+   "range": {
+    "lra_lu": 3.93,
+    "low_lufs": -16.1,
+    "high_lufs": -12.17
+   },
+   "bands": {
+    "sub": -2.87,
+    "bass": -4.0,
+    "low_mid": -16.71,
+    "mid": -15.37,
+    "high_mid": -18.22,
+    "presence": -19.72,
+    "air": -21.09
+   },
+   "centroid": {
+    "centroid_hz": 291.8
+   },
+   "clipping": {
+    "clipped_samples": 0,
+    "longest_run": 0,
+    "clipped_fraction": 0.0
+   },
+   "silence": {
+    "regions": [],
+    "silent_fraction": 0.0,
+    "mostly_silent": false
+   },
+   "correlation": {
+    "correlation": 0.981,
+    "mono_compatible": true
+   },
+   "mid_side": {
+    "mid_side_db": 20.01,
+    "mono": false
+   },
+   "low_end_mono": {
+    "side_over_mid_db": -26.35,
+    "mono_below_cutoff": true
+   }
+  },
+  "bpm_candidates": {
+   "candidates": [
+    {
+     "bpm": 140.14,
+     "strength": 0.8119
+    },
+    {
+     "bpm": 93.41,
+     "strength": 0.673
+    },
+    {
+     "bpm": 70.05,
+     "strength": 0.6447
+    },
+    {
+     "bpm": 62.11,
+     "strength": -0.1164
+    },
+    {
+     "bpm": 187.38,
+     "strength": -0.1207
+    }
+   ],
+   "ambiguous": true,
+   "relatives": [
+    {
+     "bpm": 93.41,
+     "relation": "2:3",
+     "strength_vs_top": 0.83
+    },
+    {
+     "bpm": 70.05,
+     "relation": "half",
+     "strength_vs_top": 0.79
+    }
+   ],
+   "bpm": 140.14
+  },
+  "key": {
+   "key": "F major",
+   "score": 0.7708,
+   "margin": 0.1998,
+   "runner_up": "F minor"
+  },
+  "short_term_max_lufs": -12.03
+ }
+}

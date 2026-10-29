@@ -1,0 +1,27 @@
+[module]
+name = "drag_between"
+layer = "L6"
+summary = "Drag from one point to another inside FL Studio's window."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["x1","y1","x2","y2"],"properties":{"x1":{"type":"integer","minimum":0},"y1":{"type":"integer","minimum":0},"x2":{"type":"integer","minimum":0},"y2":{"type":"integer","minimum":0},"seconds":{"type":"number","minimum":0.05,"maximum":5}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_drag_between.py::test_drags"
+failure = "test_drag_between.py::test_refuses_points_outside"

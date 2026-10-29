@@ -1,0 +1,27 @@
+[module]
+name = "op_arrangement_add_auto_time_marker"
+layer = "L1"
+summary = "Write through arrangement.addAutoTimeMarker in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"time":{"type":"integer"},"name":{"type":"string"}},"required":["time","name"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_arrangement_add_auto_time_marker.py::test_matches_fake"
+failure = "test_op_arrangement_add_auto_time_marker.py::test_failures"

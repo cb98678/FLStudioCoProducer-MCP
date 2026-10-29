@@ -1,0 +1,27 @@
+[module]
+name = "add_audio_clip_to_playlist_gui"
+layer = "L6"
+summary = "Place the selected Audio Clip channel on a playlist track at bar 1 with a paint click."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"track":{"type":"integer","minimum":1,"maximum":40}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_add_audio_clip_to_playlist_gui.py::test_clicks_the_row_of_the_track"
+failure = "test_add_audio_clip_to_playlist_gui.py::test_refuses_bad_track_and_halt"

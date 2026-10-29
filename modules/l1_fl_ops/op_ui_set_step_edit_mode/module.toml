@@ -1,0 +1,27 @@
+[module]
+name = "op_ui_set_step_edit_mode"
+layer = "L1"
+summary = "Write through ui.setStepEditMode in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"newValue":{"type":"boolean"}},"required":["newValue"],"additionalProperties":false}'''
+output = '''{}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 28
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_ui_set_step_edit_mode.py::test_matches_fake"
+failure = "test_op_ui_set_step_edit_mode.py::test_failures"

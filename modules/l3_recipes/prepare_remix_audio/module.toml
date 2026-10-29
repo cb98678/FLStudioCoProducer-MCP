@@ -1,0 +1,30 @@
+[module]
+name = "prepare_remix_audio"
+layer = "L3"
+summary = "Make the audio a remix build reads from a song plan: the stretched vocal, chop one-shots, the style's drum kit and bass sample, the FX bed."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["plan_file","vocals_path","out_dir"],"properties":{"plan_file":{"type":"string","x-path":true,"minLength":1},"vocals_path":{"type":"string","x-path":true,"minLength":1},"out_dir":{"type":"string","x-path":true,"minLength":1},"cuts_file":{"type":"string"},"pitch_ratio":{"type":"number","minimum":0.5,"maximum":2},"other_path":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = ["ffmpeg"]
+packages = []
+
+[tests]
+golden = "test_prepare_remix_audio.py::test_writes_the_audio_of_a_styled_plan"
+failure = "test_prepare_remix_audio.py::test_errors"
+
+[budget]
+lines = 45

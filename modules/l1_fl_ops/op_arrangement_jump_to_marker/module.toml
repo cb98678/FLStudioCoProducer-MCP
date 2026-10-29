@@ -1,0 +1,27 @@
+[module]
+name = "op_arrangement_jump_to_marker"
+layer = "L1"
+summary = "Write through arrangement.jumpToMarker in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"delta":{"type":"integer"},"select":{"type":"boolean"}},"required":["delta","select"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_arrangement_jump_to_marker.py::test_matches_fake"
+failure = "test_op_arrangement_jump_to_marker.py::test_failures"

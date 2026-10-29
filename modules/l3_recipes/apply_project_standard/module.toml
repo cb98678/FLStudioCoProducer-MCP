@@ -1,0 +1,27 @@
+[module]
+name = "apply_project_standard"
+layer = "L3"
+summary = "Name, colour and group a project the house way: channels, mixer inserts, patterns and playlist rows by family."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"dry_run":{"type":"boolean"},"drop_unused":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_project_standard.py::test_organizes"
+failure = "test_apply_project_standard.py::test_failures"

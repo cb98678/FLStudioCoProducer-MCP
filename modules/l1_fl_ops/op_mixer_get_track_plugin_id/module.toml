@@ -1,0 +1,27 @@
+[module]
+name = "op_mixer_get_track_plugin_id"
+layer = "L1"
+summary = "Read mixer.getTrackPluginId from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"plugIndex":{"type":"integer"}},"required":["index","plugIndex"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_mixer_get_track_plugin_id.py::test_matches_fake"
+failure = "test_op_mixer_get_track_plugin_id.py::test_failures"

@@ -1,0 +1,30 @@
+[module]
+name = "screenshot_verify"
+layer = "L6"
+summary = "Check FL Studio's window against an expected post-condition."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["expect"],"properties":{"expect":{"type":"object","properties":{"title_contains":{"type":"string"},"dialog_contains":{"type":"string"},"no_dialog":{"type":"boolean"},"element":{"type":"string"},"min_confidence":{"type":"number"}},"additionalProperties":false}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A0"
+cost = "gpu"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready", "list_open_dialogs", "locate_element"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_screenshot_verify.py::test_passes_and_fails"
+failure = "test_screenshot_verify.py::test_empty_expectation_and_halt"
+
+[budget]
+lines = 50

@@ -1,0 +1,30 @@
+[module]
+name = "build_song_analysis"
+layer = "L5"
+summary = "Song intake in one call: stems, bar grid, words, sung melody, bass roots, a key vote and the song's section map, written as the files build_song_plan reads."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["input_path","name"],"properties":{"input_path":{"type":"string","minLength":1},"name":{"type":"string","pattern":"^[a-z0-9_]+$"},"title":{"type":"string"},"quality":{"type":"string","enum":["fast","high"]},"stems_dir":{"type":"string"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "separate_stems_hq", "detect_beats_ml", "run_model_op", "transcribe_vocal_melody", "estimate_key_dsp"]
+models = ["roformer", "demucs", "mir", "whisper"]
+binaries = ["ffmpeg"]
+packages = []
+
+[tests]
+golden = "test_build_song_analysis.py::test_intake_writes_the_plan_inputs"
+failure = "test_build_song_analysis.py::test_errors"
+
+[budget]
+lines = 70

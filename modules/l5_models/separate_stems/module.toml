@@ -1,0 +1,30 @@
+[module]
+name = "separate_stems"
+layer = "L5"
+summary = "Split an audio file into stems with Demucs."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["input_path","out_dir"],"properties":{"input_path":{"type":"string","minLength":1},"out_dir":{"type":"string","minLength":1},"stems":{"type":"integer","enum":[2,4,6]},"two_stem":{"type":"string","enum":["","vocals","drums","bass","other"]},"quality":{"type":"string","enum":["fast","high"]}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "run_model_op"]
+models = ["demucs"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_separate_stems.py::test_separates_into_stems"
+failure = "test_separate_stems.py::test_input_and_sandbox_errors"
+
+[budget]
+lines = 45

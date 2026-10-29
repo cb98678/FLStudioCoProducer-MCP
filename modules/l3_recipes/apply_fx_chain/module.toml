@@ -1,0 +1,27 @@
+[module]
+name = "apply_fx_chain"
+layer = "L3"
+summary = "Put whole effect chains from the reference (plugins/chains.json) into part inserts by role, in a sandbox copy of an FL-saved project."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"chains":{"type":"array","items":{"type":"object","required":["insert","chain"],"properties":{"insert":{"type":"integer","minimum":1,"maximum":126},"chain":{"type":"string","minLength":1}}}}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_fx_chain.py::test_chains_by_role"
+failure = "test_apply_fx_chain.py::test_failures"

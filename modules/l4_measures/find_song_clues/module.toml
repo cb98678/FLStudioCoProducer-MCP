@@ -1,0 +1,27 @@
+[module]
+name = "find_song_clues"
+layer = "L4"
+summary = "Clues for identifying a song before research: its file name, its title and artist tags, and the line its transcript repeats most, as web search queries."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["input_path"],"properties":{"input_path":{"type":"string","x-path":true,"minLength":1},"words_file":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = ["ffprobe"]
+packages = []
+
+[tests]
+golden = "test_find_song_clues.py::test_clues_from_name_and_transcript"
+failure = "test_find_song_clues.py::test_missing_file"

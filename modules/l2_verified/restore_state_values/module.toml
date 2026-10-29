@@ -1,0 +1,27 @@
+[module]
+name = "restore_state_values"
+layer = "L2"
+summary = "Put tracks, channels and tempo back to the values in a snapshot, using verified writes."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["snapshot"],"properties":{"snapshot":{"type":"object"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["restore_track_values", "restore_channel_values", "op_mixer_get_current_tempo", "set_tempo_verified"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_restore_state_values.py::test_restores_everything"
+failure = "test_restore_state_values.py::test_stops_when_a_part_fails"

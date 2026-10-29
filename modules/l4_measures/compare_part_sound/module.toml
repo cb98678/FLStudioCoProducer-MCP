@@ -1,0 +1,27 @@
+[module]
+name = "compare_part_sound"
+layer = "L4"
+summary = "Compare a remade part with the original part it answers and list what to change on the synth patch."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["original","remake"],"properties":{"original":{"type":"string","minLength":1},"remake":{"type":"string","minLength":1},"original_start_s":{"type":"number","minimum":0},"original_end_s":{"type":"number","minimum":0},"remake_start_s":{"type":"number","minimum":0},"remake_end_s":{"type":"number","minimum":0}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["differences","adjust","match"],"properties":{"differences":{"type":"object"},"adjust":{"type":"array"},"match":{"type":"boolean"},"original":{"type":"object"},"remake":{"type":"object"}}}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_compare_part_sound.py::test_a_longer_decay_is_named"
+failure = "test_compare_part_sound.py::test_failures"

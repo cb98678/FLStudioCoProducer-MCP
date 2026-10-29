@@ -1,0 +1,27 @@
+[module]
+name = "set_track_color_verified"
+layer = "L2"
+summary = "Colour a mixer track and confirm by reading it back, taking the colour byte order from a track whose colour is known."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","rgb","like_index","like_rgb"],"properties":{"index":{"type":"integer","minimum":0},"rgb":{"type":"array","items":{"type":"integer","minimum":0,"maximum":255},"minItems":3,"maxItems":3},"like_index":{"type":"integer","minimum":0},"like_rgb":{"type":"array","items":{"type":"integer","minimum":0,"maximum":255},"minItems":3,"maxItems":3}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_get_track_color", "op_mixer_set_track_color"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_track_color_verified.py::test_sets_in_the_reference_order"
+failure = "test_set_track_color_verified.py::test_failures"

@@ -1,0 +1,30 @@
+[module]
+name = "build_reference_profile"
+layer = "L4"
+summary = "Measure the person's reference tracks (loudness, true peak, crest, loudness range, stereo, third-octave tonal balance) into a profile, and optionally a targets file measured from them."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["paths","out_file"],"properties":{"paths":{"type":"array","minItems":1,"items":{"type":"string","minLength":1}},"out_file":{"type":"string","x-path":true,"minLength":1},"targets_out":{"type":"string","x-path":true},"base_targets":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "build_measure_report"]
+models = []
+binaries = ["ffmpeg"]
+packages = []
+
+[tests]
+golden = "test_build_reference_profile.py::test_profile_and_targets_from_references"
+failure = "test_build_reference_profile.py::test_refuses_outside_sandbox_and_unreadable_files"
+
+[budget]
+lines = 80

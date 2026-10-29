@@ -1,0 +1,27 @@
+[module]
+name = "set_track_volume_verified"
+layer = "L2"
+summary = "Set a mixer track's volume from 0.0 to 1.0 (FL default 0.8) and confirm by reading it back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","volume"],"properties":{"index":{"type":"integer","minimum":0},"volume":{"type":"number","minimum":0.0,"maximum":1.0}},"additionalProperties":false}'''
+output = '''{"type":["number","string","boolean","integer"]}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 1
+calls = ["op_mixer_set_track_volume", "op_mixer_get_track_volume"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_track_volume_verified.py::test_reads_back_and_changes_fake"
+failure = "test_set_track_volume_verified.py::test_failures"

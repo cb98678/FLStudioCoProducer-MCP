@@ -1,0 +1,27 @@
+[module]
+name = "op_mixer_get_last_peak_vol"
+layer = "L1"
+summary = "Read mixer.getLastPeakVol from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"section":{"type":"integer"}},"required":["section"],"additionalProperties":false}'''
+output = '''{"type":"number"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 9
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_mixer_get_last_peak_vol.py::test_matches_fake"
+failure = "test_op_mixer_get_last_peak_vol.py::test_failures"

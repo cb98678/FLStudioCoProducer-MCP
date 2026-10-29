@@ -1,0 +1,27 @@
+[module]
+name = "match_reply"
+layer = "L0"
+summary = "Pair parsed frames with a request id and report when the frame group is complete."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["parsed","req_id"],"properties":{"parsed":{"type":"array","items":{"type":"object"}},"req_id":{"type":"integer"}}}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_match_reply.py::test_reassembles_out_of_order"
+failure = "test_match_reply.py::test_total_mismatch"

@@ -1,0 +1,27 @@
+[module]
+name = "parse_frame"
+layer = "L0"
+summary = "Validate one SysEx frame and return its header fields and payload."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["frame"],"properties":{"frame":{"type":"array","items":{"type":"integer"}}}}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_parse_frame.py::test_round_trip_with_build"
+failure = "test_parse_frame.py::test_rejects_damaged_frames"

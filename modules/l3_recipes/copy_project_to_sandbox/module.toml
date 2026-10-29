@@ -1,0 +1,30 @@
+[module]
+name = "copy_project_to_sandbox"
+layer = "L3"
+summary = "Copy a project file into the sandbox folder and prove the copy matches."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["source","project"],"properties":{"source":{"type":"string","x-path":true,"minLength":1},"project":{"type":"string","pattern":"^[A-Za-z0-9_-]+$"},"include_folder":{"type":"boolean"},"max_mb":{"type":"integer","minimum":1,"maximum":65536}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_copy_project_to_sandbox.py::test_copies_and_hashes"
+failure = "test_copy_project_to_sandbox.py::test_rejects_bad_sources"
+
+[budget]
+lines = 45

@@ -1,0 +1,27 @@
+[module]
+name = "write_song_notes"
+layer = "L3"
+summary = "Save the research step's findings about a song (identity, form, favourite parts, sources) for the plan builder, refusing anything that copies lyrics."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["out_file","notes"],"properties":{"out_file":{"type":"string","x-path":true,"minLength":1},"notes":{"type":"object"},"words_file":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_write_song_notes.py::test_writes_valid_notes"
+failure = "test_write_song_notes.py::test_refuses_lyrics_and_missing_fields"

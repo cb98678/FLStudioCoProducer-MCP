@@ -1,0 +1,27 @@
+[module]
+name = "check_project_health"
+layer = "L4"
+summary = "List what to fix before mixing or rendering: orphan automation, meters left in chains, unnamed channels, empty inserts, plugins not owned, a master that can pass 0 dBFS."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project"],"properties":{"project":{"type":"string","minLength":1},"params_file":{"type":"string"},"not_owned":{"type":"array","items":{"type":"string"}}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_check_project_health.py::test_flags_orphans_meters_and_hot_master"
+failure = "test_check_project_health.py::test_failures"

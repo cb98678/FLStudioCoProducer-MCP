@@ -1,0 +1,27 @@
+[module]
+name = "op_transport_get_song_length"
+layer = "L1"
+summary = "Read transport.getSongLength from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"mode":{"type":"integer"}},"required":["mode"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 3
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_transport_get_song_length.py::test_matches_fake"
+failure = "test_op_transport_get_song_length.py::test_failures"

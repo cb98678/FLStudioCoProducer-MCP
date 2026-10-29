@@ -1,0 +1,27 @@
+[module]
+name = "get_config_value"
+layer = "L2"
+summary = "Return one value from the loaded configuration by dotted key."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["key"],"properties":{"key":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_get_config_value.py::test_reads_nested_key"
+failure = "test_get_config_value.py::test_missing_key_and_config"

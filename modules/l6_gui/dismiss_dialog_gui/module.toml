@@ -1,0 +1,27 @@
+[module]
+name = "dismiss_dialog_gui"
+layer = "L6"
+summary = "Close a dialog only if a human already approved its title."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A1"
+cost = "instant"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["list_open_dialogs", "press_hotkey", "halt_input"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_dismiss_dialog_gui.py::test_closes_allowed_dialog"
+failure = "test_dismiss_dialog_gui.py::test_unknown_dialog_halts"

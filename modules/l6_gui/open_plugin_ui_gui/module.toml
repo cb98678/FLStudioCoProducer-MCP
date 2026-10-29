@@ -1,0 +1,27 @@
+[module]
+name = "open_plugin_ui_gui"
+layer = "L6"
+summary = "Open the window of a plugin so its controls can be reached."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["target"],"properties":{"target":{"type":"string","minLength":1,"maxLength":300}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_open_plugin_ui_gui.py::test_runs_its_recipe"
+failure = "test_open_plugin_ui_gui.py::test_refuses_bad_input"

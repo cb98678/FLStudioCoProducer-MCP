@@ -1,0 +1,27 @@
+[module]
+name = "save_sandbox_project"
+layer = "L6"
+summary = "Save the open FL project with Ctrl+S, only when it is the sandbox copy, and confirm the file changed."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project"],"properties":{"project":{"type":"string","minLength":1},"wait_s":{"type":"number","minimum":1,"maximum":120}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "check_desktop_ready", "press_hotkey"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_save_sandbox_project.py::test_saves_when_the_title_names_the_file"
+failure = "test_save_sandbox_project.py::test_refusals"

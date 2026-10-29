@@ -1,0 +1,31 @@
+[module]
+name = "add_automation_clip"
+layer = "L3"
+summary = "Add an automation clip to a project file in the sandbox (mixer volume, pan, stereo separation, EQ, or a plugin knob) from points, a ramp or a duck."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","name","target","curve"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"name":{"type":"string","minLength":1,"maxLength":60},"target":{"type":"object","properties":{"kind":{"enum":["track_volume","track_pan","track_stereo_sep","eq_gain","eq_freq","eq_q","plugin_param"]},"track":{"type":"integer","minimum":0,"maximum":125},"band":{"type":"integer","minimum":0,"maximum":2},"param":{"type":"integer","minimum":0,"maximum":8191},"slot":{"type":"integer","minimum":0,"maximum":9}},"additionalProperties":false},"curve":{"type":"object","properties":{"points":{"type":"array","minItems":2,"items":{"type":"object","required":["beat","value"],"properties":{"beat":{"type":"number","minimum":0},"value":{"type":"number"}}}},"ramp":{"type":"object","required":["length","from","to"]},"duck":{"type":"object","required":["length","windows","normal","low"]}},"additionalProperties":false},"unit":{"enum":["knob","db"]},"start_beat":{"type":"number","minimum":0},"playlist_track":{"type":"integer","minimum":1,"maximum":500}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_add_automation_clip.py::test_adds_clip_and_reads_it_back"
+failure = "test_add_automation_clip.py::test_refuses_bad_input"
+
+[budget]
+lines = 55
+params = 7

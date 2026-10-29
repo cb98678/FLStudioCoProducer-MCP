@@ -1,0 +1,27 @@
+[module]
+name = "apply_effect_from_library"
+layer = "L3"
+summary = "Put effects from the effect library into empty mixer slots of a sandbox copy, with all their settings."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_project","placements"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_project":{"type":"string","x-path":true,"minLength":1},"placements":{"type":"array","items":{"type":"object","required":["insert","slot","name"],"properties":{"insert":{"type":"integer","minimum":0,"maximum":126},"slot":{"type":"integer","minimum":0,"maximum":9},"name":{"type":"string","minLength":1}}}}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_effect_from_library.py::test_places_an_entry"
+failure = "test_apply_effect_from_library.py::test_failures"

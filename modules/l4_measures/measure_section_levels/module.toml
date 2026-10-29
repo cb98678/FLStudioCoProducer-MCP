@@ -1,0 +1,27 @@
+[module]
+name = "measure_section_levels"
+layer = "L4"
+summary = "Loudness, peak, RMS, clipping and band balance per section of a render, with sections from the project's time markers or given in bars."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"project":{"type":"string"},"sections":{"type":"array","items":{"type":"object","required":["name","start_bar","end_bar"],"properties":{"name":{"type":"string"},"start_bar":{"type":"number","minimum":1},"end_bar":{"type":"number","minimum":1}}}},"bpm":{"type":"number","minimum":0}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_section_levels.py::test_sections_from_markers_and_bars"
+failure = "test_measure_section_levels.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "check_report_limits"
+layer = "L4"
+summary = "Check a measure report against min and max limits."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["report","limits"],"properties":{"report":{"type":"object"},"limits":{"type":"array","items":{"type":"object","required":["path"],"properties":{"path":{"type":"string"},"min":{"type":"number"},"max":{"type":"number"},"label":{"type":"string"}}}}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_check_report_limits.py::test_inside_and_outside"
+failure = "test_check_report_limits.py::test_missing_metric_and_empty_limits"

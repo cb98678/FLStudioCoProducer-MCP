@@ -1,0 +1,27 @@
+[module]
+name = "op_channels_process_r_e_c_event"
+layer = "L1"
+summary = "Write through channels.processRECEvent in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"eventId":{"type":"integer"},"value":{"type":"integer"},"flags":{"type":"integer"}},"required":["eventId","value","flags"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_channels_process_r_e_c_event.py::test_matches_fake"
+failure = "test_op_channels_process_r_e_c_event.py::test_failures"

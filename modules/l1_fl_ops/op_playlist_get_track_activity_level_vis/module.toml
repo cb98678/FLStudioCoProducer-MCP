@@ -1,0 +1,27 @@
+[module]
+name = "op_playlist_get_track_activity_level_vis"
+layer = "L1"
+summary = "Read playlist.getTrackActivityLevelVis from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"}},"required":["index"],"additionalProperties":false}'''
+output = '''{"type":"number"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_playlist_get_track_activity_level_vis.py::test_matches_fake"
+failure = "test_op_playlist_get_track_activity_level_vis.py::test_failures"

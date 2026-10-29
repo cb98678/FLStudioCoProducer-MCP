@@ -1,0 +1,27 @@
+[module]
+name = "op_channels_set_step_parameter_by_index"
+layer = "L1"
+summary = "Write through channels.setStepParameterByIndex in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"index":{"type":"integer"},"patNum":{"type":"integer"},"step":{"type":"integer"},"param":{"type":"integer"},"value":{"type":"integer"},"useGlobalIndex":{"type":"boolean"}},"required":["index","patNum","step","param","value"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_channels_set_step_parameter_by_index.py::test_matches_fake"
+failure = "test_op_channels_set_step_parameter_by_index.py::test_failures"

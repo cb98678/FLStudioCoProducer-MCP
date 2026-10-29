@@ -1,0 +1,27 @@
+[module]
+name = "op_playlist_live_display_zone"
+layer = "L1"
+summary = "Write through playlist.liveDisplayZone in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"left":{"type":"integer"},"top":{"type":"integer"},"right":{"type":"integer"},"bottom":{"type":"integer"},"duration":{"type":"integer"}},"required":["left","top","right","bottom"],"additionalProperties":false}'''
+output = '''{"type":"null"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_playlist_live_display_zone.py::test_matches_fake"
+failure = "test_op_playlist_live_display_zone.py::test_failures"

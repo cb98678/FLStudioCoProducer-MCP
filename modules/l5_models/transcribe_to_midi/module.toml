@@ -1,0 +1,30 @@
+[module]
+name = "transcribe_to_midi"
+layer = "L5"
+summary = "Transcribe audio to a note list in beats with Basic Pitch."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["input_path"],"properties":{"input_path":{"type":"string","minLength":1},"tempo_bpm":{"type":"number","minimum":20,"maximum":300},"onset_threshold":{"type":"number","minimum":0,"maximum":1},"frame_threshold":{"type":"number","minimum":0,"maximum":1},"min_note_ms":{"type":"number","minimum":10,"maximum":2000},"out_midi_path":{"type":"string"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "gpu"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["run_model_op", "write_midi_file"]
+models = ["basicpitch"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_transcribe_to_midi.py::test_converts_seconds_to_beats"
+failure = "test_transcribe_to_midi.py::test_missing_file"
+
+[budget]
+lines = 45

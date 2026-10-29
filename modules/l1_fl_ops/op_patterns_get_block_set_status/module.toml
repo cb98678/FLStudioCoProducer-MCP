@@ -1,0 +1,27 @@
+[module]
+name = "op_patterns_get_block_set_status"
+layer = "L1"
+summary = "Read patterns.getBlockSetStatus from FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"left":{"type":"integer"},"top":{"type":"integer"},"right":{"type":"integer"},"bottom":{"type":"integer"}},"required":["left","top","right","bottom"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 1
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_patterns_get_block_set_status.py::test_matches_fake"
+failure = "test_op_patterns_get_block_set_status.py::test_failures"

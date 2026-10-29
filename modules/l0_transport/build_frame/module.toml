@@ -1,0 +1,27 @@
+[module]
+name = "build_frame"
+layer = "L0"
+summary = "Build one complete SysEx frame with header fields, payload, and checksum."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["version","msg_type","req_id","seq","total","payload"],"properties":{"version":{"type":"integer"},"msg_type":{"type":"integer"},"req_id":{"type":"integer"},"seq":{"type":"integer"},"total":{"type":"integer"},"payload":{"type":"array","items":{"type":"integer"}}}}'''
+output = '''{"type":"array","items":{"type":"integer","minimum":0,"maximum":255}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_frame.py::test_known_frame"
+failure = "test_build_frame.py::test_rejects_bad_fields"

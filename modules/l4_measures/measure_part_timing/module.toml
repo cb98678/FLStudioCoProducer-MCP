@@ -1,0 +1,27 @@
+[module]
+name = "measure_part_timing"
+layer = "L4"
+summary = "Check that a solo render of one part lands on the grid: onset offsets in ms against the note times of a project channel or a list of times."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"project":{"type":"string"},"channel":{"type":"string"},"times_s":{"type":"array","items":{"type":"number","minimum":0},"maxItems":5000},"tolerance_ms":{"type":"number","minimum":0.5,"maximum":200}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_part_timing.py::test_on_grid_and_late"
+failure = "test_measure_part_timing.py::test_failures"

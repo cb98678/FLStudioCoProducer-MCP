@@ -1,0 +1,27 @@
+[module]
+name = "set_song_position_verified"
+layer = "L2"
+summary = "Set the song position and confirm by reading it back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["position"],"properties":{"position":{"type":"number","minimum":0}},"additionalProperties":false}'''
+output = '''{"type":"number"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["op_transport_set_song_pos", "op_transport_get_song_pos"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_song_position_verified.py::test_sets_position"
+failure = "test_set_song_position_verified.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "op_device_link_to_last_tweaked"
+layer = "L1"
+summary = "Write through device.linkToLastTweaked in FL Studio."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","properties":{"controlIndex":{"type":"integer"},"channel":{"type":"integer"},"global_link":{"type":"boolean"},"eventId":{"type":"integer"}},"required":["controlIndex","channel"],"additionalProperties":false}'''
+output = '''{"type":"integer"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = false
+verifier = "none"
+
+[deps]
+min_api = 21
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_op_device_link_to_last_tweaked.py::test_matches_fake"
+failure = "test_op_device_link_to_last_tweaked.py::test_failures"

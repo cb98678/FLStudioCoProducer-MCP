@@ -1,0 +1,27 @@
+[module]
+name = "build_bus"
+layer = "L3"
+summary = "Name a mixer track as a bus and send a set of tracks to it, verified."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["track_indexes","bus_index","name"],"properties":{"track_indexes":{"type":"array","items":{"type":"integer","minimum":0},"maxItems":126},"bus_index":{"type":"integer","minimum":0},"name":{"type":"string","minLength":1,"maxLength":64},"level":{"type":"number","minimum":0,"maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["set_track_name_verified", "create_send_route"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_build_bus.py::test_builds_bus"
+failure = "test_build_bus.py::test_failures"

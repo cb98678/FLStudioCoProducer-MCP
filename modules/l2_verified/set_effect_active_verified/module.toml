@@ -1,0 +1,27 @@
+[module]
+name = "set_effect_active_verified"
+layer = "L2"
+summary = "Turn one mixer effect slot on or off (bypass) and confirm it by readback."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index","slot_index","active"],"properties":{"index":{"type":"integer","minimum":0},"slot_index":{"type":"integer","minimum":0,"maximum":9},"active":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":["number","string","boolean","integer"]}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 1
+calls = ["op_mixer_set_plugin_mute_state", "op_mixer_get_plugin_mute_state"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_effect_active_verified.py::test_toggles_and_reads_back"
+failure = "test_set_effect_active_verified.py::test_failures"

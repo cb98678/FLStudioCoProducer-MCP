@@ -1,0 +1,27 @@
+[module]
+name = "estimate_bpm_dsp"
+layer = "L4"
+summary = "Estimate tempo from audio with DSP, list ranked candidates, flag ambiguity, optionally prefer a hinted tempo."
+version = "1.1.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1},"min_bpm":{"type":"number","minimum":30,"maximum":300},"max_bpm":{"type":"number","minimum":30,"maximum":300},"hint_bpm":{"type":"number","minimum":0,"maximum":300}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_estimate_bpm_dsp.py::test_finds_the_tempo"
+failure = "test_estimate_bpm_dsp.py::test_failures"

@@ -1,0 +1,27 @@
+[module]
+name = "set_swing_verified"
+layer = "L2"
+summary = "Set the global channel swing from 0.0 to 1.0 and confirm by reading it back."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["swing"],"properties":{"swing":{"type":"number","minimum":0.0,"maximum":1.0}},"additionalProperties":false}'''
+output = '''{"type":"number"}'''
+
+[policy]
+side_effect = "writes_fl_sandbox"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 45
+calls = ["op_channels_set_swing", "op_channels_get_swing"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_set_swing_verified.py::test_sets_swing"
+failure = "test_set_swing_verified.py::test_failures"

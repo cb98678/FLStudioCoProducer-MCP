@@ -1,0 +1,27 @@
+[module]
+name = "split_part_projects"
+layer = "L3"
+summary = "Write one solo project per mixer track of a project, for solo renders of each part."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["project","out_dir"],"properties":{"project":{"type":"string","x-path":true,"minLength":1},"out_dir":{"type":"string","x-path":true,"minLength":1},"bypass_master":{"type":"boolean"}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_split_part_projects.py::test_splits_by_track"
+failure = "test_split_part_projects.py::test_failures"

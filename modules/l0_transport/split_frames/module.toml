@@ -1,0 +1,27 @@
+[module]
+name = "split_frames"
+layer = "L0"
+summary = "Split a byte list into chunks of at most N bytes."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["data","max_len"],"properties":{"data":{"type":"array","items":{"type":"integer"}},"max_len":{"type":"integer","minimum":1}}}'''
+output = '''{"type":"array","items":{"type":"array"}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_split_frames.py::test_known_vectors"
+failure = "test_split_frames.py::test_rejects_bad_input"

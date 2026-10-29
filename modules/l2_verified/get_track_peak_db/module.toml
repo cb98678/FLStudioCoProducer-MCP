@@ -1,0 +1,27 @@
+[module]
+name = "get_track_peak_db"
+layer = "L2"
+summary = "Get a mixer track's current peak level in dBFS."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["index"],"properties":{"index":{"type":"integer","minimum":0}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_fl"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = ["op_mixer_get_track_peaks"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_get_track_peak_db.py::test_converts_to_db"
+failure = "test_get_track_peak_db.py::test_rejects_bad_index"

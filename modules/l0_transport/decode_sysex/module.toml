@@ -1,0 +1,27 @@
+[module]
+name = "decode_sysex"
+layer = "L0"
+summary = "Unpack 7-bit SysEx data back into the original bytes."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["data"],"properties":{"data":{"type":"array","items":{"type":"integer","minimum":0,"maximum":127}}}}'''
+output = '''{"type":"array","items":{"type":"integer","minimum":0,"maximum":255}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_decode_sysex.py::test_known_vectors"
+failure = "test_decode_sysex.py::test_rejects_bad_input"

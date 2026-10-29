@@ -1,0 +1,27 @@
+[module]
+name = "measure_spectral_centroid"
+layer = "L4"
+summary = "Measure the spectral centroid (brightness) of an audio file in Hz."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path"],"properties":{"path":{"type":"string","minLength":1}},"additionalProperties":false}'''
+output = '''{"type": "object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_measure_spectral_centroid.py::test_known_signal"
+failure = "test_measure_spectral_centroid.py::test_failures"
