@@ -1,0 +1,27 @@
+[module]
+name = "extract_stems_gui"
+layer = "L6"
+summary = "Split a song into vocals, drums, bass and other with FL Studio's own Extract stems from sample, copied into a sandbox folder."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","out_dir"],"properties":{"path":{"type":"string","minLength":1,"maxLength":400},"out_dir":{"type":"string","minLength":1,"maxLength":400},"template":{"type":"string","maxLength":400,"x-path":true},"timeout_s":{"type":"number","minimum":10,"maximum":3600}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "minutes"
+idempotent = true
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "prepare_stems_project", "open_project_copy", "run_gui_recipe", "check_desktop_ready"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_extract_stems_gui.py::test_extracts_in_fl_and_copies_the_four_stems"
+failure = "test_extract_stems_gui.py::test_refuses_outside_and_times_out"

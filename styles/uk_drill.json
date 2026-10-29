@@ -1,0 +1,209 @@
+{
+ "name": "uk_drill",
+ "label": "UK drill",
+ "engine": "grammar",
+ "what": "UK drill as Mic Check Ready builds it: half-time at 142, the snare on beat 3 with late ghosts, a kick that changes every bar with a long sliding 808, counter-rhythm hats, dark minor and Phrygian pads (FLEX Arksun Cityscape, Strung Space), loop blocks with drums dropping out, gunshot and fill marks at the edges.",
+ "moods": [
+  "dark",
+  "menacing",
+  "cold",
+  "aggressive",
+  "confident"
+ ],
+ "tempo": {
+  "bpm": 142,
+  "range": [
+   138,
+   146
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   8
+  ],
+  [
+   "drop",
+   8
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "groove",
+   8
+  ],
+  [
+   "drop",
+   8
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "drop",
+   8
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": [
+     "X.........x.....",
+     "X.....x.......x."
+    ],
+    "snare": "........X...o.o.",
+    "hat": [
+     "x..x.xx.....xxx.",
+     "xx.x..x....x.xx."
+    ],
+    "perc": "...x..x........."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X.........x.....",
+     "X.....x...x...x."
+    ],
+    "snare": "........X...o.o.",
+    "hat": [
+     "x..x.xx.....xxx.",
+     "xx.x..x....x.xx."
+    ],
+    "perc": "...x..x........."
+   },
+   "fill_every": 8,
+   "fill": "B"
+  },
+  "break": {
+   "bars": {
+    "hat": [
+     "x..x.xx.....xxx.",
+     "xx.x..x....x.xx."
+    ]
+   }
+  },
+  "intro": {
+   "bars": {
+    "hat": [
+     "x..x.xx.....xxx.",
+     "xx.x..x....x.xx."
+    ],
+    "perc": "...x..x........."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": [
+     "x..x.xx.....xxx.",
+     "xx.x..x....x.xx."
+    ]
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": [
+     "X.........x.....",
+     "X.....x.......x."
+    ],
+    "snare": "........X...o.o.",
+    "hat": [
+     "x..x.xx.....xxx.",
+     "xx.x..x....x.xx."
+    ],
+    "perc": "...x..x........."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": [
+   "x-----..........",
+   "....x---..x-.bb."
+  ],
+  "drop": [
+   "x-----..........",
+   "....x---..x-.bb."
+  ],
+  "build": "x---------------"
+ },
+ "sub": {
+  "groove": [
+   "x-----..........",
+   "....x---..x-.bb."
+  ],
+  "drop": [
+   "x-----..........",
+   "....x---..x-.bb."
+  ]
+ },
+ "chords": {
+  "groove": "x-------x-------",
+  "drop": "x-------x-------",
+  "break": "x---------------",
+  "voicing": "add9"
+ },
+ "arp": [],
+ "kit": {},
+ "production_recipe": "trap",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Mic Check Ready' by Jay Cactus x Confz (UK Drill, 143 bpm), Snare 2/3 ........x...o.o., Counter Snare hats, throaty 808, Cmadd9 against Ab, C#sus2 turns; studied on a sandbox copy 2026-10-28 (docs/demo_study/Jay_Cactus_x_Confz_Mic_Check_Ready.md)",
+  "https://en.wikipedia.org/wiki/UK_drill (read 2026-10-28: about 138 to 151 bpm, a steady 3+3+2 hi-hat grouping, sliding bass, hard kicks, dark melodies)"
+ ],
+ "form": {
+  "build": "never",
+  "build_bars": 4,
+  "tail_bars": 0,
+  "intro_bars": 8,
+  "bridge": false,
+  "outro_bars": 8,
+  "gap_before_drop": "none",
+  "drum_dropout_every": 3
+ },
+ "options": {
+  "form": "form.loop_blocks",
+  "drums": "drums.uk_drill",
+  "bass": "bass.808_held"
+ },
+ "sub_duck_kicks": false,
+ "bass_sample": {
+  "fn": "bass_808",
+  "args": {
+   "f0": 55.0,
+   "length": 2.2,
+   "punch": 0.6,
+   "drive": 1.6,
+   "decay_s": 1.5
+  },
+  "label": "Drill 808"
+ }
+}

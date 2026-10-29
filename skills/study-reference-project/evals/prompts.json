@@ -1,0 +1,6 @@
+{"skill": "study-reference-project", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Here is a finished FL project from a pro producer. Examine it closely and tell me what we should learn from it.",
+  "assertions": [{"type": "called_before", "a": "copy_project_to_sandbox", "b": "read_project_anatomy"}, {"type": "tool_called", "module": "check_project_health"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Study how this demo project builds its drops and make a plan for the techniques we are missing.", "assertions": [{"type": "tool_called", "module": "read_project_anatomy"}, {"type": "any_of", "of": [{"type": "asked_human"}, {"type": "tool_called", "module": "measure_section_levels"}]}]},
+ {"id": 3, "should_trigger": false, "prompt": "Master my song to -11 LUFS.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

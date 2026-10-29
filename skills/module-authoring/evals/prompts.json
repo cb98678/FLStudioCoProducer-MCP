@@ -1,0 +1,7 @@
+{"skill": "module-authoring", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Here is a task card for split_frames (cards/calibration/02_split_frames.card.md). Write the module.",
+  "assertions": [{"type": "files_returned", "files": ["split_frames.py", "module.toml", "test_split_frames.py"]}, {"type": "gate_passes"}, {"type": "text_absent", "text": "raise "}]},
+ {"id": 2, "should_trigger": true, "prompt": "The linter says LM-005 and LM-008 on this module. Fix it.",
+  "assertions": [{"type": "only_flagged_lines_changed"}, {"type": "gate_passes"}]},
+ {"id": 3, "should_trigger": false, "prompt": "How should I EQ a kick drum?", "assertions": [{"type": "skill_not_loaded"}]}
+]}

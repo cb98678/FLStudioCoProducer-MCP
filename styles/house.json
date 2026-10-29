@@ -1,0 +1,181 @@
+{
+ "name": "house",
+ "label": "House (classic and soulful)",
+ "engine": "grammar",
+ "what": "Classic and soulful house: four on the floor, clap on 2 and 4, off-beat open hats, shaker 16ths, an off-beat bass, off-beat chord stabs in grooves and drops, a held chord in the breaks.",
+ "moods": [
+  "happy",
+  "uplifting",
+  "soulful",
+  "euphoric",
+  "romantic",
+  "warm"
+ ],
+ "tempo": {
+  "bpm": 124,
+  "range": [
+   118,
+   126
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "..o...o...o...o.",
+    "shaker": "xooxxooxxooxxoox"
+   },
+   "ramp": [
+    0.7,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "ohat": "..x...x...x...x.",
+    "shaker": "xooxxooxxooxxoox",
+    "rim": [
+     ".......o........",
+     "...............o"
+    ]
+   },
+   "fill_every": 8,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o.",
+    "rim": "....o.......o..."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "ohat": "..X...X...X...X.",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "shaker": "xooxxooxxooxxoox"
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "outro": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "ohat": "..o...o...o...o."
+   },
+   "ramp": [
+    1.0,
+    0.85
+   ]
+  }
+ },
+ "bass": {
+  "groove": "..x...x...x...x.",
+  "drop": [
+   "..x...x...x..xo.",
+   "..x...x.5.x...x."
+  ],
+  "build": "..x...x...x...x.",
+  "outro": "..x...x...x...x."
+ },
+ "sub": {
+  "groove": "..x-..x-..x-..x-",
+  "drop": "..x-..x-..x-..x-"
+ },
+ "chords": {
+  "groove": "..x...x...x...x.",
+  "drop": "..X...X...X...X.",
+  "break": "x---------------"
+ },
+ "arp": [
+  "break",
+  "build"
+ ],
+ "kit": {},
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.32,
+   "voices": 3,
+   "detune_cents": 8.0,
+   "drive": 1.8
+  },
+  "label": "House Bass"
+ },
+ "production_recipe": "club_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://tracksensei.com/blog/we-analyzed-563-techno-house-tracks (house median -8.0 LUFS, 54 tracks)",
+  "docs/REFERENCE_FUTURE_HOUSE.md"
+ ],
+ "levels_db": {
+  "vocal": -1.0,
+  "clap": -7.5,
+  "hats": -9.5,
+  "fx": -9.0,
+  "arp": -6.5
+ },
+ "levels_note": "The person's balance for house (2026-10-26): on The Curse of Curves they raised the vocal 2.1 dB, and chose master B by ear, where clap, hats, the FX bed and the arp sit half way from the build's levels to their approved Friends tech-house mix (clap -3.5, hats -3.5, FX -2.5, arp -2.5 dB).",
+ "kick_sub_shelf": {
+  "hz": 60,
+  "db": -4.5,
+  "why": "the generated kick carried more sub than the sub bass and set the limiter's work; master B (their pick) cut it with this shelf"
+ }
+}

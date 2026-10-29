@@ -1,0 +1,39 @@
+{
+  "name": "open_project_copy",
+  "verified": true,
+  "verified_note": "Run on FL 26.1.7 on 2026-10-29 (inside extract_stems_gui): Ctrl+O, the Open dialog, the path typed, Enter, the project loaded. When the open project has unsaved changes FL first asks Save changes (dialog Confirm) and this recipe stops at its Open check with that question still showing: ask the person, never answer it alone.",
+  "summary": "Open a project file with Open.",
+  "params": [
+    "path"
+  ],
+  "vision": false,
+  "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/basics_shortcuts.htm (Open file: Ctrl+O)",
+  "steps": [
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "o"
+      ]
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Open",
+      "timeout_s": 5
+    },
+    {
+      "do": "type",
+      "text": "{path}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 60
+    }
+  ]
+}

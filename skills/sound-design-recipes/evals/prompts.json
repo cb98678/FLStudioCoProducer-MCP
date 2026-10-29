@@ -1,0 +1,6 @@
+{"skill": "sound-design-recipes", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Make a growling mid bass with the synth on channel 4.",
+  "assertions": [{"type": "called_before", "a": "list_plugin_params", "b": "apply_param_recipe"}, {"type": "all_writes_verified"}, {"type": "asked_human"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Load a new reverb on the snare.", "assertions": [{"type": "tool_called", "module": "load_plugin_gui"}, {"type": "skill_loaded", "skill": "gui-fallback"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Is the master clipping?", "assertions": [{"type": "skill_not_loaded"}]}
+]}

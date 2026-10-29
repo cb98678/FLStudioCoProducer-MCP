@@ -1,0 +1,46 @@
+{
+  "name": "load_plugin_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL Studio 2026 (build 5654) on 2026-10-22: opened the Plugin Picker with F8, typed the name, Enter, and the plugin's own window opened (checked by window title and before/after screenshots). Stock plugin only; a name matching several plugins picks the first match.",
+  "summary": "Open the Plugin Picker and add a plugin by name. Done when the plugin's own window opens.",
+  "params": [
+    "name"
+  ],
+  "vision": false,
+  "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/basics_shortcuts.htm (Plugin Picker: F8)",
+  "steps": [
+    {
+      "do": "hotkey",
+      "keys": [
+        "f8"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "type",
+      "text": "{name}"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 2.0
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "{name}",
+      "timeout_s": 15
+    }
+  ]
+}

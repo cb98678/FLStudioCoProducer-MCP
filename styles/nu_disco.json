@@ -1,0 +1,223 @@
+{
+ "name": "nu_disco",
+ "label": "Nu-disco (filter disco, happy and playful)",
+ "engine": "grammar",
+ "what": "Nu-disco and disco house for happy, playful, comic, flirty or euphoric songs: 112 to 124 bpm with a light swing, four on the floor, snare and clap on 2 and 4, off-beat open hats, sixteenth hats that change level, the octave disco bass, syncopated chord stabs (keys or strings), filter sweeps and tom fills at phrase ends.",
+ "moods": [
+  "happy",
+  "playful",
+  "comic",
+  "flirty",
+  "euphoric",
+  "romantic",
+  "cheeky",
+  "nostalgic"
+ ],
+ "tempo": {
+  "bpm": 118,
+  "range": [
+   112,
+   124
+  ],
+  "follow": true
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "swing": 0.54,
+  "intro": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "ohat": [
+     "..o...o...o...o.",
+     "..o...o...o...o.",
+     "..o...o...o...o.",
+     "..o...o...o...oo"
+    ]
+   },
+   "ramp": [
+    0.75,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "snare": "....x.......x...",
+    "clap": "....o.......o...",
+    "hat": "xoXoxoXoxoXoxoXo",
+    "ohat": [
+     "..x...x...x...x.",
+     "..x...x...x...x.",
+     "..x...x...x...x.",
+     "..x...x...x...xx"
+    ],
+    "shaker": "o.o.o.o.o.o.o.o."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "hat": "xoxoxoxoxoxoxoxo",
+    "ohat": "..o...o...o...o.",
+    "tom": "..............o."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "snare": "....x.......x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...........",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "snare": "....X.......X...",
+    "clap": "....x.......x...",
+    "hat": "xoXoxoXoxoXoxoXo",
+    "ohat": [
+     "..X...X...X...X.",
+     "..X...X...X...X.",
+     "..X...X...X...X.",
+     "..X...X...X...XX"
+    ],
+    "shaker": "o.o.o.o.o.o.o.o."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "outro": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "ohat": "..o...o...o...o."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "x.o.x.o.x.o.x.o.",
+  "drop": [
+   "x.o.x.o.x.o.x.o.",
+   "x.o.x.o.x.o.5.o."
+  ],
+  "build": "x.o.x.o.x.o.x.o.",
+  "break": "x---------------",
+  "outro": "x.o.x.o.x.o.x.o."
+ },
+ "chords": {
+  "groove": "..x-..x-..x-..x-",
+  "drop": [
+   "x-..x-.x..x-..x.",
+   "..x-..x-..x-x-.."
+  ],
+  "break": "x-------x-------",
+  "build": "..x-..x-..x-..x-"
+ },
+ "arp": [
+  "break",
+  "build"
+ ],
+ "kit": {
+  "CP_Kick": {
+   "fn": "kick",
+   "args": {
+    "f0": 55.0,
+    "punch": 1.0,
+    "length": 0.35,
+    "drive": 1.4
+   }
+  },
+  "CP_Snare": {
+   "fn": "snare",
+   "args": {
+    "body_hz": 200.0,
+    "decay": 0.12,
+    "length": 0.3
+   }
+  },
+  "CP_Clap": {
+   "fn": "clap",
+   "args": {
+    "seed": 27
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.2,
+   "voices": 2,
+   "detune_cents": 3.0,
+   "drive": 1.6
+  },
+  "label": "Disco Bass"
+ },
+ "production_recipe": "nu_disco",
+ "targets": "targets/club_release.toml",
+ "levels_db": {
+  "vocal": -1.0,
+  "clap": -8.0,
+  "hats": -9.5,
+  "fx": -9.0,
+  "arp": -6.5
+ },
+ "levels_note": "Starts from the person's house balance (master B, 2026-10-26); the snare carries the backbeat and the clap sits under it.",
+ "kick_sub_shelf": {
+  "hz": 60,
+  "db": -3.0,
+  "why": "a shorter kick than house; less shelf"
+ },
+ "sources": [
+  "https://www.ujam.com/blog/how-to-make-a-nu-disco-track-without-sample-packs/ (2026-08-21: start at 114 to 118 bpm, kick on every quarter, snare on 2 and 4, hat levels that vary, an open hat and shuffled hat at the end of every fourth bar, Rhodes sevenths, a bass on the roots with few passing notes, tom fills at phrase ends)",
+  "https://www.loopmasters.com/articles/4544-How-To-Make-Disco-House (disco house at 125 bpm, a square bass with a closing filter envelope, keys through phaser and delay, filtered in and out)"
+ ]
+}

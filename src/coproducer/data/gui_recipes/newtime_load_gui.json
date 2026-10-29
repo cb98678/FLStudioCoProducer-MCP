@@ -1,0 +1,168 @@
+{
+  "name": "newtime_load_gui",
+  "verified": false,
+  "verified_note": "Draft from measured positions on FL 26.1.7 at 2560x1440 (2026-10-29). Opens Newtime from the clip menu of the audio clip at the start of playlist track 1, loads {path} with Ctrl+O, sets the sample tempo with F2, clears every marker (Edit > Delete all markers, then Yes in its question; Marker detection None asks a different question only when markers exist) and turns Snap off so add_warp_markers_gui can Shift+click markers where they belong. Newtime's window title reads WarpCorrectionTrack. Offsets are from that window's top-left corner at its default 741x617 size.",
+  "summary": "Open Newtime on a sandbox audio file at a given tempo, with no markers and Snap off.",
+  "params": [
+    "path",
+    "bpm"
+  ],
+  "vision": false,
+  "source": "measured on this install; Newtime menus from the Image-Line manual (Edit: Quantize time, Marker detection Transient / Tempo / None; Snap: Beat to 1/8 beat, Off)",
+  "steps": [
+    {
+      "do": "click",
+      "anchor": "playlist_clip1_menu"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "click",
+      "anchor": "clip_menu_time_warp"
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "WarpCorrection",
+      "timeout_s": 8
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 156,
+      "dy": 56
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "o"
+      ]
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Open",
+      "timeout_s": 6
+    },
+    {
+      "do": "type",
+      "text": "{path}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 4.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 156,
+      "dy": 56
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "f2"
+      ]
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Sample properties",
+      "timeout_s": 5
+    },
+    {
+      "do": "click_in_window",
+      "title": "Sample properties",
+      "dx": 175,
+      "dy": 56,
+      "clicks": 2
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "a"
+      ]
+    },
+    {
+      "do": "type",
+      "text": "{bpm}"
+    },
+    {
+      "do": "click_in_window",
+      "title": "Sample properties",
+      "dx": 322,
+      "dy": 132
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 370,
+      "dy": 53
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 419,
+      "dy": 282
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Delete all markers",
+      "timeout_s": 5
+    },
+    {
+      "do": "click_in_window",
+      "title": "Delete all markers",
+      "dx": 247,
+      "dy": 153
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 419,
+      "dy": 63
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 434,
+      "dy": 193
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    }
+  ],
+  "needs_sandbox_project": true,
+  "allow_open": [
+    "WarpCorrection",
+    "Newtone"
+  ]
+}

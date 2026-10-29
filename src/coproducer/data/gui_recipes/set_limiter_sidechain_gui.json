@@ -1,0 +1,47 @@
+{
+  "name": "set_limiter_sidechain_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 on 2026-10-21 (Fruity Limiter on Insert 2, source Insert 1; the selector then showed 1): open the COMP tab, right-click the SIDECHAIN selector and click the position-th source in its menu. The Fruity Limiter window must already be open on the destination track (its title ends with the track name in brackets). Source positions follow the sidechain sends in track order. The plugin exposes no sidechain parameter to the API, so the check is a picture of the selector.",
+  "summary": "Pick the sidechain source in an open Fruity Limiter window.",
+  "params": [
+    "dest",
+    "position"
+  ],
+  "vision": false,
+  "source": "measured on this install",
+  "steps": [
+    {
+      "do": "click_in_window",
+      "title": "(Insert {dest})",
+      "dx": 181,
+      "dy": 313
+    },
+    {
+      "do": "wait",
+      "seconds": 0.3
+    },
+    {
+      "do": "click_in_window",
+      "title": "(Insert {dest})",
+      "dx": 376,
+      "dy": 310,
+      "button": "right"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.4
+    },
+    {
+      "do": "click_in_window",
+      "title": "(Insert {dest})",
+      "dx": 415,
+      "dy": 343,
+      "param": "position",
+      "dy_each": 19
+    },
+    {
+      "do": "wait",
+      "seconds": 0.3
+    }
+  ]
+}

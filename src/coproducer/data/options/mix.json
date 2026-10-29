@@ -1,0 +1,496 @@
+{
+ "category": "mix",
+ "what": "Mix architecture: how the pump (sidechain) is made and how deep, how the parts are grouped into buses, what sits on the master. production is a patch merged into the style's production recipe (pump targets and depth: full, deep, medium or depth_db; buses). The measured pump depth of each demo's loudest section (synth band, dB over a beat) is in docs/DEMO_STUDY.md.",
+ "options": [
+  {
+   "id": "mix.pump_deep",
+   "label": "Deep pump on music and bass (volume shaper from the kick)",
+   "what": "Every kick ducks the music and the bass hard and they swell back before the next beat: the house and techno breath, made with a Balance volume clip following the kick.",
+   "genres": [
+    "house",
+    "tech_house",
+    "techno",
+    "future_house",
+    "edm",
+    "trance"
+   ],
+   "moods": [
+    "energetic",
+    "euphoric",
+    "party"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "Basic Sidechain (Fruity Envelope Controller) triggered on every beat"
+    },
+    {
+     "song": "exoplanet",
+     "where": "GHOST kick channel as the sidechain trigger"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "music_bus",
+       "depth": "deep"
+      },
+      {
+       "on": "bass",
+       "depth": "deep"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "mix.pump_gentle",
+   "label": "Gentle pump, only on pads and bass",
+   "what": "A shallow duck (about 6 dB) on the sustained parts only, so the vocal and the drums stay steady: pop dance, afro house and liquid records breathe without pumping.",
+   "genres": [
+    "pop_dance",
+    "afro_house",
+    "deep_house",
+    "liquid_dnb",
+    "afrobeats",
+    "rnb"
+   ],
+   "moods": [
+    "warm",
+    "romantic",
+    "laid_back",
+    "soulful"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "Peak Controller from the kick to the bass and synths, Love Philter preset Sidechain"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "bass",
+       "depth": "medium"
+      },
+      {
+       "on": "music_bus",
+       "depth_db": -6.0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "mix.no_pump",
+   "label": "No pump: space by arrangement and EQ",
+   "what": "Nothing ducks: the bass avoids the kick by its rhythm, the low end is carved by EQ. Drill, trap, lo-fi, trip hop and soundtrack records sound wrong pumped.",
+   "genres": [
+    "uk_drill",
+    "trap",
+    "lofi",
+    "trip_hop",
+    "soundtrack",
+    "hiphop"
+   ],
+   "moods": [
+    "dark",
+    "calm",
+    "moody",
+    "mysterious",
+    "laid_back"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "no sidechain: Beat Bus with a Soft Clipper"
+    },
+    {
+     "song": "secret_agent",
+     "where": "one hall reverb for everything, no pump"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": []
+    }
+   }
+  },
+  {
+   "id": "mix.ghost_trigger_pulse",
+   "label": "Ghost-trigger pump: the pulse without a kick",
+   "what": "A silent trigger channel (a ghost kick or a Sytrus note) drives the sidechain on its own rhythm, so the music keeps pumping where the kick is out (breakdowns, intros) or pumps on a pattern the kick does not play: 'just the pulse behind the pump'.",
+   "genres": [
+    "reggaeton",
+    "trance",
+    "future_bass",
+    "pop_dance",
+    "edm"
+   ],
+   "moods": [
+    "energetic",
+    "bouncy",
+    "sexy"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "7 Sidechain: a ghost Sytrus trigger"
+    },
+    {
+     "song": "exoplanet",
+     "where": "GHOST kick channel, 207 bars"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "music_bus",
+       "depth": "deep"
+      },
+      {
+       "on": "bass",
+       "depth": "deep"
+      }
+     ],
+     "pump_source": "ghost"
+    }
+   },
+   "manual": "pump_source ghost: the pump follows a four-on-the-floor grid through every section, not the kick's own hits."
+  },
+  {
+   "id": "mix.gross_beat_gate",
+   "label": "Gross Beat volume gate on bass and chords",
+   "what": "A rhythmic volume shape (Gross Beat) chops the held bass and chords in 8ths or 16ths: a pump that is also a rhythm, independent of the kick.",
+   "genres": [
+    "future_bass",
+    "reggaeton",
+    "dubstep",
+    "trap"
+   ],
+   "moods": [
+    "playful",
+    "euphoric",
+    "energetic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "GROSS BEAT on the Saw Bass, Volume Duck Balance"
+    },
+    {
+     "song": "bien_duro",
+     "where": "BooBass through Gross Beat"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "bass",
+       "depth": "full"
+      },
+      {
+       "on": "music_bus",
+       "depth": "deep"
+      }
+     ]
+    }
+   },
+   "manual": "Put Gross Beat on the bass insert with a 1/8 volume gate; the engine's pump stands in until it is set."
+  },
+  {
+   "id": "mix.limiter_gate_bus",
+   "label": "Sidechain bus: kick and snare gate a limiter on the music",
+   "what": "Kick and snare feed a 'SC' bus that drives sidechained limiters on pads, bass and chords (Fruity Limiter's compressor keyed from the bus): the music ducks on the backbeat as well as the kick, a hip-hop and lo-fi pump.",
+   "genres": [
+    "lofi",
+    "trip_hop",
+    "hiphop",
+    "chillhop"
+   ],
+   "moods": [
+    "nostalgic",
+    "moody",
+    "warm"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "inner_days_rework",
+     "where": "SC bus fed by kick and snare, Limiter sidechain gates on the music"
+    },
+    {
+     "song": "madonna",
+     "where": "SC bus: Limiter Transients and Hard Noise Gate presets, keyed into pads, bass and chords"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "music_bus",
+       "depth": "medium"
+      }
+     ]
+    }
+   },
+   "manual": "Route kick and snare to a bus with no output, key Fruity Limiter (compressor mode) on the music bus from it."
+  },
+  {
+   "id": "mix.vocal_ducks_music",
+   "label": "The vocal ducks the music",
+   "what": "A Peak Controller on the vocal turns the lead synths and the vocal reverb down while the singer sings, so a busy drop can carry a vocal; the reverb is gated by Gross Beat so it never smears the next line.",
+   "genres": [
+    "melodic_techno",
+    "progressive_house",
+    "trance",
+    "pop_dance"
+   ],
+   "moods": [
+    "dreamy",
+    "melancholic",
+    "hypnotic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "Main Vocal chain ends in Fruity Peak Controller; Vocal Reverb: Reeverb 2 > Gross Beat Gate > Balance (Reverb Sidechain)"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "music_bus",
+       "depth": "medium"
+      }
+     ]
+    }
+   },
+   "manual": "Peak Controller on the vocal insert linked to the Lead Group Balance volume (inverted), about 4 dB of reduction."
+  },
+  {
+   "id": "mix.bus_tree_full",
+   "label": "Full bus tree with one global reverb",
+   "what": "Every family on its bus (All Drums, Sfx, Chromatics, Bass, Synths, Pads), the music buses into All Music, everything into a Mix Buss before the master, one global reverb send shared by all: glue by structure.",
+   "genres": [
+    "afro_house",
+    "deep_house",
+    "house",
+    "melodic_techno"
+   ],
+   "moods": [
+    "warm",
+    "hypnotic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "buses All Drums, Sfx, Chromatics, Bass, Synths, Pads, All Music, Mix Buss and a global Verb send"
+    }
+   ],
+   "engine": {
+    "production": {
+     "buses": [
+      {
+       "name": "Music Bus",
+       "kind": "music"
+      },
+      {
+       "name": "Drum Bus",
+       "kind": "drums"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "mix.beat_bus_clip",
+   "label": "Beat bus with a soft clipper",
+   "what": "Drums and melody summed into a Beat Bus that hits a soft clipper before the master, the vocal buses beside it: the beat is loud and dense, the vocal sits on top untouched.",
+   "genres": [
+    "uk_drill",
+    "trap",
+    "hiphop",
+    "grime"
+   ],
+   "moods": [
+    "aggressive",
+    "dark",
+    "confident"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "Beat Bus (Fruity Soft Clipper) fed by Melody Bus and Drum Bus; vocal buses and REVERB, 1/4 DELAY, 1/2 DELAY sends"
+    }
+   ],
+   "engine": {
+    "production": {
+     "buses": [
+      {
+       "name": "Music Bus",
+       "kind": "music"
+      },
+      {
+       "name": "Drum Bus",
+       "kind": "drums"
+      }
+     ],
+     "pump": []
+    }
+   },
+   "manual": "Fruity Soft Clipper on the drum bus at about 2 dB of clipping."
+  },
+  {
+   "id": "mix.one_hall",
+   "label": "One hall for everything",
+   "what": "A single bright hall (LuxeVerb, 3 s) as the only reverb, every instrument sent to it at its own level: one room, a cinematic and acoustic sound.",
+   "genres": [
+    "soundtrack",
+    "cinematic",
+    "jazz",
+    "lofi",
+    "ambient"
+   ],
+   "moods": [
+    "mysterious",
+    "dramatic",
+    "calm"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Reverb bus: LuxeVerb Bright Hall 3 Sec Decay fed by every instrument"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": []
+    }
+   },
+   "manual": "create_send_route from each music insert to one reverb insert with LuxeVerb."
+  },
+  {
+   "id": "mix.master_clip_chain",
+   "label": "Master: mid-side EQ, hard clip, limiter",
+   "what": "A master chain that shapes the mid and side separately, then clips the peaks (WaveShaper hard clip) before a transparent limiter: loud and punchy without pumping the limiter.",
+   "genres": [
+    "melodic_techno",
+    "techno",
+    "trance",
+    "edm"
+   ],
+   "moods": [
+    "energetic",
+    "dark"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "Master: Patcher (Mid | Side EQ) > EQ (MakeUp) > WaveShaper (Hard Clip) > Emphasis Limiter"
+    }
+   ],
+   "engine": {
+    "master": "clip"
+   },
+   "manual": "apply_club_master with the style's targets does the loudness; this names the chain to prefer."
+  },
+  {
+   "id": "mix.mono_low_hard_pump",
+   "label": "Mono low end, wide top, the bass ducked hard",
+   "what": "Everything under 150 Hz in mono (side 35 dB under mid), the hats and the top wide (side 3 dB under mid above 4 kHz), the bass and music ducked 12 to 15 dB by every kick and back within about 90 ms: a club mix that stays solid on mono systems.",
+   "genres": [
+    "house",
+    "tech_house",
+    "future_house",
+    "pop_dance",
+    "edm"
+   ],
+   "moods": [
+    "energetic",
+    "party",
+    "confident"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "sorry_freejak",
+     "where": "side minus mid below 150 Hz -35 to -38 dB (the record: -13 dB), above 4 kHz -3 dB; bass envelope -10 to -15 dB at each kick, full again by the off-beat"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "music_bus",
+       "depth": "deep"
+      },
+      {
+       "on": "bass",
+       "depth": "deep"
+      }
+     ]
+    }
+   },
+   "manual": "Fruity Stereo Shaper or a mid-side EQ low-cut on the side below 150 Hz on the master or the bass bus."
+  },
+  {
+   "id": "mix.exp_recovery_pump",
+   "label": "Pump with an exponential recovery: silent on the hit, back fast, easing in",
+   "what": "The music bus and bass drop fully on each kick, hold for about a tenth of a beat, then come back on a curve: most of the way within the next tenth of a beat, easing into full level by 0.3 beat. Clicks less than a straight ramp and pumps harder on the first 16th.",
+   "how": "The person's Red Lights breakdown: silence for 40 ms, about -3 dB at 100 ms, full by about 140 ms at 125 bpm (gain 1 - e^(-(t-40)/50)). pump.pump_points with curve exp.",
+   "genres": [
+    "progressive_house",
+    "big_room",
+    "pop_dance",
+    "future_house",
+    "house",
+    "trance"
+   ],
+   "moods": [
+    "euphoric",
+    "driving",
+    "energetic",
+    "party"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "red_lights",
+     "where": "the person's breakdown: the synth bus ducking curve, -inf for 40 ms, recovered by about 140 ms"
+    }
+   ],
+   "engine": {
+    "production": {
+     "pump": [
+      {
+       "on": "music_bus",
+       "depth": "full",
+       "curve": "exp"
+      },
+      {
+       "on": "bass",
+       "depth": "deep",
+       "curve": "exp"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "skill": "remix-from-stems",
+ "evals": [
+  {
+   "id": 1,
+   "should_trigger": true,
+   "prompt": "Remix this song from its stems into tech house.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "build_song_plan"
+    },
+    {
+     "type": "tool_called",
+     "module": "build_remix_project"
+    },
+    {
+     "type": "tool_called",
+     "module": "check_vocal_edges"
+    },
+    {
+     "type": "text_mentions",
+     "text": "plan"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "should_trigger": true,
+   "prompt": "I fixed the build by hand and saved a copy. Use what I changed.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "diff_flp_projects"
+    },
+    {
+     "type": "text_mentions",
+     "text": "recipe"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "should_trigger": false,
+   "prompt": "Why is my master so quiet?",
+   "assertions": [
+    {
+     "type": "tool_not_called",
+     "module": "build_remix_project"
+    }
+   ]
+  }
+ ]
+}

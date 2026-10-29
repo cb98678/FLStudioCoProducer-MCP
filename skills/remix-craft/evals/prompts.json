@@ -1,0 +1,5 @@
+{"skill": "remix-craft", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Remix this song again, but stop giving me the same structure every time. Make the drops and the arrangement actually inventive.", "assertions": [{"type": "tool_called", "module": "build_song_plan"}, {"type": "no_guess"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Here is the original and two professional remixes of it. Work out what the remixers did and how.", "assertions": [{"type": "tool_called", "module": "build_song_analysis"}, {"type": "tool_called", "module": "measure_section_levels"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Set the master fader to -3 dB.", "assertions": []}
+]}

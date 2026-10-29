@@ -1,0 +1,170 @@
+{
+ "name": "trance",
+ "label": "Trance",
+ "engine": "grammar",
+ "what": "Trance as Exoplanet builds it: additive 8-bar blocks, a rolling bass (.xxo.x7x) on four layered synths, three-of-four hats, a falling Sakura pluck, a gated chord lead with the bass octave between its hits, a long breakdown in reverb, the drop's low-pass opening.",
+ "moods": [
+  "euphoric",
+  "uplifting",
+  "epic",
+  "dreamy",
+  "driving"
+ ],
+ "tempo": {
+  "bpm": 138,
+  "range": [
+   132,
+   142
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   32
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   32
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": ".xox.xox.xox.xox",
+    "perc": "...x..x....x..x."
+   },
+   "ramp": [
+    0.7,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": ".xox.xox.xox.xox",
+    "ohat": "..x...x...x...x.",
+    "perc": "...x..x....x..x."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "hat": ".o.o.o.o.o.o.o.o",
+    "perc": "...o.......o...."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": ".xox.xox.xox.xox"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.4,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": ".xXx.xXx.xXx.xXx",
+    "ohat": "..X...X...X...X.",
+    "ride": "..x...x...x...x.",
+    "perc": "...x..x....x..x."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": ".xox.xox.xox.xox",
+    "ohat": "..x...x...x...x.",
+    "perc": "...x..x....x..x."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "intro": ".xxo.x7x.xxo.x7x",
+  "groove": ".xxo.x7x.xxo.x7x",
+  "build": ".xxx.xxx.xxx.xxx",
+  "drop": ".xxo.x7x.xxo.x7x",
+  "outro": ".xxo.x7x.xxo.x7x"
+ },
+ "sub": {
+  "groove": ".x...x...x...x..",
+  "drop": ".x...x...x...x.."
+ },
+ "chords": {
+  "groove": "x---------------",
+  "break": "x---------------",
+  "build": "x---------------",
+  "drop": "X..X..X..X.X..X.",
+  "voicing": "open"
+ },
+ "arp": {
+  "shape": "fall",
+  "rate": 16,
+  "sections": [
+   "groove",
+   "break",
+   "drop"
+  ],
+  "octaves": 1,
+  "voicing": "seventh",
+  "gate": 0.7
+ },
+ "kit": {},
+ "production_recipe": "trance",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Exoplanet' by Eric Kauffmann & NrgMind (Trance, 140 bpm), markers 1er to 6to Cambio, PRE DROP, BREAKDOWN; rolling bass on Harmor, 3x Osc, Harmless and Sytrus; Pluck - Saku C5 B4 G4 E4; studied on a sandbox copy 2026-10-28 (docs/demo_study/Eric_Kauffmann_NrgMind_Exoplanet.md)",
+  "https://www.mixgraph.io/bpm-for/uplifting-trance (read 2026-10-28: median 138 bpm, editorial range 138 to 145)"
+ ],
+ "form": {
+  "build": "last",
+  "build_bars": 8,
+  "tail_bars": 8,
+  "intro_bars": 32,
+  "bridge": true,
+  "bridge_bars": 16,
+  "outro_bars": 16,
+  "gap_before_drop": "bar",
+  "add_every": 8
+ },
+ "options": {
+  "form": "form.additive_layers",
+  "drums": "drums.trance_rolling",
+  "bass": "bass.rolling_16"
+ },
+ "sub_duck_kicks": true
+}

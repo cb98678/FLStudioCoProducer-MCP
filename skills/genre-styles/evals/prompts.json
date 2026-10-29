@@ -1,0 +1,5 @@
+{"skill": "genre-styles", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Make a dubstep remix of the song I gave you.", "assertions": [{"type": "tool_called", "module": "build_song_plan"}, {"type": "tool_called", "module": "apply_production_recipe"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Can you add a UK garage style?", "assertions": [{"type": "any_of", "of": [{"type": "asked_human"}, {"type": "tool_called", "module": "build_song_plan"}]}]},
+ {"id": 3, "should_trigger": false, "prompt": "Turn the vocal up 2 dB in the second drop.", "assertions": []}
+]}

@@ -1,0 +1,1204 @@
+{
+ "category": "drums",
+ "what": "Drum grooves: step patterns per drum voice for each section kind (16 steps a bar of 16ths, 12 or 24 for triplets; X accent, x normal, o soft, anything else a rest). An option replaces the style pack's patterns for the kinds it names and keeps the pack's own for the rest. Voices: kick, snare, clap, hat, ohat, shaker, rim, tom, crash, perc, ride.",
+ "options": [
+  {
+   "id": "drums.pack",
+   "label": "The style pack's own groove",
+   "what": "Keep the grid the style pack was written with (its sources say where it comes from): the genre's centre, chosen when the song wants the classic version.",
+   "genres": [
+    "*"
+   ],
+   "moods": [
+    "*"
+   ],
+   "energy": "any",
+   "sources": [],
+   "engine": {}
+  },
+  {
+   "id": "drums.trance_rolling",
+   "label": "Trance: three-of-four hats, syncopated percs, offbeat ride",
+   "what": "Four on the floor with the closed hat on the three 16ths after each kick (.xxx), the open hat and a ride on the off-beat, two percussion voices answering on the 'a' of beats, claps on 2 and 4. Builds roll the snare in 16ths with velocity climbing from soft to full.",
+   "genres": [
+    "trance",
+    "progressive_house",
+    "techno",
+    "edm"
+   ],
+   "moods": [
+    "euphoric",
+    "uplifting",
+    "energetic",
+    "epic"
+   ],
+   "energy": "high",
+   "tempo": [
+    128,
+    145
+   ],
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "HH_2 .XXX x4, HH ..X. x4, Perc 1/2/3, Ride in the drop, Snare 16ths at velocity 31 to 100"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "intro": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "hat": ".xox.xox.xox.xox",
+       "perc": "...x..x....x..x."
+      },
+      "ramp": [
+       0.7,
+       1.0
+      ]
+     },
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "hat": ".xox.xox.xox.xox",
+       "ohat": "..x...x...x...x.",
+       "perc": "...x..x....x..x."
+      },
+      "fill_every": 8,
+      "fill": "A"
+     },
+     "break": {
+      "bars": {
+       "hat": ".o.o.o.o.o.o.o.o",
+       "perc": "...o.......o...."
+      }
+     },
+     "build": {
+      "bars": {
+       "kick": "x...x...x...x...",
+       "hat": ".xox.xox.xox.xox"
+      },
+      "roll": "accelerate",
+      "ramp": [
+       0.4,
+       1.0
+      ],
+      "last": {
+       "kick": "x...x...x.......",
+       "hat": "................"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "hat": ".xXx.xXx.xXx.xXx",
+       "ohat": "..X...X...X...X.",
+       "ride": "..x...x...x...x.",
+       "perc": "...x..x....x..x."
+      },
+      "fill_every": 8,
+      "fill": "A"
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.afro_house_swing",
+   "label": "Afro house: three-step kick, 66 % swung percussion, dense shakers",
+   "what": "The kick plays 1, 3 and the 'and' of 3 (X.......X...X...), shakers fill almost every 16th with accents, wood and perc hits sit late on a triplet grid (about a third of a 16th, MPC swing 66 %), a clap is pushed early before each beat, a cowbell keeps quarters.",
+   "genres": [
+    "afro_house",
+    "deep_house",
+    "organic_house",
+    "amapiano"
+   ],
+   "moods": [
+    "tribal",
+    "warm",
+    "hypnotic",
+    "spiritual",
+    "sunny"
+   ],
+   "energy": "mid",
+   "tempo": [
+    118,
+    124
+   ],
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "Fruit Kick X.......X...X..., Attack Shaker XX.XXX.XXX.XXX.X, MA Wood Drop late 0.33, Clap 03 early 0.4, FLEX GM Cowbell quarters"
+    }
+   ],
+   "engine": {
+    "swing": 0.66,
+    "sections": {
+     "intro": {
+      "bars": {
+       "shaker": "xx.xxx.xxx.xxx.x",
+       "perc": "..x..x....x..x.."
+      },
+      "ramp": [
+       0.6,
+       1.0
+      ]
+     },
+     "groove": {
+      "bars": {
+       "kick": "X.......X...X...",
+       "clap": "...x...x...x...x",
+       "shaker": "Xx.xXx.xXx.xXx.x",
+       "perc": "..x..x....x..x..",
+       "rim": "x...x...x...x..."
+      },
+      "fill_every": 16,
+      "fill": "C"
+     },
+     "break": {
+      "bars": {
+       "shaker": "xo.xxo.xxo.xxo.x",
+       "perc": "..o..o....o..o.."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X.......X...X...",
+       "clap": "...X...x...X...x",
+       "shaker": "XX.XXX.XXX.XXX.X",
+       "perc": "..x..x....x..x..",
+       "rim": "X...X...X...X...",
+       "ohat": "..x...x...x...x."
+      },
+      "fill_every": 16,
+      "fill": "C"
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.dembow",
+   "label": "Reggaeton dembow, a new kit each section",
+   "what": "Kick on 1 and 3, the snare's 3-3-2 answer (...X..X....X..X.), a rim between, a timbal or perc run filling the last bar of each phrase. Bien Duro changes the whole kit with every section (oldschool, darker, hard, metal) while the pattern stays: the kit is the arrangement.",
+   "genres": [
+    "reggaeton",
+    "dancehall",
+    "latin",
+    "moombahton"
+   ],
+   "moods": [
+    "sexy",
+    "party",
+    "confident",
+    "playful",
+    "hot"
+   ],
+   "energy": "mid",
+   "tempo": [
+    88,
+    100
+   ],
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "Oldschool Kick X.......X......., Snare Nasa/Ragga ...X..X...xX..X., Rim o.xx..x.o.xx..x., Timbal x..X.XXxxxXXX.X., kits per section"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "intro": {
+      "bars": {
+       "rim": "o.xx..x.o.xx..x.",
+       "shaker": "x...x...x...x..."
+      }
+     },
+     "groove": {
+      "bars": {
+       "kick": "X.......X.......",
+       "snare": "...X..X....X..X.",
+       "rim": "o.xx..x.o.xx..x.",
+       "shaker": "x...x...x...x..."
+      },
+      "fill_every": 4,
+      "fill": "C"
+     },
+     "break": {
+      "bars": {
+       "rim": "o.xx..x.o.xx..x.",
+       "perc": "Xxx.xx..xxx.xx.."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...x...X...x...",
+       "snare": "...X..X...xX..X.",
+       "rim": "o.xx..x.o.xx..x.",
+       "hat": "x.x.x.x.x.x.x.x.",
+       "perc": "x..X.XXxxxXXX.X."
+      },
+      "fill_every": 4,
+      "fill": "C"
+     }
+    }
+   },
+   "kit_per_section": true
+  },
+  {
+   "id": "drums.afrobeats_tresillo",
+   "label": "Afrobeats: four kicks under a tresillo kick, percs on the 'a'",
+   "what": "Two kick layers: a soft four on the floor and a second kick on the 3-3-2 tresillo (X..X..X.X..X..X.), percussion on the last 16th of beats 1 and 3, a shaker or tambourine on quarters. Sparse, the vocal and an arp do the rest.",
+   "genres": [
+    "afrobeats",
+    "afro_pop",
+    "amapiano",
+    "dancehall"
+   ],
+   "moods": [
+    "sunny",
+    "romantic",
+    "laid_back",
+    "sexy",
+    "happy"
+   ],
+   "energy": "mid",
+   "tempo": [
+    95,
+    112
+   ],
+   "sources": [
+    {
+     "song": "use_me",
+     "where": "Priime kick X...X...X...X..., gbe kick X..X..X.X..X..X., USE ME Percussion ...X.......X.... and ......X.......X."
+    },
+    {
+     "song": "shine",
+     "where": "kick x...x.........x., ride quarters, tamb x...x.x.x...x..."
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "x..x..x.x..x..x.",
+       "perc": "...x.......x....",
+       "rim": "......x.......x.",
+       "shaker": "x...x...x...x..."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X..x..X.X..x..X.",
+       "snare": "......x.......x.",
+       "perc": "...X.......X....",
+       "ride": "X...X...X...X...",
+       "shaker": "x.x.x.x.x.x.x.x."
+      },
+      "fill_every": 8,
+      "fill": "C"
+     },
+     "break": {
+      "bars": {
+       "perc": "...o.......o....",
+       "shaker": "o...o...o...o..."
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.uk_drill",
+   "label": "UK drill: snare on 3, counter hats, sliding kick",
+   "what": "Half-time feel at 140 to 145: the snare on beat 3 with a late answer (........x...o.o.), the kick on 1 and a syncopated second hit that changes every bar, a 'counter snare' hat rhythm of short, uneven 16th groups (x..x.xx.....xxx.), a perc on the 'a' of 1 and 2.",
+   "genres": [
+    "uk_drill",
+    "drill",
+    "trap",
+    "grime"
+   ],
+   "moods": [
+    "dark",
+    "menacing",
+    "aggressive",
+    "cold",
+    "confident"
+   ],
+   "energy": "mid",
+   "tempo": [
+    138,
+    146
+   ],
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "Snare 2/3 ........x...x.o., Kick x...o.o.o.o.o..., Counter Snare hats Bb3 . . Bb3 . Bb3 Bb3 . . . . . Bb3 Bb3 Bb3 ."
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": [
+        "X.........x.....",
+        "X.....x.......x."
+       ],
+       "snare": "........X...o.o.",
+       "hat": [
+        "x..x.xx.....xxx.",
+        "xx.x..x....x.xx."
+       ],
+       "perc": "...x..x........."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": [
+        "X.........x.....",
+        "X.....x...x...x."
+       ],
+       "snare": "........X...o.o.",
+       "hat": [
+        "x..x.xx.....xxx.",
+        "xx.x..x....x.xx."
+       ],
+       "perc": "...x..x........."
+      },
+      "fill_every": 8,
+      "fill": "B"
+     },
+     "break": {
+      "bars": {
+       "hat": [
+        "x..x.xx.....xxx.",
+        "xx.x..x....x.xx."
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.trap_halftime",
+   "label": "Trap: half-time snare, grouped hats, fill bars",
+   "what": "Snare or clap on beat 3 with two ghosts at the end of the bar (........X....oo.), hats in grouped 16ths with gaps (xXX.xXX..xx.xxx.), the kick following the 808, and every eighth bar a tom-and-snare fill from a vintage kit.",
+   "genres": [
+    "trap",
+    "hiphop",
+    "drill",
+    "rnb"
+   ],
+   "moods": [
+    "dark",
+    "cool",
+    "confident",
+    "laid_back",
+    "moody"
+   ],
+   "energy": "mid",
+   "tempo": [
+    130,
+    160
+   ],
+   "sources": [
+    {
+     "song": "stroll_up",
+     "where": "Ekit 4 Hat xXX.xXX..xx.xxx., Grv Snareclap 06 ........X....oo., VT fills"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": [
+        "X.........x.....",
+        "X......x..x....."
+       ],
+       "clap": "........X....oo.",
+       "hat": "xXx.xXx..xx.xxx."
+      },
+      "fill_every": 8,
+      "fill": "B"
+     },
+     "drop": {
+      "bars": {
+       "kick": [
+        "X.........x.....",
+        "X......x..x...x."
+       ],
+       "clap": "........X....oo.",
+       "hat": [
+        "xXx.xXx..xx.xxx.",
+        "xXxxxXx.xXx.xxxx"
+       ],
+       "ohat": "..............x."
+      },
+      "fill_every": 8,
+      "fill": "B"
+     },
+     "break": {
+      "bars": {
+       "hat": "x.x.x.x.x.x.x.x."
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.dnb_two_step",
+   "label": "Drum and bass two-step with tambourine and crash quarters",
+   "what": "Kick on 1 and the 'and' of 3 (X.........X.....), snare on 2 and 4, a tambourine and a ride or crash on every quarter on top, ghost snares in the drop. Liquid versions keep it this clean; the tops come from a sliced break.",
+   "genres": [
+    "drum_and_bass",
+    "liquid_dnb",
+    "dnb",
+    "jungle"
+   ],
+   "moods": [
+    "energetic",
+    "uplifting",
+    "soulful",
+    "melancholic"
+   ],
+   "energy": "high",
+   "tempo": [
+    160,
+    178
+   ],
+   "sources": [
+    {
+     "song": "time",
+     "where": "CB DnB Kick X.........X....., CB DnB Snare ....X.......X..., Tamborine 2 and 18 in crash X...X...X...X..."
+    },
+    {
+     "song": "never_out",
+     "where": "Kick X.X.......X....., Snare ....X.......X..."
+    }
+   ],
+   "engine": {
+    "sections": {
+     "intro": {
+      "bars": {
+       "hat": "x.x.x.x.x.x.x.x.",
+       "shaker": "x...x...x...x..."
+      }
+     },
+     "groove": {
+      "bars": {
+       "kick": "X.........X.....",
+       "snare": "....X.......X...",
+       "shaker": "x...x...x...x...",
+       "hat": "..x...x...x...x."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": [
+        "X.........X.....",
+        "X.x.......X....."
+       ],
+       "snare": "....X.......X..o",
+       "shaker": "X...X...X...X...",
+       "ride": "x...x...x...x...",
+       "hat": "..x..xx...x..xx."
+      },
+      "fill_every": 8,
+      "fill": "A"
+     },
+     "break": {
+      "bars": {
+       "shaker": "x...x...x...x..."
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.future_bass_halftime",
+   "label": "Future bass: half-time snare on 3, pitched 808 snare rolls",
+   "what": "The snare (two snareclaps and a conga) on beat 3 only, a kick that skips (X...o...x...x.o.), a ride on 1 and 3, and in builds an 808 snare rolling 16ths with its pitch climbing.",
+   "genres": [
+    "future_bass",
+    "melodic_dubstep",
+    "trap",
+    "pop"
+   ],
+   "moods": [
+    "euphoric",
+    "emotional",
+    "bittersweet",
+    "playful"
+   ],
+   "energy": "high",
+   "tempo": [
+    140,
+    160
+   ],
+   "sources": [
+    {
+     "song": "thief",
+     "where": "Grv Snareclap 13/06 ........X......., Grv Kick 27 X...o...x...x.o., 808 Snare XxXXXxXxXxXXXXXX with pitch automation"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X.......x.......",
+       "snare": "........X.......",
+       "hat": "x.x.x.x.x.x.x.x."
+      }
+     },
+     "build": {
+      "bars": {
+       "kick": "x...x...x...x..."
+      },
+      "roll": "accelerate",
+      "ramp": [
+       0.5,
+       1.0
+      ],
+      "last": {
+       "kick": "x...............",
+       "snare": "XxXXXxXxXxXXXXXX"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...o...x...x.o.",
+       "snare": "........X.......",
+       "clap": "........X.......",
+       "ride": "X.......X.......",
+       "perc": "........x......."
+      },
+      "fill_every": 8,
+      "fill": "B"
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.trip_hop_hand_drums",
+   "label": "Trip hop: lazy kick, late backbeat, hand-drum layers",
+   "what": "A slow kick that pairs up (X..X....X..X....), the backbeat placed late and soft, and a bed of hand drums underneath: bongos in 16ths whose velocity rises and falls, two congas and two 'indie' percs in interlocking patterns, a low war drum at the end of the bar.",
+   "genres": [
+    "trip_hop",
+    "lounge",
+    "downtempo",
+    "lofi"
+   ],
+   "moods": [
+    "moody",
+    "sensual",
+    "melancholic",
+    "mysterious",
+    "laid_back"
+   ],
+   "energy": "low",
+   "tempo": [
+    80,
+    100
+   ],
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "Kick X..X....X..X...., Hi Bongo 16ths velocity 3 to 100, DnB Conga x.xX.xXxX...X..., Indie Perc xx.Xx.X.Xx..X..., War Drum Lo X.............xX"
+    }
+   ],
+   "engine": {
+    "swing": 0.56,
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X..X....X..X....",
+       "snare": "....X.......X...",
+       "perc": "x.xX.xXxX...X...",
+       "shaker": "oxoxoxoxoxoxoxox",
+       "tom": "..............xX"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X..X....X..X....",
+       "snare": "....X.......X..o",
+       "perc": "x.xX.xXxX...X...",
+       "rim": "xx.Xx.X.Xx..X...",
+       "shaker": "oxoXoxoxoxoXoxox",
+       "tom": "X.............xX",
+       "ride": "X.......X...X..."
+      }
+     },
+     "break": {
+      "bars": {
+       "perc": "x.xX.xXxX...X...",
+       "shaker": "o.o.o.o.o.o.o.o."
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.industrial_minimal",
+   "label": "Industrial: minimal kick, 16th hats, stacked claps with a ghost",
+   "what": "A hard, short kick on every beat, closed hats on every 16th, four claps stacked as one with a ghost an 8th before the backbeat (..o.X.......X...), an open hat only on the bar's first beat, a second kick stuttering at the end of every fourth bar.",
+   "genres": [
+    "electro_industrial",
+    "industrial_techno",
+    "ebm",
+    "techno"
+   ],
+   "moods": [
+    "dark",
+    "aggressive",
+    "cold",
+    "menacing",
+    "mechanical"
+   ],
+   "energy": "high",
+   "tempo": [
+    100,
+    135
+   ],
+   "sources": [
+    {
+     "song": "night_terror",
+     "where": "Minimal Kick 36 X...X...X...X..., Hat 184 16ths, four claps ..o.X.......X..., HouseGen OHat on 1, Minimal Kick 37 ............x.o."
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "hat": "xoxoxoxoxoxoxoxo",
+       "clap": "..o.X.......X..."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": [
+        "X...X...X...X...",
+        "X...X...X...X...",
+        "X...X...X...X...",
+        "X...X...X...x.o."
+       ],
+       "hat": "xxxxxxxxxxxxxxxx",
+       "clap": "..o.X.......X...",
+       "ohat": "X..............."
+      }
+     },
+     "break": {
+      "bars": {
+       "hat": "x.x.x.x.x.x.x.x."
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.melodic_techno_synth",
+   "label": "Melodic techno: drum synth kit, 16th hats, offbeat open hat, ride 8ths",
+   "what": "Every drum from one drum synthesizer (Fruity DrumSynth Live), so the kit is tuned and consistent: kick on the beat, closed hat on every 16th, open hat and a percussion tone on the off-beat, a ride on 8ths in the drop, a reverb clap hit only at section starts.",
+   "genres": [
+    "melodic_techno",
+    "techno",
+    "progressive_house",
+    "minimal"
+   ],
+   "moods": [
+    "hypnotic",
+    "dark",
+    "dreamy",
+    "melancholic"
+   ],
+   "energy": "mid",
+   "tempo": [
+    120,
+    128
+   ],
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "Fruity DrumSynth Live: Closehat 16ths, Openhat offbeat, Clap 2 and 4, Percussion offbeat, Ride 8ths, IL Kick_MT four on the floor"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "hat": "xoxoxoxoxoxoxoxo",
+       "ohat": "..x...x...x...x.",
+       "perc": "..o...o...o...o."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "hat": "xoxoxoxoxoxoxoxo",
+       "ohat": "..X...X...X...X.",
+       "clap": "....x.......x...",
+       "perc": "..x...x...x...x.",
+       "ride": "x.x.x.x.x.x.x.x."
+      },
+      "fill_every": 16,
+      "fill": "A"
+     },
+     "break": {
+      "bars": {
+       "hat": "o.o.o.o.o.o.o.o."
+      }
+     }
+    }
+   },
+   "kit_hint": "Fruity DrumSynth Live for every voice (see sound.drumsynth_kit)"
+  },
+  {
+   "id": "drums.lofi_boom_bap",
+   "label": "Lo-fi boom bap: swung hats, ghost snares, shaker 16ths",
+   "what": "Kick on 1, the 'a' of 2 and 3 (X......X..X....x), snare on 2 with ghosts late in the bar (....X......ox.x.), a swung hat with small doubles (..X..xX...X..xxX), a shaker on every 16th underneath.",
+   "genres": [
+    "lofi",
+    "hiphop",
+    "chillhop",
+    "jazz_hop",
+    "boom_bap"
+   ],
+   "moods": [
+    "nostalgic",
+    "calm",
+    "warm",
+    "melancholic",
+    "laid_back"
+   ],
+   "energy": "low",
+   "tempo": [
+    70,
+    95
+   ],
+   "sources": [
+    {
+     "song": "inner_days",
+     "where": "HIP_Kick_2 X......X..X....x, HIP_Snare_6 ....X......ox.x., HIP_Hat_3 ..X..xX...X..xxX, RD_Shaker 16ths"
+    }
+   ],
+   "engine": {
+    "swing": 0.6,
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X......X..X....x",
+       "snare": "....X......ox.x.",
+       "hat": "..x..xx...x..xxx",
+       "shaker": "oxoxoxoxoxoxoxox"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X......X..X....x",
+       "snare": "....X......oX.x.",
+       "hat": "x.X..xX.x.X..xxX",
+       "shaker": "oxoxoxoxoxoxoxox"
+      }
+     },
+     "break": {
+      "bars": {
+       "hat": "..x...x...x...x.",
+       "shaker": "oxoxoxoxoxoxoxox"
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.pop_dance_syncopated_hats",
+   "label": "Pop dance: synth bass drum, syncopated hats, offbeat shaker",
+   "what": "A synthesized bass drum (FL BassDrum) four to the floor, snare on 2 and 4, closed hats in a syncopated 16th figure (.XXX..XX.XXX..XX), a shaker on the off-beat 8th and a perc answering late in the bar.",
+   "genres": [
+    "pop_dance",
+    "nu_disco",
+    "house",
+    "pop"
+   ],
+   "moods": [
+    "happy",
+    "romantic",
+    "warm",
+    "summer"
+   ],
+   "energy": "mid",
+   "tempo": [
+    100,
+    124
+   ],
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "BassDrum C4 four on the floor, Ambass Snare 2 and 4, Attack Hat 15 .XXX..XX.XXX..XX, Attack Shaker ..X...X...X...X., Grv Perc 14 ..o...oX..X.ooXX"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "snare": "....X.......X...",
+       "hat": ".xxx..xx.xxx..xx",
+       "shaker": "..x...x...x...x."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "snare": "....X.......X...",
+       "clap": "....X.......X...",
+       "hat": ".xXx..xX.xXx..xX",
+       "shaker": "..X...X...X...X.",
+       "perc": "..o...oX..X.ooXX"
+      },
+      "fill_every": 8,
+      "fill": "C"
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.big_room_stack",
+   "label": "Big room: six claps as one, kick per section, ramped snare rolls",
+   "what": "The clap is six samples stacked on 2 and 4; the kick changes with the section (a clean one in verses, a harder one in drops); off-beat hats plus a 16th off-beat ticker (.X.X.X.X); builds roll the snare in 16ths with velocity ramping from 64 to 128 and a metal hit on the last beat.",
+   "genres": [
+    "edm",
+    "big_room",
+    "electro_house",
+    "festival"
+   ],
+   "moods": [
+    "euphoric",
+    "party",
+    "energetic",
+    "anthemic"
+   ],
+   "energy": "high",
+   "tempo": [
+    124,
+    130
+   ],
+   "sources": [
+    {
+     "song": "im_awake",
+     "where": "HouseGen Clap 01 x2, HouseGen Clap 08, MA NorthernLights, Power Clap 14, Attack Clap 21 all ....X.......X..., Attack Hat 24 .X.X.X.X.X.X.X.X, snare rolls"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "hat": "..x...x...x...x."
+      }
+     },
+     "build": {
+      "bars": {
+       "kick": "x...x...x...x..."
+      },
+      "roll": "accelerate",
+      "ramp": [
+       0.5,
+       1.0
+      ],
+      "last": {
+       "kick": "x...x...x.......",
+       "perc": "............X..."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "hat": ".x.x.x.x.x.x.x.x",
+       "ohat": "..X...X...X...X.",
+       "perc": "......x.......x."
+      },
+      "fill_every": 8,
+      "fill": "A"
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.future_house_flam",
+   "label": "Future house: layered kicks, flammed claps, off-16th hats",
+   "what": "Three kicks layered as one, three claps on 2 and 4 nudged apart (one early, one late) so the clap is wide and long, an off-beat hat plus a hat on the last 16th of each beat (...X), shakers syncopated, an envelope controller pumping the music on every beat.",
+   "genres": [
+    "future_house",
+    "bass_house",
+    "house",
+    "g_house"
+   ],
+   "moods": [
+    "energetic",
+    "party",
+    "confident",
+    "bouncy"
+   ],
+   "energy": "high",
+   "tempo": [
+    122,
+    128
+   ],
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "Grv Kick 18 + MA Round Kick 02 + Grv Kick 16, Attack Clap 19 early, Attack Clap 12 early, Fracture Clap 04, Collider Slack CHat ...X...X...X...X"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "hat": "...x...x...x...x",
+       "ohat": "..x...x...x...x."
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "hat": "...X...X...X...X",
+       "ohat": "..X...X...X...X.",
+       "shaker": "..o..Xo...o..Xo.",
+       "perc": ".x.o...o.x.o.o.o"
+      },
+      "fill_every": 8,
+      "fill": "A"
+     }
+    }
+   },
+   "flam_ms": [
+    -12,
+    0,
+    8
+   ]
+  },
+  {
+   "id": "drums.cinematic_jazz_ride",
+   "label": "Cinematic jazz: swung ride, toms and hits instead of a backbeat",
+   "what": "No backbeat: a swung ride (X.xoX.xoX.xoX.xx) and a hi-hat pedal on quarters carry the time, toms and orchestral hits (an FPC wack, a big HIT) punctuate the phrase ends, a kick only under the big moments.",
+   "genres": [
+    "soundtrack",
+    "cinematic",
+    "jazz",
+    "spy"
+   ],
+   "moods": [
+    "mysterious",
+    "playful",
+    "tense",
+    "suspense"
+   ],
+   "energy": "low",
+   "tempo": [
+    100,
+    140
+   ],
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "FPC_Ride_GLite_003 X.xoX.xoX.xoX.xx late 0.045, OverH_Ped quarters, FPC Wack and HIT_5, FPC toms"
+    }
+   ],
+   "engine": {
+    "swing": 0.62,
+    "sections": {
+     "groove": {
+      "bars": {
+       "ride": "X.xoX.xoX.xoX.xx",
+       "hat": "....x.......x...",
+       "tom": "..............xx"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X.......X.......",
+       "ride": "X.xoX.xoX.xoX.xx",
+       "hat": "....x.......x...",
+       "snare": "............o.x.",
+       "tom": "..............xX"
+      }
+     },
+     "break": {
+      "bars": {
+       "ride": "x.o.x.o.x.o.x.o."
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "drums.liquid_break",
+   "label": "Liquid break: a sliced break re-ordered, ghosted snares",
+   "what": "A breakbeat cut into slices (Slicex or Fruity Slicer) and played back in its own order for the first phrase, then re-ordered ('Ghost Break') so the drums move without changing sound; programmed kick and snare reinforce the break's own hits.",
+   "genres": [
+    "drum_and_bass",
+    "liquid_dnb",
+    "jungle",
+    "breakbeat"
+   ],
+   "moods": [
+    "soulful",
+    "melancholic",
+    "dreamy",
+    "warm"
+   ],
+   "energy": "high",
+   "tempo": [
+    160,
+    178
+   ],
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "Slicex breaks played in order and re-ordered as Ghost Break, Fruity Slicer tops"
+    },
+    {
+     "song": "never_out",
+     "where": "Fruity Slicer drum loop re-sequenced chromatically"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "groove": {
+      "bars": {
+       "kick": "X.........X.....",
+       "snare": "....X.....o.X...",
+       "hat": "x.x.x.xxx.x.x.xx"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": [
+        "X.........X.....",
+        "X.x.......X....."
+       ],
+       "snare": "....X..o..o.X..o",
+       "hat": "x.xxx.xxx.xxx.xx",
+       "shaker": "x...x...x...x..."
+      },
+      "fill_every": 8,
+      "fill": "A"
+     }
+    }
+   },
+   "manual": "The sliced break itself is placed by hand (or from the original's drum stem with Slicex); the engine plays the reinforcement."
+  },
+  {
+   "id": "drums.house_layer_in",
+   "label": "House groove that layers in: kick alone, then claps and off-beat hats",
+   "what": "Four on the floor with nothing else for the first 8 bars of a groove (the bass carries it), then claps on 2 and 4 and an open hat on every off-beat 8th. Breaks keep a lighter, syncopated kick (hits on the 'a' of beats 3 and 4 that echo a dembow) under rolling 16th hats and one clap on beat 2. Every bar of a section is the same loop.",
+   "genres": [
+    "house",
+    "tech_house",
+    "pop_dance",
+    "future_house",
+    "deep_house",
+    "nu_disco",
+    "edm"
+   ],
+   "moods": [
+    "energetic",
+    "party",
+    "happy",
+    "uplifting"
+   ],
+   "energy": "high",
+   "tempo": [
+    120,
+    130
+   ],
+   "sources": [
+    {
+     "song": "sorry_freejak",
+     "where": "groove bars 5-12 kick only, bars 13-20 add clap ....X.......X... and open hat ..X...X...X...X.; breaks 21-27 kick X...x...X..xX..x, 16th hats"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "intro": {
+      "bars": {
+       "clap": "....X.......X...",
+       "ohat": "..x...x...x...x."
+      }
+     },
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "....X.......X...",
+        "....X.......X...",
+        "....X.......X...",
+        "....X.......X...",
+        "....X.......X...",
+        "....X.......X...",
+        "....X.......X...",
+        "....X.......X..."
+       ],
+       "ohat": [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "..X...X...X...X.",
+        "..X...X...X...X.",
+        "..X...X...X...X.",
+        "..X...X...X...X.",
+        "..X...X...X...X.",
+        "..X...X...X...X.",
+        "..X...X...X...X.",
+        "..X...X...X...X."
+       ]
+      }
+     },
+     "break": {
+      "bars": {
+       "kick": [
+        "x...o...x..ox..o",
+        "x...o...x...x..o",
+        "x.......x..ox..o",
+        "x...o.o...o.x..."
+       ],
+       "clap": "....x...........",
+       "hat": "..x.x.x.xoxxx.xx"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "ohat": "..X...X...X...X."
+      }
+     },
+     "outro": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "ohat": "..x...x...x...x."
+      }
+     }
+    }
+   }
+  }
+ ]
+}

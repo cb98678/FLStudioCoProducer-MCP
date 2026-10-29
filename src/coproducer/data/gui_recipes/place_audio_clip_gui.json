@@ -1,0 +1,24 @@
+{
+  "name": "place_audio_clip_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 on 2026-10-20 with two full runs in a row after a fresh import (clip landed on the requested track at bar 1 each time). Needs the paint tool active in the playlist and the wanted Audio Clip channel selected (a new import is). The click is at the left edge of the track row, anchor playlist_track1_start, rows 48 px apart. Pixel values are for a 2560x1440 screen.",
+  "summary": "Place the selected Audio Clip channel on a playlist track at bar 1 with one paint click.",
+  "params": [
+    "track"
+  ],
+  "vision": false,
+  "source": "measured on this install",
+  "steps": [
+    {
+      "do": "click_row",
+      "anchor": "playlist_track1_start",
+      "param": "track",
+      "dy": 48
+    },
+    {
+      "do": "wait",
+      "seconds": 0.5
+    }
+  ],
+  "needs_sandbox_project": true
+}

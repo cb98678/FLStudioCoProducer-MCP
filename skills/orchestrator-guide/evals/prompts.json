@@ -1,0 +1,7 @@
+{"skill": "orchestrator-guide", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Restyle my track from techno to dubstep.",
+  "assertions": [{"type": "tool_called", "module": "run_status"}, {"type": "plan_has_human_review", "target": "melody"}, {"type": "no_a3"}, {"type": "all_writes_have_verifier"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Transcript: set_track_volume_verified returned E_NOT_VERIFIED. What do you do?",
+  "assertions": [{"type": "same_call_not_repeated", "module": "set_track_volume_verified"}, {"type": "any_of", "of": [{"type": "tool_called", "module": "get_track_peak_db"}, {"type": "asked_human"}]}]},
+ {"id": 3, "should_trigger": false, "prompt": "Explain what a limiter does.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

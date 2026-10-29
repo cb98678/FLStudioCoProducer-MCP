@@ -102,6 +102,9 @@ def test_template_click_finds_the_picture_on_the_screenshot(rig, desk, tmp_path)
     make_recipe(tmp_path, [{"do": "template_click", "template": "item"}])
     assert rig.call("run_gui_recipe", name="demo").ok
     assert ("click", 112, 55, "left", 1) in desk.fake.log
+    make_recipe(tmp_path, [{"do": "template_click", "template": "item", "dx": -8, "dy": 2}])
+    assert rig.call("run_gui_recipe", name="demo").ok
+    assert ("click", 104, 57, "left", 1) in desk.fake.log
     make_recipe(tmp_path, [{"do": "template_click", "template": "gone"}])
     assert rig.call("run_gui_recipe", name="demo").error.code == "E_NOT_FOUND"
 
@@ -147,3 +150,55 @@ def test_expect_dialog_can_name_a_parameter(rig, desk, tmp_path):
     assert rig.call("run_gui_recipe", name="demo", params={"name": "Fruity Limiter"}).ok
     missing = rig.call("run_gui_recipe", name="demo", params={"name": "Sytrus"})
     assert missing.error.code == "E_GUI_MISMATCH" and "Sytrus" in missing.error.message
+
+
+def _draw_knob(img, cx, cy, value, colour=(0, 200, 140)):
+    """An FL knob's value arc: 270 degrees from 7 o'clock, coloured up to `value`."""
+    import math
+    for tenths in range(-1350, int(-1350 + 2700 * value) + 1, 10):
+        a = math.radians(tenths / 10)
+        for r in (17, 18, 19):
+            img[int(round(cy - r * math.cos(a))), int(round(cx + r * math.sin(a)))] = colour
+
+
+def test_knob_in_window_reads_the_arc_until_it_is_on_target(rig, desk, tmp_path):
+    import numpy as np
+    desk.fake.main["rect"] = (0, 0, 640, 360)
+    desk.fake.open_dialog("Newtone (Master)")                              # at (100, 100)
+    state = {"v": 0.9}
+
+    def redraw(fake, ev=None):
+        if ev and ev[0] == "drag":
+            state["v"] = min(1.0, max(0.0, state["v"] - (ev[4] - ev[2]) / 260.0))   # this knob is stiffer than the recipe's guess
+        img = np.full((360, 640, 3), 40, dtype=np.uint8)
+        _draw_knob(img, 150, 140, state["v"])
+        fake.image = img
+    redraw(desk.fake)
+    desk.fake.reactions.append(redraw)
+    make_recipe(tmp_path, [{"do": "knob_in_window", "title": "newtone", "dx": 50, "dy": 40, "value": "{v}"}], ["v"])
+    r = rig.call("run_gui_recipe", name="demo", params={"v": 0.25})
+    assert r.ok and abs(state["v"] - 0.25) <= 0.035
+    make_recipe(tmp_path, [{"do": "knob_in_window", "title": "newtone", "dx": 50, "dy": 40, "value": 0.6, "tries": 1}])
+    assert rig.call("run_gui_recipe", name="demo").error.code == "E_NOT_VERIFIED"
+
+
+def test_click_in_window_can_hold_modifiers_and_double_click(rig, desk, tmp_path):
+    desk.fake.open_dialog("WarpCorrectionTrack (Master)")
+    make_recipe(tmp_path, [{"do": "click_in_window", "title": "warpcorrection", "dx": 5, "dy": 6, "clicks": 2, "modifiers": ["shift"]}])
+    assert rig.call("run_gui_recipe", name="demo").ok
+    assert ("click", 105, 106, "left", 2, ("shift",)) in desk.fake.log
+
+
+def test_allow_open_lets_a_recipe_work_in_its_editor_window(rig, desk, tmp_path):
+    import json as _json
+    desk.fake.open_dialog("WarpCorrectionTrack (Master)")
+    (tmp_path / "recipes").mkdir(exist_ok=True)
+    rec = {"name": "demo", "verified": True, "params": [], "steps": [{"do": "hotkey", "keys": ["f9"]}], "needs_sandbox_project": True}
+    (tmp_path / "recipes" / "demo.json").write_text(_json.dumps(rec))
+    set_service("recipes_dir", str(tmp_path / "recipes"))
+    set_service("sandbox_root", str(tmp_path))
+    (tmp_path / "bench.flp").write_bytes(b"FLhd")
+    desk.fake.main["title"] = "bench.flp - FL Studio 2026"
+    assert rig.call("run_gui_recipe", name="demo").error.code == "E_BLOCKED_BY_DIALOG"
+    (tmp_path / "recipes" / "demo.json").write_text(_json.dumps(dict(rec, allow_open=["WarpCorrection"])))
+    assert rig.call("run_gui_recipe", name="demo").ok

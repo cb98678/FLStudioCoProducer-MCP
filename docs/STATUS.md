@@ -1,6 +1,6 @@
 # Status
 
-Updated 2026-10-28 (Serum 2 wavetables and sampler sounds made from the song's own loops and kit; the first remix study, Sorry against Freejak's remix: seven options, per-pass form functions, two-chord-a-bar re-harmonization, loop and kit extraction; before it the FL demo study: an option bank and a variety engine so remixes stop sharing one format, fifteen style packs; earlier: creative brief, sounds matched to the record, installer). **New session? Start with `HANDOFF.md`, then `ROADMAP.md`.** The dated log below is history.
+Updated 2026-10-29 (the vocal-led layers recipe and section-long piano rolls; song blueprints from the person's breakdowns; before that, stems by FL Studio's own Extract stems from sample at intake; before that, Newtime and Newtone driven by GUI recipes and modules; a vocal-led remake of Girlish Type Men). Before that, updated 2026-10-28 (Serum 2 wavetables and sampler sounds made from the song's own loops and kit; the first remix study, Sorry against Freejak's remix: seven options, per-pass form functions, two-chord-a-bar re-harmonization, loop and kit extraction; before it the FL demo study: an option bank and a variety engine so remixes stop sharing one format, fifteen style packs; earlier: creative brief, sounds matched to the record, installer). **New session? Start with `HANDOFF.md`, then `ROADMAP.md`.** The dated log below is history.
 
 ## Counts
 
@@ -23,6 +23,9 @@ answered live (`tools/probe_l1.py`, 2026-10-25); the 143 write ops are tested on
 | The full panel passing on every genre | 2026-10-25, all six on the first song: dnb v5, techno v5, dubstep v6, trap v6, house v7, hip-hop v3 (masters in each `sandbox\remix\friends_STYLE_vN\master`). Each: -8.1 to -8.2 LUFS, -0.54 dBTP, loudness range under 8 LU on the master, drops 4.0 to 4.5 LU over builds, no held DC, tempo on the grid, the voice measured audible in the first drop (-6 to -12 LU). The critic, asked the inverse voice question, was right on the voice in 5 of 6 and fully trusted on techno; its snare answers lean yes. Not yet heard by the person |
 | Generated FL API read ops | All 176 answered live on FL 26.1.7 (`sandbox\probe_l1.json`) |
 | GUI recipes: import audio clip, piano-roll script, dialogs | Run end to end on the host |
+| Newtime and Newtone by GUI (fit a vocal to the beat, auto-tune it) | Girlish Type Men on the host (2026-10-29): `add_warp_markers_gui` placed 127 of 127 warp markers within 7 ms (audit pass), `newtime_quantize_save_gui` quantized and saved (marked syllables a median 6.2 ms from their 16ths, 13.6 before), `newtone_tune_save_gui` three times (robotic, middle, smooth, measured apart); `newtime_load_gui` and the whole `quantize_vocal_gui` chain have run only in parts |
+| Stems by FL's Extract stems from sample (`extract_stems_gui`) | Girlish Type Men end to end by the module on the host (2026-10-29): four stems in 74 s from opening the project, bit-identical to a hand run, summing back to the mix within -37 dB; vocals 0.96 correlated with RoFormer, drums 0.996 with Demucs |
+| Vocal-led layers recipe and section-long piano rolls | Girlish Type Men v6 on the host (2026-10-29): built, produced, rendered, mastered at -8.1 LUFS, -0.3 dBTP, LRA 4.8 LU, panel passed; 61 % of sung beats on chord tones (v5 49 %); not yet heard by the person |
 | The FL demo study (20 songs) | Read from sandbox copies; 20 full-mix renders and 146 solo renders measured (142 with sound) (2026-10-28); keys cross-checked against the renders (12 of 20 agree, the rest reported on each page); muted clips and the master pitch found and handled |
 | Variety: one song, four remixes, four formats | "the curse of curves" as house (two seeds) and afro house (two seeds), 2026-10-28: every pair differs in 9 or 10 of 11 choice categories and in its sections (`sandbox\remix\curse_compare_v2.md`); each -8.1 LUFS, -0.54 dBTP, panel passed with its contrast judge running, drops 4.2 to 4.4 LU over their builds; both house versions ask the person about drops under 1 LU over the verse before them. Not yet heard by the person |
 
@@ -56,6 +59,26 @@ Measured default: gemma4:12b on Ollama for the brain (Qwen3.5-9B was the pre-mea
 sources and the VRAM budget are in `LOCAL_MODELS.md`.
 
 ## History (dated log)
+
+### Girlish Type Men as pop dance; Whisper loops, quiet stems, the lead vocal off the pump (2026-10-29)
+The person's drum remix of a spoken comic monologue (A minor, 130 bpm, unpublished) as a 3:37 pop dance record at 124 bpm (voice x0.954):
+cold-open tag, the opening statement as verse 1, 4-bar pre-chorus lifts with a pitched snare roll and a tape stop, the cleanest refrain
+pass as every chorus with post-chorus games, a reverb bridge, the last chorus a whole step up (the voice is spoken, so nothing clashes),
+sign-off. `sandbox\remix\gtm_pop_dance_v4`: master -8.07 LUFS, -0.54 dBTP, crest 7.82; drops 3.4 to 4.8 LU over their builds; the
+voice 10.3 LU under the first chorus (it was 20.4 in v1); panel passed. Fixed on the way (LESSONS rows 71 to 76): Whisper repetition loops
+redone in short windows (`asrclean`); minor-key triads; a quiet vocal stem raised toward -18 dB active; the lead vocal off the pumped music
+bus; pop_dance's vocal level. Not yet heard by the person.
+
+### Open Your Heart as tech house; tech house for any song (2026-10-29)
+Madonna's "Open Your Heart" (F major, 113.2 bpm) as a tech house club mix at 126 bpm (vocal x1.113, pitch and formants kept), built
+from a hand-edited plan (`tools/remix_song.py --plan`): a 16-bar mix-in carried by the record's whispered opening, verse 1 on the groove,
+chorus 1 as a riserchorus, a stop bar where the whisper lands drop 1, an instrumental hook drop, chorus 2 sung on drop 2, a breakdown of
+the record's own keys and guitar, the climax around the title tag, a 16-bar mix-out. `sandbox\remix\oyh_tech_house_v3`: master -8.08
+LUFS, -0.54 dBTP, crest 8.89; drops 3.9 to 4.3 LU over their builds, breaks about 6 LU under the drops; panel passed; tempo on the grid.
+Fixed on the way (LESSONS rows 65 to 70): the "tech_house" pack is the Friends engine and ignores the variety bank, so tech house for any
+song is now the grammar pack `tech_house_groove`; a hand-given key took another tonic's mode; the sound match stalled when the filter was
+already open; the contrast loop read only the smallest drop contrast and lifted whole section kinds. Not yet heard by the person. The stab
+still measures darker than the record (0.51x).
 
 ### One-command installer, Claude Desktop config found (2026-10-26, night)
 

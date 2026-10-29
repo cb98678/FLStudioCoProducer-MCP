@@ -1,0 +1,26 @@
+# Targets are chosen by a person. The agent never invents them; load_targets_file refuses this file until every FILL is replaced.
+# Pick numbers from your own reference tracks and from your delivery platform's current published loudness guidance.
+[meta]
+name = "streaming_default"
+source = "FILL: link or note for where these numbers came from"
+
+[loudness]
+integrated_lufs = "FILL"                # LUFS, for example a negative number
+integrated_tolerance_lu = "FILL"        # plus or minus LU that still counts as on target
+true_peak_dbtp_ceiling = "FILL"         # dBTP, highest allowed
+loudness_range_lu = { min = "FILL", max = "FILL" }
+
+[dynamics]
+crest_factor_db = { min = "FILL", max = "FILL" }
+
+[stereo]
+low_end_mono_below_hz = "FILL"          # the cutoff passed to measure_low_end_mono_ratio
+low_end_side_over_mid_db_max = "FILL"   # side minus mid level below that cutoff, highest allowed
+correlation_floor = "FILL"
+
+[spectrum]
+reference_track = "FILL: path to a reference WAV"
+band_tolerance_db = "FILL"
+
+[clipping]
+max_clipped_samples = 0

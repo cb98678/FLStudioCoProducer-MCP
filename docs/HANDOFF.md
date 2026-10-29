@@ -14,6 +14,37 @@ song specific in `LESSONS_TO_RECIPES.md`.
 The person is Mark ("Meeps"), a principal engineer who produces as a hobby. Windows 11 machine "rtxclub": RTX 3090 (24 GB), FL Studio 2026
 Producer Edition v26.1.7 build 5654 (API level 45, embedded Python 3.12.1), Serum 1.368 and Serum 2 2.1.5.
 
+## Where the work stands (2026-10-29, evening)
+
+- **Girlish Type Men, vocal-led layers** (`sandbox\remix\gtm_vocal_v6`, waiting for the person's ear). The person's recipe: synths follow
+  the voice's chords, long pads under spaced-out stabs, a bass that rolls and then stretches out in the drops, piano rolls up to 16 bars.
+  `voiceharmony.section_loops`, chords.pad_and_spaced_stabs (a Pad part), bass.roll_then_long_drop, the plan's pattern_bars. Skill
+  `song-blueprints` has the recipe and the person's three song breakdowns (Clarity, Red Lights, Another Night) as checked facts and
+  options (`LESSONS_TO_RECIPES.md` rows 95 to 100).
+
+- **Stems by FL Studio** (the person: FL already splits stems, use it). Intake now runs FL's clip menu entry Extract stems from sample:
+  `prepare_stems_project` writes a bench project (the song on track 1, the data folder pointed at the work folder, FLP event 202) and
+  `extract_stems_gui` opens it, runs the recipe `extract_stems_gui` and copies vocals, drums, bass and other into `songs\NAME\stems\fl`.
+  `tools/remix_song.py --separator fl` is the default; `--separator models` keeps RoFormer and Demucs. FL stays open afterwards, so ask
+  before the render closes it. Verified end to end on Girlish Type Men (74 s); the recipe finds the clip, menu entry and button by picture
+  (`LESSONS_TO_RECIPES.md` rows 87 to 93).
+
+- **Girlish Type Men, vocal-led remake** (`sandbox\remix\gtm_vocal_v5`, waiting for the person's ear). The person: remake the bass and
+  synths from the voice, everything in one key, auto-tune it, fit it to the beat with Newtime and Newtone, a bit faster (130 bpm, the voice
+  at its own speed). The vocal chain lives in `sandbox\songs\girlish_type_men\gui`: padded to the grid, slowed 442/441 onto Newtime's
+  grid (`LESSONS_TO_RECIPES.md` row 79), 127 warp markers, quantized, sped back, tuned three ways, spliced by section
+  (`tools/splice_takes.py`) into `vocals_tuned_130.wav`. Plan: `edit_plan.py` there (v4's form, new variety locks, the harmony from the
+  voice). Modules: `detect_warp_markers`, `add_warp_markers_gui`, `quantize_vocal_gui`, `apply_vocal_tuning_gui`, `prepare_rate_copy`;
+  recipes `newtime_load_gui` (draft), `newtime_quantize_save_gui`, `newtone_tune_save_gui`.
+
+## Where the work stands (2026-10-29)
+
+- **Open Your Heart, tech house** (`sandbox\remix\oyh_tech_house_v3`, waiting for the person's ear). Tech house for a new song is the
+  grammar pack `tech_house_groove`, never "tech_house" (the Friends engine). An edited plan goes through the one command with `--plan`.
+  The contrast loop lifts builds and quiet sections one by one (`contrast.section_lifts`, `shortfall_each`). Ruff is not in the host venv.
+- **Girlish Type Men, pop dance** (`sandbox\remix\gtm_pop_dance_v4`, waiting for the person's ear). Intake now redoes Whisper loops
+  (`asrclean`); the long vocal is raised when quiet (`remixaudio.voice_lift_db`) and no longer rides the music bus pump (`mixroute.LEAD_ROLES`).
+
 ## Where the work stands (2026-10-28)
 
 - **Serum 2 wavetables and sampler sounds from the song** (the person, 2026-10-28 evening: "make skills on how to use the MCP Serum 2

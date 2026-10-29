@@ -1,0 +1,856 @@
+{
+ "category": "bass",
+ "what": "Bass lines as step patterns per section kind for the bass part (bass) and the sub (sub). Characters: x root, X accented root, o octave up, d octave down, 5 the fifth (nearest), v the fifth below, 4 the fourth, 7 the minor seventh, 3 the chord's third, b the flat second (a Phrygian approach note), - hold, . rest. A list plays one pattern per bar in turn.",
+ "options": [
+  {
+   "id": "bass.pack",
+   "label": "The style pack's own bass line",
+   "what": "Keep the pack's bass and sub patterns.",
+   "genres": [
+    "*"
+   ],
+   "moods": [
+    "*"
+   ],
+   "energy": "any",
+   "sources": [],
+   "engine": {}
+  },
+  {
+   "id": "bass.offbeat_8th",
+   "label": "House off-beat bass",
+   "what": "The bass on the 8th between kicks, the sub doubling it with longer notes: the classic house pocket that never fights the kick.",
+   "genres": [
+    "house",
+    "deep_house",
+    "tech_house",
+    "nu_disco",
+    "pop_dance"
+   ],
+   "moods": [
+    "happy",
+    "warm",
+    "soulful",
+    "party"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "kick and bass alternate"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "..x...x...x...x.",
+     "drop": [
+      "..x...x...x..xo.",
+      "..x...x.5.x...x."
+     ],
+     "build": "..x...x...x...x.",
+     "outro": "..x...x...x...x."
+    },
+    "sub": {
+     "groove": "..x-..x-..x-..x-",
+     "drop": "..x-..x-..x-..x-"
+    }
+   }
+  },
+  {
+   "id": "bass.rolling_16",
+   "label": "Rolling trance bass: three 16ths after each kick, a seventh in the roll",
+   "what": "Each beat: a rest where the kick hits, then root, root, octave; every second beat swaps the octave for the minor seventh (.xxo.x7x). Layered on four synths (Harmor, 3x Osc, Harmless, Sytrus) playing the same notes, with a very short sub underneath.",
+   "genres": [
+    "trance",
+    "psytrance",
+    "progressive_house",
+    "techno"
+   ],
+   "moods": [
+    "euphoric",
+    "driving",
+    "hypnotic",
+    "energetic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "B - Harmor, B - 3xOsc, B- Harm, Default (Sytrus): . A1 A1 A2 . A1 G2 A1; SUB 3x Osc notes of 0.08 beats"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "intro": ".xxo.x7x.xxo.x7x",
+     "groove": ".xxo.x7x.xxo.x7x",
+     "build": ".xxx.xxx.xxx.xxx",
+     "drop": ".xxo.x7x.xxo.x7x",
+     "outro": ".xxo.x7x.xxo.x7x"
+    },
+    "sub": {
+     "groove": ".x...x...x...x..",
+     "drop": ".x...x...x...x.."
+    },
+    "sub_duck_kicks": true
+   }
+  },
+  {
+   "id": "bass.ostinato_16",
+   "label": "16th ostinato on one note, accents moving",
+   "what": "The bass repeats one note on every 16th and the groove comes from accents and the sound (filter and release automated over 8 to 16 bars). Layered: a distorted mid bass, a square sub, an octave-up layer for bite.",
+   "genres": [
+    "melodic_techno",
+    "electro_industrial",
+    "techno",
+    "ebm",
+    "darkwave"
+   ],
+   "moods": [
+    "dark",
+    "hypnotic",
+    "driving",
+    "menacing",
+    "mechanical"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "BAS Lottunma (FLEX Melodic Techno) and Harmor Sub Bass: D3 on every 16th, release automated"
+    },
+    {
+     "song": "night_terror",
+     "where": "DEDZII TERROR (Sytrus + Gross Beat), Square Sub, 808 Flattened, Dedziiboost: 16th ostinato on four layers"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "Xxxx.xxxXxxx.xxx",
+     "drop": "XxxxXxxxXxxxXxxx",
+     "build": "xxxxxxxxxxxxxxxx",
+     "outro": "Xxxx.xxxXxxx.xxx"
+    },
+    "sub": {
+     "groove": ".x.x.x.x.x.x.x.x",
+     "drop": ".x.x.x.x.x.x.x.x"
+    },
+    "sub_duck_kicks": true
+   }
+  },
+  {
+   "id": "bass.octave_bounce",
+   "label": "Octave bounce in 8ths",
+   "what": "Root, root, octave in an uneven 3-3-2 order of 8ths (x.x.o.x.x.o.x.o.): a bass that skips without needing chord changes.",
+   "genres": [
+    "drum_and_bass",
+    "electro",
+    "bass_house",
+    "synthwave",
+    "nu_disco"
+   ],
+   "moods": [
+    "energetic",
+    "bouncy",
+    "playful",
+    "driving"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Submarine (FLEX Olbaid Compendium): C#3 . C#3 . C#4 . C#3 . C#3 . C#4 . C#3 . C#4 ."
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "x.x.o.x.x.o.x.o.",
+     "drop": "x.x.o.x.x.o.x.o.",
+     "build": "x.x.x.x.x.x.x.x."
+    },
+    "sub": {
+     "groove": "x---x---x---x---",
+     "drop": "x---x---x---x---"
+    }
+   }
+  },
+  {
+   "id": "bass.pop_syncopated",
+   "label": "Pop dance syncopated bass with the low fifth",
+   "what": "A Juno-style bass that alternates the root and the fifth below in a syncopated two-bar figure, leaving the kick's beats mostly free: melodic enough to be a hook, simple enough to sit under a vocal.",
+   "genres": [
+    "pop_dance",
+    "nu_disco",
+    "synth_pop",
+    "house",
+    "funk"
+   ],
+   "moods": [
+    "happy",
+    "romantic",
+    "summer",
+    "warm"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "Sytrus Juno Bass: C#3 - Ab2 - . . C#3 . . . C#3 . . . Ab2 -, then Ab2 Ab2 . . Ab2 . . . Ab2 Eb3"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": [
+      "x-v-..x...x...v-",
+      "......vv..v...v5"
+     ],
+     "drop": [
+      "x-v-..x...x...v-",
+      "......vv..v...v5"
+     ],
+     "build": "x...x...x...x..."
+    },
+    "sub": {
+     "groove": "x---..x-..x-..x-",
+     "drop": "x---..x-..x-..x-"
+    }
+   }
+  },
+  {
+   "id": "bass.dotted_332",
+   "label": "Dotted 3-3-2 bass with an octave drop",
+   "what": "Notes held a dotted 8th (x--x----x--x--d-): the 3-3-2 swing of trip hop and downtempo, with the last note dropping an octave into the next bar. Doubled by a chorused mid bass.",
+   "genres": [
+    "trip_hop",
+    "downtempo",
+    "lounge",
+    "dub",
+    "lofi"
+   ],
+   "moods": [
+    "moody",
+    "sensual",
+    "laid_back",
+    "mysterious"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "Bass and Midbass (Sytrus): Ab2 - - Ab2 - - - - Ab2 - - Ab2 - - Ab1 -, Midbass through Vintage Chorus"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "x--x----x--x--d-",
+     "drop": "x--x----x--x--d-",
+     "break": "x---------------"
+    },
+    "sub": {
+     "groove": "x--x----x--x----",
+     "drop": "x--x----x--x----"
+    }
+   }
+  },
+  {
+   "id": "bass.reggaeton_bounce",
+   "label": "Reggaeton bounce bass with the octave",
+   "what": "Root, root held, octave, root, then a gap and the root again on the dembow's last 16ths (x.x-o-x-..x.x---): the bass plays the dembow's rhythm, pumped by Gross Beat in the drop.",
+   "genres": [
+    "reggaeton",
+    "dancehall",
+    "latin",
+    "moombahton"
+   ],
+   "moods": [
+    "sexy",
+    "party",
+    "playful",
+    "hot"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "5.1 Bass (BooBass): F3 . F3 - F4 - F3 - . . F3 . F3 - - -, Gross Beat sidechain"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "x.x-o-x-..x.x---",
+     "drop": "x.x-o-x-..x.x---",
+     "build": "x...x...x...x..."
+    },
+    "sub": {
+     "groove": "x---o-x-..x.x---",
+     "drop": "x---o-x-..x.x---"
+    }
+   }
+  },
+  {
+   "id": "bass.808_held",
+   "label": "Long 808 with a Phrygian step",
+   "what": "An 808 held for most of the bar, re-struck late in the second bar and stepping up a semitone to the flat second before returning: trap's tension in two notes. Glide on the 808 makes the step slide.",
+   "genres": [
+    "trap",
+    "drill",
+    "hiphop",
+    "rnb"
+   ],
+   "moods": [
+    "dark",
+    "cool",
+    "menacing",
+    "moody"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "stroll_up",
+     "where": "808 Clean (FLEX Mobile Tuned 808 Bass): E3 held, then . . . . E3 - - - . . E3 - . F3 F3 ."
+    },
+    {
+     "song": "mic_check",
+     "where": "throaty 808 held a bar, drill reese sample"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": [
+      "x-----..........",
+      "....x---..x-.bb."
+     ],
+     "drop": [
+      "x-----..........",
+      "....x---..x-.bb."
+     ],
+     "build": "x---------------"
+    },
+    "sub": {
+     "groove": [
+      "x-----..........",
+      "....x---..x-.bb."
+     ],
+     "drop": [
+      "x-----..........",
+      "....x---..x-.bb."
+     ]
+    },
+    "sub_duck_kicks": false
+   },
+   "sound_hint": "mono 808 with glide (portamento about 60 ms) so the b steps slide"
+  },
+  {
+   "id": "bass.reese_held",
+   "label": "Held reese, moving with the chords",
+   "what": "One long detuned reese note per chord, the movement made by the reese's own phasing and a filter, a clean sine sub under it. Liquid drum and bass and halftime use it; the drop can re-strike on the 'and' of 3.",
+   "genres": [
+    "drum_and_bass",
+    "liquid_dnb",
+    "halftime",
+    "dubstep"
+   ],
+   "moods": [
+    "melancholic",
+    "dark",
+    "soulful",
+    "dreamy"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "GMS reese and 3x Osc sub held: F2 for 12 steps then F#2"
+    },
+    {
+     "song": "time",
+     "where": "DNB SUB (3x Osc): B2 held, C#3 held"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "x---------------",
+     "drop": [
+      "x---------------",
+      "x---------x-----"
+     ],
+     "break": "x---------------"
+    },
+    "sub": {
+     "groove": "x---------------",
+     "drop": "x---------------"
+    }
+   }
+  },
+  {
+   "id": "bass.halftime_wobble",
+   "label": "Half-time saw bass, gated by Gross Beat",
+   "what": "A saw bass held through half the bar and re-struck on the 'and' of 3, its level chopped by Gross Beat in 8ths or 16ths so the held note pumps; a white-noise layer plays the same rhythm an octave of brightness above.",
+   "genres": [
+    "future_bass",
+    "melodic_dubstep",
+    "trap",
+    "pop"
+   ],
+   "moods": [
+    "euphoric",
+    "emotional",
+    "bittersweet"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "Saw Bass (3x Osc) B2 for 9 steps, Ab2 for 4, through Gross Beat; white noise 3x Osc following the bass rhythm"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "x---------------",
+     "drop": "x--------...x---",
+     "build": "x...x...x...x..."
+    },
+    "sub": {
+     "groove": "x---------------",
+     "drop": "x--------...x---"
+    }
+   },
+   "mix_hint": "mix.sc_gross_beat on the bass and the chords"
+  },
+  {
+   "id": "bass.log_drum",
+   "label": "Log drum answers on the off-beats",
+   "what": "A tuned percussive bass (DX10 log drum) that answers the kick late in the beat (......x---..x---), over an 8th-note pulse bass (x-x-x-x-) from a plucked synth and a Morphine sub. The pulse keeps the pocket, the log drum talks.",
+   "genres": [
+    "afrobeats",
+    "amapiano",
+    "afro_house",
+    "afro_pop"
+   ],
+   "moods": [
+    "sunny",
+    "warm",
+    "playful",
+    "laid_back"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "shine",
+     "where": "Log Drum (Fruity DX10): . . . . . . F2 - - - . . F2 - - -; Synpluck Cube and Morphine #4: F1 - F1 - every 8th"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "......x---..x---",
+     "drop": [
+      "......x---..x---",
+      "......x---..x-o-"
+     ],
+     "break": "......x---......"
+    },
+    "sub": {
+     "groove": "x-x-x-x-x-x-x-x-",
+     "drop": "x-x-x-x-x-x-x-x-"
+    },
+    "sub_duck_kicks": false
+   },
+   "sound_hint": "the bass part as a short FM tom (sound.dx10_log_drum), the sub as a plucky 8th pulse"
+  },
+  {
+   "id": "bass.rework_808_syncopated",
+   "label": "Rework: held bass turned into a syncopated 808 two octaves down",
+   "what": "The rework move: the original's whole-note bass re-cut as x---x--x--x-x--- and doubled two octaves lower by a long 808, so the same harmony gets a hip-hop pocket.",
+   "genres": [
+    "lofi",
+    "hiphop",
+    "trap",
+    "chillhop",
+    "rnb"
+   ],
+   "moods": [
+    "nostalgic",
+    "warm",
+    "cool",
+    "melancholic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "inner_days_rework",
+     "where": "Bass and Heavy 808 (Sytrus): D3 - - - D3 - - D3 - - D3 - D3 - - - against the original's D3 held for a bar (written in D minor; the project's master pitch, -400 cents, sounds it in Bb minor)"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": [
+      "x---x--x--x-x---",
+      "x---x--x---x--x-"
+     ],
+     "drop": [
+      "x---x--x--x-x---",
+      "x---x--x---x--x-"
+     ],
+     "break": "x---------------"
+    },
+    "sub": {
+     "groove": [
+      "x---x--x--x-x---",
+      "x---x--x---x--x-"
+     ],
+     "drop": [
+      "x---x--x--x-x---",
+      "x---x--x---x--x-"
+     ]
+    },
+    "sub_duck_kicks": false
+   }
+  },
+  {
+   "id": "bass.phrygian_answer",
+   "label": "Afro house: the bass only answers, a flat second at the bar's end",
+   "what": "No bass on the downbeats: the bass plays two quick notes a semitone above the root at the end of the bar (............bb..) and lands on the root at the next downbeat. The kick and the percussion carry the low end; the bass is tension and release.",
+   "genres": [
+    "afro_house",
+    "organic_house",
+    "deep_house",
+    "melodic_techno"
+   ],
+   "moods": [
+    "tribal",
+    "hypnotic",
+    "mysterious",
+    "spiritual"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "Analog bass 2 (Harmor): . . . . . . . . . . . . F3 F3 . . then E3 on the next downbeat (E minor)"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": [
+      "............bb..",
+      "x...........bb.."
+     ],
+     "drop": [
+      "x...........bb..",
+      "x.....x.....bb.."
+     ],
+     "break": "x---------------"
+    },
+    "sub": {
+     "groove": "x-------x-------",
+     "drop": "x-------x-------"
+    }
+   }
+  },
+  {
+   "id": "bass.pedal_drone",
+   "label": "Pedal drone under changing chords",
+   "what": "The bass holds the tonic while the chords move above it (sus4, add9, back), so the harmony colours change without the floor moving: intros, breakdowns and whole songs in melodic genres.",
+   "genres": [
+    "drum_and_bass",
+    "melodic_techno",
+    "trance",
+    "cinematic",
+    "ambient"
+   ],
+   "moods": [
+    "dreamy",
+    "melancholic",
+    "epic",
+    "hypnotic"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Fsus4 to Fmadd9 over F for the first 8 bars"
+    },
+    {
+     "song": "exoplanet",
+     "where": "Sub Pad (3x Osc) in the breakdown"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "intro": "x---------------",
+     "break": "x---------------",
+     "groove": "x-------x-------"
+    },
+    "sub": {
+     "intro": "x---------------",
+     "break": "x---------------"
+    },
+    "pedal": [
+     "intro",
+     "break"
+    ]
+   }
+  },
+  {
+   "id": "bass.dotted_pump",
+   "label": "Dotted-8th house bass, ducked by every kick",
+   "what": "One bass note on steps 1, 5, 8, 11 and 14 of the bar (a 4-3-3-3-3 grouping), each about two 16ths long, following the chords (with a loop that changes chord on step 8 the third note takes the new root), an octave above a dancehall 808 so its harmonics carry, and ducked hard by the kick. It keeps a syncopated record's 3-3-2 feel inside a four-on-the-floor groove. Out in breaks.",
+   "genres": [
+    "house",
+    "tech_house",
+    "deep_house",
+    "pop_dance",
+    "future_house",
+    "nu_disco"
+   ],
+   "moods": [
+    "energetic",
+    "party",
+    "happy",
+    "bittersweet",
+    "romantic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "sorry_freejak",
+     "where": "bass stem bars 5-83: G1 G1 Ab1 Ab1 Ab1 | F1 F1 Bb1 Bb1 C2 on steps 1, 5, 8, 11, 14, ducked 12 to 15 dB on each kick; silent in the breaks"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": "X-..x-.x-.x-.x-.",
+     "drop": "X-..x-.x-.x-.x-.",
+     "outro": "X-..x-.x-.x-.x-.",
+     "break": "................",
+     "build": "................"
+    },
+    "sub": {
+     "groove": "X-..x-.x-.x-.x-.",
+     "drop": "X-..x-.x-.x-.x-.",
+     "outro": "X-..x-.x-.x-.x-.",
+     "break": "................",
+     "build": "................"
+    },
+    "sub_duck_kicks": true
+   }
+  },
+  {
+   "id": "bass.roll_then_long_drop",
+   "label": "Rolling in the verses, longer notes when it drops",
+   "what": "The bass rolls in 16ths between the kicks through verses and builds (root, root, octave), with a held turnaround every fourth verse bar. When it drops it stretches out: dotted-quarter notes (6, 6 and 4 sixteenths) and a held root, so the drop breathes under the stabs instead of running. Out in the break; the sub holds the root under the roll and plays the long drop notes, ducked by every kick.",
+   "how": "The person (2026-10-29): the bassline can be rolling sometimes, and when it drops something that extends out a little longer.",
+   "genres": [
+    "pop_dance",
+    "house",
+    "future_house",
+    "progressive_house",
+    "tech_house",
+    "nu_disco",
+    "trance"
+   ],
+   "moods": [
+    "energetic",
+    "driving",
+    "happy",
+    "euphoric",
+    "party",
+    "bittersweet"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "rolling bass: a rest on the kick, then root, root, octave on every beat"
+    },
+    {
+     "song": "song_for_you",
+     "where": "held reese and sub: one long note per chord"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "intro": "................",
+     "groove": [
+      ".xxo.xxo.xxo.xxo",
+      ".xxo.xxo.xxo.xxo",
+      ".xxo.xxo.xxo.xxo",
+      "x-----x-----x-x-"
+     ],
+     "build": [
+      ".xxo.xxo.xxo.xxo",
+      ".xxo.xxo.xxo.xxo",
+      ".xxx.xxx.xxx.xxx",
+      "xxxxxxxxxxxxxxxx"
+     ],
+     "drop": [
+      "X-----x-----x---",
+      "X-----x-----o---",
+      "X-----x-----x---",
+      "X-----------x-x-"
+     ],
+     "break": "................",
+     "outro": [
+      ".xxo.xxo.xxo.xxo",
+      "x---------------"
+     ]
+    },
+    "sub": {
+     "intro": "................",
+     "groove": "x---------------",
+     "build": "x---------------",
+     "drop": [
+      "X-----x-----x---",
+      "X-----x-----x---",
+      "X-----x-----x---",
+      "X-----------x-x-"
+     ],
+     "break": "................",
+     "outro": "x---------------"
+    },
+    "sub_duck_kicks": true
+   }
+  },
+  {
+   "id": "bass.euro_gallop",
+   "label": "Euro-gallop: root on the kick, two octaves, a breath",
+   "what": "Every beat: the low root with the kick (accented), the octave up twice, then an empty 16th that leaves room for the clap (root, octave, octave, rest). No sustained notes: a 90s Eurodance bass that bounces without swing. The sub hits the root on the beats with the kick, not ducked by it.",
+   "how": "The person's Another Night breakdown, 2026-10-29: B1 B2 B2 rest per beat, velocities 115, 100, 90; the empty fourth 16th leaves a window for the clap.",
+   "genres": [
+    "eurodance",
+    "pop_dance",
+    "house",
+    "nu_disco",
+    "big_room"
+   ],
+   "moods": [
+    "energetic",
+    "nostalgic",
+    "party",
+    "driving",
+    "happy"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "another_night",
+     "where": "the person's breakdown: root, octave, octave, rest on every beat (B1 B2 B2 .), unconfirmed against the record"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "intro": "................",
+     "groove": "Xoo.Xoo.Xoo.Xoo.",
+     "build": "Xoo.Xoo.Xoo.Xoo.",
+     "drop": "Xoo.Xoo.Xoo.Xoo.",
+     "break": "................",
+     "outro": "Xoo.Xoo.Xoo.Xoo."
+    },
+    "sub": {
+     "groove": "X...X...X...X...",
+     "build": "X...X...X...X...",
+     "drop": "X...X...X...X...",
+     "outro": "X...X...X...X..."
+    },
+    "sub_duck_kicks": false
+   }
+  },
+  {
+   "id": "bass.inverted_turnaround",
+   "label": "Long notes, the chord's third in the bass on every fourth bar",
+   "what": "Dotted-quarter notes on the root (6, 6 and 4 sixteenths) for three bars, then the fourth bar plays the chord's third instead of its root (a first inversion such as C/E), so the low end moves like a melody into the next phrase instead of sitting flat. The sub keeps the root and is ducked by the kick.",
+   "how": "The breakdowns' inverse root rule: inverting the last chord of a loop (Clarity's breakdown names an I/3) keeps the bass line moving.",
+   "genres": [
+    "progressive_house",
+    "pop_dance",
+    "big_room",
+    "future_house",
+    "house",
+    "trance"
+   ],
+   "moods": [
+    "euphoric",
+    "uplifting",
+    "bittersweet",
+    "romantic",
+    "proud"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "clarity",
+     "where": "the person's breakdown: an inverted final chord (I over its third) keeping the low end moving (the chords are disputed, see the reference page)"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "groove": [
+      "x-----x-----x---",
+      "x-----x-----x---",
+      "x-----x-----x---",
+      "3-----3-----3---"
+     ],
+     "build": ".xx..xx..xx..xx.",
+     "drop": [
+      "X-----x-----x---",
+      "X-----x-----x---",
+      "X-----x-----x---",
+      "3-----3-----3-x-"
+     ],
+     "break": "................",
+     "outro": "x---------------"
+    },
+    "sub": {
+     "groove": "x-----x-----x---",
+     "drop": "X-----x-----x---",
+     "outro": "x---------------"
+    },
+    "sub_duck_kicks": true
+   }
+  },
+  {
+   "id": "bass.empty_verse_square_drop",
+   "label": "No low end in the verse, a heavy square bass when it drops",
+   "what": "The verses and builds leave everything under 250 Hz empty (no bass, no sub) so the voice and a guitar or pluck carry them; at the drop a driven mono square bass in 8ths takes the 100 to 300 Hz band with the sub under it, and the contrast makes the drop feel huge.",
+   "how": "The person's Red Lights breakdown: verse lows empty, a distorted mono square wave bass at the drop. The rhythm here is ours.",
+   "genres": [
+    "progressive_house",
+    "pop_dance",
+    "big_room",
+    "folktronica",
+    "future_house"
+   ],
+   "moods": [
+    "euphoric",
+    "uplifting",
+    "bittersweet",
+    "driving"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "red_lights",
+     "where": "the person's breakdown: an acoustic verse with empty lows, a distorted mono square bass over 100 to 300 Hz in the drop"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "intro": "................",
+     "groove": "................",
+     "build": "................",
+     "drop": "X.x.X.x.X.x.X.x.",
+     "break": "................",
+     "outro": "................"
+    },
+    "sub": {
+     "intro": "................",
+     "groove": "................",
+     "build": "................",
+     "drop": "X-------X-------",
+     "break": "................",
+     "outro": "................"
+    },
+    "sub_duck_kicks": true
+   }
+  }
+ ]
+}

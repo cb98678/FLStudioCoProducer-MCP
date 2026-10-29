@@ -1,0 +1,30 @@
+[module]
+name = "prepare_stems_project"
+layer = "L3"
+summary = "Write a sandbox project with the song as one audio clip and its data folder set, ready for FL's Extract stems from sample."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["song","out_project"],"properties":{"song":{"type":"string","minLength":1,"x-path":true},"out_project":{"type":"string","minLength":1,"x-path":true},"template":{"type":"string","x-path":true}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_prepare_stems_project.py::test_writes_the_song_clip_and_the_data_folder"
+failure = "test_prepare_stems_project.py::test_refuses_outside_and_missing"
+
+[budget]
+lines = 50

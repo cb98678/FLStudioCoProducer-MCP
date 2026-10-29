@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: coproducer
+Version: 0.1.0
+Summary: Local-first AI co-producer for FL Studio: clean-room MCP servers, modules, orchestrator
+Requires-Python: >=3.11
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: soundfile
+Requires-Dist: pyloudnorm
+Requires-Dist: mido
+Requires-Dist: jsonschema
+Requires-Dist: mcp<3,>=2
+Provides-Extra: midi
+Requires-Dist: python-rtmidi; extra == "midi"
+Provides-Extra: gui
+Requires-Dist: mss; extra == "gui"
+Requires-Dist: pillow; extra == "gui"
+Requires-Dist: pyautogui; extra == "gui"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: hypothesis; extra == "dev"
+Requires-Dist: fl-studio-api-stubs; extra == "dev"

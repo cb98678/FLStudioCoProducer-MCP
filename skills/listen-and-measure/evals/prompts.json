@@ -1,0 +1,6 @@
+{"skill": "listen-and-measure", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Why does my drop feel weak?",
+  "assertions": [{"type": "tool_called", "module": "render_via_cli"}, {"type": "tool_called", "module": "measure_crest_factor"}, {"type": "tool_called", "module": "measure_band_energy"}, {"type": "text_has_numbers_with_units"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Is this too loud?", "assertions": [{"type": "tool_called", "module": "load_targets_file"}, {"type": "no_invented_target"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Write a bassline in A minor.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

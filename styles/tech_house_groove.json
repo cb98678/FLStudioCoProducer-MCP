@@ -1,0 +1,161 @@
+{
+ "name": "tech_house_groove",
+ "label": "Tech house (grammar engine, any song)",
+ "engine": "grammar",
+ "what": "Tech house for any song, through the grammar engine so the variety bank can vary it (the \"tech_house\" pack is the first song's fixed engine, kept only for the Friends regression build). Four on the floor with a punchy kick light in the sub, clap with a snare layer on 2 and 4, an open hat on every off-beat, swung 16th hats, syncopated percussion and low ghost rims, a rolling 16th bass that leaves each kick's 16th free and moves to the octave, fifth or minor seventh, a sub only under the drops, short dry stabs. Short breaks, long DJ-friendly intro and outro.",
+ "moods": [
+  "playful",
+  "groovy",
+  "cheeky",
+  "confident",
+  "cool",
+  "sensual",
+  "flirty",
+  "determined"
+ ],
+ "tempo": {
+  "bpm": 126,
+  "range": [
+   124,
+   128
+  ]
+ },
+ "sections": [
+  ["intro", 16],
+  ["groove", 16],
+  ["break", 8],
+  ["build", 8],
+  ["drop", 16],
+  ["break", 8],
+  ["build", 8],
+  ["drop", 16],
+  ["outro", 16]
+ ],
+ "drums": {
+  "swing": 0.58,
+  "intro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "ohat": "..o...o...o...o.",
+    "perc": "..........o....."
+   },
+   "ramp": [0.75, 1.0]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "snare": "....o.......o...",
+    "ohat": "..x...x...x...x.",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "rim": ["......o...o.....", "...o......o...o."],
+    "perc": ["x..x..x...x.....", "x..x..x...x..x.."]
+   },
+   "fill_every": 8,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o.",
+    "perc": "o..o..o...o....."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [0.6, 1.0],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "snare": "....x.......x...",
+    "ohat": "..X...X...X...X.",
+    "hat": ".o.x.o.x.o.x.o.x",
+    "shaker": "oxooxxoooxooxxox",
+    "rim": ["......o...o.....", "...o......o...o."],
+    "perc": ["x..x..x...x.x...", "x..x..x...x..x.x"]
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "ohat": "..x...x...x...x.",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "perc": "x..x..x...x....."
+   },
+   "ramp": [1.0, 0.85]
+  }
+ },
+ "bass": {
+  "groove": [".xxo.xxo.xxo.x5.", ".xxo.xxo.xxo.x7."],
+  "build": "..x...x...x...x.",
+  "drop": [".xxo.xxo.xxo.x5o", ".xxo.x5o.xxo.x7o"],
+  "outro": ".xx..xx..xx..xx."
+ },
+ "sub": {
+  "drop": ".x--.x--.x--.x--"
+ },
+ "chords": {
+  "groove": "...x......x.....",
+  "drop": ["...x..x...x....x", "...x..x....x..x."],
+  "break": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": [],
+ "kit": {},
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.18,
+   "voices": 2,
+   "detune_cents": 6.0,
+   "drive": 1.4
+  },
+  "label": "Rolling Bass"
+ },
+ "form": {
+  "build": "always",
+  "build_bars": 8,
+  "tail_bars": 8,
+  "intro_bars": 16,
+  "bridge": false,
+  "outro_bars": 16,
+  "gap_before_drop": "beat"
+ },
+ "levels_db": {
+  "vocal": -1.0,
+  "clap": -3.5,
+  "hats": -3.5,
+  "fx": -2.5,
+  "arp": -2.5
+ },
+ "levels_note": "The person's approved Friends tech-house mix (v15, by ear): clap -3.5, hats -3.5, FX -2.5, arp -2.5 dB; the vocal up 1 dB as in their house balance (styles/house.json levels_note).",
+ "kick_sub_shelf": {
+  "hz": 60,
+  "db": -4.5,
+  "why": "tech house keeps the kick light in the sub so the bassline carries the low end (Beatportal); the same shelf the person chose on house master B"
+ },
+ "production_recipe": "club_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://www.beatportal.com/articles/692607-step-by-step-guide-to-producing-tech-house-like-fisher-chris-lake-cloonee-and-michael-bibi (most tech house at 120 to 128 bpm; a punchy kick with minimal sub because the bassline carries the low end; off-beat hats and syncopated shakers; small fills every 8 or 16 bars; short breakdowns; the bass sidechained to the kick)",
+  "https://www.attackmagazine.com/technique/beat-dissected/deep-tech-house/ (125 to 130 bpm, swing 60 to 65 %, clap and snare layered on 2 and 4, an open hat on every off-beat, shaker 16ths with velocity changes, a quiet ghost snare in unusual places)",
+  "https://theproducerschool.com/blogs/featured-blogs/5-tech-house-bass-patterns-every-producer-needs-to-master (rolling 8ths and 16ths with tight transients, syncopated off-beat notes, a move to the fourth or fifth in bar 3 of 4 resolving to the root)",
+  "https://tracksensei.com/blog/we-analyzed-563-techno-house-tracks (tech house median -8.8 LUFS)",
+  "https://loststoriesacademy.com/blogs-and-tutorials/what-makes-a-track-dj-friendly (16 or 32 bar mix-in intro: kick, hats or percussion, minimal bass)",
+  "opinion: swing 0.58 sits under Attack's 60 to 65 % for deep tech house so a straight-sung pop vocal does not fight the hats; the range 124 to 128 is where the three sources overlap"
+ ]
+}

@@ -1,0 +1,26 @@
+# PROPOSED, not active. Derived from three reference tracks you supplied (see docs/TARGETS_PROPOSAL.md).
+# To adopt: review, then copy over targets/streaming_default.toml. load_targets_file reads only that file.
+[meta]
+name = "streaming_default"
+source = "Measured from 3 reference MP3s (128 kbps) on 2026-10-22: docs/reports/reference_measurements.json. Loudness and true peak ceiling follow Spotify's published guidance: https://support.spotify.com/bd-en/artists/article/loudness-normalization"
+
+[loudness]
+integrated_lufs = -14.0
+integrated_tolerance_lu = 1.0
+true_peak_dbtp_ceiling = -1.0
+loudness_range_lu = { min = 3.0, max = 6.0 }
+
+[dynamics]
+crest_factor_db = { min = 10.0, max = 13.0 }
+
+[stereo]
+low_end_mono_below_hz = 120
+low_end_side_over_mid_db_max = -20.0
+correlation_floor = 0.85
+
+[spectrum]
+reference_track = "FILL: pick one of the three, or a blend"
+band_tolerance_db = 3.0
+
+[clipping]
+max_clipped_samples = 0

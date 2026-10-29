@@ -1,0 +1,54 @@
+{
+ "evals": [
+  {
+   "prompt": "Mix and master this for streaming.",
+   "skills": [
+    "orchestrator-guide",
+    "studio-ops",
+    "gain-staging",
+    "mix-engineer",
+    "mastering",
+    "co-producer-protocol"
+   ],
+   "pass": "Plan covers gain staging and mixing, then mastering; targets read from the targets file; two human gates (final A/B and any taste call)"
+  },
+  {
+   "prompt": "Restyle to dubstep and make the bass sound huge.",
+   "skills": [
+    "orchestrator-guide",
+    "style-transfer",
+    "sound-design-recipes",
+    "mix-engineer",
+    "gui-fallback"
+   ],
+   "pass": "Melody review before rebuild; bass via a recipe the human approves; plugin load via a GUI recipe"
+  },
+  {
+   "prompt": "Why is my master so quiet?",
+   "skills": [
+    "listen-and-measure",
+    "mastering"
+   ],
+   "pass": "Measurement before any change"
+  },
+  {
+   "prompt": "Make me a new track at 140 in F minor.",
+   "skills": [
+    "track-creation",
+    "orchestrator-guide",
+    "co-producer-protocol"
+   ],
+   "pass": "Brief confirmed first; notes written through the piano roll route and verified"
+  },
+  {
+   "prompt": "Remix my track: spice up the drums, add a buildup and rebuild the bass as a synth.",
+   "skills": [
+    "editable-first",
+    "track-creation",
+    "orchestrator-guide",
+    "co-producer-protocol"
+   ],
+   "pass": "Drums as sampler channels plus patterns, bass as synth channel plus notes; audio only for FX with a recorded reason; sandbox copy only"
+  }
+ ]
+}

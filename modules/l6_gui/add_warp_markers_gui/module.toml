@@ -1,0 +1,30 @@
+[module]
+name = "add_warp_markers_gui"
+layer = "L6"
+summary = "Shift+click warp markers into FL's open Newtime window at given times, reading each view from a screenshot and scrolling through."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["markers","duration_s","bpm"],"properties":{"markers":{"type":"array","items":{"type":"number","minimum":0},"maxItems":2000},"duration_s":{"type":"number","minimum":0.1},"bpm":{"type":"number","minimum":40,"maximum":250},"peaks_5ms":{"type":"array","items":{"type":"number"}},"title":{"type":"string","minLength":1,"maxLength":80}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "minutes"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_desktop_ready", "list_open_dialogs", "take_screenshot", "click_at"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_add_warp_markers_gui.py::test_places_every_marker_through_the_sample"
+failure = "test_add_warp_markers_gui.py::test_reports_markers_that_did_not_appear_and_refuses_a_resized_window"
+
+[budget]
+lines = 55

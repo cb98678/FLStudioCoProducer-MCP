@@ -1,0 +1,30 @@
+[module]
+name = "apply_vocal_tuning_gui"
+layer = "L6"
+summary = "Auto-tune a vocal in FL's Newtone (robotic, middle, smooth or natural) and save the tuned audio and its notes as MIDI."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","out_path"],"properties":{"path":{"type":"string","minLength":1,"maxLength":400},"out_path":{"type":"string","minLength":1,"maxLength":400},"style":{"type":"string","enum":["robotic","middle","smooth","natural"]},"midi_path":{"type":"string","maxLength":400},"center":{"type":"number","maximum":1},"variation":{"type":"number","maximum":1},"trans":{"type":"number","maximum":1}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "minutes"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "run_gui_recipe"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_apply_vocal_tuning_gui.py::test_runs_the_newtone_recipe_with_the_style_knobs"
+failure = "test_apply_vocal_tuning_gui.py::test_refuses_bad_style_and_paths"
+
+[budget]
+params = 7

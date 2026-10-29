@@ -1,0 +1,177 @@
+{
+ "name": "melodic_techno",
+ "label": "Melodic techno",
+ "engine": "grammar",
+ "what": "Melodic techno as With You builds it: a drum-synth kit, a 16th ostinato bass whose release and cutoff move, a melodic 16th sequence with repeated notes, wide held pads, the vocal early then a long vocal breakdown, one long drop.",
+ "moods": [
+  "hypnotic",
+  "dark",
+  "dreamy",
+  "melancholic",
+  "epic"
+ ],
+ "tempo": {
+  "bpm": 124,
+  "range": [
+   120,
+   128
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   28
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   32
+  ],
+  [
+   "outro",
+   12
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "ohat": "..x...x...x...x.",
+    "perc": "..o...o...o...o."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "ohat": "..X...X...X...X.",
+    "clap": "....x.......x...",
+    "perc": "..x...x...x...x.",
+    "ride": "x.x.x.x.x.x.x.x."
+   },
+   "fill_every": 16,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "hat": "o.o.o.o.o.o.o.o."
+   }
+  },
+  "intro": {
+   "bars": {
+    "hat": "xoxoxoxoxoxoxoxo",
+    "perc": "..o...o...o...o."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "ohat": "..x...x...x...x.",
+    "perc": "..o...o...o...o."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "Xxxx.xxxXxxx.xxx",
+  "drop": "XxxxXxxxXxxxXxxx",
+  "build": "xxxxxxxxxxxxxxxx",
+  "outro": "Xxxx.xxxXxxx.xxx"
+ },
+ "sub": {
+  "groove": ".x.x.x.x.x.x.x.x",
+  "drop": ".x.x.x.x.x.x.x.x"
+ },
+ "chords": {
+  "groove": "x---------------",
+  "break": "x---------------",
+  "build": "x---------------",
+  "drop": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": {
+  "shape": "sequence",
+  "rate": 16,
+  "sections": [
+   "groove",
+   "drop",
+   "break"
+  ],
+  "cell": [
+   7,
+   3,
+   12,
+   12,
+   0,
+   0,
+   10,
+   12,
+   12,
+   3,
+   12,
+   12,
+   10,
+   10,
+   12,
+   12
+  ]
+ },
+ "kit": {},
+ "production_recipe": "techno",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'With You' by Mehran Abbasi (Melodic Techno, 126 bpm), BAS Lottunma 16ths, PLK Navid sequence, Fruity DrumSynth Live kit, FLEX Melodic Techno presets; studied on a sandbox copy 2026-10-28 (docs/demo_study/Mehran_Abbasi_With_You.md)",
+  "https://www.mixgraph.io/bpm-for/melodic-techno (read 2026-10-28: editorial range 120 to 128 bpm, half of all tracks 124 to 126)"
+ ],
+ "form": {
+  "build": "last",
+  "build_bars": 8,
+  "tail_bars": 16,
+  "intro_bars": 8,
+  "bridge": true,
+  "bridge_bars": 16,
+  "outro_bars": 12,
+  "gap_before_drop": "bar"
+ },
+ "options": {
+  "form": "form.journey",
+  "drums": "drums.melodic_techno_synth",
+  "bass": "bass.ostinato_16"
+ },
+ "sub_duck_kicks": true
+}

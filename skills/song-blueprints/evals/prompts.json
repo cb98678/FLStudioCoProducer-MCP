@@ -1,0 +1,5 @@
+{"skill": "song-blueprints", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Remix this song like 90s Eurodance, Another Night style: galloping bass, organ stabs, a dry rap verse and a big chorus.", "assertions": [{"type": "tool_called", "module": "build_song_plan"}, {"type": "tool_called", "module": "build_remix_project"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Make the synths follow the vocal's chords with long pads under spaced-out stabs, and let the bass roll in the verses and hold longer in the drops.", "assertions": [{"type": "tool_called", "module": "build_song_plan"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Close FL Studio without saving the test project.", "assertions": []}
+]}

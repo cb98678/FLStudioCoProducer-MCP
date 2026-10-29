@@ -68,7 +68,7 @@ Everything song specific lives in `src/coproducer/remixplan.py` (tempo, key, cho
 
 1. Song analysis: tempo (`estimate_bpm_dsp`), key (`estimate_key_dsp`), a verified downbeat (today the first detected drum hit is assumed), sections (`detect_sections_dsp`), word-level lyrics from the vocal stem.
 2. Automatic chop planning: pick the most repeated, most singable lines and words from the lyrics, with the word before and after each (the data `CHOPS` holds by hand).
-3. A hands-off stem recipe (FL menu through `gui-fallback`, or Demucs on the GPU as the fallback).
+3. A hands-off stem recipe (FL menu through `gui-fallback`, or Demucs on the GPU as the fallback). Done 2026-10-29: `extract_stems_gui`, the local models as the fallback.
 4. Chord and bass plan from the instruments stem instead of the fixed `ROOTS8`.
 5. A regression set: this song's hand-fixed clips (`..._v3e_userfix.flp`) and the measures `check_vocal_edges` and `find_final_s_end`, so a recipe change cannot make an old cut worse.
 6. Hat detection (the drum stem holds almost none; hats come from the generator).

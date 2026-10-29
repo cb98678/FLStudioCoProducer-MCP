@@ -1,0 +1,188 @@
+{
+ "name": "hiphop",
+ "label": "Hip-hop and boom bap beat (rap mix)",
+ "engine": "grammar",
+ "what": "A boom bap beat under the original vocal: 85 to 95 bpm with an MPC-style swing, the kick on 1 and the and of 2 with a ghost before 4, snares on 2 and 4 with ghost snares before them, straight 8th hats with an open hat on the and of 4, a round bass below C3 on the chord roots with a passing note, held soul chords; verses, hooks and a short break. When the source tempo is in range it is kept, so the voice is not stretched. A new rap verse is the person's own recording; no voice is cloned.",
+ "moods": [
+  "confident",
+  "laid-back",
+  "nostalgic",
+  "boastful",
+  "playful",
+  "defiant"
+ ],
+ "tempo": {
+  "bpm": 90,
+  "range": [
+   84,
+   98
+  ],
+  "follow": true
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "drop",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "drop",
+   8
+  ],
+  [
+   "break",
+   4
+  ],
+  [
+   "drop",
+   8
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "swing": 0.58,
+  "intro": {
+   "bars": {
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "ramp": [
+    0.5,
+    0.8
+   ],
+   "last": {
+    "hat": "x.x.x.x.x.x.....",
+    "snare": "............X..."
+   }
+  },
+  "groove": {
+   "bars": {
+    "kick": [
+     "X.....x.........",
+     "X.....x.x.....o."
+    ],
+    "snare": [
+     "...oX......oX...",
+     "....X......oX..."
+    ],
+    "hat": "x.x.x.x.x.x.x.x.",
+    "ohat": "..............o."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X.....x.........",
+     "X.....x.x....xo."
+    ],
+    "snare": [
+     "...oX......oX...",
+     "....X......oX..."
+    ],
+    "clap": "....x.......x...",
+    "hat": "x.xox.xox.xox.xo",
+    "ohat": "......o.......o.",
+    "shaker": "o.o.o.o.o.o.o.o."
+   },
+   "fill_every": 8,
+   "fill": "B"
+  },
+  "break": {
+   "bars": {
+    "hat": "x...x...x...x...",
+    "rim": "....o.......o..."
+   },
+   "last": {
+    "hat": "................",
+    "snare": "............X.X."
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X.....x.........",
+    "snare": "....X.......X...",
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "ramp": [
+    1.0,
+    0.4
+   ]
+  }
+ },
+ "bass": {
+  "groove": [
+   "x-------x---5---",
+   "x-------x---o---"
+  ],
+  "drop": [
+   "X-------x---5---",
+   "x-----x-x---o-5-"
+  ],
+  "outro": [
+   "x---------------"
+  ]
+ },
+ "sub": {},
+ "chords": {
+  "intro": "x---------------",
+  "groove": [
+   "x-------x-------",
+   "x---------------"
+  ],
+  "drop": [
+   "x-------x-------",
+   "x-------x---x---"
+  ],
+  "break": "x---------------"
+ },
+ "arp": [],
+ "kit": {
+  "CP_Kick": {
+   "fn": "kick",
+   "args": {
+    "f0": 55.0,
+    "punch": 1.0,
+    "length": 0.4,
+    "drive": 1.6
+   }
+  },
+  "CP_Snare": {
+   "fn": "snare",
+   "args": {
+    "body_hz": 190.0,
+    "decay": 0.18,
+    "length": 0.4
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "bass_808",
+  "args": {
+   "f0": 55.0,
+   "length": 0.9,
+   "punch": 0.5,
+   "drive": 1.2
+  },
+  "label": "Boom Bass"
+ },
+ "production_recipe": "hiphop",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://www.audeobox.com/learn/fl-studio/how-to-make-boom-bap-beats-in-fl-studio/ (2026-02-16: 85 to 95 bpm, kick on 1 and the and of 2 with a ghost on 4, snares on 2 and 4 with ghosts at 50 to 60 %, straight 8th hats with an open hat on the and of 2 or 4, MPC 60 % swing, bass below C3 on a 2-bar loop with a passing note on beat 3, intro 4 to 8 bars, verses 16, hooks 8, the bass ducked 2 to 3 dB under the kick; it exports beats at -10 to -12 LUFS, the club release target is louder on purpose)"
+ ]
+}

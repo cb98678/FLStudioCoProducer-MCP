@@ -1,0 +1,189 @@
+{
+ "name": "afrobeats",
+ "label": "Afrobeats",
+ "engine": "grammar",
+ "what": "Afrobeats as Use Me and SHINE build it: a soft four on the floor under a tresillo kick, percussion on the last 16th of beats, a log drum answering late in the beat over an 8th pulse bass, a sus-cell arp hook, warm seventh chords held, the vocal on top.",
+ "moods": [
+  "sunny",
+  "romantic",
+  "laid_back",
+  "sexy",
+  "happy",
+  "warm"
+ ],
+ "tempo": {
+  "bpm": 104,
+  "range": [
+   95,
+   115
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "x..x..x.x..x..x.",
+    "perc": "...x.......x....",
+    "rim": "......x.......x.",
+    "shaker": "x...x...x...x..."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X..x..X.X..x..X.",
+    "snare": "......x.......x.",
+    "perc": "...X.......X....",
+    "ride": "X...X...X...X...",
+    "shaker": "x.x.x.x.x.x.x.x."
+   },
+   "fill_every": 8,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "perc": "...o.......o....",
+    "shaker": "o...o...o...o..."
+   }
+  },
+  "intro": {
+   "bars": {
+    "perc": "...x.......x....",
+    "rim": "......x.......x.",
+    "shaker": "x...x...x...x..."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "x..x..x.x..x..x.",
+    "perc": "...x.......x....",
+    "rim": "......x.......x.",
+    "shaker": "x...x...x...x..."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "......x---..x---",
+  "drop": [
+   "......x---..x---",
+   "......x---..x-o-"
+  ],
+  "break": "......x---......"
+ },
+ "sub": {
+  "groove": "x-x-x-x-x-x-x-x-",
+  "drop": "x-x-x-x-x-x-x-x-"
+ },
+ "chords": {
+  "groove": "x---------------",
+  "drop": "x-------x-------",
+  "break": "x---------------",
+  "build": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": {
+  "shape": "sequence",
+  "rate": 16,
+  "sections": [
+   "intro",
+   "groove",
+   "drop"
+  ],
+  "cell": [
+   0,
+   2,
+   5,
+   7,
+   0,
+   2,
+   2,
+   0
+  ]
+ },
+ "kit": {},
+ "production_recipe": "hiphop",
+ "targets": "targets/streaming_default.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Use Me' by P.Priime (Afrobeats, 100 bpm), Priime kick four on the floor, gbe kick X..X..X.X..X..X., Synth Arp C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5; studied on a sandbox copy 2026-10-28 (docs/demo_study/P_Priime_Use_Me.md)",
+  "FL Studio 2026 demo project 'SHINE' by LeriQ (Afrobeats, 178 bpm), Log Drum (DX10) ......x---..x---, Synpluck Cube 8th pulse, Fm7 Fmadd9 Abmaj7; studied on a sandbox copy 2026-10-28 (docs/demo_study/LeriQ_SHINE.md)",
+  "https://www.mixgraph.io/bpm-for/afrobeats (read 2026-10-28: median 110 bpm, half of all tracks 99 to 116, editorial range 95 to 115)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 4,
+  "tail_bars": 0,
+  "intro_bars": 8,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 8,
+  "gap_before_drop": "beat"
+ },
+ "options": {
+  "form": "form.pop_verse_chorus",
+  "drums": "drums.afrobeats_tresillo",
+  "bass": "bass.log_drum"
+ },
+ "sub_duck_kicks": false
+}

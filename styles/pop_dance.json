@@ -1,0 +1,181 @@
+{
+ "name": "pop_dance",
+ "label": "Pop dance",
+ "engine": "grammar",
+ "what": "Pop dance as Right Night Feeling builds it: a synth bass drum four on the floor, syncopated 16th hats, a Juno bass swapping the root and the low fifth, a Rhodes comping, brass stabs, a four-chord minor loop with a Dorian lift (i7, v, iv7, IV sus2), verses and choruses with no riser builds.",
+ "moods": [
+  "happy",
+  "romantic",
+  "warm",
+  "summer",
+  "bittersweet"
+ ],
+ "tempo": {
+  "bpm": 110,
+  "range": [
+   100,
+   124
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "snare": "....X.......X...",
+    "hat": ".xxx..xx.xxx..xx",
+    "shaker": "..x...x...x...x."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "snare": "....X.......X...",
+    "clap": "....X.......X...",
+    "hat": ".xXx..xX.xXx..xX",
+    "shaker": "..X...X...X...X.",
+    "perc": "..o...oX..X.ooXX"
+   },
+   "fill_every": 8,
+   "fill": "C"
+  },
+  "intro": {
+   "bars": {
+    "hat": ".xxx..xx.xxx..xx",
+    "shaker": "..x...x...x...x."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": ".xxx..xx.xxx..xx"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "snare": "....X.......X...",
+    "hat": ".xxx..xx.xxx..xx",
+    "shaker": "..x...x...x...x."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": [
+   "x-v-..x...x...v-",
+   "......vv..v...v5"
+  ],
+  "drop": [
+   "x-v-..x...x...v-",
+   "......vv..v...v5"
+  ],
+  "build": "x...x...x...x..."
+ },
+ "sub": {
+  "groove": "x---..x-..x-..x-",
+  "drop": "x---..x-..x-..x-"
+ },
+ "chords": {
+  "groove": "x..o..o..o.ox-o-",
+  "drop": "X..o..o..o.oX-o-",
+  "break": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": {
+  "shape": "broken",
+  "rate": 16,
+  "sections": [
+   "drop"
+  ],
+  "octaves": 2,
+  "gate": 0.6
+ },
+ "kit": {},
+ "production_recipe": "nu_disco",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Right Night feeling' by Atthar ft. Mehran Abbasi & Elise Chantelle (Pop Dance, 105 bpm), BassDrum C4 four on the floor, Attack Hat 15 .XXX..XX.XXX..XX, Sytrus Juno Bass C#3 - Ab2 -, C#m7 Abm F#m7 F#sus2; studied on a sandbox copy 2026-10-28 (docs/demo_study/Atthar_Feat_Mehran_Abbasi_Elise_Chantelle_Right_Night_feelin.md)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 4,
+  "tail_bars": 0,
+  "intro_bars": 8,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 8,
+  "gap_before_drop": "beat"
+ },
+ "options": {
+  "form": "form.pop_verse_chorus",
+  "drums": "drums.pop_dance_syncopated_hats",
+  "bass": "bass.pop_syncopated"
+ },
+ "levels_db": {
+  "vocal": -1.0
+ },
+ "levels_note": "The vocal starts at the person's house and nu-disco level (they raised the house vocal 2.1 dB on The Curse of Curves, 2026-10-26); pop carries the record on the voice. Girlish Type Men at the group default (-3 dB) measured its voice 12 LU under the first chorus (2026-10-29)."
+}

@@ -1,0 +1,145 @@
+{
+ "name": "cinematic",
+ "label": "Cinematic and spy",
+ "engine": "grammar",
+ "what": "Soundtrack writing as Secret Agent Rendezvous does it: a swung ride and toms instead of a backbeat, a minor chord with a major seventh, a chromatic guitar line, a harp glissando, a repeated 16th bass for tension, one hall reverb, meter and tempo changes for the scenes.",
+ "moods": [
+  "mysterious",
+  "tense",
+  "playful",
+  "suspense",
+  "dramatic"
+ ],
+ "tempo": {
+  "bpm": 120,
+  "range": [
+   90,
+   140
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   4
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   4
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "ride": "X.xoX.xoX.xoX.xx",
+    "hat": "....x.......x...",
+    "tom": "..............xx"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X.......X.......",
+    "ride": "X.xoX.xoX.xoX.xx",
+    "hat": "....x.......x...",
+    "snare": "............o.x.",
+    "tom": "..............xX"
+   }
+  },
+  "break": {
+   "bars": {
+    "ride": "x.o.x.o.x.o.x.o."
+   }
+  },
+  "intro": {
+   "bars": {
+    "ride": "X.xoX.xoX.xoX.xx",
+    "hat": "....x.......x..."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "....x.......x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "ride": "X.xoX.xoX.xoX.xx",
+    "hat": "....x.......x...",
+    "tom": "..............xx"
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  },
+  "swing": 0.62
+ },
+ "bass": {
+  "groove": "x.x.x.x.x.x.x.x.",
+  "drop": "xxxxxxxxxxxxxxxx",
+  "break": "x---------------"
+ },
+ "sub": {},
+ "chords": {
+  "groove": "xxx-------------",
+  "break": "xxx-------------",
+  "voicing": "minmaj",
+  "drop": "x..o..o..o.ox-o-"
+ },
+ "arp": {
+  "shape": "chromatic",
+  "rate": 16,
+  "sections": [
+   "drop",
+   "break"
+  ],
+  "octaves": 1,
+  "rhythm": "x.xx.xx.xx.xx..."
+ },
+ "kit": {},
+ "production_recipe": "cinematic",
+ "targets": "targets/streaming_default.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Secret Agent Rendezvous' by Sid De La Cruz (Soundtrack, 120 bpm), FPC ride X.xoX.xoX.xoX.xx, Rhodes Cm(maj7), Harp glissando, Piezo D-Eb-E, markers 7/4 6/4 3/4, tempo 120 to 110; studied on a sandbox copy 2026-10-28 (docs/demo_study/Sid_De_La_Cruz_Secret_Agent_Rendezvous.md)"
+ ],
+ "form": {
+  "build": "never",
+  "build_bars": 4,
+  "tail_bars": 0,
+  "intro_bars": 4,
+  "bridge": true,
+  "bridge_bars": 4,
+  "outro_bars": 4,
+  "gap_before_drop": "none"
+ },
+ "options": {
+  "form": "form.cinematic_cues",
+  "drums": "drums.cinematic_jazz_ride",
+  "bass": "bass.octave_bounce"
+ }
+}

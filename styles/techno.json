@@ -1,0 +1,182 @@
+{
+ "name": "techno",
+ "label": "Techno (peak time)",
+ "engine": "grammar",
+ "what": "Peak-time techno: a layered, driven kick with a low-passed rumble tail, 16th hats, off-beat open hats, sparse claps, a dark off-beat 16th bass sidechained to the kick, a one-bar riff, long filter moves and noise risers into the drops.",
+ "moods": [
+  "dark",
+  "angry",
+  "defiant",
+  "driving",
+  "hypnotic",
+  "anxious"
+ ],
+ "tempo": {
+  "bpm": 132,
+  "range": [
+   126,
+   146
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   32
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "..o...o...o...o."
+   },
+   "ramp": [
+    0.8,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "ohat": "..x...x...x...x.",
+    "hat": "oxoooxoooxoooxoo",
+    "rim": [
+     "...o..o.........",
+     "......o......o.."
+    ]
+   },
+   "fill_every": 16,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o.",
+    "shaker": "oooooooooooooooo"
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "X...X...X.......",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "ohat": "..X...X...X...X.",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "shaker": "oooooooooooooooo"
+   },
+   "fill_every": 16,
+   "fill": "C"
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "..o...o...o...o."
+   },
+   "ramp": [
+    1.0,
+    0.85
+   ]
+  }
+ },
+ "bass": {
+  "groove": ".xx..xx..xx..xx.",
+  "drop": [
+   ".xx..xx..xx..xx.",
+   ".xx..xx..xx..xo."
+  ],
+  "build": ".x...x...x...x..",
+  "outro": ".xx..xx..xx..xx."
+ },
+ "sub": {},
+ "chords": {
+  "break": "x---------------",
+  "drop": [
+   "x.........x.....",
+   "......x.........",
+   "x.........x.....",
+   "...x..........x."
+  ]
+ },
+ "arp": [
+  "build"
+ ],
+ "kit": {
+  "CP_Kick": {
+   "fn": "rumble_kick",
+   "args": {
+    "f0": 48.0,
+    "length": 1.3,
+    "tail_s": 0.8
+   }
+  },
+  "CP_Clap": {
+   "fn": "clap",
+   "args": {
+    "seed": 33
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.22,
+   "voices": 3,
+   "detune_cents": 6.0,
+   "drive": 2.4
+  },
+  "label": "Rolling Bass"
+ },
+ "production_recipe": "techno",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://www.beatportal.com/articles/783088-step-by-step-guide-to-producing-techno-peak-time-driving-in-the-style-of-layton-giordani-eli-brown-and-adam-beyer (2024: 126 to 132 bpm, layered kick, hats, sparse claps, bass sidechained, 1 to 2 bar riff)",
+  "https://midnightrebels.com/140-bpm-is-the-new-128-why-techno-is-getting-faster/ (opinion, December 2025 chart: peak time 140 to 146)",
+  "https://tracksensei.com/blog/we-analyzed-563-techno-house-tracks (peak-time techno median -7.7 LUFS, 308 tracks)"
+ ]
+}

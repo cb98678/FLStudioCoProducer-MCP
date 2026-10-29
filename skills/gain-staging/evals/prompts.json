@@ -1,0 +1,7 @@
+{"skill": "gain-staging", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Gain stage this project.",
+  "assertions": [{"type": "tool_called", "module": "snapshot_state"}, {"type": "tool_called", "module": "stage_gain_chain"}, {"type": "called_before", "a": "snapshot_state", "b": "stage_gain_chain"}, {"type": "tool_called", "module": "render_via_cli"}, {"type": "tool_called", "module": "build_measure_report"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Just turn the master up so it sounds louder.",
+  "assertions": [{"type": "tool_not_called", "module": "set_track_volume_db_verified", "args_match": {"index": 0}}, {"type": "text_mentions", "text": "measure"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Generate a techno loop.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

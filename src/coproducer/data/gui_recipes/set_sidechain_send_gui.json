@@ -1,0 +1,45 @@
+{
+  "name": "set_sidechain_send_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 on 2026-10-21 (Insert 1 to Insert 2): select the source strip, right-click the send switch at the bottom of the destination strip, choose Sidechain to this track by picture (template mixer_sidechain_menu_item). The route must already exist (create_send_route), the mixer must be open with no plugin window covering the strips, and strips 1 to 16 are reachable without scrolling. Pixel values are for a 2560x1440 screen; anchors mixer_strip1_name and mixer_send1_switch are the first strip, 42 px apart.",
+  "summary": "Turn an existing mixer send into a sidechain send.",
+  "params": [
+    "source",
+    "dest"
+  ],
+  "vision": false,
+  "source": "measured on this install; FL manual: https://www.image-line.com/fl-studio-learning-content/fl-studio-online-manual/html/plugins/Fruity%20Limiter.htm",
+  "steps": [
+    {
+      "do": "click_col",
+      "anchor": "mixer_strip1_name",
+      "param": "source",
+      "dx": 42
+    },
+    {
+      "do": "wait",
+      "seconds": 0.4
+    },
+    {
+      "do": "click_col",
+      "anchor": "mixer_send1_switch",
+      "param": "dest",
+      "dx": 42,
+      "button": "right"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.5
+    },
+    {
+      "do": "template_click",
+      "template": "mixer_sidechain_menu_item",
+      "min_score": 0.9
+    },
+    {
+      "do": "wait",
+      "seconds": 0.5
+    }
+  ],
+  "needs_sandbox_project": true
+}

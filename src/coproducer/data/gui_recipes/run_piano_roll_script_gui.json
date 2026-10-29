@@ -1,0 +1,25 @@
+{
+  "name": "run_piano_roll_script_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 on 2026-10-21: the Accept button is clicked at an offset from the script dialog's own window (dx 453, dy 138 in screen pixels), and the dialog closes.",
+  "summary": "Accept the open piano roll script dialog so its notes are written.",
+  "params": [],
+  "vision": false,
+  "source": "measured on this install",
+  "steps": [
+    {
+      "do": "click_in_window",
+      "title": "Coproducer notes",
+      "dx": 453,
+      "dy": 138
+    },
+    {
+      "do": "wait",
+      "seconds": 1.0
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 15
+    }
+  ]
+}

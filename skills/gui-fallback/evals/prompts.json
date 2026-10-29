@@ -1,0 +1,6 @@
+{"skill": "gui-fallback", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Load my wavetable synth plugin on channel 3.",
+  "assertions": [{"type": "tool_called", "module": "check_desktop_ready"}, {"type": "tool_called", "module": "load_plugin_gui"}, {"type": "tool_called", "module": "screenshot_verify"}]},
+ {"id": 2, "should_trigger": true, "prompt": "A dialog the agent does not recognize appears.", "assertions": [{"type": "tool_called", "module": "halt_input"}, {"type": "asked_human"}, {"type": "tool_not_called", "module": "click_at"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Set the volume of track 5.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

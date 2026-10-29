@@ -6,7 +6,7 @@ from pathlib import Path
 from coproducer.result import Result, fail, ok
 from coproducer.services import get_service
 
-KNOWN = ("hotkey", "type", "click", "click_row", "click_col", "template_click", "click_in_window", "locate_click", "wait", "expect_dialog", "expect_no_dialog", "expect_title", "expect_file")
+KNOWN = ("hotkey", "type", "click", "click_row", "click_col", "template_click", "click_in_window", "knob_in_window", "locate_click", "wait", "expect_dialog", "expect_no_dialog", "expect_title", "expect_file")
 
 
 def load_gui_recipe(name: str) -> Result:

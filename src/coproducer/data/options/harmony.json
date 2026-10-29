@@ -1,0 +1,1313 @@
+{
+ "category": "harmony",
+ "what": "Chord loops and harmonic devices heard in the demos. A remix keeps the original's chords by default (the roots follow the record bar by bar); these loops are for parts the record has no harmony for (an intro, a breakdown, a new middle section) or for a deliberate re-harmonization the brief asks for. loop: eight bars of [semitones above the tonic, quality]; qualities: min, maj, min7, maj7, dom7, sus2, sus4, add9, madd9, power, minmaj7, six, min6.",
+ "options": [
+  {
+   "id": "harmony.keep_original",
+   "label": "Keep the record's chords",
+   "what": "The remix plays the original's root on every bar it carries; only the voicing and rhythm change. The default.",
+   "genres": [
+    "*"
+   ],
+   "moods": [
+    "*"
+   ],
+   "energy": "any",
+   "sources": [],
+   "engine": {
+    "loop": null
+   }
+  },
+  {
+   "id": "harmony.minor_i7_v_iv7_IVsus2",
+   "label": "i7, v, iv7, IV sus2 (minor with a Dorian lift)",
+   "what": "Minor seventh tonic, minor fifth, minor fourth, then the fourth turned major as a sus2: the last chord brightens without leaving the key's colour.",
+   "genres": [
+    "pop_dance",
+    "nu_disco",
+    "house",
+    "rnb"
+   ],
+   "moods": [
+    "romantic",
+    "bittersweet",
+    "warm",
+    "summer"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "C#m7 Abm F#m7 F#sus2, every bar"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min7"
+     ],
+     [
+      7,
+      "min"
+     ],
+     [
+      5,
+      "min7"
+     ],
+     [
+      5,
+      "sus2"
+     ],
+     [
+      0,
+      "min7"
+     ],
+     [
+      7,
+      "min"
+     ],
+     [
+      5,
+      "min7"
+     ],
+     [
+      5,
+      "sus2"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.trance_VI_VII_iv_V",
+   "label": "VI, VII, iv, V (minor with a major dominant)",
+   "what": "The trance cadence: up through the sixth and seventh, down to the minor fourth, then the major fifth pulling home (F G Dm E in A minor). The breakdown turns to the relative major (C, Cmaj7, Am7, Fadd9).",
+   "genres": [
+    "trance",
+    "uplifting_trance",
+    "progressive_house",
+    "edm"
+   ],
+   "moods": [
+    "euphoric",
+    "epic",
+    "uplifting"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "F G Dm E5 x4, breakdown Am G C Cmaj7 Am7 Fadd9"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      8,
+      "maj"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      10,
+      "maj"
+     ],
+     [
+      10,
+      "maj"
+     ],
+     [
+      5,
+      "min"
+     ],
+     [
+      5,
+      "min"
+     ],
+     [
+      7,
+      "maj"
+     ],
+     [
+      7,
+      "maj"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.phrygian_i_bVI_bII",
+   "label": "i add9 against bVI, a flat-II turn",
+   "what": "Two chords a bar each (i add9, bVI), every fourth pair turning to the flat second (a sus2 a semitone above the tonic): the dark, Phrygian colour of drill and trap.",
+   "genres": [
+    "uk_drill",
+    "drill",
+    "trap",
+    "dark_techno"
+   ],
+   "moods": [
+    "dark",
+    "menacing",
+    "cold",
+    "tense"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "Cmadd9 Ab5 Cmadd9 Ab ... C#sus2 in the Pad and Piano MIDI, muted in the playlist: the song plays audio bounces of it (Piano (Rendered), Melody (Resampled))"
+    },
+    {
+     "song": "stroll_up",
+     "where": "E5 pedal with Fmaj7"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "madd9"
+     ],
+     [
+      8,
+      "power"
+     ],
+     [
+      0,
+      "madd9"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      0,
+      "madd9"
+     ],
+     [
+      8,
+      "power"
+     ],
+     [
+      0,
+      "madd9"
+     ],
+     [
+      1,
+      "sus2"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.triphop_iv7_i7_bIImaj7_bIII6",
+   "label": "iv7, i7, bII maj7, bIII6 with a major-I turnaround",
+   "what": "A slow minor loop that moves through the Neapolitan (bII major seventh), ending once in four on a dominant-seventh tonic (G7 in G minor) that leans into the iv again.",
+   "genres": [
+    "trip_hop",
+    "lounge",
+    "downtempo",
+    "neo_soul"
+   ],
+   "moods": [
+    "sensual",
+    "moody",
+    "melancholic",
+    "mysterious"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "Cm7 Gm7 Abmaj7 Bb6, Cm7 Gm7 Abmaj7 G7"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      5,
+      "min7"
+     ],
+     [
+      0,
+      "min7"
+     ],
+     [
+      1,
+      "maj7"
+     ],
+     [
+      3,
+      "six"
+     ],
+     [
+      5,
+      "min7"
+     ],
+     [
+      0,
+      "min7"
+     ],
+     [
+      1,
+      "maj7"
+     ],
+     [
+      0,
+      "dom7"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.afrobeats_i7_iadd9_bIIImaj7",
+   "label": "i7, i add9, bIII maj7 held",
+   "what": "Two bars of the tonic changing only its colour (seventh, then ninth), two bars of the relative major's seventh chord: almost static, warm, built for a vocal.",
+   "genres": [
+    "afrobeats",
+    "afro_pop",
+    "rnb",
+    "amapiano"
+   ],
+   "moods": [
+    "sunny",
+    "warm",
+    "romantic",
+    "laid_back"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "shine",
+     "where": "Fm7 Fmadd9 Abmaj7 Abmaj7"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min7"
+     ],
+     [
+      0,
+      "madd9"
+     ],
+     [
+      3,
+      "maj7"
+     ],
+     [
+      3,
+      "maj7"
+     ],
+     [
+      0,
+      "min7"
+     ],
+     [
+      0,
+      "madd9"
+     ],
+     [
+      3,
+      "maj7"
+     ],
+     [
+      3,
+      "maj7"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.drone_then_bVI_bVII_v",
+   "label": "Tonic drone, then bVI maj7, bVII6, v",
+   "what": "Sixteen bars on one chord (a bare fifth, then minor seventh, then major sixth over the same root), then the loop opens to bVI maj7, bVII6, i, v: patience first, movement as the reward.",
+   "genres": [
+    "melodic_techno",
+    "progressive_house",
+    "techno",
+    "afro_house"
+   ],
+   "moods": [
+    "hypnotic",
+    "dreamy",
+    "melancholic",
+    "epic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "D5 x16, Dm7 x8, D6 x8, then Bbmaj7 C6 Dm Am, Bbmaj7 Gm7 Am C6"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      8,
+      "maj7"
+     ],
+     [
+      10,
+      "six"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      7,
+      "min"
+     ],
+     [
+      8,
+      "maj7"
+     ],
+     [
+      5,
+      "min7"
+     ],
+     [
+      7,
+      "min"
+     ],
+     [
+      10,
+      "six"
+     ]
+    ],
+    "mode": "minor",
+    "drone_bars": 16
+   }
+  },
+  {
+   "id": "harmony.dnb_iv_bVI_i_Vsus4",
+   "label": "iv, bVI, i, V sus4",
+   "what": "Start away from home on the minor fourth, through the sixth, land on a bare tonic fifth, hang on a suspended dominant: liquid and melodic drum and bass.",
+   "genres": [
+    "drum_and_bass",
+    "liquid_dnb",
+    "melodic_dubstep"
+   ],
+   "moods": [
+    "melancholic",
+    "soulful",
+    "uplifting"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Bbm C# F5 Csus4 after an Fsus4 / Fmadd9 drone"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      5,
+      "min"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      0,
+      "power"
+     ],
+     [
+      7,
+      "sus4"
+     ],
+     [
+      5,
+      "min"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      0,
+      "power"
+     ],
+     [
+      7,
+      "sus4"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.liquid_dorian_IVsus2",
+   "label": "i7, bVI maj7, Dorian IV sus2",
+   "what": "Minor tonic seventh and the sixth's major seventh, then the major fourth (Dorian) as a sus2: the bright turn liquid drum and bass hangs its vocal on.",
+   "genres": [
+    "liquid_dnb",
+    "drum_and_bass",
+    "future_garage",
+    "rnb"
+   ],
+   "moods": [
+    "soulful",
+    "dreamy",
+    "bittersweet",
+    "warm"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "time",
+     "where": "Ebm7 Bmaj7, Ebm Bmaj7 Badd9 Absus2 Bmaj7"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min7"
+     ],
+     [
+      0,
+      "min7"
+     ],
+     [
+      8,
+      "maj7"
+     ],
+     [
+      8,
+      "maj7"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      8,
+      "add9"
+     ],
+     [
+      5,
+      "sus2"
+     ],
+     [
+      5,
+      "sus2"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.one_chord_colours",
+   "label": "One chord, four colours",
+   "what": "The tonic stays and its colour cycles every bar: sixth, sus2, major seventh, sus4. Movement without harmony moving; the bass can pedal under it.",
+   "genres": [
+    "liquid_dnb",
+    "ambient",
+    "deep_house",
+    "future_garage",
+    "lofi"
+   ],
+   "moods": [
+    "dreamy",
+    "calm",
+    "warm",
+    "hopeful"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "C#6 C#sus2 C#maj7 C#sus4 repeating"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "six"
+     ],
+     [
+      0,
+      "sus2"
+     ],
+     [
+      0,
+      "maj7"
+     ],
+     [
+      0,
+      "sus4"
+     ],
+     [
+      0,
+      "six"
+     ],
+     [
+      0,
+      "sus2"
+     ],
+     [
+      0,
+      "maj7"
+     ],
+     [
+      0,
+      "sus4"
+     ]
+    ],
+    "mode": "major"
+   }
+  },
+  {
+   "id": "harmony.lydian_bVII_V_I_II",
+   "label": "bVII, V, I, II (major with a Lydian lift)",
+   "what": "Power chords walking bVII, V, I and then the major II (the raised fourth): the bright, open lift of future bass.",
+   "genres": [
+    "future_bass",
+    "pop",
+    "melodic_dubstep",
+    "edm"
+   ],
+   "moods": [
+    "euphoric",
+    "uplifting",
+    "bittersweet",
+    "hopeful"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "B5 Ab5 C#5 Eb5 in C# major"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      10,
+      "power"
+     ],
+     [
+      7,
+      "power"
+     ],
+     [
+      0,
+      "power"
+     ],
+     [
+      2,
+      "power"
+     ],
+     [
+      10,
+      "power"
+     ],
+     [
+      7,
+      "power"
+     ],
+     [
+      0,
+      "power"
+     ],
+     [
+      2,
+      "power"
+     ]
+    ],
+    "mode": "major"
+   }
+  },
+  {
+   "id": "harmony.lofi_i7_bIIImaj7_bVImaj7_IV7",
+   "label": "i7, bIII maj7, bVI maj7, IV7 (jazzy minor)",
+   "what": "Minor seventh tonic through two major sevenths to a dominant-seventh fourth (the Dorian IV7): lo-fi's sweet-and-sad loop, every chord a seventh or ninth.",
+   "genres": [
+    "lofi",
+    "chillhop",
+    "jazz_hop",
+    "neo_soul"
+   ],
+   "moods": [
+    "nostalgic",
+    "melancholic",
+    "calm",
+    "warm"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "inner_days",
+     "where": "Dm7 Fmaj7 Bbmaj7 G7, Dm7 C6 G7 Bbmaj7 (written in D minor; the project's master pitch, -400 cents, sounds it in Bb minor)"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min7"
+     ],
+     [
+      3,
+      "maj7"
+     ],
+     [
+      8,
+      "maj7"
+     ],
+     [
+      5,
+      "dom7"
+     ],
+     [
+      0,
+      "min7"
+     ],
+     [
+      10,
+      "six"
+     ],
+     [
+      5,
+      "dom7"
+     ],
+     [
+      8,
+      "maj7"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.spy_minmaj",
+   "label": "i minmaj7, bVI maj7, bVII7",
+   "what": "The spy-film loop: a minor chord with a major seventh, the flat sixth's major seventh, the flat seventh's dominant, back.",
+   "genres": [
+    "soundtrack",
+    "spy",
+    "jazz",
+    "trip_hop"
+   ],
+   "moods": [
+    "mysterious",
+    "suspense",
+    "playful",
+    "tense"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Cm(maj7) Abmaj7 Bb7 Abadd9 Cm"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "minmaj7"
+     ],
+     [
+      0,
+      "minmaj7"
+     ],
+     [
+      8,
+      "maj7"
+     ],
+     [
+      10,
+      "dom7"
+     ],
+     [
+      0,
+      "minmaj7"
+     ],
+     [
+      8,
+      "maj7"
+     ],
+     [
+      8,
+      "add9"
+     ],
+     [
+      7,
+      "sus4"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.mixed_mode_minor",
+   "label": "Minor with a Dorian IV and a Phrygian bII",
+   "what": "Big room's trick: in minor, borrow both the major fourth (Dorian) and the flat second (Phrygian) so the loop goes bright and dark in four bars (Dm F6 G Eb sus2).",
+   "genres": [
+    "edm",
+    "big_room",
+    "electro_house",
+    "dubstep"
+   ],
+   "moods": [
+    "epic",
+    "dramatic",
+    "anthemic",
+    "dark"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "im_awake",
+     "where": "Dm F6 G5 G7 Ebsus2, Gm7 Gm Eb5 Am"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      3,
+      "six"
+     ],
+     [
+      5,
+      "maj"
+     ],
+     [
+      1,
+      "sus2"
+     ],
+     [
+      5,
+      "min7"
+     ],
+     [
+      1,
+      "power"
+     ],
+     [
+      7,
+      "min"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.reggaeton_i_bIII_IV",
+   "label": "i, bIII, IV (with sus and add9 colours)",
+   "what": "Tonic for two bars, then the relative major and the major fourth, the colours changing with the section (sus4 and add9 in the intro, sixths in the verse, plain triads in the chorus).",
+   "genres": [
+    "reggaeton",
+    "latin",
+    "dancehall",
+    "moombahton"
+   ],
+   "moods": [
+    "sexy",
+    "party",
+    "hot",
+    "confident"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "Fsus4 Abadd9 Bbadd9, F5 Ab6 Bb5, Fm Ab Bb"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      3,
+      "maj"
+     ],
+     [
+      5,
+      "maj"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      0,
+      "min7"
+     ],
+     [
+      3,
+      "six"
+     ],
+     [
+      5,
+      "sus2"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.future_house_Vsus_bVI",
+   "label": "V sus4 against bVI, then i",
+   "what": "Hanging on a suspended dominant and the flat sixth for the build (A sus4, Bb in D minor), resolving to the tonic only when the drop lands.",
+   "genres": [
+    "future_house",
+    "bass_house",
+    "edm",
+    "house"
+   ],
+   "moods": [
+    "tense",
+    "energetic",
+    "dark"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "Asus4 Bb Asus4 Bb Asus4 Bbadd9 Asus4 Am, then Dm Bbsus2 D5 Bb5"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      7,
+      "sus4"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      7,
+      "sus4"
+     ],
+     [
+      8,
+      "add9"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      8,
+      "sus2"
+     ],
+     [
+      0,
+      "power"
+     ],
+     [
+      8,
+      "power"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.iii_IV_ii_V_pushed",
+   "label": "iii IV, ii V: two chords a bar, each change a 16th early (re-harmonize)",
+   "what": "A new two-bar loop under the whole vocal: the major key's iii then IV in the first bar, ii then V in the second, the second chord of each bar arriving on the 16th before beat 3. Faster harmonic movement than a pop loop of one or two chords a bar, and it lands the tonic's notes (iii is the tonic's upper three) without ever sitting on the tonic. Lock it when the vocal lives on the major scale's 1, 2, 3, 5 and 6; check every line by ear.",
+   "genres": [
+    "house",
+    "deep_house",
+    "pop_dance",
+    "nu_disco",
+    "future_house",
+    "tech_house"
+   ],
+   "moods": [
+    "bittersweet",
+    "romantic",
+    "warm",
+    "uplifting",
+    "happy"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "sorry_freejak",
+     "where": "bass roots and chroma bars 5-83 in E flat major: G (with E flat in the chord) then A flat | F minor then B flat (C as a passing note), the second chord from step 8; the record itself loops IV vi V (A flat, C minor, B flat)"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      [
+       4,
+       "min"
+      ],
+      [
+       5,
+       "maj7"
+      ],
+      7
+     ],
+     [
+      [
+       2,
+       "min7"
+      ],
+      [
+       7,
+       "six"
+      ],
+      7
+     ],
+     [
+      [
+       4,
+       "min"
+      ],
+      [
+       5,
+       "maj7"
+      ],
+      7
+     ],
+     [
+      [
+       2,
+       "min7"
+      ],
+      [
+       7,
+       "six"
+      ],
+      7
+     ],
+     [
+      [
+       4,
+       "min"
+      ],
+      [
+       5,
+       "maj7"
+      ],
+      7
+     ],
+     [
+      [
+       2,
+       "min7"
+      ],
+      [
+       7,
+       "six"
+      ],
+      7
+     ],
+     [
+      [
+       4,
+       "min"
+      ],
+      [
+       5,
+       "maj7"
+      ],
+      7
+     ],
+     [
+      [
+       2,
+       "min7"
+      ],
+      [
+       7,
+       "six"
+      ],
+      7
+     ]
+    ],
+    "mode": "major",
+    "reharmonize": true,
+    "follow_mode": true
+   }
+  },
+  {
+   "id": "harmony.pop_I_V_vi_IV",
+   "label": "I, V, vi, IV (the pop and EDM loop)",
+   "what": "Tonic, dominant, relative minor, subdominant, two bars each: instantly familiar and bright, the loop under countless pop-EDM choruses. Clarity's chorus is heard this way in remix transcriptions (Ab Eb Fm Db).",
+   "genres": [
+    "pop_dance",
+    "progressive_house",
+    "big_room",
+    "future_house",
+    "house",
+    "trance"
+   ],
+   "moods": [
+    "happy",
+    "euphoric",
+    "uplifting",
+    "proud",
+    "summer"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "clarity",
+     "where": "the Vicetone remix on Hooktheory: III VII i VI in F minor (Ab Eb Fm Db), I V vi IV in A flat; a guitar chord sheet of the original lists Ab Eb Fm Cm Db"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "maj"
+     ],
+     [
+      0,
+      "maj"
+     ],
+     [
+      7,
+      "maj"
+     ],
+     [
+      7,
+      "maj"
+     ],
+     [
+      9,
+      "min"
+     ],
+     [
+      9,
+      "min"
+     ],
+     [
+      5,
+      "maj"
+     ],
+     [
+      5,
+      "maj"
+     ]
+    ],
+    "mode": "major"
+   }
+  },
+  {
+   "id": "harmony.sus_ii_V_vi_iii_IV",
+   "label": "ii sus4, V sus4, vi7, iii7, IV add9 (floating, never landing on I)",
+   "what": "Suspended ii and V that never resolve, then the minor sixth and third with sevenths, then IV with an added ninth: the progression never sits on the tonic, so the chorus floats. Hooktheory transcribes Clarity this way (Bb7sus4 Eb7sus4 Fm7 Cm7 Dbadd9 in A flat); the bar lengths here are ours.",
+   "genres": [
+    "progressive_house",
+    "pop_dance",
+    "future_bass",
+    "melodic_house"
+   ],
+   "moods": [
+    "dreamy",
+    "bittersweet",
+    "euphoric",
+    "romantic",
+    "longing"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "clarity",
+     "where": "Hooktheory: ii7sus4 V7sus4 vi7 iii7 IV(add9) in A flat major, 128 bpm"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      2,
+      "sus4"
+     ],
+     [
+      7,
+      "sus4"
+     ],
+     [
+      9,
+      "min7"
+     ],
+     [
+      9,
+      "min7"
+     ],
+     [
+      4,
+      "min7"
+     ],
+     [
+      4,
+      "min7"
+     ],
+     [
+      5,
+      "add9"
+     ],
+     [
+      5,
+      "add9"
+     ]
+    ],
+    "mode": "major"
+   }
+  },
+  {
+   "id": "harmony.minor_i_VI_III_VII",
+   "label": "i, VI, III, VII (the minor anthem loop)",
+   "what": "Minor tonic, then three major chords climbing back round (Gm Eb Bb F in G minor): melancholic and driving at once, the same chords as vi IV I V in the relative major. Red Lights runs it the whole song, verse on an acoustic guitar, drop on synths.",
+   "genres": [
+    "progressive_house",
+    "pop_dance",
+    "big_room",
+    "trance",
+    "future_house"
+   ],
+   "moods": [
+    "bittersweet",
+    "euphoric",
+    "melancholic",
+    "driving",
+    "uplifting"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "red_lights",
+     "where": "Gm Eb Bb F every bar (a guitar chord sheet: Em C G D with a capo on 3), 125 bpm"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      3,
+      "maj"
+     ],
+     [
+      3,
+      "maj"
+     ],
+     [
+      10,
+      "maj"
+     ],
+     [
+      10,
+      "maj"
+     ]
+    ],
+    "mode": "minor"
+   }
+  },
+  {
+   "id": "harmony.eurodance_i_VI_VII_v",
+   "label": "i, VI, VII, v (the Eurodance turn into the minor v)",
+   "what": "Minor tonic, up through the sixth and seventh in parallel, then down into a dark minor fifth instead of the bright major one: the melancholic-energetic Eurodance loop. Attributed to Another Night in the person's breakdown (Bm G A F#m); a published chord sheet gives that record Am Dm G C instead, so the attribution is unconfirmed, the loop itself is sound.",
+   "genres": [
+    "eurodance",
+    "pop_dance",
+    "house",
+    "trance",
+    "big_room"
+   ],
+   "moods": [
+    "melancholic",
+    "energetic",
+    "driving",
+    "nostalgic",
+    "dark"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "another_night",
+     "where": "the person's breakdown: Bm G A F#m at 126 bpm (unconfirmed; a chord sheet gives Am Dm G C)"
+    }
+   ],
+   "engine": {
+    "loop": [
+     [
+      0,
+      "min"
+     ],
+     [
+      0,
+      "min"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      8,
+      "maj"
+     ],
+     [
+      10,
+      "maj"
+     ],
+     [
+      10,
+      "maj"
+     ],
+     [
+      7,
+      "min"
+     ],
+     [
+      7,
+      "min"
+     ]
+    ],
+    "mode": "minor"
+   }
+  }
+ ]
+}

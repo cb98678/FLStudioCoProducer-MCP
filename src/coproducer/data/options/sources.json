@@ -1,0 +1,308 @@
+{
+ "what": "The FL Studio 2026 demo songs this bank was learned from (C:\\Program Files (x86)\\Image-Line\\FL Studio 2026\\Data\\Demo projects\\Demo songs), studied on sandbox copies on 2026-10-28. data names the study file in docs/demo_study/data. remixes: professional remixes studied against their originals (the person's files, 2026-10-28); study names the study page. references: published records the person brought written breakdowns of (2026-10-29), checked against public sources; study names the page in skill song-blueprints, verified says what the sources confirm and what they do not.",
+ "songs": {
+  "future_house": {
+   "data": "Asher_Postman_Future_House",
+   "file": "Asher Postman - Future House.flp",
+   "title": "AP - FUTURE HOUSE (Stock Plugins Only)",
+   "artists": "Asher Postman",
+   "genre": "Future House",
+   "bpm": 126.0,
+   "key": "D minor",
+   "bars": 34,
+   "seconds": 64.8,
+   "fl_version": "20.99.3000.3031"
+  },
+  "bien_duro": {
+   "data": "Astes_Bien_Duro",
+   "file": "Astes - Bien Duro.flp",
+   "title": "Bien Duro (Clean Version)",
+   "artists": "Astes",
+   "genre": "Reggaeton",
+   "bpm": 95.0,
+   "key": "F minor",
+   "bars": 94,
+   "seconds": 237.5,
+   "fl_version": "25.1.0.4858"
+  },
+  "right_night": {
+   "data": "Atthar_Feat_Mehran_Abbasi_Elise_Chantelle_Right_Night_feelin",
+   "file": "Atthar Feat Mehran Abbasi & Elise Chantelle - Right Night feeling.flp",
+   "title": "Right Night feeling",
+   "artists": "Atthar ft. Mehran Abbasi & Elise Chantelle",
+   "genre": "Pop Dance",
+   "bpm": 105.0,
+   "key": "C# minor",
+   "bars": 94,
+   "seconds": 214.9,
+   "fl_version": "20.8.0.1377"
+  },
+  "im_awake": {
+   "data": "Bombs_Away_ft_KARRA_I_m_Awake",
+   "file": "Bombs Away ft KARRA - I'm Awake.flp",
+   "title": "I'm Awake",
+   "artists": "Bombs Away ft KARRA",
+   "genre": "EDM",
+   "bpm": 124.0,
+   "key": "D minor",
+   "bars": 94,
+   "seconds": 181.9,
+   "fl_version": "21.0.0.3302"
+  },
+  "time": {
+   "data": "Chan_Gibbons_x_Ceebeaats_Time",
+   "file": "Chan Gibbons x Ceebeaats - Time.flp",
+   "title": "Time",
+   "artists": "Chan Gibbons x Ceebeaats",
+   "genre": "D&B",
+   "bpm": 170.0,
+   "key": "Eb minor",
+   "bars": 121,
+   "seconds": 170.8,
+   "fl_version": "25.2.5.5319"
+  },
+  "africas_calling": {
+   "data": "Cuebur_Thandi_Draai_Africa_s_Calling",
+   "file": "Cuebur & Thandi Draai - Africa's Calling.flp",
+   "title": "Africa's Calling",
+   "artists": "Cuebur & Thandi Draai",
+   "genre": "Afro House",
+   "bpm": 120.0,
+   "key": "E minor",
+   "bars": 34,
+   "seconds": 68.0,
+   "fl_version": "25.2.0.5098"
+  },
+  "night_terror": {
+   "data": "DEDZII_NIGHT_TERROR",
+   "file": "DEDZII - NIGHT TERROR.flp",
+   "title": "NIGHT TERROR",
+   "artists": "DEDZII",
+   "genre": "Electro Industrial",
+   "bpm": 108.0,
+   "key": "E major",
+   "bars": 100,
+   "seconds": 222.2,
+   "fl_version": "24.2.99.4844"
+  },
+  "song_for_you": {
+   "data": "Edlan_Ella_Nol_Song_For_You",
+   "file": "Edlan & Ella Noël - Song For You.flp",
+   "title": "Song For You",
+   "artists": "Edlan & Ella Noël",
+   "genre": "Drum & Bass",
+   "bpm": 174.0,
+   "key": "C# major",
+   "bars": 145,
+   "seconds": 200.0,
+   "fl_version": "25.1.2.4893"
+  },
+  "inner_days": {
+   "data": "Electroconductor_Inner_Days_Original",
+   "file": "Electroconductor - Inner Days - Original.flp",
+   "title": "Inner Days",
+   "artists": "Electroconductor (aka nucleon)",
+   "genre": "Lo-Fi",
+   "bpm": 75.0,
+   "key": "D minor",
+   "bars": 41,
+   "seconds": 131.2,
+   "fl_version": "21.2.99.4033"
+  },
+  "inner_days_rework": {
+   "data": "Electroconductor_Inner_Days_SH_1_Rework_feat_Maja_Mannila",
+   "file": "Electroconductor - Inner Days - SH-1 Rework (feat. Maja Mannila).flp",
+   "title": "Inner Days - SH-1 Rework (feat. Maja Mannila)",
+   "artists": "Electroconductor (aka nucleon)",
+   "genre": "Lo-Fi",
+   "bpm": 75.0,
+   "key": "D minor",
+   "bars": 41,
+   "seconds": 131.2,
+   "fl_version": "24.1.0.4212"
+  },
+  "exoplanet": {
+   "data": "Eric_Kauffmann_NrgMind_Exoplanet",
+   "file": "Eric Kauffmann & NrgMind - Exoplanet.flp",
+   "title": "Exoplanet",
+   "artists": "Eric Kauffmann & NrgMind",
+   "genre": "Trance",
+   "bpm": 140.0,
+   "key": "C major",
+   "bars": 261,
+   "seconds": 447.4,
+   "fl_version": "12.9.3.321"
+  },
+  "mic_check": {
+   "data": "Jay_Cactus_x_Confz_Mic_Check_Ready",
+   "file": "Jay Cactus x Confz - Mic Check Ready.flp",
+   "title": "Mic Check Ready",
+   "artists": "Jay Cactus x Confz",
+   "genre": "UK Drill",
+   "bpm": 143.0,
+   "key": "C minor",
+   "bars": 129,
+   "seconds": 216.5,
+   "fl_version": "25.2.3.5164"
+  },
+  "shine": {
+   "data": "LeriQ_SHINE",
+   "file": "LeriQ - SHINE.flp",
+   "title": "SHINE",
+   "artists": "LeriQ",
+   "genre": "Afrobeats",
+   "bpm": 178.0,
+   "key": "F minor",
+   "bars": 82,
+   "seconds": 110.6,
+   "fl_version": "25.2.5.5319"
+  },
+  "madonna": {
+   "data": "LollieVox_Lezina_J_I_ll_Be_Your_Madonna",
+   "file": "LollieVox & Lezina J - I'll Be Your Madonna.flp",
+   "title": "I'll Be Your Madonna",
+   "artists": "LollieVox & Lezina J",
+   "genre": "Trip Hop/ Lounge",
+   "bpm": 91.0,
+   "key": "G minor",
+   "bars": 61,
+   "seconds": 160.9,
+   "fl_version": "20.99.3000.3031"
+  },
+  "never_out": {
+   "data": "Mehdi_Ebrahiminejad_Never_Out",
+   "file": "Mehdi Ebrahiminejad - Never Out.flp",
+   "title": "Never Out ( Tars )",
+   "artists": "Mehdi Ebrahiminejad",
+   "genre": "Drum & Bass",
+   "bpm": 165.0,
+   "key": "F minor",
+   "bars": 111,
+   "seconds": 161.5,
+   "fl_version": "25.2.0.5098"
+  },
+  "with_you": {
+   "data": "Mehran_Abbasi_With_You",
+   "file": "Mehran Abbasi - With You.flp",
+   "title": "With You",
+   "artists": "Mehran Abbasi",
+   "genre": "Melodic Techno",
+   "bpm": 126.0,
+   "key": "D minor",
+   "bars": 104,
+   "seconds": 198.1,
+   "fl_version": "24.2.99.4831"
+  },
+  "thief": {
+   "data": "Ookay_Thief",
+   "file": "Ookay - Thief.flp",
+   "title": "Thief",
+   "artists": "Ookay",
+   "genre": "Future Bass",
+   "bpm": 150.0,
+   "key": "C# major",
+   "bars": 144,
+   "seconds": 230.4,
+   "fl_version": "25.2.3.5164"
+  },
+  "use_me": {
+   "data": "P_Priime_Use_Me",
+   "file": "P.Priime - Use Me.flp",
+   "title": "Use Me",
+   "artists": "P.Priime",
+   "genre": "Afrobeats",
+   "bpm": 100.0,
+   "key": "C# minor",
+   "bars": 74,
+   "seconds": 177.6,
+   "fl_version": "25.2.5.5319"
+  },
+  "stroll_up": {
+   "data": "Purps_On_The_Beat_Feat_Luclover_Stroll_Up",
+   "file": "Purps On The Beat Feat Luclover - Stroll Up.flp",
+   "title": "Stroll Up",
+   "artists": "Purps On The Beat Feat Luclover",
+   "genre": "Trap",
+   "bpm": 147.0,
+   "key": "E minor",
+   "bars": 72,
+   "seconds": 117.6,
+   "fl_version": "25.2.0.5125"
+  },
+  "secret_agent": {
+   "data": "Sid_De_La_Cruz_Secret_Agent_Rendezvous",
+   "file": "Sid De La Cruz - Secret Agent Rendezvous.flp",
+   "title": "Secret Agent Rendezvous",
+   "artists": "Sid De La Cruz",
+   "genre": "Soundtrack",
+   "bpm": 120.0,
+   "key": "C minor",
+   "bars": 55,
+   "seconds": 110.0,
+   "fl_version": "24.0.99.4121"
+  }
+ },
+ "remixes": {
+  "sorry_freejak": {
+   "study": "docs/remix_studies/sorry_freejak.md",
+   "file": "Justin Bieber - Sorry - Freejak Remix (Clean).mp3",
+   "title": "Sorry (Freejak Remix, Clean)",
+   "artists": "Justin Bieber, remixed by Freejak",
+   "original": "04 Sorry (Justin Bieber, 2015; produced by Skrillex and BloodPop)",
+   "genre": "House",
+   "bpm": 128.0,
+   "original_bpm": 100.0,
+   "key": "E flat major (the vocal's), file tagged Fm",
+   "bars": 84,
+   "seconds": 159.2
+  }
+ },
+ "references": {
+  "clarity": {
+   "study": "skills/song-blueprints/references/clarity.md",
+   "title": "Clarity",
+   "artists": "Zedd feat. Foxes",
+   "year": 2012,
+   "genre": "Progressive house, electropop",
+   "bpm": 128.0,
+   "key": "A flat major",
+   "verified": "key and tempo: Hooktheory (A flat major, 128 bpm) and SongBPM (G sharp / A flat major, 128 bpm). Chords: transcriptions differ (Hooktheory: ii7sus4 V7sus4 vi7 iii7 IV(add9); a guitar chord sheet: Ab Eb Fm Cm Db; the Vicetone remix on Hooktheory: III VII i VI in F minor, which is I V vi IV in A flat). The breakdown's E flat major and IV vi V I/3 are not supported.",
+   "urls": [
+    "https://hooktheory.com/theorytab/view/zedd/clarity",
+    "https://songbpm.com/@zedd/clarity",
+    "https://www.hooktheory.com/theorytab/view/zedd-ft-foxes/clarity-vicetone-remix-",
+    "https://tabs.ultimate-guitar.com/tab/zedd/clarity-chords-1213836"
+   ]
+  },
+  "red_lights": {
+   "study": "skills/song-blueprints/references/red-lights.md",
+   "title": "Red Lights",
+   "artists": "Tiesto",
+   "year": 2013,
+   "genre": "Progressive house, folktronica",
+   "bpm": 125.0,
+   "key": "G minor (B flat major)",
+   "verified": "chords Gm Eb Bb F (i VI III VII in G minor, vi IV I V in B flat): a guitar chord sheet (Em C G D, capo 3). Key and tempo: AcousticBrainz (A sharp major, 125 bpm). Released December 2013, produced by Tiesto, Carl Falk and Rami Yacoub (Wikipedia). The voicing table, the envelopes and the ducking curve come from the breakdown only.",
+   "urls": [
+    "https://tabs.ultimate-guitar.com/tab/1481013",
+    "https://acousticbrainz.org/4fb749e9-1b5a-4bef-9fd0-91a3ce4dcdb1",
+    "https://en.wikipedia.org/wiki/Red_Lights_(song)"
+   ]
+  },
+  "another_night": {
+   "study": "skills/song-blueprints/references/another-night.md",
+   "title": "Another Night",
+   "artists": "Real McCoy",
+   "year": 1993,
+   "genre": "Eurodance",
+   "bpm": 126.0,
+   "key": "unconfirmed",
+   "verified": "released 12 July 1993 by Hansa; rap written and performed by Olaf Jeglitza (O-Jay), the sung chorus by studio singer Karin Kasar; produced by Freshline (J. Wind and Quickmix) and the Berman Brothers (Wikipedia). 126 bpm (Mixgraph, which reads the key as G major). Chords unconfirmed: the breakdown gives Bm G A F#m, a chord sheet Am Dm G C. The hardware list (a JV-1080 came out in 1994) and the mix numbers come from the breakdown only.",
+   "urls": [
+    "https://en.wikipedia.org/wiki/Another_Night_(Real_McCoy_song)",
+    "https://www.mixgraph.io/tracks/real-mccoy-another-night",
+    "https://acordesweb.com/cancion/real-mccoy/another-night"
+   ]
+  }
+ }
+}

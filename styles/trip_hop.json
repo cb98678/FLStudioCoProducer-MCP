@@ -1,0 +1,176 @@
+{
+ "name": "trip_hop",
+ "label": "Trip hop and lounge",
+ "engine": "grammar",
+ "what": "Trip hop as I'll Be Your Madonna builds it: a lazy paired kick, the backbeat late, hand drums in interlocking layers (bongos with rising and falling velocity, congas, a low war drum), a dotted 3-3-2 bass, Ogun and Morphine chords in sevenths, falling chromatic blips, dub sends on the vocal.",
+ "moods": [
+  "moody",
+  "sensual",
+  "melancholic",
+  "mysterious",
+  "laid_back"
+ ],
+ "tempo": {
+  "bpm": 90,
+  "range": [
+   80,
+   100
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X..X....X..X....",
+    "snare": "....X.......X...",
+    "perc": "x.xX.xXxX...X...",
+    "shaker": "oxoxoxoxoxoxoxox",
+    "tom": "..............xX"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X..X....X..X....",
+    "snare": "....X.......X..o",
+    "perc": "x.xX.xXxX...X...",
+    "rim": "xx.Xx.X.Xx..X...",
+    "shaker": "oxoXoxoxoxoXoxox",
+    "tom": "X.............xX",
+    "ride": "X.......X...X..."
+   }
+  },
+  "break": {
+   "bars": {
+    "perc": "x.xX.xXxX...X...",
+    "shaker": "o.o.o.o.o.o.o.o."
+   }
+  },
+  "intro": {
+   "bars": {
+    "perc": "x.xX.xXxX...X...",
+    "shaker": "oxoxoxoxoxoxoxox"
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X..X....X..X....",
+    "snare": "....X.......X...",
+    "perc": "x.xX.xXxX...X...",
+    "shaker": "oxoxoxoxoxoxoxox",
+    "tom": "..............xX"
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  },
+  "swing": 0.56
+ },
+ "bass": {
+  "groove": "x--x----x--x--d-",
+  "drop": "x--x----x--x--d-",
+  "break": "x---------------"
+ },
+ "sub": {
+  "groove": "x--x----x--x----",
+  "drop": "x--x----x--x----"
+ },
+ "chords": {
+  "groove": "x---------------",
+  "drop": "x---------------",
+  "break": "x---------------",
+  "build": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": {
+  "shape": "chromatic",
+  "rate": 16,
+  "sections": [
+   "drop",
+   "break"
+  ],
+  "octaves": 1,
+  "rhythm": "x.xx.xx.xx.xx..."
+ },
+ "kit": {},
+ "production_recipe": "hiphop",
+ "targets": "targets/streaming_default.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'I'll Be Your Madonna' by LollieVox & Lezina J (Trip Hop/ Lounge, 91 bpm), Kick X..X....X..X...., Hi Bongo 16ths, DnB Conga, War Drum Lo, Sytrus Ab2 - - Ab2 - - - - bass, Blips Harmor; studied on a sandbox copy 2026-10-28 (docs/demo_study/LollieVox_Lezina_J_I_ll_Be_Your_Madonna.md)",
+  "https://www.mixgraph.io/bpm-for/trip-hop (read 2026-10-28: trip hop 80 to 100 bpm, an editorial estimate)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 4,
+  "tail_bars": 0,
+  "intro_bars": 8,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 8,
+  "gap_before_drop": "beat"
+ },
+ "options": {
+  "form": "form.pop_verse_chorus",
+  "drums": "drums.trip_hop_hand_drums",
+  "bass": "bass.dotted_332"
+ }
+}

@@ -1,0 +1,542 @@
+{
+ "category": "fx",
+ "what": "Transitions: what happens at each section change. cues is the FX bed policy (arrange.generate_fx_cues): for each moment (into_drop, into_build, break_start, groove_start, outro_start, intro_end) a list of cue templates (kinds: impact, air_sweep, noise_riser, tone_riser, downlifter, sub_drop, reverse_cymbal, noise_wash). transitions are production-recipe moves added for section pairs (recipes: filter_sweep, reverb_throw, gap, lowpass_open, lowpass_dip, filter_wobble, pitch_rise, fade_in, stutter_fill, reverse_fill, tape_stop, fx_swell).",
+ "options": [
+  {
+   "id": "fx.club_risers",
+   "label": "Noise and tone risers, impact and air sweep into each drop",
+   "what": "The current default: an 8-bar noise riser and a tone riser through every build, an impact and a reverse-cymbal air sweep on the drop, downlifters out. Effective and familiar; use it when the song is a club record.",
+   "genres": [
+    "house",
+    "tech_house",
+    "techno",
+    "edm",
+    "big_room",
+    "dubstep"
+   ],
+   "moods": [
+    "energetic",
+    "euphoric",
+    "party"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "im_awake",
+     "where": "risers, impacts and snare rolls before each drop"
+    }
+   ],
+   "engine": {
+    "cues": "default"
+   }
+  },
+  {
+   "id": "fx.silence_and_sub",
+   "label": "A beat of silence, then a sub drop and an impact",
+   "what": "No riser at all: the build thins out, the last beat before the drop is silent (everything gapped), the drop lands with a sub-drop sweep and a short impact. Restraint makes the drop louder.",
+   "genres": [
+    "future_house",
+    "bass_house",
+    "trap",
+    "future_bass",
+    "drill",
+    "dubstep"
+   ],
+   "moods": [
+    "confident",
+    "dark",
+    "aggressive",
+    "cool"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "SFX Mega Sub, SFX Noise Punch on the drop"
+    },
+    {
+     "song": "mic_check",
+     "where": "gunshot impact at block edges"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_drop": [
+      {
+       "kind": "sub_drop",
+       "bar": 0,
+       "gain_db": -3.0,
+       "seconds": 2.5
+      },
+      {
+       "kind": "impact",
+       "bar": 0,
+       "gain_db": -4.0,
+       "seconds": 1.6
+      }
+     ],
+     "into_build": [
+      {
+       "kind": "noise_wash",
+       "bar": 0,
+       "bars": 2,
+       "gain_db": -18.0
+      }
+     ],
+     "break_start": [
+      {
+       "kind": "downlifter",
+       "bar": 0,
+       "beats": 8,
+       "gain_db": -14.0
+      }
+     ]
+    },
+    "transitions": {
+     "build>drop": [
+      {
+       "recipe": "gap",
+       "on": "music_bus",
+       "beats": 1
+      }
+     ],
+     "groove>drop": [
+      {
+       "recipe": "gap",
+       "on": "music_bus",
+       "beats": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "fx.kick_filter_in",
+   "label": "Low-passed music opening into the drop, master reverb in the breakdown",
+   "what": "Trance's way in: the breakdown runs with the master reverb up and the bass and kick low-passed; through the build the low-pass opens over 8 to 16 bars, the snare roll climbs, and the drop is the filter fully open.",
+   "genres": [
+    "trance",
+    "progressive_house",
+    "melodic_techno",
+    "techno"
+   ],
+   "moods": [
+    "euphoric",
+    "epic",
+    "dreamy",
+    "uplifting"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Filter - Kick cutoff clips, Filter - Bass Bus cutoff, Reeverb 2 - Master wet level, Filter - Master cutoff"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_build": [
+      {
+       "kind": "noise_riser",
+       "bar": 0,
+       "bars": 8,
+       "f0": 300,
+       "f1": 12000,
+       "gain_db": -14.0
+      }
+     ],
+     "into_drop": [
+      {
+       "kind": "reverse_cymbal",
+       "bar": -1,
+       "beats": 4,
+       "gain_db": -6.0
+      },
+      {
+       "kind": "impact",
+       "bar": 0,
+       "gain_db": -6.0,
+       "seconds": 2.0
+      }
+     ]
+    },
+    "transitions": {
+     "break>build": [
+      {
+       "recipe": "lowpass_open",
+       "on": "music_bus",
+       "bars": 8
+      }
+     ],
+     "drop>break": [
+      {
+       "recipe": "reverb_throw",
+       "on": "music_bus",
+       "beats": 2
+      }
+     ],
+     "build>drop": [
+      {
+       "recipe": "pitch_rise",
+       "on": "snare",
+       "bars": 4,
+       "semitones": 7
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "fx.organic_swells",
+   "label": "Reverse cymbals and filter swells, no risers",
+   "what": "For songs without drops: a reverse cymbal into each new phrase, a low-pass dipping and reopening on the music, reverb throws on the last word of a vocal phrase. Nothing synthetic shouts.",
+   "genres": [
+    "afro_house",
+    "deep_house",
+    "lofi",
+    "pop_dance",
+    "afrobeats",
+    "rnb"
+   ],
+   "moods": [
+    "warm",
+    "laid_back",
+    "romantic",
+    "hypnotic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "reverb and delay throws through short automation clips, filter sweeps"
+    },
+    {
+     "song": "right_night",
+     "where": "Love Philter on the music"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_drop": [
+      {
+       "kind": "reverse_cymbal",
+       "bar": -1,
+       "beats": 4,
+       "gain_db": -8.0
+      }
+     ],
+     "groove_start": [
+      {
+       "kind": "reverse_cymbal",
+       "bar": -1,
+       "beats": 2,
+       "gain_db": -12.0
+      }
+     ],
+     "into_build": []
+    },
+    "transitions": {
+     "groove>drop": [
+      {
+       "recipe": "lowpass_dip",
+       "on": "music_bus",
+       "bars": 1
+      }
+     ],
+     "drop>break": [
+      {
+       "recipe": "reverb_throw",
+       "on": "music_bus",
+       "beats": 2
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "fx.snare_pitch_roll",
+   "label": "Pitched snare roll and a tape stop",
+   "what": "The build is a snare roll whose pitch rises an octave; the bar before the drop stops like a tape (Gross Beat slot 18) or stutters; the drop lands dry with no impact.",
+   "genres": [
+    "future_bass",
+    "dubstep",
+    "trap",
+    "big_room",
+    "edm"
+   ],
+   "moods": [
+    "playful",
+    "euphoric",
+    "energetic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "808 Snare roll with pitch automation, GROSS BEAT clips"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_build": [
+      {
+       "kind": "tone_riser",
+       "bar": 0,
+       "bars": 8,
+       "f0": 330,
+       "f1": 2640,
+       "gain_db": -22.0
+      }
+     ],
+     "into_drop": []
+    },
+    "transitions": {
+     "build>drop": [
+      {
+       "recipe": "pitch_rise",
+       "on": "snare",
+       "bars": 8,
+       "semitones": 12
+      },
+      {
+       "recipe": "tape_stop",
+       "on": "music_bus",
+       "bars": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "fx.drill_block_marks",
+   "label": "Block marks: a drum-fill sample, a riser, an impact on the block edge",
+   "what": "In loop-block songs the edges are marked, not built: a one-bar drum fill and a short riser into the block, an impact on its first beat, nothing else.",
+   "genres": [
+    "uk_drill",
+    "drill",
+    "trap",
+    "hiphop",
+    "grime"
+   ],
+   "moods": [
+    "dark",
+    "aggressive",
+    "confident"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "FX - Gunshot, Riser, Riser 2, Drum Fill clips at block edges"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_drop": [
+      {
+       "kind": "noise_riser",
+       "bar": -1,
+       "bars": 1,
+       "f0": 800,
+       "f1": 9000,
+       "gain_db": -12.0
+      },
+      {
+       "kind": "impact",
+       "bar": 0,
+       "gain_db": -5.0,
+       "seconds": 1.2
+      }
+     ],
+     "groove_start": [
+      {
+       "kind": "impact",
+       "bar": 0,
+       "gain_db": -10.0,
+       "seconds": 1.0
+      }
+     ],
+     "into_build": []
+    },
+    "transitions": {
+     "groove>drop": [
+      {
+       "recipe": "stutter_fill",
+       "on": "music_bus",
+       "bars": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "fx.reverse_and_wind",
+   "label": "Reverse piano chord, wind rise, sub impact",
+   "what": "Musical FX from the song's own sounds: a reversed chord swelling into the downbeat, a wind riser, a sub impact under the first kick. Drum and bass and cinematic records use them instead of white noise.",
+   "genres": [
+    "drum_and_bass",
+    "liquid_dnb",
+    "cinematic",
+    "melodic_dubstep"
+   ],
+   "moods": [
+    "melancholic",
+    "epic",
+    "dreamy"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Piano Reverse, Wind Fx, Sub Impact, Tombak Reverse"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_drop": [
+      {
+       "kind": "reverse_cymbal",
+       "bar": -1,
+       "beats": 4,
+       "gain_db": -6.0
+      },
+      {
+       "kind": "sub_drop",
+       "bar": 0,
+       "gain_db": -4.0,
+       "seconds": 2.0
+      }
+     ],
+     "into_build": [
+      {
+       "kind": "noise_wash",
+       "bar": 0,
+       "bars": 8,
+       "gain_db": -16.0
+      }
+     ]
+    },
+    "transitions": {
+     "build>drop": [
+      {
+       "recipe": "reverse_fill",
+       "on": "music_bus",
+       "bars": 1
+      }
+     ]
+    }
+   },
+   "manual": "A reversed chord of the song's own pads is the best version: bounce two bars of the pad, reverse it in Edison, place it to end on the drop."
+  },
+  {
+   "id": "fx.radio_vocal_drop",
+   "label": "Radio filter on the vocal before the chorus",
+   "what": "The vocal (or an ad-lib) band-passed like a radio for the last bar before the chorus, panned by automation, then full again on the chorus: the reggaeton and pop lift without a build.",
+   "genres": [
+    "reggaeton",
+    "pop",
+    "pop_dance",
+    "afrobeats",
+    "hiphop"
+   ],
+   "moods": [
+    "playful",
+    "party",
+    "sexy"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "2 Radio ad-libs: filtered chops with panning automation, own delay send"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_drop": [
+      {
+       "kind": "reverse_cymbal",
+       "bar": -1,
+       "beats": 2,
+       "gain_db": -10.0
+      }
+     ]
+    },
+    "transitions": {
+     "groove>drop": [
+      {
+       "recipe": "lowpass_dip",
+       "on": "vocal",
+       "bars": 1
+      }
+     ],
+     "build>drop": [
+      {
+       "recipe": "lowpass_dip",
+       "on": "vocal",
+       "bars": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "fx.stop_bar_sweep",
+   "label": "A stop bar: everything out but a noise sweep and the last word",
+   "what": "No 8-bar risers and no impacts: the bar before each drop empties (drums, bass and music gapped), a one-bar white-noise sweep rises through it, the vocal's last words hang in the space, and the drop comes back on the downbeat. Contrast by subtraction.",
+   "genres": [
+    "house",
+    "tech_house",
+    "pop_dance",
+    "future_house",
+    "deep_house",
+    "nu_disco",
+    "edm"
+   ],
+   "moods": [
+    "energetic",
+    "party",
+    "happy",
+    "confident"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "sorry_freejak",
+     "where": "bars 28 and 52: drums and music out, noise sweep (spectral flatness 0.08 to 0.09, centroid 3.8 to 4.8 kHz), the chorus's last words"
+    }
+   ],
+   "engine": {
+    "cues": {
+     "into_drop": [
+      {
+       "kind": "noise_riser",
+       "bar": -1,
+       "bars": 1,
+       "f0": 1200,
+       "f1": 9000,
+       "gain_db": -12.0
+      }
+     ],
+     "into_build": []
+    },
+    "transitions": {
+     "break>drop": [
+      {
+       "recipe": "gap",
+       "on": "music_bus",
+       "beats": 4
+      }
+     ],
+     "groove>drop": [
+      {
+       "recipe": "gap",
+       "on": "music_bus",
+       "beats": 4
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

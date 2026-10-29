@@ -1,0 +1,7405 @@
+{
+ "category": "sound",
+ "what": "Instruments from the demos to reuse: engine.import names the channel(s) of the demo project (its sandbox render copy) that the remix build can import as the part's instrument (role: stab, arp, sub or bass), with the patch exactly as the demo's designer left it. measured is the solo render read by soundbrief.describe; serum_start is soundbrief's Serum 2 starting point for the same sound, for when the part should be a generated Serum sound in this sound's direction.",
+ "options": [
+  {
+   "id": "sound.trance_lead_stack",
+   "label": "Trance lead stack (MiniSynth, Sytrus, Harmor on one part)",
+   "what": "Eight synths of three kinds playing the same gated chord line, each band-limited by its own filter, the filter velocity automated: width and weight from layering, not from one huge patch.",
+   "genres": [
+    "trance",
+    "big_room",
+    "edm"
+   ],
+   "moods": [
+    "euphoric",
+    "epic",
+    "anthemic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Main Lead 1, Main Lead 1 #2, Main Lead 1 #3, Main Lead 1 #4, Main Lead 1 #5, Main Lead 1 #6, Main Lead #6, Main Lead #7"
+    }
+   ],
+   "plugin": [
+    "Harmor",
+    "MiniSynth",
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "exoplanet",
+     "flp": "Eric_Kauffmann_NrgMind_Exoplanet",
+     "channels": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+     ],
+     "names": [
+      "Main Lead 1",
+      "Main Lead 1 #2",
+      "Main Lead 1 #3",
+      "Main Lead 1 #4",
+      "Main Lead 1 #5",
+      "Main Lead 1 #6",
+      "Main Lead #6",
+      "Main Lead #7"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0277,
+    "decay_s": 1.705,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 737.0,
+    "rolloff_hz": 1049.7,
+    "flatness": 0.0005,
+    "gated_share": 0.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -1.4,
+     "correlation": 0.16,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Main Lead 1",
+     "description": "Matched to the original's lead: quick attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0277,
+       "hold": 0.02,
+       "decay": 1.705,
+       "sustain": 0.0,
+       "release": 1.705
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.738,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.74 from the measured roll-off 1050 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.sakura_pluck",
+   "label": "Sakura string pluck",
+   "what": "A plucked physical-model string (Sakura) on a falling 16th arp: soft attack noise, short body, no synth fizz.",
+   "genres": [
+    "trance",
+    "progressive_house",
+    "melodic_techno",
+    "future_garage"
+   ],
+   "moods": [
+    "dreamy",
+    "nostalgic",
+    "euphoric"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Pluck - Saku"
+    }
+   ],
+   "plugin": [
+    "Sakura"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "E4",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "exoplanet",
+     "flp": "Eric_Kauffmann_NrgMind_Exoplanet",
+     "channels": [
+      17
+     ],
+     "names": [
+      "Pluck - Saku"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0299,
+    "decay_s": 0.5065,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 506.7,
+    "rolloff_hz": 520.15,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": {
+     "median": "G4",
+     "low": "G4",
+     "high": "C5",
+     "median_midi": 67.0,
+     "pitched_share": 0.25
+    },
+    "width": {
+     "side_minus_mid_db": -10.7,
+     "correlation": 0.866,
+     "word": "medium"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Pluck - Saku",
+     "description": "Matched to the original's lead: quick attack, decaying (long tail), chords or several notes at once, medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 2.0,
+       "detune": 0.12
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0299,
+       "hold": 0.02,
+       "decay": 0.5065,
+       "sustain": 0.0,
+       "release": 0.5065
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.649,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.65 from the measured roll-off 520 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.rolling_bass_layers",
+   "label": "Rolling bass in four layers",
+   "what": "Harmor, 3x Osc, Harmless and Sytrus on the same rolling 16ths into one bass bus (EQ, WaveShaper, Maximus, limiters, two filters): each layer covers one band.",
+   "genres": [
+    "trance",
+    "psytrance",
+    "techno"
+   ],
+   "moods": [
+    "driving",
+    "euphoric"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "B - Harmor, B - 3xOsc, B- Harm, Default"
+    }
+   ],
+   "plugin": [
+    "3x Osc",
+    "Harmless",
+    "Harmor",
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "D1",
+    "C3"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "exoplanet",
+     "flp": "Eric_Kauffmann_NrgMind_Exoplanet",
+     "channels": [
+      33,
+      34,
+      35,
+      36
+     ],
+     "names": [
+      "B - Harmor",
+      "B - 3xOsc",
+      "B- Harm",
+      "Default"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.1617,
+    "decay_s": 0.161,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 629.75,
+    "rolloff_hz": 831.7,
+    "flatness": 0.0001,
+    "gated_share": 0.0,
+    "register": {
+     "median": "A2",
+     "low": "A2",
+     "high": "A2",
+     "median_midi": 45.0,
+     "pitched_share": 0.17
+    },
+    "width": {
+     "side_minus_mid_db": -7.3,
+     "correlation": 0.686,
+     "word": "medium"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "soft, slow attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "B - Harmor",
+     "description": "Matched to the original's bass: soft, slow attack, plucked (short decay), chords or several notes at once, medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.1617,
+       "hold": 0.015,
+       "decay": 0.161,
+       "sustain": 0.0,
+       "release": 0.161
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.657,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.66 from the measured roll-off 832 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.pedal_arp_harmless",
+   "label": "Harmless pedal arp",
+   "what": "A clean Harmless pluck on the pedal-tone arp, cutoff opened over long clips.",
+   "genres": [
+    "trance",
+    "synthwave",
+    "progressive_house"
+   ],
+   "moods": [
+    "uplifting",
+    "driving"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Harmless #2"
+    }
+   ],
+   "plugin": [
+    "Harmless"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "A3",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "exoplanet",
+     "flp": "Eric_Kauffmann_NrgMind_Exoplanet",
+     "channels": [
+      5
+     ],
+     "names": [
+      "Harmless #2"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.125,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 846.35,
+    "rolloff_hz": 1535.6,
+    "flatness": 0.0104,
+    "gated_share": 0.33,
+    "register": {
+     "median": "B4",
+     "low": "A3",
+     "high": "B4",
+     "median_midi": 71.0,
+     "pitched_share": 0.67
+    },
+    "width": {
+     "side_minus_mid_db": -7.5,
+     "correlation": 0.864,
+     "word": "medium"
+    },
+    "shape": "square",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Harmless #2",
+     "description": "Matched to the original's pluck: sharp, percussive attack, plucked (short decay), medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         0.7161,
+         0.0226,
+         1.0,
+         0.0,
+         0.5188,
+         0.0,
+         0.2884,
+         0.0,
+         0.2291,
+         0.0,
+         0.3758,
+         0.0012,
+         0.2089,
+         0.0,
+         0.0617,
+         0.0,
+         0.0473,
+         0.0,
+         0.0309,
+         0.0,
+         0.0237,
+         0.0,
+         0.0219,
+         0.0
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 2.0,
+       "detune": 0.12
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.03,
+       "decay": 0.125,
+       "sustain": 0.0,
+       "release": 0.125
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.859,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "filter: cutoff 0.86 from the measured roll-off 1536 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.wavvyy_poly",
+   "label": "Wavvyy poly synth (Harmless)",
+   "what": "A bright polyphonic Harmless patch playing chords as a 16th lead, pumped by an envelope controller.",
+   "genres": [
+    "future_house",
+    "bass_house",
+    "future_bass"
+   ],
+   "moods": [
+    "bouncy",
+    "energetic",
+    "party"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "Wavvyy Synth"
+    }
+   ],
+   "plugin": [
+    "Harmless"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "A2",
+    "F5"
+   ],
+   "polyphony": 6.22,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "future_house",
+     "flp": "Asher_Postman_Future_House",
+     "channels": [
+      24
+     ],
+     "names": [
+      "Wavvyy Synth"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0111,
+    "decay_s": 0.1185,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 500.6,
+    "rolloff_hz": 432.05,
+    "flatness": 0.0041,
+    "gated_share": 0.42,
+    "register": {
+     "median": "D2",
+     "low": "D1",
+     "high": "A#2",
+     "median_midi": 37.6,
+     "pitched_share": 0.42
+    },
+    "width": {
+     "side_minus_mid_db": -2.7,
+     "correlation": 0.3,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Wavvyy Synth",
+     "description": "Matched to the original's lead: sharp, percussive attack, plucked (short decay), chords or several notes at once, brightness falls after the attack (filter envelope), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0111,
+       "hold": 0.0175,
+       "decay": 0.1185,
+       "sustain": 0.0,
+       "release": 0.1185
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.626,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.63 from the measured roll-off 432 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.gms_future_bass",
+   "label": "GMS future house bass",
+   "what": "GMS (Groove Machine Synth) mid bass with its own sub layer: the springy, filtered future house bass.",
+   "genres": [
+    "future_house",
+    "bass_house",
+    "g_house"
+   ],
+   "moods": [
+    "bouncy",
+    "confident"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "FUTURE Bass"
+    }
+   ],
+   "plugin": [
+    "GMS"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "D2",
+    "D3"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "future_house",
+     "flp": "Asher_Postman_Future_House",
+     "channels": [
+      28
+     ],
+     "names": [
+      "FUTURE Bass"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.185,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 586.75,
+    "rolloff_hz": 776.85,
+    "flatness": 0.0065,
+    "gated_share": 0.08,
+    "register": {
+     "median": "F#1",
+     "low": "D1",
+     "high": "A#1",
+     "median_midi": 29.8,
+     "pitched_share": 0.17
+    },
+    "width": {
+     "side_minus_mid_db": -0.6,
+     "correlation": 0.074,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "FUTURE Bass",
+     "description": "Matched to the original's bass: sharp, percussive attack, plucked (short decay), chords or several notes at once, brightness falls after the attack (filter envelope), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.02,
+       "decay": 0.185,
+       "sustain": 0.0,
+       "release": 0.185
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.649,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.65 from the measured roll-off 777 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.wasp_harmor_arp",
+   "label": "Wasp arp (Harmor through Blood Overdrive and Flangus)",
+   "what": "A high Harmor arp driven and chorused into a buzzing 'wasp': a texture lead for latin and pop.",
+   "genres": [
+    "reggaeton",
+    "pop",
+    "latin"
+   ],
+   "moods": [
+    "playful",
+    "hot",
+    "sexy"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "4.5.1 Wasp"
+    }
+   ],
+   "plugin": [
+    "Harmor"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Blood Overdrive",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Flangus",
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "C4",
+    "C5"
+   ],
+   "polyphony": 1.01,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "bien_duro",
+     "flp": "Astes_Bien_Duro",
+     "channels": [
+      216
+     ],
+     "names": [
+      "4.5.1 Wasp"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0468,
+    "decay_s": 0.065,
+    "sustain": 0.5745,
+    "release_s": null,
+    "centroid_hz": 835.0,
+    "rolloff_hz": 1390.95,
+    "flatness": 0.0,
+    "gated_share": 0.83,
+    "register": {
+     "median": "E4",
+     "low": "C4",
+     "high": "A4",
+     "median_midi": 64.0,
+     "pitched_share": 0.83
+    },
+    "width": {
+     "side_minus_mid_db": 0.5,
+     "correlation": -0.061,
+     "word": "wide"
+    },
+    "shape": "filtered saw",
+    "words": [
+     "quick attack",
+     "notes cut off by their length (staccato or gated), held at 57 % before the cut",
+     "dark, few upper harmonics",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "4.5.1 Wasp",
+     "description": "Matched to the original's pluck: quick attack, notes cut off by their length (staccato or gated), held at 57 % before the cut, dark, few upper harmonics, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.3758,
+         0.2723,
+         0.3273,
+         0.2985,
+         0.1603,
+         0.0676,
+         0.0617,
+         0.0331,
+         0.0174,
+         0.0124,
+         0.0115,
+         0.0061,
+         0.0041,
+         0.003,
+         0.003,
+         0.002,
+         0.0012,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0468,
+       "hold": 0.02,
+       "decay": 0.065,
+       "sustain": 0.5745,
+       "release": 0.0217
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.822,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "filter: cutoff 0.82 from the measured roll-off 1391 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.boobass_bounce",
+   "label": "BooBass bounce bass",
+   "what": "FL's BooBass (a modelled bass guitar) playing the dembow bounce, pumped by Gross Beat.",
+   "genres": [
+    "reggaeton",
+    "funk",
+    "nu_disco",
+    "pop"
+   ],
+   "moods": [
+    "playful",
+    "sexy",
+    "party"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "5.1 Bass"
+    }
+   ],
+   "plugin": [
+    "BooBass"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Stereo Shaper",
+    "Fruity Parametric EQ 2",
+    "Frequency Splitter",
+    "Patcher",
+    "Fruity Parametric EQ 2",
+    "Gross Beat"
+   ],
+   "register": [
+    "F2",
+    "Bb4"
+   ],
+   "polyphony": 1.01,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "bien_duro",
+     "flp": "Astes_Bien_Duro",
+     "channels": [
+      9
+     ],
+     "names": [
+      "5.1 Bass"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0057,
+    "decay_s": 0.035,
+    "sustain": 0.69,
+    "release_s": 0.045,
+    "centroid_hz": 56.55,
+    "rolloff_hz": 66.6,
+    "flatness": 0.0,
+    "gated_share": 1.0,
+    "register": {
+     "median": "F1",
+     "low": "F1",
+     "high": "F1",
+     "median_midi": 29.1,
+     "pitched_share": 0.17
+    },
+    "width": {
+     "side_minus_mid_db": -12.7,
+     "correlation": 0.899,
+     "word": "narrow"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 69 % before the cut",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "5.1 Bass",
+     "description": "Matched to the original's bass: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 69 % before the cut, chords or several notes at once, brightness falls after the attack (filter envelope), narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0057,
+       "hold": 0.01,
+       "decay": 0.035,
+       "sustain": 0.69,
+       "release": 0.045
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.45,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.45 from the measured roll-off 67 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.resonator_sytrus",
+   "label": "Resonator (Sytrus) with Mod X/Y moves",
+   "what": "A resonant Sytrus patch whose Mod X and Y are automated: a chord sound that keeps changing colour.",
+   "genres": [
+    "reggaeton",
+    "pop",
+    "electro"
+   ],
+   "moods": [
+    "mysterious",
+    "sexy"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "4.8 Resonator (Sytrus)"
+    }
+   ],
+   "plugin": [
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity NoteBook 2",
+    "Fruity NoteBook 2",
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Maximus",
+    "Emphasis"
+   ],
+   "register": [
+    "F3",
+    "Bb4"
+   ],
+   "polyphony": 1.12,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "bien_duro",
+     "flp": "Astes_Bien_Duro",
+     "channels": [
+      201
+     ],
+     "names": [
+      "4.8 Resonator (Sytrus)"
+     ]
+    }
+   }
+  },
+  {
+   "id": "sound.flex_simmering_pad",
+   "label": "FLEX pad (Olbaid Compendium)",
+   "what": "A FLEX pad preset under the chorus, low in the mix: air and width.",
+   "genres": [
+    "reggaeton",
+    "pop",
+    "rnb"
+   ],
+   "moods": [
+    "warm",
+    "dreamy"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "4.9 Pad"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Olbaid Compendium / Simmering Spheres",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Limiter"
+   ],
+   "register": [
+    "Eb1",
+    "Bb3"
+   ],
+   "polyphony": 5.5,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "bien_duro",
+     "flp": "Astes_Bien_Duro",
+     "channels": [
+      202
+     ],
+     "names": [
+      "4.9 Pad"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.5668,
+    "decay_s": 20.15,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 335.0,
+    "rolloff_hz": 355.3,
+    "flatness": 0.0001,
+    "gated_share": 0.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -4.0,
+     "correlation": 0.436,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "soft, slow attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "4.9 Pad",
+     "description": "Matched to the original's pad: soft, slow attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.5668,
+       "hold": 0.015,
+       "decay": 20.15,
+       "sustain": 0.0,
+       "release": 20.15
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.601,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 25.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 30.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.60 from the measured roll-off 355 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.juno_bass",
+   "label": "Juno-style Sytrus bass",
+   "what": "A round Sytrus bass in the style of a Juno: square-ish, short, warm, sidechained gently.",
+   "genres": [
+    "pop_dance",
+    "nu_disco",
+    "synth_pop",
+    "house"
+   ],
+   "moods": [
+    "happy",
+    "romantic",
+    "warm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "Sytrus Juno Bass"
+    }
+   ],
+   "plugin": [
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "C#2",
+    "Ab3"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "right_night",
+     "flp": "Atthar_Feat_Mehran_Abbasi_Elise_Chantelle_Right_Night_feelin",
+     "channels": [
+      0
+     ],
+     "names": [
+      "Sytrus Juno Bass"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0052,
+    "decay_s": 0.49,
+    "sustain": 0.0,
+    "release_s": 0.19,
+    "centroid_hz": 92.45,
+    "rolloff_hz": 154.95,
+    "flatness": 0.0,
+    "gated_share": 0.17,
+    "register": {
+     "median": "G#1",
+     "low": "F#1",
+     "high": "G#1",
+     "median_midi": 31.9,
+     "pitched_share": 0.67
+    },
+    "width": {
+     "side_minus_mid_db": -163.6,
+     "correlation": 1.0,
+     "word": "mono"
+    },
+    "shape": "square",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "brightness falls after the attack (filter envelope)",
+     "dark, few upper harmonics",
+     "mono"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Sytrus Juno Bass",
+     "description": "Matched to the original's bass: sharp, percussive attack, plucked (short decay), brightness falls after the attack (filter envelope), dark, few upper harmonics, mono",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.0,
+         0.5433,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0052,
+       "hold": 0.02,
+       "decay": 0.49,
+       "sustain": 0.0,
+       "release": 0.49
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.70 from the measured roll-off 155 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.sytrus_brass",
+   "label": "Sytrus brass stabs",
+   "what": "A synth brass on off-beat stabs: bright attack, short swell.",
+   "genres": [
+    "pop_dance",
+    "nu_disco",
+    "funk"
+   ],
+   "moods": [
+    "happy",
+    "confident",
+    "summer"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "Sytrus Brass"
+    }
+   ],
+   "plugin": [
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "F#1",
+    "A3"
+   ],
+   "polyphony": 4.69,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "right_night",
+     "flp": "Atthar_Feat_Mehran_Abbasi_Elise_Chantelle_Right_Night_feelin",
+     "channels": [
+      26
+     ],
+     "names": [
+      "Sytrus Brass"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0073,
+    "decay_s": 0.659,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 1575.7,
+    "rolloff_hz": 1807.25,
+    "flatness": 0.0,
+    "gated_share": 0.08,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -1.5,
+     "correlation": 0.166,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Sytrus Brass",
+     "description": "Matched to the original's lead: sharp, percussive attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0073,
+       "hold": 0.02,
+       "decay": 0.659,
+       "sustain": 0.0,
+       "release": 0.659
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.807,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.81 from the measured roll-off 1807 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.harmor_dark_pad",
+   "label": "Harmor dark pad",
+   "what": "A slow, filtered Harmor pad that sits under a pop chorus without brightness.",
+   "genres": [
+    "pop_dance",
+    "rnb",
+    "deep_house"
+   ],
+   "moods": [
+    "romantic",
+    "moody",
+    "warm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "Dark Pad"
+    }
+   ],
+   "plugin": [
+    "Harmor"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "F#2",
+    "Ab4"
+   ],
+   "polyphony": 4.72,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "right_night",
+     "flp": "Atthar_Feat_Mehran_Abbasi_Elise_Chantelle_Right_Night_feelin",
+     "channels": [
+      25
+     ],
+     "names": [
+      "Dark Pad"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0897,
+    "decay_s": 0.1975,
+    "sustain": 0.2565,
+    "release_s": 0.59,
+    "centroid_hz": 268.6,
+    "rolloff_hz": 412.8,
+    "flatness": 0.0,
+    "gated_share": 0.5,
+    "register": {
+     "median": "F#2",
+     "low": "F#1",
+     "high": "F#2",
+     "median_midi": 41.8,
+     "pitched_share": 0.5
+    },
+    "width": {
+     "side_minus_mid_db": 0.9,
+     "correlation": -0.102,
+     "word": "wide"
+    },
+    "shape": "bright saw (driven or unfiltered)",
+    "words": [
+     "soft, slow attack",
+     "plucked (short decay)",
+     "lots of upper harmonics (bright or driven)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Dark Pad",
+     "description": "Matched to the original's pad: soft, slow attack, plucked (short decay), lots of upper harmonics (bright or driven), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         0.0048,
+         0.4677,
+         0.0094,
+         1.0,
+         0.0282,
+         0.4027,
+         0.4315,
+         0.6761,
+         0.3055,
+         0.024,
+         0.0053,
+         0.2541,
+         0.005,
+         0.0422,
+         0.0017,
+         0.0087,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0897,
+       "hold": 0.0075,
+       "decay": 0.1975,
+       "sustain": 0.2565,
+       "release": 0.59
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 25.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 30.0
+      }
+     ]
+    },
+    "notes": [
+     "the fundamental is 46 dB under the strongest harmonic: check the octave against the part's MIDI before using the table (it can sound an octave up), or drop the first entry",
+     "filter: cutoff 0.70 from the measured roll-off 413 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.toxic_biohazard_arp",
+   "label": "Toxic Biohazard high arp",
+   "what": "An FM/subtractive hybrid (Toxic Biohazard) on a high fast arp above the big room lead.",
+   "genres": [
+    "edm",
+    "big_room",
+    "electro_house"
+   ],
+   "moods": [
+    "euphoric",
+    "energetic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "im_awake",
+     "where": "Toxic Biohazard"
+    }
+   ],
+   "plugin": [
+    "Toxic Biohazard"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "D6",
+    "D7"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "im_awake",
+     "flp": "Bombs_Away_ft_KARRA_I_m_Awake",
+     "channels": [
+      32
+     ],
+     "names": [
+      "Toxic Biohazard"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0714,
+    "decay_s": 0.2325,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 1104.75,
+    "rolloff_hz": 1669.5,
+    "flatness": 0.0,
+    "gated_share": 0.33,
+    "register": {
+     "median": "G5",
+     "low": "D5",
+     "high": "D6",
+     "median_midi": 79.0,
+     "pitched_share": 0.83
+    },
+    "width": {
+     "side_minus_mid_db": 2.2,
+     "correlation": -0.244,
+     "word": "wide"
+    },
+    "shape": "near sine with a little even-harmonic colour",
+    "words": [
+     "soft, slow attack",
+     "plucked (short decay)",
+     "dark, few upper harmonics",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Toxic Biohazard",
+     "description": "Matched to the original's pluck: soft, slow attack, plucked (short decay), dark, few upper harmonics, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.1718,
+         0.0794,
+         0.0012,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0714,
+       "hold": 0.03,
+       "decay": 0.2325,
+       "sustain": 0.0,
+       "release": 0.2325
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.841,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "filter: cutoff 0.84 from the measured roll-off 1670 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.3xosc_lead_layers",
+   "label": "3x Osc lead layers",
+   "what": "Seven 3x Osc channels on one Layer playing the lead: the simplest synth, stacked and detuned into a big room lead.",
+   "genres": [
+    "edm",
+    "big_room",
+    "electro_house"
+   ],
+   "moods": [
+    "anthemic",
+    "euphoric",
+    "party"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "im_awake",
+     "where": "3x Osc #16"
+    }
+   ],
+   "plugin": [
+    "3x Osc"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "D3",
+    "G5"
+   ],
+   "polyphony": 1.06,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "im_awake",
+     "flp": "Bombs_Away_ft_KARRA_I_m_Awake",
+     "channels": [
+      20
+     ],
+     "names": [
+      "3x Osc #16"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0492,
+    "decay_s": 0.0275,
+    "sustain": 0.1795,
+    "release_s": 0.075,
+    "centroid_hz": 1147.7,
+    "rolloff_hz": 1765.75,
+    "flatness": 0.037,
+    "gated_share": 0.5,
+    "register": {
+     "median": "D4",
+     "low": "D4",
+     "high": "F4",
+     "median_midi": 62.0,
+     "pitched_share": 0.42
+    },
+    "width": {
+     "side_minus_mid_db": -3.0,
+     "correlation": 0.33,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "3x Osc #16",
+     "description": "Matched to the original's pluck: quick attack, plucked (short decay), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0492,
+       "hold": 0.02,
+       "decay": 0.0275,
+       "sustain": 0.1795,
+       "release": 0.075
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.804,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.80 from the measured roll-off 1766 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_driving_through",
+   "label": "FLEX Driving Through pluck (Olbaid Compendium)",
+   "what": "A FLEX pluck, octave-doubled, on descending liquid arps; also the lead of the trap demo in a higher register.",
+   "genres": [
+    "liquid_dnb",
+    "drum_and_bass",
+    "trap",
+    "future_bass"
+   ],
+   "moods": [
+    "soulful",
+    "dreamy",
+    "bittersweet"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "time",
+     "where": "Plucks 1"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Olbaid Compendium / Progressive Impact",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Stereo Enhancer",
+    "Fruity Limiter"
+   ],
+   "register": [
+    "Eb4",
+    "Eb6"
+   ],
+   "polyphony": 2.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "time",
+     "flp": "Chan_Gibbons_x_Ceebeaats_Time",
+     "channels": [
+      35
+     ],
+     "names": [
+      "Plucks 1"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.122,
+    "decay_s": 0.808,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 507.15,
+    "rolloff_hz": 621.6,
+    "flatness": 0.0006,
+    "gated_share": 0.0,
+    "register": {
+     "median": "D#4",
+     "low": "D#3",
+     "high": "D#4",
+     "median_midi": 63.0,
+     "pitched_share": 0.33
+    },
+    "width": {
+     "side_minus_mid_db": -4.5,
+     "correlation": 0.477,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "soft, slow attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Plucks 1",
+     "description": "Matched to the original's lead: soft, slow attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.122,
+       "hold": 0.0175,
+       "decay": 0.808,
+       "sustain": 0.0,
+       "release": 0.808
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.672,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.67 from the measured roll-off 622 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.dnb_sub_3xosc",
+   "label": "3x Osc sine sub",
+   "what": "A plain 3x Osc sine sub held under the chords: the clean low end of liquid drum and bass.",
+   "genres": [
+    "drum_and_bass",
+    "liquid_dnb",
+    "halftime"
+   ],
+   "moods": [
+    "soulful",
+    "melancholic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "time",
+     "where": "DNB SUB"
+    }
+   ],
+   "plugin": [
+    "3x Osc"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "Ab2",
+    "Eb4"
+   ],
+   "polyphony": 1.15,
+   "engine": {
+    "role": "sub",
+    "import": {
+     "song": "time",
+     "flp": "Chan_Gibbons_x_Ceebeaats_Time",
+     "channels": [
+      34
+     ],
+     "names": [
+      "DNB SUB"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 1.948,
+    "decay_s": 0.015,
+    "sustain": 0.739,
+    "release_s": null,
+    "centroid_hz": 155.6,
+    "rolloff_hz": 156.8,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": {
+     "median": "D#3",
+     "low": "D#3",
+     "high": "D#3",
+     "median_midi": 51.0,
+     "pitched_share": 1.0
+    },
+    "width": {
+     "side_minus_mid_db": -13.3,
+     "correlation": 0.91,
+     "word": "narrow"
+    },
+    "shape": "sine",
+    "words": [
+     "soft, slow attack",
+     "sustained",
+     "dark, few upper harmonics",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "DNB SUB",
+     "description": "Matched to the original's bass: soft, slow attack, sustained, dark, few upper harmonics, narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 1.948,
+       "hold": 0.02,
+       "decay": 0.015,
+       "sustain": 0.739,
+       "release": 0.015
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.70 from the measured roll-off 157 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.synpluck_dual_arp",
+   "label": "FLEX Synpluck Dual arp (Mobile Synth Pluck)",
+   "what": "A FLEX pluck on the tresillo arp, its cutoff opened over 16 bars.",
+   "genres": [
+    "afro_house",
+    "deep_house",
+    "melodic_techno"
+   ],
+   "moods": [
+    "hypnotic",
+    "tribal",
+    "warm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "Arp 01"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Mobile Synth Pluck / Synpluck Dual",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "F3",
+    "B5"
+   ],
+   "polyphony": 1.17,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "africas_calling",
+     "flp": "Cuebur_Thandi_Draai_Africa_s_Calling",
+     "channels": [
+      33
+     ],
+     "names": [
+      "Arp 01"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.055,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 2030.3,
+    "rolloff_hz": 3886.1,
+    "flatness": 0.0069,
+    "gated_share": 0.5,
+    "register": {
+     "median": "E4",
+     "low": "E4",
+     "high": "G4",
+     "median_midi": 64.1,
+     "pitched_share": 0.25
+    },
+    "width": {
+     "side_minus_mid_db": -13.8,
+     "correlation": 0.92,
+     "word": "narrow"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Arp 01",
+     "description": "Matched to the original's pluck: sharp, percussive attack, plucked (short decay), chords or several notes at once, narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.01,
+       "decay": 0.055,
+       "sustain": 0.0,
+       "release": 0.055
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.931,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 15.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.93 from the measured roll-off 3886 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.harmless_chord_pluck",
+   "label": "Harmless chord pluck",
+   "what": "Harmless chords with a short decay that is automated longer, then filtered by a Fruity Filter sweep.",
+   "genres": [
+    "afro_house",
+    "house",
+    "deep_house"
+   ],
+   "moods": [
+    "warm",
+    "playful"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "Chord Pluck"
+    }
+   ],
+   "plugin": [
+    "Harmless"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Filter",
+    "Soundgoodizer",
+    "Fruity Delay 3"
+   ],
+   "register": [
+    "A2",
+    "B4"
+   ],
+   "polyphony": 3.04,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "africas_calling",
+     "flp": "Cuebur_Thandi_Draai_Africa_s_Calling",
+     "channels": [
+      29
+     ],
+     "names": [
+      "Chord Pluck"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.486,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 299.9,
+    "rolloff_hz": 334.1,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": {
+     "median": "E1",
+     "low": "B0",
+     "high": "E3",
+     "median_midi": 28.1,
+     "pitched_share": 0.83
+    },
+    "width": {
+     "side_minus_mid_db": -6.8,
+     "correlation": 0.657,
+     "word": "medium"
+    },
+    "shape": "bright saw (driven or unfiltered)",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "lots of upper harmonics (bright or driven)",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Chord Pluck",
+     "description": "Matched to the original's chords: sharp, percussive attack, plucked (short decay), lots of upper harmonics (bright or driven), medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         0.0,
+         0.0014,
+         0.0033,
+         0.6166,
+         0.0355,
+         0.0016,
+         0.507,
+         0.1023,
+         0.0044,
+         0.0037,
+         0.0095,
+         1.0,
+         0.0207,
+         0.2541,
+         0.013,
+         0.0385,
+         0.002,
+         0.0018,
+         0.0093,
+         0.02,
+         0.1109,
+         0.0313,
+         0.0111,
+         0.3673
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 2.0,
+       "detune": 0.12
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.015,
+       "decay": 0.486,
+       "sustain": 0.0,
+       "release": 0.486
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "the fundamental is 60 dB under the strongest harmonic: check the octave against the part's MIDI before using the table (it can sound an octave up), or drop the first entry",
+     "filter: cutoff 0.70 from the measured roll-off 334 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.industrial_sytrus_bass",
+   "label": "Distorted Sytrus 16th bass",
+   "what": "A Sytrus bass through Gross Beat and distortion playing the 16th ostinato: the mid layer of a four-layer industrial bass.",
+   "genres": [
+    "electro_industrial",
+    "ebm",
+    "industrial_techno"
+   ],
+   "moods": [
+    "dark",
+    "aggressive",
+    "menacing"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "night_terror",
+     "where": "DEDZII TERROR"
+    }
+   ],
+   "plugin": [
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Maximus",
+    "Fruity Limiter",
+    "Gross Beat",
+    "Fruity Parametric EQ 2",
+    "Gross Beat",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "E2",
+    "F3"
+   ],
+   "polyphony": 1.06,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "night_terror",
+     "flp": "DEDZII_NIGHT_TERROR",
+     "channels": [
+      0
+     ],
+     "names": [
+      "DEDZII TERROR"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.095,
+    "sustain": 0.564,
+    "release_s": 0.195,
+    "centroid_hz": 761.85,
+    "rolloff_hz": 1167.5,
+    "flatness": 0.0284,
+    "gated_share": 0.75,
+    "register": {
+     "median": "A#1",
+     "low": "E1",
+     "high": "E2",
+     "median_midi": 33.8,
+     "pitched_share": 0.17
+    },
+    "width": {
+     "side_minus_mid_db": -14.2,
+     "correlation": 0.926,
+     "word": "narrow"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 56 % before the cut",
+     "chords or several notes at once",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "DEDZII TERROR",
+     "description": "Matched to the original's bass: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 56 % before the cut, chords or several notes at once, narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.015,
+       "decay": 0.095,
+       "sustain": 0.564,
+       "release": 0.195
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.70 from the measured roll-off 1168 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_808_flattened",
+   "label": "FLEX 808 Flattened",
+   "what": "A FLEX 808 preset used as the industrial bass's low layer.",
+   "genres": [
+    "electro_industrial",
+    "trap",
+    "drill"
+   ],
+   "moods": [
+    "dark",
+    "menacing"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "night_terror",
+     "where": "808 Flattened"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Mobile Tuned 808 Bass / 808 Flattened",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Effector",
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "E2",
+    "F3"
+   ],
+   "polyphony": 1.05,
+   "engine": {
+    "role": "sub",
+    "import": {
+     "song": "night_terror",
+     "flp": "DEDZII_NIGHT_TERROR",
+     "channels": [
+      26
+     ],
+     "names": [
+      "808 Flattened"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0056,
+    "decay_s": 0.05,
+    "sustain": 0.347,
+    "release_s": null,
+    "centroid_hz": 162.5,
+    "rolloff_hz": 112.35,
+    "flatness": 0.0004,
+    "gated_share": 0.92,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -15.4,
+     "correlation": 1.0,
+     "word": "narrow"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 35 % before the cut",
+     "chords or several notes at once",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "808 Flattened",
+     "description": "Matched to the original's bass: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 35 % before the cut, chords or several notes at once, narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0056,
+       "hold": 0.015,
+       "decay": 0.05,
+       "sustain": 0.347,
+       "release": 0.0167
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.45,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.45 from the measured roll-off 112 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_crushspeak",
+   "label": "FLEX Crushspeak croak",
+   "what": "A talking, crushed FLEX preset whose high-pass and timbre are automated: a voice-like synth hook.",
+   "genres": [
+    "electro_industrial",
+    "electro",
+    "dubstep"
+   ],
+   "moods": [
+    "dark",
+    "eerie",
+    "aggressive"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "night_terror",
+     "where": "Crushspeak Now"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Olbaid Compendium / Crushspeak Now",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Soundgoodizer",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2"
+   ],
+   "register": [
+    "Ab0",
+    "F2"
+   ],
+   "polyphony": 1.02,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "night_terror",
+     "flp": "DEDZII_NIGHT_TERROR",
+     "channels": [
+      7
+     ],
+     "names": [
+      "Crushspeak Now"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.0075,
+    "sustain": 0.8145,
+    "release_s": null,
+    "centroid_hz": 366.3,
+    "rolloff_hz": 371.4,
+    "flatness": 0.0006,
+    "gated_share": 0.67,
+    "register": {
+     "median": "E1",
+     "low": "E1",
+     "high": "E1",
+     "median_midi": 28.0,
+     "pitched_share": 0.33
+    },
+    "width": {
+     "side_minus_mid_db": -13.7,
+     "correlation": 0.918,
+     "word": "narrow"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 81 % before the cut",
+     "chords or several notes at once",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Crushspeak Now",
+     "description": "Matched to the original's bass: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 81 % before the cut, chords or several notes at once, narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.01,
+       "decay": 0.01,
+       "sustain": 0.8145,
+       "release": 0.015
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.556,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.56 from the measured roll-off 371 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.kepler_pad",
+   "label": "Kepler pad",
+   "what": "FL's Kepler (a dual-engine pad synth) on held chords, layered with DX10 and strings.",
+   "genres": [
+    "liquid_dnb",
+    "trap",
+    "ambient",
+    "future_garage"
+   ],
+   "moods": [
+    "dreamy",
+    "calm",
+    "warm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "Pads - Kepler"
+    }
+   ],
+   "plugin": [
+    "Kepler"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Filter"
+   ],
+   "register": [
+    "F2",
+    "C#4"
+   ],
+   "polyphony": 4.0,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "song_for_you",
+     "flp": "Edlan_Ella_Nol_Song_For_You",
+     "channels": [
+      9
+     ],
+     "names": [
+      "Pads - Kepler"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 5.1474,
+    "decay_s": 4.5125,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 327.95,
+    "rolloff_hz": 434.35,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": {
+     "median": "D#1",
+     "low": "C#1",
+     "high": "F#1",
+     "median_midi": 27.5,
+     "pitched_share": 1.0
+    },
+    "width": {
+     "side_minus_mid_db": -4.1,
+     "correlation": 0.444,
+     "word": "wide"
+    },
+    "shape": "bright saw (driven or unfiltered)",
+    "words": [
+     "soft, slow attack",
+     "decaying (long tail)",
+     "lots of upper harmonics (bright or driven)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Pads - Kepler",
+     "description": "Matched to the original's chords: soft, slow attack, decaying (long tail), lots of upper harmonics (bright or driven), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         0.0027,
+         0.0018,
+         0.5433,
+         0.024,
+         0.1216,
+         0.912,
+         0.026,
+         1.0,
+         0.2427,
+         0.0767,
+         0.0059,
+         0.4121,
+         0.0989,
+         0.0016,
+         0.0668,
+         0.1799,
+         0.0157,
+         0.1318,
+         0.0028,
+         0.0145,
+         0.026,
+         0.0124,
+         0.0086,
+         0.0389
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 5.1474,
+       "hold": 0.0075,
+       "decay": 4.5125,
+       "sustain": 0.0,
+       "release": 4.5125
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "the fundamental is 51 dB under the strongest harmonic: check the octave against the part's MIDI before using the table (it can sound an octave up), or drop the first entry",
+     "filter: cutoff 0.70 from the measured roll-off 434 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.crusty_keys_vocoder",
+   "label": "Crusty FL Keys through a vocoder",
+   "what": "FL Keys made lo-fi and partly vocoded: a piano that sounds like a sample.",
+   "genres": [
+    "liquid_dnb",
+    "lofi",
+    "future_garage"
+   ],
+   "moods": [
+    "nostalgic",
+    "dreamy"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "Crusty Piano"
+    }
+   ],
+   "plugin": [
+    "FL Keys"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Vocoder",
+    "Fruity Filter",
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "F2",
+    "C#4"
+   ],
+   "polyphony": 4.0,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "song_for_you",
+     "flp": "Edlan_Ella_Nol_Song_For_You",
+     "channels": [
+      11
+     ],
+     "names": [
+      "Crusty Piano"
+     ]
+    }
+   }
+  },
+  {
+   "id": "sound.dx10_pad",
+   "label": "DX10 FM pad",
+   "what": "DX10's two-operator FM as a glassy pad layer.",
+   "genres": [
+    "liquid_dnb",
+    "afrobeats",
+    "lofi"
+   ],
+   "moods": [
+    "dreamy",
+    "calm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "Fruity DX10"
+    }
+   ],
+   "plugin": [
+    "Fruity DX10"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Flangus",
+    "Fruity Parametric EQ 2",
+    "Fruity Filter"
+   ],
+   "register": [
+    "F2",
+    "C#4"
+   ],
+   "polyphony": 4.0,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "song_for_you",
+     "flp": "Edlan_Ella_Nol_Song_For_You",
+     "channels": [
+      10
+     ],
+     "names": [
+      "Fruity DX10"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0055,
+    "decay_s": 1.6635,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 216.85,
+    "rolloff_hz": 276.05,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": {
+     "median": "C#2",
+     "low": "C#1",
+     "high": "C#2",
+     "median_midi": 37.0,
+     "pitched_share": 0.5
+    },
+    "width": {
+     "side_minus_mid_db": -2.4,
+     "correlation": 0.274,
+     "word": "wide"
+    },
+    "shape": "saw",
+    "words": [
+     "sharp, percussive attack",
+     "decaying (long tail)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Fruity DX10",
+     "description": "Matched to the original's chords: sharp, percussive attack, decaying (long tail), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         0.0,
+         0.0,
+         0.507,
+         0.0023,
+         0.0133,
+         1.0,
+         0.0031,
+         0.4121,
+         0.0966,
+         0.0017,
+         0.0028,
+         0.1148,
+         0.0024,
+         0.0025,
+         0.0102,
+         0.1758,
+         0.0157,
+         0.0389,
+         0.0068,
+         0.0043,
+         0.0111,
+         0.0052,
+         0.0068,
+         0.0407
+        ],
+        [
+         0.0054,
+         0.2951,
+         0.7674,
+         0.4677,
+         0.4121,
+         0.6918,
+         0.4732,
+         1.0,
+         0.631,
+         0.0385,
+         0.0385,
+         0.0933,
+         0.0462,
+         0.0473,
+         0.1,
+         0.2851,
+         0.2188,
+         0.1047,
+         0.0556,
+         0.055,
+         0.0708,
+         0.0495,
+         0.0468,
+         0.0891
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0055,
+       "hold": 0.015,
+       "decay": 1.6635,
+       "sustain": 0.0,
+       "release": 1.6635
+      },
+      {
+       "attack": 0.0,
+       "hold": 0.0,
+       "decay": 0.2,
+       "sustain": 0.0,
+       "release": 0.05
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "env1",
+       "destination": "oscillator0.table_position",
+       "amount": 100.0
+      },
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "oscillator0.table_position",
+       "amount": 50.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "the fundamental is 101 dB under the strongest harmonic: check the octave against the part's MIDI before using the table (it can sound an octave up), or drop the first entry",
+     "filter: cutoff 0.70 from the measured roll-off 276 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.synpluck_square",
+   "label": "FLEX Synpluck Square",
+   "what": "A square-wave FLEX pluck on the arp: hollow, retro.",
+   "genres": [
+    "liquid_dnb",
+    "synthwave",
+    "future_bass"
+   ],
+   "moods": [
+    "nostalgic",
+    "playful"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "Synpluck Square"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Mobile Synth Pluck / Synpluck Square",
+   "chain": [
+    "Fruity Filter"
+   ],
+   "register": [
+    "Ab4",
+    "F5"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "song_for_you",
+     "flp": "Edlan_Ella_Nol_Song_For_You",
+     "channels": [
+      0
+     ],
+     "names": [
+      "Synpluck Square"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.2975,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 477.2,
+    "rolloff_hz": 535.65,
+    "flatness": 0.0,
+    "gated_share": 0.08,
+    "register": {
+     "median": "G#4",
+     "low": "C#3",
+     "high": "C#5",
+     "median_midi": 68.1,
+     "pitched_share": 0.92
+    },
+    "width": {
+     "side_minus_mid_db": -14.2,
+     "correlation": 0.926,
+     "word": "narrow"
+    },
+    "shape": "near sine with a little harmonic colour",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "dark, few upper harmonics",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Synpluck Square",
+     "description": "Matched to the original's lead: sharp, percussive attack, plucked (short decay), dark, few upper harmonics, narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.0104,
+         0.0324,
+         0.001,
+         0.0052,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.0125,
+       "decay": 0.2975,
+       "sustain": 0.0,
+       "release": 0.2975
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.709,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 15.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.71 from the measured roll-off 536 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.heavy_808_sytrus",
+   "label": "Sytrus heavy 808",
+   "what": "A long Sytrus 808 two octaves under the bass: the rework's new floor.",
+   "genres": [
+    "lofi",
+    "hiphop",
+    "trap"
+   ],
+   "moods": [
+    "warm",
+    "cool"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "inner_days_rework",
+     "where": "Heavy 808"
+    }
+   ],
+   "plugin": [
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "D1",
+    "Bb1"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "sub",
+    "import": {
+     "song": "inner_days_rework",
+     "flp": "Electroconductor_Inner_Days_SH_1_Rework_feat_Maja_Mannila",
+     "channels": [
+      4
+     ],
+     "names": [
+      "Heavy 808"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.1925,
+    "sustain": 0.0,
+    "release_s": 0.055,
+    "centroid_hz": 77.9,
+    "rolloff_hz": 88.85,
+    "flatness": 0.0,
+    "gated_share": 0.25,
+    "register": {
+     "median": "D#1",
+     "low": "B0",
+     "high": "F#1",
+     "median_midi": 27.0,
+     "pitched_share": 0.83
+    },
+    "width": {
+     "side_minus_mid_db": -180.0,
+     "correlation": 1.0,
+     "word": "mono"
+    },
+    "shape": "filtered saw",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "dark, few upper harmonics",
+     "mono"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Heavy 808",
+     "description": "Matched to the original's bass: sharp, percussive attack, plucked (short decay), dark, few upper harmonics, mono",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.3548,
+         0.0207,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.01,
+       "decay": 0.1925,
+       "sustain": 0.0,
+       "release": 0.1925
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.70 from the measured roll-off 89 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.harmor_octave_pluck",
+   "label": "Harmor octave pluck",
+   "what": "Harmor playing octaves in a syncopated 16th figure: the rework's replacement for the vocal line.",
+   "genres": [
+    "lofi",
+    "hiphop",
+    "future_garage"
+   ],
+   "moods": [
+    "nostalgic",
+    "melancholic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "inner_days_rework",
+     "where": "Pluck"
+    }
+   ],
+   "plugin": [
+    "Harmor"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "C4",
+    "A5"
+   ],
+   "polyphony": 2.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "inner_days_rework",
+     "flp": "Electroconductor_Inner_Days_SH_1_Rework_feat_Maja_Mannila",
+     "channels": [
+      2
+     ],
+     "names": [
+      "Pluck"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.035,
+    "sustain": 0.33,
+    "release_s": 0.2875,
+    "centroid_hz": 732.7,
+    "rolloff_hz": 929.6,
+    "flatness": 0.0,
+    "gated_share": 0.58,
+    "register": {
+     "median": "A#4",
+     "low": "G#4",
+     "high": "F5",
+     "median_midi": 69.8,
+     "pitched_share": 1.0
+    },
+    "width": {
+     "side_minus_mid_db": -20.5,
+     "correlation": 0.982,
+     "word": "mono"
+    },
+    "shape": "filtered saw",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 33 % before the cut",
+     "dark, few upper harmonics",
+     "mono"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Pluck",
+     "description": "Matched to the original's lead: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 33 % before the cut, dark, few upper harmonics, mono",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.6237,
+         0.0596,
+         0.0331,
+         0.0053,
+         0.0032,
+         0.0015,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0012,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.0125,
+       "decay": 0.035,
+       "sustain": 0.33,
+       "release": 0.2875
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.75,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.75 from the measured roll-off 930 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.cityscape_pad",
+   "label": "FLEX Arksun Cityscape pad (Phasic Anomoly)",
+   "what": "A dark, phasing FLEX pad doubled by Harmless and FLEX strings: the drill bed.",
+   "genres": [
+    "uk_drill",
+    "trap",
+    "dark_techno"
+   ],
+   "moods": [
+    "dark",
+    "cold",
+    "menacing"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "Pad 1"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Arksun Cityscape / Phasic Anomoly",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "C2",
+    "Eb4"
+   ],
+   "polyphony": 1.9,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "mic_check",
+     "flp": "Jay_Cactus_x_Confz_Mic_Check_Ready",
+     "channels": [
+      0
+     ],
+     "names": [
+      "Pad 1"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 1.3779,
+    "decay_s": 6.18,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 582.9,
+    "rolloff_hz": 927.9,
+    "flatness": 0.0001,
+    "gated_share": 0.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -2.1,
+     "correlation": 0.239,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "soft, slow attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Pad 1",
+     "description": "Matched to the original's pad: soft, slow attack, decaying (long tail), chords or several notes at once, brightness falls after the attack (filter envelope), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 1.3779,
+       "hold": 0.005,
+       "decay": 6.18,
+       "sustain": 0.0,
+       "release": 6.18
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.722,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 25.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 30.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.72 from the measured roll-off 928 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.strung_space",
+   "label": "FLEX Strung Space strings",
+   "what": "A FLEX string ensemble (Olbaid Compendium) an octave over the pad, through LuxeVerb.",
+   "genres": [
+    "uk_drill",
+    "cinematic",
+    "trap"
+   ],
+   "moods": [
+    "dark",
+    "dramatic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "Pad 3"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Olbaid Compendium / Strung Space",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Luxeverb"
+   ],
+   "register": [
+    "C3",
+    "Eb5"
+   ],
+   "polyphony": 1.9,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "mic_check",
+     "flp": "Jay_Cactus_x_Confz_Mic_Check_Ready",
+     "channels": [
+      2
+     ],
+     "names": [
+      "Pad 3"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 1.2289,
+    "decay_s": 10.04,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 2043.7,
+    "rolloff_hz": 3111.5,
+    "flatness": 0.0007,
+    "gated_share": 0.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -2.9,
+     "correlation": 0.319,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "soft, slow attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Pad 3",
+     "description": "Matched to the original's pad: soft, slow attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 1.2289,
+       "hold": 0.01,
+       "decay": 10.04,
+       "sustain": 0.0,
+       "release": 10.04
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.889,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 25.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 30.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.89 from the measured roll-off 3112 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.dx10_log_drum",
+   "label": "DX10 log drum",
+   "what": "A short FM tom tuned as a bass (DX10): the log drum of afrobeats and amapiano.",
+   "genres": [
+    "afrobeats",
+    "amapiano",
+    "afro_house"
+   ],
+   "moods": [
+    "sunny",
+    "playful",
+    "warm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "shine",
+     "where": "Log Drum"
+    }
+   ],
+   "plugin": [
+    "Fruity DX10"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Limiter",
+    "Fruity Fast Dist",
+    "Fruity WaveShaper"
+   ],
+   "register": [
+    "C2",
+    "C3"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "shine",
+     "flp": "LeriQ_SHINE",
+     "channels": [
+      21
+     ],
+     "names": [
+      "Log Drum"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0073,
+    "decay_s": 0.2125,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 62.15,
+    "rolloff_hz": 53.65,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": {
+     "median": "G#1",
+     "low": "F#1",
+     "high": "A1",
+     "median_midi": 31.5,
+     "pitched_share": 1.0
+    },
+    "width": {
+     "side_minus_mid_db": -180.0,
+     "correlation": 1.0,
+     "word": "mono"
+    },
+    "shape": "filtered saw",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "brightness falls after the attack (filter envelope)",
+     "dark, few upper harmonics",
+     "mono"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Log Drum",
+     "description": "Matched to the original's bass: sharp, percussive attack, plucked (short decay), brightness falls after the attack (filter envelope), dark, few upper harmonics, mono",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.0071,
+         0.2884,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0073,
+       "hold": 0.055,
+       "decay": 0.2125,
+       "sustain": 0.0,
+       "release": 0.2125
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.70 from the measured roll-off 54 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.synpluck_cube_pulse",
+   "label": "FLEX Synpluck Cube 8th pulse",
+   "what": "A plucked FLEX preset playing the bass's 8th pulse: a soft, rounded low end.",
+   "genres": [
+    "afrobeats",
+    "afro_pop",
+    "rnb"
+   ],
+   "moods": [
+    "sunny",
+    "warm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "shine",
+     "where": "Synpluck Cube"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Mobile Synth Pluck / Synpluck Cube",
+   "chain": [
+    "Fruity Flangus",
+    "Fruity WaveShaper",
+    "Fruity Reeverb 2"
+   ],
+   "register": [
+    "C1",
+    "C2"
+   ],
+   "polyphony": 1.03,
+   "engine": {
+    "role": "sub",
+    "import": {
+     "song": "shine",
+     "flp": "LeriQ_SHINE",
+     "channels": [
+      17
+     ],
+     "names": [
+      "Synpluck Cube"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.13,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 282.35,
+    "rolloff_hz": 442.1,
+    "flatness": 0.0001,
+    "gated_share": 0.0,
+    "register": {
+     "median": "G#1",
+     "low": "F#1",
+     "high": "A1",
+     "median_midi": 32.0,
+     "pitched_share": 0.33
+    },
+    "width": {
+     "side_minus_mid_db": -6.9,
+     "correlation": 0.712,
+     "word": "medium"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Synpluck Cube",
+     "description": "Matched to the original's bass: sharp, percussive attack, plucked (short decay), chords or several notes at once, medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.015,
+       "decay": 0.13,
+       "sustain": 0.0,
+       "release": 0.13
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.578,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.58 from the measured roll-off 442 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_brass_section",
+   "label": "FLEX brass section (General Midi Library)",
+   "what": "Real-sounding brass from FLEX's GM library on off-beat stabs.",
+   "genres": [
+    "afrobeats",
+    "pop",
+    "funk"
+   ],
+   "moods": [
+    "happy",
+    "confident"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "shine",
+     "where": "Brass Section 1"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "General Midi Library / Brass Section 1",
+   "chain": [
+    "Fruity Flangus",
+    "Fruity Reeverb 2",
+    "Fruity Compressor",
+    "Fruity WaveShaper",
+    "Fruity Delay 2",
+    "Fruity Stereo Shaper"
+   ],
+   "register": [
+    "C3",
+    "G4"
+   ],
+   "polyphony": 1.45,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "shine",
+     "flp": "LeriQ_SHINE",
+     "channels": [
+      26
+     ],
+     "names": [
+      "Brass Section 1"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0431,
+    "decay_s": 1.545,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 1462.1,
+    "rolloff_hz": 2304.1,
+    "flatness": 0.0095,
+    "gated_share": 0.0,
+    "register": {
+     "median": "G#4",
+     "low": "G#4",
+     "high": "G#4",
+     "median_midi": 68.0,
+     "pitched_share": 0.14
+    },
+    "width": {
+     "side_minus_mid_db": 9.7,
+     "correlation": -0.82,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Brass Section 1",
+     "description": "Matched to the original's lead: quick attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0431,
+       "hold": 0.015,
+       "decay": 1.545,
+       "sustain": 0.0,
+       "release": 1.545
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.839,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.84 from the measured roll-off 2304 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.ogun_chords",
+   "label": "Ogun high chords",
+   "what": "Ogun (additive, metallic) on seventh-chord voicings, chorused and in a reverb: a glassy trip-hop chord.",
+   "genres": [
+    "trip_hop",
+    "lounge",
+    "downtempo"
+   ],
+   "moods": [
+    "moody",
+    "mysterious",
+    "sensual"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "High Chords"
+    }
+   ],
+   "plugin": [
+    "Ogun"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "G2",
+    "Eb4"
+   ],
+   "polyphony": 4.0,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "madonna",
+     "flp": "LollieVox_Lezina_J_I_ll_Be_Your_Madonna",
+     "channels": [
+      26
+     ],
+     "names": [
+      "High Chords"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0463,
+    "decay_s": 3.8605,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 2244.9,
+    "rolloff_hz": 3673.1,
+    "flatness": 0.0207,
+    "gated_share": 0.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": 4.2,
+     "correlation": -0.447,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "High Chords",
+     "description": "Matched to the original's chords: quick attack, decaying (long tail), chords or several notes at once, brightness falls after the attack (filter envelope), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0463,
+       "hold": 0.005,
+       "decay": 3.8605,
+       "sustain": 0.0,
+       "release": 3.8605
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.92,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.92 from the measured roll-off 3673 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.morphine_soft_pad",
+   "label": "Morphine soft pad",
+   "what": "Morphine (additive) as a soft, breathing pad under the vocal.",
+   "genres": [
+    "trip_hop",
+    "lounge",
+    "ambient"
+   ],
+   "moods": [
+    "sensual",
+    "calm",
+    "moody"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "Soft Pad"
+    }
+   ],
+   "plugin": [
+    "Morphine"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "Eb3",
+    "Eb4"
+   ],
+   "polyphony": 3.0,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "madonna",
+     "flp": "LollieVox_Lezina_J_I_ll_Be_Your_Madonna",
+     "channels": [
+      19
+     ],
+     "names": [
+      "Soft Pad"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 4.6784,
+    "decay_s": 8.055,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 385.6,
+    "rolloff_hz": 552.15,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -5.2,
+     "correlation": 0.532,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "soft, slow attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Soft Pad",
+     "description": "Matched to the original's pad: soft, slow attack, decaying (long tail), chords or several notes at once, brightness falls after the attack (filter envelope), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 4.6784,
+       "hold": 0.01,
+       "decay": 8.055,
+       "sustain": 0.0,
+       "release": 8.055
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.657,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 25.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 30.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.66 from the measured roll-off 552 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.harmor_blips",
+   "label": "Harmor chromatic blips",
+   "what": "Short Harmor blips on the falling chromatic line.",
+   "genres": [
+    "trip_hop",
+    "soundtrack",
+    "electro"
+   ],
+   "moods": [
+    "mysterious",
+    "eerie",
+    "playful"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "Blips"
+    }
+   ],
+   "plugin": [
+    "Harmor"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "E4",
+    "Eb5"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "madonna",
+     "flp": "LollieVox_Lezina_J_I_ll_Be_Your_Madonna",
+     "channels": [
+      36
+     ],
+     "names": [
+      "Blips"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.01,
+    "sustain": 0.0,
+    "release_s": 0.055,
+    "centroid_hz": 1977.5,
+    "rolloff_hz": 2634.5,
+    "flatness": 0.0005,
+    "gated_share": 1.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": 3.1,
+     "correlation": -0.338,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 0 % before the cut",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Blips",
+     "description": "Matched to the original's pluck: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 0 % before the cut, chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.015,
+       "decay": 0.01,
+       "sustain": 0.0,
+       "release": 0.055
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.858,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.86 from the measured roll-off 2634 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_submarine",
+   "label": "FLEX Submarine bounce",
+   "what": "A FLEX (Olbaid Compendium) bass-pluck on the octave bounce.",
+   "genres": [
+    "drum_and_bass",
+    "electro",
+    "synthwave"
+   ],
+   "moods": [
+    "driving",
+    "energetic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Submarine"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Olbaid Compendium / Submarine",
+   "chain": [],
+   "register": [
+    "F2",
+    "G4"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "never_out",
+     "flp": "Mehdi_Ebrahiminejad_Never_Out",
+     "channels": [
+      23
+     ],
+     "names": [
+      "Submarine"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.12,
+    "sustain": 0.689,
+    "release_s": 0.045,
+    "centroid_hz": 51.4,
+    "rolloff_hz": 47.1,
+    "flatness": 0.0,
+    "gated_share": 1.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -15.6,
+     "correlation": 0.947,
+     "word": "narrow"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 69 % before the cut",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Submarine",
+     "description": "Matched to the original's pluck: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 69 % before the cut, chords or several notes at once, brightness falls after the attack (filter envelope), narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.005,
+       "decay": 0.12,
+       "sustain": 0.689,
+       "release": 0.045
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.6,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 15.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.60 from the measured roll-off 47 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.duck_stabs",
+   "label": "Harmless duck stabs",
+   "what": "Short minor-triad stabs from Harmless, ducked hard.",
+   "genres": [
+    "drum_and_bass",
+    "dubstep",
+    "electro"
+   ],
+   "moods": [
+    "energetic",
+    "dark"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Lead Duck"
+    }
+   ],
+   "plugin": [
+    "Harmless"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "C#4",
+    "C5"
+   ],
+   "polyphony": 3.0,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "never_out",
+     "flp": "Mehdi_Ebrahiminejad_Never_Out",
+     "channels": [
+      51
+     ],
+     "names": [
+      "Lead Duck"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0105,
+    "decay_s": 0.0425,
+    "sustain": 0.319,
+    "release_s": 0.1075,
+    "centroid_hz": 625.55,
+    "rolloff_hz": 886.55,
+    "flatness": 0.0,
+    "gated_share": 0.83,
+    "register": {
+     "median": "D#2",
+     "low": "A#1",
+     "high": "F3",
+     "median_midi": 39.1,
+     "pitched_share": 0.92
+    },
+    "width": {
+     "side_minus_mid_db": -2.2,
+     "correlation": 0.252,
+     "word": "wide"
+    },
+    "shape": "bright saw (driven or unfiltered)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 32 % before the cut",
+     "lots of upper harmonics (bright or driven)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Lead Duck",
+     "description": "Matched to the original's lead: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 32 % before the cut, lots of upper harmonics (bright or driven), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         0.0,
+         0.0,
+         0.0017,
+         0.881,
+         0.537,
+         1.0,
+         0.0062,
+         0.7852,
+         0.004,
+         0.7328,
+         0.0132,
+         0.861,
+         0.0243,
+         0.0302,
+         0.5559,
+         0.1758,
+         0.0447,
+         0.2239,
+         0.0237,
+         0.2089,
+         0.0479,
+         0.0589,
+         0.0741,
+         0.2138
+        ],
+        [
+         0.0111,
+         0.0275,
+         0.2265,
+         0.871,
+         0.7244,
+         0.4519,
+         0.3236,
+         0.881,
+         0.195,
+         1.0,
+         0.3508,
+         0.5821,
+         0.1567,
+         0.0417,
+         0.0977,
+         0.1622,
+         0.075,
+         0.2371,
+         0.0569,
+         0.1396,
+         0.0692,
+         0.0012,
+         0.0556,
+         0.1122
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0105,
+       "hold": 0.02,
+       "decay": 0.0425,
+       "sustain": 0.319,
+       "release": 0.1075
+      },
+      {
+       "attack": 0.0,
+       "hold": 0.0,
+       "decay": 0.03,
+       "sustain": 0.0,
+       "release": 0.05
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.729,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "env1",
+       "destination": "oscillator0.table_position",
+       "amount": 100.0
+      },
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "oscillator0.table_position",
+       "amount": 50.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "the fundamental is 70 dB under the strongest harmonic: check the octave against the part's MIDI before using the table (it can sound an octave up), or drop the first entry",
+     "filter: cutoff 0.73 from the measured roll-off 887 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_phoenix",
+   "label": "FLEX Phoenix lead (Arksun Cityscape)",
+   "what": "A FLEX lead whose master filter is opened by short clips: the drop's melody.",
+   "genres": [
+    "drum_and_bass",
+    "melodic_dubstep",
+    "trap"
+   ],
+   "moods": [
+    "epic",
+    "melancholic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Phoenix"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Arksun Cityscape / Phoenix",
+   "chain": [],
+   "register": [
+    "C4",
+    "Bb4"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "never_out",
+     "flp": "Mehdi_Ebrahiminejad_Never_Out",
+     "channels": [
+      18
+     ],
+     "names": [
+      "Phoenix"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0116,
+    "decay_s": 0.04,
+    "sustain": 0.8625,
+    "release_s": 0.04,
+    "centroid_hz": 298.7,
+    "rolloff_hz": 266.5,
+    "flatness": 0.0,
+    "gated_share": 1.0,
+    "register": {
+     "median": "C4",
+     "low": "B3",
+     "high": "C4",
+     "median_midi": 59.7,
+     "pitched_share": 0.92
+    },
+    "width": {
+     "side_minus_mid_db": -11.5,
+     "correlation": 0.868,
+     "word": "medium"
+    },
+    "shape": "filtered saw",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 86 % before the cut",
+     "dark, few upper harmonics",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Phoenix",
+     "description": "Matched to the original's lead: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 86 % before the cut, dark, few upper harmonics, medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.2541,
+         0.0394,
+         0.0646,
+         0.0219,
+         0.013,
+         0.0106,
+         0.006,
+         0.013,
+         0.0074,
+         0.0058,
+         0.0114,
+         0.0046,
+         0.0041,
+         0.0046,
+         0.0015,
+         0.0032,
+         0.0,
+         0.0026,
+         0.0,
+         0.0011,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 2.0,
+       "detune": 0.12
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0116,
+       "hold": 0.065,
+       "decay": 0.04,
+       "sustain": 0.8625,
+       "release": 0.04
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.797,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.80 from the measured roll-off 266 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_bas_lottunma",
+   "label": "FLEX BAS Lottunma (Melodic Techno pack)",
+   "what": "The melodic techno 16th bass: FLEX preset with its cutoff and release automated, a Harmor sub under it.",
+   "genres": [
+    "melodic_techno",
+    "techno",
+    "progressive_house"
+   ],
+   "moods": [
+    "hypnotic",
+    "dark",
+    "driving"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "BAS Lottunma"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Melodic Techno / BAS Lottunma",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Spreader",
+    "Fruity Parametric EQ 2",
+    "Patcher"
+   ],
+   "register": [
+    "Bb2",
+    "D3"
+   ],
+   "polyphony": 1.18,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "with_you",
+     "flp": "Mehran_Abbasi_With_You",
+     "channels": [
+      13,
+      31
+     ],
+     "names": [
+      "BAS Lottunma",
+      "BAS Lottunma"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.236,
+    "decay_s": 0.02,
+    "sustain": 0.781,
+    "release_s": 0.07,
+    "centroid_hz": 132.05,
+    "rolloff_hz": 163.5,
+    "flatness": 0.0,
+    "gated_share": 0.92,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -19.1,
+     "correlation": 0.976,
+     "word": "narrow"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "soft, slow attack",
+     "notes cut off by their length (staccato or gated), held at 78 % before the cut",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "narrow stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "BAS Lottunma",
+     "description": "Matched to the original's pluck: soft, slow attack, notes cut off by their length (staccato or gated), held at 78 % before the cut, chords or several notes at once, brightness falls after the attack (filter envelope), narrow stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.236,
+       "hold": 0.005,
+       "decay": 0.02,
+       "sustain": 0.781,
+       "release": 0.07
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.6,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 15.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.60 from the measured roll-off 164 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_plk_navid",
+   "label": "FLEX PLK Navid (Melodic Techno pack)",
+   "what": "The sequence pluck of melodic techno: short, resonant, with Space and TuneX macros moving.",
+   "genres": [
+    "melodic_techno",
+    "techno",
+    "afro_house"
+   ],
+   "moods": [
+    "hypnotic",
+    "dreamy",
+    "melancholic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "PLK Navid"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Melodic Techno / PLK Navid",
+   "chain": [
+    "Fruity Love Philter",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Balance"
+   ],
+   "register": [
+    "D4",
+    "D5"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "with_you",
+     "flp": "Mehran_Abbasi_With_You",
+     "channels": [
+      18
+     ],
+     "names": [
+      "PLK Navid"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.107,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 841.8,
+    "rolloff_hz": 1559.85,
+    "flatness": 0.0004,
+    "gated_share": 0.08,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -5.3,
+     "correlation": 0.542,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "brightness falls after the attack (filter envelope)",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "PLK Navid",
+     "description": "Matched to the original's pluck: sharp, percussive attack, plucked (short decay), chords or several notes at once, brightness falls after the attack (filter envelope), wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.015,
+       "decay": 0.107,
+       "sustain": 0.0,
+       "release": 0.107
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.788,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.79 from the measured roll-off 1560 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.sytrus_mtechno_pad",
+   "label": "Sytrus five-note pad",
+   "what": "A wide Sytrus pad playing five-note voicings with its filter automated.",
+   "genres": [
+    "melodic_techno",
+    "progressive_house",
+    "trance"
+   ],
+   "moods": [
+    "dreamy",
+    "melancholic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "Synth Pad "
+    }
+   ],
+   "plugin": [
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "D3",
+    "A4"
+   ],
+   "polyphony": 4.44,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "with_you",
+     "flp": "Mehran_Abbasi_With_You",
+     "channels": [
+      27
+     ],
+     "names": [
+      "Synth Pad "
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0289,
+    "decay_s": 3.196,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 830.3,
+    "rolloff_hz": 1322.9,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -2.7,
+     "correlation": 0.298,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Synth Pad ",
+     "description": "Matched to the original's pad: quick attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0289,
+       "hold": 0.005,
+       "decay": 3.196,
+       "sustain": 0.0,
+       "release": 3.196
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.767,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 25.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 30.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.77 from the measured roll-off 1323 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.tinke_bell",
+   "label": "FLEX Tinke Bell (General Midi Library)",
+   "what": "A music-box bell on the octave-doubled future bass arp.",
+   "genres": [
+    "future_bass",
+    "pop",
+    "melodic_dubstep"
+   ],
+   "moods": [
+    "magical",
+    "euphoric",
+    "bittersweet"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "Tinke Bell"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "General Midi Library / Tinke Bell",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Maximus",
+    "Fruity Chorus",
+    "Fruity Balance"
+   ],
+   "register": [
+    "Bb4",
+    "F#7"
+   ],
+   "polyphony": 2.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "thief",
+     "flp": "Ookay_Thief",
+     "channels": [
+      42
+     ],
+     "names": [
+      "Tinke Bell"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.018,
+    "decay_s": 1.3805,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 2848.65,
+    "rolloff_hz": 2251.25,
+    "flatness": 0.0027,
+    "gated_share": 0.08,
+    "register": {
+     "median": "F#5",
+     "low": "C#5",
+     "high": "F#5",
+     "median_midi": 78.0,
+     "pitched_share": 0.33
+    },
+    "width": {
+     "side_minus_mid_db": -5.8,
+     "correlation": 0.587,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "decaying (long tail)",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Tinke Bell",
+     "description": "Matched to the original's lead: quick attack, decaying (long tail), chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.018,
+       "hold": 0.015,
+       "decay": 1.3805,
+       "sustain": 0.0,
+       "release": 1.3805
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.836,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.84 from the measured roll-off 2251 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.saw_bass_gated",
+   "label": "3x Osc saw bass through Gross Beat",
+   "what": "A raw 3x Osc saw bass gated by Gross Beat: the future bass drop's growl.",
+   "genres": [
+    "future_bass",
+    "trap",
+    "melodic_dubstep"
+   ],
+   "moods": [
+    "euphoric",
+    "energetic"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "Saw Bass"
+    }
+   ],
+   "plugin": [
+    "3x Osc"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Multiband Compressor",
+    "Fruity Parametric EQ 2",
+    "Gross Beat",
+    "Fruity Parametric EQ 2",
+    "Maximus",
+    "Fruity Limiter"
+   ],
+   "register": [
+    "Eb2",
+    "C#3"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "thief",
+     "flp": "Ookay_Thief",
+     "channels": [
+      19
+     ],
+     "names": [
+      "Saw Bass"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.016,
+    "decay_s": 0.02,
+    "sustain": 0.816,
+    "release_s": 0.055,
+    "centroid_hz": 176.15,
+    "rolloff_hz": 153.4,
+    "flatness": 0.0,
+    "gated_share": 0.33,
+    "register": {
+     "median": "G#1",
+     "low": "D#1",
+     "high": "B1",
+     "median_midi": 32.2,
+     "pitched_share": 1.0
+    },
+    "width": {
+     "side_minus_mid_db": -180.0,
+     "correlation": 1.0,
+     "word": "mono"
+    },
+    "shape": "saw",
+    "words": [
+     "quick attack",
+     "sustained",
+     "mono"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Saw Bass",
+     "description": "Matched to the original's bass: quick attack, sustained, mono",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.1698,
+         0.309,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.016,
+       "hold": 0.02,
+       "decay": 0.02,
+       "sustain": 0.816,
+       "release": 0.055
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.70 from the measured roll-off 153 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.overdrive_sytrus_arp",
+   "label": "Sytrus arp through Blood Overdrive and Love Philter",
+   "what": "A Sytrus arp driven, reverbed and filtered by Love Philter, ending in Effector: the afrobeats hook arp.",
+   "genres": [
+    "afrobeats",
+    "afro_pop",
+    "dancehall"
+   ],
+   "moods": [
+    "sunny",
+    "romantic",
+    "dreamy"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "use_me",
+     "where": "Synth Arp"
+    }
+   ],
+   "plugin": [
+    "Sytrus"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Blood Overdrive",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Love Philter",
+    "Effector"
+   ],
+   "register": [
+    "C#5",
+    "Ab5"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "use_me",
+     "flp": "P_Priime_Use_Me",
+     "channels": [
+      4
+     ],
+     "names": [
+      "Synth Arp"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.0275,
+    "sustain": 0.937,
+    "release_s": 0.67,
+    "centroid_hz": 1242.35,
+    "rolloff_hz": 1874.75,
+    "flatness": 0.0,
+    "gated_share": 0.67,
+    "register": {
+     "median": "C#5",
+     "low": "C#5",
+     "high": "C#5",
+     "median_midi": 73.0,
+     "pitched_share": 0.08
+    },
+    "width": {
+     "side_minus_mid_db": -5.9,
+     "correlation": 0.593,
+     "word": "wide"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "notes cut off by their length (staccato or gated), held at 94 % before the cut",
+     "chords or several notes at once",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Synth Arp",
+     "description": "Matched to the original's chords: sharp, percussive attack, notes cut off by their length (staccato or gated), held at 94 % before the cut, chords or several notes at once, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm",
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.0725,
+       "decay": 0.0275,
+       "sustain": 0.937,
+       "release": 0.67
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.812,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.81 from the measured roll-off 1875 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.flex_808_clean",
+   "label": "FLEX 808 Clean (Mobile Tuned 808 Bass)",
+   "what": "A clean tuned 808 from FLEX, long and mono.",
+   "genres": [
+    "trap",
+    "drill",
+    "hiphop"
+   ],
+   "moods": [
+    "dark",
+    "cool"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "stroll_up",
+     "where": "808 Clean"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Mobile Tuned 808 Bass / 808 Clean",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "register": [
+    "E3",
+    "F3"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "sub",
+    "import": {
+     "song": "stroll_up",
+     "flp": "Purps_On_The_Beat_Feat_Luclover_Stroll_Up",
+     "channels": [
+      1
+     ],
+     "names": [
+      "808 Clean"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0313,
+    "decay_s": 0.28,
+    "sustain": 0.537,
+    "release_s": 0.075,
+    "centroid_hz": 42.0,
+    "rolloff_hz": 43.4,
+    "flatness": 0.0,
+    "gated_share": 1.0,
+    "register": {
+     "median": "E1",
+     "low": "E1",
+     "high": "E1",
+     "median_midi": 28.3,
+     "pitched_share": 1.0
+    },
+    "width": {
+     "side_minus_mid_db": -30.6,
+     "correlation": 0.999,
+     "word": "mono"
+    },
+    "shape": "sine",
+    "words": [
+     "quick attack",
+     "notes cut off by their length (staccato or gated), held at 54 % before the cut",
+     "brightness falls after the attack (filter envelope)",
+     "mono"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "808 Clean",
+     "description": "Matched to the original's bass: quick attack, notes cut off by their length (staccato or gated), held at 54 % before the cut, brightness falls after the attack (filter envelope), mono",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.0164,
+         0.0116,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0313,
+       "hold": 0.05,
+       "decay": 0.28,
+       "sustain": 0.537,
+       "release": 0.075
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "filter: cutoff 0.70 from the measured roll-off 43 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.fl_keys_bells",
+   "label": "FL Keys staccato bells",
+   "what": "FL Keys high and short: a bell-like keys ostinato.",
+   "genres": [
+    "trap",
+    "drill",
+    "hiphop"
+   ],
+   "moods": [
+    "dark",
+    "eerie",
+    "cool"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "stroll_up",
+     "where": "FL Keys"
+    }
+   ],
+   "plugin": [
+    "FL Keys"
+   ],
+   "preset": null,
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Spreader"
+   ],
+   "register": [
+    "E1",
+    "E6"
+   ],
+   "polyphony": 1.02,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "stroll_up",
+     "flp": "Purps_On_The_Beat_Feat_Luclover_Stroll_Up",
+     "channels": [
+      8
+     ],
+     "names": [
+      "FL Keys"
+     ]
+    }
+   }
+  },
+  {
+   "id": "sound.creeper_drone",
+   "label": "FLEX Creeper Drone (Arksun Cityscape)",
+   "what": "A low FLEX drone through WaveShaper, Hyper Chorus, Love Philter and Spreader: a dark trap bed.",
+   "genres": [
+    "trap",
+    "drill",
+    "dark_techno"
+   ],
+   "moods": [
+    "dark",
+    "menacing",
+    "moody"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "stroll_up",
+     "where": "Creeper Drone"
+    }
+   ],
+   "plugin": [
+    "FLEX"
+   ],
+   "preset": "Arksun Cityscape / Creeper Drone",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity WaveShaper",
+    "Hyper Chorus",
+    "Fruity Love Philter",
+    "Fruity Parametric EQ 2",
+    "Spreader"
+   ],
+   "register": [
+    "E2",
+    "E3"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "stroll_up",
+     "flp": "Purps_On_The_Beat_Feat_Luclover_Stroll_Up",
+     "channels": [
+      3
+     ],
+     "names": [
+      "Creeper Drone"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.1184,
+    "decay_s": 0.065,
+    "sustain": 0.493,
+    "release_s": 0.065,
+    "centroid_hz": 67.8,
+    "rolloff_hz": 119.6,
+    "flatness": 0.0,
+    "gated_share": 0.58,
+    "register": {
+     "median": "E1",
+     "low": "E1",
+     "high": "D2",
+     "median_midi": 27.9,
+     "pitched_share": 0.83
+    },
+    "width": {
+     "side_minus_mid_db": 3.3,
+     "correlation": -0.405,
+     "word": "wide"
+    },
+    "shape": "filtered saw",
+    "words": [
+     "soft, slow attack",
+     "notes cut off by their length (staccato or gated), held at 49 % before the cut",
+     "dark, few upper harmonics",
+     "wide stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Creeper Drone",
+     "description": "Matched to the original's pad: soft, slow attack, notes cut off by their length (staccato or gated), held at 49 % before the cut, dark, few upper harmonics, wide stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         1.0,
+         0.1862,
+         0.3802,
+         0.0422,
+         0.0133,
+         0.0022,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0,
+         0.0
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 4.0,
+       "detune": 0.25
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.1184,
+       "hold": 0.005,
+       "decay": 0.065,
+       "sustain": 0.493,
+       "release": 0.065
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXChorus",
+       "wet": 25.0
+      },
+      {
+       "type": "FXReverb",
+       "wet": 30.0
+      }
+     ]
+    },
+    "notes": [
+     "filter: cutoff 0.70 from the measured roll-off 120 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.directwave_rhodes",
+   "label": "DirectWave Rhodes",
+   "what": "A sampled Rhodes (DirectWave) voicing the spy chord.",
+   "genres": [
+    "soundtrack",
+    "jazz",
+    "lofi",
+    "trip_hop"
+   ],
+   "moods": [
+    "mysterious",
+    "nostalgic",
+    "warm"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Rhodes"
+    }
+   ],
+   "plugin": [
+    "DirectWave"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "C3",
+    "B5"
+   ],
+   "polyphony": 1.25,
+   "engine": {
+    "role": "stab",
+    "import": {
+     "song": "secret_agent",
+     "flp": "Sid_De_La_Cruz_Secret_Agent_Rendezvous",
+     "channels": [
+      6
+     ],
+     "names": [
+      "Rhodes"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.135,
+    "decay_s": 1.0275,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 378.75,
+    "rolloff_hz": 529.1,
+    "flatness": 0.0,
+    "gated_share": 0.0,
+    "register": {
+     "median": "G#1",
+     "low": "G#1",
+     "high": "G#1",
+     "median_midi": 32.1,
+     "pitched_share": 0.5
+    },
+    "width": {
+     "side_minus_mid_db": -7.5,
+     "correlation": 0.699,
+     "word": "medium"
+    },
+    "shape": "bright saw (driven or unfiltered)",
+    "words": [
+     "soft, slow attack",
+     "decaying (long tail)",
+     "brightness falls after the attack (filter envelope)",
+     "lots of upper harmonics (bright or driven)",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Rhodes",
+     "description": "Matched to the original's chords: soft, slow attack, decaying (long tail), brightness falls after the attack (filter envelope), lots of upper harmonics (bright or driven), medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "custom_harmonics": [
+        [
+         0.0,
+         0.0,
+         0.0081,
+         0.0054,
+         0.0153,
+         0.1462,
+         0.0089,
+         0.014,
+         0.0263,
+         1.0,
+         0.0279,
+         0.955,
+         0.005,
+         0.0036,
+         0.7079,
+         0.005,
+         0.0102,
+         0.0733,
+         0.0082,
+         0.5129,
+         0.0143,
+         0.0115,
+         0.038,
+         0.5495
+        ],
+        [
+         0.055,
+         0.6095,
+         0.8222,
+         0.1585,
+         0.8318,
+         1.0,
+         0.6839,
+         0.7244,
+         0.9016,
+         0.2427,
+         0.0676,
+         0.2985,
+         0.309,
+         0.1995,
+         0.3236,
+         0.0966,
+         0.1396,
+         0.2089,
+         0.0462,
+         0.1259,
+         0.123,
+         0.0525,
+         0.075,
+         0.1245
+        ]
+       ],
+       "table_position": 0.0,
+       "unison": 2.0,
+       "detune": 0.12
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.135,
+       "hold": 0.01,
+       "decay": 1.0275,
+       "sustain": 0.0,
+       "release": 1.0275
+      },
+      {
+       "attack": 0.0,
+       "hold": 0.0,
+       "decay": 0.2,
+       "sustain": 0.0,
+       "release": 0.05
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.7,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "env1",
+       "destination": "oscillator0.table_position",
+       "amount": 100.0
+      },
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "oscillator0.table_position",
+       "amount": 50.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ]
+    },
+    "notes": [
+     "the fundamental is 69 dB under the strongest harmonic: check the octave against the part's MIDI before using the table (it can sound an octave up), or drop the first entry",
+     "filter: cutoff 0.70 from the measured roll-off 529 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.harmor_forest_bass",
+   "label": "Harmor 'Forest' 16th bass",
+   "what": "A Harmor bass repeating one note in 16ths under the cue: tension by repetition.",
+   "genres": [
+    "soundtrack",
+    "cinematic",
+    "electro"
+   ],
+   "moods": [
+    "tense",
+    "suspense"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Forest"
+    }
+   ],
+   "plugin": [
+    "Harmor"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "C2",
+    "G2"
+   ],
+   "polyphony": 1.11,
+   "engine": {
+    "role": "bass",
+    "import": {
+     "song": "secret_agent",
+     "flp": "Sid_De_La_Cruz_Secret_Agent_Rendezvous",
+     "channels": [
+      5
+     ],
+     "names": [
+      "Forest"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.001,
+    "decay_s": 0.095,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 677.55,
+    "rolloff_hz": 1029.6,
+    "flatness": 0.0022,
+    "gated_share": 0.08,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -9.1,
+     "correlation": 0.78,
+     "word": "medium"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "sharp, percussive attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "medium stereo image"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Forest",
+     "description": "Matched to the original's bass: sharp, percussive attack, plucked (short decay), chords or several notes at once, medium stereo image",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "warm_sub"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.001,
+       "hold": 0.01,
+       "decay": 0.095,
+       "sustain": 0.0,
+       "release": 0.095
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.684,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): warm_sub chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.68 from the measured roll-off 1030 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  },
+  {
+   "id": "sound.wave_traveller_lead",
+   "label": "Wave Traveller lead",
+   "what": "A Wave Traveller (scratch-able sample player) lead line.",
+   "genres": [
+    "soundtrack",
+    "hiphop",
+    "trip_hop"
+   ],
+   "moods": [
+    "playful",
+    "mysterious"
+   ],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Wave Traveller #3"
+    }
+   ],
+   "plugin": [
+    "Wave Traveller"
+   ],
+   "preset": null,
+   "chain": [],
+   "register": [
+    "C4",
+    "G4"
+   ],
+   "polyphony": 1.0,
+   "engine": {
+    "role": "arp",
+    "import": {
+     "song": "secret_agent",
+     "flp": "Sid_De_La_Cruz_Secret_Agent_Rendezvous",
+     "channels": [
+      14
+     ],
+     "names": [
+      "Wave Traveller #3"
+     ]
+    }
+   },
+   "measured": {
+    "attack_s": 0.0158,
+    "decay_s": 0.11,
+    "sustain": 0.0,
+    "release_s": null,
+    "centroid_hz": 550.35,
+    "rolloff_hz": 798.4,
+    "flatness": 0.0001,
+    "gated_share": 0.08,
+    "register": null,
+    "width": {
+     "side_minus_mid_db": -35.8,
+     "correlation": 0.999,
+     "word": "mono"
+    },
+    "shape": "complex (no single pitch: chords or a dense part)",
+    "words": [
+     "quick attack",
+     "plucked (short decay)",
+     "chords or several notes at once",
+     "mono"
+    ]
+   },
+   "serum_start": {
+    "spec": {
+     "name": "Wave Traveller #3",
+     "description": "Matched to the original's lead: quick attack, plucked (short decay), chords or several notes at once, mono",
+     "oscillators": [
+      {
+       "volume": 0.75,
+       "wavetable": "analog_warm"
+      }
+     ],
+     "envelopes": [
+      {
+       "attack": 0.0158,
+       "hold": 0.03,
+       "decay": 0.11,
+       "sustain": 0.0,
+       "release": 0.11
+      }
+     ],
+     "filters": [
+      {
+       "type": "lowpass_24",
+       "cutoff": 0.703,
+       "resonance": 5.0
+      }
+     ],
+     "macros": [
+      {
+       "name": "TONE",
+       "value": 0.0
+      },
+      {
+       "name": "BITE",
+       "value": 0.0
+      }
+     ],
+     "mod_routes": [
+      {
+       "source": "macro0",
+       "destination": "filter0.cutoff",
+       "amount": -50.0
+      },
+      {
+       "source": "macro1",
+       "destination": "filter0.resonance",
+       "amount": 30.0
+      }
+     ],
+     "fx_chain": [
+      {
+       "type": "FXReverb",
+       "wet": 15.0
+      }
+     ],
+     "global": {
+      "mono": true
+     }
+    },
+    "notes": [
+     "no single clear pitch (chords or a dense part): analog_warm chosen from the role; pick the table by ear from the shape and brightness, or cut a clear note from the stem as a sample_source",
+     "filter: cutoff 0.70 from the measured roll-off 798 Hz (serum-mcp's calibration); the harmonics carry the tone, the filter the movement",
+     "Serum's decay curve is not a straight measurement match: render the part, compare_part_sound, then revise"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,200 @@
+{
+  "name": "newtone_tune_save_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 at 2560x1440 on 2026-10-29: three full runs in a row through apply_vocal_tuning_gui (robotic, middle, smooth on the Girlish vocal), each saving the tuned WAV and the MIDI and closing Newtone; the three takes measured as intended (robotic 5.0 cents off the semitone, 61 % of frames within 10 cents of their note; middle 8.7, 44 %; smooth 11.3, 36 %). Draft from measured positions on FL 26.1.7 at 2560x1440 (2026-10-29). Opens Newtone from the clip menu of the audio clip at the start of playlist track 1, loads {path} (Ctrl+O), selects every note (Select menu > Select all (slices)), turns the three knobs to their values read back from the screen, then saves the tuned audio (Ctrl+S) and the notes (File > Save as MIDI). Knob travel is 0 to 1: CENTER 0 leaves each note's pitch centre, 1 puts it on the semitone; VARIATION 0.5 (its reset value) keeps the voice's own vibrato and drift, 0 flattens it, 1 doubles it; TRANS 1 (its reset value) keeps the voice's glides between notes, 0 jumps. The first robotic take on 2026-10-29 set VARIATION to 1 thinking it removed vibrato and came out wobblier than the input.",
+  "summary": "Pitch-correct a sandbox audio file in Newtone with given CENTER, VARIATION and TRANS, and save the audio and its notes as MIDI.",
+  "params": [
+    "path",
+    "out_wav",
+    "out_mid",
+    "center",
+    "variation",
+    "trans"
+  ],
+  "vision": false,
+  "source": "measured on this install; Image-Line manual: Center (global pitch correction toward the nearest pitch), Variation (vibrato and pitch errors), Transition (pitch transition speed between notes); these scale all notes",
+  "steps": [
+    {
+      "do": "click",
+      "anchor": "playlist_clip1_menu"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "click",
+      "anchor": "clip_menu_pitch_correct"
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Newtone",
+      "timeout_s": 8
+    },
+    {
+      "do": "click_in_window",
+      "title": "Newtone",
+      "dx": 145,
+      "dy": 52
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "o"
+      ]
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Open",
+      "timeout_s": 6
+    },
+    {
+      "do": "type",
+      "text": "{path}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 12.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "Newtone",
+      "dx": 388,
+      "dy": 54
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "click_in_window",
+      "title": "Newtone",
+      "dx": 455,
+      "dy": 174
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "knob_in_window",
+      "title": "Newtone",
+      "dx": 587,
+      "dy": 58,
+      "value": "{center}"
+    },
+    {
+      "do": "knob_in_window",
+      "title": "Newtone",
+      "dx": 634,
+      "dy": 58,
+      "value": "{variation}"
+    },
+    {
+      "do": "knob_in_window",
+      "title": "Newtone",
+      "dx": 679,
+      "dy": 58,
+      "value": "{trans}"
+    },
+    {
+      "do": "wait",
+      "seconds": 1.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "Newtone",
+      "dx": 145,
+      "dy": 52
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "s"
+      ]
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Save",
+      "timeout_s": 6
+    },
+    {
+      "do": "type",
+      "text": "{out_wav}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "expect_file",
+      "path": "{out_wav}",
+      "timeout_s": 90
+    },
+    {
+      "do": "wait",
+      "seconds": 2.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "Newtone",
+      "dx": 340,
+      "dy": 52
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "click_in_window",
+      "title": "Newtone",
+      "dx": 380,
+      "dy": 159
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Save",
+      "timeout_s": 6
+    },
+    {
+      "do": "type",
+      "text": "{out_mid}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "expect_file",
+      "path": "{out_mid}",
+      "timeout_s": 30
+    },
+    {
+      "do": "click_in_window",
+      "title": "Newtone",
+      "dx": 720,
+      "dy": 13
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 5
+    }
+  ],
+  "needs_sandbox_project": true,
+  "allow_open": [
+    "Newtone",
+    "WarpCorrection"
+  ]
+}

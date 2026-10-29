@@ -1,0 +1,163 @@
+{
+ "name": "dnb",
+ "label": "Drum and bass",
+ "engine": "grammar",
+ "what": "Drum and bass at 174: kick on 1 and the and of 3, snare on 2 and 4 with ghost snares, a sine sub, a long detuned reese, a long intro and a drop near one minute. The vocal usually sits at half tempo (one vocal bar over two bars).",
+ "moods": [
+  "energetic",
+  "urgent",
+  "euphoric",
+  "anxious",
+  "defiant"
+ ],
+ "tempo": {
+  "bpm": 174,
+  "range": [
+   170,
+   176
+  ],
+  "follow": false
+ },
+ "sections": [
+  [
+   "intro",
+   32
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   32
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   32
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "kick": "x.........x.....",
+    "hat": "x.x.x.x.x.x.x.x.",
+    "shaker": "oooooooooooooooo"
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x.........x.....",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X.........x.....",
+     "X.........x..x.."
+    ],
+    "snare": "....X..o....X.o.",
+    "hat": "x.x.x.x.x.x.x.x.",
+    "ohat": "......o.......o.",
+    "shaker": "oooooooooooooooo"
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o.",
+    "rim": "....o.......o..."
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "x.........x.....",
+    "snare": "....x.......x...",
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "ramp": [
+    1.0,
+    0.85
+   ]
+  }
+ },
+ "bass": {
+  "drop": [
+   "x---------x-----",
+   "x-----o---x---5-"
+  ]
+ },
+ "sub": {
+  "drop": "x-------x-------",
+  "build": "x---------------"
+ },
+ "chords": {
+  "intro": "x---------------",
+  "break": "x---------------"
+ },
+ "arp": [
+  "break",
+  "build"
+ ],
+ "kit": {
+  "CP_Kick": {
+   "fn": "kick",
+   "args": {
+    "f0": 50.0,
+    "punch": 1.2,
+    "length": 0.35,
+    "drive": 2.0
+   }
+  },
+  "CP_Snare": {
+   "fn": "snare",
+   "args": {
+    "body_hz": 230.0,
+    "decay": 0.08,
+    "length": 0.25
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 1.2,
+   "voices": 7,
+   "detune_cents": 22.0,
+   "drive": 2.2
+  },
+  "label": "Reese Bass"
+ },
+ "production_recipe": "dnb",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://www.beatportal.com/articles/818379-step-by-step-guide-to-producing-drum-and-bass-like-sub-focus-a-m-c-and-delta-heavy (2025: 174 bpm, kick on 1 and the and of 3, snare on 2 and 4, sine sub low-passed near 80 Hz, reese of detuned saws, long intro, drop near one minute)",
+  "https://loststoriesacademy.com/blogs-and-tutorials/what-makes-a-track-dj-friendly (DJ-friendly intros: 16 or 32 bars of kick, hats or percussion and minimal bass, no full melody or vocal at the start)"
+ ]
+}

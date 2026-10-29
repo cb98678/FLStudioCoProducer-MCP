@@ -1,0 +1,166 @@
+{
+ "name": "future_bass",
+ "label": "Future bass",
+ "engine": "grammar",
+ "what": "Future bass as Thief builds it: verses at full time, builds with an 808 snare roll rising in pitch, half-time drops with the snare on 3, held saw chords and bass gated by Gross Beat, a white-noise layer on the chord rhythm, an octave-doubled bell arp.",
+ "moods": [
+  "euphoric",
+  "emotional",
+  "bittersweet",
+  "uplifting",
+  "playful"
+ ],
+ "tempo": {
+  "bpm": 150,
+  "range": [
+   140,
+   160
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "groove",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X.......x.......",
+    "snare": "........X.......",
+    "hat": "x.x.x.x.x.x.x.x."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...............",
+    "snare": "XxXXXxXxXxXXXXXX"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...o...x...x.o.",
+    "snare": "........X.......",
+    "clap": "........X.......",
+    "ride": "X.......X.......",
+    "perc": "........x......."
+   },
+   "fill_every": 8,
+   "fill": "B"
+  },
+  "intro": {
+   "bars": {
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o."
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X.......x.......",
+    "snare": "........X.......",
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "x---------------",
+  "drop": "x--------...x---",
+  "build": "x...x...x...x..."
+ },
+ "sub": {
+  "groove": "x---------------",
+  "drop": "x--------...x---"
+ },
+ "chords": {
+  "groove": "x---------------",
+  "drop": "X--x--X-X--x--x-",
+  "break": "x---------------",
+  "build": "x...x...x...x...",
+  "voicing": "add9"
+ },
+ "arp": {
+  "shape": "fall",
+  "rate": 16,
+  "sections": [
+   "drop",
+   "groove"
+  ],
+  "octaves": 2,
+  "double": [
+   12,
+   24
+  ],
+  "gate": 0.5
+ },
+ "kit": {},
+ "production_recipe": "dubstep",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Thief' by Ookay (Future Bass, 150 bpm), half-time snare on 3, 808 Snare roll with pitch automation, Saw Bass through Gross Beat, Tinke Bell octave-doubled; studied on a sandbox copy 2026-10-28 (docs/demo_study/Ookay_Thief.md)",
+  "https://blog.native-instruments.com/how-to-make-future-bass/ (Tim Cant, undated, read 2026-10-28: 130 to 160 bpm, half-time kicks and snares over common-time hats, extended chords, amplitude modulation for the pulse)",
+  "https://www.mixgraph.io/bpm-for/future-bass (read 2026-10-28: median 140 bpm, editorial range 140 to 160)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 8,
+  "tail_bars": 4,
+  "intro_bars": 8,
+  "bridge": false,
+  "outro_bars": 8,
+  "gap_before_drop": "beat",
+  "drop_feel": "half"
+ },
+ "options": {
+  "form": "form.halftime_switch",
+  "drums": "drums.future_bass_halftime",
+  "bass": "bass.halftime_wobble"
+ }
+}

@@ -1,0 +1,6 @@
+[console_scripts]
+coproducer = coproducer.cli:main
+coproducer-desktop-control = coproducer.servers.desktop_control:run
+coproducer-fl-bridge = coproducer.servers.fl_bridge:run
+coproducer-studio-audio = coproducer.servers.studio_audio:run
+coproducer-studio-ml = coproducer.servers.studio_ml:run

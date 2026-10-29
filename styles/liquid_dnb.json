@@ -1,0 +1,165 @@
+{
+ "name": "liquid_dnb",
+ "label": "Liquid drum and bass",
+ "engine": "grammar",
+ "what": "Liquid drum and bass as Time and Song For You build it: a clean two-step with tambourine and crash quarters, a held reese and sine sub, pads in sevenths and ninths, octave-doubled plucks, a long intro for DJs and a switch-up in the second drop.",
+ "moods": [
+  "soulful",
+  "melancholic",
+  "dreamy",
+  "uplifting",
+  "warm",
+  "bittersweet"
+ ],
+ "tempo": {
+  "bpm": 174,
+  "range": [
+   170,
+   176
+  ],
+  "follow": false
+ },
+ "sections": [
+  [
+   "intro",
+   32
+  ],
+  [
+   "drop",
+   32
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   32
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "hat": "x.x.x.x.x.x.x.x.",
+    "shaker": "x...x...x...x..."
+   }
+  },
+  "groove": {
+   "bars": {
+    "kick": "X.........X.....",
+    "snare": "....X.......X...",
+    "shaker": "x...x...x...x...",
+    "hat": "..x...x...x...x."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X.........X.....",
+     "X.x.......X....."
+    ],
+    "snare": "....X.......X..o",
+    "shaker": "X...X...X...X...",
+    "ride": "x...x...x...x...",
+    "hat": "..x..xx...x..xx."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "shaker": "x...x...x...x..."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "..x...x...x...x."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X.........X.....",
+    "snare": "....X.......X...",
+    "shaker": "x...x...x...x...",
+    "hat": "..x...x...x...x."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "x---------------",
+  "drop": [
+   "x---------------",
+   "x---------x-----"
+  ],
+  "break": "x---------------"
+ },
+ "sub": {
+  "groove": "x---------------",
+  "drop": "x---------------"
+ },
+ "chords": {
+  "groove": "x---------------",
+  "drop": "x---------------",
+  "break": "x---------------",
+  "build": "x---------------",
+  "voicing": "add9"
+ },
+ "arp": {
+  "shape": "fall",
+  "rate": 16,
+  "sections": [
+   "drop",
+   "groove"
+  ],
+  "octaves": 2,
+  "double": [
+   12,
+   24
+  ]
+ },
+ "kit": {},
+ "production_recipe": "dnb",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Time' by Chan Gibbons x Ceebeaats (D&B, 170 bpm), CB DnB Kick X.........X....., Snare 2 and 4, Tamborine and crash quarters, FLEX plucks octave-doubled; studied on a sandbox copy 2026-10-28 (docs/demo_study/Chan_Gibbons_x_Ceebeaats_Time.md)",
+  "FL Studio 2026 demo project 'Song For You' by Edlan & Ella Noël (Drum & Bass, 174 bpm), Slicex breaks re-ordered, Kepler and DX10 pads, GMS reese and 3x Osc sub; studied on a sandbox copy 2026-10-28 (docs/demo_study/Edlan_Ella_Nol_Song_For_You.md)",
+  "https://www.mixgraph.io/bpm-for/liquid-dnb (read 2026-10-28: median 174 bpm, editorial range 170 to 176)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 8,
+  "tail_bars": 8,
+  "intro_bars": 32,
+  "bridge": false,
+  "outro_bars": 16,
+  "gap_before_drop": "beat",
+  "switch_up": true
+ },
+ "options": {
+  "form": "form.dnb_double_drop",
+  "drums": "drums.dnb_two_step",
+  "bass": "bass.reese_held"
+ }
+}

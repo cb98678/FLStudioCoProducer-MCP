@@ -1,0 +1,83 @@
+{
+ "category": "automation",
+ "what": "Movement inside sections: what changes over 8, 16 or 32 bars so a loop does not sit still. production is a patch of transition moves for the production recipe (recipes: lowpass_open, lowpass_dip, filter_sweep, filter_wobble, reverb_throw, fade_in, pitch_rise, gap, stutter_fill, reverse_fill, tape_stop, fx_swell); manual moves are done with add_automation_clip on the named parameter.",
+ "options": [
+  {
+   "id": "automation.long_filter_open",
+   "label": "A low-pass opening over 16 bars",
+   "what": "The arp or chord pluck starts dark and its cutoff opens over a whole 16-bar phrase, peaking as the next phrase starts: the afro house and melodic techno way of building without a riser.",
+   "genres": ["afro_house", "melodic_techno", "deep_house", "trance", "progressive_house"], "moods": ["hypnotic", "dreamy", "warm"], "energy": "mid",
+   "sources": [{"song": "africas_calling", "where": "FLEX Arp cutoff opened over 16 bars"}, {"song": "exoplanet", "where": "Filter - Arp cutoff clips of 32, 72 and 140 beats"}],
+   "engine": {"production": {"transitions": {"intro>groove": [{"recipe": "lowpass_open", "on": "arp", "bars": 16}], "break>build": [{"recipe": "lowpass_open", "on": "music_bus", "bars": 8}]}}}
+  },
+  {
+   "id": "automation.pluck_decay_ride",
+   "label": "Pluck decay and release ridden longer through the drop",
+   "what": "The chord pluck's decay (or a FLEX pluck's release) grows over the drop, so the same notes go from tight to washed: Bien Duro rides its glass pluck's release and unison, Africa's Calling its Harmless decay.",
+   "genres": ["afro_house", "reggaeton", "future_house", "house", "melodic_techno"], "moods": ["warm", "dreamy", "playful"], "energy": "mid",
+   "sources": [{"song": "bien_duro", "where": "Glass pluck (Harmor): release, decay and unison automated"}, {"song": "africas_calling", "where": "Chord Pluck (Harmless) decay automated"}, {"song": "with_you", "where": "BAS Lottunma Release, 11 points over 128 beats"}],
+   "engine": {},
+   "manual": "add_automation_clip on the pluck's decay or release knob: 30 % at the drop's start to 70 % at its end."
+  },
+  {
+   "id": "automation.flex_macros",
+   "label": "FLEX macros moving over a phrase",
+   "what": "FLEX presets expose macros (Space, Metal, Plucked, OSCEX, TuneX, FlungDL): melodic techno moves two or three of them across 16 to 64 beats so one preset changes character inside the song.",
+   "genres": ["melodic_techno", "techno", "progressive_house", "trap"], "moods": ["hypnotic", "dark", "dreamy"], "energy": "mid",
+   "sources": [{"song": "with_you", "where": "PLK Shirin OSCEX and FlungDL over 64 beats, LED Kian Metal, Plucked, LPF and arpeggio gate over 16"}],
+   "engine": {},
+   "manual": "set_plugin_param_by_name and add_automation_clip on the FLEX channel's macro knobs."
+  },
+  {
+   "id": "automation.reverb_breakdown",
+   "label": "Master reverb up for the breakdown, thrown out on the drop",
+   "what": "The breakdown sits in a big reverb (master or music bus wet up); the last beats before the drop throw it out so the drop arrives dry and close.",
+   "genres": ["trance", "progressive_house", "melodic_techno", "edm"], "moods": ["epic", "dreamy", "euphoric"], "energy": "mid",
+   "sources": [{"song": "exoplanet", "where": "Reeverb 2 - Master wet level clips over 930 beats"}, {"song": "with_you", "where": "Vocal Reverb Balance and Gross Beat gate automated"}],
+   "engine": {"production": {"transitions": {"build>drop": [{"recipe": "reverb_throw", "on": "music_bus", "beats": 2}], "drop>break": [{"recipe": "reverb_throw", "on": "music_bus", "beats": 4}]}}}
+  },
+  {
+   "id": "automation.delay_throws",
+   "label": "Delay throws on phrase ends",
+   "what": "Short automation clips open a delay send only on the last word of a phrase, so the echo fills the gap and never runs under the next line.",
+   "genres": ["afro_house", "melodic_techno", "uk_drill", "afrobeats", "pop", "trip_hop"], "moods": ["hypnotic", "warm", "dreamy", "dark"], "energy": "mid",
+   "sources": [{"song": "africas_calling", "where": "reverb and delay throws as short automation clips"}, {"song": "with_you", "where": "Delay 3 input wet, 30 points over 384 beats"}],
+   "engine": {},
+   "manual": "add_automation_clip on the vocal delay send level: 0 through the phrase, up on its last beat, back to 0 on the next downbeat."
+  },
+  {
+   "id": "automation.low_cut_break",
+   "label": "Low end taken out of the break with an EQ band",
+   "what": "An EQ band's frequency on the low-frequency bus rises in the breakdown (a moving high-pass) and falls back for the drop, so the drop's bass feels new.",
+   "genres": ["melodic_techno", "techno", "trance", "house"], "moods": ["hypnotic", "tense"], "energy": "mid",
+   "sources": [{"song": "with_you", "where": "EQ 2 (Slot 4) - Low FRQ - Band 1 freq, 18 points over 416 beats"}],
+   "engine": {"production": {"transitions": {"drop>break": [{"recipe": "filter_sweep", "on": "bass", "bars": 2}], "build>drop": [{"recipe": "fade_in", "on": "sub", "bars": 4}]}}}
+  },
+  {
+   "id": "automation.filter_wobble_lead",
+   "label": "Filter wobble on the lead, one beat at a time",
+   "what": "One short filter clip repeated on every beat of the lead (the reference repeats a one-beat clip 64 times): movement locked to the tempo.",
+   "genres": ["future_house", "bass_house", "dubstep", "future_bass"], "moods": ["bouncy", "playful", "energetic"], "energy": "high",
+   "sources": [{"song": "future_house", "where": "the reference's one-beat filter clip"}, {"song": "stroll_up", "where": "Strollin cutoff, 21 points over 32 beats"}],
+   "engine": {"production": {"transitions": {"build>drop": [{"recipe": "filter_wobble", "on": "arp", "bars": 8, "period": 1}]}}}
+  },
+  {
+   "id": "automation.formant_moves",
+   "label": "Formant shifts on ad-libs and samples",
+   "what": "An ethnic or vocal sample's formant moved over a few beats (Mehdi's setar ad-lib, Mehran's vocal formant over the song), so a repeated sample changes colour without changing pitch.",
+   "genres": ["drum_and_bass", "melodic_techno", "afro_house", "world"], "moods": ["mysterious", "spiritual", "dreamy"], "energy": "mid",
+   "sources": [{"song": "never_out", "where": "Setar Adlib formant shift amount over 6 beats"}, {"song": "with_you", "where": "PitchShifter - Main Vocal - Formant over 384 beats"}],
+   "engine": {},
+   "manual": "add_automation_clip on the channel's formant knob or a Pitch Shifter's formant on the vocal insert."
+  },
+  {
+   "id": "automation.tempo_change",
+   "label": "A tempo change for a new scene",
+   "what": "The tempo moves for a section (120 to 110 in a soundtrack cue; a slow-down into a breakdown): an automation clip on the project tempo.",
+   "genres": ["soundtrack", "cinematic", "future_bass", "trance"], "moods": ["dramatic", "mysterious", "playful"], "energy": "mid",
+   "sources": [{"song": "secret_agent", "where": "Tempo clip 4 points over 208 beats"}, {"song": "exoplanet", "where": "Tempo clip 12 points"}, {"song": "thief", "where": "TEMPO clip"}],
+   "engine": {},
+   "manual": "A tempo clip moves every vocal and audio clip's timing: only on instrumental passages, or with the vocal re-stretched for the new tempo."
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "skill": "editable-first",
+ "evals": [
+  {
+   "id": 1,
+   "should_trigger": true,
+   "prompt": "Remix this track: the drums are plain, add a buildup and snare rolls before the drop.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "list_channels_summary"
+    },
+    {
+     "type": "asked_human",
+     "about": "section map"
+    },
+    {
+     "type": "text_mentions",
+     "text": "channel rack"
+    },
+    {
+     "type": "text_mentions",
+     "text": "pattern"
+    },
+    {
+     "type": "tool_not_called",
+     "module": "generate_audio"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "should_trigger": true,
+   "prompt": "Make the bass heavier and match the sub I generated, but keep it editable.",
+   "assertions": [
+    {
+     "type": "text_mentions",
+     "text": "piano roll"
+    },
+    {
+     "type": "text_mentions",
+     "text": "synth"
+    },
+    {
+     "type": "tool_not_called",
+     "module": "import_audio_clip_gui"
+    },
+    {
+     "type": "all_writes_have_verifier"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "should_trigger": true,
+   "prompt": "Just gain stage and master this, do not touch my parts.",
+   "assertions": [
+    {
+     "type": "tool_not_called",
+     "module": "write_notes_via_script"
+    },
+    {
+     "type": "tool_not_called",
+     "module": "generate_audio"
+    },
+    {
+     "type": "tool_called",
+     "module": "list_effect_slots"
+    }
+   ]
+  }
+ ]
+}

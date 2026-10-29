@@ -1,0 +1,54 @@
+{
+  "name": "load_sample_gui",
+  "verified": false,
+  "verified_note": "Draft. Not yet confirmed on a real FL Studio install; calibrate at Gate 0.",
+  "summary": "Find an audio file in the Sample Browser and load it into a new channel.",
+  "params": [
+    "filename"
+  ],
+  "vision": true,
+  "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/basics_shortcuts.htm (Sample Browser: Alt+F8)",
+  "steps": [
+    {
+      "do": "hotkey",
+      "keys": [
+        "alt",
+        "f8"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "locate_click",
+      "description": "the search box at the top of the browser panel"
+    },
+    {
+      "do": "type",
+      "text": "{filename}"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "locate_click",
+      "description": "the first search result in the browser panel"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 1.5
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 15
+    }
+  ]
+}

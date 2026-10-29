@@ -1,0 +1,172 @@
+{
+ "name": "reggaeton",
+ "label": "Reggaeton",
+ "engine": "grammar",
+ "what": "Reggaeton as Bien Duro builds it: the dembow (kick on 1 and 3, the snare's 3-3-2 answer, a rim between), timbal fills at phrase ends, a BooBass bounce pumped by Gross Beat, chord plucks on the dembow's rhythm, a buzzing high arp in the chorus, a vocal stack.",
+ "moods": [
+  "sexy",
+  "party",
+  "confident",
+  "playful",
+  "hot",
+  "romantic"
+ ],
+ "tempo": {
+  "bpm": 95,
+  "range": [
+   88,
+   100
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "rim": "o.xx..x.o.xx..x.",
+    "shaker": "x...x...x...x..."
+   }
+  },
+  "groove": {
+   "bars": {
+    "kick": "X.......X.......",
+    "snare": "...X..X....X..X.",
+    "rim": "o.xx..x.o.xx..x.",
+    "shaker": "x...x...x...x..."
+   },
+   "fill_every": 4,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "rim": "o.xx..x.o.xx..x.",
+    "perc": "Xxx.xx..xxx.xx.."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...x...X...x...",
+    "snare": "...X..X...xX..X.",
+    "rim": "o.xx..x.o.xx..x.",
+    "hat": "x.x.x.x.x.x.x.x.",
+    "perc": "x..X.XXxxxXXX.X."
+   },
+   "fill_every": 4,
+   "fill": "C"
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X.......X.......",
+    "snare": "...X..X....X..X.",
+    "rim": "o.xx..x.o.xx..x.",
+    "shaker": "x...x...x...x..."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "x.x-o-x-..x.x---",
+  "drop": "x.x-o-x-..x.x---",
+  "build": "x...x...x...x..."
+ },
+ "sub": {
+  "groove": "x---o-x-..x.x---",
+  "drop": "x---o-x-..x.x---"
+ },
+ "chords": {
+  "groove": "x--x--x-x--x--x-",
+  "drop": "X--x--X-X--x--x-",
+  "break": "x---------------",
+  "build": "x---------------",
+  "voicing": "add9"
+ },
+ "arp": {
+  "shape": "updown",
+  "rate": 16,
+  "sections": [
+   "drop"
+  ],
+  "octaves": 2,
+  "gate": 0.6
+ },
+ "kit": {},
+ "production_recipe": "latin_pop",
+ "targets": "targets/streaming_default.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Bien Duro (Clean Version)' by Astes (Reggaeton, 95 bpm), Oldschool Kick X.......X......., Snare ...X..X...xX..X., Rim o.xx..x.o.xx..x., BooBass F3 . F3 - F4 - F3 -; studied on a sandbox copy 2026-10-28 (docs/demo_study/Astes_Bien_Duro.md)",
+  "https://en.wikipedia.org/wiki/Dembow_beat (read 2026-10-28: a 3+3+2 tresillo cross-rhythm with a bounce)",
+  "https://www.mixgraph.io/bpm-for/reggaeton (read 2026-10-28: median 95 bpm, half of all tracks 90 to 98, editorial range 88 to 100)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 4,
+  "tail_bars": 0,
+  "intro_bars": 8,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 8,
+  "gap_before_drop": "beat"
+ },
+ "options": {
+  "form": "form.pop_verse_chorus",
+  "drums": "drums.dembow",
+  "bass": "bass.reggaeton_bounce"
+ }
+}

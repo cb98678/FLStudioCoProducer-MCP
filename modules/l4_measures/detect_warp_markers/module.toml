@@ -1,0 +1,27 @@
+[module]
+name = "detect_warp_markers"
+layer = "L4"
+summary = "Find where Newtime warp markers go on a vocal (its syllable onsets near the grid) so Quantize time fits it to the beat."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","bpm"],"properties":{"path":{"type":"string","minLength":1},"bpm":{"type":"number"},"division":{"type":"integer"},"lead_s":{"type":"number","maximum":0.2},"max_move_s":{"type":"number","minimum":0.005,"maximum":0.1},"delta":{"type":"number","minimum":0.01,"maximum":0.5}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "reads_files"
+autonomy = "A0"
+cost = "seconds"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_detect_warp_markers.py::test_marks_onsets_near_the_grid_with_the_singers_lead"
+failure = "test_detect_warp_markers.py::test_refuses_bad_input"

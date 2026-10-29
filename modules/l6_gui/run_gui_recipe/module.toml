@@ -2,7 +2,7 @@
 name = "run_gui_recipe"
 layer = "L6"
 summary = "Run a named GUI recipe step by step with checks after each step."
-version = "1.0.0"
+version = "1.1.0"
 
 [io]
 input = '''{"type":"object","required":["name"],"properties":{"name":{"type":"string","x-path":true,"pattern":"^[a-z_]+$"},"params":{"type":"object"}},"additionalProperties":false}'''
@@ -18,7 +18,7 @@ expose = false
 
 [deps]
 min_api = 0
-calls = ["load_gui_recipe", "check_sandbox_project_open", "locate_template", "press_hotkey", "type_text", "click_at", "locate_element", "list_open_dialogs", "check_desktop_ready", "take_screenshot"]
+calls = ["load_gui_recipe", "check_sandbox_project_open", "locate_template", "press_hotkey", "type_text", "click_at", "locate_element", "list_open_dialogs", "check_desktop_ready", "take_screenshot", "drag_between"]
 models = []
 binaries = []
 packages = []

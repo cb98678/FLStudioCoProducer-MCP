@@ -9,7 +9,7 @@ parts sit under -45 dB (one is a sidechain trigger channel, the other is not exp
 they do it, how they sound, the design of the synths, everything, and develop all of the elements into choices and options in the
 recipes" (2026-10-27). No lyrics are copied; the notebooks and comments in the projects are not reproduced.
 
-The result is the option bank (`src/coproducer/data/options`, 192 options in 12 categories), the variety engine that chooses from it per song
+The result is the option bank (`src/coproducer/data/options`, 213 options in 12 categories), the variety engine that chooses from it per song
 (`src/coproducer/variety.py`, skill `creative-variety`), fifteen new style packs, and one page per song in `docs/demo_study`.
 
 ## The songs
@@ -101,7 +101,7 @@ Effects by how many slots hold them: Fruity Parametric EQ 2 706, Fruity Reeverb 
 Each option names the songs it came from. `engine` is what the build realizes; options marked manual describe a move the agent makes
 with the modules after the build (apply_fx_chain, create_send_route, add_automation_clip).
 
-### Forms (11)
+### Forms (12)
 
 - `form.edm_two_drop` **Two drops, riser build before each.** Intro, groove, break, an 8-bar build with risers before every chorus, the chorus as a drop with 8 bars of chop games after it, an outro for DJs. The default the earlier remixes all used: keep it for club records, not for every song. From: AP - FUTURE HOUSE (Stock Plugins Only), I'm Awake.
 - `form.pop_verse_chorus` **Verse, lift, chorus (no riser build).** A song form, not a DJ form: the chorus arrives after a short 4-bar lift at the end of the verse (a pre-chorus where the drums thin out and the last beat drops), never after an 8-bar riser. Short intro, short outro, a breakdown before the last chorus, the vocal carries the record. From: Bien Duro (Clean Version), Right Night feeling, Use Me.
@@ -114,8 +114,9 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `form.halftime_switch` **Future bass: build, then a half-time drop.** Future bass and trap-pop: the verse runs at full time, the build speeds a pitched snare roll up, and the drop falls into half time (snare on beat 3) with big detuned chords. The second drop can double back to full time for 4 bars. From: Thief.
 - `form.lofi_loop` **Lo-fi loop with entries and exits.** Lo-fi and chill hip-hop: a 4-bar chord loop, instruments entering and leaving every 4 to 8 bars, no builds and no drops. The changes are subtraction (drums out, piano alone) and texture (a filter on the master, a tape-stop at the end). From: Inner Days, Inner Days - SH-1 Rework (feat. Maja Mannila).
 - `form.cinematic_cues` **Through-composed cues with meter and tempo changes.** Soundtrack writing: the music follows a story, not a loop. Short cues, a bar of 7/4 or 6/4 to make a turn, a 3/4 bar before a return, a tempo change (120 to 110) for a new scene, an ending that stops instead of fading. From: Secret Agent Rendezvous. Manual: Odd meters and tempo changes are not built by the engine yet: set the markers and the tempo clip in FL (or with the bridge) after the build.
+- `form.whole_song_turned` **The whole song at club tempo, each pass a different job.** Every sung line of the record in its own order, sped up to the style's standard tempo, with the functions turned from pass to pass: verse 1 rides the groove, chorus 1 is sung over a break with the bass out and lifts into a drop of the record's own hook, verse 2 moves into a second break, chorus 2 is sung on the drop beat, a two-bar breath, then the last hook drop. No riser builds: an empty bar before each drop does the lifting, so the drops need not be louder than the groove. A short club edit for open-format DJs (the studied one runs 2:39).
 
-### Grooves (18)
+### Grooves (19)
 
 - `drums.pack` **The style pack's own groove.** Keep the grid the style pack was written with (its sources say where it comes from): the genre's centre, chosen when the song wants the classic version.
 - `drums.trance_rolling` **Trance: three-of-four hats, syncopated percs, offbeat ride.** Four on the floor with the closed hat on the three 16ths after each kick (.xxx), the open hat and a ride on the off-beat, two percussion voices answering on the 'a' of beats, claps on 2 and 4. Builds roll the snare in 16ths with velocity climbing from soft to full. From: Exoplanet.
@@ -135,8 +136,9 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `drums.future_house_flam` **Future house: layered kicks, flammed claps, off-16th hats.** Three kicks layered as one, three claps on 2 and 4 nudged apart (one early, one late) so the clap is wide and long, an off-beat hat plus a hat on the last 16th of each beat (...X), shakers syncopated, an envelope controller pumping the music on every beat. From: AP - FUTURE HOUSE (Stock Plugins Only).
 - `drums.cinematic_jazz_ride` **Cinematic jazz: swung ride, toms and hits instead of a backbeat.** No backbeat: a swung ride (X.xoX.xoX.xoX.xx) and a hi-hat pedal on quarters carry the time, toms and orchestral hits (an FPC wack, a big HIT) punctuate the phrase ends, a kick only under the big moments. From: Secret Agent Rendezvous.
 - `drums.liquid_break` **Liquid break: a sliced break re-ordered, ghosted snares.** A breakbeat cut into slices (Slicex or Fruity Slicer) and played back in its own order for the first phrase, then re-ordered ('Ghost Break') so the drums move without changing sound; programmed kick and snare reinforce the break's own hits. From: Never Out ( Tars ), Song For You. Manual: The sliced break itself is placed by hand (or from the original's drum stem with Slicex); the engine plays the reinforcement.
+- `drums.house_layer_in` **House groove that layers in: kick alone, then claps and off-beat hats.** Four on the floor with nothing else for the first 8 bars of a groove (the bass carries it), then claps on 2 and 4 and an open hat on every off-beat 8th. Breaks keep a lighter, syncopated kick (hits on the 'a' of beats 3 and 4 that echo a dembow) under rolling 16th hats and one clap on beat 2. Every bar of a section is the same loop.
 
-### Bass lines (15)
+### Bass lines (20)
 
 - `bass.pack` **The style pack's own bass line.** Keep the pack's bass and sub patterns.
 - `bass.offbeat_8th` **House off-beat bass.** The bass on the 8th between kicks, the sub doubling it with longer notes: the classic house pocket that never fights the kick. From: Right Night feeling.
@@ -153,8 +155,13 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `bass.rework_808_syncopated` **Rework: held bass turned into a syncopated 808 two octaves down.** The rework move: the original's whole-note bass re-cut as x---x--x--x-x--- and doubled two octaves lower by a long 808, so the same harmony gets a hip-hop pocket. From: Inner Days - SH-1 Rework (feat. Maja Mannila).
 - `bass.phrygian_answer` **Afro house: the bass only answers, a flat second at the bar's end.** No bass on the downbeats: the bass plays two quick notes a semitone above the root at the end of the bar (............bb..) and lands on the root at the next downbeat. The kick and the percussion carry the low end; the bass is tension and release. From: Africa's Calling.
 - `bass.pedal_drone` **Pedal drone under changing chords.** The bass holds the tonic while the chords move above it (sus4, add9, back), so the harmony colours change without the floor moving: intros, breakdowns and whole songs in melodic genres. From: Exoplanet, Never Out ( Tars ).
+- `bass.dotted_pump` **Dotted-8th house bass, ducked by every kick.** One bass note on steps 1, 5, 8, 11 and 14 of the bar (a 4-3-3-3-3 grouping), each about two 16ths long, following the chords (with a loop that changes chord on step 8 the third note takes the new root), an octave above a dancehall 808 so its harmonics carry, and ducked hard by the kick. It keeps a syncopated record's 3-3-2 feel inside a four-on-the-floor groove. Out in breaks.
+- `bass.roll_then_long_drop` **Rolling in the verses, longer notes when it drops.** The bass rolls in 16ths between the kicks through verses and builds (root, root, octave), with a held turnaround every fourth verse bar. When it drops it stretches out: dotted-quarter notes (6, 6 and 4 sixteenths) and a held root, so the drop breathes under the stabs instead of running. Out in the break; the sub holds the root under the roll and plays the long drop notes, ducked by every kick. From: Exoplanet, Song For You.
+- `bass.euro_gallop` **Euro-gallop: root on the kick, two octaves, a breath.** Every beat: the low root with the kick (accented), the octave up twice, then an empty 16th that leaves room for the clap (root, octave, octave, rest). No sustained notes: a 90s Eurodance bass that bounces without swing. The sub hits the root on the beats with the kick, not ducked by it.
+- `bass.inverted_turnaround` **Long notes, the chord's third in the bass on every fourth bar.** Dotted-quarter notes on the root (6, 6 and 4 sixteenths) for three bars, then the fourth bar plays the chord's third instead of its root (a first inversion such as C/E), so the low end moves like a melody into the next phrase instead of sitting flat. The sub keeps the root and is ducked by the kick.
+- `bass.empty_verse_square_drop` **No low end in the verse, a heavy square bass when it drops.** The verses and builds leave everything under 250 Hz empty (no bass, no sub) so the voice and a guitar or pluck carry them; at the drop a driven mono square bass in 8ths takes the 100 to 300 Hz band with the sub under it, and the contrast makes the drop feel huge.
 
-### Chord treatments (12)
+### Chord treatments (15)
 
 - `chords.pack` **The style pack's own chord part.** Keep the pack's chord rhythm and plain triads.
 - `chords.offbeat_stab` **Off-beat stabs, held in breaks.** Short chord hits on every 8th between kicks in grooves and drops, one held chord through the breaks. From: AP - FUTURE HOUSE (Stock Plugins Only).
@@ -168,8 +175,11 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `chords.lofi_rhodes` **Lo-fi Rhodes: one voicing per bar, struck and let ring.** Wide seventh and ninth voicings (D3+C4+D4 under F4+A4) struck once and held, a melody note added late in the bar; detuned and filtered. From: Inner Days.
 - `chords.brass_stabs` **Brass stabs on the off-beats.** Short brass (Sytrus brass, FLEX brass sections) hitting the chord on syncopated off-beats in the chorus, a long swell into the downbeat at the end of each phrase. From: Right Night feeling, SHINE.
 - `chords.minmaj_spy` **Minor chord with a major seventh, struck and held.** The spy-film chord: a minor triad with the major seventh on top (C4, C5+G4, Eb5+G5+B5), arpeggiated up and held over a chromatic guitar line. From: Secret Agent Rendezvous.
+- `chords.pad_and_spaced_stabs` **Held pad under spaced-out stabs.** Two chord parts. A pad holds each chord from where it starts to where the next one starts (re-struck every bar in builds), an octave under the stabs, through intros, verses, drops and breaks. Over it, short stabs come in small groups with whole bars of space between them: a touch in the verses, a push that fills up through the build, two or three hits and then air in the drops, none in the break. Neither part plays all the time. From: AP - FUTURE HOUSE (Stock Plugins Only), Exoplanet.
+- `chords.tresillo_332_pluck` **3-3-2 pluck chords leaning across the beat.** Short plucked chords in 3+3+2 groups of 16ths twice a bar (steps 1, 4, 7, 9, 12, 15), accented on each group's start: four of the six hits land off the quarter notes, so the part leans forward like an acoustic guitar strum. Verses and drops; a single held chord in the break.
+- `chords.voice_led_pad` **Voice-led held pad, the bass doing the leaping.** Only a held pad, each chord in the inversion nearest the last one: shared notes stay put and the others move by a step, so the upper voices barely move while the bass line leaps underneath and tells the story. No stabs: pair it with an arp or a lead for rhythm.
 
-### Arps and sequences (11)
+### Arps and sequences (12)
 
 - `arp.pack` **The style pack's own arp.** Keep the pack's arp (the rising arp through breaks and builds, or none).
 - `arp.rise` **Rising 16th arp in breaks and builds.** The chord's notes climbing in 16ths, getting louder over the build: the existing default, best used once per song. From: Exoplanet.
@@ -182,8 +192,9 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `arp.techno_sequence` **Melodic techno 16th sequence with repeated notes.** A fixed 16th cell that repeats notes (A4 F4 D5 D5 D4 D4 C5 D5 D5 F4 D5 D5 C5 C5 D5 D5), its filter, tune and space macros automated over 32 bars: the hypnotic lead of melodic techno. From: With You.
 - `arp.sus_cell` **Sus-cell arp: 1 2 4 5, 1 2 2 1.** An arp on the root, second, fourth and fifth (C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5) that never states the third, so it fits major and minor; through overdrive and a love-philter it becomes the record's hook. From: Use Me.
 - `arp.octave_bounce_pluck` **Octave bounce pluck.** Root and octave alternating in a skipping 8th rhythm on a pluck: a bass-register arp that drives without chords. From: Never Out ( Tars ).
+- `arp.three_over_four` **3-over-4 lead: groups of three 16ths for three bars, resolving on the fourth.** A rising chord-tone line struck every third 16th, so it crosses the quarter-note grid and the downbeat moves each bar; after three bars (48 sixteenths, where the 3s and 4s meet again) the fourth bar resolves on the beat. The soaring, syncopated feel of a progressive-house lead.
 
-### Harmony (16)
+### Harmony (21)
 
 - `harmony.keep_original` **Keep the record's chords.** The remix plays the original's root on every bar it carries; only the voicing and rhythm change. The default.
 - `harmony.minor_i7_v_iv7_IVsus2` **i7, v, iv7, IV sus2 (minor with a Dorian lift).** Minor seventh tonic, minor fifth, minor fourth, then the fourth turned major as a sus2: the last chord brightens without leaving the key's colour. From: Right Night feeling.
@@ -201,6 +212,11 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `harmony.mixed_mode_minor` **Minor with a Dorian IV and a Phrygian bII.** Big room's trick: in minor, borrow both the major fourth (Dorian) and the flat second (Phrygian) so the loop goes bright and dark in four bars (Dm F6 G Eb sus2). From: I'm Awake.
 - `harmony.reggaeton_i_bIII_IV` **i, bIII, IV (with sus and add9 colours).** Tonic for two bars, then the relative major and the major fourth, the colours changing with the section (sus4 and add9 in the intro, sixths in the verse, plain triads in the chorus). From: Bien Duro (Clean Version).
 - `harmony.future_house_Vsus_bVI` **V sus4 against bVI, then i.** Hanging on a suspended dominant and the flat sixth for the build (A sus4, Bb in D minor), resolving to the tonic only when the drop lands. From: AP - FUTURE HOUSE (Stock Plugins Only).
+- `harmony.iii_IV_ii_V_pushed` **iii IV, ii V: two chords a bar, each change a 16th early (re-harmonize).** A new two-bar loop under the whole vocal: the major key's iii then IV in the first bar, ii then V in the second, the second chord of each bar arriving on the 16th before beat 3. Faster harmonic movement than a pop loop of one or two chords a bar, and it lands the tonic's notes (iii is the tonic's upper three) without ever sitting on the tonic. Lock it when the vocal lives on the major scale's 1, 2, 3, 5 and 6; check every line by ear.
+- `harmony.pop_I_V_vi_IV` **I, V, vi, IV (the pop and EDM loop).** Tonic, dominant, relative minor, subdominant, two bars each: instantly familiar and bright, the loop under countless pop-EDM choruses. Clarity's chorus is heard this way in remix transcriptions (Ab Eb Fm Db).
+- `harmony.sus_ii_V_vi_iii_IV` **ii sus4, V sus4, vi7, iii7, IV add9 (floating, never landing on I).** Suspended ii and V that never resolve, then the minor sixth and third with sevenths, then IV with an added ninth: the progression never sits on the tonic, so the chorus floats. Hooktheory transcribes Clarity this way (Bb7sus4 Eb7sus4 Fm7 Cm7 Dbadd9 in A flat); the bar lengths here are ours.
+- `harmony.minor_i_VI_III_VII` **i, VI, III, VII (the minor anthem loop).** Minor tonic, then three major chords climbing back round (Gm Eb Bb F in G minor): melancholic and driving at once, the same chords as vi IV I V in the relative major. Red Lights runs it the whole song, verse on an acoustic guitar, drop on synths.
+- `harmony.eurodance_i_VI_VII_v` **i, VI, VII, v (the Eurodance turn into the minor v).** Minor tonic, up through the sixth and seventh in parallel, then down into a dark minor fifth instead of the bright major one: the melancholic-energetic Eurodance loop. Attributed to Another Night in the person's breakdown (Bm G A F#m); a published chord sheet gives that record Am Dm G C instead, so the attribution is unconfirmed, the loop itself is sound.
 
 ### Instruments (51)
 
@@ -280,7 +296,7 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `kit.stroll_up` **Stroll Up kit (Trap).** The drum samples Purps On The Beat Feat Luclover uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder. From: Stroll Up.
 - `kit.secret_agent` **Secret Agent Rendezvous kit (Soundtrack).** The drum samples Sid De La Cruz uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder. From: Secret Agent Rendezvous.
 
-### Transitions (8)
+### Transitions (9)
 
 - `fx.club_risers` **Noise and tone risers, impact and air sweep into each drop.** The current default: an 8-bar noise riser and a tone riser through every build, an impact and a reverse-cymbal air sweep on the drop, downlifters out. Effective and familiar; use it when the song is a club record. From: I'm Awake.
 - `fx.silence_and_sub` **A beat of silence, then a sub drop and an impact.** No riser at all: the build thins out, the last beat before the drop is silent (everything gapped), the drop lands with a sub-drop sweep and a short impact. Restraint makes the drop louder. From: AP - FUTURE HOUSE (Stock Plugins Only), Mic Check Ready.
@@ -290,8 +306,9 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `fx.drill_block_marks` **Block marks: a drum-fill sample, a riser, an impact on the block edge.** In loop-block songs the edges are marked, not built: a one-bar drum fill and a short riser into the block, an impact on its first beat, nothing else. From: Mic Check Ready.
 - `fx.reverse_and_wind` **Reverse piano chord, wind rise, sub impact.** Musical FX from the song's own sounds: a reversed chord swelling into the downbeat, a wind riser, a sub impact under the first kick. Drum and bass and cinematic records use them instead of white noise. From: Never Out ( Tars ). Manual: A reversed chord of the song's own pads is the best version: bounce two bars of the pad, reverse it in Edison, place it to end on the drop.
 - `fx.radio_vocal_drop` **Radio filter on the vocal before the chorus.** The vocal (or an ad-lib) band-passed like a radio for the last bar before the chorus, panned by automation, then full again on the chorus: the reggaeton and pop lift without a build. From: Bien Duro (Clean Version).
+- `fx.stop_bar_sweep` **A stop bar: everything out but a noise sweep and the last word.** No 8-bar risers and no impacts: the bar before each drop empties (drums, bass and music gapped), a one-bar white-noise sweep rises through it, the vocal's last words hang in the space, and the drop comes back on the downbeat. Contrast by subtraction.
 
-### Mix architecture (11)
+### Mix architecture (13)
 
 - `mix.pump_deep` **Deep pump on music and bass (volume shaper from the kick).** Every kick ducks the music and the bass hard and they swell back before the next beat: the house and techno breath, made with a Balance volume clip following the kick. From: AP - FUTURE HOUSE (Stock Plugins Only), Exoplanet.
 - `mix.pump_gentle` **Gentle pump, only on pads and bass.** A shallow duck (about 6 dB) on the sustained parts only, so the vocal and the drums stay steady: pop dance, afro house and liquid records breathe without pumping. From: Right Night feeling.
@@ -304,8 +321,10 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `mix.beat_bus_clip` **Beat bus with a soft clipper.** Drums and melody summed into a Beat Bus that hits a soft clipper before the master, the vocal buses beside it: the beat is loud and dense, the vocal sits on top untouched. From: Mic Check Ready. Manual: Fruity Soft Clipper on the drum bus at about 2 dB of clipping.
 - `mix.one_hall` **One hall for everything.** A single bright hall (LuxeVerb, 3 s) as the only reverb, every instrument sent to it at its own level: one room, a cinematic and acoustic sound. From: Secret Agent Rendezvous. Manual: create_send_route from each music insert to one reverb insert with LuxeVerb.
 - `mix.master_clip_chain` **Master: mid-side EQ, hard clip, limiter.** A master chain that shapes the mid and side separately, then clips the peaks (WaveShaper hard clip) before a transparent limiter: loud and punchy without pumping the limiter. From: With You. Manual: apply_club_master with the style's targets does the loudness; this names the chain to prefer.
+- `mix.mono_low_hard_pump` **Mono low end, wide top, the bass ducked hard.** Everything under 150 Hz in mono (side 35 dB under mid), the hats and the top wide (side 3 dB under mid above 4 kHz), the bass and music ducked 12 to 15 dB by every kick and back within about 90 ms: a club mix that stays solid on mono systems. Manual: Fruity Stereo Shaper or a mid-side EQ low-cut on the side below 150 Hz on the master or the bass bus.
+- `mix.exp_recovery_pump` **Pump with an exponential recovery: silent on the hit, back fast, easing in.** The music bus and bass drop fully on each kick, hold for about a tenth of a beat, then come back on a curve: most of the way within the next tenth of a beat, easing into full level by 0.3 beat. Clicks less than a straight ramp and pumps harder on the first 16th.
 
-### Vocal production (9)
+### Vocal production (11)
 
 - `vocal.games_classic` **Chop games: hook teasers, answers, tail games, stutter roll.** The current default: the hook teased in the intro, a line and the hook traded in builds, 8 bars of games after each chorus, a stutter roll into the last drop. From: AP - FUTURE HOUSE (Stock Plugins Only).
 - `vocal.sparse_hook` **Sparse: the hook once in the intro, nothing between choruses.** The singer is the record: whole verses and choruses, the hook chop only as an intro teaser and in the outro. No chop games over the instrumental parts, which keep their own melody. From: I'll Be Your Madonna, Right Night feeling.
@@ -316,6 +335,8 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `vocal.dub_sends` **Dub sends: delay and reverb rides, breath dips.** The vocal stays dry and close; its delay (a delay bank into a reverb) and reverb sends are ridden by automation phrase by phrase, and the breaths are dipped by a volume clip. The space moves, the voice does not. From: I'll Be Your Madonna.
 - `vocal.vocoder_texture` **Vocoder or robot texture under the lead.** A vocoded copy of the vocal (Vocodex, or FL Keys through Fruity Vocoder) sent in low under the lead in the choruses: harmony and texture from the same words. From: Song For You, Thief.
 - `vocal.chop_instrument` **Vocal chops as the drop's instrument (ask first).** Short sung syllables played on a sampler as a melodic hook in the drop, the way future house and big room use a vocal sample pack. Ask the person first: their rule keeps chops at their own pitch and as whole phrases, so this is for a separate one-shot sample or a record whose syllables are already sung on the hook's notes. From: AP - FUTURE HOUSE (Stock Plugins Only), I'm Awake.
+- `vocal.whole_in_order` **The whole vocal in order, its own hook as the only chop.** Every sung line of the record kept whole and in its order, stretched to the remix tempo with its pitch and formants kept (FL: e3 Mono or Stretch pro with F.Shift at 0); no line is pitched, filtered, stuttered or re-cut. The only chops are the record's own hook (its vocal-chop motif), teased in the intro and carrying the drops.
+- `vocal.dry_verse_wide_chorus` **A dry, close verse voice against a wide, washed chorus voice.** Two vocal spaces that never fight: the verse (a rap or a low spoken line) dry, mono and up front in the low mids; the chorus voice high-passed at about 220 Hz, through a chorus effect and a long reverb (about 25 ms pre-delay, 2.1 s decay) so it spreads to the edges. Hook teasers only in the chops. Manual: On the chorus vocal clips' insert (or a second vocal channel for the choruses): apply_fx_chain with a high-pass near 220 Hz, Fruity Chorus about 35 % rate and 40 % depth, a reverb send with 25 ms pre-delay and 2.1 s decay; the verse insert stays dry with no send.
 
 ### Automation moves (9)
 

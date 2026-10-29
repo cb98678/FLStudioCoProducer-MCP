@@ -8,3 +8,8 @@ def test_refuses_outside_and_when_halted(rig, desk):
     assert rig.call("click_at", x=640, y=0).error.code == "E_ARG" and not [e for e in desk.fake.log if e[0] == "click"]
     desk.halt.flag = True
     assert rig.call("click_at", x=1, y=1).error.code == "E_HALTED"
+
+
+def test_holds_modifiers_for_the_click(rig, desk):
+    r = rig.call("click_at", x=12, y=8, modifiers=["shift"])
+    assert r.ok and r.value["modifiers"] == ["shift"] and ("click", 12, 8, "left", 1, ("shift",)) in desk.fake.log

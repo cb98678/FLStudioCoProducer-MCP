@@ -2,10 +2,10 @@
 name = "click_at"
 layer = "L6"
 summary = "Click at a point inside FL Studio's window."
-version = "1.0.0"
+version = "1.1.0"
 
 [io]
-input = '''{"type":"object","required":["x","y"],"properties":{"x":{"type":"integer","minimum":0},"y":{"type":"integer","minimum":0},"button":{"type":"string","enum":["left","right","middle"]},"clicks":{"type":"integer","minimum":1,"maximum":3}},"additionalProperties":false}'''
+input = '''{"type":"object","required":["x","y"],"properties":{"x":{"type":"integer","minimum":0},"y":{"type":"integer","minimum":0},"button":{"type":"string","enum":["left","right","middle"]},"clicks":{"type":"integer","minimum":1,"maximum":3},"modifiers":{"type":"array","items":{"type":"string","enum":["shift","ctrl","alt"]},"maxItems":3}},"additionalProperties":false}'''
 output = '''{"type":"object"}'''
 
 [policy]

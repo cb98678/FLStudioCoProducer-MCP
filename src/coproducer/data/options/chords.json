@@ -1,0 +1,574 @@
+{
+ "category": "chords",
+ "what": "How the chords are played (the rhythm of the chord part per section kind) and voiced (which notes beyond the triad). Pattern characters as for bass: x or X a chord hit (X louder), o an octave up, - hold, . rest. voicing: triad, seventh, add9, sus2, sus4, open (root, fifth, tenth), octaves (the triad doubled an octave up), minmaj (minor with a major seventh, the spy chord).",
+ "options": [
+  {
+   "id": "chords.pack",
+   "label": "The style pack's own chord part",
+   "what": "Keep the pack's chord rhythm and plain triads.",
+   "genres": [
+    "*"
+   ],
+   "moods": [
+    "*"
+   ],
+   "energy": "any",
+   "sources": [],
+   "engine": {}
+  },
+  {
+   "id": "chords.offbeat_stab",
+   "label": "Off-beat stabs, held in breaks",
+   "what": "Short chord hits on every 8th between kicks in grooves and drops, one held chord through the breaks.",
+   "genres": [
+    "house",
+    "deep_house",
+    "tech_house",
+    "garage"
+   ],
+   "moods": [
+    "happy",
+    "warm",
+    "party"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "FL Keys and a scrape sample layered as one chord stab"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "..x...x...x...x.",
+     "drop": "..X...X...X...X.",
+     "break": "x---------------"
+    },
+    "voicing": "triad"
+   }
+  },
+  {
+   "id": "chords.pad_sidechained",
+   "label": "Held pad, pumping",
+   "what": "Whole-bar chords held under everything, ducked by the kick so they breathe in quarters. Seventh and add9 voicings keep a held chord interesting.",
+   "genres": [
+    "trance",
+    "melodic_techno",
+    "progressive_house",
+    "future_bass",
+    "dnb",
+    "afro_house"
+   ],
+   "moods": [
+    "dreamy",
+    "euphoric",
+    "melancholic",
+    "warm"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Energic Pads (MiniSynth x2), Pads 2 (Sytrus x2), filters automated over 130 to 260 beats"
+    },
+    {
+     "song": "with_you",
+     "where": "Synth Pad (Sytrus) five-note voicings"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "x---------------",
+     "drop": "x---------------",
+     "break": "x---------------",
+     "build": "x---------------"
+    },
+    "voicing": "seventh"
+   }
+  },
+  {
+   "id": "chords.gated_trance_lead",
+   "label": "Gated chord lead with the bass octave between",
+   "what": "The chord played in a 3-3-2 gate and the bass note an octave and two octaves down slotted between the hits (G4+D5, C3, C4, G4+D5 ...), stacked on eight synths with the filter velocity automated: the trance lead that is a chord and a rhythm at once.",
+   "genres": [
+    "trance",
+    "uplifting_trance",
+    "big_room",
+    "edm"
+   ],
+   "moods": [
+    "euphoric",
+    "epic",
+    "uplifting",
+    "anthemic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Main Lead 1 to #7 (MiniSynth x4, Sytrus x2, Harmor x2) and a vocal sample on the same notes: G4+D5 C3 C4 G4+D5 C3 C4 G4+D5 C3 C4 G4+D5 C3 G4+D5 C4 C3 G4+D5 C4"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "drop": "X..X..X..X.X..X.",
+     "groove": "x..x..x..x.x..x."
+    },
+    "voicing": "open",
+    "bass_between": true
+   }
+  },
+  {
+   "id": "chords.pluck_syncopated",
+   "label": "Syncopated chord pluck",
+   "what": "A short pluck playing the chord on 16ths that avoid the kick (3, 6, 11, 14), its decay automated longer in the drop.",
+   "genres": [
+    "tech_house",
+    "afro_house",
+    "house",
+    "future_house"
+   ],
+   "moods": [
+    "bouncy",
+    "playful",
+    "warm"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "Chord Pluck (Harmless), decay automated, Fruity Filter sweep"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "...x..x....x..x.",
+     "drop": "...X..X...X..X.x",
+     "break": "x---------------"
+    },
+    "voicing": "seventh"
+   }
+  },
+  {
+   "id": "chords.piano_comp",
+   "label": "Piano comping: root chord, then repeated tops",
+   "what": "The chord struck low on the downbeat, then its top note repeated in a syncopated figure (C3+Eb3+G3 . . C4 . . C4 . . C4 . C4): a piano or Rhodes that is part rhythm section.",
+   "genres": [
+    "soundtrack",
+    "pop",
+    "lofi",
+    "jazz",
+    "rnb",
+    "house"
+   ],
+   "moods": [
+    "playful",
+    "mysterious",
+    "warm",
+    "nostalgic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Stage Grand (DirectWave): C3+Eb3+G3 . . C4 . . C4 . . C4 . C4 C3+G3+Eb3 - C4 -"
+    },
+    {
+     "song": "right_night",
+     "where": "Rhodes MK 1"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "x..o..o..o.ox-o-",
+     "drop": "X..o..o..o.oX-o-",
+     "break": "x---------------"
+    },
+    "voicing": "seventh"
+   }
+  },
+  {
+   "id": "chords.staccato_bell_ostinato",
+   "label": "Staccato bell ostinato on one high note",
+   "what": "A keys sound repeating one high note in short 16ths in the middle of the bar (. . . . E6 E6 E6 E6 E6 . . .), with a low root under it now and then: a hook made of rhythm, not melody.",
+   "genres": [
+    "trap",
+    "drill",
+    "hiphop",
+    "pop"
+   ],
+   "moods": [
+    "dark",
+    "playful",
+    "cool",
+    "eerie"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "stroll_up",
+     "where": "FL Keys: . . . . E6 E6 E6 E6 E6 . . . ., B2+E6, E1"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "....ooooo.......",
+     "drop": [
+      "....ooooo.......",
+      "....ooxoo...x..."
+     ],
+     "break": "....ooooo......."
+    },
+    "voicing": "octaves",
+    "top_only": true
+   }
+  },
+  {
+   "id": "chords.harp_gliss",
+   "label": "Harp glissando into the downbeat",
+   "what": "A run up the scale in the last beat of the bar (C3+D3, E3 to A3, B3 to F4, G4 to B4 on 16ths) landing on the next chord: an orchestral lift that replaces a riser.",
+   "genres": [
+    "soundtrack",
+    "cinematic",
+    "pop",
+    "afrobeats"
+   ],
+   "moods": [
+    "playful",
+    "magical",
+    "romantic",
+    "mysterious"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Harp (FLEX General Midi Library): C3+D3 E3+F3+G3+A3 B3+C4+D4+E4+F4 G4+A4+B4"
+    },
+    {
+     "song": "shine",
+     "where": "Harp (FLEX)"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "............xxxx",
+     "break": "............xxxx"
+    },
+    "voicing": "scale_run"
+   },
+   "manual": "scale_run voicing plays the key's scale up through the last beat; the engine writes it as chord hits of two to four scale notes"
+  },
+  {
+   "id": "chords.chord_lead_poly",
+   "label": "Poly chord lead in 16ths",
+   "what": "A bright polyphonic synth playing the full chord in a busy 16th rhythm as the main hook (future house's Wavvyy synth): chords become the lead line.",
+   "genres": [
+    "future_house",
+    "bass_house",
+    "future_bass",
+    "edm"
+   ],
+   "moods": [
+    "energetic",
+    "bouncy",
+    "euphoric",
+    "party"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "Wavvyy Synth (Harmless), polyphony 6, 796 notes of a 16th"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "drop": "x.xx.x.xx.x.x.xx",
+     "groove": "x..x..x...x....."
+    },
+    "voicing": "add9"
+   }
+  },
+  {
+   "id": "chords.lofi_rhodes",
+   "label": "Lo-fi Rhodes: one voicing per bar, struck and let ring",
+   "what": "Wide seventh and ninth voicings (D3+C4+D4 under F4+A4) struck once and held, a melody note added late in the bar; detuned and filtered.",
+   "genres": [
+    "lofi",
+    "chillhop",
+    "jazz_hop",
+    "neo_soul",
+    "trip_hop"
+   ],
+   "moods": [
+    "nostalgic",
+    "calm",
+    "melancholic",
+    "warm"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "inner_days",
+     "where": "Piano (DirectWave): D3+C4+D4, F4+A4 held, C5 late (written in D minor; the project's master pitch, -400 cents, sounds it in Bb minor)"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "x-------------o-",
+     "drop": "x-------------o-",
+     "break": "x---------------"
+    },
+    "voicing": "seventh"
+   }
+  },
+  {
+   "id": "chords.brass_stabs",
+   "label": "Brass stabs on the off-beats",
+   "what": "Short brass (Sytrus brass, FLEX brass sections) hitting the chord on syncopated off-beats in the chorus, a long swell into the downbeat at the end of each phrase.",
+   "genres": [
+    "pop_dance",
+    "afrobeats",
+    "funk",
+    "nu_disco",
+    "big_room"
+   ],
+   "moods": [
+    "happy",
+    "confident",
+    "party",
+    "summer"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "Sytrus Brass, Brass Synth"
+    },
+    {
+     "song": "shine",
+     "where": "Brass Section 1 and 2 (FLEX)"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "drop": "..X..X.....X..x.",
+     "groove": "..x.....x......."
+    },
+    "voicing": "triad"
+   }
+  },
+  {
+   "id": "chords.minmaj_spy",
+   "label": "Minor chord with a major seventh, struck and held",
+   "what": "The spy-film chord: a minor triad with the major seventh on top (C4, C5+G4, Eb5+G5+B5), arpeggiated up and held over a chromatic guitar line.",
+   "genres": [
+    "soundtrack",
+    "spy",
+    "jazz",
+    "cinematic",
+    "trip_hop"
+   ],
+   "moods": [
+    "mysterious",
+    "tense",
+    "suspense",
+    "playful"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "Rhodes (DirectWave): C4 C5+G4 Eb5+G5+B5 held"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "xxx-------------",
+     "break": "xxx-------------"
+    },
+    "voicing": "minmaj"
+   }
+  },
+  {
+   "id": "chords.pad_and_spaced_stabs",
+   "label": "Held pad under spaced-out stabs",
+   "what": "Two chord parts. A pad holds each chord from where it starts to where the next one starts (re-struck every bar in builds), an octave under the stabs, through intros, verses, drops and breaks. Over it, short stabs come in small groups with whole bars of space between them: a touch in the verses, a push that fills up through the build, two or three hits and then air in the drops, none in the break. Neither part plays all the time.",
+   "how": "The person (2026-10-29): the synths follow the voice's chords, not persistent and not constant short stabs, a mixture: long chords that pad underneath and stabby sounds spaced out. Use with voiceharmony.section_loops for chords that follow the voice section by section.",
+   "genres": [
+    "pop_dance",
+    "house",
+    "future_house",
+    "progressive_house",
+    "nu_disco",
+    "deep_house"
+   ],
+   "moods": [
+    "warm",
+    "happy",
+    "euphoric",
+    "romantic",
+    "dreamy",
+    "bittersweet",
+    "playful"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Energic Pads (MiniSynth x2) holding the chords under the leads"
+    },
+    {
+     "song": "future_house",
+     "where": "FL Keys and a scrape sample layered as one chord stab, a few hits a bar"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "intro": "................",
+     "groove": [
+      "................",
+      "..........x.....",
+      "................",
+      "......x...x....."
+     ],
+     "build": [
+      "..x.......x.....",
+      "..x...x...x.....",
+      "..x...x...x...x.",
+      "x.x.x.x.x.x.xxxx"
+     ],
+     "drop": [
+      "..X..X..........",
+      "..........X.....",
+      "..X..X......X...",
+      "................"
+     ],
+     "break": "................",
+     "outro": [
+      "..x.............",
+      "................"
+     ]
+    },
+    "voicing": "triad",
+    "pad": {
+     "intro": "chord",
+     "groove": "chord",
+     "build": "bar",
+     "drop": "chord",
+     "break": "chord",
+     "outro": "chord",
+     "voicing": "add9",
+     "base": 48,
+     "max_bars": 4,
+     "velocity": {
+      "intro": 80,
+      "groove": 84,
+      "build": 92,
+      "drop": 100,
+      "break": 88,
+      "outro": 80
+     },
+     "sound": "sound.flex_simmering_pad"
+    }
+   }
+  },
+  {
+   "id": "chords.tresillo_332_pluck",
+   "label": "3-3-2 pluck chords leaning across the beat",
+   "what": "Short plucked chords in 3+3+2 groups of 16ths twice a bar (steps 1, 4, 7, 9, 12, 15), accented on each group's start: four of the six hits land off the quarter notes, so the part leans forward like an acoustic guitar strum. Verses and drops; a single held chord in the break.",
+   "how": "The person's Red Lights breakdown: an acoustic guitar pluck, X..X..X.X..X..X. with velocities 110 95 85 105 90 85.",
+   "genres": [
+    "progressive_house",
+    "pop_dance",
+    "folktronica",
+    "tropical_house",
+    "afrobeats",
+    "nu_disco"
+   ],
+   "moods": [
+    "happy",
+    "uplifting",
+    "summer",
+    "warm",
+    "playful"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "red_lights",
+     "where": "the person's breakdown: the verse guitar pluck on steps 1, 4, 7, 9, 12, 15"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "X..x..x.X..x..x.",
+     "drop": "X..X..x.X..X..x.",
+     "build": "X..x..x.X..x..x.",
+     "break": "x---------------"
+    },
+    "voicing": "triad"
+   }
+  },
+  {
+   "id": "chords.voice_led_pad",
+   "label": "Voice-led held pad, the bass doing the leaping",
+   "what": "Only a held pad, each chord in the inversion nearest the last one: shared notes stay put and the others move by a step, so the upper voices barely move while the bass line leaps underneath and tells the story. No stabs: pair it with an arp or a lead for rhythm.",
+   "how": "The person's Red Lights breakdown: the upper three voices move four semitones in four bars (Bb4 held over three chords) while the bass moves G Eb Bb F. stylepack.lead_voices does the voice leading.",
+   "genres": [
+    "progressive_house",
+    "trance",
+    "pop_dance",
+    "melodic_house",
+    "future_bass",
+    "deep_house"
+   ],
+   "moods": [
+    "dreamy",
+    "euphoric",
+    "bittersweet",
+    "warm",
+    "romantic",
+    "melancholic"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "red_lights",
+     "where": "the person's breakdown: Gm D5 Bb4 G4, Eb Eb5 Bb4 G4, Bb D5 Bb4 F4, F C5 A4 F4"
+    }
+   ],
+   "engine": {
+    "pattern": {
+     "groove": "................",
+     "drop": "................",
+     "build": "................",
+     "break": "................"
+    },
+    "voicing": "triad",
+    "pad": {
+     "intro": "chord",
+     "groove": "chord",
+     "build": "chord",
+     "drop": "chord",
+     "break": "chord",
+     "outro": "chord",
+     "voicing": "triad",
+     "base": 55,
+     "lead": true,
+     "max_bars": 4,
+     "velocity": {
+      "intro": 80,
+      "groove": 86,
+      "build": 92,
+      "drop": 100,
+      "break": 90,
+      "outro": 80
+     },
+     "sound": "sound.flex_simmering_pad"
+    }
+   }
+  }
+ ]
+}

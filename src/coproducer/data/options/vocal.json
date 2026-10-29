@@ -1,0 +1,329 @@
+{
+ "category": "vocal",
+ "what": "Vocal production architectures and chop behaviour. chops is read by the chop games (games: the hook and lines answering in builds and tails; sparse: hook teasers only; stutter: the roll into the last drop only; none). The chain and send layouts are applied with apply_fx_chain, create_send_route and add_automation_clip after the build. The person's rule stands in every option: chops are whole phrases at their own pitch.",
+ "options": [
+  {
+   "id": "vocal.games_classic",
+   "label": "Chop games: hook teasers, answers, tail games, stutter roll",
+   "what": "The current default: the hook teased in the intro, a line and the hook traded in builds, 8 bars of games after each chorus, a stutter roll into the last drop.",
+   "genres": [
+    "house",
+    "tech_house",
+    "techno",
+    "edm",
+    "dubstep",
+    "dnb"
+   ],
+   "moods": [
+    "energetic",
+    "party"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "Laurie Webb vocal chops as the drop's lead"
+    }
+   ],
+   "engine": {
+    "chops": "games"
+   }
+  },
+  {
+   "id": "vocal.sparse_hook",
+   "label": "Sparse: the hook once in the intro, nothing between choruses",
+   "what": "The singer is the record: whole verses and choruses, the hook chop only as an intro teaser and in the outro. No chop games over the instrumental parts, which keep their own melody.",
+   "genres": [
+    "pop_dance",
+    "afrobeats",
+    "rnb",
+    "lofi",
+    "trip_hop",
+    "reggaeton",
+    "liquid_dnb"
+   ],
+   "moods": [
+    "romantic",
+    "warm",
+    "soulful",
+    "melancholic",
+    "sensual"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "lead vocal over the loop, no chops"
+    },
+    {
+     "song": "madonna",
+     "where": "two vocal channels, dub sends doing the work"
+    }
+   ],
+   "engine": {
+    "chops": "sparse"
+   }
+  },
+  {
+   "id": "vocal.stack_doubles_harmonies",
+   "label": "Lead, doubles left and right, harmonies, texture bus",
+   "what": "The vocal as an arrangement: the lead centre, two doubles panned, an ambient double, a distorted 'robot' double, high, mid and low harmonies, hums and 'oh's, ad-libs, each family on its bus (Lead, Doubles, Harmonies, Vocal Texture, Adlib) and one shared reverb.",
+   "genres": [
+    "liquid_dnb",
+    "pop",
+    "pop_dance",
+    "rnb",
+    "future_bass"
+   ],
+   "moods": [
+    "soulful",
+    "emotional",
+    "euphoric",
+    "warm"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "time",
+     "where": "Lead, Doubles L/R, Ambient double, Robot double (Blood Overdrive), High/Mid/Low harmonies, hums, ad-libs; buses Lead, Doubles, Harmonies, Vocal Texture, Adlib; LuxeVerb send"
+    }
+   ],
+   "engine": {
+    "chops": "sparse",
+    "doubles": true
+   },
+   "manual": "Doubles from the record's own double track when the stems have one; otherwise a Pitcher harmony a third and a fifth up at -12 dB, panned 60 % left and right."
+  },
+  {
+   "id": "vocal.reggaeton_stack",
+   "label": "Reggaeton stack: Main, Duo, Trio, Low, High, Far",
+   "what": "One lead recorded into seven inserts with their own jobs: Main (dry, forward), Duo and Trio (thickening doubles), Low and High (Pitcher harmonies an octave and a third away), Separated (panned), Far (a delay-and-reverb only send), plus filtered radio ad-libs on their own delay.",
+   "genres": [
+    "reggaeton",
+    "latin",
+    "dancehall",
+    "pop"
+   ],
+   "moods": [
+    "sexy",
+    "party",
+    "confident"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "inserts Main, Duo, Trio, Low, Separated, High, Far with Pitcher and Pitch Shifter formant, vocal delay sends"
+    }
+   ],
+   "engine": {
+    "chops": "sparse",
+    "doubles": true
+   }
+  },
+  {
+   "id": "vocal.techno_pitched_gated",
+   "label": "Melodic techno vocal: pitched, widened, gated reverb, it ducks the leads",
+   "what": "The vocal tuned (Pitcher), formant moved by automation, widened on two parallel buses (Spreader plus Hyper Chorus), its reverb gated by Gross Beat and ducked under the next line; the vocal itself ducks the lead synths by a Peak Controller.",
+   "genres": [
+    "melodic_techno",
+    "progressive_house",
+    "trance",
+    "afro_house"
+   ],
+   "moods": [
+    "dreamy",
+    "hypnotic",
+    "melancholic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "Pitch Shifter > EQ > Pitcher > Maximus > Peak Controller; Stereo Vocal and Vocal Widness buses; Vocal Reverb with Gross Beat Gate; Reverb Shimmer"
+    }
+   ],
+   "engine": {
+    "chops": "sparse"
+   }
+  },
+  {
+   "id": "vocal.drill_adlib_drive",
+   "label": "Drill: lead bus, driven ad-lib bus, hook stabs, quarter and half delays",
+   "what": "The lead vocal clean and compressed hard on its bus, ad-libs on a bus that adds Blood Overdrive, the hook doubled as short 'stabs', two tempo delays (a quarter for verses, a half for the hook) and one reverb; pan offset thrown left and right on single words.",
+   "genres": [
+    "uk_drill",
+    "drill",
+    "trap",
+    "grime",
+    "hiphop"
+   ],
+   "moods": [
+    "aggressive",
+    "confident",
+    "dark"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "Lead Vocal Bus, Lead Vocal Adlib Bus (Blood Overdrive), Hook Stab Bus, REVERB, 1/4 DELAY, 1/2 DELAY; pan offset clips of 1.25 to 2 beats"
+    }
+   ],
+   "engine": {
+    "chops": "stutter"
+   }
+  },
+  {
+   "id": "vocal.dub_sends",
+   "label": "Dub sends: delay and reverb rides, breath dips",
+   "what": "The vocal stays dry and close; its delay (a delay bank into a reverb) and reverb sends are ridden by automation phrase by phrase, and the breaths are dipped by a volume clip. The space moves, the voice does not.",
+   "genres": [
+    "trip_hop",
+    "lounge",
+    "dub",
+    "lofi",
+    "downtempo"
+   ],
+   "moods": [
+    "sensual",
+    "moody",
+    "mysterious",
+    "laid_back"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "Vocal Delay (Delay Bank > Reeverb 2) and Vocal Reverb sends automated over 228 beats, Dip Breath clips of 97 points"
+    }
+   ],
+   "engine": {
+    "chops": "sparse"
+   }
+  },
+  {
+   "id": "vocal.vocoder_texture",
+   "label": "Vocoder or robot texture under the lead",
+   "what": "A vocoded copy of the vocal (Vocodex, or FL Keys through Fruity Vocoder) sent in low under the lead in the choruses: harmony and texture from the same words.",
+   "genres": [
+    "future_bass",
+    "liquid_dnb",
+    "electro",
+    "nu_disco",
+    "pop"
+   ],
+   "moods": [
+    "dreamy",
+    "euphoric",
+    "nostalgic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "Vocodex on a vocal send"
+    },
+    {
+     "song": "song_for_you",
+     "where": "Crusty Piano (FL Keys) through Fruity Vocoder"
+    }
+   ],
+   "engine": {
+    "chops": "games"
+   }
+  },
+  {
+   "id": "vocal.chop_instrument",
+   "label": "Vocal chops as the drop's instrument (ask first)",
+   "what": "Short sung syllables played on a sampler as a melodic hook in the drop, the way future house and big room use a vocal sample pack. Ask the person first: their rule keeps chops at their own pitch and as whole phrases, so this is for a separate one-shot sample or a record whose syllables are already sung on the hook's notes.",
+   "genres": [
+    "future_house",
+    "big_room",
+    "edm",
+    "future_bass"
+   ],
+   "moods": [
+    "euphoric",
+    "party",
+    "playful"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "Laurie Webb Come On A / Baby / Feel It / Ahh as a Vocal Chop group"
+    },
+    {
+     "song": "im_awake",
+     "where": "Vocal cut chops pitched"
+    }
+   ],
+   "engine": {
+    "chops": "games"
+   },
+   "ask_first": true
+  },
+  {
+   "id": "vocal.whole_in_order",
+   "label": "The whole vocal in order, its own hook as the only chop",
+   "what": "Every sung line of the record kept whole and in its order, stretched to the remix tempo with its pitch and formants kept (FL: e3 Mono or Stretch pro with F.Shift at 0); no line is pitched, filtered, stuttered or re-cut. The only chops are the record's own hook (its vocal-chop motif), teased in the intro and carrying the drops.",
+   "genres": [
+    "house",
+    "tech_house",
+    "pop_dance",
+    "future_house",
+    "deep_house",
+    "nu_disco",
+    "edm"
+   ],
+   "moods": [
+    "romantic",
+    "happy",
+    "bittersweet",
+    "party",
+    "uplifting"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "sorry_freejak",
+     "where": "all sung lines in order, lines start 0.76 to 0.80 of the original spacing (1/1.28); median vocal pitch MIDI 63.1 in both, formants within 3 %"
+    }
+   ],
+   "engine": {
+    "chops": "sparse"
+   }
+  },
+  {
+   "id": "vocal.dry_verse_wide_chorus",
+   "label": "A dry, close verse voice against a wide, washed chorus voice",
+   "what": "Two vocal spaces that never fight: the verse (a rap or a low spoken line) dry, mono and up front in the low mids; the chorus voice high-passed at about 220 Hz, through a chorus effect and a long reverb (about 25 ms pre-delay, 2.1 s decay) so it spreads to the edges. Hook teasers only in the chops.",
+   "how": "Another Night's duality: a male rap verse (O-Jay) and a sung female chorus (Karin Kasar), the mix treatment as the person's breakdown gives it.",
+   "genres": [
+    "eurodance",
+    "pop_dance",
+    "hip_house",
+    "house",
+    "big_room"
+   ],
+   "moods": [
+    "energetic",
+    "nostalgic",
+    "party",
+    "confident"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "another_night",
+     "where": "rap verse by Olaf Jeglitza, sung chorus by Karin Kasar (Wikipedia); verse dry and mono, chorus HP 220 Hz, chorus and a 2.1 s reverb with 25 ms pre-delay (the breakdown)"
+    }
+   ],
+   "engine": {
+    "chops": "sparse"
+   },
+   "manual": "On the chorus vocal clips' insert (or a second vocal channel for the choruses): apply_fx_chain with a high-pass near 220 Hz, Fruity Chorus about 35 % rate and 40 % depth, a reverb send with 25 ms pre-delay and 2.1 s decay; the verse insert stays dry with no send."
+  }
+ ]
+}

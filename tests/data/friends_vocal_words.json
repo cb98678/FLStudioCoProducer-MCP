@@ -1,0 +1,1536 @@
+{
+ "text": "Blame it all on my roots I showed up in boots And ruined your black tie fair The last one to know The last one to show I was the last one you thought you'd see there And I saw the surprise and the fear in his eyes And I took his glass of champagne I toasted you, said honey, we may be through But you'll never hear me complain Cause I got friends in the low places Where the whiskey grounds and the beer Chases my blues away I'll be okay Well, I'm not big on social graces Think I'll slip on down to the oasis Oh, I've got there before Everything's all right. I'll just say goodnight and I'll show myself to the door. Hey, I didn't mean to cause a big scene. Just give me an hour and then you'll allow me as high as that ivory tower That you're living in Cause I got friends in low places Where the whiskey drowns and the beer chases my blues away I'll be okay We'll see you next time. beer chases my blues away I'll be okay Well I'm not big on social grace, you think I'll slip on down to the oasis, oh I've got friends in all the places. I've got friends in all the places where the whiskey grounds and the beer chases my moods away. And I'll be okay. Yeah, I'm not big on social graces Think comes, slip on down to the oasis Yeah, I'm not big on social graces. Think I'll slip on down to the oasis. Oh, I've got friends in all places. Cause I've got friends in all places. Where the whiskey drowns and the beer chases my blues away. And I'll be okay. Yeah, I'm not big on social places. Think I'll step on down.",
+ "words": [
+  {
+   "word": "Blame",
+   "start": 0.0,
+   "end": 9.46
+  },
+  {
+   "word": "it",
+   "start": 9.46,
+   "end": 9.56
+  },
+  {
+   "word": "all",
+   "start": 9.56,
+   "end": 9.72
+  },
+  {
+   "word": "on",
+   "start": 9.72,
+   "end": 10.0
+  },
+  {
+   "word": "my",
+   "start": 10.0,
+   "end": 10.32
+  },
+  {
+   "word": "roots",
+   "start": 10.32,
+   "end": 10.8
+  },
+  {
+   "word": "I",
+   "start": 11.1,
+   "end": 11.54
+  },
+  {
+   "word": "showed",
+   "start": 11.54,
+   "end": 11.92
+  },
+  {
+   "word": "up",
+   "start": 11.92,
+   "end": 12.3
+  },
+  {
+   "word": "in",
+   "start": 12.3,
+   "end": 12.48
+  },
+  {
+   "word": "boots",
+   "start": 12.48,
+   "end": 13.04
+  },
+  {
+   "word": "And",
+   "start": 13.44,
+   "end": 13.84
+  },
+  {
+   "word": "ruined",
+   "start": 13.84,
+   "end": 14.18
+  },
+  {
+   "word": "your",
+   "start": 14.18,
+   "end": 14.7
+  },
+  {
+   "word": "black",
+   "start": 14.7,
+   "end": 15.02
+  },
+  {
+   "word": "tie",
+   "start": 15.02,
+   "end": 15.5
+  },
+  {
+   "word": "fair",
+   "start": 15.5,
+   "end": 16.1
+  },
+  {
+   "word": "The",
+   "start": 17.2,
+   "end": 18.26
+  },
+  {
+   "word": "last",
+   "start": 18.26,
+   "end": 18.56
+  },
+  {
+   "word": "one",
+   "start": 18.56,
+   "end": 18.9
+  },
+  {
+   "word": "to",
+   "start": 18.9,
+   "end": 19.12
+  },
+  {
+   "word": "know",
+   "start": 19.12,
+   "end": 19.48
+  },
+  {
+   "word": "The",
+   "start": 19.66,
+   "end": 20.2
+  },
+  {
+   "word": "last",
+   "start": 20.2,
+   "end": 20.66
+  },
+  {
+   "word": "one",
+   "start": 20.66,
+   "end": 21.06
+  },
+  {
+   "word": "to",
+   "start": 21.06,
+   "end": 21.26
+  },
+  {
+   "word": "show",
+   "start": 21.26,
+   "end": 21.6
+  },
+  {
+   "word": "I",
+   "start": 21.76,
+   "end": 22.04
+  },
+  {
+   "word": "was",
+   "start": 22.04,
+   "end": 22.42
+  },
+  {
+   "word": "the",
+   "start": 22.42,
+   "end": 22.64
+  },
+  {
+   "word": "last",
+   "start": 22.64,
+   "end": 22.96
+  },
+  {
+   "word": "one",
+   "start": 22.96,
+   "end": 23.34
+  },
+  {
+   "word": "you",
+   "start": 23.34,
+   "end": 23.7
+  },
+  {
+   "word": "thought",
+   "start": 23.7,
+   "end": 24.06
+  },
+  {
+   "word": "you'd",
+   "start": 24.06,
+   "end": 24.6
+  },
+  {
+   "word": "see",
+   "start": 24.6,
+   "end": 24.94
+  },
+  {
+   "word": "there",
+   "start": 24.94,
+   "end": 25.24
+  },
+  {
+   "word": "And",
+   "start": 25.66,
+   "end": 27.02
+  },
+  {
+   "word": "I",
+   "start": 27.02,
+   "end": 27.2
+  },
+  {
+   "word": "saw",
+   "start": 27.2,
+   "end": 27.42
+  },
+  {
+   "word": "the",
+   "start": 27.42,
+   "end": 27.66
+  },
+  {
+   "word": "surprise",
+   "start": 27.66,
+   "end": 28.32
+  },
+  {
+   "word": "and",
+   "start": 28.32,
+   "end": 29.28
+  },
+  {
+   "word": "the",
+   "start": 29.28,
+   "end": 29.38
+  },
+  {
+   "word": "fear",
+   "start": 29.38,
+   "end": 29.68
+  },
+  {
+   "word": "in",
+   "start": 29.68,
+   "end": 29.92
+  },
+  {
+   "word": "his",
+   "start": 29.92,
+   "end": 30.22
+  },
+  {
+   "word": "eyes",
+   "start": 30.22,
+   "end": 30.84
+  },
+  {
+   "word": "And",
+   "start": 31.18,
+   "end": 31.56
+  },
+  {
+   "word": "I",
+   "start": 31.56,
+   "end": 31.76
+  },
+  {
+   "word": "took",
+   "start": 31.76,
+   "end": 32.14
+  },
+  {
+   "word": "his",
+   "start": 32.14,
+   "end": 32.44
+  },
+  {
+   "word": "glass",
+   "start": 32.44,
+   "end": 32.86
+  },
+  {
+   "word": "of",
+   "start": 32.86,
+   "end": 33.22
+  },
+  {
+   "word": "champagne",
+   "start": 33.22,
+   "end": 33.72
+  },
+  {
+   "word": "I",
+   "start": 35.76,
+   "end": 36.08
+  },
+  {
+   "word": "toasted",
+   "start": 36.08,
+   "end": 36.7
+  },
+  {
+   "word": "you,",
+   "start": 36.7,
+   "end": 37.26
+  },
+  {
+   "word": "said",
+   "start": 37.26,
+   "end": 37.58
+  },
+  {
+   "word": "honey,",
+   "start": 37.58,
+   "end": 38.2
+  },
+  {
+   "word": "we",
+   "start": 38.2,
+   "end": 38.4
+  },
+  {
+   "word": "may",
+   "start": 38.4,
+   "end": 38.72
+  },
+  {
+   "word": "be",
+   "start": 38.72,
+   "end": 38.98
+  },
+  {
+   "word": "through",
+   "start": 38.98,
+   "end": 39.36
+  },
+  {
+   "word": "But",
+   "start": 39.94,
+   "end": 40.28
+  },
+  {
+   "word": "you'll",
+   "start": 40.28,
+   "end": 40.72
+  },
+  {
+   "word": "never",
+   "start": 40.72,
+   "end": 41.04
+  },
+  {
+   "word": "hear",
+   "start": 41.04,
+   "end": 41.58
+  },
+  {
+   "word": "me",
+   "start": 41.58,
+   "end": 41.98
+  },
+  {
+   "word": "complain",
+   "start": 41.98,
+   "end": 42.56
+  },
+  {
+   "word": "Cause",
+   "start": 43.56,
+   "end": 44.68
+  },
+  {
+   "word": "I",
+   "start": 44.68,
+   "end": 45.08
+  },
+  {
+   "word": "got",
+   "start": 45.08,
+   "end": 45.38
+  },
+  {
+   "word": "friends",
+   "start": 45.38,
+   "end": 45.94
+  },
+  {
+   "word": "in",
+   "start": 45.94,
+   "end": 46.9
+  },
+  {
+   "word": "the",
+   "start": 46.9,
+   "end": 47.02
+  },
+  {
+   "word": "low",
+   "start": 47.02,
+   "end": 47.44
+  },
+  {
+   "word": "places",
+   "start": 47.44,
+   "end": 48.54
+  },
+  {
+   "word": "Where",
+   "start": 48.62,
+   "end": 48.94
+  },
+  {
+   "word": "the",
+   "start": 48.94,
+   "end": 49.2
+  },
+  {
+   "word": "whiskey",
+   "start": 49.2,
+   "end": 49.68
+  },
+  {
+   "word": "grounds",
+   "start": 49.68,
+   "end": 50.38
+  },
+  {
+   "word": "and",
+   "start": 50.38,
+   "end": 51.14
+  },
+  {
+   "word": "the",
+   "start": 51.14,
+   "end": 51.4
+  },
+  {
+   "word": "beer",
+   "start": 51.4,
+   "end": 51.86
+  },
+  {
+   "word": "Chases",
+   "start": 52.04,
+   "end": 53.02
+  },
+  {
+   "word": "my",
+   "start": 53.02,
+   "end": 53.36
+  },
+  {
+   "word": "blues",
+   "start": 53.36,
+   "end": 53.82
+  },
+  {
+   "word": "away",
+   "start": 53.82,
+   "end": 54.66
+  },
+  {
+   "word": "I'll",
+   "start": 57.54,
+   "end": 58.0
+  },
+  {
+   "word": "be",
+   "start": 58.0,
+   "end": 58.32
+  },
+  {
+   "word": "okay",
+   "start": 58.32,
+   "end": 59.06
+  },
+  {
+   "word": "Well,",
+   "start": 61.44,
+   "end": 62.1
+  },
+  {
+   "word": "I'm",
+   "start": 62.1,
+   "end": 62.86
+  },
+  {
+   "word": "not",
+   "start": 62.86,
+   "end": 63.2
+  },
+  {
+   "word": "big",
+   "start": 63.2,
+   "end": 63.74
+  },
+  {
+   "word": "on",
+   "start": 63.74,
+   "end": 64.58
+  },
+  {
+   "word": "social",
+   "start": 64.58,
+   "end": 65.02
+  },
+  {
+   "word": "graces",
+   "start": 65.02,
+   "end": 66.26
+  },
+  {
+   "word": "Think",
+   "start": 66.3,
+   "end": 66.68
+  },
+  {
+   "word": "I'll",
+   "start": 66.68,
+   "end": 66.96
+  },
+  {
+   "word": "slip",
+   "start": 66.96,
+   "end": 67.22
+  },
+  {
+   "word": "on",
+   "start": 67.22,
+   "end": 67.68
+  },
+  {
+   "word": "down",
+   "start": 67.68,
+   "end": 68.18
+  },
+  {
+   "word": "to",
+   "start": 68.18,
+   "end": 68.78
+  },
+  {
+   "word": "the",
+   "start": 68.78,
+   "end": 69.06
+  },
+  {
+   "word": "oasis",
+   "start": 69.06,
+   "end": 70.64
+  },
+  {
+   "word": "Oh,",
+   "start": 70.68,
+   "end": 71.3
+  },
+  {
+   "word": "I've",
+   "start": 71.3,
+   "end": 71.76
+  },
+  {
+   "word": "got",
+   "start": 71.76,
+   "end": 72.0
+  },
+  {
+   "word": "there",
+   "start": 103.8,
+   "end": 104.18
+  },
+  {
+   "word": "before",
+   "start": 104.18,
+   "end": 104.86
+  },
+  {
+   "word": "Everything's",
+   "start": 105.22,
+   "end": 107.22
+  },
+  {
+   "word": "all",
+   "start": 107.22,
+   "end": 107.36
+  },
+  {
+   "word": "right.",
+   "start": 107.36,
+   "end": 108.64
+  },
+  {
+   "word": "I'll",
+   "start": 108.64,
+   "end": 108.98
+  },
+  {
+   "word": "just",
+   "start": 108.98,
+   "end": 109.18
+  },
+  {
+   "word": "say",
+   "start": 109.18,
+   "end": 109.52
+  },
+  {
+   "word": "goodnight",
+   "start": 109.52,
+   "end": 110.16
+  },
+  {
+   "word": "and",
+   "start": 110.16,
+   "end": 110.64
+  },
+  {
+   "word": "I'll",
+   "start": 110.64,
+   "end": 110.94
+  },
+  {
+   "word": "show",
+   "start": 110.94,
+   "end": 111.2
+  },
+  {
+   "word": "myself",
+   "start": 111.2,
+   "end": 111.98
+  },
+  {
+   "word": "to",
+   "start": 111.98,
+   "end": 112.76
+  },
+  {
+   "word": "the",
+   "start": 112.76,
+   "end": 113.12
+  },
+  {
+   "word": "door.",
+   "start": 113.12,
+   "end": 113.52
+  },
+  {
+   "word": "Hey,",
+   "start": 115.26,
+   "end": 115.7
+  },
+  {
+   "word": "I",
+   "start": 115.7,
+   "end": 115.9
+  },
+  {
+   "word": "didn't",
+   "start": 115.9,
+   "end": 116.42
+  },
+  {
+   "word": "mean",
+   "start": 116.42,
+   "end": 116.76
+  },
+  {
+   "word": "to",
+   "start": 116.76,
+   "end": 117.62
+  },
+  {
+   "word": "cause",
+   "start": 117.62,
+   "end": 118.22
+  },
+  {
+   "word": "a",
+   "start": 118.22,
+   "end": 118.4
+  },
+  {
+   "word": "big",
+   "start": 118.4,
+   "end": 118.6
+  },
+  {
+   "word": "scene.",
+   "start": 118.6,
+   "end": 119.36
+  },
+  {
+   "word": "Just",
+   "start": 119.54,
+   "end": 119.94
+  },
+  {
+   "word": "give",
+   "start": 119.94,
+   "end": 120.3
+  },
+  {
+   "word": "me",
+   "start": 120.3,
+   "end": 120.76
+  },
+  {
+   "word": "an",
+   "start": 120.76,
+   "end": 121.14
+  },
+  {
+   "word": "hour",
+   "start": 121.14,
+   "end": 121.72
+  },
+  {
+   "word": "and",
+   "start": 121.72,
+   "end": 122.2
+  },
+  {
+   "word": "then",
+   "start": 122.2,
+   "end": 122.62
+  },
+  {
+   "word": "you'll",
+   "start": 122.62,
+   "end": 124.52
+  },
+  {
+   "word": "allow",
+   "start": 124.52,
+   "end": 124.8
+  },
+  {
+   "word": "me",
+   "start": 124.8,
+   "end": 125.02
+  },
+  {
+   "word": "as",
+   "start": 125.02,
+   "end": 125.36
+  },
+  {
+   "word": "high",
+   "start": 125.36,
+   "end": 125.78
+  },
+  {
+   "word": "as",
+   "start": 125.78,
+   "end": 126.22
+  },
+  {
+   "word": "that",
+   "start": 126.22,
+   "end": 126.48
+  },
+  {
+   "word": "ivory",
+   "start": 126.48,
+   "end": 127.2
+  },
+  {
+   "word": "tower",
+   "start": 127.2,
+   "end": 127.8
+  },
+  {
+   "word": "That",
+   "start": 129.02,
+   "end": 129.9
+  },
+  {
+   "word": "you're",
+   "start": 129.9,
+   "end": 130.3
+  },
+  {
+   "word": "living",
+   "start": 130.3,
+   "end": 130.7
+  },
+  {
+   "word": "in",
+   "start": 130.7,
+   "end": 131.64
+  },
+  {
+   "word": "Cause",
+   "start": 132.92,
+   "end": 133.2
+  },
+  {
+   "word": "I",
+   "start": 133.2,
+   "end": 133.56
+  },
+  {
+   "word": "got",
+   "start": 133.56,
+   "end": 133.82
+  },
+  {
+   "word": "friends",
+   "start": 133.82,
+   "end": 134.5
+  },
+  {
+   "word": "in",
+   "start": 134.5,
+   "end": 135.34
+  },
+  {
+   "word": "low",
+   "start": 135.34,
+   "end": 135.74
+  },
+  {
+   "word": "places",
+   "start": 135.74,
+   "end": 137.02
+  },
+  {
+   "word": "Where",
+   "start": 137.14,
+   "end": 137.42
+  },
+  {
+   "word": "the",
+   "start": 137.42,
+   "end": 137.68
+  },
+  {
+   "word": "whiskey",
+   "start": 137.68,
+   "end": 138.16
+  },
+  {
+   "word": "drowns",
+   "start": 138.16,
+   "end": 139.56
+  },
+  {
+   "word": "and",
+   "start": 139.56,
+   "end": 139.6
+  },
+  {
+   "word": "the",
+   "start": 139.6,
+   "end": 139.88
+  },
+  {
+   "word": "beer",
+   "start": 139.88,
+   "end": 140.36
+  },
+  {
+   "word": "chases",
+   "start": 140.36,
+   "end": 141.52
+  },
+  {
+   "word": "my",
+   "start": 141.52,
+   "end": 141.84
+  },
+  {
+   "word": "blues",
+   "start": 141.84,
+   "end": 142.3
+  },
+  {
+   "word": "away",
+   "start": 142.3,
+   "end": 143.14
+  },
+  {
+   "word": "I'll",
+   "start": 145.92,
+   "end": 146.5
+  },
+  {
+   "word": "be",
+   "start": 146.5,
+   "end": 146.8
+  },
+  {
+   "word": "okay",
+   "start": 146.8,
+   "end": 147.54
+  },
+  {
+   "word": "We'll",
+   "start": 147.84,
+   "end": 149.98
+  },
+  {
+   "word": "see",
+   "start": 149.98,
+   "end": 149.98
+  },
+  {
+   "word": "you",
+   "start": 149.98,
+   "end": 149.98
+  },
+  {
+   "word": "next",
+   "start": 149.98,
+   "end": 149.98
+  },
+  {
+   "word": "time.",
+   "start": 149.98,
+   "end": 149.98
+  },
+  {
+   "word": "beer",
+   "start": 140.0,
+   "end": 140.36
+  },
+  {
+   "word": "chases",
+   "start": 140.36,
+   "end": 141.52
+  },
+  {
+   "word": "my",
+   "start": 141.52,
+   "end": 141.86
+  },
+  {
+   "word": "blues",
+   "start": 141.96,
+   "end": 142.32
+  },
+  {
+   "word": "away",
+   "start": 142.32,
+   "end": 143.08
+  },
+  {
+   "word": "I'll",
+   "start": 143.66,
+   "end": 146.5
+  },
+  {
+   "word": "be",
+   "start": 146.5,
+   "end": 146.82
+  },
+  {
+   "word": "okay",
+   "start": 146.82,
+   "end": 147.5
+  },
+  {
+   "word": "Well",
+   "start": 149.9,
+   "end": 150.52
+  },
+  {
+   "word": "I'm",
+   "start": 150.52,
+   "end": 151.3
+  },
+  {
+   "word": "not",
+   "start": 151.3,
+   "end": 151.58
+  },
+  {
+   "word": "big",
+   "start": 151.8,
+   "end": 152.18
+  },
+  {
+   "word": "on",
+   "start": 152.18,
+   "end": 153.06
+  },
+  {
+   "word": "social",
+   "start": 153.06,
+   "end": 153.76
+  },
+  {
+   "word": "grace,",
+   "start": 154.06,
+   "end": 154.52
+  },
+  {
+   "word": "you",
+   "start": 154.52,
+   "end": 154.86
+  },
+  {
+   "word": "think",
+   "start": 154.86,
+   "end": 155.14
+  },
+  {
+   "word": "I'll",
+   "start": 155.14,
+   "end": 155.46
+  },
+  {
+   "word": "slip",
+   "start": 155.46,
+   "end": 155.7
+  },
+  {
+   "word": "on",
+   "start": 155.8,
+   "end": 156.1
+  },
+  {
+   "word": "down",
+   "start": 156.1,
+   "end": 156.62
+  },
+  {
+   "word": "to",
+   "start": 156.62,
+   "end": 157.28
+  },
+  {
+   "word": "the",
+   "start": 157.28,
+   "end": 157.66
+  },
+  {
+   "word": "oasis,",
+   "start": 157.72,
+   "end": 159.14
+  },
+  {
+   "word": "oh",
+   "start": 159.14,
+   "end": 159.58
+  },
+  {
+   "word": "I've",
+   "start": 159.84,
+   "end": 160.24
+  },
+  {
+   "word": "got",
+   "start": 160.24,
+   "end": 160.46
+  },
+  {
+   "word": "friends",
+   "start": 160.5,
+   "end": 161.48
+  },
+  {
+   "word": "in",
+   "start": 161.48,
+   "end": 163.12
+  },
+  {
+   "word": "all",
+   "start": 163.12,
+   "end": 163.34
+  },
+  {
+   "word": "the",
+   "start": 163.34,
+   "end": 163.98
+  },
+  {
+   "word": "places.",
+   "start": 163.98,
+   "end": 164.7
+  },
+  {
+   "word": "I've",
+   "start": 167.34,
+   "end": 167.38
+  },
+  {
+   "word": "got",
+   "start": 167.38,
+   "end": 169.14
+  },
+  {
+   "word": "friends",
+   "start": 169.14,
+   "end": 169.8
+  },
+  {
+   "word": "in",
+   "start": 169.8,
+   "end": 170.82
+  },
+  {
+   "word": "all",
+   "start": 170.82,
+   "end": 171.2
+  },
+  {
+   "word": "the",
+   "start": 171.2,
+   "end": 171.64
+  },
+  {
+   "word": "places",
+   "start": 171.64,
+   "end": 172.42
+  },
+  {
+   "word": "where",
+   "start": 172.42,
+   "end": 172.82
+  },
+  {
+   "word": "the",
+   "start": 172.82,
+   "end": 173.08
+  },
+  {
+   "word": "whiskey",
+   "start": 173.08,
+   "end": 173.56
+  },
+  {
+   "word": "grounds",
+   "start": 173.56,
+   "end": 174.24
+  },
+  {
+   "word": "and",
+   "start": 174.24,
+   "end": 175.0
+  },
+  {
+   "word": "the",
+   "start": 175.0,
+   "end": 175.28
+  },
+  {
+   "word": "beer",
+   "start": 175.28,
+   "end": 175.74
+  },
+  {
+   "word": "chases",
+   "start": 175.74,
+   "end": 176.92
+  },
+  {
+   "word": "my",
+   "start": 176.92,
+   "end": 177.24
+  },
+  {
+   "word": "moods",
+   "start": 177.24,
+   "end": 178.28
+  },
+  {
+   "word": "away.",
+   "start": 178.28,
+   "end": 178.8
+  },
+  {
+   "word": "And",
+   "start": 181.18,
+   "end": 181.36
+  },
+  {
+   "word": "I'll",
+   "start": 181.36,
+   "end": 181.92
+  },
+  {
+   "word": "be",
+   "start": 181.92,
+   "end": 182.2
+  },
+  {
+   "word": "okay.",
+   "start": 182.2,
+   "end": 183.1
+  },
+  {
+   "word": "Yeah,",
+   "start": 183.5,
+   "end": 186.06
+  },
+  {
+   "word": "I'm",
+   "start": 186.04,
+   "end": 186.74
+  },
+  {
+   "word": "not",
+   "start": 186.74,
+   "end": 187.0
+  },
+  {
+   "word": "big",
+   "start": 187.0,
+   "end": 187.6
+  },
+  {
+   "word": "on",
+   "start": 187.6,
+   "end": 188.44
+  },
+  {
+   "word": "social",
+   "start": 188.44,
+   "end": 189.04
+  },
+  {
+   "word": "graces",
+   "start": 189.04,
+   "end": 190.12
+  },
+  {
+   "word": "Think",
+   "start": 190.18,
+   "end": 190.52
+  },
+  {
+   "word": "comes,",
+   "start": 225.94,
+   "end": 226.26
+  },
+  {
+   "word": "slip",
+   "start": 226.26,
+   "end": 226.5
+  },
+  {
+   "word": "on",
+   "start": 226.5,
+   "end": 226.8
+  },
+  {
+   "word": "down",
+   "start": 226.8,
+   "end": 227.34
+  },
+  {
+   "word": "to",
+   "start": 227.34,
+   "end": 228.04
+  },
+  {
+   "word": "the",
+   "start": 228.04,
+   "end": 228.38
+  },
+  {
+   "word": "oasis",
+   "start": 228.38,
+   "end": 229.86
+  },
+  {
+   "word": "Yeah,",
+   "start": 220.0,
+   "end": 221.44
+  },
+  {
+   "word": "I'm",
+   "start": 221.44,
+   "end": 222.12
+  },
+  {
+   "word": "not",
+   "start": 222.12,
+   "end": 222.46
+  },
+  {
+   "word": "big",
+   "start": 222.46,
+   "end": 222.98
+  },
+  {
+   "word": "on",
+   "start": 222.98,
+   "end": 223.86
+  },
+  {
+   "word": "social",
+   "start": 223.86,
+   "end": 224.44
+  },
+  {
+   "word": "graces.",
+   "start": 224.44,
+   "end": 225.56
+  },
+  {
+   "word": "Think",
+   "start": 225.8,
+   "end": 225.94
+  },
+  {
+   "word": "I'll",
+   "start": 225.94,
+   "end": 226.2
+  },
+  {
+   "word": "slip",
+   "start": 226.2,
+   "end": 226.4
+  },
+  {
+   "word": "on",
+   "start": 226.4,
+   "end": 226.9
+  },
+  {
+   "word": "down",
+   "start": 226.9,
+   "end": 227.42
+  },
+  {
+   "word": "to",
+   "start": 227.42,
+   "end": 228.04
+  },
+  {
+   "word": "the",
+   "start": 228.04,
+   "end": 228.36
+  },
+  {
+   "word": "oasis.",
+   "start": 228.36,
+   "end": 229.9
+  },
+  {
+   "word": "Oh,",
+   "start": 230.24,
+   "end": 230.62
+  },
+  {
+   "word": "I've",
+   "start": 230.62,
+   "end": 231.02
+  },
+  {
+   "word": "got",
+   "start": 231.02,
+   "end": 231.26
+  },
+  {
+   "word": "friends",
+   "start": 231.26,
+   "end": 232.14
+  },
+  {
+   "word": "in",
+   "start": 232.14,
+   "end": 233.98
+  },
+  {
+   "word": "all",
+   "start": 233.98,
+   "end": 234.18
+  },
+  {
+   "word": "places.",
+   "start": 234.18,
+   "end": 235.44
+  },
+  {
+   "word": "Cause",
+   "start": 238.52,
+   "end": 239.34
+  },
+  {
+   "word": "I've",
+   "start": 239.34,
+   "end": 239.76
+  },
+  {
+   "word": "got",
+   "start": 239.76,
+   "end": 240.08
+  },
+  {
+   "word": "friends",
+   "start": 240.08,
+   "end": 240.78
+  },
+  {
+   "word": "in",
+   "start": 240.78,
+   "end": 241.48
+  },
+  {
+   "word": "all",
+   "start": 241.48,
+   "end": 241.94
+  },
+  {
+   "word": "places.",
+   "start": 241.94,
+   "end": 243.2
+  },
+  {
+   "word": "Where",
+   "start": 243.46,
+   "end": 243.56
+  },
+  {
+   "word": "the",
+   "start": 243.56,
+   "end": 243.82
+  },
+  {
+   "word": "whiskey",
+   "start": 243.82,
+   "end": 244.34
+  },
+  {
+   "word": "drowns",
+   "start": 244.34,
+   "end": 245.74
+  },
+  {
+   "word": "and",
+   "start": 245.74,
+   "end": 245.78
+  },
+  {
+   "word": "the",
+   "start": 245.78,
+   "end": 246.06
+  },
+  {
+   "word": "beer",
+   "start": 246.06,
+   "end": 246.52
+  },
+  {
+   "word": "chases",
+   "start": 246.52,
+   "end": 247.68
+  },
+  {
+   "word": "my",
+   "start": 247.68,
+   "end": 248.02
+  },
+  {
+   "word": "blues",
+   "start": 248.02,
+   "end": 248.54
+  },
+  {
+   "word": "away.",
+   "start": 248.54,
+   "end": 249.62
+  },
+  {
+   "word": "And",
+   "start": 251.96,
+   "end": 252.1
+  },
+  {
+   "word": "I'll",
+   "start": 252.1,
+   "end": 252.7
+  },
+  {
+   "word": "be",
+   "start": 252.7,
+   "end": 252.92
+  },
+  {
+   "word": "okay.",
+   "start": 252.92,
+   "end": 253.82
+  },
+  {
+   "word": "Yeah,",
+   "start": 256.12,
+   "end": 256.94
+  },
+  {
+   "word": "I'm",
+   "start": 256.94,
+   "end": 257.5
+  },
+  {
+   "word": "not",
+   "start": 257.5,
+   "end": 257.86
+  },
+  {
+   "word": "big",
+   "start": 257.86,
+   "end": 258.4
+  },
+  {
+   "word": "on",
+   "start": 258.4,
+   "end": 259.28
+  },
+  {
+   "word": "social",
+   "start": 259.28,
+   "end": 259.78
+  },
+  {
+   "word": "places.",
+   "start": 259.78,
+   "end": 260.88
+  },
+  {
+   "word": "Think",
+   "start": 261.18,
+   "end": 261.32
+  },
+  {
+   "word": "I'll",
+   "start": 261.32,
+   "end": 261.6
+  },
+  {
+   "word": "step",
+   "start": 261.6,
+   "end": 261.8
+  },
+  {
+   "word": "on",
+   "start": 261.8,
+   "end": 262.32
+  },
+  {
+   "word": "down.",
+   "start": 262.32,
+   "end": 262.78
+  }
+ ],
+ "model": "openai/whisper-large-v3"
+}

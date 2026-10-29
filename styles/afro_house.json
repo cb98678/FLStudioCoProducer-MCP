@@ -1,0 +1,173 @@
+{
+ "name": "afro_house",
+ "label": "Afro house",
+ "engine": "grammar",
+ "what": "Afro house as the demo Africa's Calling builds it: a three-step kick, shakers on almost every 16th, percussion swung late on a triplet grid, a bass that only answers with a Phrygian step, a tresillo pluck arp whose filter opens over 16 bars, chord plucks, no riser drops.",
+ "moods": [
+  "tribal",
+  "warm",
+  "hypnotic",
+  "spiritual",
+  "sunny",
+  "joyful"
+ ],
+ "tempo": {
+  "bpm": 120,
+  "range": [
+   118,
+   124
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "shaker": "xx.xxx.xxx.xxx.x",
+    "perc": "..x..x....x..x.."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X.......X...X...",
+    "clap": "...x...x...x...x",
+    "shaker": "Xx.xXx.xXx.xXx.x",
+    "perc": "..x..x....x..x..",
+    "rim": "x...x...x...x..."
+   },
+   "fill_every": 16,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "shaker": "xo.xxo.xxo.xxo.x",
+    "perc": "..o..o....o..o.."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X.......X...X...",
+    "clap": "...X...x...X...x",
+    "shaker": "XX.XXX.XXX.XXX.X",
+    "perc": "..x..x....x..x..",
+    "rim": "X...X...X...X...",
+    "ohat": "..x...x...x...x."
+   },
+   "fill_every": 16,
+   "fill": "C"
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X.......X...X...",
+    "clap": "...x...x...x...x",
+    "shaker": "Xx.xXx.xXx.xXx.x",
+    "perc": "..x..x....x..x..",
+    "rim": "x...x...x...x..."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  },
+  "swing": 0.66
+ },
+ "bass": {
+  "groove": [
+   "............bb..",
+   "x...........bb.."
+  ],
+  "drop": [
+   "x...........bb..",
+   "x.....x.....bb.."
+  ],
+  "break": "x---------------"
+ },
+ "sub": {
+  "groove": "x-------x-------",
+  "drop": "x-------x-------"
+ },
+ "chords": {
+  "groove": "...x..x....x..x.",
+  "drop": "...X..X...X..X.x",
+  "break": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": {
+  "shape": "tresillo",
+  "rate": 16,
+  "sections": [
+   "groove",
+   "drop",
+   "intro"
+  ],
+  "octaves": 1
+ },
+ "kit": {},
+ "production_recipe": "afro_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Africa's Calling' by Cuebur & Thandi Draai (Afro House, 120 bpm), kick X.......X...X..., shakers XX.XXX.XXX.XXX.X, wood and perc hits a third of a 16th late; studied on a sandbox copy 2026-10-28 (docs/demo_study/Cuebur_Thandi_Draai_Africa_s_Calling.md)",
+  "https://blog.native-instruments.com/afro-house-production-101/ (Tim Cant, undated, read 2026-10-28: afro house 110 to 125 bpm, 118 to 122 preferred, four-to-the-floor kick, percussion loops make the groove)"
+ ],
+ "form": {
+  "build": "never",
+  "build_bars": 4,
+  "tail_bars": 8,
+  "intro_bars": 16,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 16,
+  "gap_before_drop": "none"
+ },
+ "options": {
+  "form": "form.hypnotic_long",
+  "drums": "drums.afro_house_swing",
+  "bass": "bass.phrygian_answer"
+ }
+}

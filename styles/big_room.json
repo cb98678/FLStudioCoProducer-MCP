@@ -1,0 +1,165 @@
+{
+ "name": "big_room",
+ "label": "Big room",
+ "engine": "grammar",
+ "what": "Big room as I'm Awake builds it: six claps as one, a kick per section, off-beat hats with a 16th ticker, builds that ramp a 16th snare roll from soft to full, a gated open-voiced lead, 3x Osc layers stacked on one note line, a mixed-mode minor loop (Dorian IV and Phrygian bII).",
+ "moods": [
+  "euphoric",
+  "party",
+  "anthemic",
+  "energetic",
+  "epic"
+ ],
+ "tempo": {
+  "bpm": 128,
+  "range": [
+   124,
+   130
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": "..x...x...x...x."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x..."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "perc": "............X..."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": ".x.x.x.x.x.x.x.x",
+    "ohat": "..X...X...X...X.",
+    "perc": "......x.......x."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "intro": {
+   "bars": {
+    "hat": "..x...x...x...x."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o."
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": "..x...x...x...x."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "..x...x...x...x.",
+  "drop": [
+   "..x...x...x..xo.",
+   "..x...x.5.x...x."
+  ],
+  "build": "..x...x...x...x.",
+  "outro": "..x...x...x...x."
+ },
+ "sub": {
+  "groove": "..x-..x-..x-..x-",
+  "drop": "..x-..x-..x-..x-"
+ },
+ "chords": {
+  "groove": "..x...x...x...x.",
+  "drop": "X..X..X.X..X..X.",
+  "break": "x---------------",
+  "voicing": "open"
+ },
+ "arp": {
+  "shape": "rise",
+  "rate": 16,
+  "sections": [
+   "break",
+   "build"
+  ],
+  "octaves": 2
+ },
+ "kit": {},
+ "production_recipe": "club_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'I'm Awake' by Bombs Away ft KARRA (EDM, 124 bpm), six claps ....X.......X..., snare rolls 64 to 128, 3x Osc stacks, Toxic Biohazard arp, Dm F6 G Ebsus2; studied on a sandbox copy 2026-10-28 (docs/demo_study/Bombs_Away_ft_KARRA_I_m_Awake.md)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 8,
+  "tail_bars": 8,
+  "intro_bars": 16,
+  "bridge": false,
+  "outro_bars": 16,
+  "gap_before_drop": "beat"
+ },
+ "options": {
+  "form": "form.edm_two_drop",
+  "drums": "drums.big_room_stack",
+  "bass": "bass.offbeat_8th"
+ }
+}

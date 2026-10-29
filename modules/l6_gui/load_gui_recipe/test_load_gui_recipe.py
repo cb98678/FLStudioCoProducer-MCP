@@ -4,7 +4,8 @@ from coproducer.services import set_service
 
 SHIPPED = ["add_mixer_insert_gui", "arm_piano_roll_script_gui", "export_split_stems_gui", "import_midi_gui", "load_plugin_gui",
            "load_sample_gui", "open_plugin_ui_gui", "open_project_copy", "run_piano_roll_script_gui", "save_project_copy"]
-VERIFIED = {"arm_piano_roll_script_gui", "run_piano_roll_script_gui", "load_plugin_gui"}   # calibrated on the real FL (load_plugin_gui on 2026-10-22)
+VERIFIED = {"arm_piano_roll_script_gui", "run_piano_roll_script_gui", "load_plugin_gui", "open_project_copy"}   # calibrated on the real FL
+# (load_plugin_gui on 2026-10-22, open_project_copy on 2026-10-29 inside extract_stems_gui)
 
 
 def test_loads_every_shipped_recipe(rig, desk):

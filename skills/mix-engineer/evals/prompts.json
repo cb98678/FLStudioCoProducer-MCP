@@ -1,0 +1,6 @@
+{"skill": "mix-engineer", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "The bass is muddy.",
+  "assertions": [{"type": "called_before", "a": "measure_band_energy", "b": "apply_eq_recipe"}, {"type": "single_change"}, {"type": "tool_called_after_change", "module": "measure_band_energy"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Make it sound more professional.", "assertions": [{"type": "any_of", "of": [{"type": "asked_human"}, {"type": "tool_called", "module": "load_targets_file"}]}, {"type": "no_write_calls"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Install the models.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

@@ -24,3 +24,16 @@ def test_errors(rig, ml, tmp_path):
     src = to_wav(str(tmp_path / "in.wav"), drum_loop(120, bars=2))
     assert rig.call("build_song_analysis", input_path=src, name="x", stems_dir=str(tmp_path / "nostems")).error.code == "E_NOT_FOUND"
     assert rig.call("build_song_analysis", input_path=src, name="Bad Name").error.code == "E_ARG"
+
+
+def test_stems_dir_takes_fl_stems_with_other(rig, ml, tmp_path):
+    set_service("sandbox_root", str(tmp_path))
+    set_service("model_files", {"beat_this_final0": {"path": "x.ckpt", "sha256": ""}})
+    src = to_wav(str(tmp_path / "in.wav"), drum_loop(120, bars=8))
+    stems = tmp_path / "fl"
+    stems.mkdir()
+    for k in ("vocals", "drums", "bass", "other"):
+        to_wav(str(stems / (k + ".wav")), drum_loop(120, bars=8))
+    r = rig.call("build_song_analysis", input_path=src, name="fl", stems_dir=str(stems))
+    assert r.ok, r
+    assert set(r.value["stems"]) == {"vocals", "drums", "bass", "other"} and r.value["stems"]["other"].endswith("other.wav")

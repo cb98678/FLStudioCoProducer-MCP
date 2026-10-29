@@ -1,0 +1,55 @@
+{
+  "name": "export_split_stems_gui",
+  "verified": false,
+  "verified_note": "Draft. Not yet confirmed on a real FL Studio install; calibrate at Gate 0.",
+  "summary": "Export one WAV per mixer track through the Export dialog.",
+  "params": [
+    "path"
+  ],
+  "vision": false,
+  "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/basics_shortcuts.htm (Export wave: Ctrl+R); the Split mixer tracks option is clicked at a recorded anchor",
+  "anchors": [
+    "export_split_checkbox",
+    "export_start"
+  ],
+  "steps": [
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "r"
+      ]
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "",
+      "timeout_s": 5
+    },
+    {
+      "do": "type",
+      "text": "{path}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 1.0
+    },
+    {
+      "do": "click",
+      "anchor": "export_split_checkbox"
+    },
+    {
+      "do": "click",
+      "anchor": "export_start"
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 600
+    }
+  ]
+}

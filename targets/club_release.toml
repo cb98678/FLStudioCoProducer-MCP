@@ -1,0 +1,35 @@
+# Club release master targets for every style pack (2026-10-25). Proposed in docs/ROADMAP.md from measured releases and adopted under the
+# person's go-ahead of 2026-10-25 ("do anything you need"), to be confirmed by ear on the first master. The approved Friends tech-house master
+# (-13.0 LUFS) keeps its own targets file (club_tech_house.toml).
+[meta]
+name = "club_release"
+source = "iZotope, April 2025, ten top Billboard dance and electronic songs: -8.3 LUFS integrated on average (-6.2 to -11.3), short-term -6.1, loudness range 6.6 LU, true peaks mostly above 0 dBTP (https://www.izotope.com/en/learn/dance-electronic-analysis). TrackSensei, June 2026, 563 house and techno masters: house -8.0, tech house -8.8, peak-time techno -7.7, hard techno -6.9 LUFS medians, median true peak above 0 dBTP (https://tracksensei.com/blog/we-analyzed-563-techno-house-tracks). The ceiling here is kept below 0 dBTP on purpose: the file must survive MP3 and AAC encoding on the person's DJ software. Section contrast stays: drops 3 to 5 LU over their builds (Future House reference: 4.5)."
+
+[loudness]
+integrated_lufs = -8.0
+integrated_tolerance_lu = 1.0
+true_peak_dbtp_ceiling = -0.5
+loudness_range_lu = { min = 3.0, max = 8.0 }
+
+[dynamics]
+crest_factor_db = { min = 6.5, max = 11.0 }   # club masters sit near 7.5 dB peak to loudness; below 6.5 the clipper is audibly squashing
+
+[contrast]
+drop_over_build_lu = { min = 3.0, max = 5.5 }
+drop_over_loudest_break_lu = { min = 1.5 }
+section_floor_under_drop_lu = 6.0   # from the loudness-range window above (LRA at most 8 LU): long sections further under the drops push the LRA past it. The first five genre renders sat 10 to 14 LU under (LRA 10 to 14); a floor of 7 brought dubstep from LRA 13.9 to 8.46, so 6 (2026-10-25)
+
+[stereo]
+low_end_mono_below_hz = 120
+low_end_side_over_mid_db_max = -20.0
+correlation_floor = 0.8
+
+[spectrum]
+reference_track = "none yet: the person is collecting reference tracks per genre (2026-10-25); until then the bands are checked against the style's references once measured"
+band_tolerance_db = 3.0
+
+[clipping]
+max_clipped_samples = 0
+
+[dc]
+max_offset_dbfs = -60.0   # the whole file's mean or an offset held in silence, whichever is worse; a held one kept FL rendering 33 s past a song's end (2026-10-25)

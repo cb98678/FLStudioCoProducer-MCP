@@ -1,0 +1,25 @@
+# Club master targets for the tech-house remix. Chosen by the person on 2026-10-24 (loudness, ceiling, crest). Marked entries are the assistant's carry-overs and need the person's say.
+[meta]
+name = "club_tech_house"
+source = "Person chose a club master, true peak ceiling -2.0 dBTP, crest factor at least 8 dB, and accepted about -11.5 LUFS instead of -9 because those three cannot all hold (chat, 2026-10-24). Tolerance and stereo limits are carried over from docs/TARGETS_PROPOSAL.md (derived from three reference MP3s), not chosen by the person."
+
+[loudness]
+integrated_lufs = -11.5               # person first chose -9, then accepted about -11.5 once crest >= 8 and true peak <= -2.0 made -9 unreachable (2026-10-24)
+integrated_tolerance_lu = 1.0           # carry-over from the proposal, not chosen by the person. For Friends in Low Places the person accepted -13.0 LUFS (2026-10-25) to get section contrast: the drops sit at the ceiling, so quieter builds and breaks lower the average, not the drops
+true_peak_dbtp_ceiling = -2.0
+loudness_range_lu = { min = 2.0, max = 6.0 }   # assumed: a club master is not meant to expand dynamics; the upper bound is the proposal's. Needs the person's say.
+
+[dynamics]
+crest_factor_db = { min = 8.0, max = 13.0 }   # min chosen by the person; max is the proposal's
+
+[stereo]
+low_end_mono_below_hz = 120
+low_end_side_over_mid_db_max = -20.0
+correlation_floor = 0.85
+
+[spectrum]
+reference_track = "none: band targets are the average of the three streaming references in docs/reports/reference_measurements.json, within 3 dB; no club reference supplied"
+band_tolerance_db = 3.0
+
+[clipping]
+max_clipped_samples = 0

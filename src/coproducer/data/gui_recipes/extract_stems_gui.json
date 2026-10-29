@@ -1,0 +1,44 @@
+{
+  "name": "extract_stems_gui",
+  "verified": true,
+  "verified_note": "Measured on FL 26.1.7 at 2560x1440 on 2026-10-29 and run end to end by extract_stems_gui (74 s for a 2:37 song, from opening the project to the four files). Pictures, not fixed points: the song clip's header (its menu icon and the name Song, which prepare_stems_project gives it) is found on a fresh screenshot and its icon clicked 17 px left of the picture's centre; the menu entry Extract stems from sample and the dialog's Extract button are found the same way (a fixed point missed the clip by 18 px on a second project, and the menu is drawn in the clip's colour, which matching ignores). The dialog's defaults are kept: Drums, Bass, Instruments and Vocals on, Limit CPU usage and Safe mode off, mute the source track when done, group the playlist tracks, new mixer tracks. FL is unresponsive while it separates (a 2:37 song took under 80 s here) and writes <sample>_drums, _bass, _instruments and _vocals .wav (32-bit float, the song's length) to the project's data folder's Audio subfolder. The four stems sum back to the mix within -37 dB, and the split is deterministic (this run and the hand run wrote bit-identical files).",
+  "summary": "Run FL's Extract stems from sample on the audio clip at the start of playlist track 1.",
+  "params": [],
+  "vision": false,
+  "source": "measured on this install; Image-Line manual, Playlist, Clip Menus > Sample (Audio Clips): Extract stems from sample",
+  "steps": [
+    {
+      "do": "wait",
+      "seconds": 2.0
+    },
+    {
+      "do": "template_click",
+      "template": "playlist_song_clip_header",
+      "dx": -17,
+      "min_score": 0.85
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "template_click",
+      "template": "clip_menu_extract_stems",
+      "min_score": 0.85
+    },
+    {
+      "do": "wait",
+      "seconds": 1.5
+    },
+    {
+      "do": "template_click",
+      "template": "extract_stems_button",
+      "min_score": 0.85
+    },
+    {
+      "do": "wait",
+      "seconds": 2.0
+    }
+  ],
+  "needs_sandbox_project": true
+}

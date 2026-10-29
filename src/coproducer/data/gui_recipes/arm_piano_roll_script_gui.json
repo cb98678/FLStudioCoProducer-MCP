@@ -1,0 +1,37 @@
+{
+  "name": "arm_piano_roll_script_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 on 2026-10-21: the wrench icon and the script's menu entry are found by picture (templates piano_roll_wrench and pr_script_<script>), then the script dialog opens. The piano roll must already be open on the channel to write into (F7 toggles it, so the recipe never presses it). One template per script name; add pr_script_<name>.png before using another script. Pixel values are for a 2560x1440 screen.",
+  "summary": "Choose a script from the open piano roll's wrench Tools menu so its dialog opens.",
+  "params": [
+    "script"
+  ],
+  "vision": false,
+  "source": "measured on this install",
+  "steps": [
+    {
+      "do": "template_click",
+      "template": "piano_roll_wrench",
+      "min_score": 0.9
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "template_click",
+      "template": "pr_script_{script}",
+      "min_score": 0.9
+    },
+    {
+      "do": "wait",
+      "seconds": 1.0
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Coproducer notes",
+      "timeout_s": 5
+    }
+  ],
+  "needs_sandbox_project": true
+}

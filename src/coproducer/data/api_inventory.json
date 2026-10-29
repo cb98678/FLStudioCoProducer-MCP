@@ -1,0 +1,5145 @@
+{
+ "arrangement.addAutoTimeMarker": {
+  "file": "__markers.py",
+  "params": [
+   {
+    "default": null,
+    "name": "time",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "name",
+    "type": "str"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "arrangement.currentTime": {
+  "file": "__time.py",
+  "params": [
+   {
+    "default": null,
+    "name": "snap",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "arrangement.currentTimeHint": {
+  "file": "__time.py",
+  "params": [
+   {
+    "default": null,
+    "name": "mode",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "time",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "setRecPPB",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "isLength",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "arrangement.getMarkerName": {
+  "file": "__markers.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "arrangement.jumpToMarker": {
+  "file": "__markers.py",
+  "params": [
+   {
+    "default": null,
+    "name": "delta",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "select",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "arrangement.liveSelection": {
+  "file": "__live.py",
+  "params": [
+   {
+    "default": null,
+    "name": "time",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "stop",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "arrangement.liveSelectionStart": {
+  "file": "__live.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "arrangement.selectionEnd": {
+  "file": "__selection.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "arrangement.selectionStart": {
+  "file": "__selection.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.channelCount": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": "False",
+    "name": "globalCount",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.channelNumber": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": "False",
+    "name": "canBeNone",
+    "type": "bool"
+   },
+   {
+    "default": "0",
+    "name": "offset",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.closeGraphEditor": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 33
+ },
+ "channels.deselectAll": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.focusEditor": {
+  "file": "__ui.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.getActivityLevel": {
+  "file": "__ui.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "float",
+  "since": 9
+ },
+ "channels.getChannelColor": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.getChannelIndex": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.getChannelMidiInPort": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.getChannelName": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "channels.getChannelPan": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "channels.getChannelPitch": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "mode",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "'float | int'",
+  "since": 8
+ },
+ "channels.getChannelType": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 19
+ },
+ "channels.getChannelVolume": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "mode",
+    "type": "bool"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "channels.getCurrentStepParam": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "step",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "param",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.getGridBit": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "position",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.getGridBitWithLoop": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "position",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.getRecEventId": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.getStepParam": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "step",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "param",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "offset",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "startPos",
+    "type": "int"
+   },
+   {
+    "default": "16",
+    "name": "padsStride",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.getSwing": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [],
+  "returns": "float",
+  "since": 45
+ },
+ "channels.getTargetFxTrack": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.incEventValue": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventId",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "step",
+    "type": "int"
+   },
+   {
+    "default": "1 / 24",
+    "name": "res",
+    "type": "float"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.isChannelMuted": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.isChannelSelected": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.isChannelSolo": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.isGraphEditorVisible": {
+  "file": "__ui.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.isGridBitAssigned": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.isHighLighted": {
+  "file": "__ui.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "channels.midiNoteOn": {
+  "file": "__notes.py",
+  "params": [
+   {
+    "default": null,
+    "name": "indexGlobal",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "note",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "velocity",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "channel",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.muteChannel": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.processRECEvent": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventId",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "channels.quickQuantize": {
+  "file": "__notes.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "1",
+    "name": "startOnly",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 9
+ },
+ "channels.selectAll": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.selectChannel": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.selectOneChannel": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 8
+ },
+ "channels.selectedChannel": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": "False",
+    "name": "canBeNone",
+    "type": "bool"
+   },
+   {
+    "default": "0",
+    "name": "offset",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "indexGlobal",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 5
+ },
+ "channels.setChannelColor": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "color",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.setChannelName": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "name",
+    "type": "str"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.setChannelPan": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "pan",
+    "type": "float"
+   },
+   {
+    "default": "midi.PIM_None",
+    "name": "pickupMode",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.setChannelPitch": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "float"
+   },
+   {
+    "default": "0",
+    "name": "mode",
+    "type": "int"
+   },
+   {
+    "default": "midi.PIM_None",
+    "name": "pickupMode",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 8
+ },
+ "channels.setChannelVolume": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "volume",
+    "type": "float"
+   },
+   {
+    "default": "midi.PIM_None",
+    "name": "pickupMode",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.setGridBit": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "position",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "bool"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.setStepParameterByIndex": {
+  "file": "__sequencer.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "patNum",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "step",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "param",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.setSwing": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "float"
+   }
+  ],
+  "returns": "None",
+  "since": 45
+ },
+ "channels.setTargetFxTrack": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "channelIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "mixerIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.showCSForm": {
+  "file": "__ui.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "1",
+    "name": "state",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.showEditor": {
+  "file": "__ui.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.showGraphEditor": {
+  "file": "__ui.py",
+  "params": [
+   {
+    "default": null,
+    "name": "temporary",
+    "type": "bool"
+   },
+   {
+    "default": null,
+    "name": "param",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "step",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "True",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.soloChannel": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "channels.updateGraphEditor": {
+  "file": "__sequencer.py",
+  "params": [],
+  "returns": "None",
+  "since": 20
+ },
+ "device.baseTrackSelect": {
+  "file": "__util.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "step",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.createRefreshThread": {
+  "file": "__util.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "device.destroyRefreshThread": {
+  "file": "__util.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "device.directFeedback": {
+  "file": "__device.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventData",
+    "type": "FlMidiMsg"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.dispatch": {
+  "file": "__dispatch.py",
+  "params": [
+   {
+    "default": null,
+    "name": "ctrlIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "message",
+    "type": "int"
+   },
+   {
+    "default": "None",
+    "name": "sysex",
+    "type": "Optional[bytes]"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.dispatchGetReceiverPortNumber": {
+  "file": "__dispatch.py",
+  "params": [
+   {
+    "default": null,
+    "name": "ctrlIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 5
+ },
+ "device.dispatchReceiverCount": {
+  "file": "__dispatch.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "device.findEventID": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "controlId",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "device.forwardMIDICC": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "message",
+    "type": "int"
+   },
+   {
+    "default": "1",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 7
+ },
+ "device.fullRefresh": {
+  "file": "__util.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "device.getDeviceID": {
+  "file": "__device.py",
+  "params": [],
+  "returns": "bytes",
+  "since": 25
+ },
+ "device.getIdleElapsed": {
+  "file": "__fl.py",
+  "params": [],
+  "returns": "float",
+  "since": 1
+ },
+ "device.getLinkedChannel": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventId",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 27
+ },
+ "device.getLinkedInfo": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventID",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "device.getLinkedParamName": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventID",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 10
+ },
+ "device.getLinkedValue": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventID",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "device.getLinkedValueString": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventID",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 10
+ },
+ "device.getMasterSync": {
+  "file": "__device.py",
+  "params": [],
+  "returns": "bool",
+  "since": 19
+ },
+ "device.getName": {
+  "file": "__device.py",
+  "params": [],
+  "returns": "str",
+  "since": 7
+ },
+ "device.getPortNumber": {
+  "file": "__device.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "device.hardwareRefreshMixerTrack": {
+  "file": "__util.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.isAssigned": {
+  "file": "__device.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "device.isDoubleClick": {
+  "file": "__util.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "device.isMidiOutAssigned": {
+  "file": "__device.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "device.linkToLastTweaked": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "controlIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "channel",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "global_link",
+    "type": "bool"
+   },
+   {
+    "default": "midi.REC_None",
+    "name": "eventId",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 21
+ },
+ "device.midiOutMsg": {
+  "file": "__device.py",
+  "params": [
+   {
+    "default": null,
+    "name": "message",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "channel",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "data1",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "data2",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.midiOutNewMsg": {
+  "file": "__device.py",
+  "params": [
+   {
+    "default": null,
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "message",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.midiOutSysex": {
+  "file": "__device.py",
+  "params": [
+   {
+    "default": null,
+    "name": "message",
+    "type": "bytes"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.processMIDICC": {
+  "file": "__fl.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventData",
+    "type": "FlMidiMsg"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.repeatMidiEvent": {
+  "file": "__device.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventData",
+    "type": "FlMidiMsg"
+   },
+   {
+    "default": "300",
+    "name": "delay",
+    "type": "int"
+   },
+   {
+    "default": "300",
+    "name": "rate",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "device.sendMsgGeneric": {
+  "file": "__device.py",
+  "params": [
+   {
+    "default": null,
+    "name": "id",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "message",
+    "type": "str"
+   },
+   {
+    "default": null,
+    "name": "lastMsg",
+    "type": "str"
+   },
+   {
+    "default": "0",
+    "name": "offset",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "device.setHasMeters": {
+  "file": "__util.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "device.setMasterSync": {
+  "file": "__device.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 18
+ },
+ "device.stopRepeatMidiEvent": {
+  "file": "__device.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "general.clearLog": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "None",
+  "since": 15
+ },
+ "general.dumpScoreLog": {
+  "file": "__fl_state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "time",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "silent",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 15
+ },
+ "general.getChangedFlag": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.getPrecount": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "general.getRecPPB": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.getRecPPQ": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "int",
+  "since": 8
+ },
+ "general.getUndoHistoryCount": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.getUndoHistoryLast": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.getUndoHistoryPos": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.getUndoLevelHint": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "str",
+  "since": 1
+ },
+ "general.getUseMetronome": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "general.getVersion": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.processRECEvent": {
+  "file": "__fl_state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventId",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 7
+ },
+ "general.restoreUndo": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.restoreUndoLevel": {
+  "file": "__undo.py",
+  "params": [
+   {
+    "default": null,
+    "name": "level",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "general.safeToEdit": {
+  "file": "__fl_state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 29
+ },
+ "general.saveUndo": {
+  "file": "__undo.py",
+  "params": [
+   {
+    "default": null,
+    "name": "undoName",
+    "type": "str"
+   },
+   {
+    "default": null,
+    "name": "flags",
+    "type": "int"
+   },
+   {
+    "default": "True",
+    "name": "update",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "general.setUndoHistoryCount": {
+  "file": "__undo.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "general.setUndoHistoryLast": {
+  "file": "__undo.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "general.setUndoHistoryPos": {
+  "file": "__undo.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "general.undo": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.undoDown": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.undoUp": {
+  "file": "__undo.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "general.undoUpDown": {
+  "file": "__undo.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "midi.EncodeRemoteControlID": {
+  "file": "__miscellaneous.py",
+  "params": [
+   {
+    "default": null,
+    "name": "PortNum",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "ChanNum",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "CCNum",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.afterRoutingChanged": {
+  "file": "__tracks.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.armTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.automateEvent": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "flags",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "speed",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "isIncrement",
+    "type": "int"
+   },
+   {
+    "default": "midi.EKRes",
+    "name": "res",
+    "type": "float"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.deselectAll": {
+  "file": "__selection.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.enableTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.enableTrackSlots": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "value",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 19
+ },
+ "mixer.focusEditor": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "plugIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "",
+  "since": 25
+ },
+ "mixer.getActiveEffectIndex": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "Optional[tuple[int, int]]",
+  "since": 25
+ },
+ "mixer.getAutoSmoothEventValue": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "1",
+    "name": "locked",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.getCurrentTempo": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": "False",
+    "name": "asInt",
+    "type": "bool"
+   }
+  ],
+  "returns": "'int | float'",
+  "since": 1
+ },
+ "mixer.getEqBandCount": {
+  "file": "__eq.py",
+  "params": [],
+  "returns": "int",
+  "since": 35
+ },
+ "mixer.getEqBandwidth": {
+  "file": "__eq.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "band",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 35
+ },
+ "mixer.getEqFrequency": {
+  "file": "__eq.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "band",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 35
+ },
+ "mixer.getEqGain": {
+  "file": "__eq.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "band",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 35
+ },
+ "mixer.getEventIDName": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "shortname",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "mixer.getEventIDValueString": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "mixer.getEventValue": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "midi.MaxInt",
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "1",
+    "name": "smoothTarget",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.getLastPeakVol": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "section",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 9
+ },
+ "mixer.getPluginMixLevel": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "slotIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 45
+ },
+ "mixer.getPluginMuteState": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "slotIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 45
+ },
+ "mixer.getRecPPS": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.getRouteSendActive": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "destIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "mixer.getRouteToLevel": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "destIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 36
+ },
+ "mixer.getSlotColor": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "slot",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 32
+ },
+ "mixer.getSongStepPos": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.getSongTickPos": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": "midi.ST_Int",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "'int | float'",
+  "since": 1
+ },
+ "mixer.getTrackColor": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.getTrackDockSide": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 13
+ },
+ "mixer.getTrackInfo": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.getTrackName": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "mixer.getTrackPan": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "mixer.getTrackPeaks": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "mixer.getTrackPluginId": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "plugIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.getTrackRecordingFileName": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "mixer.getTrackStereoSep": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 12
+ },
+ "mixer.getTrackVolume": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "mixer.isTrackArmed": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "mixer.isTrackAutomationEnabled": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "plugIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "mixer.isTrackEnabled": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "mixer.isTrackMuteLock": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 13
+ },
+ "mixer.isTrackMuted": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 2
+ },
+ "mixer.isTrackPluginValid": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "plugIndex",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "mixer.isTrackRevPolarity": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 19
+ },
+ "mixer.isTrackSelected": {
+  "file": "__selection.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "mixer.isTrackSlotsEnabled": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 19
+ },
+ "mixer.isTrackSolo": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "mixer.isTrackSwapChannels": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 19
+ },
+ "mixer.linkChannelToTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "channel",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "track",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "select",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 23
+ },
+ "mixer.linkTrackToChannel": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.muteTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 2
+ },
+ "mixer.remoteFindEventValue": {
+  "file": "__events.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "mixer.revTrackPolarity": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "value",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 19
+ },
+ "mixer.selectAll": {
+  "file": "__selection.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.selectTrack": {
+  "file": "__selection.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.setActiveTrack": {
+  "file": "__selection.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "",
+  "since": 27
+ },
+ "mixer.setCurrentTempo": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "tempo",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 45
+ },
+ "mixer.setEqBandwidth": {
+  "file": "__eq.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "band",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "float"
+   }
+  ],
+  "returns": "None",
+  "since": 35
+ },
+ "mixer.setEqFrequency": {
+  "file": "__eq.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "band",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "float"
+   }
+  ],
+  "returns": "None",
+  "since": 35
+ },
+ "mixer.setEqGain": {
+  "file": "__eq.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "band",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "float"
+   }
+  ],
+  "returns": "None",
+  "since": 35
+ },
+ "mixer.setPluginMixLevel": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "float"
+   }
+  ],
+  "returns": "None",
+  "since": 45
+ },
+ "mixer.setPluginMuteState": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 45
+ },
+ "mixer.setRouteTo": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "destIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "bool"
+   },
+   {
+    "default": "False",
+    "name": "updateUI",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.setRouteToLevel": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "destIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "level",
+    "type": "float"
+   }
+  ],
+  "returns": "None",
+  "since": 36
+ },
+ "mixer.setSlotColor": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "slot",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "color",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 32
+ },
+ "mixer.setTrackColor": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "color",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.setTrackName": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "name",
+    "type": "str"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.setTrackNumber": {
+  "file": "__selection.py",
+  "params": [
+   {
+    "default": null,
+    "name": "trackNumber",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.setTrackPan": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "pan",
+    "type": "float"
+   },
+   {
+    "default": "midi.PIM_None",
+    "name": "pickupMode",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.setTrackStereoSep": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "pan",
+    "type": "float"
+   },
+   {
+    "default": "midi.PIM_None",
+    "name": "pickupMode",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 12
+ },
+ "mixer.setTrackVolume": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "volume",
+    "type": "float"
+   },
+   {
+    "default": "midi.PIM_None",
+    "name": "pickupMode",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.soloTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "mixer.swapTrackChannels": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "value",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 19
+ },
+ "mixer.trackCount": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "mixer.trackNumber": {
+  "file": "__selection.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.burnLoop": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "1",
+    "name": "storeUndo",
+    "type": "int"
+   },
+   {
+    "default": "1",
+    "name": "updateUi",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 9
+ },
+ "patterns.clearPattern": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 45
+ },
+ "patterns.clonePattern": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": "None",
+    "name": "index",
+    "type": "Optional[int]"
+   }
+  ],
+  "returns": "",
+  "since": 25
+ },
+ "patterns.deselectAll": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "None",
+  "since": 2
+ },
+ "patterns.ensureValidNoteRecord": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "playNow",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.findFirstNextEmptyPat": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "flags",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "x",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "y",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "patterns.getActivePatternGroup": {
+  "file": "__groups.py",
+  "params": [],
+  "returns": "int",
+  "since": 28
+ },
+ "patterns.getBlockSetStatus": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "left",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "top",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "right",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "bottom",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.getChannelLoopStyle": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "pattern",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "channel",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.getPatternColor": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.getPatternGroupCount": {
+  "file": "__groups.py",
+  "params": [],
+  "returns": "int",
+  "since": 28
+ },
+ "patterns.getPatternGroupName": {
+  "file": "__groups.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 28
+ },
+ "patterns.getPatternLength": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.getPatternName": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "patterns.getPatternsInGroup": {
+  "file": "__groups.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "tuple[int, ...]",
+  "since": 28
+ },
+ "patterns.incrementPatternLength": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "delta",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 45
+ },
+ "patterns.isPatternDefault": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 23
+ },
+ "patterns.isPatternSelected": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 2
+ },
+ "patterns.jumpToPattern": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "patterns.patternCount": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.patternMax": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.patternNumber": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "patterns.selectAll": {
+  "file": "__properties.py",
+  "params": [],
+  "returns": "None",
+  "since": 2
+ },
+ "patterns.selectPattern": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "preview",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 2
+ },
+ "patterns.setChannelLoop": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "channel",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "loopPoint",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "patterns.setPatternColor": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "color",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "patterns.setPatternLength": {
+  "file": "probe_report",
+  "observed": true,
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "length",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 45
+ },
+ "patterns.setPatternName": {
+  "file": "__properties.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "name",
+    "type": "str"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.deselectAll": {
+  "file": "__tracks.py",
+  "params": [],
+  "returns": "None",
+  "since": 12
+ },
+ "playlist.getDisplayZone": {
+  "file": "__performance.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getLiveBlockColor": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "blockNum",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getLiveBlockStatus": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "blockNum",
+    "type": "int"
+   },
+   {
+    "default": "midi.LB_Status_Default",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getLiveLoopMode": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getLivePosSnap": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getLiveStatus": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "midi.LB_Status_Default",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getLiveTrigSnap": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getLiveTriggerMode": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getPerformanceModeState": {
+  "file": "__performance.py",
+  "params": [],
+  "returns": "bool",
+  "since": 21
+ },
+ "playlist.getSongStartTickPos": {
+  "file": "__performance.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getTrackActivityLevel": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "playlist.getTrackActivityLevelVis": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "float",
+  "since": 1
+ },
+ "playlist.getTrackColor": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getTrackName": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "playlist.getVisTimeBar": {
+  "file": "__performance.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getVisTimeStep": {
+  "file": "__performance.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.getVisTimeTick": {
+  "file": "__performance.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.incLiveLoopMode": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.incLivePosSnap": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.incLiveTrigMode": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.incLiveTrigSnap": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.isTrackMuteLock": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 2
+ },
+ "playlist.isTrackMuted": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "playlist.isTrackSelected": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 12
+ },
+ "playlist.isTrackSolo": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "playlist.liveBlockNumToTime": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.liveDisplayZone": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "left",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "top",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "right",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "bottom",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "duration",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.liveTimeToBlockNum": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "time",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.lockDisplayZone": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.muteTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.muteTrackLock": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 2
+ },
+ "playlist.refreshLiveClips": {
+  "file": "__performance.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.scrollTo": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "a",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "b",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "c",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "d",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.selectAll": {
+  "file": "__tracks.py",
+  "params": [],
+  "returns": "None",
+  "since": 12
+ },
+ "playlist.selectTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 12
+ },
+ "playlist.setTrackColor": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "color",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.setTrackName": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "name",
+    "type": "str"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.soloTrack": {
+  "file": "__tracks.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "inGroup",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "playlist.trackCount": {
+  "file": "__tracks.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "playlist.triggerLiveClip": {
+  "file": "__performance.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "subNum",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "flags",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "velocity",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "plugins.getColor": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "midi.GC_BackgroundColor",
+    "name": "flag",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 12
+ },
+ "plugins.getName": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "midi.FPN_Param",
+    "name": "flag",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "paramIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "str",
+  "since": 13
+ },
+ "plugins.getPadInfo": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "chanIndex",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "paramOption",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "paramIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 19
+ },
+ "plugins.getParamCount": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 8
+ },
+ "plugins.getParamName": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "paramIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "str",
+  "since": 8
+ },
+ "plugins.getParamValue": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "paramIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "float",
+  "since": 8
+ },
+ "plugins.getParamValueString": {
+  "corrected": true,
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "paramIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "str",
+  "since": 8
+ },
+ "plugins.getPluginName": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "userName",
+    "type": "bool"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "str",
+  "since": 8
+ },
+ "plugins.getPresetCount": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 15
+ },
+ "plugins.isValid": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "bool",
+  "since": 8
+ },
+ "plugins.nextPreset": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 10
+ },
+ "plugins.prevPreset": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 10
+ },
+ "plugins.setParamValue": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "float"
+   },
+   {
+    "default": null,
+    "name": "paramIndex",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": "-1",
+    "name": "slotIndex",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "pickupMode",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "useGlobalIndex",
+    "type": "bool"
+   }
+  ],
+  "returns": "None",
+  "since": 8
+ },
+ "transport.continuousMove": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "speed",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "startStop",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.continuousMovePos": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "speed",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "startStop",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 2
+ },
+ "transport.fastForward": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "startStop",
+    "type": "int"
+   },
+   {
+    "default": "midi.GT_All",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.getHWBeatLEDState": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "transport.getLoopMode": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "transport.getSongLength": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 3
+ },
+ "transport.getSongPos": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": "-1",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "'float | int'",
+  "since": 1
+ },
+ "transport.getSongPosHint": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "str",
+  "since": 1
+ },
+ "transport.globalTransport": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "command",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "midi.PME_System",
+    "name": "pmeflags",
+    "type": "int"
+   },
+   {
+    "default": "midi.GT_All",
+    "name": "flags",
+    "type": ""
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "transport.isPlaying": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "transport.isRecording": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "transport.markerJumpJog": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "midi.GT_All",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.markerSelJog": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "midi.GT_All",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.record": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.rewind": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "startStop",
+    "type": "int"
+   },
+   {
+    "default": "midi.GT_All",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.setLoopMode": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.setPlaybackSpeed": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "speedMultiplier",
+    "type": "float"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.setSongPos": {
+  "file": "__init__.py",
+  "params": [
+   {
+    "default": null,
+    "name": "position",
+    "type": "'float | int'"
+   },
+   {
+    "default": "-1",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.start": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "transport.stop": {
+  "file": "__init__.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "ui.closeActivePopupMenu": {
+  "file": "__navigation.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "ui.closeAllMenu": {
+  "file": "__windows.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "ui.copy": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.crDisplayRect": {
+  "file": "__overlays.py",
+  "params": [
+   {
+    "default": null,
+    "name": "left",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "top",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "right",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "bottom",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "duration",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "ui.cut": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.delete": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.down": {
+  "file": "__keyboard.py",
+  "params": [
+   {
+    "default": "1",
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.enter": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.escape": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.getFocused": {
+  "file": "__windows.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.getFocusedFormCaption": {
+  "file": "__windows.py",
+  "params": [],
+  "returns": "str",
+  "since": 1
+ },
+ "ui.getFocusedFormID": {
+  "file": "__windows.py",
+  "params": [],
+  "returns": "int",
+  "since": 13
+ },
+ "ui.getFocusedNodeCaption": {
+  "file": "__browser.py",
+  "params": [],
+  "returns": "str",
+  "since": 20
+ },
+ "ui.getFocusedNodeFileType": {
+  "file": "__browser.py",
+  "params": [],
+  "returns": "int",
+  "since": 20
+ },
+ "ui.getFocusedPluginName": {
+  "file": "__windows.py",
+  "params": [],
+  "returns": "str",
+  "since": 5
+ },
+ "ui.getHintMsg": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "str",
+  "since": 1
+ },
+ "ui.getHintValue": {
+  "file": "__state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "max",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 1
+ },
+ "ui.getProgTitle": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "str",
+  "since": 1
+ },
+ "ui.getSnapMode": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.getStepEditMode": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 28
+ },
+ "ui.getTimeDispMin": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.getVersion": {
+  "file": "__state.py",
+  "params": [
+   {
+    "default": "4",
+    "name": "mode",
+    "type": "int"
+   }
+  ],
+  "returns": "'str | int'",
+  "since": 1
+ },
+ "ui.getVisible": {
+  "file": "__windows.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.hideWindow": {
+  "file": "__windows.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 5
+ },
+ "ui.horZoom": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.insert": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.isBrowserAutoHide": {
+  "file": "__browser.py",
+  "params": [],
+  "returns": "bool",
+  "since": 20
+ },
+ "ui.isClosing": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.isInPopupMenu": {
+  "file": "__navigation.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.isLoopRecEnabled": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.isMetronomeEnabled": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.isPrecountEnabled": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.isStartOnInputEnabled": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "bool",
+  "since": 1
+ },
+ "ui.jog": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.jog2": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.launchAudioEditor": {
+  "file": "__editors.py",
+  "params": [
+   {
+    "default": null,
+    "name": "reuse",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "filename",
+    "type": "str"
+   },
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "preset",
+    "type": "str"
+   },
+   {
+    "default": null,
+    "name": "presetGUID",
+    "type": "str"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.left": {
+  "file": "__keyboard.py",
+  "params": [
+   {
+    "default": "1",
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.miDisplayDockRect": {
+  "file": "__overlays.py",
+  "params": [
+   {
+    "default": null,
+    "name": "start",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "length",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "dock_side",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "time",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 20
+ },
+ "ui.miDisplayRect": {
+  "file": "__overlays.py",
+  "params": [
+   {
+    "default": null,
+    "name": "start",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "end",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "duration",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "flags",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 13
+ },
+ "ui.moveJog": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.navigateBrowser": {
+  "file": "__browser.py",
+  "params": [
+   {
+    "default": null,
+    "name": "direction",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "shiftHeld",
+    "type": "bool"
+   }
+  ],
+  "returns": "str",
+  "since": 22
+ },
+ "ui.navigateBrowserMenu": {
+  "file": "__browser.py",
+  "params": [
+   {
+    "default": null,
+    "name": "direction",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "shiftHeld",
+    "type": "bool"
+   }
+  ],
+  "returns": "str",
+  "since": 22
+ },
+ "ui.navigateBrowserTabs": {
+  "file": "__browser.py",
+  "params": [
+   {
+    "default": null,
+    "name": "direction",
+    "type": "int"
+   }
+  ],
+  "returns": "str",
+  "since": 22
+ },
+ "ui.next": {
+  "file": "__navigation.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.nextWindow": {
+  "file": "__windows.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.no": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.openEventEditor": {
+  "file": "__editors.py",
+  "params": [
+   {
+    "default": null,
+    "name": "eventId",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "mode",
+    "type": "int"
+   },
+   {
+    "default": "False",
+    "name": "newWindow",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 9
+ },
+ "ui.paste": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.previewBrowserMenuItem": {
+  "file": "__browser.py",
+  "params": [],
+  "returns": "",
+  "since": 20
+ },
+ "ui.previous": {
+  "file": "__navigation.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.right": {
+  "file": "__keyboard.py",
+  "params": [
+   {
+    "default": "1",
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.scrollWindow": {
+  "file": "__windows.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   },
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   },
+   {
+    "default": "0",
+    "name": "directionFlag",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 13
+ },
+ "ui.selectBrowserMenuItem": {
+  "file": "__browser.py",
+  "params": [],
+  "returns": "",
+  "since": 20
+ },
+ "ui.selectWindow": {
+  "file": "__windows.py",
+  "params": [
+   {
+    "default": null,
+    "name": "shift",
+    "type": "bool"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.setBrowserAutoHide": {
+  "file": "__browser.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "bool"
+   }
+  ],
+  "returns": "",
+  "since": 20
+ },
+ "ui.setFocused": {
+  "file": "__windows.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 2
+ },
+ "ui.setHintMsg": {
+  "file": "__state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "msg",
+    "type": "str"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "ui.setSnapMode": {
+  "file": "__state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 24
+ },
+ "ui.setStepEditMode": {
+  "file": "__state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "newValue",
+    "type": "bool"
+   }
+  ],
+  "returns": "",
+  "since": 28
+ },
+ "ui.setTimeDispMin": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "None",
+  "since": 1
+ },
+ "ui.showNotification": {
+  "file": "__state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "notificationId",
+    "type": "int"
+   }
+  ],
+  "returns": "",
+  "since": 20
+ },
+ "ui.showWindow": {
+  "file": "__windows.py",
+  "params": [
+   {
+    "default": null,
+    "name": "index",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 1
+ },
+ "ui.snapMode": {
+  "file": "__state.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.snapOnOff": {
+  "file": "__state.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.strip": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.stripHold": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.stripJog": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.toggleBrowserNode": {
+  "file": "__browser.py",
+  "params": [
+   {
+    "default": "-1",
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "None",
+  "since": 34
+ },
+ "ui.up": {
+  "file": "__keyboard.py",
+  "params": [
+   {
+    "default": "1",
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.verZoom": {
+  "file": "__navigation.py",
+  "params": [
+   {
+    "default": null,
+    "name": "value",
+    "type": "int"
+   }
+  ],
+  "returns": "int",
+  "since": 1
+ },
+ "ui.yes": {
+  "file": "__keyboard.py",
+  "params": [],
+  "returns": "int",
+  "since": 1
+ }
+}

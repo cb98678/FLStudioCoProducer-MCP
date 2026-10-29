@@ -1,0 +1,125 @@
+{
+  "name": "newtime_quantize_save_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 at 2560x1440 on 2026-10-29: run end to end after add_warp_markers_gui placed 127 markers (saved the warped file; the marked syllables then sat a median 6.2 ms from their grid lines); the closing click was confirmed by hand. Draft from measured positions on FL 26.1.7 at 2560x1440 (2026-10-29). In the open Newtime window: Snap at row {snap_row} of its menu (1 Beat, 2 1/2, 3 1/3, 4 1/4 beat = a 16th, 5 1/6, 6 1/8), select all, Edit > Quantize time (every warp marker moves to its nearest grid line), then Save sample as {out_path}. Run after add_warp_markers_gui. It closes Newtime at the end (no question is asked) so the playlist clip menu is reachable again.",
+  "summary": "Quantize Newtime's warp markers to 16ths and save the warped sample.",
+  "params": [
+    "out_path",
+    "snap_row"
+  ],
+  "vision": false,
+  "source": "measured on this install; Image-Line manual: Quantize time quantizes warp markers to the grid; Save sample as (Ctrl+S) keeps markers in the file",
+  "steps": [
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 419,
+      "dy": 63
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 431,
+      "dy": 80,
+      "param": "snap_row",
+      "dy_each": 18.8
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 156,
+      "dy": 56
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "a"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 0.5
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 370,
+      "dy": 53
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 411,
+      "dy": 131
+    },
+    {
+      "do": "wait",
+      "seconds": 2.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 156,
+      "dy": 56
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "ctrl",
+        "s"
+      ]
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Save",
+      "timeout_s": 6
+    },
+    {
+      "do": "type",
+      "text": "{out_path}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "expect_file",
+      "path": "{out_path}",
+      "timeout_s": 60
+    },
+    {
+      "do": "wait",
+      "seconds": 2.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "WarpCorrection",
+      "dx": 725,
+      "dy": 15
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 5
+    }
+  ],
+  "needs_sandbox_project": true,
+  "allow_open": [
+    "WarpCorrection",
+    "Newtone"
+  ]
+}

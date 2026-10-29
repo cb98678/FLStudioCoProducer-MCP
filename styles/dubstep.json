@@ -1,0 +1,172 @@
+{
+ "name": "dubstep",
+ "label": "Dubstep",
+ "engine": "grammar",
+ "what": "Dubstep at about 140 in half time: kick on 1, snare on 3, sparse hats, a clean mono sub on the root apart from a growling mid-bass whose rhythm changes every bar or two, half-bar mutes before the drops, a snare roll that speeds up through the build, impacts on the drop.",
+ "moods": [
+  "angry",
+  "aggressive",
+  "menacing",
+  "dark",
+  "heavy"
+ ],
+ "tempo": {
+  "bpm": 140,
+  "range": [
+   138,
+   150
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "kick": "x...............",
+    "snare": "........o.......",
+    "hat": "..o...o...o...o.",
+    "rim": "........o......."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x.......x.......",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "................",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X.........x.....",
+     "X......x..x....."
+    ],
+    "snare": "........X.......",
+    "clap": "........x.......",
+    "hat": "o.o.o.o.o.o.o.o.",
+    "ohat": "......x.......x."
+   },
+   "fill_every": 8,
+   "fill": "A",
+   "last": {
+    "kick": "X...............",
+    "snare": "................",
+    "hat": "........"
+   }
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o.",
+    "rim": "........o......."
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "x.........x.....",
+    "snare": "........x.......",
+    "hat": "o.o.o.o.o.o.o.o."
+   },
+   "ramp": [
+    1.0,
+    0.85
+   ]
+  }
+ },
+ "bass": {
+  "drop": [
+   "X.x.X...x.o.X.x.",
+   "X-..x-..o-x.X...",
+   "X.x.X.x...o-x...",
+   "X---x.o.X.x.o..."
+  ]
+ },
+ "sub": {
+  "drop": [
+   "x---------------",
+   "x-------x-------"
+  ],
+  "outro": "x---------------"
+ },
+ "chords": {
+  "break": "x---------------",
+  "intro": "x---------------"
+ },
+ "arp": [
+  "break"
+ ],
+ "kit": {
+  "CP_Kick": {
+   "fn": "kick",
+   "args": {
+    "f0": 52.0,
+    "punch": 1.3,
+    "length": 0.5,
+    "drive": 2.4
+   }
+  },
+  "CP_Snare": {
+   "fn": "snare",
+   "args": {
+    "body_hz": 200.0,
+    "decay": 0.22,
+    "length": 0.55
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "growl",
+  "args": {
+   "f0": 55.0,
+   "length": 0.9,
+   "bpm": 140.0,
+   "lfo_div": 2.0
+  },
+  "label": "Growl Bass"
+ },
+ "production_recipe": "dubstep",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://www.pointblankmusicschool.com/blog/how-to-create-a-dubstep-drop-from-scratch/ (about 140 bpm half time, kick on 1 and snare on 3, mono sub apart from mid-bass growls, change every 4 to 8 bars, half-bar mutes, cut reverb tails at the drop)",
+  "https://loststoriesacademy.com/blogs-and-tutorials/what-makes-a-track-dj-friendly (DJ-friendly intros: 16 or 32 bars of kick, hats or percussion and minimal bass, no full melody or vocal at the start)"
+ ]
+}

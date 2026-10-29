@@ -47,7 +47,7 @@ def build_song_plan(words_file: str, hits_file: str, out_plan: str, name: str, t
         first = round((bass["bar0_s"] - origin) / (240.0 / hits["bpm"])) if "bar0_s" in bass else -12
         notes = json.load(open(opt["notes_file"], encoding="utf-8")) if opt.get("notes_file") else None
         midi, tried = _pick_midi(opt.get("midi_files") or [], bass, first, int(key_pc), float(hits["bpm"]))
-        var, mode = _variety_opts(opt), opt.get("mode") or (bass.get("key") or {}).get("mode") or ""
+        var, mode = _variety_opts(opt), opt.get("mode") or _mode_for(bass.get("key") or {}, int(key_pc))
         plan = songanalysis.draft_plan(name, songanalysis.tokens(words["words"]), source_bpm=hits["bpm"], key_pc=key_pc, origin_s=origin,
                                        roots=bass.get("roots_per_bar"), title=title, bpm=opt.get("bpm"), style=opt.get("style", ""),
                                        arrangement=opt.get("arrangement", ""), activity=act, roots_first_bar=first, research=notes, midi=midi,
@@ -60,6 +60,22 @@ def build_song_plan(words_file: str, hits_file: str, out_plan: str, name: str, t
     again = songplan.load(out_plan)
     return ok({"plan": out_plan, "problems": problems, "notes": plan["notes"], "hook": plan["chops"]["hook"], "chops": sorted(plan["chops"]),
                "downbeat": down, "variety": (plan.get("variety") or {}).get("choices"), "sounds": (plan.get("variety") or {}).get("sounds")}, verified=again == json.loads(json.dumps(plan)) and not problems)   # tuples come back as lists
+
+
+def _mode_for(bass_key: dict, key_pc: int) -> str:
+    """The mode of key_pc from the bass stem's key vote: its own mode when the tonics agree, the relative mode when key_pc is its relative
+    major or minor, else "" (unknown). A key_pc given by hand once took the bass vote's mode for another tonic: Open Your Heart's bass voted
+    G minor, the person's key is F major, and the plan said F minor (2026-10-29)."""
+    t, m = bass_key.get("tonic_pc"), bass_key.get("mode") or ""
+    if t is None or m not in ("major", "minor"):
+        return ""
+    if int(t) % 12 == key_pc % 12:
+        return m
+    if m == "minor" and (int(t) + 3) % 12 == key_pc % 12:
+        return "major"
+    if m == "major" and (int(t) + 9) % 12 == key_pc % 12:
+        return "minor"
+    return ""
 
 
 def _variety_opts(opt: dict):

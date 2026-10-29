@@ -33,3 +33,16 @@ def test_failures(rig, desk, tmp_path):
     assert rig.call("build_song_plan", out_plan=out, options={"colour": 1}, **ARGS).error.code == "E_ARG"
     assert rig.call("build_song_plan", out_plan=out, options={"key_pc": 9}, **{**ARGS, "words_file": str(tmp_path / "none.json")}).error.code == "E_IO"
     assert rig.call("build_song_plan", out_plan="", name="x", words_file="a", hits_file="b").error.code == "E_ARG"
+
+
+def test_a_hand_given_key_does_not_take_another_tonics_mode():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("bsp_mode", Path(__file__).with_name("build_song_plan.py"))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    _mode_for = mod._mode_for
+    assert _mode_for({"tonic_pc": 5, "mode": "major"}, 5) == "major"
+    assert _mode_for({"tonic_pc": 9, "mode": "minor"}, 0) == "major"    # A minor's relative major
+    assert _mode_for({"tonic_pc": 0, "mode": "major"}, 9) == "minor"    # C major's relative minor
+    assert _mode_for({"tonic_pc": 7, "mode": "minor"}, 5) == ""         # Open Your Heart: the bass voted G minor, the key is F
+    assert _mode_for({}, 5) == ""

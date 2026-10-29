@@ -1,0 +1,159 @@
+{
+ "name": "future_house",
+ "label": "Future house",
+ "engine": "grammar",
+ "what": "Future house as Asher Postman's demo builds it: three kicks and three flammed claps, off-16th hats, a springy GMS bass, a bright poly synth playing the chords as a 16th lead, vocal chops as the hook, an envelope controller pumping everything hard.",
+ "moods": [
+  "energetic",
+  "party",
+  "confident",
+  "bouncy"
+ ],
+ "tempo": {
+  "bpm": 126,
+  "range": [
+   122,
+   128
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": "...x...x...x...x",
+    "ohat": "..x...x...x...x."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": "...X...X...X...X",
+    "ohat": "..X...X...X...X.",
+    "shaker": "..o..Xo...o..Xo.",
+    "perc": ".x.o...o.x.o.o.o"
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "intro": {
+   "bars": {
+    "hat": "...x...x...x...x"
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "...x...x...x...x"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": "...x...x...x...x",
+    "ohat": "..x...x...x...x."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "..x...x...x...x.",
+  "drop": [
+   "x..x.xx...x..x.x",
+   "x..x..x.x.x..xo."
+  ],
+  "build": "..x...x...x...x."
+ },
+ "sub": {
+  "groove": "..x-..x-..x-..x-",
+  "drop": "..x-..x-..x-..x-"
+ },
+ "chords": {
+  "drop": "x.xx.x.xx.x.x.xx",
+  "groove": "x..x..x...x.....",
+  "voicing": "add9",
+  "break": "x---------------"
+ },
+ "arp": [],
+ "kit": {},
+ "production_recipe": "club_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'AP - FUTURE HOUSE (Stock Plugins Only)' by Asher Postman (Future House, 126 bpm), Grv Kick 18 + MA Round Kick 02 + Grv Kick 16, three claps on 2 and 4, Wavvyy Synth (Harmless), FUTURE Bass (GMS), Basic Sidechain envelope controller; studied on a sandbox copy 2026-10-28 (docs/demo_study/Asher_Postman_Future_House.md)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 8,
+  "tail_bars": 8,
+  "intro_bars": 16,
+  "bridge": false,
+  "outro_bars": 16,
+  "gap_before_drop": "beat"
+ },
+ "options": {
+  "form": "form.edm_two_drop",
+  "drums": "drums.future_house_flam",
+  "bass": "bass.offbeat_8th"
+ }
+}

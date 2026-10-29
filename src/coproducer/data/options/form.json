@@ -1,0 +1,923 @@
+{
+ "category": "form",
+ "what": "How the remix is laid out in time: which sections there are, how long, how each chorus is approached and left, how the song starts and ends. The engine part is read by songform.arrange (song-form plans) and by the chop template (template).",
+ "options": [
+  {
+   "id": "form.edm_two_drop",
+   "label": "Two drops, riser build before each",
+   "what": "Intro, groove, break, an 8-bar build with risers before every chorus, the chorus as a drop with 8 bars of chop games after it, an outro for DJs. The default the earlier remixes all used: keep it for club records, not for every song.",
+   "how": "Build: snare roll and noise riser, last beat empty. Drop: everything in on bar 1 with an impact and crash.",
+   "genres": [
+    "house",
+    "tech_house",
+    "techno",
+    "edm",
+    "big_room",
+    "future_house",
+    "dubstep",
+    "nu_disco",
+    "deep_house"
+   ],
+   "moods": [
+    "energetic",
+    "euphoric",
+    "party",
+    "uplifting"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "im_awake",
+     "where": "builds with 16th snare rolls into each drop"
+    },
+    {
+     "song": "future_house",
+     "where": "Buildup 8 bars, Drop 16, Outro 8"
+    }
+   ],
+   "engine": {
+    "build": "always",
+    "build_bars": 8,
+    "tail_bars": 8,
+    "intro_bars": 16,
+    "bridge": false,
+    "outro_bars": 16,
+    "gap_before_drop": "beat"
+   },
+   "template": [
+    [
+     "intro",
+     16
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     16
+    ]
+   ]
+  },
+  {
+   "id": "form.pop_verse_chorus",
+   "label": "Verse, lift, chorus (no riser build)",
+   "what": "A song form, not a DJ form: the chorus arrives after a short 4-bar lift at the end of the verse (a pre-chorus where the drums thin out and the last beat drops), never after an 8-bar riser. Short intro, short outro, a breakdown before the last chorus, the vocal carries the record.",
+   "how": "Put the energy step in the arrangement: the verse thins out in its last bars (kick out, filter down) and the chorus opens with everything. A crash and a reverse cymbal are enough FX.",
+   "genres": [
+    "pop_dance",
+    "reggaeton",
+    "afrobeats",
+    "pop",
+    "rnb",
+    "future_bass",
+    "trap",
+    "hiphop",
+    "house",
+    "deep_house",
+    "nu_disco",
+    "future_house",
+    "trip_hop"
+   ],
+   "moods": [
+    "romantic",
+    "warm",
+    "happy",
+    "soulful",
+    "sexy",
+    "playful"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "verses and choruses on the same 4-chord loop, energy from parts entering"
+    },
+    {
+     "song": "bien_duro",
+     "where": "Intro, Verse, Pre, Chorus with a different drum kit in each section"
+    },
+    {
+     "song": "use_me",
+     "where": "intro, verse, hook, verse, hook, try me, bridge, outro"
+    }
+   ],
+   "engine": {
+    "build": "always",
+    "build_bars": 4,
+    "tail_bars": 0,
+    "intro_bars": 8,
+    "bridge": true,
+    "bridge_bars": 8,
+    "outro_bars": 8,
+    "gap_before_drop": "beat"
+   },
+   "template": [
+    [
+     "intro",
+     8
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "build",
+     4
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "build",
+     4
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "form.additive_layers",
+   "label": "Additive 8-bar blocks, one long breakdown, one big drop",
+   "what": "Trance and melodic techno pacing: the track is built in 8-bar blocks and every block adds or swaps one element (bass, then percussion, then a pluck, then the pad). A long breakdown with the melody alone, a long build, one big drop.",
+   "how": "Write the intro as 6 blocks of 8 bars, each with one new part or one filter opening further (Exoplanet's markers are literally named 1er Cambio, 2nd Cambio...). Keep the drop for the second half of the song.",
+   "genres": [
+    "trance",
+    "melodic_techno",
+    "techno",
+    "progressive_house",
+    "house",
+    "deep_house",
+    "tech_house",
+    "afro_house"
+   ],
+   "moods": [
+    "euphoric",
+    "uplifting",
+    "hypnotic",
+    "dreamy",
+    "epic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "markers 1er Cambio to 6to Cambio every 8 to 16 bars, PRE DROP 32 bars, BREAKDOWN"
+    },
+    {
+     "song": "with_you",
+     "where": "Start 8, Vocal P1 28, Vocal Break Down 16, Build up 8, Drop 32, Outro 12"
+    }
+   ],
+   "engine": {
+    "build": "last",
+    "build_bars": 8,
+    "tail_bars": 8,
+    "intro_bars": 32,
+    "bridge": true,
+    "bridge_bars": 16,
+    "outro_bars": 16,
+    "gap_before_drop": "bar",
+    "add_every": 8
+   },
+   "template": [
+    [
+     "intro",
+     32
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "break",
+     16
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     32
+    ],
+    [
+     "outro",
+     16
+    ]
+   ]
+  },
+  {
+   "id": "form.mid8_ramp",
+   "label": "Two drops with a Mid 8 and a ramp, then a re-intro",
+   "what": "Industrial and bass-music pacing with a twist: after the second verse an 8-bar middle section changes the material (half the parts, a new chord), then a ramp section climbs into the last drop, and the song ends by quoting its intro.",
+   "how": "Name the sections the way DEDZII did: Intro, V1, Drop 1, V2, Mid 8, Mid 8 Ramp, Drop 2, Re-Intro. The ramp is 4 to 8 bars of rising filter and a snare speeding up; the re-intro is the intro's parts with the drop's bass.",
+   "genres": [
+    "electro_industrial",
+    "dubstep",
+    "drum_and_bass",
+    "bass_house",
+    "electro",
+    "house",
+    "techno",
+    "tech_house",
+    "future_house",
+    "uk_drill",
+    "trap"
+   ],
+   "moods": [
+    "dark",
+    "aggressive",
+    "tense",
+    "menacing"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "night_terror",
+     "where": "sections Intro, V1, Drop 1, V2, Mid 8, Mid 8 Ramp, Drop 2, Re-Intro, EndZII"
+    }
+   ],
+   "engine": {
+    "build": "alternate",
+    "build_bars": 8,
+    "tail_bars": 4,
+    "intro_bars": 8,
+    "bridge": true,
+    "bridge_bars": 8,
+    "outro_bars": 8,
+    "gap_before_drop": "beat",
+    "outro_style": "reintro",
+    "labels": {
+     "groove": "Verse",
+     "drop": "Drop",
+     "break": "Mid 8",
+     "build": "Ramp",
+     "outro": "Re-Intro"
+    }
+   },
+   "template": [
+    [
+     "intro",
+     8
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "form.loop_blocks",
+   "label": "8-bar loop blocks, drums drop out every third block",
+   "what": "Drill, trap and afrobeats: one 2- or 4-bar loop under the whole song, the energy made by taking drums and bass out and putting them back. Hooks and verses alternate in 8-bar blocks; an 8-bar block with no drums every third block resets the ear.",
+   "how": "Loop the melody; mute the kick and 808 for one block, or keep only hats; open and close with the melody and the vocal alone. Fills (a drum-fill sample, a riser, a gunshot impact) mark the block edges.",
+   "genres": [
+    "uk_drill",
+    "trap",
+    "afrobeats",
+    "hiphop",
+    "drill",
+    "dancehall",
+    "lofi"
+   ],
+   "moods": [
+    "dark",
+    "confident",
+    "cool",
+    "menacing",
+    "laid_back"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "16 blocks of 8 bars, every third block without drums (energy 0.72), intro and outro pads and vocal only"
+    },
+    {
+     "song": "stroll_up",
+     "where": "9 blocks of 8 bars"
+    },
+    {
+     "song": "shine",
+     "where": "one 2-bar loop under the whole song"
+    }
+   ],
+   "engine": {
+    "build": "never",
+    "build_bars": 4,
+    "tail_bars": 0,
+    "intro_bars": 8,
+    "bridge": false,
+    "outro_bars": 8,
+    "gap_before_drop": "none",
+    "drum_dropout_every": 3
+   },
+   "template": [
+    [
+     "intro",
+     8
+    ],
+    [
+     "groove",
+     8
+    ],
+    [
+     "drop",
+     8
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "groove",
+     8
+    ],
+    [
+     "drop",
+     8
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "drop",
+     8
+    ],
+    [
+     "outro",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "form.dnb_double_drop",
+   "label": "Long DJ intro, two 32-bar drops, a switch-up in the second",
+   "what": "Drum and bass pacing: a 16- to 32-bar intro with filtered breaks for mixing, a long first drop, a breakdown with the vocal and pads, and a second drop that changes the bass or the drums (a switch-up) instead of repeating the first.",
+   "how": "Intro: the break high-passed, opening over 16 bars. Drop 2: new bass pattern or a half-time 8 bars in the middle. Outro mirrors the intro.",
+   "genres": [
+    "drum_and_bass",
+    "dnb",
+    "liquid_dnb",
+    "jungle",
+    "dubstep",
+    "halftime"
+   ],
+   "moods": [
+    "energetic",
+    "uplifting",
+    "melancholic",
+    "soulful",
+    "dreamy"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "time",
+     "where": "liquid DnB at 170, long intro, plucks and vocal stack"
+    },
+    {
+     "song": "song_for_you",
+     "where": "breaks played in order then re-ordered as a Ghost Break"
+    },
+    {
+     "song": "never_out",
+     "where": "drop at bar 33 and bar 73"
+    }
+   ],
+   "engine": {
+    "build": "always",
+    "build_bars": 8,
+    "tail_bars": 8,
+    "intro_bars": 32,
+    "bridge": false,
+    "outro_bars": 16,
+    "gap_before_drop": "beat",
+    "switch_up": true
+   },
+   "template": [
+    [
+     "intro",
+     32
+    ],
+    [
+     "drop",
+     32
+    ],
+    [
+     "break",
+     16
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     32
+    ],
+    [
+     "outro",
+     16
+    ]
+   ]
+  },
+  {
+   "id": "form.journey",
+   "label": "Journey: vocal first, breakdown, one long drop",
+   "what": "Melodic techno storytelling: the vocal arrives early over the groove, then everything falls away for a long vocal breakdown, a short build, and a 32-bar drop where the lead and the bass carry the record without the vocal.",
+   "how": "Vocal part 1 over a rolling bass; breakdown: pads, vocal, reverb throws; build: noise and the lead's filter opening; drop: lead, bass, no vocal or only one phrase.",
+   "genres": [
+    "melodic_techno",
+    "techno",
+    "progressive_house",
+    "afro_house",
+    "house",
+    "deep_house",
+    "dnb",
+    "liquid_dnb"
+   ],
+   "moods": [
+    "hypnotic",
+    "dreamy",
+    "melancholic",
+    "epic",
+    "dark"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "Start, Vocal P1, Vocal Break Down, Build up, Drop, Outro"
+    }
+   ],
+   "engine": {
+    "build": "last",
+    "build_bars": 8,
+    "tail_bars": 16,
+    "intro_bars": 8,
+    "bridge": true,
+    "bridge_bars": 16,
+    "outro_bars": 12,
+    "gap_before_drop": "bar"
+   },
+   "template": [
+    [
+     "intro",
+     8
+    ],
+    [
+     "groove",
+     28
+    ],
+    [
+     "break",
+     16
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     32
+    ],
+    [
+     "outro",
+     12
+    ]
+   ]
+  },
+  {
+   "id": "form.hypnotic_long",
+   "label": "Hypnotic 16-bar phrases, filters instead of drops",
+   "what": "Afro house and deep house: no big drop. The record moves in 16-bar phrases where a filter opens, a percussion layer enters or a chord pluck's decay grows. The peak is the moment everything is open, not a silence and an impact.",
+   "how": "Automate the cutoff of the arp or chord pluck over 16 bars; add one percussion voice per phrase; take the kick out for 4 bars in the middle and put it back without a riser.",
+   "genres": [
+    "afro_house",
+    "deep_house",
+    "organic_house",
+    "minimal",
+    "house",
+    "tech_house",
+    "melodic_techno",
+    "techno"
+   ],
+   "moods": [
+    "hypnotic",
+    "warm",
+    "spiritual",
+    "laid_back",
+    "tribal"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "FLEX Arp cutoff opened over 16 bars, chord pluck decay automated, percussion layers enter one by one"
+    }
+   ],
+   "engine": {
+    "build": "never",
+    "build_bars": 4,
+    "tail_bars": 8,
+    "intro_bars": 16,
+    "bridge": true,
+    "bridge_bars": 8,
+    "outro_bars": 16,
+    "gap_before_drop": "none"
+   },
+   "template": [
+    [
+     "intro",
+     16
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     16
+    ]
+   ]
+  },
+  {
+   "id": "form.halftime_switch",
+   "label": "Future bass: build, then a half-time drop",
+   "what": "Future bass and trap-pop: the verse runs at full time, the build speeds a pitched snare roll up, and the drop falls into half time (snare on beat 3) with big detuned chords. The second drop can double back to full time for 4 bars.",
+   "how": "Build: 808 snare roll in 16ths with its pitch rising, the chords' volume ducked on every beat. Drop: half-time drums, saw chords through Gross Beat or a volume shaper, a white-noise layer playing the chord rhythm.",
+   "genres": [
+    "future_bass",
+    "trap",
+    "melodic_dubstep",
+    "pop",
+    "dubstep",
+    "future_house"
+   ],
+   "moods": [
+    "euphoric",
+    "bittersweet",
+    "uplifting",
+    "playful",
+    "emotional"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "808 Snare roll with pitch automation, half-time snare on 3, white noise following the bass rhythm, tempo automation"
+    }
+   ],
+   "engine": {
+    "build": "always",
+    "build_bars": 8,
+    "tail_bars": 4,
+    "intro_bars": 8,
+    "bridge": false,
+    "outro_bars": 8,
+    "gap_before_drop": "beat",
+    "drop_feel": "half"
+   },
+   "template": [
+    [
+     "intro",
+     8
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "groove",
+     8
+    ],
+    [
+     "build",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "form.lofi_loop",
+   "label": "Lo-fi loop with entries and exits",
+   "what": "Lo-fi and chill hip-hop: a 4-bar chord loop, instruments entering and leaving every 4 to 8 bars, no builds and no drops. The changes are subtraction (drums out, piano alone) and texture (a filter on the master, a tape-stop at the end).",
+   "how": "Piano and guitar loop; drums enter after 8 bars; every 8 bars take one element out; end on the piano alone or with a master low-pass closing.",
+   "genres": [
+    "lofi",
+    "chillhop",
+    "hiphop",
+    "jazz_hop",
+    "trip_hop",
+    "rnb"
+   ],
+   "moods": [
+    "calm",
+    "nostalgic",
+    "melancholic",
+    "laid_back",
+    "warm",
+    "dreamy"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "inner_days",
+     "where": "piano, guitar, strings, drums, bass entering and leaving"
+    },
+    {
+     "song": "inner_days_rework",
+     "where": "the same parts re-cut with an 808 and a pluck"
+    }
+   ],
+   "engine": {
+    "build": "never",
+    "build_bars": 4,
+    "tail_bars": 0,
+    "intro_bars": 8,
+    "bridge": true,
+    "bridge_bars": 8,
+    "outro_bars": 8,
+    "gap_before_drop": "none"
+   },
+   "template": [
+    [
+     "intro",
+     8
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "form.cinematic_cues",
+   "label": "Through-composed cues with meter and tempo changes",
+   "what": "Soundtrack writing: the music follows a story, not a loop. Short cues, a bar of 7/4 or 6/4 to make a turn, a 3/4 bar before a return, a tempo change (120 to 110) for a new scene, an ending that stops instead of fading.",
+   "how": "Use FL time-signature markers for the odd bars and a tempo automation clip for the scene change. Keep the drums sparse (ride, toms) so the meter changes read.",
+   "genres": [
+    "soundtrack",
+    "cinematic",
+    "jazz",
+    "spy",
+    "orchestral"
+   ],
+   "moods": [
+    "mysterious",
+    "tense",
+    "playful",
+    "dramatic",
+    "suspense"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "markers 120 Bpm, 4/4, C Min, 110 Bpm, 7/4, 6/4, 4/4, 3/4, 4/4; tempo automation"
+    }
+   ],
+   "engine": {
+    "build": "never",
+    "build_bars": 4,
+    "tail_bars": 0,
+    "intro_bars": 4,
+    "bridge": true,
+    "bridge_bars": 4,
+    "outro_bars": 4,
+    "gap_before_drop": "none"
+   },
+   "template": [
+    [
+     "intro",
+     4
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "break",
+     4
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     4
+    ]
+   ],
+   "manual": "Odd meters and tempo changes are not built by the engine yet: set the markers and the tempo clip in FL (or with the bridge) after the build."
+  },
+  {
+   "id": "form.whole_song_turned",
+   "label": "The whole song at club tempo, each pass a different job",
+   "what": "Every sung line of the record in its own order, sped up to the style's standard tempo, with the functions turned from pass to pass: verse 1 rides the groove, chorus 1 is sung over a break with the bass out and lifts into a drop of the record's own hook, verse 2 moves into a second break, chorus 2 is sung on the drop beat, a two-bar breath, then the last hook drop. No riser builds: an empty bar before each drop does the lifting, so the drops need not be louder than the groove. A short club edit for open-format DJs (the studied one runs 2:39).",
+   "how": "Groove: kick and bass alone for 8 bars, then claps and off-beat hats. Breaks: the bass out, a lighter syncopated kick, rolling 16th hats. The bar before each drop: everything out but a noise sweep and the last sung words. Drop after chorus 1: the hook for 8 bars, then 8 bars with a new chord layer and the bass filter closed.",
+   "genres": [
+    "house",
+    "tech_house",
+    "pop_dance",
+    "future_house",
+    "nu_disco",
+    "deep_house",
+    "edm"
+   ],
+   "moods": [
+    "energetic",
+    "party",
+    "happy",
+    "romantic",
+    "bittersweet",
+    "uplifting"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "sorry_freejak",
+     "where": "intro 1-4 (hook, claps, hats), verse 1 on the groove 5-20, chorus 1 in a break 21-27, stop bar 28, hook drop 29-44, verse 2 in a break 45-51, stop bar 52, chorus 2 on the drop 53-68, breath 69-70, hook drop 71-83"
+    }
+   ],
+   "engine": {
+    "build": "never",
+    "verse_as": [
+     "groove",
+     "break"
+    ],
+    "chorus_as": [
+     "break",
+     "drop"
+    ],
+    "drop_after": 16,
+    "tail_bars": 16,
+    "tail_break": 2,
+    "intro_bars": 4,
+    "outro_bars": 4,
+    "bridge": false,
+    "gap_before_drop": "bar",
+    "tempo": "standard"
+   },
+   "template": [
+    [
+     "intro",
+     4
+    ],
+    [
+     "groove",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "break",
+     8
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "break",
+     2
+    ],
+    [
+     "drop",
+     16
+    ],
+    [
+     "outro",
+     4
+    ]
+   ]
+  }
+ ]
+}

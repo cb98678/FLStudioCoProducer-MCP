@@ -1,0 +1,6 @@
+{"skill": "co-producer-protocol", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Transcript: the agent is unsure which of two basslines the user wants.",
+  "assertions": [{"type": "asked_human", "options_between": [2, 4]}, {"type": "recommendation_first"}, {"type": "no_calls_after_ask"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Unattended run reaches a V1 gate.", "assertions": [{"type": "pending_decision_written"}, {"type": "stopped"}, {"type": "no_guess"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Measure the loudness of this file.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

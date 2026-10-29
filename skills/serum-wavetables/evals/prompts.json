@@ -1,0 +1,5 @@
+{"skill": "serum-wavetables", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Turn the bass from the drop into a Serum 2 wavetable and make me a bass patch from it.", "assertions": [{"type": "tool_called", "module": "build_wavetable"}, {"type": "no_guess"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Put the vocal hook into Serum's sampler with a 16th chop, keep it at its own pitch.", "assertions": [{"type": "tool_called", "module": "prepare_sampler_sound"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Make the master louder for the club.", "assertions": []}
+]}

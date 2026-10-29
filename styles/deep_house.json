@@ -1,0 +1,204 @@
+{
+ "name": "deep_house",
+ "label": "Deep house (melodic, late night)",
+ "engine": "grammar",
+ "what": "Deep and melodic house for sad, romantic, bittersweet or nostalgic songs: low to mid 120s with a touch of swing, a soft four on the floor, clap on 2 and 4, off-beat open hats and shakers, a warm legato bass on the roots, held pad chords filtered dark, sparse stabs, long breaks and gentle builds without snare rolls.",
+ "moods": [
+  "sad",
+  "romantic",
+  "bittersweet",
+  "nostalgic",
+  "introspective",
+  "melancholy",
+  "dreamy"
+ ],
+ "tempo": {
+  "bpm": 122,
+  "range": [
+   118,
+   125
+  ],
+  "follow": true
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "swing": 0.56,
+  "intro": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "shaker": "..o...o...o...o."
+   },
+   "ramp": [
+    0.7,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "clap": "....o.......o...",
+    "ohat": "..o...o...o...o.",
+    "shaker": "o.x.o.x.o.x.o.x.",
+    "rim": [
+     "................",
+     ".......o......o."
+    ]
+   },
+   "fill_every": 16,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "shaker": "..o...o...o...o.",
+    "rim": [
+     ".......o........",
+     "...........o...."
+    ]
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "ohat": "..o...o...o...o.",
+    "hat": "o.o.o.o.o.o.o.o."
+   },
+   "ramp": [
+    0.6,
+    0.95
+   ],
+   "last": {
+    "kick": "x...x...........",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "ohat": "..x...x...x...x.",
+    "hat": "o.o.o.o.o.o.o.o.",
+    "shaker": "o.x.o.x.o.x.o.x."
+   },
+   "fill_every": 16,
+   "fill": "C"
+  },
+  "outro": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "shaker": "..o...o...o...o."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "x--.....x--.....",
+  "drop": [
+   "x--...x-x--.....",
+   "x--...x-x--...5-"
+  ],
+  "build": "x--.....x--.....",
+  "outro": "x--.....x--....."
+ },
+ "sub": {
+  "drop": "x---------------"
+ },
+ "chords": {
+  "groove": "x-------x-------",
+  "drop": [
+   "x-------x-------",
+   "x-------....x---"
+  ],
+  "break": "x---------------",
+  "build": "x---------------"
+ },
+ "arp": [
+  "break"
+ ],
+ "kit": {
+  "CP_Kick": {
+   "fn": "kick",
+   "args": {
+    "f0": 50.0,
+    "punch": 0.8,
+    "length": 0.45,
+    "drive": 1.3
+   }
+  },
+  "CP_Clap": {
+   "fn": "clap",
+   "args": {
+    "seed": 21
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.55,
+   "voices": 3,
+   "detune_cents": 5.0,
+   "drive": 1.2
+  },
+  "label": "Deep Bass"
+ },
+ "production_recipe": "deep_house",
+ "targets": "targets/club_release.toml",
+ "levels_db": {
+  "vocal": -1.0,
+  "clap": -9.0,
+  "hats": -11.0,
+  "fx": -10.0,
+  "arp": -8.0
+ },
+ "levels_note": "Starts from the person's house balance (master B, 2026-10-26) with clap, hats and FX a little further back: deep house keeps the drums soft under the pads and the voice.",
+ "kick_sub_shelf": {
+  "hz": 60,
+  "db": -4.5,
+  "why": "the same generated kick as house; the person's master B cut its sub with this shelf"
+ },
+ "sources": [
+  "https://blog.native-instruments.com/how-to-make-a-deep-house-track/ (low to mid 120s, minor key, kick on every beat, clap on 2 and 4, open hats and shakers between beats, a touch of swing, a pad filtered dark at 400 Hz, a legato bass on the chord roots, sparse stabs, everything but the drums ducked by the kick)",
+  "https://modeaudio.com/magazine/deep-house-5-production-essentials"
+ ]
+}

@@ -1,0 +1,5 @@
+{"skill": "loops-and-kits", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Make me clean drum loops and a kit from this remix's drums, and get the bass line out too.", "assertions": [{"type": "tool_called", "module": "build_song_analysis"}, {"type": "tool_called", "module": "extract_song_loops"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Find loops in my FL packs that groove like the drop of this remix.", "assertions": [{"type": "tool_called", "module": "find_matching_loops"}, {"type": "no_guess"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Turn the reverb on the vocal down a little.", "assertions": []}
+]}

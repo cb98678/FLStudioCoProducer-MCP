@@ -1,0 +1,27 @@
+[module]
+name = "prepare_rate_copy"
+layer = "L3"
+summary = "Write a sandbox copy of an audio file resampled by up/down at the same header rate (longer and lower, or shorter and higher)."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["path","out_path","up","down"],"properties":{"path":{"type":"string","minLength":1},"out_path":{"type":"string","minLength":1},"up":{"type":"integer","minimum":1,"maximum":10000},"down":{"type":"integer","minimum":1,"maximum":10000}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "seconds"
+idempotent = true
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_prepare_rate_copy.py::test_round_trip_keeps_length_and_pitch"
+failure = "test_prepare_rate_copy.py::test_refuses_bad_ratio_and_paths"

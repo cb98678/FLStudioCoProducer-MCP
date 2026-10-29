@@ -1,0 +1,181 @@
+{
+ "name": "electro_industrial",
+ "label": "Electro industrial",
+ "engine": "grammar",
+ "what": "Electro industrial as NIGHT TERROR builds it: a minimal hard kick, 16th hats, four stacked claps with a ghost, a 16th bass ostinato on four layers (distorted Sytrus, square sub, FLEX 808, an octave-up boost), a croaking FLEX lead, Intro, V1, Drop 1, V2, Mid 8, Mid 8 Ramp, Drop 2, Re-Intro.",
+ "moods": [
+  "dark",
+  "aggressive",
+  "menacing",
+  "cold",
+  "mechanical"
+ ],
+ "tempo": {
+  "bpm": 110,
+  "range": [
+   100,
+   130
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "clap": "..o.X.......X..."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X...X...X...X...",
+     "X...X...X...X...",
+     "X...X...X...X...",
+     "X...X...X...x.o."
+    ],
+    "hat": "xxxxxxxxxxxxxxxx",
+    "clap": "..o.X.......X...",
+    "ohat": "X..............."
+   }
+  },
+  "break": {
+   "bars": {
+    "hat": "x.x.x.x.x.x.x.x."
+   }
+  },
+  "intro": {
+   "bars": {
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "clap": "..o.X.......X..."
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  }
+ },
+ "bass": {
+  "groove": "Xxxx.xxxXxxx.xxx",
+  "drop": "XxxxXxxxXxxxXxxx",
+  "build": "xxxxxxxxxxxxxxxx",
+  "outro": "Xxxx.xxxXxxx.xxx"
+ },
+ "sub": {
+  "groove": ".x.x.x.x.x.x.x.x",
+  "drop": ".x.x.x.x.x.x.x.x"
+ },
+ "chords": {
+  "groove": "x---------------",
+  "drop": "x---x---x---x---",
+  "break": "x---------------",
+  "build": "x...x...x...x...",
+  "voicing": "open"
+ },
+ "arp": {
+  "shape": "sequence",
+  "rate": 16,
+  "sections": [
+   "drop"
+  ],
+  "cell": [
+   0,
+   0,
+   12,
+   0,
+   0,
+   10,
+   0,
+   7
+  ],
+  "gate": 0.5
+ },
+ "kit": {},
+ "production_recipe": "techno",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'NIGHT TERROR' by DEDZII (Electro Industrial, 108 bpm), Minimal Kick 36, Hat 184 16ths, four claps ..o.X.......X..., DEDZII TERROR, Square Sub, 808 Flattened, Dedziiboost, Crushspeak Now; studied on a sandbox copy 2026-10-28 (docs/demo_study/DEDZII_NIGHT_TERROR.md)"
+ ],
+ "form": {
+  "build": "alternate",
+  "build_bars": 8,
+  "tail_bars": 4,
+  "intro_bars": 8,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 8,
+  "gap_before_drop": "beat",
+  "outro_style": "reintro",
+  "labels": {
+   "groove": "Verse",
+   "drop": "Drop",
+   "break": "Mid 8",
+   "build": "Ramp",
+   "outro": "Re-Intro"
+  }
+ },
+ "options": {
+  "form": "form.mid8_ramp",
+  "drums": "drums.industrial_minimal",
+  "bass": "bass.ostinato_16"
+ },
+ "sub_duck_kicks": true
+}

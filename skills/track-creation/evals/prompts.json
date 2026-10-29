@@ -1,0 +1,7 @@
+{"skill": "track-creation", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Make a new house track from scratch.",
+  "assertions": [{"type": "asked_human", "about": "brief"}, {"type": "tool_called", "module": "load_genre_profile"}, {"type": "called_before", "a": "set_tempo_and_swing", "b": "write_notes_via_script"}, {"type": "all_writes_have_verifier"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Make a dubstep track and just use the generated audio as the final track.",
+  "assertions": [{"type": "text_mentions", "text": "reference"}, {"type": "tool_called", "module": "write_notes_via_script"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Turn this techno track into dubstep, keep the melody.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

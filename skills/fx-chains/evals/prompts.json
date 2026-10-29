@@ -1,0 +1,6 @@
+{"skill": "fx-chains", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Give the vocal chops the effect chain from the Future House reference.",
+  "assertions": [{"type": "called_before", "a": "list_effect_library", "b": "apply_effect_from_library"}, {"type": "tool_called", "module": "read_project_anatomy"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Glue the drums with the reference's bus compressor.", "assertions": [{"type": "tool_called", "module": "apply_effect_from_library"}, {"type": "any_of", "of": [{"type": "asked_human"}, {"type": "tool_called", "module": "get_plugin_param_by_name"}]}]},
+ {"id": 3, "should_trigger": false, "prompt": "What key is this song in?", "assertions": [{"type": "skill_not_loaded"}]}
+]}

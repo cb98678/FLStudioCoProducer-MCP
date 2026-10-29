@@ -1,0 +1,7 @@
+{"skill": "mastering", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Master this for streaming.",
+  "assertions": [{"type": "called_before", "a": "load_targets_file", "b": "render_via_cli"}, {"type": "tool_called", "module": "measure_integrated_loudness"}, {"type": "tool_called", "module": "measure_true_peak"}, {"type": "tool_called", "module": "build_ab_package"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Make it as loud as this reference.",
+  "assertions": [{"type": "tool_called", "module": "measure_integrated_loudness"}, {"type": "tool_called", "module": "build_ab_package"}, {"type": "text_mentions", "text": "targets"}]},
+ {"id": 3, "should_trigger": false, "prompt": "What is the key of this song?", "assertions": [{"type": "skill_not_loaded"}]}
+]}

@@ -1,0 +1,865 @@
+{
+ "category": "kit",
+ "what": "Drum kits: one per demo song, the samples it really plays. engine.voices maps a kit voice (kick, snare, clap, hat, ohat, shaker, rim, tom, crash, perc, ride) to a sample path as FL stores it (%FLStudioFactoryData% is the FL install folder); the remix build resolves the path on the host and uses it in place of the synthesized one-shot.",
+ "options": [
+  {
+   "id": "kit.synth",
+   "label": "Synthesized one-shots (the coproducer's own kit)",
+   "what": "The kit oneshots.py synthesizes for every remix: neutral, always available, the fallback when no demo kit fits the genre.",
+   "genres": [
+    "*"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [],
+   "engine": {
+    "voices": {}
+   }
+  },
+  {
+   "id": "kit.future_house",
+   "label": "AP - FUTURE HOUSE kit (Future House)",
+   "what": "The drum samples Asher Postman uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "future_house",
+    "house",
+    "bass_house"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "future_house",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 18.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 19.wv",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Crash.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 06.wv",
+     "ohat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Collider Slack OHat 02.wv",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Attack Shaker 10.wv",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\Grv CH 03.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Collider Reverso Snare 01.wv",
+     "tom": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Toms\\Titey Tom.wav"
+    },
+    "alternates": {
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\MA Round Kick 02.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 16.wav"
+     ],
+     "clap": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 12.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Fracture Clap 04.wv"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Crash.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\SFX\\SFX Cym Airy.wav"
+     ],
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Collider Slack CHat 02.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 15.wv"
+     ],
+     "ohat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack OHat 14.wv"
+     ],
+     "shaker": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Hyper GoldenDays Shaker.wv"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Power Click 03.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Fracture Perc 17.wv"
+     ],
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Attack Snare 44.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Collider Reverso Snare 01.wv"
+     ],
+     "tom": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Toms\\Titey Tom.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.bien_duro",
+   "label": "Bien Duro kit (Reggaeton)",
+   "what": "The drum samples Astes uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "reggaeton",
+    "latin",
+    "moombahton"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "bien_duro",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\Attack Timbale 03.wv",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\SFX Cym Noisy.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAMR_Kick_11_538574.ogg",
+     "tom": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\909 Tom.wav",
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAER_Kick_06_Gas_Pedal_540891.ogg",
+     "rim": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAER_Snare_01_Thinner_540958.ogg",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\shake3.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\909 Clap.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\PL_Travesura_Kit_1_90bpm_Kick_2119475.ogg"
+    },
+    "alternates": {
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\Attack Timbale 01.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\LN_04_Frio_Timbal_Sample_2449639.ogg"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\SFX Cym Noisy.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\SFX Cym Crash.wav"
+     ],
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAMR_Percussion_35_538615.ogg",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAMR_Percussion_10_538605.ogg"
+     ],
+     "tom": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAER_Kick_06_Gas_Pedal_540891.ogg",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\RD_Tom_5.wav"
+     ],
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAMR_Kick_11_538574.ogg",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\LN_02_Diamante_Kick_Sample_2449546.ogg"
+     ],
+     "rim": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\RP_Kit_01_102bpm_Rim_Hard_936448.ogg",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\LSLMP_Dembow_Drum_Loop_01_103_282189.ogg"
+     ],
+     "shaker": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\RD Tamb 1.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\HouseGen Shaker 07.wv"
+     ],
+     "clap": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\DNC Clap 1.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAEC_Clap_06.flac"
+     ],
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\WAMR_Percussion_14_538591.ogg",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\PL_Travesura_Kit_1_90bpm_Rim_2119476.ogg"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.right_night",
+   "label": "Right Night feeling kit (Pop Dance)",
+   "what": "The drum samples Atthar ft. Mehran Abbasi & Elise Chantelle uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "pop_dance",
+    "nu_disco",
+    "house"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "right_night",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 15.wv",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Attack Shaker 10.wv",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 14.wav"
+    },
+    "alternates": {}
+   }
+  },
+  {
+   "id": "kit.im_awake",
+   "label": "I'm Awake kit (EDM)",
+   "what": "The drum samples Bombs Away ft KARRA uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "edm",
+    "big_room",
+    "electro_house"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "im_awake",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 21.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 24.wv",
+     "ohat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack OHat 02.wv",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 01.wv",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Collider Slack Roto 04.wv",
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\MA Riddles Kick.wv",
+     "tom": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Volt CleanClapSnare 06.wv",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Cymbals\\Volt CleanCrash 05.wv"
+    },
+    "alternates": {
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Linn Snare.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\MA Chromatism Snare.wv"
+     ],
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 02.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Collider Tuned CHat 02.wv"
+     ],
+     "clap": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 01.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 08.wv"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\FPC Metal Hit.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\FPC Metal Hit.wav"
+     ],
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\HouseGen Snare 14.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\Hyper StadiumHop Kick 02.wv"
+     ],
+     "tom": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\MA Taurus Clap.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Toms\\Collider Boom Tom low.wv"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\HouseGen Snare 28.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\HouseGen Snare 28.wv"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.time",
+   "label": "Time kit (D&B)",
+   "what": "The drum samples Chan Gibbons x Ceebeaats uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "drum_and_bass",
+    "liquid_dnb",
+    "dnb"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "time",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Chan Gibbons x Ceebeaats - Time\\CB DnB Kick.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Chan Gibbons x Ceebeaats - Time\\CB DnB Snare.wav",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kits\\Thrower\\Tamborine 2.wav",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kits\\Thrower\\18 in crash1.wav"
+    },
+    "alternates": {
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\SFX Cym Noisy.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.africas_calling",
+   "label": "Africa's Calling kit (Afro House)",
+   "what": "The drum samples Cuebur & Thandi Draai uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "afro_house",
+    "deep_house",
+    "organic_house"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 15.wv",
+     "tom": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Toms\\Collider XY Tom high.wv",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Foley\\MA Wood Drop 02.wv",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\Attack Shaker 10.wv",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Cymbals\\Hyper RagsToRiches Cymbal.wv"
+    },
+    "alternates": {
+     "clap": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Cuebur & Thandi Draai - Africa's Calling\\AP Clap Human 02.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 12.wv"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Fracture Perc 15.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Cuebur & Thandi Draai - Africa's Calling\\Fracture Perc 15 - Part_1.wav"
+     ],
+     "shaker": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\Attack Shaker 09.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Attack Shaker 05.wv"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Cymbals\\Hyper RagsToRiches Cymbal.wv"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.night_terror",
+   "label": "NIGHT TERROR kit (Electro Industrial)",
+   "what": "The drum samples DEDZII uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "electro_industrial",
+    "industrial_techno",
+    "ebm"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "night_terror",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kits\\Jayce Lewis\\JL Hat 184 Closed Hat 02.flac",
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Minimal Kick 36.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 02.wv",
+     "ohat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\HouseGen OHat 02.wv",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 25.wav"
+    },
+    "alternates": {
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\MA Sanctuary Hat 01.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\MA NorthernLights CHat.wv"
+     ],
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Minimal Kick 37.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\MA FrightNight Kick.wv"
+     ],
+     "clap": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 10.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 08.wv"
+     ],
+     "ohat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Collider Fifth OHat 01.wv"
+     ],
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\FPC Snare 8.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.song_for_you",
+   "label": "Song For You kit (Drum & Bass)",
+   "what": "The drum samples Edlan & Ella Noël uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "drum_and_bass",
+    "dnb",
+    "liquid_dnb"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "song_for_you",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\MA GreenDream Kick.wv",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_MA.wav",
+     "rim": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\MA Stargazer Stick.wv",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_CHiHat.wav",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Edlan & Ella Noël - Song For You\\FPC_Tamb_B04.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Kits\\Drum Kit 05\\FLS_Clap 05.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\RealDrumkits\\RD_Snare_11.wav",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Edlan & Ella Noël - Song For You\\DNC_Crash.wav"
+    },
+    "alternates": {
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Kits\\Drum Kit 05\\FLS_Kick 05.wav"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Edlan & Ella Noël - Song For You\\FPC_RideBell_F_010.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Collider Reverso Ruler 02.wv"
+     ],
+     "rim": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Rims\\Hyper HollywoodHills Rim.wv"
+     ],
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat_6.wav"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Edlan & Ella Noël - Song For You\\DNC_Crash.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.inner_days",
+   "label": "Inner Days kit (Lo-Fi)",
+   "what": "The drum samples Electroconductor (aka nucleon) uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "lofi",
+    "chillhop",
+    "hiphop"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "inner_days",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Kick_2.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Snare_6.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat_3.wav",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\RealDrumkits\\RD_Shaker.wav"
+    },
+    "alternates": {}
+   }
+  },
+  {
+   "id": "kit.inner_days_rework",
+   "label": "Inner Days - SH-1 Rework kit (Lo-Fi)",
+   "what": "The drum samples Electroconductor (aka nucleon) uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "lofi",
+    "chillhop",
+    "hiphop"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "inner_days_rework",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Electroconductor - Inner Days\\HIP_Kick_2.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Electroconductor - Inner Days\\Snare_2.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Electroconductor - Inner Days\\Hat_2.wav",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Electroconductor - Inner Days\\Shaker_2.wav"
+    },
+    "alternates": {}
+   }
+  },
+  {
+   "id": "kit.exoplanet",
+   "label": "Exoplanet kit (Trance)",
+   "what": "The drum samples Eric Kauffmann & NrgMind uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "trance",
+    "progressive_house"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 03.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 09.wv",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 06.wv",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Collider Desert Rattle 01.wv",
+     "ride": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Ride.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Attack Snare 11.wv",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Grv Crash 01.wav"
+    },
+    "alternates": {
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\Downstream Kick 12.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 03.wav"
+     ],
+     "clap": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 09.wv"
+     ],
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\Grv CH 06.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\909 OH.wav"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 13.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 03.wav"
+     ],
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Attack Snare 05.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Attack Snare 05.wv"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Cymbals\\Volt CleanCrash 01.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Crash.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.mic_check",
+   "label": "Mic Check Ready kit (UK Drill)",
+   "what": "The drum samples Jay Cactus x Confz uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "uk_drill",
+    "drill",
+    "grime"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "mic_check",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\58. Drill Kick_3449443.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\2DEEP_NYD_04_Snare_01_Sample_2137359.wav",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\KK_Jersey_Percussion_Open_3437131.wav"
+    },
+    "alternates": {
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\KK_Jersey_Snare_Papi_3437168.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\KK_Jersey_Snare_Munch_3437172.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.shine",
+   "label": "SHINE kit (Afrobeats)",
+   "what": "The drum samples LeriQ uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "afrobeats",
+    "afro_pop",
+    "amapiano"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "shine",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\LeriQ - SHINE\\22inchride.wav",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\RD Tamb 2.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat.wav",
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Electroconductor - Inner Days\\HIP_Kick_2.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Snare_8.wav",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\SFX\\SFX Cym Airy.wav"
+    },
+    "alternates": {
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\FPC Ice Crack.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\FPC Wood Hit 1.wav"
+     ],
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Seamless - Menagerie\\RD_Hat.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat_6.wav"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\SFX Cym Noisy.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.madonna",
+   "label": "I'll Be Your Madonna kit (Trip Hop/ Lounge)",
+   "what": "The drum samples LollieVox & Lezina J uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "trip_hop",
+    "downtempo",
+    "lounge"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\LollieVox & Lezina J - I'll Be Your Madonna\\Violins.E6.ogg",
+     "shaker": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Hyper GoldenDays Shaker.wv",
+     "ride": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kits\\HQ Jazz Kit\\Ride HQ Jazz #3.wav",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kits\\Thrower\\Big China1.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat_2.wav",
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Minimal Kick 22.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\One Day (Funky Mix)\\DNC_Clap.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Snare_2.wav"
+    },
+    "alternates": {
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Fracture Perc 22.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Fracture Perc 01.wv"
+     ],
+     "shaker": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Hyper GoldenDays Shaker.wv",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Hyper HouseParty Shaker 02.wv"
+     ],
+     "hat": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat_4.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kits\\Thrower\\hat closed 1.wav"
+     ],
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Minimal Kick 22.wav"
+     ],
+     "clap": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\One Day (Funky Mix)\\DNC_Clap.wav"
+     ],
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\RealDrumkits\\RD_Snare_8.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.never_out",
+   "label": "Never Out kit (Drum & Bass)",
+   "what": "The drum samples Mehdi Ebrahiminejad uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "drum_and_bass",
+    "dnb",
+    "liquid_dnb"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\WA_HHH_Kick_09_3224349.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\MEHB2_Snare_002_780648.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\PL_Beggin_02_Hi_Hat_2_134_E_3333771.wav",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\PT_04_Crash_170_E_Wet_896791.ogg",
+     "ohat": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\WA_HHH_Open_Hat_03_3224316.wav",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\Chromo CH 2.wav",
+     "tom": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Titey Tom.wav",
+     "ride": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Ride Set - Part_2.wav"
+    },
+    "alternates": {
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\PL_CDNB_04_KickFX_01_881554.ogg"
+     ],
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\MEHB2_Snare_002_780648.wav"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Cymbals\\Hyper RagsToRiches Cymbal.wv"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\PL_CDNB_04_FltrPercWet_03_170_Tail_881544.ogg"
+     ],
+     "tom": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Toms\\ProM Tom.wav"
+     ],
+     "ride": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Ride Set - Part_3.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.with_you",
+   "label": "With You kit (Melodic Techno)",
+   "what": "The drum samples Mehran Abbasi uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "melodic_techno",
+    "techno"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehran Abbasi - With You\\IL Kick_MT.wav"
+    },
+    "alternates": {}
+   }
+  },
+  {
+   "id": "kit.thief",
+   "label": "Thief kit (Future Bass)",
+   "what": "The drum samples Ookay uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "future_bass",
+    "melodic_dubstep"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 27.wav",
+     "tom": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Titey Tom.wav",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\808 Conga.wav",
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Crash.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\808 Snare.wav",
+     "ride": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Importer Ride.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Ookay - Thief\\WA_BHB_Kit4_Snap_126BPM_3222812.wav"
+    },
+    "alternates": {
+     "tom": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Titey Tom.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Titey Tom.wav"
+     ],
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Broken Crash.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Grv Crash 01.wav"
+     ],
+     "snare": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 13.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 06.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.use_me",
+   "label": "Use Me kit (Afrobeats)",
+   "what": "The drum samples P.Priime uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "afrobeats",
+    "afro_pop",
+    "amapiano"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "use_me",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\gbe kick.wav",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\USE ME Percussion.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\Use Me Tight Snare.wav"
+    },
+    "alternates": {
+     "kick": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\Priime kick.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\USE ME FL26 Kick Top.wav"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\USE ME Percussion.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.stroll_up",
+   "label": "Stroll Up kit (Trap)",
+   "what": "The drum samples Purps On The Beat Feat Luclover uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "trap",
+    "hiphop"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "stroll_up",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "crash": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Purps On The Beat Feat Luclover - Stroll Up\\Track 1 (consolidated)_5.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 06.wav",
+     "hat": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\Ekit 4 Hat.wav",
+     "perc": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_MC.wav",
+     "rim": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_RimShot.wav"
+    },
+    "alternates": {
+     "crash": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_CY.wav"
+     ],
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_SD.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 13.wav"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kit.secret_agent",
+   "label": "Secret Agent Rendezvous kit (Soundtrack)",
+   "what": "The drum samples Sid De La Cruz uses, voice by voice (the most played sample of each voice). FL's factory paths: on this machine they resolve under the FL install's Data folder.",
+   "genres": [
+    "soundtrack",
+    "cinematic",
+    "spy"
+   ],
+   "moods": [],
+   "energy": "any",
+   "sources": [
+    {
+     "song": "secret_agent",
+     "where": "drum channels"
+    }
+   ],
+   "engine": {
+    "voices": {
+     "perc": "%FLStudioFactoryData%\\data\\patches\\packs\\drums\\percussion\\FPC Wack.wav",
+     "snare": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\RealDrumkits\\RD_Snare_4.wav",
+     "kick": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Kick_2.wav",
+     "clap": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\MA Jameson Clap.wv",
+     "ride": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\FPC\\Cymbals\\FPC_Ride_GLite_003.wav",
+     "tom": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\FPC\\Toms\\FPC_Tom_16inPr_004.wav"
+    },
+    "alternates": {
+     "perc": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Instruments\\Hits\\HIT_5.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Kits\\Drum Kit 03\\OverH_Ped_002aogg.wav"
+     ],
+     "tom": [
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\FPC\\Toms\\FPC_Tom_14inPr_004.wav",
+      "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\FPC\\Toms\\FPC_Tom_GtomFlo_001.wav"
+     ]
+    }
+   }
+  }
+ ]
+}

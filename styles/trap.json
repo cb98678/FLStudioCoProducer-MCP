@@ -1,0 +1,182 @@
+{
+ "name": "trap",
+ "label": "Trap and rap beat",
+ "engine": "grammar",
+ "what": "A trap or rap beat under the original vocal: half-time feel at 140, an 808 tuned to the key with a long decay as the bass, a short punchy kick, snare and clap on 3, 16th and 32nd hats with rolls, sections made by dropping drums in and out, space in the middle for the voice. A new rap verse is the person's own recording; no voice is cloned.",
+ "moods": [
+  "confident",
+  "defiant",
+  "dark",
+  "boastful",
+  "menacing"
+ ],
+ "tempo": {
+  "bpm": 140,
+  "range": [
+   130,
+   160
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "intro": {
+   "bars": {
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "ramp": [
+    0.6,
+    0.9
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": [
+     "X......x..x.....",
+     "X.....x...x..x.."
+    ],
+    "snare": "........X.......",
+    "hat": [
+     "x.x.x.x.x.x.x.x.",
+     "x.x.x.x.x.x.xxxxxxxxxxxxxxxxxxxx"
+    ]
+   }
+  },
+  "build": {
+   "bars": {
+    "hat": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "snare": "........x.......",
+    "kick": "X..............."
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "................",
+    "hat": "xxxxxxxxxxxxxxxx................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X......x..x.....",
+     "X.....x...x..x..",
+     "X......x..x...x.",
+     "X.x....x..x....."
+    ],
+    "snare": "........X.......",
+    "clap": "........x.......",
+    "hat": [
+     "x.x.x.x.x.x.x.x.x.x.x.x.xxxxxxxx",
+     "x.x.x.x.x.x.x.x.",
+     "x.x.x.x.xxxxx.x.x.x.x.x.x.x.x.x.",
+     "x.x.x.x.x.x.x.x."
+    ],
+    "ohat": "..............o."
+   },
+   "fill_every": 8,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "hat": "x...x...x...x..."
+   }
+  },
+  "outro": {
+   "bars": {
+    "hat": "x.x.x.x.x.x.x.x.",
+    "snare": "........x......."
+   },
+   "ramp": [
+    1.0,
+    0.4
+   ]
+  }
+ },
+ "bass": {
+  "groove": [
+   "x-------..x-----",
+   "x-----..x---x---"
+  ],
+  "drop": [
+   "X-------..x-----",
+   "x-----..X---x-o-",
+   "X-------..x---5-",
+   "x---x-----..X---"
+  ]
+ },
+ "sub": {},
+ "chords": {
+  "groove": "x---------------",
+  "break": "x---------------",
+  "drop": "x---------------"
+ },
+ "arp": [],
+ "kit": {
+  "CP_Kick": {
+   "fn": "kick",
+   "args": {
+    "f0": 60.0,
+    "punch": 0.8,
+    "length": 0.25,
+    "drive": 1.4
+   }
+  },
+  "CP_Snare": {
+   "fn": "snare",
+   "args": {
+    "body_hz": 210.0,
+    "decay": 0.15,
+    "length": 0.35
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "bass_808",
+  "args": {
+   "f0": 55.0,
+   "length": 1.8,
+   "punch": 0.7,
+   "drive": 1.5
+  },
+  "label": "808 Bass"
+ },
+ "production_recipe": "trap",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://tidal.com/magazine/article/what-makes-trap-trap/1-72722 (2020, older: 140 to 180 bpm felt at half, 808 tuned to the key with long decay, 16th and 32nd hats with triplets and rolls, snare on 3, sections by dropping drums)"
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "name": "tech_house",
+ "label": "Tech house",
+ "engine": "techhouse",
+ "what": "The first remix's engine (remixplan): four on the floor, clap on 2 and 4, off-beat open hats, 16th shaker, rolling reese, gated sub, syncopated stabs, rising arps in breaks and builds. Kept as code so the Friends regression build stays byte-identical.",
+ "moods": [
+  "playful",
+  "groovy",
+  "cheeky",
+  "confident",
+  "cool"
+ ],
+ "tempo": {
+  "bpm": 124,
+  "range": [
+   122,
+   128
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   24
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "production_recipe": "club_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "docs/REFERENCE_FUTURE_HOUSE.md (the FL demo studied 2026-10-25)",
+  "https://tracksensei.com/blog/we-analyzed-563-techno-house-tracks (tech house median -8.8 LUFS)"
+ ]
+}

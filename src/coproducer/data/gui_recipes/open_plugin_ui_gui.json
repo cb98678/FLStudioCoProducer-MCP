@@ -1,0 +1,21 @@
+{
+  "name": "open_plugin_ui_gui",
+  "verified": false,
+  "verified_note": "Draft. Not yet confirmed on a real FL Studio install; calibrate at Gate 0.",
+  "summary": "Open a plugin's own window by clicking its slot or channel.",
+  "params": [
+    "target"
+  ],
+  "vision": true,
+  "source": "no shortcut known; uses vision grounding",
+  "steps": [
+    {
+      "do": "locate_click",
+      "description": "{target}"
+    },
+    {
+      "do": "wait",
+      "seconds": 1.0
+    }
+  ]
+}

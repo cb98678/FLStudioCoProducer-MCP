@@ -1,0 +1,4 @@
+{
+  "note": "Dialogs the agent may close. Each entry: contains (case-insensitive title text) and key. Empty until confirmed by a human.",
+  "allow": []
+}

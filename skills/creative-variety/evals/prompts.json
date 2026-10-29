@@ -1,0 +1,5 @@
+{"skill": "creative-variety", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Every remix you make sounds the same. Do the next one completely differently.", "assertions": [{"type": "tool_called", "module": "build_song_plan"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Make a reggaeton remix of this song using ideas from the FL demo songs.", "assertions": [{"type": "tool_called", "module": "build_song_plan"}, {"type": "tool_called", "module": "build_remix_project"}]},
+ {"id": 3, "should_trigger": false, "prompt": "What is the loudness of the master I just rendered?", "assertions": []}
+]}

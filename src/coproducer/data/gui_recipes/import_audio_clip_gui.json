@@ -1,0 +1,70 @@
+{
+  "name": "import_audio_clip_gui",
+  "verified": true,
+  "verified_note": "Confirmed on FL 26.1.7 on 2026-10-20 with two full runs (plus two more after the menu entry switched to template matching) in a row (12 steps, channel added, waveform shown, window closed). Anchors add_menu and audio_clip_menu_item sit in FL's fixed top menu; the file button and the close button are found from the Audio Clip window's own position because plugin windows open where they were last left. Pixel values are for a 2560x1440 screen. A leftover Audio Clip window from an earlier failed run makes the window lookup ambiguous: close it first. The Audio Clip menu entry is found by its picture (template audio_clip_menu_item) because the ADD menu differs between projects; a fixed position hit another entry once.",
+  "summary": "Load an audio file into a new Audio Clip channel using the top ADD menu and the open dialog.",
+  "params": [
+    "path"
+  ],
+  "vision": false,
+  "source": "measured on this install; menu names from the Channel rack add (+) menu",
+  "steps": [
+    {
+      "do": "click",
+      "anchor": "add_menu"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "template_click",
+      "template": "audio_clip_menu_item",
+      "min_score": 0.9
+    },
+    {
+      "do": "wait",
+      "seconds": 1.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "Audio Clip",
+      "dx": 219,
+      "dy": 96
+    },
+    {
+      "do": "expect_dialog",
+      "contains": "Open sound",
+      "timeout_s": 5
+    },
+    {
+      "do": "type",
+      "text": "{path}"
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 2.0
+    },
+    {
+      "do": "click_in_window",
+      "title": "(Master)",
+      "dx": 555,
+      "dy": 13
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 15
+    }
+  ],
+  "needs_sandbox_project": true
+}

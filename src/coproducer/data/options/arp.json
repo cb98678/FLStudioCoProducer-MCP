@@ -1,0 +1,426 @@
+{
+ "category": "arp",
+ "what": "Arpeggio and sequence shapes over the bar's chord. shape: rise, fall, updown, pedal (the root between rising chord tones), octave (each note doubled an octave or two up), broken (1 5 8 10 8 5), tresillo (3-3-2 grouped 16ths), chromatic (a falling chromatic line from the chord's top), sequence (a fixed 16th cell: semitones above the bar's root, snapped to the key's scale, so the cell follows the chords). rate: steps per bar (8, 12 triplet 8ths, 16, 24 triplet 16ths). sections: where it plays.",
+ "options": [
+  {
+   "id": "arp.pack",
+   "label": "The style pack's own arp",
+   "what": "Keep the pack's arp (the rising arp through breaks and builds, or none).",
+   "genres": [
+    "*"
+   ],
+   "moods": [
+    "*"
+   ],
+   "energy": "any",
+   "sources": [],
+   "engine": {}
+  },
+  {
+   "id": "arp.rise",
+   "label": "Rising 16th arp in breaks and builds",
+   "what": "The chord's notes climbing in 16ths, getting louder over the build: the existing default, best used once per song.",
+   "genres": [
+    "house",
+    "tech_house",
+    "techno",
+    "trance",
+    "edm"
+   ],
+   "moods": [
+    "uplifting",
+    "tense"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Harmless #2 in PRE DROP"
+    }
+   ],
+   "engine": {
+    "shape": "rise",
+    "rate": 16,
+    "sections": [
+     "break",
+     "build"
+    ],
+    "octaves": 2
+   }
+  },
+  {
+   "id": "arp.fall",
+   "label": "Falling major-seventh pluck",
+   "what": "Top down through the chord with the seventh (C5 B4 G4 E4 repeated): a falling arp feels like release instead of tension. Played on a short Sakura pluck it is the trance groove's melody.",
+   "genres": [
+    "trance",
+    "progressive_house",
+    "melodic_techno",
+    "future_garage"
+   ],
+   "moods": [
+    "euphoric",
+    "dreamy",
+    "nostalgic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Pluck - Saku (Sakura): C5 B4 G4 E4 x4 per bar, 2032 notes"
+    }
+   ],
+   "engine": {
+    "shape": "fall",
+    "rate": 16,
+    "sections": [
+     "groove",
+     "drop",
+     "break"
+    ],
+    "octaves": 1,
+    "voicing": "seventh"
+   }
+  },
+  {
+   "id": "arp.pedal",
+   "label": "Pedal-tone arp: root between rising tones",
+   "what": "The low root on every 8th with a chord tone above it climbing step by step (A3 G4 A3 A4 A3 B4 A3 C5): a melody hidden in an arp.",
+   "genres": [
+    "trance",
+    "synthwave",
+    "progressive_house",
+    "dnb"
+   ],
+   "moods": [
+    "uplifting",
+    "driving",
+    "nostalgic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "exoplanet",
+     "where": "Harmless #2: A3 . G4 . A3 . A4 . A3 . B4 . A3 . C5 ."
+    }
+   ],
+   "engine": {
+    "shape": "pedal",
+    "rate": 16,
+    "sections": [
+     "build",
+     "drop"
+    ],
+    "octaves": 1,
+    "gate": 0.5
+   }
+  },
+  {
+   "id": "arp.octave_doubled",
+   "label": "Octave-doubled fast arp",
+   "what": "Every note doubled an octave and two octaves up (Bb4+Bb6), a fast descending figure on a bell or pluck: big and bright without more notes.",
+   "genres": [
+    "future_bass",
+    "liquid_dnb",
+    "dnb",
+    "pop",
+    "melodic_dubstep"
+   ],
+   "moods": [
+    "euphoric",
+    "bittersweet",
+    "dreamy",
+    "magical"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "thief",
+     "where": "Tinke Bell (FLEX General Midi Library): Bb4+Bb6+F#5+F#7 ..."
+    },
+    {
+     "song": "time",
+     "where": "Plucks 1 (FLEX Olbaid Compendium), octave-doubled descending"
+    }
+   ],
+   "engine": {
+    "shape": "fall",
+    "rate": 16,
+    "sections": [
+     "drop",
+     "groove"
+    ],
+    "octaves": 2,
+    "double": [
+     12,
+     24
+    ]
+   }
+  },
+  {
+   "id": "arp.tresillo_pluck",
+   "label": "Tresillo-grouped pluck arp",
+   "what": "Chord tones in 3-3-2 groups of 16ths with the octave on the group starts (E4 B4 - G4 E4+E5 B4 - G4): an arp that grooves like percussion; the cutoff opens over 16 bars.",
+   "genres": [
+    "afro_house",
+    "deep_house",
+    "melodic_techno",
+    "afrobeats"
+   ],
+   "moods": [
+    "hypnotic",
+    "tribal",
+    "warm"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "Arp 01 (FLEX Mobile Synth Pluck / Synpluck Dual): E4 B4 - G4 E4+E5 B4 - G4, cutoff automated over 16 bars"
+    }
+   ],
+   "engine": {
+    "shape": "tresillo",
+    "rate": 16,
+    "sections": [
+     "groove",
+     "drop",
+     "intro"
+    ],
+    "octaves": 1
+   }
+  },
+  {
+   "id": "arp.triplet",
+   "label": "Triplet 8th arp against straight drums",
+   "what": "Chord tones in triplet 8ths (12 a bar) over a straight 16th groove: the polyrhythm afro house and melodic techno use to make a loop feel like it turns.",
+   "genres": [
+    "afro_house",
+    "melodic_techno",
+    "deep_house",
+    "trap"
+   ],
+   "moods": [
+    "hypnotic",
+    "mysterious",
+    "tribal"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "africas_calling",
+     "where": "arp notes of a third of a beat (0.333)"
+    }
+   ],
+   "engine": {
+    "shape": "updown",
+    "rate": 12,
+    "sections": [
+     "groove",
+     "drop"
+    ],
+    "octaves": 1
+   }
+  },
+  {
+   "id": "arp.chromatic_blips",
+   "label": "Chromatic falling blips",
+   "what": "A falling chromatic line from the chord's top, in a skipping rhythm (Eb5 . D5 C#5 . C5 B4 . Bb4 A4 . Ab4 G4): unsettling, cinematic, and it works over any chord because it is passing tones.",
+   "genres": [
+    "trip_hop",
+    "soundtrack",
+    "lounge",
+    "electro"
+   ],
+   "moods": [
+    "mysterious",
+    "eerie",
+    "playful",
+    "moody"
+   ],
+   "energy": "low",
+   "sources": [
+    {
+     "song": "madonna",
+     "where": "Blips (Harmor): Eb5 . D5 C#5 . C5 B4 . Bb4 A4 . Ab4 G4 . . ."
+    }
+   ],
+   "engine": {
+    "shape": "chromatic",
+    "rate": 16,
+    "sections": [
+     "drop",
+     "break"
+    ],
+    "octaves": 1,
+    "rhythm": "x.xx.xx.xx.xx..."
+   }
+  },
+  {
+   "id": "arp.techno_sequence",
+   "label": "Melodic techno 16th sequence with repeated notes",
+   "what": "A fixed 16th cell that repeats notes (A4 F4 D5 D5 D4 D4 C5 D5 D5 F4 D5 D5 C5 C5 D5 D5), its filter, tune and space macros automated over 32 bars: the hypnotic lead of melodic techno.",
+   "genres": [
+    "melodic_techno",
+    "techno",
+    "progressive_house"
+   ],
+   "moods": [
+    "hypnotic",
+    "dark",
+    "dreamy",
+    "melancholic"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "with_you",
+     "where": "PLK Navid (FLEX Melodic Techno): A4 F4 D5 D5 D4 D4 C5 D5 D5 F4 D5 D5 C5 C5 D5 D5, filter cutoff and TuneX automated"
+    }
+   ],
+   "engine": {
+    "shape": "sequence",
+    "rate": 16,
+    "sections": [
+     "groove",
+     "drop",
+     "break"
+    ],
+    "cell": [
+     7,
+     3,
+     12,
+     12,
+     0,
+     0,
+     10,
+     12,
+     12,
+     3,
+     12,
+     12,
+     10,
+     10,
+     12,
+     12
+    ]
+   }
+  },
+  {
+   "id": "arp.sus_cell",
+   "label": "Sus-cell arp: 1 2 4 5, 1 2 2 1",
+   "what": "An arp on the root, second, fourth and fifth (C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5) that never states the third, so it fits major and minor; through overdrive and a love-philter it becomes the record's hook.",
+   "genres": [
+    "afrobeats",
+    "afro_pop",
+    "pop",
+    "dancehall"
+   ],
+   "moods": [
+    "sunny",
+    "romantic",
+    "dreamy"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "use_me",
+     "where": "Synth Arp (Sytrus > Blood Overdrive > Reeverb 2 > Love Philter > Effector): C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5"
+    }
+   ],
+   "engine": {
+    "shape": "sequence",
+    "rate": 16,
+    "sections": [
+     "intro",
+     "groove",
+     "drop"
+    ],
+    "cell": [
+     0,
+     2,
+     5,
+     7,
+     0,
+     2,
+     2,
+     0
+    ]
+   }
+  },
+  {
+   "id": "arp.octave_bounce_pluck",
+   "label": "Octave bounce pluck",
+   "what": "Root and octave alternating in a skipping 8th rhythm on a pluck: a bass-register arp that drives without chords.",
+   "genres": [
+    "dnb",
+    "electro",
+    "synthwave",
+    "nu_disco"
+   ],
+   "moods": [
+    "driving",
+    "energetic",
+    "playful"
+   ],
+   "energy": "mid",
+   "sources": [
+    {
+     "song": "never_out",
+     "where": "Submarine (FLEX): C#3 . C#3 . C#4 . C#3 . C#3 . C#4 ."
+    }
+   ],
+   "engine": {
+    "shape": "octave",
+    "rate": 16,
+    "sections": [
+     "groove",
+     "drop"
+    ],
+    "rhythm": "x.x.o.x.x.o.x.o."
+   }
+  },
+  {
+   "id": "arp.three_over_four",
+   "label": "3-over-4 lead: groups of three 16ths for three bars, resolving on the fourth",
+   "what": "A rising chord-tone line struck every third 16th, so it crosses the quarter-note grid and the downbeat moves each bar; after three bars (48 sixteenths, where the 3s and 4s meet again) the fourth bar resolves on the beat. The soaring, syncopated feel of a progressive-house lead.",
+   "how": "The breakdowns' melodic math: dotted-8th phrasing over four-on-the-floor, reset every three bars, resolution on bar 4.",
+   "genres": [
+    "progressive_house",
+    "trance",
+    "big_room",
+    "pop_dance",
+    "eurodance"
+   ],
+   "moods": [
+    "euphoric",
+    "uplifting",
+    "driving",
+    "energetic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "clarity",
+     "where": "the person's breakdown: the 3-over-4 polyrhythm of progressive-house leads (dotted quarters or 3-step phrases over 4/4, resolving on bar 4)"
+    }
+   ],
+   "engine": {
+    "shape": "rise",
+    "rate": 16,
+    "sections": [
+     "build",
+     "drop"
+    ],
+    "octaves": 2,
+    "gate": 0.9,
+    "rhythm": [
+     "x..x..x..x..x..x",
+     "..x..x..x..x..x.",
+     ".x..x..x..x..x..",
+     "x...x...x...x..."
+    ]
+   }
+  }
+ ]
+}

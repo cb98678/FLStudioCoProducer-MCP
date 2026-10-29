@@ -1,0 +1,58 @@
+{
+  "name": "add_mixer_insert_gui",
+  "verified": false,
+  "verified_note": "Draft. Not yet confirmed on a real FL Studio install; calibrate at Gate 0.",
+  "summary": "Add a plugin to an effect slot of a mixer track.",
+  "params": [
+    "track_label",
+    "plugin"
+  ],
+  "vision": true,
+  "source": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/basics_shortcuts.htm (Mixer: F9)",
+  "steps": [
+    {
+      "do": "hotkey",
+      "keys": [
+        "f9"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "locate_click",
+      "description": "the mixer track named {track_label}"
+    },
+    {
+      "do": "locate_click",
+      "description": "the first empty effect slot of the selected mixer track"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.8
+    },
+    {
+      "do": "type",
+      "text": "{plugin}"
+    },
+    {
+      "do": "wait",
+      "seconds": 0.6
+    },
+    {
+      "do": "hotkey",
+      "keys": [
+        "enter"
+      ]
+    },
+    {
+      "do": "wait",
+      "seconds": 2.0
+    },
+    {
+      "do": "expect_no_dialog",
+      "timeout_s": 15
+    }
+  ]
+}

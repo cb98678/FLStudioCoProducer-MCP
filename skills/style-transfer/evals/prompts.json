@@ -1,0 +1,6 @@
+{"skill": "style-transfer", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Turn this techno track into dubstep, keep the melody.",
+  "assertions": [{"type": "tool_called", "module": "transcribe_to_midi"}, {"type": "asked_human", "about": "melody"}, {"type": "called_before", "a": "transcribe_to_midi", "b": "write_notes_via_script"}, {"type": "tool_called", "module": "compare_note_sequences"}, {"type": "no_a3"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Just run the whole thing through the cover model.", "assertions": [{"type": "text_mentions", "text": "regenerat"}, {"type": "text_mentions", "text": "sketch"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Make a new house track from scratch.", "assertions": [{"type": "skill_not_loaded"}]}
+]}

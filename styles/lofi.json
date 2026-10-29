@@ -1,0 +1,175 @@
+{
+ "name": "lofi",
+ "label": "Lo-fi hip-hop",
+ "engine": "grammar",
+ "what": "Lo-fi as Inner Days builds it: a swung boom-bap with ghost snares and a shaker in 16ths, a jazzy minor loop of sevenths (i7, bIII maj7, bVI maj7, IV7), a Rhodes struck once a bar, a held bass, entries and exits instead of builds; the rework's syncopated 808 as the drop.",
+ "moods": [
+  "nostalgic",
+  "calm",
+  "warm",
+  "melancholic",
+  "laid_back",
+  "dreamy"
+ ],
+ "tempo": {
+  "bpm": 80,
+  "range": [
+   70,
+   95
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "groove": {
+   "bars": {
+    "kick": "X......X..X....x",
+    "snare": "....X......ox.x.",
+    "hat": "..x..xx...x..xxx",
+    "shaker": "oxoxoxoxoxoxoxox"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X......X..X....x",
+    "snare": "....X......oX.x.",
+    "hat": "x.X..xX.x.X..xxX",
+    "shaker": "oxoxoxoxoxoxoxox"
+   }
+  },
+  "break": {
+   "bars": {
+    "hat": "..x...x...x...x.",
+    "shaker": "oxoxoxoxoxoxoxox"
+   }
+  },
+  "intro": {
+   "bars": {
+    "hat": "..x..xx...x..xxx",
+    "shaker": "oxoxoxoxoxoxoxox"
+   },
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "..x..xx...x..xxx"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.5,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X......X..X....x",
+    "snare": "....X......ox.x.",
+    "hat": "..x..xx...x..xxx",
+    "shaker": "oxoxoxoxoxoxoxox"
+   },
+   "ramp": [
+    1.0,
+    0.8
+   ]
+  },
+  "swing": 0.6
+ },
+ "bass": {
+  "groove": [
+   "x---x--x--x-x---",
+   "x---x--x---x--x-"
+  ],
+  "drop": [
+   "x---x--x--x-x---",
+   "x---x--x---x--x-"
+  ],
+  "break": "x---------------"
+ },
+ "sub": {
+  "groove": [
+   "x---x--x--x-x---",
+   "x---x--x---x--x-"
+  ],
+  "drop": [
+   "x---x--x--x-x---",
+   "x---x--x---x--x-"
+  ]
+ },
+ "chords": {
+  "groove": "x-------------o-",
+  "drop": "x-------------o-",
+  "break": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": [],
+ "kit": {},
+ "production_recipe": "lofi",
+ "targets": "targets/streaming_default.toml",
+ "sources": [
+  "FL Studio 2026 demo project 'Inner Days' by Electroconductor (aka nucleon) (Lo-Fi, 75 bpm), HIP kit X......X..X....x / ....X......ox.x. / ..X..xX...X..xxX, DirectWave piano and guitar; studied on a sandbox copy 2026-10-28 (docs/demo_study/Electroconductor_Inner_Days_Original.md)",
+  "FL Studio 2026 demo project 'Inner Days - SH-1 Rework (feat. Maja Mannila)' by Electroconductor (aka nucleon) (Lo-Fi, 75 bpm), Bass and Heavy 808 x---x--x--x-x---, SC bus, Harmor octave pluck; studied on a sandbox copy 2026-10-28 (docs/demo_study/Electroconductor_Inner_Days_SH_1_Rework_feat_Maja_Mannila.md)"
+ ],
+ "form": {
+  "build": "never",
+  "build_bars": 4,
+  "tail_bars": 0,
+  "intro_bars": 8,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 8,
+  "gap_before_drop": "none"
+ },
+ "options": {
+  "form": "form.lofi_loop",
+  "drums": "drums.lofi_boom_bap",
+  "bass": "bass.rework_808_syncopated"
+ },
+ "sub_duck_kicks": false,
+ "bass_sample": {
+  "fn": "bass_808",
+  "args": {
+   "f0": 55.0,
+   "length": 1.6,
+   "punch": 0.5,
+   "drive": 1.2,
+   "decay_s": 1.0
+  },
+  "label": "Lo-fi 808"
+ }
+}
