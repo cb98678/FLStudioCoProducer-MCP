@@ -1,0 +1,111 @@
+# Model registry: data, not code. Numbers marked "planning" are replaced by measured values at setup (coproducer setup).
+# Sources checked 2026-10-18:
+#   ACE-Step 1.5   https://github.com/ace-step/ACE-Step-1.5          (MIT, Python 3.11 to 3.12)
+#   Demucs         https://github.com/adefossez/demucs               (MIT, v4.1.0; original repo archived)
+#   Basic Pitch    https://github.com/spotify/basic-pitch            (Apache 2.0 per LICENSE; verify; Python 3.7 to 3.11)
+#   Music Flamingo https://huggingface.co/nvidia/music-flamingo-2601-hf   (NVIDIA OneWay Noncommercial; tested on A100 and H100)
+
+[models.acestep]
+role = "generate"
+stack = "acestep"
+license = "MIT"
+vram_gb = { min = 6, typical = 12 }          # planning: README tiers; 2B turbo with no LM runs in 6 GB or less with offload
+variants = ["turbo+lm0.6B", "sft+lm1.7B", "turbo"]
+default_variant = "turbo+lm0.6B"
+optional = true                              # generation from a prompt (generate_audio, cover, repaint); the remix pipeline does not use it. install.ps1 -Models full installs it
+smoke = "generate 5 s from a short prompt, expect a non-empty WAV within 0.5 s of the request"
+
+[models.demucs]
+role = "separate"
+stack = "demucs"
+license = "MIT"
+vram_gb = { min = 3, typical = 7 }           # README: at least 3 GB, about 7 GB with default arguments
+variants = ["htdemucs", "htdemucs_ft", "htdemucs_6s"]
+default_variant = "htdemucs"
+optional = false
+smoke = "separate a 5 s synthetic mixture, expect 4 non-empty stems"
+
+[models.basicpitch]
+role = "transcribe"
+stack = "basicpitch"
+license = "Apache-2.0"
+vram_gb = { min = 0, typical = 0 }           # runs on CPU
+optional = false
+smoke = "transcribe a synthetic 8 note scale, expect 8 notes within a semitone"
+
+[models.flamingo]
+role = "critique"
+stack = "critique"
+license = "NVIDIA OneWay Noncommercial"
+vram_gb = { min = 10, typical = 18 }         # planning: 8B model; use a quantized variant on 12 to 16 GB cards
+variants = ["nvidia/music-flamingo-2601-hf"]
+default_variant = "nvidia/music-flamingo-2601-hf"
+optional = true
+fallback = "critique_audio_dsp"
+smoke = "critique a 10 s synthetic clip, expect non-empty text"
+
+[models.vision]
+role = "ground_gui"
+stack = "vision"
+vram_gb = { min = 2, typical = 6 }           # planning; first candidate is the brain model itself (Qwen3.5-9B takes images), see docs/LOCAL_MODELS.md; bench-vision confirms
+optional = true
+fallback = "hotkeys_and_anchors"
+smoke = "ground 'play button' on a stored FL screenshot"
+
+# Added 2026-10-25. beat_this (beats, downbeats) and torchcrepe (vocal pitch) in one worker; MuQ-MuLan embeddings when installed.
+#   beat_this      https://github.com/CPJKU/beat_this                (MIT code and weights)
+#   torchcrepe     https://github.com/maxrmorrison/torchcrepe        (MIT)
+[models.mir]
+role = "analyze"
+stack = "mir"
+license = "MIT (beat_this, torchcrepe); MuQ-MuLan weights CC-BY-NC 4.0"
+vram_gb = { min = 1, typical = 2 }           # measured on the host: both models load in under 2 GB
+optional = false
+smoke = "track beats of a 10 s click at 120 bpm, expect 20 beats within 20 ms"
+
+# Added 2026-10-25. Mel-Band RoFormer vocals (Kimberley Jensen's weights) through python-audio-separator (MIT).
+#   https://github.com/nomadkaraoke/python-audio-separator   https://mvsep.com/en/algorithms
+[models.roformer]
+role = "separate"
+stack = "sep"
+runner = "sep_runner.py"
+license = "MIT (audio-separator); weights as published by their authors for UVR"
+vram_gb = { min = 3, typical = 6 }             # measured: 60 s of audio in 3 s on the RTX 3090
+optional = true
+fallback = "separate_stems"
+smoke = "separate a 10 s synthetic mixture, expect vocals and instrumental files"
+
+# Added 2026-10-25. Whisper large-v3 word times in the critique environment at the pinned revision (stacks.WHISPER_REVISION).
+#   https://huggingface.co/openai/whisper-large-v3 (Apache-2.0)
+[models.whisper]
+role = "transcribe"
+stack = "critique"
+runner = "whisper_runner.py"
+license = "Apache-2.0"
+vram_gb = { min = 4, typical = 6 }           # planning: large-v3 in float16
+optional = false
+smoke = "transcribe 10 s of a sung vocal, expect words with times"
+
+# Added 2026-10-26. Serum 2 (the person's own licensed copy) played headless through pedalboard, to audition generated presets.
+#   https://github.com/spotify/pedalboard (GPL-3.0, its own environment and process)
+[models.serum]
+role = "generate"
+stack = "serum"
+runner = "serum_runner.py"
+license = "GPL-3.0 (pedalboard); Serum 2 is the person's licensed plugin"
+vram_gb = { min = 0, typical = 0 }           # CPU only
+optional = true
+fallback = "load the preset in a Serum 2 channel in FL and render the project"
+smoke = "render one note of a Serum 2 state, expect audio above -40 dBFS RMS"
+
+# Added 2026-10-26. serum-mcp's preset writer in its own clone and environment (sandbox\third_party\serum-mcp, commit eada85a), so a
+# remix can generate presets without a chat: https://github.com/Celian-mrc/serum-mcp (MIT)
+[models.serummcp]
+role = "generate"
+stack = "serummcp"
+runner = "serummcp_runner.py"
+license = "MIT (serum-mcp)"
+vram_gb = { min = 0, typical = 0 }           # CPU only, writes files
+optional = true
+fallback = "generate_preset through the coproducer-serum MCP server in a chat"
+smoke = "write one preset from a one-oscillator spec into a sandbox subfolder"

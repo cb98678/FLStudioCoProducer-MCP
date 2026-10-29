@@ -1,0 +1,5222 @@
+{
+ "file": "Eric Kauffmann & NrgMind - Exoplanet.flp",
+ "title": "Exoplanet",
+ "artists": "Eric Kauffmann & NrgMind",
+ "genre": "Trance",
+ "fl_version": "12.9.3.321",
+ "ppq": 96,
+ "bpm": 140.0,
+ "bars": 261,
+ "seconds": 447.4,
+ "key": {
+  "key": "C major",
+  "tonic": 0,
+  "mode": "major",
+  "confidence": 0.854,
+  "runner_up": "A minor"
+ },
+ "roles": {
+  "fx": 3,
+  "lead": 17,
+  "arp": 2,
+  "chords": 7,
+  "bass": 8,
+  "drums": 23
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 8,
+   "name": "",
+   "energy": 0.4,
+   "roles": [
+    "audio",
+    "bass",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 9,
+   "bars": 8,
+   "name": "1er Cambio",
+   "energy": 0.51,
+   "roles": [
+    "audio",
+    "bass",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 17,
+   "bars": 16,
+   "name": "2nd Cambio",
+   "energy": 0.59,
+   "roles": [
+    "audio",
+    "bass",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 33,
+   "bars": 8,
+   "name": "4to Cambio",
+   "energy": 0.53,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead"
+   ]
+  },
+  {
+   "start_bar": 41,
+   "bars": 8,
+   "name": "5to Cambio",
+   "energy": 0.72,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead"
+   ]
+  },
+  {
+   "start_bar": 49,
+   "bars": 16,
+   "name": "6to Cambio",
+   "energy": 0.79,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead"
+   ]
+  },
+  {
+   "start_bar": 65,
+   "bars": 32,
+   "name": "PRE\u2006DROP",
+   "energy": 0.85,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead"
+   ]
+  },
+  {
+   "start_bar": 97,
+   "bars": 165,
+   "name": "BREAKDOWN",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": "A7",
+   "roman": "VI7",
+   "bars": 32
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 32
+  },
+  {
+   "chord": "F",
+   "roman": "IV",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Dm",
+   "roman": "ii",
+   "bars": 3
+  },
+  {
+   "chord": "E5",
+   "roman": "III5",
+   "bars": 1
+  },
+  {
+   "chord": "F",
+   "roman": "IV",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Dm",
+   "roman": "ii",
+   "bars": 3
+  },
+  {
+   "chord": "E5",
+   "roman": "III5",
+   "bars": 1
+  },
+  {
+   "chord": "F",
+   "roman": "IV",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Dm",
+   "roman": "ii",
+   "bars": 3
+  },
+  {
+   "chord": "E5",
+   "roman": "III5",
+   "bars": 1
+  },
+  {
+   "chord": "F",
+   "roman": "IV",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 3
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Cmaj7",
+   "roman": "Imaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Am7",
+   "roman": "vi7",
+   "bars": 2
+  },
+  {
+   "chord": "Fadd9",
+   "roman": "IVadd9",
+   "bars": 2
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Cmaj7",
+   "roman": "Imaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Am7",
+   "roman": "vi7",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Fadd9",
+   "roman": "IVadd9",
+   "bars": 2
+  },
+  {
+   "chord": "Fm",
+   "roman": "iv",
+   "bars": 2
+  },
+  {
+   "chord": "Cadd9",
+   "roman": "Iadd9",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Am7",
+   "roman": "vi7",
+   "bars": 2
+  },
+  {
+   "chord": "Fsus2",
+   "roman": "IVsus2",
+   "bars": 2
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Cmaj7",
+   "roman": "Imaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Am7",
+   "roman": "vi7",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Fadd9",
+   "roman": "IVadd9",
+   "bars": 2
+  },
+  {
+   "chord": "Fm",
+   "roman": "iv",
+   "bars": 2
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 15
+  },
+  {
+   "chord": "Am7",
+   "roman": "vi7",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 2
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 2
+  },
+  {
+   "chord": "Fsus2",
+   "roman": "IVsus2",
+   "bars": 2
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Cmaj7",
+   "roman": "Imaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 2
+  },
+  {
+   "chord": "G6",
+   "roman": "V6",
+   "bars": 1
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 1
+  },
+  {
+   "chord": "Fadd9",
+   "roman": "IVadd9",
+   "bars": 2
+  },
+  {
+   "chord": "Fm",
+   "roman": "iv",
+   "bars": 2
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 2
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 2
+  },
+  {
+   "chord": "Fsus2",
+   "roman": "IVsus2",
+   "bars": 2
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Cmaj7",
+   "roman": "Imaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 2
+  },
+  {
+   "chord": "G6",
+   "roman": "V6",
+   "bars": 1
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 1
+  },
+  {
+   "chord": "Fadd9",
+   "roman": "IVadd9",
+   "bars": 2
+  },
+  {
+   "chord": "Fm",
+   "roman": "iv",
+   "bars": 2
+  },
+  {
+   "chord": "Cadd9",
+   "roman": "Iadd9",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Am7",
+   "roman": "vi7",
+   "bars": 2
+  },
+  {
+   "chord": "Fsus2",
+   "roman": "IVsus2",
+   "bars": 2
+  },
+  {
+   "chord": "C",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Cmaj7",
+   "roman": "Imaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 8
+  },
+  {
+   "chord": "F",
+   "roman": "IV",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Dm",
+   "roman": "ii",
+   "bars": 3
+  },
+  {
+   "chord": "E5",
+   "roman": "III5",
+   "bars": 1
+  },
+  {
+   "chord": "F",
+   "roman": "IV",
+   "bars": 2
+  },
+  {
+   "chord": "G",
+   "roman": "V",
+   "bars": 2
+  },
+  {
+   "chord": "Dm",
+   "roman": "ii",
+   "bars": 3
+  },
+  {
+   "chord": "E5",
+   "roman": "III5",
+   "bars": 1
+  },
+  {
+   "chord": "F",
+   "roman": "IV",
+   "bars": 16
+  },
+  {
+   "chord": "Am",
+   "roman": "vi",
+   "bars": 32
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 5
+  }
+ ],
+ "markers": [
+  {
+   "bar": 218454.33,
+   "name": "INTRO"
+  },
+  {
+   "bar": 9.0,
+   "name": "1er Cambio"
+  },
+  {
+   "bar": 17.0,
+   "name": "2nd Cambio"
+  },
+  {
+   "bar": 33.0,
+   "name": "4to Cambio"
+  },
+  {
+   "bar": 41.0,
+   "name": "5to Cambio"
+  },
+  {
+   "bar": 49.0,
+   "name": "6to Cambio"
+  },
+  {
+   "bar": 65.0,
+   "name": "PRE\u2006DROP"
+  },
+  {
+   "bar": 97.0,
+   "name": "BREAKDOWN"
+  },
+  {
+   "bar": 43955.67,
+   "name": " "
+  }
+ ],
+ "drums": [
+  {
+   "voice": "clap",
+   "channel": 39,
+   "name": "HouseGen Clap 09",
+   "pattern": "............X...",
+   "hits_per_bar": 1.18,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 174
+  },
+  {
+   "voice": "clap",
+   "channel": 40,
+   "name": "HouseGen Clap 09 #2",
+   "pattern": "....X...........",
+   "hits_per_bar": 1.18,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 174
+  },
+  {
+   "voice": "crash",
+   "channel": 50,
+   "name": "Grv Crash 01",
+   "pattern": "X...............",
+   "hits_per_bar": 1.04,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 46
+  },
+  {
+   "voice": "crash",
+   "channel": 57,
+   "name": "Volt CleanCrash 01",
+   "pattern": "X...............",
+   "hits_per_bar": 1.04,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 46
+  },
+  {
+   "voice": "crash",
+   "channel": 59,
+   "name": "Reverse Crash",
+   "pattern": ".........X......",
+   "hits_per_bar": 1.0,
+   "late_16ths": -0.375,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 7
+  },
+  {
+   "voice": "crash",
+   "channel": 52,
+   "name": "Grv Crash 01 #2",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 5
+  },
+  {
+   "voice": "crash",
+   "channel": 58,
+   "name": "Volt CleanCrash 01 #2",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 5
+  },
+  {
+   "voice": "crash",
+   "channel": 51,
+   "name": "Grv Crash 01 #3",
+   "pattern": "....X...........",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 4
+  },
+  {
+   "voice": "hat",
+   "channel": 42,
+   "name": "HH_2",
+   "pattern": ".XXX.XXX.XXX.XXX",
+   "hits_per_bar": 12.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    65,
+    100
+   ],
+   "bars": 190
+  },
+  {
+   "voice": "hat",
+   "channel": 43,
+   "name": "HH_3",
+   "pattern": ".XXX.XXX.XXX.XXX",
+   "hits_per_bar": 12.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    58,
+    100
+   ],
+   "bars": 174
+  },
+  {
+   "voice": "hat",
+   "channel": 41,
+   "name": "HH",
+   "pattern": "..X...X...X...X.",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 160
+  },
+  {
+   "voice": "kick",
+   "channel": 37,
+   "name": "GHOST",
+   "pattern": "X...X...X...X...",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 207
+  },
+  {
+   "voice": "kick",
+   "channel": 38,
+   "name": "Downstream Kick 12",
+   "pattern": "X...X...X...X...",
+   "hits_per_bar": 4.04,
+   "late_16ths": -0.001,
+   "velocity": [
+    51,
+    100
+   ],
+   "bars": 192
+  },
+  {
+   "voice": "kick",
+   "channel": 54,
+   "name": "Reverb Kick",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 9
+  },
+  {
+   "voice": "kick",
+   "channel": 53,
+   "name": "Reverse Kick",
+   "pattern": "..............X.",
+   "hits_per_bar": 1.0,
+   "late_16ths": -0.333,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 6
+  },
+  {
+   "voice": "perc",
+   "channel": 44,
+   "name": "Perc 1",
+   "pattern": "...X.......X....",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 190
+  },
+  {
+   "voice": "perc",
+   "channel": 45,
+   "name": "Perc 2",
+   "pattern": "......X.......X.",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 190
+  },
+  {
+   "voice": "perc",
+   "channel": 46,
+   "name": "Perc 3",
+   "pattern": "...X..X....X..X.",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 190
+  },
+  {
+   "voice": "perc",
+   "channel": 47,
+   "name": "Perc 4",
+   "pattern": ".XXX.XXX.XXX.XXX",
+   "hits_per_bar": 12.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    57,
+    100
+   ],
+   "bars": 174
+  },
+  {
+   "voice": "ride",
+   "channel": 48,
+   "name": "Ride",
+   "pattern": "..X...X...X...X.",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 72
+  },
+  {
+   "voice": "snare",
+   "channel": 49,
+   "name": "Snare",
+   "pattern": "XXXXXXXXXXXXXXXX",
+   "hits_per_bar": 17.08,
+   "late_16ths": 0.0,
+   "velocity": [
+    31,
+    100
+   ],
+   "bars": 48
+  },
+  {
+   "voice": "snare",
+   "channel": 55,
+   "name": "Attack Snare 05",
+   "pattern": "............X...",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 4
+  },
+  {
+   "voice": "snare",
+   "channel": 56,
+   "name": "Attack Snare 05 #2",
+   "pattern": "..........X.....",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 3
+  }
+ ],
+ "kit": {
+  "kick": [
+   {
+    "name": "GHOST",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 03.wav",
+    "hits": 828
+   },
+   {
+    "name": "Downstream Kick 12",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\Downstream Kick 12.wv",
+    "hits": 775
+   },
+   {
+    "name": "Reverb Kick",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 03.wav",
+    "hits": 9
+   }
+  ],
+  "clap": [
+   {
+    "name": "HouseGen Clap 09",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 09.wv",
+    "hits": 206
+   },
+   {
+    "name": "HouseGen Clap 09 #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 09.wv",
+    "hits": 206
+   }
+  ],
+  "hat": [
+   {
+    "name": "HH_2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 06.wv",
+    "hits": 2280
+   },
+   {
+    "name": "HH_3",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\Grv CH 06.wav",
+    "hits": 2088
+   },
+   {
+    "name": "HH",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\909 OH.wav",
+    "hits": 640
+   }
+  ],
+  "perc": [
+   {
+    "name": "Perc 4",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Percussion\\Collider Desert Rattle 01.wv",
+    "hits": 2088
+   },
+   {
+    "name": "Perc 3",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 13.wav",
+    "hits": 760
+   },
+   {
+    "name": "Perc 1",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 03.wav",
+    "hits": 380
+   }
+  ],
+  "ride": [
+   {
+    "name": "Ride",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Ride.wav",
+    "hits": 288
+   }
+  ],
+  "snare": [
+   {
+    "name": "Snare",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Attack Snare 11.wv",
+    "hits": 820
+   },
+   {
+    "name": "Attack Snare 05",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Attack Snare 05.wv",
+    "hits": 4
+   },
+   {
+    "name": "Attack Snare 05 #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Snares\\Attack Snare 05.wv",
+    "hits": 3
+   }
+  ],
+  "crash": [
+   {
+    "name": "Grv Crash 01",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Grv Crash 01.wav",
+    "hits": 48
+   },
+   {
+    "name": "Volt CleanCrash 01",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Cymbals\\Volt CleanCrash 01.wv",
+    "hits": 48
+   },
+   {
+    "name": "Reverse Crash",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Crash.wav",
+    "hits": 7
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "fx",
+   "name": "FX1",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "G3",
+    "G3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 32.0,
+   "notes": 25,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    4,
+    13
+   ]
+  },
+  {
+   "channel": 1,
+   "role": "fx",
+   "name": "FX2",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "G3",
+    "G3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 32.0,
+   "notes": 24,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    3,
+    15
+   ]
+  },
+  {
+   "channel": 2,
+   "role": "fx",
+   "name": "Riser",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "G2",
+    "B7"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 32.0,
+   "notes": 12,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    4
+   ]
+  },
+  {
+   "channel": 5,
+   "role": "arp",
+   "name": "Harmless #2",
+   "plugin": "Harmless",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "A3",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 744,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    32,
+    61
+   ],
+   "bar": {
+    "from_bar": 65,
+    "roll": [
+     "A3  .   G4  .   A3  .   A4  .   A3  .   B4  .   A3  .   C5  .  ",
+     "A3  .   G4  .   A3  .   A4  .   A3  .   B4  .   A3  .   C5  .  "
+    ]
+   }
+  },
+  {
+   "channel": 6,
+   "role": "chords",
+   "name": "Piano",
+   "plugin": "FL Keys",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "E4",
+    "A6"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 0.5,
+   "notes": 36,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16
+   ],
+   "bar": {
+    "from_bar": 97,
+    "roll": [
+     "E4+E5 -   .   .   .   .   .   .   .   .   .   .   .   .   .   .  ",
+     ".   .   .   .   .   .   .   .   B4+B5 -   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 7,
+   "role": "chords",
+   "name": "Piano #2",
+   "plugin": "FL Keys",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "E3",
+    "A5"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 0.5,
+   "notes": 36,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16
+   ],
+   "bar": {
+    "from_bar": 97,
+    "roll": [
+     "E3+E4 -   .   .   .   .   .   .   .   .   .   .   .   .   .   .  ",
+     ".   .   .   .   .   .   .   .   B3+B4 -   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 8,
+   "role": "chords",
+   "name": "Piano #3",
+   "plugin": "FL Keys",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "E3",
+    "A5"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 0.5,
+   "notes": 36,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    16
+   ],
+   "bar": {
+    "from_bar": 97,
+    "roll": [
+     "E3+E4 -   .   .   .   .   .   .   .   .   .   .   .   .   .   .  ",
+     ".   .   .   .   .   .   .   .   B3+B4 -   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 9,
+   "role": "lead",
+   "name": "Sakura",
+   "plugin": "Sakura",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C5",
+    "C6"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 18,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    13
+   ],
+   "bar": {
+    "from_bar": 97,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  ",
+     "E5  -   -   -   -   -   -   -   D5  -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 10,
+   "role": "lead",
+   "name": "Cello",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 18,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    13
+   ],
+   "bar": {
+    "from_bar": 97,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  ",
+     "E4  -   -   -   -   -   -   -   D4  -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 11,
+   "role": "bass",
+   "name": "Sub Pad",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "A2",
+    "A3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 8.0,
+   "notes": 22,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    18
+   ],
+   "bar": {
+    "from_bar": 89,
+    "roll": [
+     "F3  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 12,
+   "role": "chords",
+   "name": "Pads 2",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "G2",
+    "G5"
+   ],
+   "polyphony": 2.79,
+   "median_len_beats": 8.0,
+   "notes": 67,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    20
+   ],
+   "bar": {
+    "from_bar": 99,
+    "roll": [
+     "A2+C4+C5 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 13,
+   "role": "chords",
+   "name": "Pads 2",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "D3",
+    "E5"
+   ],
+   "polyphony": 2.83,
+   "median_len_beats": 8.0,
+   "notes": 68,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    20
+   ],
+   "bar": {
+    "from_bar": 97,
+    "roll": [
+     "G3+C4+G4 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 14,
+   "role": "chords",
+   "name": "Energic Pads",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "B2",
+    "E5"
+   ],
+   "polyphony": 4.11,
+   "median_len_beats": 8.0,
+   "notes": 456,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    2,
+    4,
+    16,
+    87
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     "A3+E4+A4+C5 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 15,
+   "role": "chords",
+   "name": "Energic Pads #2",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "B2",
+    "E5"
+   ],
+   "polyphony": 4.11,
+   "median_len_beats": 8.0,
+   "notes": 456,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    2,
+    4,
+    16,
+    87
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     "A3+E4+A4+C5 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 16,
+   "role": "lead",
+   "name": "DOPE Melody",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "A3",
+    "E5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 680,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    32,
+    70
+   ],
+   "bar": {
+    "from_bar": 57,
+    "roll": [
+     "A3  .   .   A4  .   .   G4  .   C4  .   .   D4  .   .   E4  .  ",
+     "A3  .   .   A4  .   .   G4  .   C4  .   .   D4  .   .   E4  .  "
+    ]
+   }
+  },
+  {
+   "channel": 17,
+   "role": "lead",
+   "name": "Pluck - Saku",
+   "plugin": "Sakura",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "E4",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 2032,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    8,
+    15,
+    32,
+    72
+   ],
+   "bar": {
+    "from_bar": 41,
+    "roll": [
+     "C5  B4  G4  E4  C5  B4  G4  E4  C5  B4  G4  E4  C5  B4  G4  E4 ",
+     "C5  B4  G4  E4  C5  B4  G4  E4  C5  B4  G4  E4  C5  B4  G4  E4 "
+    ]
+   }
+  },
+  {
+   "channel": 18,
+   "role": "lead",
+   "name": "Pluck Bacano!",
+   "plugin": "Harmless",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "G4",
+    "E5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 98,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    32
+   ],
+   "bar": {
+    "from_bar": 193,
+    "roll": [
+     ".   .   .   A4  .   .   .   .   A4  .   .   .   A4  .   .   .  ",
+     ".   .   .   A4  .   .   .   .   A4  .   .   .   A4  .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 19,
+   "role": "lead",
+   "name": "Pluck Harmonies",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "G4",
+    "C5"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 0.25,
+   "notes": 1488,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    8,
+    8,
+    15,
+    32,
+    61
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     ".   A4+C5 .   A4+C5 .   .   G4+B4 .   .   G4+B4 .   A4+C5 .   .   G4+B4 .  ",
+     ".   A4+C5 .   A4+C5 .   .   G4+B4 .   .   G4+B4 .   A4+C5 .   .   G4+B4 .  "
+    ]
+   }
+  },
+  {
+   "channel": 20,
+   "role": "bass",
+   "name": "Sub Drop #2",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C2",
+    "F3"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 16.0,
+   "notes": 4,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  {
+   "channel": 21,
+   "role": "bass",
+   "name": "Sub Drop",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "A0",
+    "G2"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 4.0,
+   "notes": 12,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    4
+   ],
+   "bar": {
+    "from_bar": 32,
+    "roll": [
+     "A0+G2 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 22,
+   "role": "arp",
+   "name": "Laurie Webb Come On A - D6_2 - D6_2",
+   "plugin": null,
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F1",
+    "G4"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G3+D4 C2  C3  G3+D4 C2  C3  G3+D4 C2  C3  G3+D4 C2  G3+D4 C3  C2  G3+D4 C3 ",
+     "G3+E4 C2  C3  G3+E4 C2  C3  G3+E4 C2  C3  G3+D4 C2  E3+C4 C3  C2  E3+B3 C3 "
+    ]
+   }
+  },
+  {
+   "channel": 23,
+   "role": "lead",
+   "name": "Main Lead 1",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 24,
+   "role": "lead",
+   "name": "Main Lead 1 #2",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 25,
+   "role": "lead",
+   "name": "Main Lead 1 #3",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 26,
+   "role": "lead",
+   "name": "Main Lead 1 #4",
+   "plugin": "MiniSynth",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 27,
+   "role": "lead",
+   "name": "Main Lead 1 #5",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 28,
+   "role": "lead",
+   "name": "Main Lead 1 #6",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 29,
+   "role": "lead",
+   "name": "Main Lead #6",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 30,
+   "role": "lead",
+   "name": "Main Lead #7",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F2",
+    "G5"
+   ],
+   "polyphony": 1.38,
+   "median_len_beats": 0.25,
+   "notes": 1573,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    71
+   ],
+   "bar": {
+    "from_bar": 113,
+    "roll": [
+     "G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  C4  G4+D5 C3  G4+D5 C4  C3  G4+D5 C4 ",
+     "G4+E5 C3  C4  G4+E5 C3  C4  G4+E5 C3  C4  G4+D5 C3  E4+C5 C4  C3  E4+B4 C4 "
+    ]
+   }
+  },
+  {
+   "channel": 32,
+   "role": "bass",
+   "name": "SUB",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "D0",
+    "C1"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.083,
+   "notes": 1725,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    8,
+    7,
+    15,
+    32,
+    82
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     "A0  A0  A0  -   A0  A0  A0  -   A0  A0  A0  -   A0  A0  A0  -  ",
+     "A0  A0  A0  -   A0  A0  A0  -   A0  A0  A0  -   A0  A0  A0  -  "
+    ]
+   }
+  },
+  {
+   "channel": 33,
+   "role": "bass",
+   "name": "B - Harmor",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "D1",
+    "C3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 2649,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    16,
+    8,
+    8,
+    15,
+    32,
+    126
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 ",
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 "
+    ]
+   }
+  },
+  {
+   "channel": 34,
+   "role": "bass",
+   "name": "B - 3xOsc",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "D1",
+    "C3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 2649,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    16,
+    8,
+    8,
+    15,
+    32,
+    126
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 ",
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 "
+    ]
+   }
+  },
+  {
+   "channel": 35,
+   "role": "bass",
+   "name": "B- Harm",
+   "plugin": "Harmless",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "D1",
+    "C3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 2649,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    16,
+    8,
+    8,
+    15,
+    32,
+    126
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 ",
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 "
+    ]
+   }
+  },
+  {
+   "channel": 36,
+   "role": "bass",
+   "name": "Default",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "D1",
+    "C3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 2649,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    16,
+    8,
+    8,
+    15,
+    32,
+    126
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 ",
+     ".   A1  A1  A2  .   A1  G2  A1  .   A1  A1  A2  .   A1  G2  A1 "
+    ]
+   }
+  },
+  {
+   "channel": 37,
+   "role": "drums",
+   "name": "GHOST",
+   "plugin": null,
+   "sample": "Grv Kick 03.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 828,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    16,
+    8,
+    8,
+    16,
+    32,
+    111
+   ]
+  },
+  {
+   "channel": 38,
+   "role": "drums",
+   "name": "Downstream Kick 12",
+   "plugin": null,
+   "sample": "Downstream Kick 12.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 775,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    16,
+    8,
+    8,
+    16,
+    24,
+    104
+   ]
+  },
+  {
+   "channel": 39,
+   "role": "drums",
+   "name": "HouseGen Clap 09",
+   "plugin": null,
+   "sample": "HouseGen Clap 09.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 206,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    7,
+    15,
+    0,
+    7,
+    15,
+    16,
+    114
+   ]
+  },
+  {
+   "channel": 40,
+   "role": "drums",
+   "name": "HouseGen Clap 09 #2",
+   "plugin": null,
+   "sample": "HouseGen Clap 09.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 206,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    7,
+    15,
+    0,
+    7,
+    15,
+    16,
+    114
+   ]
+  },
+  {
+   "channel": 41,
+   "role": "drums",
+   "name": "HH",
+   "plugin": null,
+   "sample": "909 OH.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 640,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    15,
+    0,
+    0,
+    15,
+    31,
+    99
+   ]
+  },
+  {
+   "channel": 42,
+   "role": "drums",
+   "name": "HH_2",
+   "plugin": null,
+   "sample": "Attack Hat 06.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 2280,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    7,
+    15,
+    8,
+    7,
+    15,
+    31,
+    99
+   ]
+  },
+  {
+   "channel": 43,
+   "role": "drums",
+   "name": "HH_3",
+   "plugin": null,
+   "sample": "Grv CH 06.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 2088,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    7,
+    15,
+    0,
+    7,
+    15,
+    31,
+    99
+   ]
+  },
+  {
+   "channel": 44,
+   "role": "drums",
+   "name": "Perc 1",
+   "plugin": null,
+   "sample": "Grv Perc 03.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 380,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    7,
+    15,
+    8,
+    7,
+    15,
+    31,
+    99
+   ]
+  },
+  {
+   "channel": 45,
+   "role": "drums",
+   "name": "Perc 2",
+   "plugin": null,
+   "sample": "Grv Perc 02.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 380,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    7,
+    15,
+    8,
+    7,
+    15,
+    31,
+    99
+   ]
+  },
+  {
+   "channel": 46,
+   "role": "drums",
+   "name": "Perc 3",
+   "plugin": null,
+   "sample": "Grv Perc 13.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 760,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    7,
+    15,
+    8,
+    7,
+    15,
+    31,
+    99
+   ]
+  },
+  {
+   "channel": 47,
+   "role": "drums",
+   "name": "Perc 4",
+   "plugin": null,
+   "sample": "Collider Desert Rattle 01.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "Bb3",
+    "D4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 2088,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    7,
+    15,
+    0,
+    7,
+    15,
+    31,
+    99
+   ]
+  },
+  {
+   "channel": 48,
+   "role": "drums",
+   "name": "Ride",
+   "plugin": null,
+   "sample": "909 Ride.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 288,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    7,
+    0,
+    0,
+    0,
+    16,
+    49
+   ]
+  },
+  {
+   "channel": 49,
+   "role": "drums",
+   "name": "Snare",
+   "plugin": null,
+   "sample": "Attack Snare 11.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 820,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    8,
+    0,
+    1,
+    8,
+    1,
+    29
+   ]
+  },
+  {
+   "channel": 50,
+   "role": "drums",
+   "name": "Grv Crash 01",
+   "plugin": null,
+   "sample": "Grv Crash 01.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.04,
+   "median_len_beats": 4.0,
+   "notes": 48,
+   "clips": 48,
+   "group": "Audio",
+   "presence": [
+    1,
+    2,
+    3,
+    1,
+    2,
+    4,
+    5,
+    28
+   ]
+  },
+  {
+   "channel": 51,
+   "role": "drums",
+   "name": "Grv Crash 01 #3",
+   "plugin": null,
+   "sample": "Grv Crash 01.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 11.0,
+   "notes": 4,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    12
+   ]
+  },
+  {
+   "channel": 52,
+   "role": "drums",
+   "name": "Grv Crash 01 #2",
+   "plugin": null,
+   "sample": "Grv Crash 01.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 5,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 53,
+   "role": "drums",
+   "name": "Reverse Kick",
+   "plugin": null,
+   "sample": "Grv Kick 03.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.583,
+   "notes": 6,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    4
+   ]
+  },
+  {
+   "channel": 54,
+   "role": "drums",
+   "name": "Reverb Kick",
+   "plugin": null,
+   "sample": "Grv Kick 03.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.615,
+   "notes": 9,
+   "clips": 9,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    7
+   ]
+  },
+  {
+   "channel": 55,
+   "role": "drums",
+   "name": "Attack Snare 05",
+   "plugin": null,
+   "sample": "Attack Snare 05.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 4,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    2
+   ]
+  },
+  {
+   "channel": 56,
+   "role": "drums",
+   "name": "Attack Snare 05 #2",
+   "plugin": null,
+   "sample": "Attack Snare 05.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 3,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2
+   ]
+  },
+  {
+   "channel": 57,
+   "role": "drums",
+   "name": "Volt CleanCrash 01",
+   "plugin": null,
+   "sample": "Volt CleanCrash 01.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.04,
+   "median_len_beats": 2.812,
+   "notes": 48,
+   "clips": 48,
+   "group": "Audio",
+   "presence": [
+    3,
+    4,
+    7,
+    3,
+    4,
+    10,
+    5,
+    37
+   ]
+  },
+  {
+   "channel": 58,
+   "role": "drums",
+   "name": "Volt CleanCrash 01 #2",
+   "plugin": null,
+   "sample": "Volt CleanCrash 01.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 12.0,
+   "notes": 5,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    3,
+    3,
+    3,
+    3,
+    0,
+    3,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 59,
+   "role": "drums",
+   "name": "Reverse Crash",
+   "plugin": null,
+   "sample": "909 Crash.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.844,
+   "notes": 7,
+   "clips": 7,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    4
+   ]
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "GHOST",
+   "volume_db": -1.5,
+   "to": [
+    15,
+    17,
+    21,
+    23,
+    26,
+    29,
+    31,
+    33,
+    34,
+    35,
+    37,
+    44
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Kick",
+   "volume_db": -5.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "Perc Bus",
+   "volume_db": -0.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "Clap",
+   "volume_db": -18.5,
+   "to": [
+    3
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "name": "CHH",
+   "volume_db": -9.4,
+   "to": [
+    3
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "Loop 1",
+   "volume_db": -11.1,
+   "to": [
+    3
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 7,
+   "name": "OHH",
+   "volume_db": -11.2,
+   "to": [
+    3
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "Loop 2",
+   "volume_db": -5.1,
+   "to": [
+    3
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "Loop 3",
+   "volume_db": -8.6,
+   "to": [
+    3
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "Ride",
+   "volume_db": -15.0,
+   "to": [
+    3
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "name": "Snare",
+   "volume_db": -8.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "Snare Reverb",
+   "volume_db": -13.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Crash",
+   "volume_db": -13.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "name": "Reverb Kick",
+   "volume_db": -6.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Sub Bass",
+   "volume_db": -1.6,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "name": "Sub Drop",
+   "volume_db": -2.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "name": "BASS\u2006BUS",
+   "volume_db": -4.7,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    18,
+    19,
+    20
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Effector",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "Bass",
+   "volume_db": -14.1,
+   "to": [
+    17
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 19,
+   "name": "Bass #2",
+   "volume_db": -8.0,
+   "to": [
+    17
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 20,
+   "name": "Bass #3",
+   "volume_db": -16.7,
+   "to": [
+    17
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "LEAD\u2006BUS",
+   "volume_db": -5.6,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb",
+     "name": null
+    },
+    {
+     "plugin": "Patcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "name": "Main Lead Reverse",
+   "volume_db": -3.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 23,
+   "name": "Lead Inicio",
+   "volume_db": -7.3,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Fast Dist",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "name": "LEAD\u20061",
+   "volume_db": -6.3,
+   "to": [
+    21
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "name": "LEAD 2",
+   "volume_db": -6.9,
+   "to": [
+    21
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "name": "LEAD 3",
+   "volume_db": -8.8,
+   "to": [
+    21
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": []
+  },
+  {
+   "index": 27,
+   "name": "LEAD 4",
+   "volume_db": -8.8,
+   "to": [
+    21
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 28,
+   "name": "LEAD\u20065",
+   "volume_db": -15.3,
+   "to": [
+    21
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "name": "LEAD 6",
+   "volume_db": -14.1,
+   "to": [
+    21
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "name": "LEAD\u20067",
+   "volume_db": -10.9,
+   "to": [
+    21
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 31,
+   "name": "LEAD\u2006BREAK",
+   "volume_db": -13.7,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 32,
+   "name": "Pluck Bacano!",
+   "volume_db": -12.9,
+   "to": [
+    21
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity PanOMatic",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "name": "Energic Pads",
+   "volume_db": -10.9,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "name": "PLUCK",
+   "volume_db": -15.1,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "name": "Arp",
+   "volume_db": -8.2,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 36,
+   "name": "Pluck Harmonies",
+   "volume_db": -13.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 37,
+   "name": "Pads 2",
+   "volume_db": -15.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 38,
+   "name": "Sub Pad",
+   "volume_db": -0.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 39,
+   "name": "Cello",
+   "volume_db": -20.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 40,
+   "name": "PIANO",
+   "volume_db": -4.7,
+   "to": [
+    43
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 41,
+   "name": "PIANO",
+   "volume_db": -12.9,
+   "to": [
+    43
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 42,
+   "name": "PIANO",
+   "volume_db": -10.4,
+   "to": [
+    43
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 43,
+   "name": "PIANO\u2006BUS",
+   "volume_db": -1.6,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    40,
+    41,
+    42
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 44,
+   "name": "FX\u2006BUS",
+   "volume_db": -1.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    45,
+    46,
+    47
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 45,
+   "name": "White Noise 1",
+   "volume_db": -7.3,
+   "to": [
+    44
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 46,
+   "name": "White Noise 2",
+   "volume_db": -10.7,
+   "to": [
+    44
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 47,
+   "name": "Riser",
+   "volume_db": -5.6,
+   "to": [
+    44
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 100,
+   "name": "VERB_1",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Patcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 101,
+   "name": "VERB_2",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 102,
+   "name": "Delay 3",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 103,
+   "name": "Delay 4",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  }
+ ],
+ "automation": [
+  {
+   "name": "Reeverb - Main Pluck -    Reverb  ",
+   "kind": "generator",
+   "plugin": null,
+   "param": 9,
+   "insert": null,
+   "channel": null,
+   "points": 13,
+   "beats": 8.0,
+   "range": [
+    0.0,
+    0.737
+   ]
+  },
+  {
+   "name": "Filter - White Noise 1 - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - White Noise 2 - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - White Noise 2 - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Riser - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.349,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Kick - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 33.0,
+   "range": [
+    0.0,
+    0.237
+   ]
+  },
+  {
+   "name": "Filter - Kick - Cutoff freq #7",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 33.0,
+   "range": [
+    0.0,
+    0.237
+   ]
+  },
+  {
+   "name": "Filter - Kick - Cutoff freq #5",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 69.0,
+   "range": [
+    0.0,
+    0.35
+   ]
+  },
+  {
+   "name": "Filter - Kick - Cutoff freq #6",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 69.0,
+   "range": [
+    0.0,
+    0.35
+   ]
+  },
+  {
+   "name": "Filter - Kick - Cutoff freq #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 68.0,
+   "range": [
+    0.0,
+    0.232
+   ]
+  },
+  {
+   "name": "Filter - Kick - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 8,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    0.232
+   ]
+  },
+  {
+   "name": "Filter - Kick - Cutoff freq #4",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 9,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    0.232
+   ]
+  },
+  {
+   "name": "Filter - Sub Bass - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.364
+   ]
+  },
+  {
+   "name": "Filter - Sub Bass - Cutoff freq #5",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.364
+   ]
+  },
+  {
+   "name": "Filter - Sub Bass - Cutoff freq #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 76.0,
+   "range": [
+    0.0,
+    0.68
+   ]
+  },
+  {
+   "name": "Filter - Sub Bass - Cutoff freq #4",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 76.0,
+   "range": [
+    0.0,
+    0.68
+   ]
+  },
+  {
+   "name": "Filter - Sub Bass - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.261
+   ]
+  },
+  {
+   "name": "Filter - Arp - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.159,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Arp - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 72.0,
+   "range": [
+    0.106,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Arp - Cutoff freq #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 140.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead #2 - FLT Vel",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 264.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead #2 - FLT Vel",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 264.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead #3 - FLT Vel",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 264.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead #3 - FLT Vel",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 264.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead #4 - FLT Vel",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 264.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead #4 - FLT Vel",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 264.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Lead Bus - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 68.0,
+   "range": [
+    0.705,
+    0.8
+   ]
+  },
+  {
+   "name": "Filter - Sub Pad - Cutoff freq",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    0.426
+   ]
+  },
+  {
+   "name": "Filter - Pads - Cutoff freq",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 133.0,
+   "range": [
+    0.233,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Pads - Cutoff freq #2",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 260.0,
+   "range": [
+    0.233,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Pads - Cutoff freq #3",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 260.0,
+   "range": [
+    0.158,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Main Pluck - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 228.0,
+   "range": [
+    0.688,
+    0.966
+   ]
+  },
+  {
+   "name": "Balance - Main Pluck - Volume #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 372.0,
+   "range": [
+    0.521,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Pads - Volume",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 264.0,
+   "range": [
+    0.648,
+    0.8
+   ]
+  },
+  {
+   "name": "Filter - Perc Bus - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 36.0,
+   "range": [
+    0.289,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Perc Bus - Cutoff freq #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 36.0,
+   "range": [
+    0.289,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Perc Bus - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 72.0,
+   "range": [
+    0.411,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Bass Bus - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 11,
+   "beats": 130.0,
+   "range": [
+    0.0,
+    0.534
+   ]
+  },
+  {
+   "name": "Filter - Bass Bus - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 6.0,
+   "range": [
+    0.0,
+    0.473
+   ]
+  },
+  {
+   "name": "Filter - Bass Bus - Cutoff freq #4",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 74.0,
+   "range": [
+    0.0,
+    0.704
+   ]
+  },
+  {
+   "name": "Filter - Bass Bus - Cutoff freq #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 37.0,
+   "range": [
+    0.0,
+    0.637
+   ]
+  },
+  {
+   "name": "Filter (Slot 5) - Bass Bus - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 11,
+   "beats": 130.0,
+   "range": [
+    0.363,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter (Slot 5) - Bass Bus - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 6.0,
+   "range": [
+    0.459,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter (Slot 5) - Bass Bus - Cutoff freq #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 37.0,
+   "range": [
+    0.534,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter (Slot 5) - Bass Bus - Cutoff freq #4",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 74.0,
+   "range": [
+    0.426,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Main Pluck - Cutoff freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 104.0,
+   "range": [
+    0.152,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Main Pluck - Cutoff freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 72.0,
+   "range": [
+    0.197,
+    1.0
+   ]
+  },
+  {
+   "name": "WaveShaper - Bass Bus - Mix level",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 136.0,
+   "range": [
+    0.0,
+    0.303
+   ]
+  },
+  {
+   "name": "WaveShaper - Bass Bus - Mix level #2",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 200.0,
+   "range": [
+    0.0,
+    0.303
+   ]
+  },
+  {
+   "name": "Balance - Lead Inicio - Volume",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 4.5,
+   "range": [
+    0.579,
+    0.8
+   ]
+  },
+  {
+   "name": "Balance - Lead Inicio - Volume #2",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 68.5,
+   "range": [
+    0.8,
+    0.8
+   ]
+  },
+  {
+   "name": "Reeverb - Master -    Reverb  ",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Filter - Master - Cutoff freq",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 34.0,
+   "range": [
+    0.0,
+    0.304
+   ]
+  },
+  {
+   "name": "Main Lead Reverse - Volume multiplier",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 49.5,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Master - Wet level",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 8,
+   "beats": 932.28,
+   "range": [
+    0.0,
+    0.518
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Master - Wet level #2",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 14,
+   "beats": 928.78,
+   "range": [
+    0.0,
+    0.438
+   ]
+  },
+  {
+   "name": "Filter - Lead Inicio - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 8,
+   "beats": 169.0,
+   "range": [
+    0.125,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Lead Inicio - Cutoff frequency #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 101.0,
+   "range": [
+    0.382,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Lead Inicio - Cutoff frequency #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 173.0,
+   "range": [
+    0.441,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Energic Pads - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 19,
+   "beats": 911.0,
+   "range": [
+    0.125,
+    1.0
+   ]
+  },
+  {
+   "name": "Tempo",
+   "kind": "channel",
+   "plugin": null,
+   "param": 5,
+   "insert": null,
+   "channel": null,
+   "points": 12,
+   "beats": 902.83,
+   "range": [
+    0.332,
+    0.667
+   ]
+  },
+  {
+   "name": "Filter - Pluck Harmonies - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 71.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead 1 - FLT Vel",
+   "kind": "generator",
+   "plugin": "MiniSynth",
+   "param": 11,
+   "insert": null,
+   "channel": "Main Lead 1",
+   "points": 11,
+   "beats": 300.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead 1 #2 - FLT Vel",
+   "kind": "generator",
+   "plugin": "MiniSynth",
+   "param": 11,
+   "insert": null,
+   "channel": "Main Lead 1 #2",
+   "points": 10,
+   "beats": 300.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead 1 #3 - FLT Vel",
+   "kind": "generator",
+   "plugin": "MiniSynth",
+   "param": 11,
+   "insert": null,
+   "channel": "Main Lead 1 #3",
+   "points": 10,
+   "beats": 300.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Main Lead 1 #4 - FLT Vel",
+   "kind": "generator",
+   "plugin": "MiniSynth",
+   "param": 11,
+   "insert": null,
+   "channel": "Main Lead 1 #4",
+   "points": 10,
+   "beats": 300.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - LEAD\u20065 - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 11,
+   "beats": 300.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - LEAD 6 - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 11,
+   "beats": 300.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Default #2 - A - Filter 1 frequency",
+   "kind": "generator",
+   "plugin": "Harmor",
+   "param": 52,
+   "insert": null,
+   "channel": "Main Lead #7",
+   "points": 11,
+   "beats": 300.0,
+   "range": [
+    0.147,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Lead Inicio - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 72.0,
+   "range": [
+    0.713,
+    0.8
+   ]
+  },
+  {
+   "name": "Filter - LEAD\u2006BUS - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 300.0,
+   "range": [
+    0.353,
+    1.0
+   ]
+  },
+  {
+   "name": "Sub Drop #2 - Channel volume",
+   "kind": "channel",
+   "plugin": null,
+   "param": "volume",
+   "insert": null,
+   "channel": "Sub Drop #2",
+   "points": 4,
+   "beats": 18.0,
+   "range": [
+    0.0,
+    0.5
+   ]
+  },
+  {
+   "name": "Filter - Pluck Bacano! - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 72.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Pads 2 - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 40.0,
+   "range": [
+    0.047,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter - Pads 2 - Cutoff frequency #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 40.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter (Slot 2) - Pads 2 - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 40.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter (Slot 2) - Pads 2 - Cutoff frequency #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 40.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Pads 2 - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 40.0,
+   "range": [
+    0.547,
+    0.8
+   ]
+  },
+  {
+   "name": "Balance - Sub Pad - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 40.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Balance - Sub Pad - Volume #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 72.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Balance - Cello - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 39.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Balance - LEAD\u2006BUS - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 9,
+   "beats": 300.0,
+   "range": [
+    0.7,
+    0.8
+   ]
+  },
+  {
+   "name": "Reeverb - Master - Reverb",
+   "kind": "generator",
+   "plugin": null,
+   "param": 9,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 40.0,
+   "range": [
+    0.0,
+    0.406
+   ]
+  },
+  {
+   "name": "Filter - Master - Cutoff frequency",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 40.0,
+   "range": [
+    0.0,
+    0.35
+   ]
+  },
+  {
+   "name": "Master - Stereo separation",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8130,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 40.0,
+   "range": [
+    0.5,
+    0.825
+   ]
+  }
+ ],
+ "automation_summary": {
+  "generator": 57,
+  "?": 20,
+  "MiniSynth": 4,
+  "channel": 3,
+  "Harmor": 1
+ },
+ "controllers": [],
+ "plugins": {
+  "MiniSynth": 9,
+  "Sytrus": 7,
+  "3x Osc": 6,
+  "Harmless": 3,
+  "FL Keys": 3,
+  "Harmor": 3,
+  "Sakura": 2
+ },
+ "effects": {
+  "Fruity Parametric EQ 2": 50,
+  "Fruity Filter": 20,
+  "Fruity Limiter": 17,
+  "Fruity Reeverb": 7,
+  "Fruity Balance": 7,
+  "Fruity Delay 2": 3,
+  "Maximus": 2,
+  "Fruity Compressor": 2,
+  "Patcher": 2,
+  "Fruity Delay 3": 2,
+  "Fruity Reeverb 2": 1,
+  "Fruity WaveShaper": 1,
+  "Effector": 1,
+  "Fruity Fast Dist": 1,
+  "Fruity PanOMatic": 1,
+  "Fruity Chorus": 1
+ },
+ "muted_clips": 1,
+ "muted_parts": [],
+ "bounces": [],
+ "audio_key": {
+  "key": "A minor",
+  "score": 0.8142,
+  "margin": 0.1273,
+  "runner_up": "A major"
+ }
+}

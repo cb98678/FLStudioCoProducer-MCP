@@ -1,0 +1,2690 @@
+{
+ "file": "LeriQ - SHINE.flp",
+ "title": "SHINE",
+ "artists": "LeriQ",
+ "genre": "Afrobeats",
+ "fl_version": "25.2.5.5319",
+ "ppq": 96,
+ "bpm": 178.0,
+ "bars": 82,
+ "seconds": 110.6,
+ "key": {
+  "key": "C minor",
+  "tonic": 0,
+  "mode": "minor",
+  "confidence": 0.762,
+  "runner_up": "F minor"
+ },
+ "roles": {
+  "drums": 18,
+  "chords": 2,
+  "other": 1,
+  "lead": 5,
+  "bass": 5,
+  "vocal": 1,
+  "audio": 1
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 8,
+   "name": "",
+   "energy": 0.14,
+   "roles": [
+    "audio",
+    "chords",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 9,
+   "bars": 8,
+   "name": "",
+   "energy": 0.21,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 17,
+   "bars": 8,
+   "name": "",
+   "energy": 0.47,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 25,
+   "bars": 8,
+   "name": "",
+   "energy": 0.37,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 33,
+   "bars": 16,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 49,
+   "bars": 8,
+   "name": "",
+   "energy": 0.1,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 57,
+   "bars": 8,
+   "name": "",
+   "energy": 0.94,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 65,
+   "bars": 8,
+   "name": "",
+   "energy": 0.21,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 73,
+   "bars": 8,
+   "name": "",
+   "energy": 0.8,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 81,
+   "bars": 2,
+   "name": "",
+   "energy": 0.0,
+   "roles": [
+    "audio",
+    "vocal"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 2
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Gm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Ebadd9",
+   "roman": "bIIIadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Gm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Ebadd9",
+   "roman": "bIIIadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Gm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Cm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Cm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Ebadd9",
+   "roman": "bIIIadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Gm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fsus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fsus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Cm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Ebadd9",
+   "roman": "bIIIadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Gm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Fm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Fmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Abmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Cm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Eb6",
+   "roman": "bIII6",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 1
+  }
+ ],
+ "markers": [],
+ "drums": [
+  {
+   "voice": "crash",
+   "channel": 23,
+   "name": "SFX Cym Airy",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 4
+  },
+  {
+   "voice": "crash",
+   "channel": 22,
+   "name": "SFX Cym Noisy",
+   "pattern": "..X.............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 3
+  },
+  {
+   "voice": "hat",
+   "channel": 4,
+   "name": "RD_Hat",
+   "pattern": "....x.x.x...x...",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.083,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 52
+  },
+  {
+   "voice": "hat",
+   "channel": 7,
+   "name": "VT_CHiHat",
+   "pattern": "..x.......x.....",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 52
+  },
+  {
+   "voice": "hat",
+   "channel": 14,
+   "name": "HIP_Hat_6",
+   "pattern": "x...x.......x...",
+   "hits_per_bar": 1.49,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 51
+  },
+  {
+   "voice": "hat",
+   "channel": 3,
+   "name": "HIP_Hat",
+   "pattern": "X.X.X.X.X.X.X.X.",
+   "hits_per_bar": 8.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    0,
+    99
+   ],
+   "bars": 38
+  },
+  {
+   "voice": "hat",
+   "channel": 5,
+   "name": "RD_Hat_7",
+   "pattern": "............X...",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 4
+  },
+  {
+   "voice": "kick",
+   "channel": 13,
+   "name": "HIP_Kick_2",
+   "pattern": "x...x.........x.",
+   "hits_per_bar": 1.49,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 51
+  },
+  {
+   "voice": "perc",
+   "channel": 1,
+   "name": "FPC Wood Hit 1",
+   "pattern": "......x.x...x...",
+   "hits_per_bar": 1.51,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 51
+  },
+  {
+   "voice": "perc",
+   "channel": 9,
+   "name": "FPC Ice Crack #2",
+   "pattern": "....x.x.x...x...",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.104,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 51
+  },
+  {
+   "voice": "perc",
+   "channel": 0,
+   "name": "22inchride",
+   "pattern": "X...X...X...X...",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    59,
+    100
+   ],
+   "bars": 32
+  },
+  {
+   "voice": "perc",
+   "channel": 6,
+   "name": "FLS_ck1_dom",
+   "pattern": "............X...",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 26
+  },
+  {
+   "voice": "perc",
+   "channel": 24,
+   "name": "HIP_Snaph",
+   "pattern": "........X.......",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 15
+  },
+  {
+   "voice": "perc",
+   "channel": 25,
+   "name": "HIP_Snaph #2",
+   "pattern": "........X.......",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.083,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 15
+  },
+  {
+   "voice": "perc",
+   "channel": 29,
+   "name": "Grv Perc 13",
+   "pattern": "....X...........",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.167,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 6
+  },
+  {
+   "voice": "shaker",
+   "channel": 2,
+   "name": "RD Tamb 2",
+   "pattern": "x...x.x.x...x...",
+   "hits_per_bar": 2.5,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 52
+  },
+  {
+   "voice": "snare",
+   "channel": 15,
+   "name": "HIP_Snare_8",
+   "pattern": "......x.x...x...",
+   "hits_per_bar": 1.51,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 37
+  }
+ ],
+ "kit": {
+  "perc": [
+   {
+    "name": "22inchride",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\LeriQ - SHINE\\22inchride.wav",
+    "hits": 128
+   },
+   {
+    "name": "FPC Ice Crack #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\FPC Ice Crack.wav",
+    "hits": 102
+   },
+   {
+    "name": "FPC Wood Hit 1",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\FPC Wood Hit 1.wav",
+    "hits": 77
+   }
+  ],
+  "shaker": [
+   {
+    "name": "RD Tamb 2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\RD Tamb 2.wav",
+    "hits": 130
+   }
+  ],
+  "hat": [
+   {
+    "name": "HIP_Hat",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat.wav",
+    "hits": 304
+   },
+   {
+    "name": "RD_Hat",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Seamless - Menagerie\\RD_Hat.wav",
+    "hits": 104
+   },
+   {
+    "name": "HIP_Hat_6",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Hat_6.wav",
+    "hits": 76
+   }
+  ],
+  "kick": [
+   {
+    "name": "HIP_Kick_2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Electroconductor - Inner Days\\HIP_Kick_2.wav",
+    "hits": 76
+   }
+  ],
+  "snare": [
+   {
+    "name": "HIP_Snare_8",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\HipHop\\HIP_Snare_8.wav",
+    "hits": 56
+   }
+  ],
+  "crash": [
+   {
+    "name": "SFX Cym Airy",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\SFX\\SFX Cym Airy.wav",
+    "hits": 4
+   },
+   {
+    "name": "SFX Cym Noisy",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Astes - Bien Duro\\SFX Cym Noisy.wav",
+    "hits": 3
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "drums",
+   "name": "22inchride",
+   "plugin": null,
+   "sample": "22inchride.wav",
+   "preset": null,
+   "insert": 13,
+   "insert_name": "22inchride",
+   "chain": [
+    "Fruity WaveShaper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 128,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    16,
+    0,
+    8,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 1,
+   "role": "drums",
+   "name": "FPC Wood Hit 1",
+   "plugin": null,
+   "sample": "FPC Wood Hit 1.wav",
+   "preset": null,
+   "insert": 12,
+   "insert_name": "FPC Wood Hit 1",
+   "chain": [
+    "Transient Processor",
+    "Fruity WaveShaper",
+    "Fruity Parametric EQ 2",
+    "Fruity WaveShaper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 77,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    8,
+    6,
+    16,
+    0,
+    8,
+    7,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 2,
+   "role": "drums",
+   "name": "RD Tamb 2",
+   "plugin": null,
+   "sample": "RD Tamb 2.wav",
+   "preset": null,
+   "insert": 29,
+   "insert_name": "RD Tamb 2",
+   "chain": [
+    "Fruity WaveShaper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 130,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    6,
+    16,
+    0,
+    8,
+    0,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 3,
+   "role": "drums",
+   "name": "HIP_Hat",
+   "plugin": null,
+   "sample": "HIP_Hat.wav",
+   "preset": null,
+   "insert": 11,
+   "insert_name": "HIP_Hat",
+   "chain": [
+    "Fruity Fast Dist",
+    "Transient Processor",
+    "Fruity Stereo Shaper",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 304,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    8,
+    6,
+    16,
+    0,
+    8,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 4,
+   "role": "drums",
+   "name": "RD_Hat",
+   "plugin": null,
+   "sample": "RD_Hat.wav",
+   "preset": null,
+   "insert": 27,
+   "insert_name": "RD_Hat",
+   "chain": [
+    "Fruity Parametric EQ"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 104,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    6,
+    16,
+    0,
+    8,
+    0,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 5,
+   "role": "drums",
+   "name": "RD_Hat_7",
+   "plugin": null,
+   "sample": "RD_Hat_7.wav",
+   "preset": null,
+   "insert": 18,
+   "insert_name": "RD_Hat_7",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 4,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 6,
+   "role": "drums",
+   "name": "FLS_ck1_dom",
+   "plugin": null,
+   "sample": "FLS_ck1_dom.wav",
+   "preset": null,
+   "insert": 26,
+   "insert_name": "FLS_ck1_dom",
+   "chain": [
+    "Fruity WaveShaper",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 26,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    4,
+    4,
+    3,
+    8,
+    0,
+    4,
+    0,
+    3,
+    0
+   ]
+  },
+  {
+   "channel": 7,
+   "role": "drums",
+   "name": "VT_CHiHat",
+   "plugin": null,
+   "sample": "VT_CHiHat.wav",
+   "preset": null,
+   "insert": 28,
+   "insert_name": "VT_CHiHat",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 52,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    6,
+    16,
+    0,
+    8,
+    0,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 8,
+   "role": "chords",
+   "name": "Harp",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "General Midi Library",
+   "insert": 2,
+   "insert_name": "Lethal Plastic",
+   "chain": [
+    "Fruity Compressor",
+    "Fruity Parametric EQ"
+   ],
+   "range": [
+    "F2",
+    "G4"
+   ],
+   "polyphony": 2.56,
+   "median_len_beats": 0.5,
+   "notes": 230,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    7,
+    7,
+    7,
+    7,
+    14,
+    7,
+    7,
+    7,
+    7,
+    0
+   ],
+   "bar": {
+    "from_bar": 2,
+    "roll": [
+     ".   .   .   .   .   .   .   .   G2+D4+Bb3+F4 -   .   .   .   .   .   .  ",
+     "Ab2+C4+Eb4+G4 -   -   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 9,
+   "role": "drums",
+   "name": "FPC Ice Crack #2",
+   "plugin": null,
+   "sample": "FPC Ice Crack.wav",
+   "preset": null,
+   "insert": 10,
+   "insert_name": "FPC Ice Crack #2",
+   "chain": [
+    "Fruity Fast Dist",
+    "Transient Processor"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 102,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    8,
+    6,
+    16,
+    0,
+    8,
+    7,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 11,
+   "role": "chords",
+   "name": "FL Piano (8)",
+   "plugin": null,
+   "sample": "FL Piano (8).wav",
+   "preset": null,
+   "insert": 9,
+   "insert_name": "FL Piano (8)",
+   "chain": [
+    "Fruity WaveShaper",
+    "Fruity Flangus",
+    "Fruity Stereo Shaper",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "F3",
+    "G5"
+   ],
+   "polyphony": 1.2,
+   "median_len_beats": 5.865,
+   "notes": 240,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    6,
+    6,
+    6,
+    6,
+    12,
+    6,
+    6,
+    6,
+    6,
+    0
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     ".   F3+Ab4+Eb5 C5  -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   G3  Bb4 D5+F5 -   -   -   -   -   Ab3"
+    ]
+   }
+  },
+  {
+   "channel": 12,
+   "role": "lead",
+   "name": "Enlightenment",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Arksun Cityscape / Enlightenment",
+   "insert": 16,
+   "insert_name": "Enlightenment",
+   "chain": [],
+   "range": [
+    "F4",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.271,
+   "notes": 18,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    4,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 13,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   F4  -   G4  .  ",
+     "Bb4 -   .   .   C5  .   .   .   .   Bb4 .   .   .   G4  .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 13,
+   "role": "drums",
+   "name": "HIP_Kick_2",
+   "plugin": null,
+   "sample": "HIP_Kick_2.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "HIP_Kick_2",
+   "chain": [
+    "Fruity Compressor",
+    "Fruity Parametric EQ"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 76,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    8,
+    6,
+    16,
+    0,
+    8,
+    7,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 14,
+   "role": "drums",
+   "name": "HIP_Hat_6",
+   "plugin": null,
+   "sample": "HIP_Hat_6.wav",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "HIP_Hat_6",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 76,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    8,
+    6,
+    16,
+    0,
+    8,
+    7,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 15,
+   "role": "drums",
+   "name": "HIP_Snare_8",
+   "plugin": null,
+   "sample": "HIP_Snare_8.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "HIP_Snare_8",
+   "chain": [
+    "Fruity Fast Dist",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 56,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    16,
+    0,
+    8,
+    7,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 16,
+   "role": "bass",
+   "name": "Morphine",
+   "plugin": "Morphine",
+   "sample": null,
+   "preset": null,
+   "insert": 6,
+   "insert_name": "Morphine",
+   "chain": [
+    "Fruity Flangus",
+    "Fruity Stereo Shaper"
+   ],
+   "range": [
+    "C1",
+    "C2"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 2.073,
+   "notes": 40,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    16,
+    0,
+    8,
+    0,
+    8,
+    0
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     "F1  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   .   G1  -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 17,
+   "role": "bass",
+   "name": "Synpluck Cube",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Mobile Synth Pluck / Synpluck Cube",
+   "insert": 20,
+   "insert_name": "Synpluck Cube",
+   "chain": [
+    "Fruity Flangus",
+    "Fruity WaveShaper",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C1",
+    "C2"
+   ],
+   "polyphony": 1.03,
+   "median_len_beats": 0.5,
+   "notes": 264,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    16,
+    0,
+    8,
+    0,
+    8,
+    0
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     "F1  -   F1  -   F1  -   F1  -   F1  -   F1  -   F1  -   F1  -  ",
+     "F1  -   F1  -   F1  -   F1  -   G1  -   G1  -   G1  -   G1  -  "
+    ]
+   }
+  },
+  {
+   "channel": 18,
+   "role": "bass",
+   "name": "Morphine #4",
+   "plugin": "Morphine",
+   "sample": null,
+   "preset": null,
+   "insert": 19,
+   "insert_name": "Morphine #4",
+   "chain": [
+    "Fruity Limiter",
+    "Fruity Parametric EQ",
+    "Fruity WaveShaper"
+   ],
+   "range": [
+    "C2",
+    "C3"
+   ],
+   "polyphony": 1.06,
+   "median_len_beats": 0.5,
+   "notes": 280,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    16,
+    0,
+    8,
+    0,
+    8,
+    0
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     "F2  -   F2  -   F2  -   F2  -   F2  -   F2  -   F2  -   F2  -  ",
+     "F2  -   F2  -   F2  -   F2  .   G2  -   G2  -   G2  -   G2  -  "
+    ]
+   }
+  },
+  {
+   "channel": 19,
+   "role": "lead",
+   "name": "Morphine #2",
+   "plugin": "Morphine",
+   "sample": null,
+   "preset": null,
+   "insert": 7,
+   "insert_name": "Morphine #2",
+   "chain": [
+    "Gross Beat",
+    "Fruity WaveShaper",
+    "Fruity Flangus",
+    "Fruity Delay 2"
+   ],
+   "range": [
+    "F3",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.875,
+   "notes": 90,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    0,
+    8,
+    0
+   ],
+   "bar": {
+    "from_bar": 33,
+    "roll": [
+     "F3  -   -   .   F3  -   -   .   F3  -   -   .   F3  -   -   .  ",
+     "F3  -   -   -   C4  -   -   -   Bb3 -   -   -   Ab3 -   -   .  "
+    ]
+   }
+  },
+  {
+   "channel": 21,
+   "role": "bass",
+   "name": "Log Drum",
+   "plugin": "Fruity DX10",
+   "sample": null,
+   "preset": null,
+   "insert": 17,
+   "insert_name": "Log Drum",
+   "chain": [
+    "Fruity Limiter",
+    "Fruity Fast Dist",
+    "Fruity WaveShaper"
+   ],
+   "range": [
+    "C2",
+    "C3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.094,
+   "notes": 40,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    5,
+    0,
+    12,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 17,
+    "roll": [
+     ".   .   .   .   .   .   F2  -   -   -   .   .   F2  -   -   -  ",
+     "-   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 22,
+   "role": "drums",
+   "name": "SFX Cym Noisy",
+   "plugin": null,
+   "sample": "SFX Cym Noisy.wav",
+   "preset": null,
+   "insert": 21,
+   "insert_name": "SFX Cym Noisy",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 11.49,
+   "notes": 3,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    3,
+    0,
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 23,
+   "role": "drums",
+   "name": "SFX Cym Airy",
+   "plugin": null,
+   "sample": "SFX Cym Airy.wav",
+   "preset": null,
+   "insert": 22,
+   "insert_name": "SFX Cym Airy",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 20.031,
+   "notes": 4,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    6,
+    0,
+    6,
+    0,
+    6,
+    0,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 24,
+   "role": "drums",
+   "name": "HIP_Snaph",
+   "plugin": null,
+   "sample": "HIP_Snaph.wav",
+   "preset": null,
+   "insert": 23,
+   "insert_name": "HIP_Snaph",
+   "chain": [
+    "Fruity WaveShaper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 15,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    4,
+    3,
+    4,
+    0,
+    4,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 25,
+   "role": "drums",
+   "name": "HIP_Snaph #2",
+   "plugin": null,
+   "sample": "HIP_Snaph.wav",
+   "preset": null,
+   "insert": 24,
+   "insert_name": "HIP_Snaph #2",
+   "chain": [
+    "Fruity WaveShaper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 15,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    4,
+    3,
+    4,
+    0,
+    4,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 26,
+   "role": "lead",
+   "name": "Brass Section 1",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "General Midi Library / Brass Section 1",
+   "insert": 25,
+   "insert_name": "Alto Sax",
+   "chain": [
+    "Fruity Flangus",
+    "Fruity Reeverb 2",
+    "Fruity Compressor",
+    "Fruity WaveShaper",
+    "Fruity Delay 2",
+    "Fruity Stereo Shaper"
+   ],
+   "range": [
+    "C3",
+    "G4"
+   ],
+   "polyphony": 1.45,
+   "median_len_beats": 0.833,
+   "notes": 116,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    10,
+    0,
+    5,
+    0,
+    5,
+    0
+   ],
+   "bar": {
+    "from_bar": 34,
+    "roll": [
+     ".   .   .   .   G3+G4 -   -   -   -   F3+F4 Eb3+Eb4 -   C3  C4  -   -  ",
+     "Eb3+Eb4 -   -   -   -   -   -   -   -   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 27,
+   "role": "lead",
+   "name": "Brass Section 2",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "General Midi Library / Brass Section 2",
+   "insert": 25,
+   "insert_name": "Alto Sax",
+   "chain": [
+    "Fruity Flangus",
+    "Fruity Reeverb 2",
+    "Fruity Compressor",
+    "Fruity WaveShaper",
+    "Fruity Delay 2",
+    "Fruity Stereo Shaper"
+   ],
+   "range": [
+    "F4",
+    "G5"
+   ],
+   "polyphony": 1.51,
+   "median_len_beats": 0.969,
+   "notes": 89,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    10,
+    0,
+    5,
+    0,
+    5,
+    0
+   ],
+   "bar": {
+    "from_bar": 35,
+    "roll": [
+     "G4  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   C5  -   -   -   -   Bb4 C5  -   G4  -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 28,
+   "role": "lead",
+   "name": "Flute",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "General Midi Library / Flute",
+   "insert": 31,
+   "insert_name": "Flute",
+   "chain": [
+    "Fruity Flangus",
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 3"
+   ],
+   "range": [
+    "F4",
+    "G5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.958,
+   "notes": 20,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    7,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     ".   .   .   C5  -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   D5  -   -   -   Eb5 -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 29,
+   "role": "drums",
+   "name": "Grv Perc 13",
+   "plugin": null,
+   "sample": "Grv Perc 13.wav",
+   "preset": null,
+   "insert": 30,
+   "insert_name": "Grv Perc 13",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 6,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    1,
+    1,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 31,
+   "role": "vocal",
+   "name": "Vocals - Mirror Don Wake - 89bpm - Amaj",
+   "plugin": null,
+   "sample": "Vocals - Mirror Don Wake - 89bpm - Amaj.wav",
+   "preset": null,
+   "insert": 32,
+   "insert_name": "Vocals - Mirror Don Wake - 89bpm - Amaj",
+   "chain": [
+    "Fruity Parametric EQ",
+    "Fruity Reeverb 2",
+    "Fruity Delay 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    8,
+    8,
+    8,
+    8,
+    16,
+    8,
+    8,
+    8,
+    8,
+    2
+   ]
+  },
+  {
+   "channel": 32,
+   "role": "audio",
+   "name": "RIRI x LERIQ 2025_Signature tag_1",
+   "plugin": null,
+   "sample": "RIRI x LERIQ 2025_Signature tag_1.wav",
+   "preset": null,
+   "insert": 36,
+   "insert_name": "RIRI x LERIQ 2025_Signature tag_1",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 33,
+   "role": "bass",
+   "name": "LeriQ Shine Bass Loop",
+   "plugin": null,
+   "sample": "LeriQ Shine Bass Loop.wav",
+   "preset": null,
+   "insert": 14,
+   "insert_name": "Evo Devotion",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    5,
+    8,
+    1,
+    8,
+    0,
+    8,
+    0,
+    0
+   ]
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Lethal Plastic",
+   "volume_db": -3.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "HIP_Kick_2",
+   "volume_db": -12.6,
+   "to": [
+    0,
+    14,
+    17,
+    19
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "HIP_Hat_6",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 5,
+   "name": "HIP_Snare_8",
+   "volume_db": -1.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Fast Dist",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "Morphine",
+   "volume_db": -3.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "Morphine #2",
+   "volume_db": -1.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "FPC_Crash_G16InLite_01",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 9,
+   "name": "FL Piano (8)",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "FPC Ice Crack #2",
+   "volume_db": -7.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Fast Dist",
+     "name": null
+    },
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "name": "HIP_Hat",
+   "volume_db": -5.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Fast Dist",
+     "name": null
+    },
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "FPC Wood Hit 1",
+   "volume_db": -0.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "22inchride",
+   "volume_db": -1.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "name": "Evo Devotion",
+   "volume_db": -2.1,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    3
+   ],
+   "slots": []
+  },
+  {
+   "index": 15,
+   "name": "Enlightenment",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 16,
+   "name": "Enlightenment",
+   "volume_db": -2.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 17,
+   "name": "Log Drum",
+   "volume_db": -7.8,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    3
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Fast Dist",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "RD_Hat_7",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 19,
+   "name": "Morphine #4",
+   "volume_db": -3.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    3
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "name": "Synpluck Cube",
+   "volume_db": -2.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "SFX Cym Noisy",
+   "volume_db": -6.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 22,
+   "name": "SFX Cym Airy",
+   "volume_db": -6.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 23,
+   "name": "HIP_Snaph",
+   "volume_db": -0.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "name": "HIP_Snaph #2",
+   "volume_db": -0.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "name": "Alto Sax",
+   "volume_db": -6.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "name": "FLS_ck1_dom",
+   "volume_db": -2.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "name": "RD_Hat",
+   "volume_db": -9.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 28,
+   "name": "VT_CHiHat",
+   "volume_db": -13.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 29,
+   "name": "RD Tamb 2",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "name": "Grv Perc 13",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 31,
+   "name": "Flute",
+   "volume_db": -4.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 32,
+   "name": "Vocals - Mirror Don Wake - 89bpm - Amaj",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "name": "Vocals - Mirror Don Wake - 89bpm - Amaj #2",
+   "volume_db": -8.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "name": "RIRI x LERIQ 2025_Signature tag_1",
+   "volume_db": -1.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "name": "RIRI x LERIQ 2025_Signature tag_1",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 36,
+   "name": "RIRI x LERIQ 2025_Signature tag_1",
+   "volume_db": -4.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  }
+ ],
+ "automation": [
+  {
+   "name": "Delay 2 - Mix level",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "Vocals - Mirror Don Wake - 89bpm - Amaj",
+   "channel": null,
+   "points": 5,
+   "beats": 358.34,
+   "range": [
+    0.0,
+    0.423
+   ]
+  }
+ ],
+ "automation_summary": {
+  "mixer": 1
+ },
+ "controllers": [],
+ "plugins": {
+  "FLEX": 6,
+  "Morphine": 3,
+  "Fruity DX10": 1
+ },
+ "effects": {
+  "Fruity WaveShaper": 14,
+  "Fruity Reeverb 2": 8,
+  "Fruity Parametric EQ": 6,
+  "Fruity Flangus": 6,
+  "Fruity Stereo Shaper": 5,
+  "Fruity Parametric EQ 2": 5,
+  "Fruity Fast Dist": 4,
+  "Fruity Limiter": 3,
+  "Fruity Compressor": 3,
+  "Fruity Delay 2": 3,
+  "Transient Processor": 3,
+  "Gross Beat": 1,
+  "Fruity Delay 3": 1
+ },
+ "muted_clips": 57,
+ "muted_parts": [
+  {
+   "channel": 0,
+   "name": "22inchride",
+   "muted_notes": 96,
+   "playing_notes": 128
+  },
+  {
+   "channel": 1,
+   "name": "FPC Wood Hit 1",
+   "muted_notes": 12,
+   "playing_notes": 77
+  },
+  {
+   "channel": 3,
+   "name": "HIP_Hat",
+   "muted_notes": 64,
+   "playing_notes": 304
+  },
+  {
+   "channel": 9,
+   "name": "FPC Ice Crack #2",
+   "muted_notes": 16,
+   "playing_notes": 102
+  },
+  {
+   "channel": 12,
+   "name": "Enlightenment",
+   "muted_notes": 54,
+   "playing_notes": 18
+  },
+  {
+   "channel": 13,
+   "name": "HIP_Kick_2",
+   "muted_notes": 12,
+   "playing_notes": 76
+  },
+  {
+   "channel": 14,
+   "name": "HIP_Hat_6",
+   "muted_notes": 12,
+   "playing_notes": 76
+  },
+  {
+   "channel": 16,
+   "name": "Morphine",
+   "muted_notes": 60,
+   "playing_notes": 40
+  },
+  {
+   "channel": 17,
+   "name": "Synpluck Cube",
+   "muted_notes": 396,
+   "playing_notes": 264
+  },
+  {
+   "channel": 18,
+   "name": "Morphine #4",
+   "muted_notes": 420,
+   "playing_notes": 280
+  },
+  {
+   "channel": 19,
+   "name": "Morphine #2",
+   "muted_notes": 90,
+   "playing_notes": 90
+  },
+  {
+   "channel": 21,
+   "name": "Log Drum",
+   "muted_notes": 75,
+   "playing_notes": 40
+  }
+ ],
+ "bounces": [],
+ "audio_key": {
+  "key": "E major",
+  "score": 0.8592,
+  "margin": 0.1845,
+  "runner_up": "A major"
+ }
+}

@@ -1,0 +1,3261 @@
+{
+ "file": "Jay Cactus x Confz - Mic Check Ready.flp",
+ "title": "Mic Check Ready",
+ "artists": "Jay Cactus x Confz",
+ "genre": "UK Drill",
+ "fl_version": "25.2.3.5164",
+ "ppq": 96,
+ "bpm": 143.0,
+ "bars": 129,
+ "seconds": 216.5,
+ "key": {
+  "key": "Eb minor",
+  "tonic": 3,
+  "mode": "minor",
+  "confidence": 0.796,
+  "runner_up": "Eb major"
+ },
+ "roles": {
+  "pad": 4,
+  "vocal": 13,
+  "chords": 1,
+  "audio": 9,
+  "bass": 2,
+  "drums": 6,
+  "arp": 2,
+  "fx": 4
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 8,
+   "name": "",
+   "energy": 0.0,
+   "roles": [
+    "audio",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 9,
+   "bars": 8,
+   "name": "",
+   "energy": 0.8,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "fx"
+   ]
+  },
+  {
+   "start_bar": 17,
+   "bars": 8,
+   "name": "",
+   "energy": 0.73,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 25,
+   "bars": 8,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 33,
+   "bars": 8,
+   "name": "",
+   "energy": 0.65,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 41,
+   "bars": 8,
+   "name": "",
+   "energy": 0.93,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 49,
+   "bars": 8,
+   "name": "",
+   "energy": 0.36,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 57,
+   "bars": 8,
+   "name": "",
+   "energy": 0.73,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 65,
+   "bars": 8,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 73,
+   "bars": 8,
+   "name": "",
+   "energy": 0.65,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 81,
+   "bars": 8,
+   "name": "",
+   "energy": 0.92,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 89,
+   "bars": 8,
+   "name": "",
+   "energy": 0.36,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 97,
+   "bars": 8,
+   "name": "",
+   "energy": 0.73,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 105,
+   "bars": 8,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 113,
+   "bars": 8,
+   "name": "",
+   "energy": 0.06,
+   "roles": [
+    "audio",
+    "bass"
+   ]
+  },
+  {
+   "start_bar": 121,
+   "bars": 9,
+   "name": "",
+   "energy": 0.0,
+   "roles": [
+    "audio"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 8
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bbsus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bbsus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bbsus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 6
+  },
+  {
+   "chord": "B",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bbsus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bbsus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 6
+  },
+  {
+   "chord": "B",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bbsus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "F#maj7",
+   "roman": "bIIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Abmadd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVImaj7",
+   "bars": 2
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 15
+  }
+ ],
+ "markers": [],
+ "drums": [
+  {
+   "voice": "kick",
+   "channel": 14,
+   "name": "Kick",
+   "pattern": "x...o.o.o.o.o...",
+   "hits_per_bar": 2.02,
+   "late_16ths": 0.0,
+   "velocity": [
+    53,
+    128
+   ],
+   "bars": 64
+  },
+  {
+   "voice": "perc",
+   "channel": 21,
+   "name": "Perc",
+   "pattern": "...X..X.........",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 10
+  },
+  {
+   "voice": "snare",
+   "channel": 16,
+   "name": "Snare 2",
+   "pattern": "........x...x.o.",
+   "hits_per_bar": 1.3,
+   "late_16ths": 0.0,
+   "velocity": [
+    128,
+    128
+   ],
+   "bars": 67
+  },
+  {
+   "voice": "snare",
+   "channel": 17,
+   "name": "Snare 3",
+   "pattern": "........x...x.o.",
+   "hits_per_bar": 1.3,
+   "late_16ths": 0.0,
+   "velocity": [
+    128,
+    128
+   ],
+   "bars": 67
+  },
+  {
+   "voice": "snare",
+   "channel": 20,
+   "name": "Counter Snare 3",
+   "pattern": ".X.X..X.........",
+   "hits_per_bar": 3.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    48,
+    100
+   ],
+   "bars": 8
+  }
+ ],
+ "kit": {
+  "kick": [
+   {
+    "name": "Kick",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\58. Drill Kick_3449443.wav",
+    "hits": 129
+   }
+  ],
+  "snare": [
+   {
+    "name": "Snare 2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\2DEEP_NYD_04_Snare_01_Sample_2137359.wav",
+    "hits": 87
+   },
+   {
+    "name": "Snare 3",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\KK_Jersey_Snare_Papi_3437168.wav",
+    "hits": 87
+   },
+   {
+    "name": "Counter Snare 3",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\KK_Jersey_Snare_Munch_3437172.wav",
+    "hits": 24
+   }
+  ],
+  "perc": [
+   {
+    "name": "Perc",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Jay Cactus x Confz - Mic Check Ready\\KK_Jersey_Percussion_Open_3437131.wav",
+    "hits": 20
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 6,
+   "role": "vocal",
+   "name": "Vocals (Low)",
+   "plugin": null,
+   "sample": "CS_01_Saw U_Fx Vocals_A_165_G#min_3334268.wav",
+   "preset": null,
+   "insert": 9,
+   "insert_name": "Vocal Phrase",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    8,
+    0,
+    8,
+    0,
+    0,
+    0,
+    8,
+    8,
+    0,
+    0,
+    0,
+    8,
+    8,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 7,
+   "role": "vocal",
+   "name": "Vocals (High)",
+   "plugin": null,
+   "sample": "CS_01_Saw U_Fx Vocals_A_165_G#min_3334268.wav",
+   "preset": null,
+   "insert": 9,
+   "insert_name": "Vocal Phrase",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 8,
+   "role": "vocal",
+   "name": "VOX",
+   "plugin": null,
+   "sample": "PL_SH_02_Runnin_Away_Vocal_128_Cmaj_Dry_3526545.wav",
+   "preset": null,
+   "insert": 10,
+   "insert_name": "VOX",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 9,
+   "role": "audio",
+   "name": "Melody (Resampled)",
+   "plugin": null,
+   "sample": "Track 1 (consolidated).wav",
+   "preset": null,
+   "insert": 12,
+   "insert_name": "Melody (High)",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 22,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    8,
+    8,
+    0,
+    8,
+    0,
+    8,
+    8,
+    0,
+    8,
+    0,
+    8,
+    8,
+    0,
+    8
+   ]
+  },
+  {
+   "channel": 10,
+   "role": "audio",
+   "name": "Melody (Low",
+   "plugin": null,
+   "sample": "Track 1 (consolidated).wav",
+   "preset": null,
+   "insert": 13,
+   "insert_name": "Melody (Low",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Balance"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 14,
+   "group": "Audio",
+   "presence": [
+    8,
+    8,
+    0,
+    0,
+    8,
+    0,
+    8,
+    0,
+    0,
+    8,
+    0,
+    8,
+    0,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 11,
+   "role": "audio",
+   "name": "Piano (Rendered)",
+   "plugin": null,
+   "sample": "Track 6 (consolidated).wav",
+   "preset": null,
+   "insert": 14,
+   "insert_name": "Piano (Rendered)",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    2,
+    0,
+    8,
+    2,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 12,
+   "role": "bass",
+   "name": "808",
+   "plugin": null,
+   "sample": "throaty808_2106413.wav",
+   "preset": null,
+   "insert": 16,
+   "insert_name": "808",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Spreader",
+    "Fruity Limiter"
+   ],
+   "range": [
+    "Bb3",
+    "F6"
+   ],
+   "polyphony": 1.22,
+   "median_len_beats": 0.5,
+   "notes": 271,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    7,
+    7,
+    8,
+    7,
+    8,
+    0,
+    7,
+    8,
+    7,
+    8,
+    0,
+    7,
+    8,
+    2,
+    0
+   ],
+   "bar": {
+    "from_bar": 9,
+    "roll": [
+     "Eb4 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 13,
+   "role": "bass",
+   "name": "Sub Bass",
+   "plugin": null,
+   "sample": "26_Dramatic_Drill_Reese_02_140BPM_F#_3345570.wav",
+   "preset": null,
+   "insert": 17,
+   "insert_name": "Sub Bass",
+   "chain": [
+    "Fruity Fast Dist",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "Eb4",
+    "B4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 16,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 49,
+    "roll": [
+     "Eb4 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 14,
+   "role": "drums",
+   "name": "Kick",
+   "plugin": null,
+   "sample": "58. Drill Kick_3449443.wav",
+   "preset": null,
+   "insert": 18,
+   "insert_name": "Kick",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 129,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    5,
+    8,
+    5,
+    8,
+    0,
+    5,
+    8,
+    5,
+    7,
+    0,
+    5,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 16,
+   "role": "drums",
+   "name": "Snare 2",
+   "plugin": null,
+   "sample": "2DEEP_NYD_04_Snare_01_Sample_2137359.wav",
+   "preset": null,
+   "insert": 23,
+   "insert_name": "Snare 2",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 87,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    6,
+    8,
+    5,
+    8,
+    0,
+    6,
+    8,
+    5,
+    7,
+    0,
+    6,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 17,
+   "role": "drums",
+   "name": "Snare 3",
+   "plugin": null,
+   "sample": "KK_Jersey_Snare_Papi_3437168.wav",
+   "preset": null,
+   "insert": 22,
+   "insert_name": "Snare",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 87,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    6,
+    8,
+    5,
+    8,
+    0,
+    6,
+    8,
+    5,
+    7,
+    0,
+    6,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 18,
+   "role": "arp",
+   "name": "Counter Snare",
+   "plugin": null,
+   "sample": "KK_Jersey_HiHat_Closed_GRime_3437123.wav",
+   "preset": null,
+   "insert": 19,
+   "insert_name": "Counter Snare",
+   "chain": [],
+   "range": [
+    "Bb3",
+    "G4"
+   ],
+   "polyphony": 1.33,
+   "median_len_beats": 0.01,
+   "notes": 987,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    8,
+    6,
+    8,
+    4,
+    8,
+    8,
+    6,
+    8,
+    4,
+    8,
+    8,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 9,
+    "roll": [
+     "Bb3 .   .   Bb3 .   Bb3 Bb3 .   .   .   .   .   Bb3 Bb3 Bb3 .  ",
+     "Bb3 Bb3 .   Bb3 .   .   Bb3 .   .   .   .   Bb3 .   Bb3 Bb3 .  "
+    ]
+   }
+  },
+  {
+   "channel": 19,
+   "role": "arp",
+   "name": "Counter Snare 2",
+   "plugin": null,
+   "sample": "2DEEP_NYD_Hi Hat_01_Sample_2137308.wav",
+   "preset": null,
+   "insert": 20,
+   "insert_name": "Counter Snare 3",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "Bb3",
+    "G4"
+   ],
+   "polyphony": 1.32,
+   "median_len_beats": 0.01,
+   "notes": 993,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    8,
+    6,
+    8,
+    4,
+    8,
+    8,
+    6,
+    8,
+    4,
+    8,
+    8,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 9,
+    "roll": [
+     "Bb3 .   .   Bb3 .   Bb3 Bb3 .   .   .   .   .   Bb3 Bb3 Bb3 .  ",
+     "Bb3 Bb3 .   Bb3 .   .   Bb3 .   .   .   .   Bb3 .   Bb3 Bb3 .  "
+    ]
+   }
+  },
+  {
+   "channel": 20,
+   "role": "drums",
+   "name": "Counter Snare 3",
+   "plugin": null,
+   "sample": "KK_Jersey_Snare_Munch_3437172.wav",
+   "preset": null,
+   "insert": 21,
+   "insert_name": "Counter Snare 3",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 24,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 21,
+   "role": "drums",
+   "name": "Perc",
+   "plugin": null,
+   "sample": "KK_Jersey_Percussion_Open_3437131.wav",
+   "preset": null,
+   "insert": 24,
+   "insert_name": "Perc",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 20,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 22,
+   "role": "fx",
+   "name": "FX - Gunshot",
+   "plugin": null,
+   "sample": "KK_Jersey_Drill_Impact_3437100.wav",
+   "preset": null,
+   "insert": 26,
+   "insert_name": "FX - Gunshot",
+   "chain": [
+    "Gross Beat",
+    "Fruity Delay 3",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 58,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    5,
+    3,
+    5,
+    0,
+    5,
+    0,
+    3,
+    5,
+    0,
+    5,
+    0,
+    3,
+    5,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 23,
+   "role": "fx",
+   "name": "Riser 2",
+   "plugin": null,
+   "sample": "DIJ_02_Rage_Riser_02_143_Dbmin_3219400.wav",
+   "preset": null,
+   "insert": 29,
+   "insert_name": "FX - Riser 2",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 24,
+   "role": "fx",
+   "name": "Riser",
+   "plugin": null,
+   "sample": "DIJ_05_Blade_Drill Riser_143_Bmin_3219550.wav",
+   "preset": null,
+   "insert": 28,
+   "insert_name": "FX - Riser",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 14,
+   "group": "Audio",
+   "presence": [
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    2,
+    4,
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 25,
+   "role": "fx",
+   "name": "Fill",
+   "plugin": null,
+   "sample": "UKD_01_Kingpin_Drum Fill Fx_B_140_Dmin_2792492.wav",
+   "preset": null,
+   "insert": 27,
+   "insert_name": "Drum Fill",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 27,
+   "role": "audio",
+   "name": "Bell",
+   "plugin": null,
+   "sample": "USD_02_Raid_Bell_140_Bbmin_3220273.wav",
+   "preset": null,
+   "insert": 11,
+   "insert_name": "Bell",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2",
+    "Edison"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 28,
+   "role": "audio",
+   "name": "Bell #2",
+   "plugin": null,
+   "sample": "USD_02_Raid_Bell_140_Bbmin_3220273.wav",
+   "preset": null,
+   "insert": 11,
+   "insert_name": "Bell",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2",
+    "Edison"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 14,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    8,
+    0,
+    0,
+    8,
+    0,
+    8,
+    0,
+    0,
+    8,
+    0,
+    8
+   ]
+  },
+  {
+   "channel": 30,
+   "role": "vocal",
+   "name": "Confz Lead Vocal",
+   "plugin": null,
+   "sample": "Track 37 (consolidated).wav",
+   "preset": null,
+   "insert": 31,
+   "insert_name": "Lead Vocal",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Fruity Multiband Compressor",
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Fruity Compressor",
+    "Fruity Limiter"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 31,
+   "role": "vocal",
+   "name": "Confz Hook Adlib",
+   "plugin": null,
+   "sample": "Track 22 (consolidated).wav",
+   "preset": null,
+   "insert": 39,
+   "insert_name": "Hook Adlib",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Fruity Multiband Compressor",
+    "Fruity Blood Overdrive",
+    "Fruity Compressor",
+    "Fruity Parametric EQ 2",
+    "Fruity PanOMatic"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    8,
+    8,
+    0,
+    0,
+    1,
+    8,
+    8,
+    0,
+    0,
+    1,
+    8,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 32,
+   "role": "audio",
+   "name": "Confz Hook Stab 1",
+   "plugin": null,
+   "sample": "Track 24 (consolidated).wav",
+   "preset": null,
+   "insert": 41,
+   "insert_name": "Hook Stab 1",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 14,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 33,
+   "role": "audio",
+   "name": "Confz Hook Stab 2",
+   "plugin": null,
+   "sample": "Track 26 (consolidated).wav",
+   "preset": null,
+   "insert": 42,
+   "insert_name": "Hook Stab 2",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 14,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 34,
+   "role": "audio",
+   "name": "Confz Hook Stab 3",
+   "plugin": null,
+   "sample": "Track 28 (consolidated).wav",
+   "preset": null,
+   "insert": 43,
+   "insert_name": "Hook Stab 3",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 14,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 35,
+   "role": "audio",
+   "name": "Confz Hook Stab 4",
+   "plugin": null,
+   "sample": "Track 30 (consolidated).wav",
+   "preset": null,
+   "insert": 44,
+   "insert_name": "Hook Stab 4",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 20,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    1,
+    1,
+    1,
+    8,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 36,
+   "role": "vocal",
+   "name": "Confz Lead Adlib 1",
+   "plugin": null,
+   "sample": "Track 31 (consolidated).wav",
+   "preset": null,
+   "insert": 33,
+   "insert_name": "Lead Vocal Adlib 1",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    8,
+    8,
+    8,
+    1,
+    1,
+    8,
+    8,
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 37,
+   "role": "vocal",
+   "name": "Confz Lead Adlib 2",
+   "plugin": null,
+   "sample": "Track 33 (consolidated).wav",
+   "preset": null,
+   "insert": 34,
+   "insert_name": "Lead Vocal Adlib 2",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    8,
+    8,
+    8,
+    1,
+    1,
+    8,
+    8,
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 38,
+   "role": "vocal",
+   "name": "Confz Lead Adlib 3",
+   "plugin": null,
+   "sample": "Track 35 (consolidated).wav",
+   "preset": null,
+   "insert": 35,
+   "insert_name": "Lead Vocal Adlib 3",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    8,
+    8,
+    8,
+    1,
+    1,
+    8,
+    8,
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 39,
+   "role": "vocal",
+   "name": "Confz Lead Adlib 4",
+   "plugin": null,
+   "sample": "Track 37 (consolidated)_2.wav",
+   "preset": null,
+   "insert": 36,
+   "insert_name": "Lead Vocal Adlib 4",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    8,
+    8,
+    8,
+    1,
+    1,
+    8,
+    8,
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 43,
+   "role": "vocal",
+   "name": "Confz Lead Vocal",
+   "plugin": null,
+   "sample": "Lead Vocal (consolidated).wav",
+   "preset": null,
+   "insert": 31,
+   "insert_name": "Lead Vocal",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Fruity Multiband Compressor",
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Fruity Compressor",
+    "Fruity Limiter"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    8,
+    8,
+    8,
+    1,
+    1,
+    8,
+    8,
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 44,
+   "role": "vocal",
+   "name": "Confz Hook Vocal",
+   "plugin": null,
+   "sample": "Hook Vocal (consolidated).wav",
+   "preset": null,
+   "insert": 38,
+   "insert_name": "Hook Vocal",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Fruity Multiband Compressor",
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Fruity Limiter"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 18,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    6,
+    6,
+    0,
+    0,
+    0,
+    6,
+    6,
+    0,
+    0,
+    0,
+    6,
+    6,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 0,
+   "role": "pad",
+   "name": "Pad 1",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Arksun Cityscape / Phasic Anomoly",
+   "insert": 3,
+   "insert_name": "Pad 1",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C2",
+    "Eb4"
+   ],
+   "polyphony": 1.9,
+   "median_len_beats": null,
+   "notes": 0,
+   "muted_notes": 608,
+   "clips": 0,
+   "group": "Unsorted",
+   "muted": true
+  },
+  {
+   "channel": 1,
+   "role": "pad",
+   "name": "Pad 2",
+   "plugin": "Harmless",
+   "sample": null,
+   "preset": null,
+   "insert": 4,
+   "insert_name": "Pad 2",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Chorus",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C2",
+    "Eb4"
+   ],
+   "polyphony": 1.9,
+   "median_len_beats": null,
+   "notes": 0,
+   "muted_notes": 608,
+   "clips": 0,
+   "group": "Unsorted",
+   "muted": true
+  },
+  {
+   "channel": 2,
+   "role": "pad",
+   "name": "Pad 3",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Olbaid Compendium / Strung Space",
+   "insert": 5,
+   "insert_name": "Strings",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Luxeverb"
+   ],
+   "range": [
+    "C3",
+    "Eb5"
+   ],
+   "polyphony": 1.9,
+   "median_len_beats": null,
+   "notes": 0,
+   "muted_notes": 608,
+   "clips": 0,
+   "group": "Unsorted",
+   "muted": true
+  },
+  {
+   "channel": 3,
+   "role": "pad",
+   "name": "Pad 4",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 6,
+   "insert_name": "Pad (High)",
+   "chain": [
+    "Gross Beat",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C6",
+    "Eb7"
+   ],
+   "polyphony": 1.18,
+   "median_len_beats": null,
+   "notes": 0,
+   "muted_notes": 416,
+   "clips": 0,
+   "group": "Unsorted",
+   "muted": true
+  },
+  {
+   "channel": 4,
+   "role": "vocal",
+   "name": "Choir",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 7,
+   "insert_name": "Choir",
+   "chain": [
+    "Gross Beat",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C6",
+    "Eb7"
+   ],
+   "polyphony": 1.18,
+   "median_len_beats": null,
+   "notes": 0,
+   "muted_notes": 416,
+   "clips": 0,
+   "group": "Unsorted",
+   "muted": true
+  },
+  {
+   "channel": 5,
+   "role": "chords",
+   "name": "Piano",
+   "plugin": "FL Keys",
+   "sample": null,
+   "preset": null,
+   "insert": 8,
+   "insert_name": "Piano",
+   "chain": [
+    "Gross Beat",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "Bb5",
+    "F#6"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "muted_notes": 44,
+   "clips": 0,
+   "group": "Unsorted",
+   "muted": true
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "Beat Bus",
+   "volume_db": -4.8,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    2,
+    15
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Soft Clipper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Melody Bus",
+   "volume_db": 0.0,
+   "to": [
+    1
+   ],
+   "fed_by": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "Pad 1",
+   "volume_db": 0.0,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "Pad 2",
+   "volume_db": 0.0,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "name": "Strings",
+   "volume_db": 0.0,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Luxeverb",
+     "name": "Luxeverb"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "Pad (High)",
+   "volume_db": -2.7,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "Choir",
+   "volume_db": 0.4,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "Piano",
+   "volume_db": 1.2,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": "Fruity Delay 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "Vocal Phrase",
+   "volume_db": -0.4,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": "Fruity Delay 2"
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "VOX",
+   "volume_db": -0.4,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": "Fruity Delay 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "name": "Bell",
+   "volume_db": 0.0,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": "Fruity Delay 2"
+    },
+    {
+     "plugin": "Edison",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "Melody (High)",
+   "volume_db": 2.0,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Melody (Low",
+   "volume_db": 1.5,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "name": "Piano (Rendered)",
+   "volume_db": 0.0,
+   "to": [
+    2
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 15,
+   "name": "Drum Bus",
+   "volume_db": 0.0,
+   "to": [
+    1
+   ],
+   "fed_by": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "slots": []
+  },
+  {
+   "index": 16,
+   "name": "808",
+   "volume_db": 0.0,
+   "to": [
+    15
+   ],
+   "fed_by": [
+    18
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "name": "Sub Bass",
+   "volume_db": -0.8,
+   "to": [
+    15
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Fast Dist",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "Kick",
+   "volume_db": 0.0,
+   "to": [
+    15,
+    16
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 19,
+   "name": "Counter Snare",
+   "volume_db": 0.0,
+   "to": [
+    15
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 20,
+   "name": "Counter Snare 3",
+   "volume_db": 1.0,
+   "to": [
+    15
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "Counter Snare 3",
+   "volume_db": 1.5,
+   "to": [
+    15
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 22,
+   "name": "Snare",
+   "volume_db": 0.0,
+   "to": [
+    15
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "name": "Snare 2",
+   "volume_db": 0.0,
+   "to": [
+    15
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 24,
+   "name": "Perc",
+   "volume_db": -0.8,
+   "to": [
+    15
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 25,
+   "name": "FX Bus",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "slots": []
+  },
+  {
+   "index": 26,
+   "name": "FX - Gunshot",
+   "volume_db": -1.7,
+   "to": [
+    25
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "name": "Drum Fill",
+   "volume_db": 0.0,
+   "to": [
+    25
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 28,
+   "name": "FX - Riser",
+   "volume_db": 0.0,
+   "to": [
+    25
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 29,
+   "name": "FX - Riser 2",
+   "volume_db": 0.0,
+   "to": [
+    25
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 30,
+   "name": "Lead Vocal Bus",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    31,
+    32
+   ],
+   "slots": []
+  },
+  {
+   "index": 31,
+   "name": "Lead Vocal",
+   "volume_db": 0.0,
+   "to": [
+    30,
+    45,
+    46
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 32,
+   "name": "Lead Vocal Adlib Bus",
+   "volume_db": 0.5,
+   "to": [
+    30,
+    45,
+    46
+   ],
+   "fed_by": [
+    33,
+    34,
+    35,
+    36
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "name": "Lead Vocal Adlib 1",
+   "volume_db": 0.0,
+   "to": [
+    32
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 34,
+   "name": "Lead Vocal Adlib 2",
+   "volume_db": 0.0,
+   "to": [
+    32
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 35,
+   "name": "Lead Vocal Adlib 3",
+   "volume_db": 0.0,
+   "to": [
+    32
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 36,
+   "name": "Lead Vocal Adlib 4",
+   "volume_db": 0.0,
+   "to": [
+    32
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 37,
+   "name": "Hook Vocal Bus",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    38,
+    39
+   ],
+   "slots": []
+  },
+  {
+   "index": 38,
+   "name": "Hook Vocal",
+   "volume_db": -0.5,
+   "to": [
+    37,
+    45,
+    46,
+    48
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 39,
+   "name": "Hook Adlib",
+   "volume_db": -5.4,
+   "to": [
+    37,
+    45,
+    46
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity PanOMatic",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 40,
+   "name": "Hook Stab Bus",
+   "volume_db": -0.8,
+   "to": [
+    0,
+    45,
+    47
+   ],
+   "fed_by": [
+    41,
+    42,
+    43,
+    44
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 41,
+   "name": "Hook Stab 1",
+   "volume_db": -3.7,
+   "to": [
+    40
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 42,
+   "name": "Hook Stab 2",
+   "volume_db": -2.8,
+   "to": [
+    40
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 43,
+   "name": "Hook Stab 3",
+   "volume_db": -2.8,
+   "to": [
+    40
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 44,
+   "name": "Hook Stab 4",
+   "volume_db": -2.8,
+   "to": [
+    40
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 45,
+   "name": "REVERB",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    31,
+    32,
+    38,
+    39,
+    40
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 46,
+   "name": "1/4 DELAY",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    31,
+    32,
+    38,
+    39
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 47,
+   "name": "1/2 DELAY",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    40
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 48,
+   "name": "",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    38
+   ],
+   "slots": []
+  }
+ ],
+ "automation": [
+  {
+   "name": "Balance - Master - Volume",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "Master",
+   "channel": null,
+   "points": 3,
+   "beats": 512.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Fruity Delay 2 (Bell) - Mix level",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "Bell",
+   "channel": null,
+   "points": 6,
+   "beats": 512.17,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Confz Lead Vocal - Panning offset",
+   "kind": "channel",
+   "plugin": null,
+   "param": 16,
+   "insert": null,
+   "channel": "Confz Lead Vocal",
+   "points": 4,
+   "beats": 1.25,
+   "range": [
+    0.074,
+    0.896
+   ]
+  },
+  {
+   "name": "Confz Lead Vocal - Panning offset #2",
+   "kind": "channel",
+   "plugin": null,
+   "param": 16,
+   "insert": null,
+   "channel": "Confz Lead Vocal",
+   "points": 4,
+   "beats": 2.0,
+   "range": [
+    0.173,
+    1.0
+   ]
+  }
+ ],
+ "automation_summary": {
+  "channel": 2,
+  "Fruity Balance": 1,
+  "mixer": 1
+ },
+ "controllers": [],
+ "plugins": {},
+ "effects": {
+  "Fruity Parametric EQ 2": 35,
+  "Fruity Compressor": 10,
+  "Fruity Reeverb 2": 5,
+  "Fruity Multiband Compressor": 5,
+  "Fruity Blood Overdrive": 5,
+  "Gross Beat": 4,
+  "Fruity Delay 2": 4,
+  "Fruity Limiter": 4,
+  "Fruity Delay 3": 3,
+  "Fruity Balance": 2,
+  "Maximus": 1,
+  "Fruity Soft Clipper": 1,
+  "Fruity Chorus": 1,
+  "Luxeverb": 1,
+  "Edison": 1,
+  "Spreader": 1,
+  "Fruity Fast Dist": 1,
+  "Fruity PanOMatic": 1
+ },
+ "muted_clips": 120,
+ "muted_parts": [
+  {
+   "channel": 0,
+   "name": "Pad 1",
+   "muted_notes": 608,
+   "playing_notes": 0
+  },
+  {
+   "channel": 1,
+   "name": "Pad 2",
+   "muted_notes": 608,
+   "playing_notes": 0
+  },
+  {
+   "channel": 2,
+   "name": "Pad 3",
+   "muted_notes": 608,
+   "playing_notes": 0
+  },
+  {
+   "channel": 3,
+   "name": "Pad 4",
+   "muted_notes": 416,
+   "playing_notes": 0
+  },
+  {
+   "channel": 4,
+   "name": "Choir",
+   "muted_notes": 416,
+   "playing_notes": 0
+  },
+  {
+   "channel": 5,
+   "name": "Piano",
+   "muted_notes": 44,
+   "playing_notes": 0
+  },
+  {
+   "channel": 14,
+   "name": "Kick",
+   "muted_notes": 14,
+   "playing_notes": 129
+  },
+  {
+   "channel": 16,
+   "name": "Snare 2",
+   "muted_notes": 9,
+   "playing_notes": 87
+  },
+  {
+   "channel": 17,
+   "name": "Snare 3",
+   "muted_notes": 9,
+   "playing_notes": 87
+  },
+  {
+   "channel": 18,
+   "name": "Counter Snare",
+   "muted_notes": 171,
+   "playing_notes": 987
+  },
+  {
+   "channel": 19,
+   "name": "Counter Snare 2",
+   "muted_notes": 178,
+   "playing_notes": 993
+  }
+ ],
+ "bounces": [
+  "Melody (Resampled)",
+  "Piano (Rendered)"
+ ],
+ "audio_key": {
+  "key": "G minor",
+  "score": 0.4956,
+  "margin": 0.1177,
+  "runner_up": "A# major"
+ }
+}

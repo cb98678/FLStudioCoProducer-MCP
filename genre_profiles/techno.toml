@@ -1,0 +1,27 @@
+# Data, not code. Fill every FILL from cited sources and reference tracks you pick; load_genre_profile refuses blanks.
+[meta]
+name = "techno"
+sources = ["FILL: links"]
+
+[tempo]
+range_bpm = ["FILL", "FILL"]
+feel = "FILL"                   # half_time or straight
+
+[structure]
+sections = [{ name = "intro", bars = "FILL" }, { name = "build", bars = "FILL" }, { name = "drop", bars = "FILL" }]
+
+[drums]
+kick_pattern_steps = "FILL"
+snare_pattern_steps = "FILL"
+hat_pattern_steps = "FILL"
+sample_families = ["FILL: names in your library"]
+
+[bass]
+patch_family = ["FILL: names of your synths"]
+param_recipe = "recipes/techno_bass.toml"
+register_hz = ["FILL", "FILL"]
+
+[mix]
+targets = "targets/streaming_default.toml"
+bus_layout = ["drums", "bass", "music", "fx"]
+sidechain = { from = "kick", to = ["bass", "music"], depth_db = "FILL" }

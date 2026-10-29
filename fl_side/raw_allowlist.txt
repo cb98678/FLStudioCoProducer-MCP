@@ -1,0 +1,4 @@
+# Functions the raw-call op may invoke inside FL, one module.function per line.
+# Names confirmed on FL 26.1.7 (API 45) now have real ops (tempo setter, pattern length, clear, channel swing).
+# Add a line only for a function you have read about in the official API reference or confirmed with a probe.
+# Remove a line to forbid it.

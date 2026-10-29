@@ -1,0 +1,1788 @@
+{
+ "file": "P.Priime - Use Me.flp",
+ "title": "Use Me",
+ "artists": "P.Priime",
+ "genre": "Afrobeats",
+ "fl_version": "25.2.5.5319",
+ "ppq": 96,
+ "bpm": 100.0,
+ "bars": 74,
+ "seconds": 177.6,
+ "key": {
+  "key": "C# minor",
+  "tonic": 1,
+  "mode": "minor",
+  "confidence": 0.361,
+  "runner_up": "Eb major"
+ },
+ "roles": {
+  "drums": 6,
+  "chords": 1,
+  "bass": 5,
+  "vocal": 7,
+  "audio": 9
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 8,
+   "name": "intro",
+   "energy": 0.2,
+   "roles": [
+    "audio",
+    "chords",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 9,
+   "bars": 8,
+   "name": "verse",
+   "energy": 0.29,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 17,
+   "bars": 8,
+   "name": "hook",
+   "energy": 0.29,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 25,
+   "bars": 16,
+   "name": "verse",
+   "energy": 0.28,
+   "roles": [
+    "audio",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 41,
+   "bars": 8,
+   "name": "hook",
+   "energy": 0.28,
+   "roles": [
+    "audio",
+    "chords",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 49,
+   "bars": 8,
+   "name": "try me",
+   "energy": 1.0,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 57,
+   "bars": 8,
+   "name": "bridge",
+   "energy": 0.58,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 65,
+   "bars": 8,
+   "name": "bridge",
+   "energy": 0.0,
+   "roles": [
+    "audio",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 73,
+   "bars": 2,
+   "name": "outro",
+   "energy": 0.0,
+   "roles": [
+    "audio"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": "C#sus2",
+   "roman": "Isus2",
+   "bars": 4
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 2
+  },
+  {
+   "chord": "C#sus2",
+   "roman": "Isus2",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 33
+  },
+  {
+   "chord": "C#sus2",
+   "roman": "Isus2",
+   "bars": 7
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 1
+  },
+  {
+   "chord": "Ebdim",
+   "roman": "IIdim",
+   "bars": 1
+  },
+  {
+   "chord": "C#dim",
+   "roman": "Idim",
+   "bars": 1
+  },
+  {
+   "chord": "Ebdim",
+   "roman": "IIdim",
+   "bars": 1
+  },
+  {
+   "chord": "C#dim",
+   "roman": "Idim",
+   "bars": 1
+  },
+  {
+   "chord": "Ebdim",
+   "roman": "IIdim",
+   "bars": 1
+  },
+  {
+   "chord": "C#dim",
+   "roman": "Idim",
+   "bars": 1
+  },
+  {
+   "chord": "Ebdim",
+   "roman": "IIdim",
+   "bars": 1
+  },
+  {
+   "chord": "C#dim",
+   "roman": "Idim",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 1
+  },
+  {
+   "chord": "Gdim",
+   "roman": "#IVdim",
+   "bars": 1
+  },
+  {
+   "chord": "F#m6",
+   "roman": "iv6",
+   "bars": 1
+  },
+  {
+   "chord": "Gdim",
+   "roman": "#IVdim",
+   "bars": 1
+  },
+  {
+   "chord": "F#m6",
+   "roman": "iv6",
+   "bars": 1
+  },
+  {
+   "chord": "Gdim",
+   "roman": "#IVdim",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus2",
+   "roman": "Isus2",
+   "bars": 2
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 10
+  }
+ ],
+ "markers": [
+  {
+   "bar": 1.0,
+   "name": "intro"
+  },
+  {
+   "bar": 9.0,
+   "name": "verse"
+  },
+  {
+   "bar": 17.0,
+   "name": "hook"
+  },
+  {
+   "bar": 25.0,
+   "name": "verse"
+  },
+  {
+   "bar": 41.0,
+   "name": "hook"
+  },
+  {
+   "bar": 49.0,
+   "name": "try me"
+  },
+  {
+   "bar": 57.0,
+   "name": "bridge"
+  },
+  {
+   "bar": 65.0,
+   "name": "bridge"
+  },
+  {
+   "bar": 73.0,
+   "name": "outro"
+  }
+ ],
+ "drums": [
+  {
+   "voice": "kick",
+   "channel": 0,
+   "name": "Priime kick",
+   "pattern": "X...X...X...X...",
+   "hits_per_bar": 3.83,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 46
+  },
+  {
+   "voice": "kick",
+   "channel": 3,
+   "name": "gbe kick",
+   "pattern": "X..X..X.X..X..X.",
+   "hits_per_bar": 5.72,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 46
+  },
+  {
+   "voice": "kick",
+   "channel": 32,
+   "name": "Kick Top",
+   "pattern": "X...............",
+   "hits_per_bar": 1.03,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 38
+  },
+  {
+   "voice": "perc",
+   "channel": 2,
+   "name": "USE ME Percussion #2",
+   "pattern": "...X.......X....",
+   "hits_per_bar": 1.96,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 45
+  },
+  {
+   "voice": "perc",
+   "channel": 1,
+   "name": "USE ME Percussion",
+   "pattern": "......X.......X.",
+   "hits_per_bar": 1.95,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 44
+  },
+  {
+   "voice": "snare",
+   "channel": 5,
+   "name": "Use Me Tight Snare",
+   "pattern": "......X.XX.X.XX.",
+   "hits_per_bar": 6.0,
+   "late_16ths": 0.021,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 4
+  }
+ ],
+ "kit": {
+  "kick": [
+   {
+    "name": "gbe kick",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\gbe kick.wav",
+    "hits": 263
+   },
+   {
+    "name": "Priime kick",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\Priime kick.wav",
+    "hits": 176
+   },
+   {
+    "name": "Kick Top",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\USE ME FL26 Kick Top.wav",
+    "hits": 39
+   }
+  ],
+  "perc": [
+   {
+    "name": "USE ME Percussion #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\USE ME Percussion.wav",
+    "hits": 88
+   },
+   {
+    "name": "USE ME Percussion",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\USE ME Percussion.wav",
+    "hits": 86
+   }
+  ],
+  "snare": [
+   {
+    "name": "Use Me Tight Snare",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\P.Priime - Use Me\\Use Me Tight Snare.wav",
+    "hits": 24
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "drums",
+   "name": "Priime kick",
+   "plugin": null,
+   "sample": "Priime kick.wav",
+   "preset": null,
+   "insert": 8,
+   "insert_name": "Kick",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity WaveShaper",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 176,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    15,
+    0,
+    8,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 1,
+   "role": "drums",
+   "name": "USE ME Percussion",
+   "plugin": null,
+   "sample": "USE ME Percussion.wav",
+   "preset": null,
+   "insert": 11,
+   "insert_name": "Percussion",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Effector"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 86,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    7,
+    8,
+    14,
+    0,
+    8,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 2,
+   "role": "drums",
+   "name": "USE ME Percussion #2",
+   "plugin": null,
+   "sample": "USE ME Percussion.wav",
+   "preset": null,
+   "insert": 11,
+   "insert_name": "Percussion",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Effector"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 88,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    14,
+    0,
+    8,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 3,
+   "role": "drums",
+   "name": "gbe kick",
+   "plugin": null,
+   "sample": "gbe kick.wav",
+   "preset": null,
+   "insert": 9,
+   "insert_name": "Percussion",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 263,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    15,
+    0,
+    8,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 4,
+   "role": "chords",
+   "name": "Synth Arp",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 7,
+   "insert_name": "Arp",
+   "chain": [
+    "Fruity Blood Overdrive",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Love Philter",
+    "Effector"
+   ],
+   "range": [
+    "C#5",
+    "Ab5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.146,
+   "notes": 407,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    5,
+    0,
+    0,
+    0,
+    7,
+    8,
+    7,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5 C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5",
+     "C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5 C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5"
+    ]
+   }
+  },
+  {
+   "channel": 5,
+   "role": "drums",
+   "name": "Use Me Tight Snare",
+   "plugin": null,
+   "sample": "Use Me Tight Snare.wav",
+   "preset": null,
+   "insert": 13,
+   "insert_name": "Snare",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.125,
+   "notes": 24,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 6,
+   "role": "bass",
+   "name": "USE ME Bass One Shot",
+   "plugin": null,
+   "sample": "USE ME Bass One Shot.wav",
+   "preset": null,
+   "insert": 21,
+   "insert_name": "Sub Bass",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Peak Controller",
+    "Spreader"
+   ],
+   "range": [
+    "G3",
+    "Bb3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 3.0,
+   "notes": 20,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    5,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 50,
+    "roll": [
+     "Bb3 -   -   -   G3  -   -   -   -   -   -   -   -   -   -   -  ",
+     "A3  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 7,
+   "role": "bass",
+   "name": "t.y. - Amount Too_bass",
+   "plugin": null,
+   "sample": "t.y. - Amount Too_bass.wav",
+   "preset": null,
+   "insert": 19,
+   "insert_name": "Bass",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 8,
+   "role": "vocal",
+   "name": "t.y. - Amount Too_vocals",
+   "plugin": null,
+   "sample": "t.y. - Amount Too_vocals.wav",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    8,
+    0,
+    8,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 9,
+   "role": "vocal",
+   "name": "USE ME ACAPELLA 2",
+   "plugin": null,
+   "sample": "USE ME ACAPELLA 2.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 10,
+   "role": "vocal",
+   "name": "USE ME ACAPELLA 2 #3",
+   "plugin": null,
+   "sample": "USE ME ACAPELLA 2.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 11,
+   "role": "vocal",
+   "name": "USE ME ACAPELLA 2 #2",
+   "plugin": null,
+   "sample": "USE ME ACAPELLA 2.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 12,
+   "role": "vocal",
+   "name": "USE ME ACAPELLA 2 - Part_3",
+   "plugin": null,
+   "sample": "USE ME ACAPELLA 2 - Part_3.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 15,
+   "role": "bass",
+   "name": "Synth Bass",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 20,
+   "insert_name": "Synth Bass",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Effector"
+   ],
+   "range": [
+    "C#1",
+    "E1"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 120,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 49,
+    "roll": [
+     "Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1 Eb1",
+     "E1  E1  E1  E1  C#1 C#1 C#1 C#1 C#1 C#1 C#1 C#1 C#1 C#1 C#1 C#1"
+    ]
+   }
+  },
+  {
+   "channel": 17,
+   "role": "audio",
+   "name": "Amount Too - Amount Too",
+   "plugin": null,
+   "sample": "Amount Too - Amount Too.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocals",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    8,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    1
+   ]
+  },
+  {
+   "channel": 18,
+   "role": "bass",
+   "name": "Amount Too - Bass",
+   "plugin": null,
+   "sample": "Amount Too - Bass.wav",
+   "preset": null,
+   "insert": 18,
+   "insert_name": "Bass",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 8,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    8,
+    13,
+    7,
+    0,
+    3,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 19,
+   "role": "bass",
+   "name": "REV BASS",
+   "plugin": null,
+   "sample": "REV BASS.wav",
+   "preset": null,
+   "insert": 18,
+   "insert_name": "Bass",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 20,
+   "role": "audio",
+   "name": "Amount Too - Delay GTR",
+   "plugin": null,
+   "sample": "Amount Too - Delay GTR.wav",
+   "preset": null,
+   "insert": 16,
+   "insert_name": "Guitar",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 21,
+   "role": "audio",
+   "name": "Amount Too - EL GTR",
+   "plugin": null,
+   "sample": "Amount Too - EL GTR.wav",
+   "preset": null,
+   "insert": 17,
+   "insert_name": "Guitar",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    8,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 22,
+   "role": "audio",
+   "name": "Amount Too - Harms",
+   "plugin": null,
+   "sample": "Amount Too - Harms.wav",
+   "preset": null,
+   "insert": 1,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    8,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    1
+   ]
+  },
+  {
+   "channel": 23,
+   "role": "audio",
+   "name": "Amount Too - Nylon GTR",
+   "plugin": null,
+   "sample": "Amount Too - Nylon GTR.wav",
+   "preset": null,
+   "insert": 14,
+   "insert_name": "Guitar",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 12,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    6,
+    16,
+    0,
+    1,
+    8,
+    7,
+    0
+   ]
+  },
+  {
+   "channel": 24,
+   "role": "audio",
+   "name": "Amount Too - Verbed GTR",
+   "plugin": null,
+   "sample": "Amount Too - Verbed GTR.wav",
+   "preset": null,
+   "insert": 15,
+   "insert_name": "Guitar",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    8,
+    6,
+    7,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 25,
+   "role": "vocal",
+   "name": "USE ME vox 25 2",
+   "plugin": null,
+   "sample": "USE ME vox 25 2.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 9,
+   "group": "Audio",
+   "presence": [
+    8,
+    8,
+    8,
+    16,
+    8,
+    8,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 26,
+   "role": "vocal",
+   "name": "USE ME vox 25 2 #2",
+   "plugin": null,
+   "sample": "USE ME vox 25 2.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 27,
+   "role": "audio",
+   "name": "New Recording 234",
+   "plugin": null,
+   "sample": "New Recording 234.wav",
+   "preset": null,
+   "insert": 6,
+   "insert_name": "Vocal",
+   "chain": [
+    "Pitcher",
+    "Fruity Flangus",
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 3",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    0
+   ]
+  },
+  {
+   "channel": 31,
+   "role": "audio",
+   "name": "Tamborine",
+   "plugin": null,
+   "sample": "USE ME FL26 Tamborine.wav",
+   "preset": null,
+   "insert": 22,
+   "insert_name": "Tamborine",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 39,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    8,
+    15,
+    0,
+    8,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 32,
+   "role": "drums",
+   "name": "Kick Top",
+   "plugin": null,
+   "sample": "USE ME FL26 Kick Top.wav",
+   "preset": null,
+   "insert": 23,
+   "insert_name": "Kick Top",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 39,
+   "clips": 39,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    8,
+    15,
+    0,
+    8,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 33,
+   "role": "audio",
+   "name": "Percussion",
+   "plugin": null,
+   "sample": "USE ME FL26 Percussion.wav",
+   "preset": null,
+   "insert": 24,
+   "insert_name": "Percussion",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 73,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    8,
+    14,
+    0,
+    8,
+    7,
+    0,
+    0
+   ]
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Emphasis",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "Vocal",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Vocals",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 3,
+   "name": "Vocal",
+   "volume_db": -3.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 4,
+   "name": "Vocal",
+   "volume_db": -3.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 5,
+   "name": "Vocal",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 6,
+   "name": "Vocal",
+   "volume_db": -6.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Pitcher",
+     "name": "AUTO TUNE"
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ"
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "Arp",
+   "volume_db": -19.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": "Panner"
+    },
+    {
+     "plugin": "Effector",
+     "name": "Ducker"
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "Kick",
+   "volume_db": -2.1,
+   "to": [
+    12
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "Percussion",
+   "volume_db": 1.9,
+   "to": [
+    12
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "Shaker",
+   "volume_db": -4.8,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Compressor",
+     "name": "Compressor"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Effector",
+     "name": "Ducker"
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "name": "Percussion",
+   "volume_db": -14.4,
+   "to": [
+    12
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Effector",
+     "name": "Ducker"
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "Percussion",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    8,
+    9,
+    11
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Snare",
+   "volume_db": -1.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 14,
+   "name": "Guitar",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Guitar",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 16,
+   "name": "Guitar",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 17,
+   "name": "Guitar",
+   "volume_db": 0.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "Bass",
+   "volume_db": -1.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 19,
+   "name": "Bass",
+   "volume_db": -3.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 20,
+   "name": "Synth Bass",
+   "volume_db": -11.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Effector",
+     "name": "Ducker"
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "Sub Bass",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Peak Controller",
+     "name": "Fruity Peak Controller"
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "name": "Tamborine",
+   "volume_db": 0.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 23,
+   "name": "Kick Top",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 24,
+   "name": "Percussion",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  }
+ ],
+ "automation": [
+  {
+   "name": "SuperPlate (SRX ORCHESTRA) - Mix level",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "Arp",
+   "channel": null,
+   "points": 3,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "SuperPlate (SRX ORCHESTRA) - Mix level #2",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "Arp",
+   "channel": null,
+   "points": 5,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "FSS_S2MHE1_Sub_Bass_Modernize - Filter 1 Freq",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.359,
+    0.585
+   ]
+  },
+  {
+   "name": "Arp Verb Dry",
+   "kind": "plugin",
+   "plugin": "Fruity Reeverb 2",
+   "param": 10,
+   "insert": "Arp",
+   "channel": null,
+   "points": 6,
+   "beats": 296.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Arp Verb Wet",
+   "kind": "plugin",
+   "plugin": "Fruity Reeverb 2",
+   "param": 12,
+   "insert": "Arp",
+   "channel": null,
+   "points": 6,
+   "beats": 296.0,
+   "range": [
+    0.302,
+    1.0
+   ]
+  },
+  {
+   "name": "Percussion",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "Percussion",
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "automation_summary": {
+  "mixer": 3,
+  "Fruity Reeverb 2": 2,
+  "?": 1
+ },
+ "controllers": [
+  {
+   "source": 30017,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "plugin",
+    "insert": 20,
+    "insert_name": "Synth Bass",
+    "slot": 0,
+    "plugin": "Fruity Parametric EQ 2",
+    "param": 0
+   }
+  }
+ ],
+ "plugins": {
+  "Sytrus": 2
+ },
+ "effects": {
+  "Fruity Parametric EQ 2": 12,
+  "Effector": 4,
+  "Fruity Reeverb 2": 3,
+  "Emphasis": 1,
+  "Pitcher": 1,
+  "Fruity Flangus": 1,
+  "Fruity Delay 3": 1,
+  "Fruity Blood Overdrive": 1,
+  "Fruity Love Philter": 1,
+  "Fruity WaveShaper": 1,
+  "Fruity Compressor": 1,
+  "Fruity Limiter": 1,
+  "Fruity Peak Controller": 1,
+  "Spreader": 1
+ },
+ "muted_clips": 0,
+ "muted_parts": [],
+ "bounces": [],
+ "audio_key": {
+  "key": "C# minor",
+  "score": 0.4562,
+  "margin": 0.0481,
+  "runner_up": "A# minor"
+ }
+}

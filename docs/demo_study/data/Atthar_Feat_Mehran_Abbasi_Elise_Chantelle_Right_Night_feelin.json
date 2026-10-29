@@ -1,0 +1,4929 @@
+{
+ "file": "Atthar Feat Mehran Abbasi & Elise Chantelle - Right Night feeling.flp",
+ "title": "Right Night feeling",
+ "artists": "Atthar ft. Mehran Abbasi & Elise Chantelle",
+ "genre": "Pop Dance",
+ "fl_version": "20.8.0.1377",
+ "ppq": 72,
+ "bpm": 105.0,
+ "bars": 94,
+ "seconds": 214.9,
+ "key": {
+  "key": "C# minor",
+  "tonic": 1,
+  "mode": "minor",
+  "confidence": 0.71,
+  "runner_up": "Ab minor"
+ },
+ "roles": {
+  "bass": 5,
+  "audio": 36,
+  "fx": 2,
+  "lead": 15,
+  "chords": 4,
+  "pad": 2,
+  "drums": 3
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 92,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "lead",
+    "pad"
+   ]
+  },
+  {
+   "start_bar": 93,
+   "bars": 2,
+   "name": "End",
+   "energy": 0.0,
+   "roles": [
+    "audio"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm7",
+   "roman": "v7",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#madd9",
+   "roman": "ivadd9",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Absus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Ab",
+   "roman": "V",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Ab",
+   "roman": "V",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Ab7",
+   "roman": "V7",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C#m7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "F#m7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "F#sus2",
+   "roman": "IVsus2",
+   "bars": 1
+  },
+  {
+   "chord": "C5",
+   "roman": "VII5",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 4
+  }
+ ],
+ "markers": [
+  {
+   "bar": 291272.11,
+   "name": "Start"
+  },
+  {
+   "bar": 93.0,
+   "name": "End"
+  }
+ ],
+ "drums": [
+  {
+   "voice": "hat",
+   "channel": 57,
+   "name": "Attack Hat 15",
+   "pattern": ".XXX..XX.XXX..XX",
+   "hits_per_bar": 8.92,
+   "late_16ths": 0.0,
+   "velocity": [
+    8,
+    85
+   ],
+   "bars": 78
+  },
+  {
+   "voice": "perc",
+   "channel": 65,
+   "name": "Grv Perc 14",
+   "pattern": "..o...oX..X.ooXX",
+   "hits_per_bar": 4.33,
+   "late_16ths": 0.0,
+   "velocity": [
+    85,
+    121
+   ],
+   "bars": 60
+  },
+  {
+   "voice": "shaker",
+   "channel": 58,
+   "name": "Attack Shaker 10",
+   "pattern": "..X...X...X...X.",
+   "hits_per_bar": 3.94,
+   "late_16ths": -0.111,
+   "velocity": [
+    85,
+    85
+   ],
+   "bars": 78
+  }
+ ],
+ "kit": {
+  "hat": [
+   {
+    "name": "Attack Hat 15",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Attack Hat 15.wv",
+    "hits": 696
+   }
+  ],
+  "shaker": [
+   {
+    "name": "Attack Shaker 10",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Shakers\\Attack Shaker 10.wv",
+    "hits": 307
+   }
+  ],
+  "perc": [
+   {
+    "name": "Grv Perc 14",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 14.wav",
+    "hits": 260
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "bass",
+   "name": "Sytrus Juno Bass",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#2",
+    "Ab3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 447,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    88,
+    0
+   ],
+   "bar": {
+    "from_bar": 2,
+    "roll": [
+     "C#3 -   Ab2 -   .   .   C#3 .   .   .   C#3 .   .   .   Ab2 -  ",
+     "-   -   .   .   .   .   Ab2 Ab2 .   .   Ab2 .   .   .   Ab2 Eb3"
+    ]
+   }
+  },
+  {
+   "channel": 1,
+   "role": "bass",
+   "name": "BassDrum",
+   "plugin": "BassDrum",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 329,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    84,
+    0
+   ],
+   "bar": {
+    "from_bar": 2,
+    "roll": [
+     "C4  -   .   .   C4  -   .   .   C4  -   .   .   C4  -   .   .  ",
+     "C4  -   .   .   C4  -   .   .   C4  -   .   .   C4  -   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 2,
+   "role": "bass",
+   "name": "BassDrum .2",
+   "plugin": "BassDrum",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 15,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    5,
+    0
+   ],
+   "bar": {
+    "from_bar": 86,
+    "roll": [
+     "C4  -   .   .   .   .   .   C4  C4  -   .   .   .   .   .   .  ",
+     "C4  -   .   .   .   .   .   .   C4  -   -   .   .   .   C4  C4 "
+    ]
+   }
+  },
+  {
+   "channel": 3,
+   "role": "audio",
+   "name": "SynthFX",
+   "plugin": null,
+   "sample": "SynthRexv2.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 4,
+   "role": "audio",
+   "name": "SynthRexv2",
+   "plugin": null,
+   "sample": "SynthRexv2.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 5,
+   "role": "fx",
+   "name": "WNoise",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 6,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    6,
+    0
+   ]
+  },
+  {
+   "channel": 6,
+   "role": "audio",
+   "name": "SynthFX #3",
+   "plugin": null,
+   "sample": "SynthRexv2.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 7,
+   "role": "audio",
+   "name": "SynthFX #2",
+   "plugin": null,
+   "sample": "SynthRexv2.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 8,
+   "role": "audio",
+   "name": "SynthFX #2",
+   "plugin": null,
+   "sample": "synthRexv.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 9,
+   "role": "fx",
+   "name": "UPFx",
+   "plugin": null,
+   "sample": "FXUplift.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 10,
+   "role": "audio",
+   "name": "SynthFX #3",
+   "plugin": null,
+   "sample": "synthRexv.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    3,
+    0
+   ]
+  },
+  {
+   "channel": 11,
+   "role": "audio",
+   "name": "SynthFX",
+   "plugin": null,
+   "sample": "synthRexv.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 12,
+   "role": "lead",
+   "name": "3x Osc",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#4",
+    "C#4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 16.0,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 13,
+   "role": "lead",
+   "name": "3x Osc #3",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 32.0,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 14,
+   "role": "lead",
+   "name": "3x Osc #2",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "D3",
+    "C#7"
+   ],
+   "polyphony": 1.5,
+   "median_len_beats": 6.0,
+   "notes": 9,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    4,
+    0
+   ],
+   "bar": {
+    "from_bar": 8,
+    "roll": [
+     ".   .   .   .   .   .   .   .   C#4 -   C#7+C#7 -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 15,
+   "role": "audio",
+   "name": "GuitarMuteC",
+   "plugin": null,
+   "sample": "GuitarMuteC.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 9,
+   "group": "Audio",
+   "presence": [
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 16,
+   "role": "lead",
+   "name": "Harmor\u2006Bell",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#4",
+    "Ab4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.764,
+   "notes": 28,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    19,
+    0
+   ],
+   "bar": {
+    "from_bar": 50,
+    "roll": [
+     "C#4 -   -   -   .   .   .   .   .   .   .   .   .   .   .   .  ",
+     ".   .   .   .   .   .   .   .   Ab4 -   -   -   E4  -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 17,
+   "role": "chords",
+   "name": "Saw PhaseRN",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "Ab3",
+    "Eb5"
+   ],
+   "polyphony": 5.0,
+   "median_len_beats": 0.986,
+   "notes": 5,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 18,
+   "role": "lead",
+   "name": "Sin Synth",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#4",
+    "B4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 20,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    5,
+    0
+   ],
+   "bar": {
+    "from_bar": 29,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   C#4 Eb4 F#4 B4 ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 19,
+   "role": "lead",
+   "name": "Harmor #4",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "B3",
+    "B4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 3.0,
+   "notes": 5,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    4,
+    0
+   ]
+  },
+  {
+   "channel": 20,
+   "role": "lead",
+   "name": "Brass Synth",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "Ab2",
+    "F#4"
+   ],
+   "polyphony": 4.91,
+   "median_len_beats": 0.25,
+   "notes": 275,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    41,
+    0
+   ],
+   "bar": {
+    "from_bar": 27,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   A2+E3+A3+C#4+E4 .  ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 21,
+   "role": "audio",
+   "name": "GuitarMuteOCL",
+   "plugin": null,
+   "sample": "GuitarMuteOCL.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    24,
+    0
+   ]
+  },
+  {
+   "channel": 22,
+   "role": "audio",
+   "name": "GuitarMuteOCL #2",
+   "plugin": null,
+   "sample": "GuitarMuteOCL.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 23,
+   "role": "audio",
+   "name": "GuitarMuteR",
+   "plugin": null,
+   "sample": "GuitarMuteR.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 21,
+   "group": "Audio",
+   "presence": [
+    41,
+    0
+   ]
+  },
+  {
+   "channel": 24,
+   "role": "chords",
+   "name": "Rhodes MK 1",
+   "plugin": null,
+   "sample": "Piano Rhodes (7).wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "Eb4",
+    "F#5"
+   ],
+   "polyphony": 2.6,
+   "median_len_beats": 2.0,
+   "notes": 52,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    0
+   ],
+   "bar": {
+    "from_bar": 50,
+    "roll": [
+     ".   .   .   .   E4+Ab4+C#5+E5 -   -   -   -   -   -   -   .   .   Eb4+Ab4+B4+Eb5+F#5 -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   .   F#5"
+    ]
+   }
+  },
+  {
+   "channel": 25,
+   "role": "pad",
+   "name": "Dark Pad",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F#2",
+    "Ab4"
+   ],
+   "polyphony": 4.72,
+   "median_len_beats": 3.25,
+   "notes": 571,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    67,
+    0
+   ],
+   "bar": {
+    "from_bar": 4,
+    "roll": [
+     "F#2+F#3+A3+C#4+E4 -   -   -   -   -   -   -   -   -   -   -   -   -   F#2+F#3+A3+C#4+E4 -  ",
+     "-   -   -   -   -   -   Ab2+Ab3+B3+Eb4+F#4 -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 26,
+   "role": "lead",
+   "name": "Sytrus Brass",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F#1",
+    "A3"
+   ],
+   "polyphony": 4.69,
+   "median_len_beats": 2.5,
+   "notes": 577,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    65,
+    0
+   ],
+   "bar": {
+    "from_bar": 20,
+    "roll": [
+     "F#1+F#2+A2+C#3+E3 -   -   -   -   -   -   -   -   -   -   -   -   .   F#1+F#2+A2+C#3+E3 -  ",
+     "-   -   F#1+F#2+A2+C#3+E3 -   -   -   Ab1+Ab2+B2+Eb3+F#3 -   -   -   -   -   .   .   C#2+Ab2+B2+C#3+E3 -  "
+    ]
+   }
+  },
+  {
+   "channel": 27,
+   "role": "lead",
+   "name": "Vintage Lead",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#4",
+    "Ab4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.208,
+   "notes": 5,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 28,
+   "role": "lead",
+   "name": "Harmor #2",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#3",
+    "C#7"
+   ],
+   "polyphony": 1.5,
+   "median_len_beats": 0.028,
+   "notes": 42,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    8,
+    0
+   ],
+   "bar": {
+    "from_bar": 14,
+    "roll": [
+     "Ab4+C#5+C#6 .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 29,
+   "role": "pad",
+   "name": "Dream Pad",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "F#3",
+    "E5"
+   ],
+   "polyphony": 7.25,
+   "median_len_beats": 3.5,
+   "notes": 58,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    6,
+    0
+   ],
+   "bar": {
+    "from_bar": 42,
+    "roll": [
+     "Ab3+B3+C#4+E4+Ab4+B4+C#5+E5 -   -   -   -   -   -   -   -   -   -   -   -   -   Ab3+B3+Eb4+F#4+Ab4+B4+Eb5 -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 30,
+   "role": "chords",
+   "name": "Chord Synth",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "Eb3",
+    "F#5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 19,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    4,
+    0
+   ],
+   "bar": {
+    "from_bar": 65,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   Ab4 B4  Eb5 F#5",
+     "F#5 -   -   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 31,
+   "role": "chords",
+   "name": "Harmor #5",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#3",
+    "C#4"
+   ],
+   "polyphony": 4.0,
+   "median_len_beats": 4.0,
+   "notes": 4,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 32,
+   "role": "audio",
+   "name": "PitchVC #4",
+   "plugin": null,
+   "sample": "PitchVC3.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 33,
+   "role": "audio",
+   "name": "Atthar THC",
+   "plugin": null,
+   "sample": "AttharDLY.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    4,
+    0
+   ]
+  },
+  {
+   "channel": 34,
+   "role": "audio",
+   "name": "Elise main",
+   "plugin": null,
+   "sample": "Elise main.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    18,
+    0
+   ]
+  },
+  {
+   "channel": 35,
+   "role": "audio",
+   "name": "Atthar THC #4",
+   "plugin": null,
+   "sample": "AttharTHC3.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    14,
+    0
+   ]
+  },
+  {
+   "channel": 36,
+   "role": "audio",
+   "name": "Atthar THC #2",
+   "plugin": null,
+   "sample": "AttharTHC4.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 37,
+   "role": "audio",
+   "name": "PitchVC #2",
+   "plugin": null,
+   "sample": "PitchVC2.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 38,
+   "role": "audio",
+   "name": "EliseExtra #3",
+   "plugin": null,
+   "sample": "EliseExtra.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 39,
+   "role": "audio",
+   "name": "Atthar Houo",
+   "plugin": null,
+   "sample": "Houo.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    10,
+    0
+   ]
+  },
+  {
+   "channel": 40,
+   "role": "audio",
+   "name": "Atthar",
+   "plugin": null,
+   "sample": "HouoST.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    4,
+    0
+   ]
+  },
+  {
+   "channel": 41,
+   "role": "audio",
+   "name": "Atthar #6",
+   "plugin": null,
+   "sample": "AthharEXC2.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 42,
+   "role": "audio",
+   "name": "EliseExtra #2",
+   "plugin": null,
+   "sample": "EliseExtra.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    21,
+    0
+   ]
+  },
+  {
+   "channel": 43,
+   "role": "audio",
+   "name": "EliseExtra",
+   "plugin": null,
+   "sample": "ReversVCFX.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 44,
+   "role": "audio",
+   "name": "ReversFXV",
+   "plugin": null,
+   "sample": "ReversFXV.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    11,
+    0
+   ]
+  },
+  {
+   "channel": 45,
+   "role": "audio",
+   "name": "Atthar #9",
+   "plugin": null,
+   "sample": "Ah.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 46,
+   "role": "audio",
+   "name": "Atthar #4",
+   "plugin": null,
+   "sample": "AttharCh.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    37,
+    0
+   ]
+  },
+  {
+   "channel": 47,
+   "role": "audio",
+   "name": "SliceVC",
+   "plugin": null,
+   "sample": "SliceVC.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    3,
+    0
+   ]
+  },
+  {
+   "channel": 48,
+   "role": "audio",
+   "name": "PitchVC",
+   "plugin": null,
+   "sample": "PitchVC.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    7,
+    0
+   ]
+  },
+  {
+   "channel": 49,
+   "role": "audio",
+   "name": "Atthar #8",
+   "plugin": null,
+   "sample": "Ah.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 50,
+   "role": "audio",
+   "name": "Atthar #3",
+   "plugin": null,
+   "sample": "Ah.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    4,
+    0
+   ]
+  },
+  {
+   "channel": 51,
+   "role": "audio",
+   "name": "Atthar #7",
+   "plugin": null,
+   "sample": "AthharEXC3.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    3,
+    0
+   ]
+  },
+  {
+   "channel": 52,
+   "role": "audio",
+   "name": "Atthar THC #5",
+   "plugin": null,
+   "sample": "AttharTHC2.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    3,
+    0
+   ]
+  },
+  {
+   "channel": 53,
+   "role": "audio",
+   "name": "Atthar THC #3",
+   "plugin": null,
+   "sample": "AttharTHC.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    37,
+    0
+   ]
+  },
+  {
+   "channel": 54,
+   "role": "audio",
+   "name": "Atthar #2",
+   "plugin": null,
+   "sample": "AttharVRS.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 55,
+   "role": "audio",
+   "name": "PitchVC #3",
+   "plugin": null,
+   "sample": "PitchVC4.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 56,
+   "role": "audio",
+   "name": "Atthar #5",
+   "plugin": null,
+   "sample": "AthharEXC.ogg",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 57,
+   "role": "drums",
+   "name": "Attack Hat 15",
+   "plugin": null,
+   "sample": "Attack Hat 15.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 696,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    78,
+    0
+   ]
+  },
+  {
+   "channel": 58,
+   "role": "drums",
+   "name": "Attack Shaker 10",
+   "plugin": null,
+   "sample": "Attack Shaker 10.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 307,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    78,
+    0
+   ]
+  },
+  {
+   "channel": 59,
+   "role": "lead",
+   "name": "Jameson Clap",
+   "plugin": null,
+   "sample": "MA Jameson Clap.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 82,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    78,
+    0
+   ],
+   "bar": {
+    "from_bar": 2,
+    "roll": [
+     ".   .   .   .   C4  -   -   -   .   .   .   .   .   .   .   .  ",
+     ".   .   .   .   C4  -   -   -   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 60,
+   "role": "bass",
+   "name": "Ambass Snare",
+   "plugin": null,
+   "sample": "Ambass Snare.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 154,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    78,
+    0
+   ],
+   "bar": {
+    "from_bar": 2,
+    "roll": [
+     ".   .   .   .   C4  -   -   -   .   .   .   .   C4  -   -   -  ",
+     ".   .   .   .   C4  -   -   -   .   .   .   .   C4  -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 61,
+   "role": "lead",
+   "name": "MA Halloween Clap",
+   "plugin": null,
+   "sample": "MA Halloween Clap.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 63,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    63,
+    0
+   ],
+   "bar": {
+    "from_bar": 2,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   C4  -   -   -  ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   C4  -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 62,
+   "role": "lead",
+   "name": "909 Tom",
+   "plugin": null,
+   "sample": "909 Tom.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.25,
+   "notes": 18,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    9,
+    0
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   C4  C4 ",
+     "-   -   -   -   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 63,
+   "role": "bass",
+   "name": "Ambass Snare #3",
+   "plugin": null,
+   "sample": "Ambass Snare.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.25,
+   "notes": 18,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    9,
+    0
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   C4  C4 ",
+     "-   -   -   -   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 64,
+   "role": "lead",
+   "name": "Power Clap 06",
+   "plugin": null,
+   "sample": "Power Clap 06.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.25,
+   "notes": 2,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 65,
+   "role": "drums",
+   "name": "Grv Perc 14",
+   "plugin": null,
+   "sample": "Grv Perc 14.wav",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C#4",
+    "C#4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 260,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    60,
+    0
+   ]
+  },
+  {
+   "channel": 66,
+   "role": "lead",
+   "name": "Collider Desert Snare 01",
+   "plugin": null,
+   "sample": "Collider Desert Snare 01.wv",
+   "preset": null,
+   "insert": null,
+   "insert_name": null,
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.25,
+   "notes": 18,
+   "clips": 0,
+   "group": "Audio",
+   "presence": [
+    9,
+    0
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   C4  C4 ",
+     "-   -   -   -   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": "Maximus"
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "Low Ctrl",
+   "volume_db": -0.8,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    2,
+    3,
+    4,
+    5,
+    60
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Anti Dist"
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "BassDrum",
+   "volume_db": -1.4,
+   "to": [
+    1
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Peak Controller",
+     "name": "Sidechain Low Bass"
+    },
+    {
+     "plugin": "Fruity Peak Controller",
+     "name": "Sidechain Synths"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "Kick Filter",
+   "volume_db": -1.9,
+   "to": [
+    1
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "Juno Bass",
+   "volume_db": 0.1,
+   "to": [
+    1
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Frequency Splitter",
+     "name": "Multiband Sidechain"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "name": "Bass Synth",
+   "volume_db": -3.0,
+   "to": [
+    1
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "Snare",
+   "volume_db": -0.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "Clap",
+   "volume_db": -6.3,
+   "to": [
+    0,
+    16
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "Ambass Snare",
+   "volume_db": -4.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "808 Snare",
+   "volume_db": -1.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "Collider Boom Snare",
+   "volume_db": -5.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 11,
+   "name": "Shakers",
+   "volume_db": -4.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 12,
+   "name": "Grv Perc",
+   "volume_db": -14.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Ice Crack",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "name": "MA Waca",
+   "volume_db": -8.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Tom Tom",
+   "volume_db": -3.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "name": "Reverbclp",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    7
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "name": "Snare",
+   "volume_db": -13.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "KeysGR",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    19,
+    20,
+    21,
+    33
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Anti DIST"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "name": "Synth\u2006Brass",
+   "volume_db": 0.0,
+   "to": [
+    18
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Filter EQ"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": "Sidechain"
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "name": "Dark Pad",
+   "volume_db": 1.7,
+   "to": [
+    18
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": "Sidechain"
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "Electric Piano Bright",
+   "volume_db": -10.3,
+   "to": [
+    18
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "name": "Monosynth",
+   "volume_db": -19.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "name": "Retro Synth",
+   "volume_db": -5.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": "Gross Beat Pitch"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "name": "Dream Pad",
+   "volume_db": -19.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "name": "Harmor #2",
+   "volume_db": -5.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "name": "Guitar Mute Dry",
+   "volume_db": -12.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 27,
+   "name": "Sin Synth",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 28,
+   "name": "Guitar Group",
+   "volume_db": 0.6,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    29,
+    30
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "name": "Guitar Mute",
+   "volume_db": -5.9,
+   "to": [
+    28
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "name": "Guitar mute OCt",
+   "volume_db": -8.0,
+   "to": [
+    28
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 31,
+   "name": "Bell",
+   "volume_db": -2.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 32,
+   "name": "Dark Synth",
+   "volume_db": -15.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "name": "Brass Synth",
+   "volume_db": -22.0,
+   "to": [
+    18
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "name": "DrimaPad",
+   "volume_db": -1.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "name": "Harmor",
+   "volume_db": -19.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "20Hz + 18kHz cut"
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": "Ping pong"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 36,
+   "name": "Main",
+   "volume_db": 0.0,
+   "to": [
+    62,
+    63,
+    64
+   ],
+   "fed_by": [
+    38,
+    39
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 37,
+   "name": "Pitch Vocal",
+   "volume_db": -4.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Frequency Splitter",
+     "name": "Frequency Splitter"
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 38,
+   "name": "Atthar Verse",
+   "volume_db": -2.8,
+   "to": [
+    36,
+    58,
+    59
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Maximus",
+     "name": "De-esser narrow-band"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": "Fruity Reeverb 2"
+    }
+   ]
+  },
+  {
+   "index": 39,
+   "name": "Atthar Verse",
+   "volume_db": -2.8,
+   "to": [
+    36,
+    58,
+    59
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 40,
+   "name": "AttharHarmony",
+   "volume_db": 2.3,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 41,
+   "name": "AttharHarmony",
+   "volume_db": -9.7,
+   "to": [
+    0,
+    63
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 42,
+   "name": "Pitch Vocal",
+   "volume_db": -5.9,
+   "to": [
+    0,
+    62
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": "Fruity delay 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 43,
+   "name": "Delay MNU",
+   "volume_db": -8.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 44,
+   "name": "Elise Main",
+   "volume_db": 0.5,
+   "to": [
+    63
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Peak Controller",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Dynamic EQ Deser"
+    }
+   ]
+  },
+  {
+   "index": 45,
+   "name": "Elsie Dubble",
+   "volume_db": -1.1,
+   "to": [
+    59,
+    63
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 46,
+   "name": "Revers Vocal",
+   "volume_db": -13.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 47,
+   "name": "Revers Vocal",
+   "volume_db": -2.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 48,
+   "name": "Houo",
+   "volume_db": -5.1,
+   "to": [
+    0,
+    63
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Pitcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 49,
+   "name": "Houo",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 50,
+   "name": "FXVocal",
+   "volume_db": -12.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 51,
+   "name": "FX Wnoise",
+   "volume_db": -5.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 52,
+   "name": "WNFX Uplifter",
+   "volume_db": -3.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "20Hz + 18kHz cut"
+    }
+   ]
+  },
+  {
+   "index": 53,
+   "name": "FXDownlifter",
+   "volume_db": -6.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "20Hz + 18kHz cut"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": "Sidechain"
+    }
+   ]
+  },
+  {
+   "index": 54,
+   "name": "FX Revers",
+   "volume_db": -5.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 55,
+   "name": "FX LAzer",
+   "volume_db": -14.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 56,
+   "name": "FX Revers",
+   "volume_db": -10.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 57,
+   "name": "FX Uplifter",
+   "volume_db": -2.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 58,
+   "name": "Reverb",
+   "volume_db": -4.9,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    38,
+    39,
+    59
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 59,
+   "name": "Delay",
+   "volume_db": 0.0,
+   "to": [
+    58
+   ],
+   "fed_by": [
+    38,
+    39,
+    45
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 2",
+     "name": "Fruity delay 2"
+    }
+   ]
+  },
+  {
+   "index": 62,
+   "name": "Delay Pitch",
+   "volume_db": -11.5,
+   "to": [
+    0,
+    63
+   ],
+   "fed_by": [
+    36,
+    42
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": "Gross Beat - Pitch shifter"
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": "Fruity Balance"
+    }
+   ]
+  },
+  {
+   "index": 63,
+   "name": "Reverb Vocal",
+   "volume_db": -6.8,
+   "to": [
+    0,
+    64
+   ],
+   "fed_by": [
+    36,
+    41,
+    44,
+    45,
+    48,
+    62
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 64,
+   "name": "Delay Vocal",
+   "volume_db": -3.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    36,
+    63
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 100,
+   "name": "Vocal GR",
+   "volume_db": -0.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "20Hz + 18kHz cut"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  }
+ ],
+ "automation": [
+  {
+   "name": "Param. EQ 2 (Slot 1) - Pitch Vocal - Band 1 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 7,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 15.0,
+   "range": [
+    0.0,
+    0.417
+   ]
+  },
+  {
+   "name": "ControlDIST - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 372.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #6",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 10,
+   "beats": 16.0,
+   "range": [
+    0.254,
+    0.895
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Default - Wet level",
+   "kind": "generator",
+   "plugin": null,
+   "param": 12,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 34.5,
+   "range": [
+    0.312,
+    1.0
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 64.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Claps - Wet level #2",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8016,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Default - Wet level #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 12,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 18.5,
+   "range": [
+    0.312,
+    0.789
+   ]
+  },
+  {
+   "name": "Delay 2 (Slot 6) - Pitch Vocal - Input volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 5.0,
+   "range": [
+    0.0,
+    0.479
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #7",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.254,
+    0.474
+   ]
+  },
+  {
+   "name": "Delay 2 - Insert 20 - Input volume #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 8,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.553
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Atthar Verse - To Insert 36 #2",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8058,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 344.5,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 (Slot 8) - Pitch Vocal - Wet level",
+   "kind": "generator",
+   "plugin": null,
+   "param": 12,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 14.25,
+   "range": [
+    0.0,
+    0.368
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Insert 19 - Band 7 width",
+   "kind": "generator",
+   "plugin": null,
+   "param": 20,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 348.0,
+   "range": [
+    0.543,
+    0.729
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Mix level #2",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 4.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 344.5,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Delay 2 - Atthar Verse - Input volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 19,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.5
+   ]
+  },
+  {
+   "name": "Delay 2 - Atthar Verse - Input volume #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 9,
+   "beats": 7.25,
+   "range": [
+    0.0,
+    0.417
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 30.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Fruity Delay 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 328.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Delay 2 (Slot 6) - Pitch Vocal - Input volume #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 5.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Bass Synth - Band 5 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 11,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 16.0,
+   "range": [
+    0.274,
+    1.0
+   ]
+  },
+  {
+   "name": "Sytrus Juno Bass - Filter 1 - Cutoff frequency #2",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 328,
+   "insert": null,
+   "channel": "Sytrus Juno Bass",
+   "points": 2,
+   "beats": 1.0,
+   "range": [
+    0.016,
+    0.375
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #8",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.254,
+    0.254
+   ]
+  },
+  {
+   "name": "Saw PhaseRN - A - Filter 1 frequency",
+   "kind": "generator",
+   "plugin": "Harmor",
+   "param": 52,
+   "insert": null,
+   "channel": "Saw PhaseRN",
+   "points": 6,
+   "beats": 15.0,
+   "range": [
+    0.0,
+    0.763
+   ]
+  },
+  {
+   "name": "Harmor #2 - A - Filter 1 frequency #2",
+   "kind": "generator",
+   "plugin": "Harmor",
+   "param": 52,
+   "insert": null,
+   "channel": "Harmor #2",
+   "points": 2,
+   "beats": 1.5,
+   "range": [
+    0.342,
+    0.895
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #3",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.166,
+    0.684
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #5",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 5,
+   "beats": 16.0,
+   "range": [
+    0.254,
+    0.41
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 30.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Revers FX #3 - Volume multiplier",
+   "kind": "channel",
+   "plugin": null,
+   "param": 17,
+   "insert": null,
+   "channel": "SynthFX #3",
+   "points": 4,
+   "beats": 4.25,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Input volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 7,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    0.526
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - mehran - 2020-Sep-07_2 - Band 7 freq",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 17.0,
+   "range": [
+    0.724,
+    0.854
+   ]
+  },
+  {
+   "name": "Atthar Verse - To Insert 36",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8058,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 4,
+   "beats": 16.0,
+   "range": [
+    0.254,
+    0.326
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 5) - Default - Band 1 freq #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 7,
+   "insert": null,
+   "channel": null,
+   "points": 12,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.632
+   ]
+  },
+  {
+   "name": "Harmor",
+   "kind": "generator",
+   "plugin": "Harmor",
+   "param": 52,
+   "insert": null,
+   "channel": "Harmor #2",
+   "points": 2,
+   "beats": 1.5,
+   "range": [
+    0.562,
+    0.921
+   ]
+  },
+  {
+   "name": "Harmor #2 - A - Filter 1 frequency",
+   "kind": "generator",
+   "plugin": "Harmor",
+   "param": 52,
+   "insert": null,
+   "channel": "Harmor #2",
+   "points": 2,
+   "beats": 1.5,
+   "range": [
+    0.312,
+    0.921
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #2",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 4,
+   "beats": 16.0,
+   "range": [
+    0.254,
+    0.447
+   ]
+  },
+  {
+   "name": "Reverb Mod - To Master",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8059,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Insert 19 - Band 7 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 13,
+   "insert": null,
+   "channel": null,
+   "points": 12,
+   "beats": 348.0,
+   "range": [
+    0.371,
+    1.0
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 2) - Reverb Mod - Band 7 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 13,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 32.0,
+   "range": [
+    0.583,
+    1.0
+   ]
+  },
+  {
+   "name": "Delay 3 - Pitch Vocal - Output wet",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 30.0,
+   "range": [
+    0.0,
+    0.526
+   ]
+  },
+  {
+   "name": "Reeverb 2 - VEDH Uplifter 042 - Wet level",
+   "kind": "generator",
+   "plugin": null,
+   "param": 12,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    0.833
+   ]
+  },
+  {
+   "name": "Delay 3 - Pitch Vocal - Output wet #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 0,
+   "insert": null,
+   "channel": null,
+   "points": 10,
+   "beats": 29.5,
+   "range": [
+    0.0,
+    0.386
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 5) - Default - Band 1 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 7,
+   "insert": null,
+   "channel": null,
+   "points": 12,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.692
+   ]
+  },
+  {
+   "name": "Vintage Saw - Filter 1 - Cutoff frequency #2",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 328,
+   "insert": null,
+   "channel": "Vintage Lead",
+   "points": 3,
+   "beats": 2.5,
+   "range": [
+    0.0,
+    0.625
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #9",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 5,
+   "beats": 16.0,
+   "range": [
+    0.254,
+    0.395
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Claps - Wet level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8016,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Delay 2 - Insert 20 - Input volume #2",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #10",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 2,
+   "beats": 4.0,
+   "range": [
+    0.0,
+    0.132
+   ]
+  },
+  {
+   "name": "Sytrus Juno Bass - Filter 1 - Cutoff frequency",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 328,
+   "insert": null,
+   "channel": "Sytrus Juno Bass",
+   "points": 2,
+   "beats": 1.0,
+   "range": [
+    0.016,
+    0.016
+   ]
+  },
+  {
+   "name": "Reeverb 2 - Mix level #2 #2",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 12.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Low FRQ - Band 7 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 13,
+   "insert": null,
+   "channel": null,
+   "points": 14,
+   "beats": 338.0,
+   "range": [
+    0.114,
+    1.0
+   ]
+  },
+  {
+   "name": "Gross Beat - Default - Time mix",
+   "kind": "generator",
+   "plugin": null,
+   "param": 2,
+   "insert": null,
+   "channel": null,
+   "points": 8,
+   "beats": 14.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 6) - Dark Pad - Band 7 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 13,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 328.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Gross Beat - Pitch Vocal - Volume mix",
+   "kind": "generator",
+   "plugin": null,
+   "param": 3,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 16.5,
+   "range": [
+    0.0,
+    0.833
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 1) - Pitch Vocal - Band 1 freq #3",
+   "kind": "generator",
+   "plugin": null,
+   "param": 7,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 15.0,
+   "range": [
+    0.0,
+    0.5
+   ]
+  },
+  {
+   "name": "Delay 2 - Atthar Verse - Input volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 18,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.7
+   ]
+  },
+  {
+   "name": "Balance - Atthar Verse - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 45,
+   "beats": 371.91,
+   "range": [
+    0.642,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Vintage Synth  - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 9,
+   "beats": 372.0,
+   "range": [
+    0.542,
+    0.8
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Low FRQ - Band 1 freq",
+   "kind": "generator",
+   "plugin": null,
+   "param": 7,
+   "insert": null,
+   "channel": null,
+   "points": 5,
+   "beats": 328.0,
+   "range": [
+    0.0,
+    0.129
+   ]
+  },
+  {
+   "name": "Sytrus Pad - Filter 3 - Cutoff frequency #2 #4",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 476,
+   "insert": null,
+   "channel": "Sytrus Brass",
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.17,
+    0.684
+   ]
+  },
+  {
+   "name": "Default #2 - Filter 1 - Cutoff frequency",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 328,
+   "insert": null,
+   "channel": "Dream Pad",
+   "points": 5,
+   "beats": 32.0,
+   "range": [
+    0.302,
+    0.477
+   ]
+  },
+  {
+   "name": "Reverb Mod - To Master #3",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8000,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.8,
+    0.8
+   ]
+  },
+  {
+   "name": "Reverb Mod - To Master #4",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8059,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Balance - Default - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 32,
+   "beats": 272.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Reverb Mod - To Master #2",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8059,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Reverb Mod - To Master #3 #2",
+   "kind": "channel",
+   "plugin": null,
+   "param": 8000,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 28.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Balance - Delay Pitch - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 12,
+   "beats": 344.0,
+   "range": [
+    0.0,
+    0.895
+   ]
+  },
+  {
+   "name": "Balance - Mute ",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 11,
+   "beats": 144.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Reeverb 2 (Slot 5) - Elsie Dubble - Wet level",
+   "kind": "generator",
+   "plugin": null,
+   "param": 12,
+   "insert": null,
+   "channel": null,
+   "points": 8,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Sidechain - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 2,
+   "beats": 28.0,
+   "range": [
+    0.542,
+    0.729
+   ]
+  },
+  {
+   "name": "Synth Brass - Sidechain - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 368.0,
+   "range": [
+    0.0,
+    0.396
+   ]
+  },
+  {
+   "name": "Param. EQ 2 - Mix level",
+   "kind": "channel",
+   "plugin": null,
+   "param": 7937,
+   "insert": null,
+   "channel": null,
+   "points": 14,
+   "beats": 368.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Vocal GR - Volume",
+   "kind": "generator",
+   "plugin": null,
+   "param": 1,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 371.75,
+   "range": [
+    0.8,
+    0.91
+   ]
+  }
+ ],
+ "automation_summary": {
+  "generator": 34,
+  "channel": 24,
+  "Sytrus": 14,
+  "Harmor": 4,
+  "?": 1
+ },
+ "controllers": [
+  {
+   "source": 8322,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "generator",
+    "channel": 8451,
+    "channel_name": null,
+    "plugin": null,
+    "param": 11
+   }
+  },
+  {
+   "source": 8322,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "generator",
+    "channel": 10564,
+    "channel_name": null,
+    "plugin": null,
+    "param": 11
+   }
+  },
+  {
+   "source": 8323,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "generator",
+    "channel": 11203,
+    "channel_name": null,
+    "plugin": null,
+    "param": 1
+   }
+  },
+  {
+   "source": 11012,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "generator",
+    "channel": 11013,
+    "channel_name": null,
+    "plugin": null,
+    "param": 5
+   }
+  },
+  {
+   "source": 11012,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "generator",
+    "channel": 11013,
+    "channel_name": null,
+    "plugin": null,
+    "param": 4
+   }
+  }
+ ],
+ "plugins": {
+  "Harmor": 7,
+  "Sytrus": 5,
+  "3x Osc": 5,
+  "BassDrum": 2
+ },
+ "effects": {
+  "Fruity Parametric EQ 2": 85,
+  "Fruity Reeverb 2": 38,
+  "Fruity Delay 2": 15,
+  "Fruity Balance": 10,
+  "Maximus": 9,
+  "Fruity Limiter": 8,
+  "Fruity Stereo Shaper": 5,
+  "Fruity Delay 3": 5,
+  "Fruity Love Philter": 4,
+  "Fruity Peak Controller": 3,
+  "Gross Beat": 3,
+  "Frequency Splitter": 2,
+  "Transient Processor": 2,
+  "Fruity Flangus": 2,
+  "Fruity Blood Overdrive": 1,
+  "Fruity WaveShaper": 1,
+  "Pitcher": 1
+ },
+ "muted_clips": 5,
+ "muted_parts": [],
+ "bounces": [],
+ "audio_key": {
+  "key": "C# minor",
+  "score": 0.6108,
+  "margin": 0.2252,
+  "runner_up": "F# major"
+ }
+}

@@ -1,0 +1,3905 @@
+{
+ "file": "Purps On The Beat Feat Luclover - Stroll Up.flp",
+ "title": "Stroll Up",
+ "artists": "Purps On The Beat Feat Luclover",
+ "genre": "Trap",
+ "fl_version": "25.2.0.5125",
+ "ppq": 96,
+ "bpm": 147.0,
+ "bars": 72,
+ "seconds": 117.6,
+ "key": {
+  "key": "E minor",
+  "tonic": 4,
+  "mode": "minor",
+  "confidence": 0.741,
+  "runner_up": "E major"
+ },
+ "roles": {
+  "bass": 3,
+  "lead": 3,
+  "pad": 1,
+  "arp": 1,
+  "drums": 10,
+  "chords": 1,
+  "vocal": 2,
+  "audio": 64
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 8,
+   "name": "",
+   "energy": 0.53,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 9,
+   "bars": 8,
+   "name": "",
+   "energy": 0.65,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 17,
+   "bars": 8,
+   "name": "",
+   "energy": 0.61,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 25,
+   "bars": 8,
+   "name": "",
+   "energy": 0.53,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "pad",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 33,
+   "bars": 8,
+   "name": "",
+   "energy": 0.84,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "pad",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 41,
+   "bars": 8,
+   "name": "",
+   "energy": 0.51,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 49,
+   "bars": 8,
+   "name": "",
+   "energy": 0.55,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 57,
+   "bars": 8,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "lead",
+    "pad",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 65,
+   "bars": 8,
+   "name": "",
+   "energy": 0.61,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "chords",
+    "lead",
+    "pad"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 8
+  },
+  {
+   "chord": "Em",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Dmadd9",
+   "roman": "bviiadd9",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Fmaj7",
+   "roman": "bIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Em",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Dmadd9",
+   "roman": "bviiadd9",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Dmadd9",
+   "roman": "bviiadd9",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 21
+  },
+  {
+   "chord": "Em7",
+   "roman": "i7",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 3
+  },
+  {
+   "chord": "Em",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Em",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 26
+  }
+ ],
+ "markers": [],
+ "drums": [
+  {
+   "voice": "crash",
+   "channel": 7,
+   "name": "Crash #2",
+   "pattern": "X...............",
+   "hits_per_bar": 1.11,
+   "late_16ths": -0.038,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 47
+  },
+  {
+   "voice": "crash",
+   "channel": 15,
+   "name": "Crash",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 7
+  },
+  {
+   "voice": "hat",
+   "channel": 11,
+   "name": "Ekit 4 Hat",
+   "pattern": "xXX.xXX..xx.xxx.",
+   "hits_per_bar": 7.54,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 61
+  },
+  {
+   "voice": "perc",
+   "channel": 13,
+   "name": "Grv Perc 13",
+   "pattern": "......X.X...XXx.",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    71,
+    99
+   ],
+   "bars": 8
+  },
+  {
+   "voice": "perc",
+   "channel": 16,
+   "name": "VT_SD",
+   "pattern": "X..X...X.X..X.x.",
+   "hits_per_bar": 5.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 8
+  },
+  {
+   "voice": "perc",
+   "channel": 19,
+   "name": "VT_MC",
+   "pattern": "XXXX........XXXX",
+   "hits_per_bar": 7.5,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 8
+  },
+  {
+   "voice": "perc",
+   "channel": 20,
+   "name": "VT_CL",
+   "pattern": "........XXXX....",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 8
+  },
+  {
+   "voice": "perc",
+   "channel": 12,
+   "name": "Perc",
+   "pattern": "....X...........",
+   "hits_per_bar": 1.0,
+   "late_16ths": -0.125,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 7
+  },
+  {
+   "voice": "rim",
+   "channel": 18,
+   "name": "VT_RimShot",
+   "pattern": "....XXXX........",
+   "hits_per_bar": 4.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 7
+  },
+  {
+   "voice": "snare",
+   "channel": 9,
+   "name": "Grv Snareclap 06",
+   "pattern": "........X....oo.",
+   "hits_per_bar": 1.49,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 61
+  }
+ ],
+ "kit": {
+  "crash": [
+   {
+    "name": "Crash #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Purps On The Beat Feat Luclover - Stroll Up\\Track 1 (consolidated)_5.wav",
+    "hits": 52
+   },
+   {
+    "name": "Crash",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_CY.wav",
+    "hits": 7
+   }
+  ],
+  "snare": [
+   {
+    "name": "Grv Snareclap 06",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 06.wav",
+    "hits": 91
+   }
+  ],
+  "hat": [
+   {
+    "name": "Ekit 4 Hat",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Hats\\Ekit 4 Hat.wav",
+    "hits": 460
+   }
+  ],
+  "perc": [
+   {
+    "name": "VT_MC",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_MC.wav",
+    "hits": 60
+   },
+   {
+    "name": "VT_SD",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_SD.wav",
+    "hits": 40
+   },
+   {
+    "name": "Grv Perc 13",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\Grv Perc 13.wav",
+    "hits": 32
+   }
+  ],
+  "rim": [
+   {
+    "name": "VT_RimShot",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Legacy\\Drums\\Vintage\\VT_RimShot.wav",
+    "hits": 28
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "bass",
+   "name": "BooBass",
+   "plugin": "BooBass",
+   "sample": null,
+   "preset": null,
+   "insert": 6,
+   "insert_name": "BooBass",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Vintage Phaser",
+    "Spreader"
+   ],
+   "range": [
+    "E4",
+    "G5"
+   ],
+   "polyphony": 1.03,
+   "median_len_beats": 0.5,
+   "notes": 123,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    0,
+    0,
+    8,
+    0,
+    0,
+    8,
+    8
+   ],
+   "bar": {
+    "from_bar": 10,
+    "roll": [
+     "E4  -   .   .   F4  -   -   -   -   .   .   .   F5  .   E5  -  ",
+     "E4  -   .   .   .   .   .   .   .   .   E4  .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 1,
+   "role": "bass",
+   "name": "808 Clean",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Mobile Tuned 808 Bass / 808 Clean",
+   "insert": 16,
+   "insert_name": "808 Clean",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "E3",
+    "F3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.25,
+   "notes": 104,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    5,
+    6,
+    6,
+    5,
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "bar": {
+    "from_bar": 3,
+    "roll": [
+     "E3  -   -   -   -   -   .   .   .   .   .   .   .   .   .   .  ",
+     ".   .   .   .   E3  -   -   -   .   .   E3  -   .   F3  F3  .  "
+    ]
+   }
+  },
+  {
+   "channel": 2,
+   "role": "lead",
+   "name": "Driving Through",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Olbaid Compendium / Driving Through",
+   "insert": 15,
+   "insert_name": "Gill ClavishLead",
+   "chain": [
+    "Fruity Love Philter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "E4",
+    "B5"
+   ],
+   "polyphony": 1.18,
+   "median_len_beats": 1.021,
+   "notes": 104,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    8
+   ],
+   "bar": {
+    "from_bar": 59,
+    "roll": [
+     "E4  -   F4  -   A4  -   B4  -   C5  -   -   -   C5  -   -   -  ",
+     "B4  -   -   -   A4  -   -   -   C5  -   F4+B4 -   C5  -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 3,
+   "role": "pad",
+   "name": "Creeper Drone",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Arksun Cityscape / Creeper Drone",
+   "insert": 8,
+   "insert_name": null,
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity WaveShaper",
+    "Hyper Chorus",
+    "Fruity Love Philter",
+    "Fruity Parametric EQ 2",
+    "Spreader"
+   ],
+   "range": [
+    "E2",
+    "E3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.5,
+   "notes": 78,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    6,
+    8,
+    0,
+    0,
+    8,
+    8
+   ],
+   "bar": {
+    "from_bar": 27,
+    "roll": [
+     "E2  -   -   -   -   -   B2  -   -   -   -   -   E2  -   -   -  ",
+     "-   -   -   -   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 4,
+   "role": "arp",
+   "name": "Just Strollin",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Arksun Cityscape / Just Strollin",
+   "insert": 11,
+   "insert_name": "Just Strollin",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C5",
+    "G5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 259,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    7,
+    0,
+    8,
+    7,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "E5  .   .   .   E5  .   .   .   E5  .   .   .   E5  .   .   .  ",
+     "E5  .   .   .   E5  .   F5  .   G5  .   .   .   F5  .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 6,
+   "role": "lead",
+   "name": "Kepler",
+   "plugin": "Kepler",
+   "sample": null,
+   "preset": null,
+   "insert": 12,
+   "insert_name": "Kepler",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "B5",
+    "B5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 16.0,
+   "notes": 14,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    2,
+    0,
+    2,
+    2,
+    2,
+    0,
+    2,
+    2,
+    2
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "B5  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 7,
+   "role": "drums",
+   "name": "Crash #2",
+   "plugin": null,
+   "sample": "Track 1 (consolidated)_5.wav",
+   "preset": null,
+   "insert": 13,
+   "insert_name": "Track 1 (consolidated)",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 52,
+   "clips": 52,
+   "group": "Audio",
+   "presence": [
+    8,
+    8,
+    8,
+    0,
+    8,
+    8,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 8,
+   "role": "chords",
+   "name": "FL Keys",
+   "plugin": "FL Keys",
+   "sample": null,
+   "preset": null,
+   "insert": 7,
+   "insert_name": "FL Keys",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Spreader"
+   ],
+   "range": [
+    "E1",
+    "E6"
+   ],
+   "polyphony": 1.02,
+   "median_len_beats": 0.25,
+   "notes": 311,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    8,
+    0,
+    8,
+    0,
+    8,
+    8,
+    8
+   ],
+   "bar": {
+    "from_bar": 2,
+    "roll": [
+     ".   .   .   .   E6  E6  E6  E6  E6  .   .   .   .   .   .   .  ",
+     ".   .   .   .   E6  E6  B2+E6 E6  E6  .   .   .   E1  .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 9,
+   "role": "drums",
+   "name": "Grv Snareclap 06",
+   "plugin": null,
+   "sample": "Grv Snareclap 06.wav",
+   "preset": null,
+   "insert": 19,
+   "insert_name": "Grv Snareclap 06",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 91,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8,
+    6,
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 11,
+   "role": "drums",
+   "name": "Ekit 4 Hat",
+   "plugin": null,
+   "sample": "Ekit 4 Hat.wav",
+   "preset": null,
+   "insert": 18,
+   "insert_name": "Ekit 4 Hat",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity PanOMatic",
+    "Vintage Chorus"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 460,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    7,
+    8,
+    8,
+    8,
+    8,
+    8,
+    6,
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 12,
+   "role": "drums",
+   "name": "Perc",
+   "plugin": null,
+   "sample": "FPC Triangle.wav",
+   "preset": null,
+   "insert": 15,
+   "insert_name": "Gill ClavishLead",
+   "chain": [
+    "Fruity Love Philter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 3.031,
+   "notes": 7,
+   "clips": 7,
+   "group": "Audio",
+   "presence": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 13,
+   "role": "drums",
+   "name": "Grv Perc 13",
+   "plugin": null,
+   "sample": "Grv Perc 13.wav",
+   "preset": null,
+   "insert": 23,
+   "insert_name": "Grv Perc 13",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity PanOMatic"
+   ],
+   "range": [
+    "E4",
+    "E4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.229,
+   "notes": 32,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 14,
+   "role": "bass",
+   "name": "808 Clav",
+   "plugin": null,
+   "sample": "808 Clav.wav",
+   "preset": null,
+   "insert": 24,
+   "insert_name": "808 Clav",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.292,
+   "notes": 31,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    2,
+    2,
+    2,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0
+   ],
+   "bar": {
+    "from_bar": 4,
+    "roll": [
+     ".   .   C4  .   .   .   .   .   C4  -   -   -   -   .   C4  .  ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 15,
+   "role": "drums",
+   "name": "Crash",
+   "plugin": null,
+   "sample": "VT_CY.wav",
+   "preset": null,
+   "insert": 25,
+   "insert_name": "VT_CY",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.896,
+   "notes": 7,
+   "clips": 7,
+   "group": "Audio",
+   "presence": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 16,
+   "role": "drums",
+   "name": "VT_SD",
+   "plugin": null,
+   "sample": "VT_SD.wav",
+   "preset": null,
+   "insert": 22,
+   "insert_name": "VT_SD",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Flanger",
+    "Fruity PanOMatic"
+   ],
+   "range": [
+    "D4",
+    "D4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.177,
+   "notes": 40,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 18,
+   "role": "drums",
+   "name": "VT_RimShot",
+   "plugin": null,
+   "sample": "VT_RimShot.wav",
+   "preset": null,
+   "insert": 21,
+   "insert_name": "VT_RimShot",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 28,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 19,
+   "role": "drums",
+   "name": "VT_MC",
+   "plugin": null,
+   "sample": "VT_MC.wav",
+   "preset": null,
+   "insert": 27,
+   "insert_name": "VT_MC",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 60,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 20,
+   "role": "drums",
+   "name": "VT_CL",
+   "plugin": null,
+   "sample": "VT_CL.wav",
+   "preset": null,
+   "insert": 28,
+   "insert_name": "VT_CL",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 32,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 21,
+   "role": "vocal",
+   "name": "Choir Ahh",
+   "plugin": "DirectWave",
+   "sample": null,
+   "preset": null,
+   "insert": 10,
+   "insert_name": "Choir Ahh",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Hyper Chorus",
+    "Spreader"
+   ],
+   "range": [
+    "E2",
+    "F4"
+   ],
+   "polyphony": 1.43,
+   "median_len_beats": 0.917,
+   "notes": 100,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    0,
+    8,
+    8,
+    8,
+    0,
+    8,
+    0
+   ],
+   "bar": {
+    "from_bar": 9,
+    "roll": [
+     "E3+B3 -   -   -   -   -   -   -   -   -   -   -   E2  -   -   -  ",
+     "-   -   -   -   C3  -   -   -   F4  -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 22,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-07-04_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 63,
+   "group": "Audio",
+   "presence": [
+    8,
+    1,
+    8,
+    1,
+    8,
+    1,
+    8,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 23,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-09-10_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "DEX PRESET 2",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "Fruity Reeverb 2",
+    "Fruity Delay 3"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 27,
+   "group": "Audio",
+   "presence": [
+    6,
+    0,
+    6,
+    0,
+    6,
+    0,
+    6,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 25,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 18-09-10_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-09-10_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "DEX PRESET 2",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Fruity Delay 3"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    2,
+    2,
+    4,
+    0,
+    0,
+    0,
+    3,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 26,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-09-10_DEX PRESET 2_2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 27,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-12-19_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 28,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-18-02_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "DEX PRESET 2",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "Fruity Reeverb 2",
+    "Fruity Delay 3"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 8,
+   "group": "Audio",
+   "presence": [
+    3,
+    1,
+    3,
+    1,
+    3,
+    1,
+    3,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 29,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-33-45_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 30,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-38-13_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 31,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-41-10_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 32,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 18-41-10_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-41-10_DEX PRESET 2_2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 33,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-42-11_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 34,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-48-40_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 35,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 18-50-19_DEX PRESET 2_2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 38,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 19-07-15_DEX PRESET 2_2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 39,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 19-07-15_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 19-07-15_DEX PRESET 2_3.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 40,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 19-09-25_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 41,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-36-21_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 42,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-42-10_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 43,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-42-53_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "DEX PRESET 2",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "Fruity Reeverb 2",
+    "Fruity Delay 3"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 44,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-45-10_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 45,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 20-46-32_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-46-32_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 46,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-48-10_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 47,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-50-58_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 48,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 20-55-26_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 49,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-02-25_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 50,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-04-44_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 52,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-05-57_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 53,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-16-46_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 54,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-21-10_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 55,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-23-42_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 56,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-23-58_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 57,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-27-20_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 58,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-29-21_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 59,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-33-21_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 60,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-38-44_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 61,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-39-57_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 62,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-42-45_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 63,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-43-15_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "DEX PRESET 2",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Fruity Delay 3"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 64,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 21-43-15_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-43-15_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "DEX PRESET 2",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Fruity Delay 3"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 65,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-45-03_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 66,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 21-45-03_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-45-03_DEX PRESET 2_2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 67,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-49-06_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 68,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-50-00_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 69,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 21-50-00_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-50-00_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": null,
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 70,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-55-37_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 71,
+   "role": "audio",
+   "name": "Fl Demo Type Beat 3_2025-10-07 21-55-37_DEX PRESET 2",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-10-07 21-55-37_DEX PRESET 2_2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 74,
+   "role": "vocal",
+   "name": "Vocal #13",
+   "plugin": null,
+   "sample": "ZAE PURP2.wav",
+   "preset": null,
+   "insert": 1,
+   "insert_name": "Purps on a beat2WET",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 3",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 83,
+   "role": "audio",
+   "name": null,
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-11-04 20-24-49_DEX PRESET 2.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Vocal",
+   "chain": [
+    "Fruity Limiter",
+    "Pitcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Soundgoodizer",
+    "Fruity Flangus",
+    "Fruity Convolver",
+    "LuxeVerb",
+    "Hyper Chorus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 87,
+   "role": "audio",
+   "name": "Tag",
+   "plugin": null,
+   "sample": "Fl Demo Type Beat 3_2025-11-06 19-05-01_Insert 35.wav",
+   "preset": null,
+   "insert": 29,
+   "insert_name": "Fl Demo Type Beat 3_2025-11-06 19-05-01_Insert 35",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 3",
+    "Fruity Flanger"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Patcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Stereo Enhancer",
+     "name": null
+    },
+    {
+     "plugin": "Patcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Soft Clipper",
+     "name": "Fruity Soft Clipper"
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity NoteBook 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "Purps on a beat2WET",
+   "volume_db": -16.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": "panning delay"
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Vocal",
+   "volume_db": -6.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": "Fruity Limiter_2"
+    },
+    {
+     "plugin": "Pitcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Soundgoodizer",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Fruity Flangus_2"
+    },
+    {
+     "plugin": "Fruity Convolver",
+     "name": null
+    },
+    {
+     "plugin": "LuxeVerb",
+     "name": null
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": "Sandy crust"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "DEX PRESET 2",
+   "volume_db": -11.7,
+   "to": [
+    0,
+    9
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": "Fruity Limiter_2"
+    },
+    {
+     "plugin": "Pitcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Soundgoodizer",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Fruity Flangus_2"
+    },
+    {
+     "plugin": "Fruity Convolver",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "DEX PRESET 2",
+   "volume_db": -11.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": "Fruity Limiter_2"
+    },
+    {
+     "plugin": "Pitcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Old Telephone"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Soundgoodizer",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Fruity Flangus_2"
+    },
+    {
+     "plugin": "Fruity Convolver",
+     "name": null
+    },
+    {
+     "plugin": "LuxeVerb",
+     "name": "Duck Bright Hall"
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": "panning delay"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "name": "",
+   "volume_db": -23.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": "Fruity Limiter_2"
+    },
+    {
+     "plugin": "Pitcher",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Soundgoodizer",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Fruity Flangus_2"
+    },
+    {
+     "plugin": "Fruity Convolver",
+     "name": null
+    },
+    {
+     "plugin": "LuxeVerb",
+     "name": "Duck Shimmer Octave Pad"
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": "Sandy crust"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "BooBass",
+   "volume_db": -14.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Vintage Phaser",
+     "name": "Lowgrounder"
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "FL Keys",
+   "volume_db": -12.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "",
+   "volume_db": -15.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": "Transient former"
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "",
+   "volume_db": -19.9,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    3
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": "panning delay"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "Choir Ahh",
+   "volume_db": -10.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": "Top shell"
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "name": "Just Strollin",
+   "volume_db": -9.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "Kepler",
+   "volume_db": -3.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Track 1 (consolidated)",
+   "volume_db": -8.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "name": "FPC Triangle",
+   "volume_db": -13.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": "panning delay"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Gill ClavishLead",
+   "volume_db": -10.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Love Philter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "name": "808 Clean",
+   "volume_db": -7.9,
+   "to": [
+    0,
+    17
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "name": "",
+   "volume_db": -24.3,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    16
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": "Softmunched"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "Ekit 4 Hat",
+   "volume_db": -8.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity PanOMatic",
+     "name": null
+    },
+    {
+     "plugin": "Vintage Chorus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "name": "Grv Snareclap 06",
+   "volume_db": -9.8,
+   "to": [
+    0,
+    20
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "name": "",
+   "volume_db": -15.3,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    19
+   ],
+   "slots": [
+    {
+     "plugin": "Soundgoodizer",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "LuxeVerb",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "VT_RimShot",
+   "volume_db": -10.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "name": "VT_SD",
+   "volume_db": -10.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flanger",
+     "name": null
+    },
+    {
+     "plugin": "Fruity PanOMatic",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "name": "Grv Perc 13",
+   "volume_db": -11.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity PanOMatic",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "name": "808 Clav",
+   "volume_db": -12.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 25,
+   "name": "VT_CY",
+   "volume_db": -14.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 26,
+   "name": "",
+   "volume_db": -1.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Phaser",
+     "name": "Moog It 02"
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Flanger 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "name": "VT_MC",
+   "volume_db": -14.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 28,
+   "name": "VT_CL",
+   "volume_db": -14.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 29,
+   "name": "Fl Demo Type Beat 3_2025-11-06 19-05-01_Insert 35",
+   "volume_db": -17.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flanger",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "name": "",
+   "volume_db": -17.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Flanger 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 31,
+   "name": "Happy Day",
+   "volume_db": -10.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    }
+   ]
+  }
+ ],
+ "automation": [
+  {
+   "name": "Strollin cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "Just Strollin",
+   "points": 21,
+   "beats": 32.0,
+   "range": [
+    0.036,
+    1.0
+   ]
+  },
+  {
+   "name": "Chorus",
+   "kind": "plugin",
+   "plugin": "Hyper Chorus",
+   "param": 9,
+   "insert": "Happy Day",
+   "channel": null,
+   "points": 5,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Mix level",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "Vocal",
+   "channel": null,
+   "points": 8,
+   "beats": 288.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Filter",
+   "kind": "plugin",
+   "plugin": "Fruity Love Philter",
+   "param": 9,
+   "insert": null,
+   "channel": null,
+   "points": 6,
+   "beats": 284.0,
+   "range": [
+    0.024,
+    1.0
+   ]
+  }
+ ],
+ "automation_summary": {
+  "FLEX": 1,
+  "Hyper Chorus": 1,
+  "mixer": 1,
+  "Fruity Love Philter": 1
+ },
+ "controllers": [],
+ "plugins": {
+  "FLEX": 4,
+  "BooBass": 1,
+  "Kepler": 1,
+  "FL Keys": 1,
+  "DirectWave": 1
+ },
+ "effects": {
+  "Fruity Parametric EQ 2": 35,
+  "Fruity Delay 3": 6,
+  "Hyper Chorus": 6,
+  "Fruity Flangus": 6,
+  "Fruity Limiter": 5,
+  "Soundgoodizer": 5,
+  "Spreader": 5,
+  "Pitcher": 4,
+  "Fruity Compressor": 4,
+  "Fruity Convolver": 4,
+  "LuxeVerb": 4,
+  "Fruity PanOMatic": 3,
+  "Patcher": 2,
+  "Fruity WaveShaper": 2,
+  "Fruity Love Philter": 2,
+  "Fruity Flanger": 2,
+  "Fruity Blood Overdrive": 1,
+  "Fruity Stereo Enhancer": 1,
+  "Fruity Soft Clipper": 1,
+  "Fruity NoteBook 2": 1,
+  "Fruity Reeverb 2": 1,
+  "Vintage Phaser": 1,
+  "Vintage Chorus": 1,
+  "Fruity Phaser": 1
+ },
+ "muted_clips": 0,
+ "muted_parts": [],
+ "bounces": [],
+ "audio_key": {
+  "key": "B minor",
+  "score": 0.6153,
+  "margin": 0.0738,
+  "runner_up": "E major"
+ }
+}

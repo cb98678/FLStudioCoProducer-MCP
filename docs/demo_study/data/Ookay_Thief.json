@@ -1,0 +1,3242 @@
+{
+ "file": "Ookay - Thief.flp",
+ "title": "Thief",
+ "artists": "Ookay",
+ "genre": "Future Bass",
+ "fl_version": "25.2.3.5164",
+ "ppq": 96,
+ "bpm": 150.0,
+ "bars": 144,
+ "seconds": 230.4,
+ "key": {
+  "key": "C# major",
+  "tonic": 1,
+  "mode": "major",
+  "confidence": 0.795,
+  "runner_up": "F# major"
+ },
+ "roles": {
+  "bass": 2,
+  "drums": 14,
+  "audio": 10,
+  "fx": 3,
+  "chords": 1,
+  "vocal": 6,
+  "lead": 1
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 16,
+   "name": "",
+   "energy": 0.02,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 17,
+   "bars": 8,
+   "name": "",
+   "energy": 0.02,
+   "roles": [
+    "audio",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 25,
+   "bars": 16,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 41,
+   "bars": 8,
+   "name": "",
+   "energy": 0.12,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 49,
+   "bars": 16,
+   "name": "",
+   "energy": 0.02,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 65,
+   "bars": 8,
+   "name": "",
+   "energy": 0.11,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 73,
+   "bars": 8,
+   "name": "",
+   "energy": 0.1,
+   "roles": [
+    "audio",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 81,
+   "bars": 16,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "lead"
+   ]
+  },
+  {
+   "start_bar": 97,
+   "bars": 8,
+   "name": "",
+   "energy": 0.11,
+   "roles": [
+    "audio",
+    "bass",
+    "chords",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 105,
+   "bars": 8,
+   "name": "",
+   "energy": 0.1,
+   "roles": [
+    "audio",
+    "chords",
+    "drums",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 113,
+   "bars": 16,
+   "name": "",
+   "energy": 1.0,
+   "roles": [
+    "audio",
+    "bass",
+    "drums",
+    "fx",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 129,
+   "bars": 16,
+   "name": "",
+   "energy": 0.11,
+   "roles": [
+    "audio",
+    "bass",
+    "chords"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "Absus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "Absus4",
+   "roman": "Vsus4",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 2
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "B5",
+   "roman": "bVII5",
+   "bars": 1
+  },
+  {
+   "chord": "Ab5",
+   "roman": "V5",
+   "bars": 1
+  },
+  {
+   "chord": "C#5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "II5",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 1
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Abm",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C#",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 2
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  },
+  {
+   "chord": "Bmaj7",
+   "roman": "bVIImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C#sus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "C#6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Ebm7",
+   "roman": "ii7",
+   "bars": 1
+  }
+ ],
+ "markers": [],
+ "drums": [
+  {
+   "voice": "clap",
+   "channel": 12,
+   "name": "WA_BHB_Kit4_Snap_126BPM",
+   "pattern": "........X.......",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 16
+  },
+  {
+   "voice": "crash",
+   "channel": 8,
+   "name": "909 Crash",
+   "pattern": "x..............o",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 6
+  },
+  {
+   "voice": "crash",
+   "channel": 7,
+   "name": "Broken Crash #2",
+   "pattern": "...xo...........",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 3
+  },
+  {
+   "voice": "crash",
+   "channel": 14,
+   "name": "Grv Crash 01",
+   "pattern": "x..............x",
+   "hits_per_bar": 1.0,
+   "late_16ths": -0.104,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 2
+  },
+  {
+   "voice": "kick",
+   "channel": 1,
+   "name": "Grv Kick 27",
+   "pattern": "X...o...x...x.o.",
+   "hits_per_bar": 2.9,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 93
+  },
+  {
+   "voice": "perc",
+   "channel": 6,
+   "name": "808 Conga",
+   "pattern": "........X.......",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 96
+  },
+  {
+   "voice": "ride",
+   "channel": 11,
+   "name": "Importer Ride",
+   "pattern": "X.......X.......",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 40
+  },
+  {
+   "voice": "snare",
+   "channel": 9,
+   "name": "Grv Snareclap 13",
+   "pattern": "........X.......",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 56
+  },
+  {
+   "voice": "snare",
+   "channel": 10,
+   "name": "Grv Snareclap 06",
+   "pattern": "........X.......",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 56
+  },
+  {
+   "voice": "snare",
+   "channel": 13,
+   "name": "808 Snare",
+   "pattern": "XxXXXxXxXxXXXXXX",
+   "hits_per_bar": 16.57,
+   "late_16ths": -0.017,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 21
+  },
+  {
+   "voice": "tom",
+   "channel": 5,
+   "name": "Titey Tom #4",
+   "pattern": "x.............x.",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 12
+  },
+  {
+   "voice": "tom",
+   "channel": 2,
+   "name": "Titey Tom #2",
+   "pattern": "........X.......",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 7
+  },
+  {
+   "voice": "tom",
+   "channel": 3,
+   "name": "Titey Tom",
+   "pattern": "..........X.....",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 7
+  },
+  {
+   "voice": "tom",
+   "channel": 4,
+   "name": "Titey Tom #3",
+   "pattern": "............X...",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 7
+  }
+ ],
+ "kit": {
+  "kick": [
+   {
+    "name": "Grv Kick 27",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Grv Kick 27.wav",
+    "hits": 270
+   }
+  ],
+  "tom": [
+   {
+    "name": "Titey Tom #4",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Titey Tom.wav",
+    "hits": 12
+   },
+   {
+    "name": "Titey Tom #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Titey Tom.wav",
+    "hits": 7
+   },
+   {
+    "name": "Titey Tom",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehdi Ebrahiminejad - Never Out\\Titey Tom.wav",
+    "hits": 7
+   }
+  ],
+  "perc": [
+   {
+    "name": "808 Conga",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Percussion\\808 Conga.wav",
+    "hits": 96
+   }
+  ],
+  "crash": [
+   {
+    "name": "909 Crash",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\909 Crash.wav",
+    "hits": 6
+   },
+   {
+    "name": "Broken Crash #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Broken Crash.wav",
+    "hits": 3
+   },
+   {
+    "name": "Grv Crash 01",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Grv Crash 01.wav",
+    "hits": 2
+   }
+  ],
+  "snare": [
+   {
+    "name": "808 Snare",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\808 Snare.wav",
+    "hits": 348
+   },
+   {
+    "name": "Grv Snareclap 13",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 13.wav",
+    "hits": 56
+   },
+   {
+    "name": "Grv Snareclap 06",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 06.wav",
+    "hits": 56
+   }
+  ],
+  "ride": [
+   {
+    "name": "Importer Ride",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Cymbals\\Importer Ride.wav",
+    "hits": 80
+   }
+  ],
+  "clap": [
+   {
+    "name": "WA_BHB_Kit4_Snap_126BPM",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Ookay - Thief\\WA_BHB_Kit4_Snap_126BPM_3222812.wav",
+    "hits": 16
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "bass",
+   "name": "Synth Bass",
+   "plugin": "Harmless",
+   "sample": null,
+   "preset": null,
+   "insert": 10,
+   "insert_name": "Synth Bass",
+   "chain": [],
+   "range": [
+    "Eb2",
+    "Eb3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 85,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    16,
+    7,
+    0,
+    0,
+    16,
+    8,
+    7,
+    0,
+    8,
+    7,
+    0,
+    16
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "B2  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "Ab2 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 1,
+   "role": "drums",
+   "name": "Grv Kick 27",
+   "plugin": null,
+   "sample": "Grv Kick 27.wav",
+   "preset": null,
+   "insert": 1,
+   "insert_name": "KICK",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.656,
+   "notes": 270,
+   "clips": 270,
+   "group": "Audio",
+   "presence": [
+    0,
+    7,
+    16,
+    8,
+    8,
+    8,
+    7,
+    16,
+    0,
+    7,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 2,
+   "role": "drums",
+   "name": "Titey Tom #2",
+   "plugin": null,
+   "sample": "Titey Tom.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "TOMS",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.917,
+   "notes": 7,
+   "clips": 7,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 3,
+   "role": "drums",
+   "name": "Titey Tom",
+   "plugin": null,
+   "sample": "Titey Tom.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "TOMS",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 7,
+   "clips": 7,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 4,
+   "role": "drums",
+   "name": "Titey Tom #3",
+   "plugin": null,
+   "sample": "Titey Tom.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "TOMS",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 7,
+   "clips": 7,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 5,
+   "role": "drums",
+   "name": "Titey Tom #4",
+   "plugin": null,
+   "sample": "Titey Tom.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "TOMS",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 12,
+   "clips": 12,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    0,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1
+   ]
+  },
+  {
+   "channel": 6,
+   "role": "drums",
+   "name": "808 Conga",
+   "plugin": null,
+   "sample": "808 Conga.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "HI TOM",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Maximus"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.458,
+   "notes": 96,
+   "clips": 96,
+   "group": "Audio",
+   "presence": [
+    16,
+    0,
+    16,
+    8,
+    16,
+    8,
+    0,
+    16,
+    0,
+    0,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 7,
+   "role": "drums",
+   "name": "Broken Crash #2",
+   "plugin": null,
+   "sample": "Broken Crash.wav",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "CRASH 2",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 7.542,
+   "notes": 3,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    2,
+    1
+   ]
+  },
+  {
+   "channel": 8,
+   "role": "drums",
+   "name": "909 Crash",
+   "plugin": null,
+   "sample": "909 Crash.wav",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "CRASH 2",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 2.125,
+   "notes": 6,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    2,
+    1
+   ]
+  },
+  {
+   "channel": 9,
+   "role": "drums",
+   "name": "Grv Snareclap 13",
+   "plugin": null,
+   "sample": "Grv Snareclap 13.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "CLAP",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Soft Clipper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.49,
+   "notes": 56,
+   "clips": 56,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    16,
+    8,
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 10,
+   "role": "drums",
+   "name": "Grv Snareclap 06",
+   "plugin": null,
+   "sample": "Grv Snareclap 06.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "CLAP",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Soft Clipper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.802,
+   "notes": 56,
+   "clips": 56,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    16,
+    8,
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 11,
+   "role": "drums",
+   "name": "Importer Ride",
+   "plugin": null,
+   "sample": "Importer Ride.wav",
+   "preset": null,
+   "insert": 6,
+   "insert_name": "SPLASH CYMBAL",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 80,
+   "clips": 80,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    8,
+    8,
+    1,
+    0,
+    0,
+    8,
+    1,
+    0,
+    16,
+    1
+   ]
+  },
+  {
+   "channel": 12,
+   "role": "drums",
+   "name": "WA_BHB_Kit4_Snap_126BPM",
+   "plugin": null,
+   "sample": "WA_BHB_Kit4_Snap_126BPM_3222812.wav",
+   "preset": null,
+   "insert": 7,
+   "insert_name": "SNAP",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 16,
+   "clips": 16,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    8,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 13,
+   "role": "drums",
+   "name": "808 Snare",
+   "plugin": null,
+   "sample": "808 Snare.wav",
+   "preset": null,
+   "insert": 8,
+   "insert_name": "Snare_08",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.333,
+   "notes": 348,
+   "clips": 348,
+   "group": "Audio",
+   "presence": [
+    0,
+    7,
+    0,
+    0,
+    0,
+    0,
+    7,
+    0,
+    0,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 14,
+   "role": "drums",
+   "name": "Grv Crash 01",
+   "plugin": null,
+   "sample": "Grv Crash 01.wav",
+   "preset": null,
+   "insert": 9,
+   "insert_name": "CRASH",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 10.521,
+   "notes": 2,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    4,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 15,
+   "role": "audio",
+   "name": "SAX 4",
+   "plugin": null,
+   "sample": "ookay thief saxophone.wav",
+   "preset": null,
+   "insert": 17,
+   "insert_name": "SAX",
+   "chain": [
+    "Maximus",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 16,
+   "role": "audio",
+   "name": "SAX 3",
+   "plugin": null,
+   "sample": "ookay thief saxophone.wav",
+   "preset": null,
+   "insert": 17,
+   "insert_name": "SAX",
+   "chain": [
+    "Maximus",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 17,
+   "role": "audio",
+   "name": "SAX 5",
+   "plugin": null,
+   "sample": "ookay thief saxophone.wav",
+   "preset": null,
+   "insert": 17,
+   "insert_name": "SAX",
+   "chain": [
+    "Maximus",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 18,
+   "role": "audio",
+   "name": "SAX",
+   "plugin": null,
+   "sample": "ookay thief saxophone.wav",
+   "preset": null,
+   "insert": 17,
+   "insert_name": "SAX",
+   "chain": [
+    "Maximus",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 64,
+   "group": "Audio",
+   "presence": [
+    0,
+    1,
+    16,
+    1,
+    0,
+    0,
+    1,
+    16,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 19,
+   "role": "bass",
+   "name": "Saw Bass",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": 11,
+   "insert_name": "Saw Bass",
+   "chain": [
+    "Fruity Multiband Compressor",
+    "Fruity Parametric EQ 2",
+    "Gross Beat",
+    "Fruity Parametric EQ 2",
+    "Maximus",
+    "Fruity Limiter"
+   ],
+   "range": [
+    "Eb2",
+    "C#3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.885,
+   "notes": 94,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    16,
+    8,
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    16,
+    0
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     "B2  -   -   -   -   -   -   -   -   .   .   .   Ab2 -   -   -  ",
+     "-   -   -   -   -   -   -   -   C#3 -   -   -   -   -   -   .  "
+    ]
+   }
+  },
+  {
+   "channel": 20,
+   "role": "fx",
+   "name": "White Noise",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": 19,
+   "insert_name": "WhitenoiseThief",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.375,
+   "notes": 210,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    16,
+    8,
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 21,
+   "role": "audio",
+   "name": "SAX 2",
+   "plugin": null,
+   "sample": "ookay thief saxophone.wav",
+   "preset": null,
+   "insert": 17,
+   "insert_name": "SAX",
+   "chain": [
+    "Maximus",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 10,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 22,
+   "role": "audio",
+   "name": "YELP",
+   "plugin": null,
+   "sample": "Dragged sample_678.wav",
+   "preset": null,
+   "insert": 20,
+   "insert_name": "YELP",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Stereo Shaper"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 8,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 26,
+   "role": "fx",
+   "name": "Riser Noise Metal",
+   "plugin": null,
+   "sample": "Riser Noise Metal.wv",
+   "preset": null,
+   "insert": 21,
+   "insert_name": "DOWNSWEEP",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Limiter"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 27,
+   "role": "fx",
+   "name": "Riser Noise",
+   "plugin": null,
+   "sample": "Riser Noise.wv",
+   "preset": null,
+   "insert": 22,
+   "insert_name": "RISER SWEEP",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    1,
+    7,
+    0,
+    0,
+    0,
+    1,
+    7,
+    0,
+    1,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 28,
+   "role": "chords",
+   "name": "Piano Dark",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "General Midi Library / Piano Dark",
+   "insert": 13,
+   "insert_name": "Piano Dark",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Maximus"
+   ],
+   "range": [
+    "Eb2",
+    "C#5"
+   ],
+   "polyphony": 4.26,
+   "median_len_beats": 4.0,
+   "notes": 196,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    7,
+    0,
+    8,
+    7,
+    0,
+    16
+   ],
+   "bar": {
+    "from_bar": 65,
+    "roll": [
+     "B2+Eb3+C#4+F#4+Bb4 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "Ab2+C#4+F#4+Ab4 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 29,
+   "role": "vocal",
+   "name": "Main Vox",
+   "plugin": null,
+   "sample": "ookay thief vox.wav",
+   "preset": null,
+   "insert": 23,
+   "insert_name": "Main Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    16,
+    8,
+    16,
+    8,
+    16,
+    8,
+    8,
+    1,
+    2,
+    8,
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 30,
+   "role": "vocal",
+   "name": "VOCAL PITCHED #2",
+   "plugin": null,
+   "sample": "Dragged sample_677.wav",
+   "preset": null,
+   "insert": 18,
+   "insert_name": "VOCAL PITCHED",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Stereo Shaper",
+    "Maximus",
+    "Fruity Free Filter"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 47,
+   "group": "Audio",
+   "presence": [
+    0,
+    2,
+    1,
+    2,
+    1,
+    0,
+    2,
+    1,
+    2,
+    2,
+    5,
+    1
+   ]
+  },
+  {
+   "channel": 31,
+   "role": "vocal",
+   "name": "VOCAL PITCHED",
+   "plugin": null,
+   "sample": "Dragged sample_677.wav",
+   "preset": null,
+   "insert": 18,
+   "insert_name": "VOCAL PITCHED",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Stereo Shaper",
+    "Maximus",
+    "Fruity Free Filter"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 28,
+   "group": "Audio",
+   "presence": [
+    1,
+    7,
+    1,
+    7,
+    0,
+    1,
+    7,
+    1,
+    8,
+    8,
+    15,
+    0
+   ]
+  },
+  {
+   "channel": 33,
+   "role": "audio",
+   "name": "CUTS",
+   "plugin": null,
+   "sample": "Untitled project - _4 (consolidated)_2.wav",
+   "preset": null,
+   "insert": 14,
+   "insert_name": "CUTS",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 3",
+    "Maximus",
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2",
+    "Fruity Limiter"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 142,
+   "group": "Audio",
+   "presence": [
+    16,
+    7,
+    16,
+    8,
+    16,
+    8,
+    8,
+    16,
+    8,
+    8,
+    16,
+    16
+   ]
+  },
+  {
+   "channel": 35,
+   "role": "vocal",
+   "name": "PITCHED VOX",
+   "plugin": null,
+   "sample": "Dragged sample_699 #2 (consolidated).wav",
+   "preset": null,
+   "insert": 25,
+   "insert_name": "PITCHED VOX",
+   "chain": [
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    9,
+    8,
+    16,
+    8,
+    16,
+    8,
+    7,
+    0,
+    2,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 36,
+   "role": "audio",
+   "name": "FALSETTO #2",
+   "plugin": null,
+   "sample": "Dragged sample_675 (consolidated)_2.wav",
+   "preset": null,
+   "insert": 26,
+   "insert_name": "FALSETTO",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    2,
+    8,
+    7,
+    0,
+    0,
+    3,
+    8,
+    7,
+    2,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 37,
+   "role": "vocal",
+   "name": "MAIN VOX",
+   "plugin": null,
+   "sample": "Dragged sample_699 (consolidated)_4.wav",
+   "preset": null,
+   "insert": 24,
+   "insert_name": "Main Vox",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Multiband Compressor",
+    "Fruity Stereo Enhancer",
+    "Maximus",
+    "Fruity Chorus",
+    "Fruity Reeverb 2",
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 9,
+   "group": "Audio",
+   "presence": [
+    9,
+    8,
+    16,
+    8,
+    16,
+    8,
+    7,
+    0,
+    2,
+    7,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 38,
+   "role": "vocal",
+   "name": "MAIN VOX #2",
+   "plugin": null,
+   "sample": "Dragged sample_699 (consolidated)_4.wav",
+   "preset": null,
+   "insert": 24,
+   "insert_name": "Main Vox",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Multiband Compressor",
+    "Fruity Stereo Enhancer",
+    "Maximus",
+    "Fruity Chorus",
+    "Fruity Reeverb 2",
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 2,
+   "group": "Audio",
+   "presence": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 39,
+   "role": "audio",
+   "name": "FALSETTO",
+   "plugin": null,
+   "sample": "Dragged sample_675 (consolidated)_3.wav",
+   "preset": null,
+   "insert": 26,
+   "insert_name": "FALSETTO",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 42,
+   "role": "lead",
+   "name": "Tinke Bell",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "General Midi Library / Tinke Bell",
+   "insert": 15,
+   "insert_name": "Tinke Bell",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Maximus",
+    "Fruity Chorus",
+    "Fruity Balance"
+   ],
+   "range": [
+    "Bb4",
+    "F#7"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 0.083,
+   "notes": 1920,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    12,
+    0,
+    0,
+    0,
+    0,
+    12,
+    0,
+    0,
+    12,
+    0
+   ],
+   "bar": {
+    "from_bar": 27,
+    "roll": [
+     "Bb4+Bb6+F#5+F#7+F#5+F#7 F#5+F#7 F#5+F#7+F5+F7+F5+F7 F5+F7 F5+F7+C#5+C#7+C#5+C#7 C#5+C#7 C#5+C#7+Bb4+Bb6+Bb4+Bb6 Bb4+Bb6 Bb4+Bb6+F#5+F#7+F#5+F#7 F#5+F#7 F#5+F#7+F5+F7+F5+F7 F5+F7 F5+F7+C#5+C#7+C#5+C#7 C#5+C#7 C#5+C#7+Bb4+Bb6+Bb4+Bb6 Bb4+Bb6",
+     "Bb4+Bb6+F#5+F#7+F#5+F#7 F#5+F#7 F#5+F#7+F5+F7+F5+F7 F5+F7 F5+F7+C#5+C#7+C#5+C#7 C#5+C#7 C#5+C#7+Bb4+Bb6+Bb4+Bb6 Bb4+Bb6 Bb4+Bb6+F#5+F#7+F#5+F#7 F#5+F#7 F#5+F#7+F5+F7+F5+F7 F5+F7 F5+F7+C#5+C#7+C#5+C#7 C#5+C#7 C#5+C#7+Bb4+Bb6+Bb4+Bb6 Bb4+Bb6"
+    ]
+   }
+  },
+  {
+   "channel": 44,
+   "role": "audio",
+   "name": "CUTLAYER2 (consolidated) (consolidated)",
+   "plugin": null,
+   "sample": "CUTLAYER2 (consolidated) (consolidated).wav",
+   "preset": null,
+   "insert": 16,
+   "insert_name": "CUTLAYER2 (consolidated)",
+   "chain": [
+    "Fruity Free Filter",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 48,
+   "group": "Audio",
+   "presence": [
+    8,
+    0,
+    16,
+    8,
+    8,
+    0,
+    7,
+    16,
+    8,
+    7,
+    16,
+    0
+   ]
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Soft Clipper",
+     "name": "Fruity Soft Clipper"
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "KICK",
+   "volume_db": -3.5,
+   "to": [
+    0,
+    11,
+    12,
+    14,
+    21
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 2,
+   "name": "TOMS",
+   "volume_db": -1.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "HI TOM",
+   "volume_db": -5.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "CRASH 2",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "name": "CLAP",
+   "volume_db": -1.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Soft Clipper",
+     "name": "Fruity Soft Clipper"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "SPLASH CYMBAL",
+   "volume_db": -8.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "SNAP",
+   "volume_db": -5.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "Snare_08",
+   "volume_db": -2.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "CRASH",
+   "volume_db": -7.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 10,
+   "name": "Synth Bass",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 11,
+   "name": "Saw Bass",
+   "volume_db": -3.6,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "BELL",
+   "volume_db": -6.9,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Enhancer",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Piano Dark",
+   "volume_db": -1.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "name": "CUTS",
+   "volume_db": -4.3,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    24
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Tinke Bell",
+   "volume_db": -5.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "name": "CUTLAYER2 (consolidated)",
+   "volume_db": -7.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Free Filter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "name": "SAX",
+   "volume_db": -2.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "VOCAL PITCHED",
+   "volume_db": -2.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Free Filter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "name": "WhitenoiseThief",
+   "volume_db": -2.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "name": "YELP",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "DOWNSWEEP",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "name": "RISER SWEEP",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 23,
+   "name": "Main Vocal",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 24,
+   "name": "Main Vox",
+   "volume_db": -10.3,
+   "to": [
+    0,
+    14,
+    27
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Enhancer",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "name": "PITCHED VOX",
+   "volume_db": -6.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "name": "FALSETTO",
+   "volume_db": -3.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "name": "",
+   "volume_db": -7.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    24
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    },
+    {
+     "plugin": "Vocodex",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Stereo Enhancer",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": "2 Fruity Limiter"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "1 Fruity Parametric EQ 2"
+    }
+   ]
+  }
+ ],
+ "automation": [
+  {
+   "name": "Volume Duck",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "BELL",
+   "channel": null,
+   "points": 3,
+   "beats": 2.0,
+   "range": [
+    0.573,
+    0.8
+   ]
+  },
+  {
+   "name": "GROSS BEAT - Saw Bass",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "Saw Bass",
+   "channel": null,
+   "points": 7,
+   "beats": 461.01,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "CRASH REVERB",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "CRASH 2",
+   "channel": null,
+   "points": 10,
+   "beats": 437.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "SNARE PITCH",
+   "kind": "channel",
+   "plugin": null,
+   "param": "pitch",
+   "insert": null,
+   "channel": "808 Snare",
+   "points": 4,
+   "beats": 32.0,
+   "range": [
+    0.5,
+    1.0
+   ]
+  },
+  {
+   "name": "MELODICS #2",
+   "kind": "plugin",
+   "plugin": "Fruity Free Filter",
+   "param": 1,
+   "insert": "CUTLAYER2 (consolidated)",
+   "channel": null,
+   "points": 4,
+   "beats": 546.26,
+   "range": [
+    0.053,
+    1.0
+   ]
+  },
+  {
+   "name": "TEMPO",
+   "kind": "channel",
+   "plugin": null,
+   "param": 5,
+   "insert": null,
+   "channel": null,
+   "points": 3,
+   "beats": 576.0,
+   "range": [
+    0.0,
+    0.75
+   ]
+  },
+  {
+   "name": "Free Filter - VOCAL PITCHED - Frequency",
+   "kind": "plugin",
+   "plugin": "Fruity Free Filter",
+   "param": 1,
+   "insert": "VOCAL PITCHED",
+   "channel": null,
+   "points": 12,
+   "beats": 523.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Tinke Bell - Volume",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "Tinke Bell",
+   "channel": null,
+   "points": 3,
+   "beats": 2.0,
+   "range": [
+    0.573,
+    0.8
+   ]
+  }
+ ],
+ "automation_summary": {
+  "Fruity Balance": 2,
+  "mixer": 2,
+  "channel": 2,
+  "Fruity Free Filter": 2
+ },
+ "controllers": [],
+ "plugins": {
+  "3x Osc": 2,
+  "FLEX": 2,
+  "Harmless": 1
+ },
+ "effects": {
+  "Fruity Parametric EQ 2": 27,
+  "Fruity Reeverb 2": 13,
+  "Maximus": 9,
+  "Fruity Limiter": 9,
+  "Fruity Multiband Compressor": 3,
+  "Fruity Stereo Enhancer": 3,
+  "Fruity Soft Clipper": 2,
+  "Fruity Balance": 2,
+  "Fruity Chorus": 2,
+  "Fruity Free Filter": 2,
+  "Fruity Stereo Shaper": 2,
+  "Gross Beat": 1,
+  "Fruity Delay 3": 1,
+  "Vocodex": 1
+ },
+ "muted_clips": 8,
+ "muted_parts": [],
+ "bounces": [],
+ "audio_key": {
+  "key": "F# major",
+  "score": 0.9061,
+  "margin": 0.3242,
+  "runner_up": "F# minor"
+ }
+}

@@ -1,0 +1,3116 @@
+{
+ "file": "DEDZII - NIGHT TERROR.flp",
+ "title": "NIGHT TERROR",
+ "artists": "DEDZII",
+ "genre": "Electro Industrial",
+ "fl_version": "24.2.99.4844",
+ "ppq": 96,
+ "bpm": 108.0,
+ "bars": 100,
+ "seconds": 222.2,
+ "key": {
+  "key": "E major",
+  "tonic": 4,
+  "mode": "major",
+  "confidence": 0.645,
+  "runner_up": "E minor"
+ },
+ "roles": {
+  "bass": 4,
+  "drums": 14,
+  "other": 2,
+  "fx": 12,
+  "audio": 4,
+  "arp": 1,
+  "vocal": 1
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 12,
+   "name": "Intro",
+   "energy": 0.33,
+   "roles": [
+    "audio",
+    "bass"
+   ]
+  },
+  {
+   "start_bar": 13,
+   "bars": 16,
+   "name": "V1",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 29,
+   "bars": 8,
+   "name": "Drop 1",
+   "energy": 0.53,
+   "roles": [
+    "audio",
+    "bass",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 37,
+   "bars": 16,
+   "name": "V2",
+   "energy": 0.79,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx"
+   ]
+  },
+  {
+   "start_bar": 53,
+   "bars": 8,
+   "name": "Mid 8",
+   "energy": 0.5,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx"
+   ]
+  },
+  {
+   "start_bar": 61,
+   "bars": 8,
+   "name": "Mid 8 - Ramp",
+   "energy": 0.84,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "fx"
+   ]
+  },
+  {
+   "start_bar": 69,
+   "bars": 4,
+   "name": "Drop 2",
+   "energy": 0.22,
+   "roles": [
+    "audio",
+    "bass"
+   ]
+  },
+  {
+   "start_bar": 73,
+   "bars": 4,
+   "name": "Re-Intro",
+   "energy": 0.48,
+   "roles": [
+    "audio",
+    "bass",
+    "fx",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 77,
+   "bars": 16,
+   "name": "Chrishend",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 93,
+   "bars": 8,
+   "name": "EndZII",
+   "energy": 0.22,
+   "roles": [
+    "audio",
+    "bass",
+    "drums"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 21
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 3
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "C#m",
+   "roman": "vi",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": "C#m",
+   "roman": "vi",
+   "bars": 8
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 16
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "C",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "E5",
+   "roman": "I5",
+   "bars": 1
+  },
+  {
+   "chord": "E",
+   "roman": "I",
+   "bars": 1
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 4
+  }
+ ],
+ "markers": [
+  {
+   "bar": 174763.67,
+   "name": " "
+  },
+  {
+   "bar": 1.0,
+   "name": "Intro"
+  },
+  {
+   "bar": 13.0,
+   "name": "V1"
+  },
+  {
+   "bar": 29.0,
+   "name": "Drop 1"
+  },
+  {
+   "bar": 37.0,
+   "name": "V2"
+  },
+  {
+   "bar": 53.0,
+   "name": "Mid 8"
+  },
+  {
+   "bar": 61.0,
+   "name": "Mid 8 - Ramp"
+  },
+  {
+   "bar": 69.0,
+   "name": "Drop 2"
+  },
+  {
+   "bar": 73.0,
+   "name": "Re-Intro"
+  },
+  {
+   "bar": 77.0,
+   "name": "Chrishend"
+  },
+  {
+   "bar": 93.0,
+   "name": "EndZII"
+  }
+ ],
+ "drums": [
+  {
+   "voice": "clap",
+   "channel": 5,
+   "name": "HouseGen Clap 02 #2",
+   "pattern": "..o.X.......X...",
+   "hits_per_bar": 2.19,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 48
+  },
+  {
+   "voice": "clap",
+   "channel": 34,
+   "name": "Attack Clap 10",
+   "pattern": "..o.X.......X...",
+   "hits_per_bar": 2.17,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 48
+  },
+  {
+   "voice": "clap",
+   "channel": 35,
+   "name": "Attack Clap 08",
+   "pattern": "..o.X.......X...",
+   "hits_per_bar": 2.17,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 48
+  },
+  {
+   "voice": "clap",
+   "channel": 43,
+   "name": "MA Halloween Clap",
+   "pattern": "..o.X.......X...",
+   "hits_per_bar": 2.17,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 48
+  },
+  {
+   "voice": "hat",
+   "channel": 1,
+   "name": "Hat 184 Closed Hat 02",
+   "pattern": "XXXXXXXXXXXXXXXX",
+   "hits_per_bar": 17.68,
+   "late_16ths": -0.004,
+   "velocity": [
+    83,
+    100
+   ],
+   "bars": 44
+  },
+  {
+   "voice": "hat",
+   "channel": 15,
+   "name": "MA Sanctuary Hat 01",
+   "pattern": "...............X",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 15
+  },
+  {
+   "voice": "hat",
+   "channel": 39,
+   "name": "MA NorthernLights CHat",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 12
+  },
+  {
+   "voice": "kick",
+   "channel": 4,
+   "name": "Minimal Kick 36",
+   "pattern": "X...X...X...X...",
+   "hits_per_bar": 4.19,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 69
+  },
+  {
+   "voice": "kick",
+   "channel": 6,
+   "name": "Minimal Kick 37",
+   "pattern": "............x.o.",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 12
+  },
+  {
+   "voice": "kick",
+   "channel": 16,
+   "name": "MA FrightNight Kick",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 4
+  },
+  {
+   "voice": "ohat",
+   "channel": 40,
+   "name": "HouseGen OHat 02",
+   "pattern": "X...............",
+   "hits_per_bar": 1.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 48
+  },
+  {
+   "voice": "ohat",
+   "channel": 28,
+   "name": "Collider Fifth OHat 01",
+   "pattern": "X........X......",
+   "hits_per_bar": 1.88,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 8
+  },
+  {
+   "voice": "snare",
+   "channel": 33,
+   "name": "Grv Snareclap 25",
+   "pattern": "....X.......X...",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 48
+  },
+  {
+   "voice": "snare",
+   "channel": 44,
+   "name": "FPC Snare 8",
+   "pattern": "....X.......X...",
+   "hits_per_bar": 2.0,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 48
+  }
+ ],
+ "kit": {
+  "hat": [
+   {
+    "name": "Hat 184 Closed Hat 02",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kits\\Jayce Lewis\\JL Hat 184 Closed Hat 02.flac",
+    "hits": 778
+   },
+   {
+    "name": "MA Sanctuary Hat 01",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\MA Sanctuary Hat 01.wv",
+    "hits": 15
+   },
+   {
+    "name": "MA NorthernLights CHat",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\MA NorthernLights CHat.wv",
+    "hits": 12
+   }
+  ],
+  "kick": [
+   {
+    "name": "Minimal Kick 36",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Minimal Kick 36.wav",
+    "hits": 289
+   },
+   {
+    "name": "Minimal Kick 37",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Kicks\\Minimal Kick 37.wav",
+    "hits": 12
+   },
+   {
+    "name": "MA FrightNight Kick",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Kicks\\MA FrightNight Kick.wv",
+    "hits": 4
+   }
+  ],
+  "clap": [
+   {
+    "name": "HouseGen Clap 02 #2",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\HouseGen Clap 02.wv",
+    "hits": 105
+   },
+   {
+    "name": "Attack Clap 10",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 10.wv",
+    "hits": 104
+   },
+   {
+    "name": "Attack Clap 08",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Claps\\Attack Clap 08.wv",
+    "hits": 104
+   }
+  ],
+  "ohat": [
+   {
+    "name": "HouseGen OHat 02",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\HouseGen OHat 02.wv",
+    "hits": 48
+   },
+   {
+    "name": "Collider Fifth OHat 01",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums (ModeAudio)\\Hi Hats\\Collider Fifth OHat 01.wv",
+    "hits": 15
+   }
+  ],
+  "snare": [
+   {
+    "name": "Grv Snareclap 25",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\Grv Snareclap 25.wav",
+    "hits": 96
+   },
+   {
+    "name": "FPC Snare 8",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Packs\\Drums\\Snares\\FPC Snare 8.wav",
+    "hits": 96
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "bass",
+   "name": "DEDZII TERROR",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 10,
+   "insert_name": "DEDZII TERROR",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Maximus",
+    "Fruity Limiter",
+    "Gross Beat",
+    "Fruity Parametric EQ 2",
+    "Gross Beat",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "E2",
+    "F3"
+   ],
+   "polyphony": 1.06,
+   "median_len_beats": 0.25,
+   "notes": 1254,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    16,
+    8,
+    16,
+    0,
+    8,
+    0,
+    4,
+    16,
+    4
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "E2  C3  E2  E2  Ab2 E2  .   E2+G2 E2+G2+E2 C3  E2  E2  C#3 E2  E2  E2 ",
+     "E2  C3  E2  E2  Ab2 E2  .   E2+G2 E2+G2+E2 C3  E2  E2  C#3 E2  E2  E2 "
+    ]
+   }
+  },
+  {
+   "channel": 1,
+   "role": "drums",
+   "name": "Hat 184 Closed Hat 02",
+   "plugin": null,
+   "sample": "JL Hat 184 Closed Hat 02.flac",
+   "preset": null,
+   "insert": 7,
+   "insert_name": "Hats",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Flangus",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "Fruity Soft Clipper"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.125,
+   "notes": 778,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    8,
+    0,
+    8,
+    8,
+    0,
+    0,
+    16,
+    4
+   ]
+  },
+  {
+   "channel": 4,
+   "role": "drums",
+   "name": "Minimal Kick 36",
+   "plugin": null,
+   "sample": "Minimal Kick 36.wav",
+   "preset": null,
+   "insert": 2,
+   "insert_name": "Kick Sub",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Transient Processor",
+    "Fruity WaveShaper",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.03,
+   "median_len_beats": 0.875,
+   "notes": 289,
+   "clips": 289,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    0,
+    16,
+    8,
+    8,
+    0,
+    0,
+    16,
+    5
+   ]
+  },
+  {
+   "channel": 5,
+   "role": "drums",
+   "name": "HouseGen Clap 02 #2",
+   "plugin": null,
+   "sample": "HouseGen Clap 02.wv",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "Snare",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Spreader",
+    "Fruity Blood Overdrive",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.292,
+   "notes": 105,
+   "clips": 105,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    1,
+    16,
+    1,
+    0,
+    0,
+    0,
+    16,
+    1
+   ]
+  },
+  {
+   "channel": 6,
+   "role": "drums",
+   "name": "Minimal Kick 37",
+   "plugin": null,
+   "sample": "Minimal Kick 37.wav",
+   "preset": null,
+   "insert": 3,
+   "insert_name": "Extra Kick",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.844,
+   "notes": 12,
+   "clips": 12,
+   "group": "Audio",
+   "presence": [
+    0,
+    3,
+    0,
+    4,
+    2,
+    0,
+    0,
+    0,
+    3,
+    1
+   ]
+  },
+  {
+   "channel": 7,
+   "role": "bass",
+   "name": "Crushspeak Now",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Olbaid Compendium / Crushspeak Now",
+   "insert": 19,
+   "insert_name": "Croak",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Soundgoodizer",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Delay 2"
+   ],
+   "range": [
+    "Ab0",
+    "F2"
+   ],
+   "polyphony": 1.02,
+   "median_len_beats": 0.25,
+   "notes": 396,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    4,
+    8,
+    0,
+    0,
+    7,
+    8,
+    4,
+    4,
+    6,
+    0
+   ],
+   "bar": {
+    "from_bar": 21,
+    "roll": [
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   E1  E1  E1 ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   E1+E2 -   E1  .  "
+    ]
+   }
+  },
+  {
+   "channel": 12,
+   "role": "bass",
+   "name": "Square Sub",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 11,
+   "insert_name": "Square Sub",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Soft Clipper",
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "EQUO",
+    "Fruity Multiband Compressor",
+    "Fruity Parametric EQ 2",
+    "Effector"
+   ],
+   "range": [
+    "E2",
+    "F3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 753,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    4,
+    16,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0,
+    16,
+    0
+   ],
+   "bar": {
+    "from_bar": 9,
+    "roll": [
+     "E2  C3  E2  E2  Ab2 E2  .   E2  E2  C3  E2  E2  C#3 E2  E2  E2 ",
+     "E2  C3  E2  E2  Ab2 E2  .   E2  E2  C3  E2  E2  C#3 E2  E2  E2 "
+    ]
+   }
+  },
+  {
+   "channel": 13,
+   "role": "fx",
+   "name": "Gill SFX 2",
+   "plugin": null,
+   "sample": "Gill SFX 2.wav",
+   "preset": null,
+   "insert": 20,
+   "insert_name": "Gill SFX 2",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 3,
+   "group": "Audio",
+   "presence": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 14,
+   "role": "fx",
+   "name": "Smigen Boom SFX",
+   "plugin": null,
+   "sample": "Smigen Boom SFX.wav",
+   "preset": null,
+   "insert": 21,
+   "insert_name": "Smigen Boom SFX",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 15,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 15,
+   "role": "drums",
+   "name": "MA Sanctuary Hat 01",
+   "plugin": null,
+   "sample": "MA Sanctuary Hat 01.wv",
+   "preset": null,
+   "insert": 15,
+   "insert_name": "Hyper RagsToRiches Cymbal",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 2.312,
+   "notes": 15,
+   "clips": 15,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 16,
+   "role": "drums",
+   "name": "MA FrightNight Kick",
+   "plugin": null,
+   "sample": "MA FrightNight Kick.wv",
+   "preset": null,
+   "insert": 22,
+   "insert_name": "MA FrightNight Kick",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.406,
+   "notes": 4,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 17,
+   "role": "fx",
+   "name": "Riser Laboratory",
+   "plugin": null,
+   "sample": "Riser Laboratory.wv",
+   "preset": null,
+   "insert": 23,
+   "insert_name": "Riser Laboratory",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 18,
+   "role": "fx",
+   "name": "SFX SubBass Drop",
+   "plugin": null,
+   "sample": "SFX SubBass Drop.wav",
+   "preset": null,
+   "insert": 26,
+   "insert_name": "SFX SubBass Drop",
+   "chain": [
+    "Fruity Stereo Shaper",
+    "Fruity Flangus",
+    "Maximus"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 19,
+   "role": "fx",
+   "name": "Riser Yoyo",
+   "plugin": null,
+   "sample": "Riser Yoyo.wv",
+   "preset": null,
+   "insert": 24,
+   "insert_name": "Riser Yoyo",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 20,
+   "role": "fx",
+   "name": "Hyper StadiumHop Needler FX 02",
+   "plugin": null,
+   "sample": "Hyper StadiumHop Needler FX 02.wv",
+   "preset": null,
+   "insert": 25,
+   "insert_name": "Hyper StadiumHop Needler FX 02",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 18,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 21,
+   "role": "fx",
+   "name": "Hyper HouseParty Ghost FX",
+   "plugin": null,
+   "sample": "Hyper HouseParty Ghost FX.wv",
+   "preset": null,
+   "insert": 27,
+   "insert_name": "Hyper HouseParty Ghost FX",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 23,
+   "role": "fx",
+   "name": "Riser Flangy",
+   "plugin": null,
+   "sample": "Riser Flangy.wv",
+   "preset": null,
+   "insert": 28,
+   "insert_name": "Riser Flangy",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 24,
+   "role": "fx",
+   "name": "Riser Flangy #2",
+   "plugin": null,
+   "sample": "Riser Flangy.wv",
+   "preset": null,
+   "insert": 29,
+   "insert_name": "Riser Flangy #2",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 25,
+   "role": "audio",
+   "name": "Power ShortKick 17 #2",
+   "plugin": null,
+   "sample": "Power ShortKick 17.wv",
+   "preset": null,
+   "insert": 1,
+   "insert_name": "Kick",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Transient Processor",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 272,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    8,
+    16,
+    0,
+    8,
+    1,
+    0,
+    16,
+    5
+   ]
+  },
+  {
+   "channel": 26,
+   "role": "bass",
+   "name": "808 Flattened",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Mobile Tuned 808 Bass / 808 Flattened",
+   "insert": 13,
+   "insert_name": "808 Flattened",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Effector",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "E2",
+    "F3"
+   ],
+   "polyphony": 1.05,
+   "median_len_beats": 0.25,
+   "notes": 552,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    16,
+    4,
+    16,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 13,
+    "roll": [
+     "E2  C3  E2  E2  Ab2 E2  .   E2+G2 E2+G2+E2 C3  E2  E2  C#3 E2  E2  E2 ",
+     "E2  C3  E2  E2  Ab2 E2  .   E2+G2 E2+G2+E2 C3  E2  E2  C#3 E2  E2  E2 "
+    ]
+   }
+  },
+  {
+   "channel": 27,
+   "role": "arp",
+   "name": "Dedziiboost",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": 12,
+   "insert_name": "DEDZIIBOOST",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Effector",
+    "Fruity Parametric EQ 2",
+    "Fruity Blood Overdrive",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2",
+    "EQUO",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "E3",
+    "F4"
+   ],
+   "polyphony": 1.06,
+   "median_len_beats": 0.25,
+   "notes": 980,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    16,
+    0,
+    16,
+    8,
+    8,
+    0,
+    0,
+    16,
+    0
+   ],
+   "bar": {
+    "from_bar": 13,
+    "roll": [
+     "E3  C4  E3  E3  Ab3 E3  .   E3+G3 E3+G3+E3 C4  E3  E3  C#4 E3  E3  E3 ",
+     "E3  C4  E3  E3  Ab3 E3  .   E3+G3 E3+G3+E3 C4  E3  E3  C#4 E3  E3  E3 "
+    ]
+   }
+  },
+  {
+   "channel": 28,
+   "role": "drums",
+   "name": "Collider Fifth OHat 01",
+   "plugin": null,
+   "sample": "Collider Fifth OHat 01.wv",
+   "preset": null,
+   "insert": 33,
+   "insert_name": "Collider Fifth OHat 01",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.906,
+   "notes": 15,
+   "clips": 15,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 30,
+   "role": "fx",
+   "name": "Riser Noise Glitchy",
+   "plugin": null,
+   "sample": "Riser Noise Glitchy.wv",
+   "preset": null,
+   "insert": 34,
+   "insert_name": "Riser Noise Glitchy",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 18,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    8,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 31,
+   "role": "fx",
+   "name": "Riser Noise Glitchy #2",
+   "plugin": null,
+   "sample": "Riser Noise Glitchy.wv",
+   "preset": null,
+   "insert": 41,
+   "insert_name": "Riser Noise Glitchy #2",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Squeeze",
+    "Distructor",
+    "LuxeVerb"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 16,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 32,
+   "role": "vocal",
+   "name": "Riser Vocal",
+   "plugin": null,
+   "sample": "Riser Vocal.wv",
+   "preset": null,
+   "insert": 35,
+   "insert_name": "Riser Vocal",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 5,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 33,
+   "role": "drums",
+   "name": "Grv Snareclap 25",
+   "plugin": null,
+   "sample": "Grv Snareclap 25.wav",
+   "preset": null,
+   "insert": 5,
+   "insert_name": "Grv Snareclap 25",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Multiband Compressor",
+    "Fruity Reeverb 2",
+    "Fruity Soft Clipper",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.406,
+   "notes": 96,
+   "clips": 96,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 34,
+   "role": "drums",
+   "name": "Attack Clap 10",
+   "plugin": null,
+   "sample": "Attack Clap 10.wv",
+   "preset": null,
+   "insert": 6,
+   "insert_name": "Attack Clap 08",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Transient Processor",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.635,
+   "notes": 104,
+   "clips": 104,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 35,
+   "role": "drums",
+   "name": "Attack Clap 08",
+   "plugin": null,
+   "sample": "Attack Clap 08.wv",
+   "preset": null,
+   "insert": 6,
+   "insert_name": "Attack Clap 08",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Transient Processor",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Limiter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.073,
+   "notes": 104,
+   "clips": 104,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    1,
+    16,
+    1,
+    0,
+    0,
+    0,
+    16,
+    1
+   ]
+  },
+  {
+   "channel": 36,
+   "role": "audio",
+   "name": "BlackHole_Hit02",
+   "plugin": null,
+   "sample": "BlackHole_Hit02.ogg",
+   "preset": null,
+   "insert": 36,
+   "insert_name": "BlackHole_Hit02",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 37,
+   "role": "fx",
+   "name": "Burgundy_Rise",
+   "plugin": null,
+   "sample": "Burgundy_Rise.ogg",
+   "preset": null,
+   "insert": 33,
+   "insert_name": "Collider Fifth OHat 01",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 1,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 39,
+   "role": "drums",
+   "name": "MA NorthernLights CHat",
+   "plugin": null,
+   "sample": "MA NorthernLights CHat.wv",
+   "preset": null,
+   "insert": 39,
+   "insert_name": "MA NorthernLights CHat",
+   "chain": [],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 2.771,
+   "notes": 12,
+   "clips": 12,
+   "group": "Audio",
+   "presence": [
+    0,
+    4,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0
+   ]
+  },
+  {
+   "channel": 40,
+   "role": "drums",
+   "name": "HouseGen OHat 02",
+   "plugin": null,
+   "sample": "HouseGen OHat 02.wv",
+   "preset": null,
+   "insert": 9,
+   "insert_name": "HouseGen OHat 02",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Spreader"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.802,
+   "notes": 48,
+   "clips": 48,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0,
+    16,
+    0
+   ]
+  },
+  {
+   "channel": 41,
+   "role": "audio",
+   "name": "IMP Krg -  Fluttering Empty Room",
+   "plugin": null,
+   "sample": "IMP Krg -  Fluttering Empty Room.wv",
+   "preset": null,
+   "insert": 14,
+   "insert_name": "MA Halloween Clap",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 24,
+   "group": "Audio",
+   "presence": [
+    0,
+    8,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0
+   ]
+  },
+  {
+   "channel": 42,
+   "role": "audio",
+   "name": "IMP warehouse_hall_dark_e",
+   "plugin": null,
+   "sample": "IMP warehouse_hall_dark_e.wv",
+   "preset": null,
+   "insert": 40,
+   "insert_name": "IMP warehouse_hall_dark_e",
+   "chain": [],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 12,
+   "group": "Audio",
+   "presence": [
+    0,
+    4,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0
+   ]
+  },
+  {
+   "channel": 43,
+   "role": "drums",
+   "name": "MA Halloween Clap",
+   "plugin": null,
+   "sample": "MA Halloween Clap.wv",
+   "preset": null,
+   "insert": 14,
+   "insert_name": "MA Halloween Clap",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.823,
+   "notes": 104,
+   "clips": 104,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    1,
+    16,
+    1,
+    0,
+    0,
+    0,
+    16,
+    1
+   ]
+  },
+  {
+   "channel": 44,
+   "role": "drums",
+   "name": "FPC Snare 8",
+   "plugin": null,
+   "sample": "FPC Snare 8.wav",
+   "preset": null,
+   "insert": 8,
+   "insert_name": "FPC Snare 8",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Compressor",
+    "Fruity Parametric EQ 2",
+    "EQUO",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.052,
+   "notes": 96,
+   "clips": 96,
+   "group": "Audio",
+   "presence": [
+    0,
+    16,
+    1,
+    16,
+    1,
+    0,
+    0,
+    0,
+    16,
+    1
+   ]
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Emphasis",
+     "name": null
+    },
+    {
+     "plugin": "Fruity HTML NoteBook",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "Kick",
+   "volume_db": -18.1,
+   "to": [
+    0,
+    10,
+    11
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Kick Sub",
+   "volume_db": -8.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "Extra Kick",
+   "volume_db": -6.1,
+   "to": [
+    0,
+    10,
+    11
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "Snare",
+   "volume_db": -16.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "name": "Grv Snareclap 25",
+   "volume_db": -8.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Soft Clipper",
+     "name": "Fruity Soft Clipper"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "Attack Clap 08",
+   "volume_db": -12.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Transient Processor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "Hats",
+   "volume_db": -12.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Deep chorus"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Soft Clipper",
+     "name": "Fruity Soft Clipper"
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "FPC Snare 8",
+   "volume_db": -26.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "EQUO",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "HouseGen OHat 02",
+   "volume_db": -23.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "DEDZII TERROR",
+   "volume_db": -2.3,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    3
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": "Tape limiter"
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "name": "Square Sub",
+   "volume_db": -19.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    3
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Soft Clipper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Limiter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "EQUO",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Multiband Compressor",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Effector",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "DEDZIIBOOST",
+   "volume_db": -19.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Effector",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "EQUO",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "808 Flattened",
+   "volume_db": -10.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Effector",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "name": "MA Halloween Clap",
+   "volume_db": -Infinity,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Hyper RagsToRiches Cymbal",
+   "volume_db": -2.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "name": "PoiZone",
+   "volume_db": -5.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": "Deep chorus"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "name": "PoiZone",
+   "volume_db": -12.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 18,
+   "name": "HouseGen Clap 02 #2",
+   "volume_db": -21.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 19,
+   "name": "Croak",
+   "volume_db": -11.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Blood Overdrive",
+     "name": null
+    },
+    {
+     "plugin": "Soundgoodizer",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Delay 2",
+     "name": "Fruity Delay 2"
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "name": "Gill SFX 2",
+   "volume_db": -19.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 21,
+   "name": "Smigen Boom SFX",
+   "volume_db": -17.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "name": "MA FrightNight Kick",
+   "volume_db": -8.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 23,
+   "name": "Riser Laboratory",
+   "volume_db": -28.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "name": "Riser Yoyo",
+   "volume_db": -10.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 25,
+   "name": "Hyper StadiumHop Needler FX 02",
+   "volume_db": -25.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 26,
+   "name": "SFX SubBass Drop",
+   "volume_db": -13.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Flangus",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "name": "Hyper HouseParty Ghost FX",
+   "volume_db": -17.1,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 28,
+   "name": "Riser Flangy",
+   "volume_db": -16.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "name": "Riser Flangy #2",
+   "volume_db": -20.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "name": "A Little Slyde",
+   "volume_db": -10.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 31,
+   "name": "Tom 2 HQ Jazz #8",
+   "volume_db": -6.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 32,
+   "name": " Tom Direct Low 06",
+   "volume_db": -19.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "name": "Collider Fifth OHat 01",
+   "volume_db": -21.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "name": "Riser Noise Glitchy",
+   "volume_db": -16.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "name": "Riser Vocal",
+   "volume_db": -22.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 36,
+   "name": "BlackHole_Hit02",
+   "volume_db": -12.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 37,
+   "name": "Burgundy_Rise",
+   "volume_db": -21.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 38,
+   "name": "IMP forest_ravine",
+   "volume_db": -24.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 39,
+   "name": "MA NorthernLights CHat",
+   "volume_db": -21.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 40,
+   "name": "IMP warehouse_hall_dark_e",
+   "volume_db": -11.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 41,
+   "name": "Riser Noise Glitchy #2",
+   "volume_db": -11.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Fruity Parametric EQ 2"
+    },
+    {
+     "plugin": "Fruity Squeeze",
+     "name": null
+    },
+    {
+     "plugin": "Distructor",
+     "name": null
+    },
+    {
+     "plugin": "LuxeVerb",
+     "name": null
+    }
+   ]
+  }
+ ],
+ "automation": [
+  {
+   "name": "Croak - HighPass",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "Crushspeak Now",
+   "points": 8,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    0.632
+   ]
+  },
+  {
+   "name": "Croak - HighPass #3",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "Crushspeak Now",
+   "points": 13,
+   "beats": 16.04,
+   "range": [
+    0.0,
+    0.632
+   ]
+  },
+  {
+   "name": "Croak - HighPass #4",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "Crushspeak Now",
+   "points": 15,
+   "beats": 47.75,
+   "range": [
+    0.329,
+    0.577
+   ]
+  },
+  {
+   "name": "Crushspeak Now - HighPass #2",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "Crushspeak Now",
+   "points": 9,
+   "beats": 16.25,
+   "range": [
+    0.026,
+    1.0
+   ]
+  },
+  {
+   "name": "Gross Beat - Mix level",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 8,
+   "beats": 400.0,
+   "range": [
+    0.0,
+    0.717
+   ]
+  },
+  {
+   "name": "Gross Beat - Mute / solo",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f00",
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 6,
+   "beats": 400.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Croak - Timbre",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 11,
+   "insert": null,
+   "channel": "Crushspeak Now",
+   "points": 8,
+   "beats": 16.0,
+   "range": [
+    0.084,
+    0.117
+   ]
+  },
+  {
+   "name": "Sub - Volume",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "volume",
+   "insert": "Square Sub",
+   "channel": null,
+   "points": 4,
+   "beats": 304.0,
+   "range": [
+    0.24,
+    0.542
+   ]
+  },
+  {
+   "name": "Croak - Volume",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "volume",
+   "insert": "Croak",
+   "channel": null,
+   "points": 6,
+   "beats": 20.25,
+   "range": [
+    0.308,
+    0.424
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 9) - Terror - Band 7 level",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 6,
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 4,
+   "beats": 34.75,
+   "range": [
+    0.288,
+    0.586
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 9) - Terror - Band 7 level #2",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 6,
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 4,
+   "beats": 34.75,
+   "range": [
+    0.288,
+    0.586
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 9) - Terror - Band 7 freq",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 13,
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 4,
+   "beats": 35.0,
+   "range": [
+    0.731,
+    0.949
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 9) - Terror - Band 7 freq #2",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 13,
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 4,
+   "beats": 35.0,
+   "range": [
+    0.731,
+    0.949
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 9) - Terror - Band 1 freq",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 7,
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 4,
+   "beats": 35.75,
+   "range": [
+    0.087,
+    0.152
+   ]
+  },
+  {
+   "name": "Param. EQ 2 (Slot 9) - Terror - Band 1 freq #2",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 7,
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 4,
+   "beats": 35.75,
+   "range": [
+    0.087,
+    0.152
+   ]
+  },
+  {
+   "name": "DEDZII TERROR - Volume",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "volume",
+   "insert": "DEDZII TERROR",
+   "channel": null,
+   "points": 17,
+   "beats": 394.25,
+   "range": [
+    0.646,
+    1.0
+   ]
+  }
+ ],
+ "automation_summary": {
+  "Fruity Parametric EQ 2": 6,
+  "FLEX": 5,
+  "mixer": 5
+ },
+ "controllers": [],
+ "plugins": {
+  "Sytrus": 2,
+  "FLEX": 2,
+  "Harmor": 1
+ },
+ "effects": {
+  "Fruity Parametric EQ 2": 59,
+  "Fruity Reeverb 2": 13,
+  "Fruity Blood Overdrive": 4,
+  "Maximus": 3,
+  "Transient Processor": 3,
+  "Fruity Compressor": 3,
+  "Fruity Soft Clipper": 3,
+  "Fruity Limiter": 3,
+  "Fruity Flangus": 3,
+  "EQUO": 3,
+  "Effector": 3,
+  "Spreader": 2,
+  "Fruity Multiband Compressor": 2,
+  "Gross Beat": 2,
+  "Emphasis": 1,
+  "Fruity HTML NoteBook": 1,
+  "Fruity WaveShaper": 1,
+  "Soundgoodizer": 1,
+  "Fruity Delay 2": 1,
+  "Fruity Stereo Shaper": 1,
+  "Fruity Squeeze": 1,
+  "Distructor": 1,
+  "LuxeVerb": 1
+ },
+ "muted_clips": 0,
+ "muted_parts": [],
+ "bounces": [],
+ "audio_key": {
+  "key": "C major",
+  "score": 0.5915,
+  "margin": 0.1397,
+  "runner_up": "C minor"
+ }
+}

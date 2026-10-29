@@ -1,0 +1,3799 @@
+{
+ "file": "Mehran Abbasi - With You.flp",
+ "title": "With You",
+ "artists": "Mehran Abbasi",
+ "genre": "Melodic Techno",
+ "fl_version": "24.2.99.4831",
+ "ppq": 96,
+ "bpm": 126.0,
+ "bars": 104,
+ "seconds": 198.1,
+ "key": {
+  "key": "D minor",
+  "tonic": 2,
+  "mode": "minor",
+  "confidence": 0.815,
+  "runner_up": "D major"
+ },
+ "roles": {
+  "vocal": 4,
+  "drums": 1,
+  "arp": 10,
+  "lead": 15,
+  "bass": 2,
+  "fx": 5,
+  "pad": 2
+ },
+ "sections": [
+  {
+   "start_bar": 1,
+   "bars": 8,
+   "name": "Start",
+   "energy": 0.69,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums"
+   ]
+  },
+  {
+   "start_bar": 9,
+   "bars": 28,
+   "name": "Vocal P1",
+   "energy": 0.8,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 37,
+   "bars": 16,
+   "name": "Vocal Break Down",
+   "energy": 0.45,
+   "roles": [
+    "arp",
+    "audio",
+    "lead",
+    "pad",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 53,
+   "bars": 8,
+   "name": "Build up",
+   "energy": 0.29,
+   "roles": [
+    "arp",
+    "audio",
+    "lead",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 61,
+   "bars": 32,
+   "name": "Drop",
+   "energy": 1.0,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "lead",
+    "pad",
+    "vocal"
+   ]
+  },
+  {
+   "start_bar": 93,
+   "bars": 12,
+   "name": "Outro",
+   "energy": 0.68,
+   "roles": [
+    "arp",
+    "audio",
+    "bass",
+    "drums",
+    "lead"
+   ]
+  }
+ ],
+ "progression": [
+  {
+   "chord": "D5",
+   "roman": "I5",
+   "bars": 16
+  },
+  {
+   "chord": "Dm7",
+   "roman": "i7",
+   "bars": 8
+  },
+  {
+   "chord": "D6",
+   "roman": "I6",
+   "bars": 8
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 5
+  },
+  {
+   "chord": "D7",
+   "roman": "I7",
+   "bars": 1
+  },
+  {
+   "chord": "Bbmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "C6",
+   "roman": "bVII6",
+   "bars": 1
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Am",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "Bbmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Am",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "Bbmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Gm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Am",
+   "roman": "v",
+   "bars": 1
+  },
+  {
+   "chord": "C6",
+   "roman": "bVII6",
+   "bars": 1
+  },
+  {
+   "chord": "Bbmaj7",
+   "roman": "bVImaj7",
+   "bars": 1
+  },
+  {
+   "chord": "Gm7",
+   "roman": "iv7",
+   "bars": 1
+  },
+  {
+   "chord": "Am",
+   "roman": "v",
+   "bars": 2
+  },
+  {
+   "chord": "Bbmaj7",
+   "roman": "bVImaj7",
+   "bars": 8
+  },
+  {
+   "chord": "D5",
+   "roman": "I5",
+   "bars": 6
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 3
+  },
+  {
+   "chord": "Bbadd9",
+   "roman": "bVIadd9",
+   "bars": 1
+  },
+  {
+   "chord": "Bb",
+   "roman": "bVI",
+   "bars": 6
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Dsus2",
+   "roman": "Isus2",
+   "bars": 1
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Dsus4",
+   "roman": "Isus4",
+   "bars": 1
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Dsus2",
+   "roman": "Isus2",
+   "bars": 1
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "Dsus2",
+   "roman": "Isus2",
+   "bars": 1
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "C6",
+   "roman": "bVII6",
+   "bars": 1
+  },
+  {
+   "chord": "Bb",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "C6",
+   "roman": "bVII6",
+   "bars": 1
+  },
+  {
+   "chord": "Dm",
+   "roman": "i",
+   "bars": 1
+  },
+  {
+   "chord": "C6",
+   "roman": "bVII6",
+   "bars": 1
+  },
+  {
+   "chord": "Bb",
+   "roman": "bVI",
+   "bars": 1
+  },
+  {
+   "chord": "C6",
+   "roman": "bVII6",
+   "bars": 1
+  },
+  {
+   "chord": "D",
+   "roman": "I",
+   "bars": 7
+  },
+  {
+   "chord": "D6",
+   "roman": "I6",
+   "bars": 1
+  },
+  {
+   "chord": "Eb5",
+   "roman": "bII5",
+   "bars": 2
+  },
+  {
+   "chord": null,
+   "roman": null,
+   "bars": 2
+  }
+ ],
+ "markers": [
+  {
+   "bar": 1.0,
+   "name": "Start"
+  },
+  {
+   "bar": 9.0,
+   "name": "Vocal P1"
+  },
+  {
+   "bar": 37.0,
+   "name": "Vocal Break Down"
+  },
+  {
+   "bar": 53.0,
+   "name": "Build up"
+  },
+  {
+   "bar": 61.0,
+   "name": "Drop"
+  },
+  {
+   "bar": 93.0,
+   "name": "Outro"
+  },
+  {
+   "bar": 105.0,
+   "name": "End"
+  }
+ ],
+ "drums": [
+  {
+   "voice": "kick",
+   "channel": 4,
+   "name": "IL Kick_MT",
+   "pattern": "X...X...X...X...",
+   "hits_per_bar": 3.94,
+   "late_16ths": 0.0,
+   "velocity": [
+    100,
+    100
+   ],
+   "bars": 72
+  }
+ ],
+ "kit": {
+  "kick": [
+   {
+    "name": "IL Kick_MT",
+    "sample": "%FLStudioFactoryData%\\Data\\Patches\\Misc\\Used by demo projects\\Mehran Abbasi - With You\\IL Kick_MT.wav",
+    "hits": 284
+   }
+  ]
+ },
+ "parts": [
+  {
+   "channel": 0,
+   "role": "vocal",
+   "name": "Main Vocal #3",
+   "plugin": null,
+   "sample": "PL_TLO_05_With You_104_Lead Vocals_02_D#m_Dry.ogg",
+   "preset": null,
+   "insert": 1,
+   "insert_name": "Main Vocal",
+   "chain": [
+    "Pitch Shifter",
+    "Fruity Parametric EQ 2",
+    "Pitcher",
+    "Maximus",
+    "Fruity Peak Controller"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 6,
+   "group": "Audio",
+   "presence": [
+    0,
+    0,
+    9,
+    2,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 1,
+   "role": "vocal",
+   "name": "Main Vocal",
+   "plugin": null,
+   "sample": "PL_TLO_05_With You_104_Lead Vocals_01_A_D#m_Dry.ogg",
+   "preset": null,
+   "insert": 1,
+   "insert_name": "Main Vocal",
+   "chain": [
+    "Pitch Shifter",
+    "Fruity Parametric EQ 2",
+    "Pitcher",
+    "Maximus",
+    "Fruity Peak Controller"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 107,
+   "group": "Audio",
+   "presence": [
+    1,
+    17,
+    8,
+    6,
+    32,
+    0
+   ]
+  },
+  {
+   "channel": 2,
+   "role": "vocal",
+   "name": "Main Vocal #2",
+   "plugin": null,
+   "sample": "PL_TLO_05_With You_104_Lead Vocals_01_B_D#m_Dry.ogg",
+   "preset": null,
+   "insert": 1,
+   "insert_name": "Main Vocal",
+   "chain": [
+    "Pitch Shifter",
+    "Fruity Parametric EQ 2",
+    "Pitcher",
+    "Maximus",
+    "Fruity Peak Controller"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 13,
+   "group": "Audio",
+   "presence": [
+    0,
+    10,
+    0,
+    0,
+    5,
+    0
+   ]
+  },
+  {
+   "channel": 3,
+   "role": "vocal",
+   "name": "Revers Vocal",
+   "plugin": null,
+   "sample": "Revers Vocal.ogg",
+   "preset": null,
+   "insert": 4,
+   "insert_name": "Revers Vocal",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": null,
+   "polyphony": 0.0,
+   "median_len_beats": null,
+   "notes": 0,
+   "clips": 4,
+   "group": "Audio",
+   "presence": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 4,
+   "role": "drums",
+   "name": "IL Kick_MT",
+   "plugin": null,
+   "sample": "IL Kick_MT.wav",
+   "preset": null,
+   "insert": 8,
+   "insert_name": "Kick",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C4",
+    "C4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.01,
+   "notes": 284,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    24,
+    0,
+    0,
+    32,
+    8
+   ]
+  },
+  {
+   "channel": 5,
+   "role": "arp",
+   "name": "Closehat",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 9,
+   "insert_name": "Closehat",
+   "chain": [
+    "Fruity Stereo Shaper"
+   ],
+   "range": [
+    "F#4",
+    "F#4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 698,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    0,
+    24,
+    8
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     "F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4",
+     "F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4 F#4"
+    ]
+   }
+  },
+  {
+   "channel": 6,
+   "role": "lead",
+   "name": "Openhat",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 10,
+   "insert_name": "Opoen hat",
+   "chain": [
+    "Fruity Stereo Shaper"
+   ],
+   "range": [
+    "F4",
+    "F4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 158,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    0,
+    0,
+    24,
+    8
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     ".   .   F4  -   .   .   F4  -   .   .   F4  -   .   .   F4  -  ",
+     ".   .   F4  -   .   .   F4  -   .   .   F4  -   .   .   F4  -  "
+    ]
+   }
+  },
+  {
+   "channel": 7,
+   "role": "lead",
+   "name": "Clap",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 11,
+   "insert_name": "Clap",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "Eb3",
+    "Eb3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 95,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    16,
+    8,
+    0,
+    16,
+    8
+   ],
+   "bar": {
+    "from_bar": 17,
+    "roll": [
+     ".   .   .   .   Eb3 -   -   -   .   .   .   .   Eb3 -   -   -  ",
+     ".   .   .   .   Eb3 -   -   -   .   .   .   .   Eb3 -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 8,
+   "role": "lead",
+   "name": "Percussion",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 12,
+   "insert_name": "Percussion",
+   "chain": [
+    "Fruity Stereo Shaper",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C5",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 246,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    18,
+    0,
+    7,
+    23,
+    8
+   ],
+   "bar": {
+    "from_bar": 17,
+    "roll": [
+     ".   .   C5  -   .   .   C5  -   .   .   C5  -   .   .   C5  -  ",
+     ".   .   C5  -   .   .   C5  -   .   .   C5  -   .   .   C5  -  "
+    ]
+   }
+  },
+  {
+   "channel": 9,
+   "role": "lead",
+   "name": "Ride",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 13,
+   "insert_name": "Ride",
+   "chain": [],
+   "range": [
+    "Bb4",
+    "Bb4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.5,
+   "notes": 317,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    0,
+    0,
+    24,
+    8
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     "Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -  ",
+     "Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -   Bb4 -  "
+    ]
+   }
+  },
+  {
+   "channel": 10,
+   "role": "lead",
+   "name": "Clap Hit",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 14,
+   "insert_name": "Clap Reverb",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "Eb3",
+    "Eb3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 3.0,
+   "notes": 6,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    1,
+    1,
+    0,
+    0,
+    3,
+    1
+   ]
+  },
+  {
+   "channel": 11,
+   "role": "arp",
+   "name": "Snare",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 15,
+   "insert_name": "Snare",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "B4",
+    "B4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 424,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    8,
+    8,
+    7,
+    4,
+    2
+   ],
+   "bar": {
+    "from_bar": 25,
+    "roll": [
+     "B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4 ",
+     "B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4  B4 "
+    ]
+   }
+  },
+  {
+   "channel": 12,
+   "role": "bass",
+   "name": "Snare Time Gate",
+   "plugin": "Fruity DrumSynth Live",
+   "sample": null,
+   "preset": null,
+   "insert": 15,
+   "insert_name": "Snare",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "B2",
+    "B2"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 13,
+   "role": "arp",
+   "name": "BAS Lottunma",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / BAS Lottunma",
+   "insert": 17,
+   "insert_name": "Main Bass",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Spreader",
+    "Fruity Parametric EQ 2",
+    "Patcher"
+   ],
+   "range": [
+    "Bb2",
+    "D3"
+   ],
+   "polyphony": 1.18,
+   "median_len_beats": 0.208,
+   "notes": 1352,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    24,
+    0,
+    0,
+    32,
+    8
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3 ",
+     "D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3 "
+    ]
+   }
+  },
+  {
+   "channel": 14,
+   "role": "bass",
+   "name": "Sub Bass",
+   "plugin": "Harmor",
+   "sample": null,
+   "preset": null,
+   "insert": 20,
+   "insert_name": "Sub Bass",
+   "chain": [
+    "Patcher",
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "Bb2",
+    "D3"
+   ],
+   "polyphony": 1.18,
+   "median_len_beats": 0.25,
+   "notes": 1352,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    24,
+    0,
+    0,
+    32,
+    8
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3 ",
+     "D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3+D3 D3  D3  D3  D3 "
+    ]
+   }
+  },
+  {
+   "channel": 15,
+   "role": "lead",
+   "name": "BAS Uobaa",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / BAS Uobaa",
+   "insert": 21,
+   "insert_name": "BAS Uobaa",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Hyper Chorus"
+   ],
+   "range": [
+    "G3",
+    "F4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 20,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    2,
+    16,
+    2,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 38,
+    "roll": [
+     "C4  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "Bb3 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 16,
+   "role": "lead",
+   "name": "BAS Feddra",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / BAS Feddra",
+   "insert": 22,
+   "insert_name": "PLK Diaco",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Spreader",
+    "Fruity PanOMatic"
+   ],
+   "range": [
+    "D4",
+    "D4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 17,
+   "role": "lead",
+   "name": "3x Osc #2",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": 22,
+   "insert_name": "PLK Diaco",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Spreader",
+    "Fruity PanOMatic"
+   ],
+   "range": [
+    "D3",
+    "D3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 18,
+   "role": "arp",
+   "name": "PLK Navid",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / PLK Navid",
+   "insert": 25,
+   "insert_name": "BAS Jagopin",
+   "chain": [
+    "Fruity Love Philter",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2",
+    "Fruity Balance"
+   ],
+   "range": [
+    "D4",
+    "D5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.167,
+   "notes": 632,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    8,
+    24,
+    0,
+    0,
+    0,
+    8
+   ],
+   "bar": {
+    "from_bar": 1,
+    "roll": [
+     "A4  F4  D5  D5  D4  D4  C5  D5  D5  F4  D5  D5  C5  C5  D5  D5 ",
+     "A4  F4  D5  D5  D4  D4  C5  D5  D5  F4  D5  D5  C5  C5  D5  D5 "
+    ]
+   }
+  },
+  {
+   "channel": 19,
+   "role": "lead",
+   "name": "LED Vut feda",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / LED Vut feda",
+   "insert": 26,
+   "insert_name": "LED SY Hurada #2",
+   "chain": [
+    "Spreader",
+    "Fruity Reeverb 2",
+    "Fruity Love Philter",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "C3",
+    "D3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 5.094,
+   "notes": 4,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  {
+   "channel": 20,
+   "role": "lead",
+   "name": "LED Kian",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / LED Kian",
+   "insert": 28,
+   "insert_name": "LED Khodanour #2",
+   "chain": [
+    "Fruity WaveShaper",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "D4",
+    "D4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 31.948,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 21,
+   "role": "arp",
+   "name": "PLK Diaco",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / PLK Diaco",
+   "insert": 28,
+   "insert_name": "LED Khodanour #2",
+   "chain": [
+    "Fruity WaveShaper",
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "D3",
+    "C5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 320,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    6,
+    16,
+    0,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 17,
+    "roll": [
+     "D4  E4  F4  G4  C5  D4  F4  A4  D4  E4  F4  G4  C5  D4  F4  A4 ",
+     "D4  E4  F4  G4  C5  D4  F4  A4  D4  E4  F4  G4  C5  D4  F4  A4 "
+    ]
+   }
+  },
+  {
+   "channel": 22,
+   "role": "arp",
+   "name": "LED Hannaneh",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / LED Hannaneh",
+   "insert": 29,
+   "insert_name": "LED Falen Elmies #2",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "F3",
+    "Bb4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 0.25,
+   "notes": 113,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    12,
+    1,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 45,
+    "roll": [
+     "-   A4  A4  A4  A4  -   -   A4  -   F4  D4  Bb3 D4  -   -   -  ",
+     "-   A4  A4  A4  A4  -   -   A4  -   F4  D4  Bb3 D4  -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 23,
+   "role": "fx",
+   "name": "SFX Crasha #2",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / SFX Crasha",
+   "insert": 30,
+   "insert_name": "PLK Setareh #2",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Maximus"
+   ],
+   "range": [
+    "D3",
+    "D3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 8.0,
+   "notes": 3,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    3,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 24,
+   "role": "arp",
+   "name": "PLK Shirin",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / PLK Shirin",
+   "insert": 30,
+   "insert_name": "PLK Setareh #2",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Maximus"
+   ],
+   "range": [
+    "G3",
+    "C6"
+   ],
+   "polyphony": 1.17,
+   "median_len_beats": 0.25,
+   "notes": 224,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    16,
+    0,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 38,
+    "roll": [
+     "D5  C4  D5  D5  -   C4  D5  C4  C4+D5 -   D5  D5  C4  -   C4+D5 -  ",
+     "D5  Bb3 D5  D5  -   Bb3 D5  Bb3 Bb3+D5 -   D5  D5  Bb3 -   Bb3+D5 -  "
+    ]
+   }
+  },
+  {
+   "channel": 25,
+   "role": "lead",
+   "name": "KEY Eligash",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / KEY Eligash",
+   "insert": 31,
+   "insert_name": "KEY Eligash",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "D4",
+    "D5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 1.0,
+   "notes": 63,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    8,
+    7,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 46,
+    "roll": [
+     "D4  -   -   -   E4  -   -   -   F4  -   -   -   A4  -   -   -  ",
+     "D4  -   -   -   E4  -   -   -   F4  -   -   -   C5  -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 26,
+   "role": "fx",
+   "name": "SFX Crasha",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / SFX Crasha",
+   "insert": 33,
+   "insert_name": "PLK Shirin #2",
+   "chain": [
+    "Fruity Reeverb 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "D3",
+    "D3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 15.75,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "channel": 27,
+   "role": "pad",
+   "name": "Synth Pad ",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 34,
+   "insert_name": "Synth Pad",
+   "chain": [
+    "Fruity Parametric EQ 2",
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "D3",
+    "A4"
+   ],
+   "polyphony": 4.44,
+   "median_len_beats": 4.0,
+   "notes": 151,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    16,
+    1,
+    16,
+    0
+   ],
+   "bar": {
+    "from_bar": 38,
+    "roll": [
+     "A3+C4+E4+A4 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "F3+Bb3+D4+F4+A4 -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 28,
+   "role": "lead",
+   "name": "Sytrus",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 35,
+   "insert_name": "Saw Sytrus",
+   "chain": [
+    "Hyper Chorus"
+   ],
+   "range": [
+    "Bb1",
+    "Bb4"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 32.0,
+   "notes": 6,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 29,
+   "role": "fx",
+   "name": "SFX Crasha #3",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / SFX Crasha",
+   "insert": 38,
+   "insert_name": "SFX Crasha #3",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "D2",
+    "D3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 16.0,
+   "notes": 3,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    1
+   ]
+  },
+  {
+   "channel": 30,
+   "role": "arp",
+   "name": "PLK Sadaf",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / PLK Sadaf",
+   "insert": 40,
+   "insert_name": "PLK Sadaf",
+   "chain": [],
+   "range": [
+    "Bb3",
+    "G5"
+   ],
+   "polyphony": 1.03,
+   "median_len_beats": 0.25,
+   "notes": 228,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    19,
+    0
+   ],
+   "bar": {
+    "from_bar": 69,
+    "roll": [
+     "F5  F5  F5  F5  .   .   D5  D5  F5  .   .   .   D4  D4  D5  D5 ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 31,
+   "role": "arp",
+   "name": "BAS Lottunma",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / BAS Lottunma",
+   "insert": 41,
+   "insert_name": "PLK Mojgan #2",
+   "chain": [],
+   "range": [
+    "Bb4",
+    "G6"
+   ],
+   "polyphony": 1.03,
+   "median_len_beats": 0.25,
+   "notes": 272,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    23,
+    0
+   ],
+   "bar": {
+    "from_bar": 69,
+    "roll": [
+     "F6  F6  F6  F6  .   .   D6  D6  F6  .   .   .   D5  D5  D6  D6 ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 32,
+   "role": "arp",
+   "name": "BAS Lottunma #2",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / BAS Lottunma",
+   "insert": 41,
+   "insert_name": "PLK Mojgan #2",
+   "chain": [],
+   "range": [
+    "D5",
+    "G7"
+   ],
+   "polyphony": 1.03,
+   "median_len_beats": 0.25,
+   "notes": 272,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    23,
+    0
+   ],
+   "bar": {
+    "from_bar": 69,
+    "roll": [
+     "F6  F6  F6  F6  .   .   D6  D6  F6  .   .   .   D5  D5  D6  D6 ",
+     ".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  "
+    ]
+   }
+  },
+  {
+   "channel": 33,
+   "role": "pad",
+   "name": "PAD Minoo",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / PAD Minoo",
+   "insert": 44,
+   "insert_name": "PAD Minoo",
+   "chain": [],
+   "range": [
+    "D5",
+    "D5"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 64.0,
+   "notes": 1,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "channel": 34,
+   "role": "lead",
+   "name": "LED Arnika",
+   "plugin": "FLEX",
+   "sample": null,
+   "preset": "Melodic Techno / LED Arnika",
+   "insert": 45,
+   "insert_name": "LED Arnika",
+   "chain": [
+    "Hyper Chorus",
+    "Gross Beat",
+    "Fruity Parametric EQ 2",
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "F2",
+    "Bb3"
+   ],
+   "polyphony": 1.33,
+   "median_len_beats": 3.0,
+   "notes": 8,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    4,
+    0
+   ],
+   "bar": {
+    "from_bar": 67,
+    "roll": [
+     "F2+F3 -   -   -   D3  -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   Bb3 -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 35,
+   "role": "lead",
+   "name": "Sytrus #2",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 46,
+   "insert_name": "Impact Synth",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "G2",
+    "D4"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 4.0,
+   "notes": 10,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    2,
+    2,
+    0,
+    0
+   ],
+   "bar": {
+    "from_bar": 37,
+    "roll": [
+     "D3  -   -   G2  -   -   -   -   -   -   -   -   -   -   -   -  ",
+     "-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  "
+    ]
+   }
+  },
+  {
+   "channel": 36,
+   "role": "lead",
+   "name": "Sytrus #3",
+   "plugin": "Sytrus",
+   "sample": null,
+   "preset": null,
+   "insert": 46,
+   "insert_name": "Impact Synth",
+   "chain": [
+    "Fruity Reeverb 2"
+   ],
+   "range": [
+    "Bb2",
+    "Bb3"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 8.0,
+   "notes": 2,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "channel": 37,
+   "role": "fx",
+   "name": "Noise FX",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": 47,
+   "insert_name": "Noise FX",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "D2",
+    "D2"
+   ],
+   "polyphony": 1.0,
+   "median_len_beats": 32.0,
+   "notes": 9,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    1,
+    2,
+    1,
+    3,
+    2
+   ]
+  },
+  {
+   "channel": 38,
+   "role": "fx",
+   "name": "Sweep Down Saw",
+   "plugin": "3x Osc",
+   "sample": null,
+   "preset": null,
+   "insert": 48,
+   "insert_name": "Sweep Up Sine",
+   "chain": [
+    "Fruity Parametric EQ 2"
+   ],
+   "range": [
+    "Bb2",
+    "Bb4"
+   ],
+   "polyphony": 2.0,
+   "median_len_beats": 32.0,
+   "notes": 20,
+   "clips": 0,
+   "group": "Unsorted",
+   "presence": [
+    0,
+    4,
+    2,
+    0,
+    3,
+    1
+   ]
+  }
+ ],
+ "mixer": [
+  {
+   "index": 0,
+   "name": "Master",
+   "volume_db": 0.0,
+   "to": [],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Patcher",
+     "name": "Mid | Side EQ"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "MakeUp EQ"
+    },
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": "Hard Clip"
+    },
+    {
+     "plugin": "Emphasis",
+     "name": "Emphasis Limiter"
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "name": "Main Vocal",
+   "volume_db": 1.8,
+   "to": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    19
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Pitch Shifter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Pitcher",
+     "name": null
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Peak Controller",
+     "name": "Fruity Peak Controller"
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Stereo Vocal",
+   "volume_db": -14.7,
+   "to": [
+    19
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "name": "Vocal Widness",
+   "volume_db": -9.5,
+   "to": [
+    19
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "name": "Revers Vocal",
+   "volume_db": 2.2,
+   "to": [
+    0,
+    7
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "name": "Vocal Delay",
+   "volume_db": -9.1,
+   "to": [
+    0,
+    7
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "name": "Delay Vocal",
+   "volume_db": -12.6,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "name": "Vocal Reverb",
+   "volume_db": -6.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    4,
+    5
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": "Gross Beat - Gate"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": "Reverb Sidechain"
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "name": "Kick",
+   "volume_db": 1.0,
+   "to": [
+    18
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "name": "Closehat",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "name": "Opoen hat",
+   "volume_db": -2.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "name": "Clap",
+   "volume_db": -6.2,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "name": "Percussion",
+   "volume_db": -10.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Stereo Shaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Ride",
+   "volume_db": -5.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 14,
+   "name": "Clap Reverb",
+   "volume_db": -1.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Snare",
+   "volume_db": -3.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "name": "Bass Submix",
+   "volume_db": -1.1,
+   "to": [
+    18
+   ],
+   "fed_by": [
+    17,
+    20
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "Sub Boost"
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "name": "Main Bass",
+   "volume_db": -4.9,
+   "to": [
+    16
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Patcher",
+     "name": "Multiband Sidechain"
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "name": "Low FRQ",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    8,
+    16
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "name": "Vocal Master",
+   "volume_db": -1.4,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    1,
+    2,
+    3
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "name": "Sub Bass",
+   "volume_db": -5.3,
+   "to": [
+    16
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Patcher",
+     "name": "Multiband Sidechain"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "name": "BAS Uobaa",
+   "volume_db": -9.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "name": "PLK Diaco",
+   "volume_db": -4.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Fruity PanOMatic",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "name": "BAS Jagopin",
+   "volume_db": 2.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "name": "BAS Peartoa",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 25,
+   "name": "BAS Jagopin",
+   "volume_db": -6.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Love Philter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "name": "LED SY Hurada #2",
+   "volume_db": -7.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "name": "BAS Povenus",
+   "volume_db": -4.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 28,
+   "name": "LED Khodanour #2",
+   "volume_db": -7.3,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity WaveShaper",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "name": "LED Falen Elmies #2",
+   "volume_db": -8.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "name": "PLK Setareh #2",
+   "volume_db": -2.7,
+   "to": [
+    0,
+    32
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 31,
+   "name": "KEY Eligash",
+   "volume_db": -12.7,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 32,
+   "name": "Reverb Shimmer",
+   "volume_db": -8.6,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    30
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "name": "PLK Shirin #2",
+   "volume_db": -9.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "name": "Synth Pad",
+   "volume_db": -6.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "name": "Saw Sytrus",
+   "volume_db": -9.9,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 36,
+   "name": "LED Hannaneh #2",
+   "volume_db": 0.0,
+   "to": [
+    0,
+    37
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Peak Controller",
+     "name": "Fruity Peak Controller"
+    }
+   ]
+  },
+  {
+   "index": 37,
+   "name": "Reverb",
+   "volume_db": -6.3,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    36
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 38,
+   "name": "SFX Crasha #3",
+   "volume_db": -7.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 39,
+   "name": "Lead Group",
+   "volume_db": -5.3,
+   "to": [
+    0,
+    42
+   ],
+   "fed_by": [
+    40,
+    41
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Peak Controller",
+     "name": "Fruity Peak Controller"
+    },
+    {
+     "plugin": "Fruity Love Philter",
+     "name": null
+    },
+    {
+     "plugin": "Spreader",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Maximus",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 40,
+   "name": "PLK Sadaf",
+   "volume_db": -5.2,
+   "to": [
+    39
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 41,
+   "name": "PLK Mojgan #2",
+   "volume_db": -7.7,
+   "to": [
+    39,
+    43
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 42,
+   "name": "Lead Reverb",
+   "volume_db": -3.9,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    39
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 43,
+   "name": "LEad Delay",
+   "volume_db": 0.2,
+   "to": [
+    0
+   ],
+   "fed_by": [
+    41
+   ],
+   "slots": [
+    {
+     "plugin": "Fruity Delay 3",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Balance",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 44,
+   "name": "PAD Minoo",
+   "volume_db": -13.6,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": []
+  },
+  {
+   "index": 45,
+   "name": "LED Arnika",
+   "volume_db": -4.5,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Hyper Chorus",
+     "name": null
+    },
+    {
+     "plugin": "Gross Beat",
+     "name": null
+    },
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    },
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 46,
+   "name": "Impact Synth",
+   "volume_db": -0.8,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Reeverb 2",
+     "name": null
+    }
+   ]
+  },
+  {
+   "index": 47,
+   "name": "Noise FX",
+   "volume_db": -12.4,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  },
+  {
+   "index": 48,
+   "name": "Sweep Up Sine",
+   "volume_db": 0.0,
+   "to": [
+    0
+   ],
+   "fed_by": [],
+   "slots": [
+    {
+     "plugin": "Fruity Parametric EQ 2",
+     "name": "EQ 2"
+    }
+   ]
+  }
+ ],
+ "automation": [
+  {
+   "name": "BAS Feddra - Channel pitch",
+   "kind": "channel",
+   "plugin": null,
+   "param": "pitch",
+   "insert": null,
+   "channel": "BAS Feddra",
+   "points": 2,
+   "beats": 4.0,
+   "range": [
+    0.5,
+    0.914
+   ]
+  },
+  {
+   "name": "BAS Feddra - Space",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 11,
+   "insert": null,
+   "channel": "BAS Feddra",
+   "points": 2,
+   "beats": 4.0,
+   "range": [
+    0.31,
+    0.655
+   ]
+  },
+  {
+   "name": "BAS Feddra - Arpeggio time",
+   "kind": "channel",
+   "plugin": null,
+   "param": 771,
+   "insert": null,
+   "channel": "BAS Feddra",
+   "points": 2,
+   "beats": 4.0,
+   "range": [
+    0.172,
+    0.855
+   ]
+  },
+  {
+   "name": "BAS Feddra - LPF",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "BAS Feddra",
+   "points": 3,
+   "beats": 4.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Gross Beat - LED Arnika - Volume mix",
+   "kind": "plugin",
+   "plugin": "Gross Beat",
+   "param": 3,
+   "insert": "LED Arnika",
+   "channel": null,
+   "points": 4,
+   "beats": 10.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "LED Arnika - Space",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 12,
+   "insert": null,
+   "channel": "LED Arnika",
+   "points": 4,
+   "beats": 10.5,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "LED Arnika - Filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "LED Arnika",
+   "points": 5,
+   "beats": 10.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Gross Beat - LED Arnika - Volume slot",
+   "kind": "plugin",
+   "plugin": "Gross Beat",
+   "param": 1,
+   "insert": "LED Arnika",
+   "channel": null,
+   "points": 8,
+   "beats": 10.0,
+   "range": [
+    0.0,
+    0.286
+   ]
+  },
+  {
+   "name": "PLK Shirin - OSCEX",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 12,
+   "insert": null,
+   "channel": "PLK Shirin",
+   "points": 2,
+   "beats": 64.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "PLK Shirin - FlungDL",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 17,
+   "insert": null,
+   "channel": "PLK Shirin",
+   "points": 2,
+   "beats": 64.0,
+   "range": [
+    0.0,
+    0.362
+   ]
+  },
+  {
+   "name": "LED Hannaneh - Filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "LED Hannaneh",
+   "points": 2,
+   "beats": 48.15,
+   "range": [
+    0.31,
+    0.879
+   ]
+  },
+  {
+   "name": "PLK Shirin - Master filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 21,
+   "insert": null,
+   "channel": "PLK Shirin",
+   "points": 2,
+   "beats": 64.0,
+   "range": [
+    0.69,
+    1.0
+   ]
+  },
+  {
+   "name": "EQ 2 (Slot 4) - Low FRQ - Band 1 freq",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 7,
+   "insert": "Low FRQ",
+   "channel": null,
+   "points": 18,
+   "beats": 416.0,
+   "range": [
+    0.0,
+    0.552
+   ]
+  },
+  {
+   "name": "Delay 3 - Vocal Delay - Input wet",
+   "kind": "plugin",
+   "plugin": "Fruity Delay 3",
+   "param": 0,
+   "insert": "Vocal Delay",
+   "channel": null,
+   "points": 30,
+   "beats": 384.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "SFX Crasha #3 - LPF",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "SFX Crasha #3",
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "name": "SFX Crasha #3 - LPF #2",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "SFX Crasha #3",
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "PLK Navid - Filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "PLK Navid",
+   "points": 3,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.447
+   ]
+  },
+  {
+   "name": "PLK Navid - Filter cutoff #2",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "PLK Navid",
+   "points": 3,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.207
+   ]
+  },
+  {
+   "name": "PLK Navid - TuneX",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 15,
+   "insert": null,
+   "channel": "PLK Navid",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "PLK Navid - TuneX #2",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 15,
+   "insert": null,
+   "channel": "PLK Navid",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "PLK Navid - LPFAm #2",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "PLK Navid",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.138,
+    0.448
+   ]
+  },
+  {
+   "name": "Balance - BAS Jagopin - Volume",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "BAS Jagopin",
+   "channel": null,
+   "points": 5,
+   "beats": 128.0,
+   "range": [
+    0.345,
+    0.8
+   ]
+  },
+  {
+   "name": "PLK Navid - Filter cutoff #3",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "PLK Navid",
+   "points": 5,
+   "beats": 96.0,
+   "range": [
+    0.103,
+    0.672
+   ]
+  },
+  {
+   "name": "PLK Navid - LPFAm",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "PLK Navid",
+   "points": 2,
+   "beats": 128.0,
+   "range": [
+    0.138,
+    0.207
+   ]
+  },
+  {
+   "name": "BAS Lottunma - Filter cutoff #3",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "BAS Lottunma",
+   "points": 4,
+   "beats": 64.0,
+   "range": [
+    0.103,
+    0.621
+   ]
+  },
+  {
+   "name": "BAS Uobaa - BodyLP",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 12,
+   "insert": null,
+   "channel": "BAS Uobaa",
+   "points": 7,
+   "beats": 112.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Delay 3 - LEad Delay - Feedback level",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "LEad Delay",
+   "channel": null,
+   "points": 17,
+   "beats": 128.0,
+   "range": [
+    0.0,
+    0.914
+   ]
+  },
+  {
+   "name": "Delay 3 - LEad Delay - Feedback level #2",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "LEad Delay",
+   "channel": null,
+   "points": 16,
+   "beats": 112.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Sytrus #4 - Filter 1 - Cutoff frequency #2",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 328,
+   "insert": null,
+   "channel": "Synth Pad ",
+   "points": 5,
+   "beats": 108.0,
+   "range": [
+    0.176,
+    0.638
+   ]
+  },
+  {
+   "name": "Balance - Vocal Widness - Volume",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "Vocal Widness",
+   "channel": null,
+   "points": 11,
+   "beats": 416.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "BAS Uobaa - FlunDL",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 17,
+   "insert": null,
+   "channel": "BAS Uobaa",
+   "points": 3,
+   "beats": 112.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Sytrus #4 - Filter 1 - Cutoff frequency",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 328,
+   "insert": null,
+   "channel": "Synth Pad ",
+   "points": 4,
+   "beats": 64.0,
+   "range": [
+    0.176,
+    0.466
+   ]
+  },
+  {
+   "name": "LED Hannaneh - Master filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 21,
+   "insert": null,
+   "channel": "LED Hannaneh",
+   "points": 2,
+   "beats": 48.15,
+   "range": [
+    0.517,
+    1.0
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X) #4 #3",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Noise FX",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.897
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X) #4 #2",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Noise FX",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "LED Vut feda - Metal",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 12,
+   "insert": null,
+   "channel": "LED Vut feda",
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.006,
+    1.0
+   ]
+  },
+  {
+   "name": "Fruity Love Philter (LED SY Hurada #2) - Mix level",
+   "kind": "mixer",
+   "plugin": null,
+   "param": "0x1f01",
+   "insert": "LED SY Hurada #2",
+   "channel": null,
+   "points": 5,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X) #4 #5",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Noise FX",
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 - LED SY Hurada #2 - Wet level",
+   "kind": "plugin",
+   "plugin": "Fruity Reeverb 2",
+   "param": 12,
+   "insert": "LED SY Hurada #2",
+   "channel": null,
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.103,
+    0.793
+   ]
+  },
+  {
+   "name": "LED Kian - Metal",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 17,
+   "insert": null,
+   "channel": "LED Kian",
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X) #4",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Noise FX",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X) #4 #4",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Noise FX",
+   "points": 2,
+   "beats": 28.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "BAS Lottunma - Release",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 14,
+   "insert": null,
+   "channel": "BAS Lottunma",
+   "points": 11,
+   "beats": 128.0,
+   "range": [
+    0.0,
+    0.983
+   ]
+  },
+  {
+   "name": "LED Kian - Plucked",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 14,
+   "insert": null,
+   "channel": "LED Kian",
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.31,
+    0.776
+   ]
+  },
+  {
+   "name": "LED Kian - Arpeggio gate",
+   "kind": "channel",
+   "plugin": null,
+   "param": 772,
+   "insert": null,
+   "channel": "LED Kian",
+   "points": 3,
+   "beats": 16.15,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Reeverb 2 - LED Khodanour #2 - Wet level",
+   "kind": "plugin",
+   "plugin": "Fruity Reeverb 2",
+   "param": 12,
+   "insert": "LED Khodanour #2",
+   "channel": null,
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.241,
+    0.69
+   ]
+  },
+  {
+   "name": "SFX Crasha #2 - Color",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 11,
+   "insert": null,
+   "channel": "SFX Crasha #2",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.5,
+    0.664
+   ]
+  },
+  {
+   "name": "LED Kian - Arpeggio time",
+   "kind": "channel",
+   "plugin": null,
+   "param": 771,
+   "insert": null,
+   "channel": "LED Kian",
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "LED Vut feda - OSCEX",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 13,
+   "insert": null,
+   "channel": "LED Vut feda",
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "EQ 2 - PLK Shirin #2 - Band 7 freq",
+   "kind": "plugin",
+   "plugin": "Fruity Parametric EQ 2",
+   "param": 13,
+   "insert": "PLK Shirin #2",
+   "channel": null,
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.569,
+    0.863
+   ]
+  },
+  {
+   "name": "LED Kian - LPF",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "LED Kian",
+   "points": 3,
+   "beats": 16.0,
+   "range": [
+    0.397,
+    1.0
+   ]
+  },
+  {
+   "name": "BAS Lottunma - Release #2",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 14,
+   "insert": null,
+   "channel": "BAS Lottunma",
+   "points": 6,
+   "beats": 128.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X) #3",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Sweep Down Saw",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.621
+   ]
+  },
+  {
+   "name": "Luxeverb - PLK Bahar - Output wet level",
+   "kind": null,
+   "plugin": null,
+   "param": null,
+   "insert": null,
+   "channel": null,
+   "points": 4,
+   "beats": 80.0,
+   "range": [
+    0.0,
+    0.776
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X)",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Sweep Down Saw",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.0,
+    0.776
+   ]
+  },
+  {
+   "name": "PLK Diaco - FlunDL",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 17,
+   "insert": null,
+   "channel": "PLK Diaco",
+   "points": 3,
+   "beats": 64.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "3x Osc - Filter frequency (modulation X) #2",
+   "kind": "generator",
+   "plugin": "3x Osc",
+   "param": 110,
+   "insert": null,
+   "channel": "Sweep Down Saw",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.121,
+    0.655
+   ]
+  },
+  {
+   "name": "SFX Crasha - MetalV",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 15,
+   "insert": null,
+   "channel": "SFX Crasha",
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.0,
+    0.776
+   ]
+  },
+  {
+   "name": "Sytrus - Main - Modulation X",
+   "kind": "generator",
+   "plugin": "Sytrus",
+   "param": 18,
+   "insert": null,
+   "channel": "Sytrus",
+   "points": 2,
+   "beats": 32.0,
+   "range": [
+    0.207,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Vocal Reverb - Volume #2",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "Vocal Reverb",
+   "channel": null,
+   "points": 11,
+   "beats": 220.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "SFX Crasha - TuniX1",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 16,
+   "insert": null,
+   "channel": "SFX Crasha",
+   "points": 2,
+   "beats": 16.0,
+   "range": [
+    0.138,
+    0.828
+   ]
+  },
+  {
+   "name": "BAS Lottunma - Filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "BAS Lottunma",
+   "points": 13,
+   "beats": 128.0,
+   "range": [
+    0.19,
+    0.603
+   ]
+  },
+  {
+   "name": "PitchShifter - Main Vocal - Formant",
+   "kind": "plugin",
+   "plugin": "Pitch Shifter",
+   "param": 1,
+   "insert": "Main Vocal",
+   "channel": null,
+   "points": 10,
+   "beats": 384.09,
+   "range": [
+    0.0,
+    0.5
+   ]
+  },
+  {
+   "name": "BAS Uobaa - Master filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 21,
+   "insert": null,
+   "channel": "BAS Uobaa",
+   "points": 3,
+   "beats": 112.0,
+   "range": [
+    0.121,
+    1.0
+   ]
+  },
+  {
+   "name": "BAS Lottunma - Filter cutoff #2",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 18,
+   "insert": null,
+   "channel": "BAS Lottunma",
+   "points": 5,
+   "beats": 128.0,
+   "range": [
+    0.328,
+    0.598
+   ]
+  },
+  {
+   "name": "Gross Beat - Gate - Vocal Reverb - Volume mix",
+   "kind": "plugin",
+   "plugin": "Gross Beat",
+   "param": 3,
+   "insert": "Vocal Reverb",
+   "channel": null,
+   "points": 6,
+   "beats": 368.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Balance - Vocal Reverb - Volume",
+   "kind": "plugin",
+   "plugin": "Fruity Balance",
+   "param": 1,
+   "insert": "Vocal Reverb",
+   "channel": null,
+   "points": 5,
+   "beats": 220.0,
+   "range": [
+    0.0,
+    0.8
+   ]
+  },
+  {
+   "name": "Delay 3 - Delay Vocal - Input wet",
+   "kind": "plugin",
+   "plugin": "Fruity Delay 3",
+   "param": 0,
+   "insert": "Delay Vocal",
+   "channel": null,
+   "points": 16,
+   "beats": 400.0,
+   "range": [
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Gross Beat - Gate - Vocal Reverb - Time slot",
+   "kind": "plugin",
+   "plugin": "Gross Beat",
+   "param": 0,
+   "insert": "Vocal Reverb",
+   "channel": null,
+   "points": 6,
+   "beats": 368.0,
+   "range": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "PLK Diaco - LPFAm",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 10,
+   "insert": null,
+   "channel": "PLK Diaco",
+   "points": 2,
+   "beats": 64.0,
+   "range": [
+    0.0,
+    0.769
+   ]
+  },
+  {
+   "name": "KEY Eligash - Master filter cutoff",
+   "kind": "generator",
+   "plugin": "FLEX",
+   "param": 21,
+   "insert": null,
+   "channel": "KEY Eligash",
+   "points": 3,
+   "beats": 64.0,
+   "range": [
+    0.0,
+    0.364
+   ]
+  }
+ ],
+ "automation_summary": {
+  "FLEX": 37,
+  "3x Osc": 8,
+  "Fruity Balance": 6,
+  "channel": 4,
+  "Gross Beat": 4,
+  "Sytrus": 3,
+  "Fruity Parametric EQ 2": 2,
+  "Fruity Delay 3": 2,
+  "Fruity Reeverb 2": 2,
+  "mixer": 1,
+  "?": 1,
+  "Pitch Shifter": 1
+ },
+ "controllers": [
+  {
+   "source": 28741,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "plugin",
+    "insert": 7,
+    "insert_name": "Vocal Reverb",
+    "slot": 4,
+    "plugin": "Fruity Balance",
+    "param": 1
+   }
+  },
+  {
+   "source": 30977,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "plugin",
+    "insert": 37,
+    "insert_name": "Reverb",
+    "slot": 1,
+    "plugin": "Fruity Balance",
+    "param": 1
+   }
+  },
+  {
+   "source": 31168,
+   "source_name": null,
+   "source_plugin": null,
+   "output": 1,
+   "target": {
+    "kind": "plugin",
+    "insert": 42,
+    "insert_name": "Lead Reverb",
+    "slot": 1,
+    "plugin": "Fruity Balance",
+    "param": 1
+   }
+  }
+ ],
+ "plugins": {
+  "FLEX": 18,
+  "Fruity DrumSynth Live": 8,
+  "Sytrus": 4,
+  "3x Osc": 3,
+  "Harmor": 1
+ },
+ "effects": {
+  "Fruity Parametric EQ 2": 39,
+  "Fruity Reeverb 2": 17,
+  "Fruity Balance": 8,
+  "Spreader": 6,
+  "Hyper Chorus": 5,
+  "Maximus": 4,
+  "Fruity Stereo Shaper": 4,
+  "Fruity Love Philter": 4,
+  "Patcher": 3,
+  "Fruity Peak Controller": 3,
+  "Fruity Delay 3": 3,
+  "Fruity WaveShaper": 2,
+  "Gross Beat": 2,
+  "Emphasis": 1,
+  "Pitch Shifter": 1,
+  "Pitcher": 1,
+  "Fruity PanOMatic": 1
+ },
+ "muted_clips": 0,
+ "muted_parts": [],
+ "bounces": [],
+ "audio_key": {
+  "key": "D minor",
+  "score": 0.7072,
+  "margin": 0.0363,
+  "runner_up": "D major"
+ }
+}
