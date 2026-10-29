@@ -12,7 +12,7 @@ NEW = ("harmony.pop_I_V_vi_IV", "harmony.sus_ii_V_vi_iii_IV", "harmony.minor_i_V
 
 def test_every_blueprint_option_is_in_the_bank_and_cites_a_checked_record():
     refs = variety.sources(which=("references",))
-    assert set(refs) == {"clarity", "red_lights", "another_night"} and all(r["verified"] and r["urls"] for r in refs.values())
+    assert set(refs) >= {"clarity", "red_lights", "another_night"} and all(r["verified"] and r["urls"] for r in refs.values())
     for oid in NEW:
         o = variety.find(BANK, oid)
         assert o["sources"] and all(s["song"] in variety.sources() for s in o["sources"]), oid
@@ -47,3 +47,25 @@ def test_the_exp_pump_recovers_fast_then_eases_in():
     mid = [v for t, v in exp if 1.1 < t < 1.3]
     assert mid == sorted(mid) and mid[0] > pump.db_to_fader(-24.0)                 # rising from the dip
     assert "curve" in str(variety.find(BANK, "mix.exp_recovery_pump")["engine"])
+
+
+def test_the_big_beat_pack_drafts_builds_and_breaks_the_four_on_the_floor(tmp_path):
+    import json
+
+    from coproducer import remixbuild, remixplan, songanalysis, songplan
+    from coproducer.testflp import remix_inputs
+    words = json.load(open("tests/data/friends_vocal_words.json"))
+    plan = songanalysis.draft_plan("friends_big_beat", songanalysis.tokens(words["words"]), source_bpm=108.478, key_pc=9, origin_s=27.3085,
+                                   title="friends in low places", style="big_beat", variety={"seed": "bb"})
+    assert songplan.validate(plan) == [] and 104 <= plan["bpm"] <= 125
+    songplan.apply(plan)
+    try:
+        drop = next(s for s in plan["sections"] if s["name"] == "drop")
+        kicks = sorted(e[1] for e in remixplan.drums().events if e[0] == drop["start"] and e[2] == "kick")
+        assert 4 not in kicks and 0 in kicks                               # a breakbeat: no kick on beat 2
+        (tmp_path / "sandbox").mkdir()
+        inp = remix_inputs(tmp_path, remixplan.CHOPS, remixplan.ECHOED)
+        rep = remixbuild.build(inp["base"], inp["sytrus"], inp["audio"], str(tmp_path / "sandbox" / "bb.flp"), log=lambda *x: None)
+        assert rep["pattern_counts"]["Drums"] > 0 and rep["pattern_counts"].get("Arp", 0) > 0     # the acid line plays
+    finally:
+        songplan.apply(songplan.load("plans/friends_in_low_places.json"))

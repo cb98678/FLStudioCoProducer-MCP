@@ -421,6 +421,61 @@
      "x...x...x...x..."
     ]
    }
+  },
+  {
+   "id": "arp.acid_sequence",
+   "label": "Acid line: a squelching 16th sequence two octaves down, octave jumps and minor sevenths",
+   "what": "A TB-303 style line on its own Serum sound (a saw through a resonant low-pass with a short filter envelope and drive): sixteen 16ths over the bar's root, two octaves under the arp register, jumping the octave and touching the minor seventh, fifth and minor third, gated short so it squelches. Builds and drops.",
+   "how": "Give the arp part an acid sound: serumspec.assemble with an analog saw, lowpass_24 near 0.25 with high resonance, serumspec.pluck on the cutoff (decay about 0.18 s) and soft distortion, then render_serum_sound to get its channel state (--serum-state arp=FILE).",
+   "genres": [
+    "big_beat",
+    "acid_house",
+    "techno",
+    "breakbeat",
+    "electro",
+    "trance"
+   ],
+   "moods": [
+    "energetic",
+    "hypnotic",
+    "rowdy",
+    "driving",
+    "party"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "big_beat_style",
+     "where": "the TB-303 acid line: resonant low-pass, short envelope, accents"
+    }
+   ],
+   "engine": {
+    "shape": "sequence",
+    "rate": 16,
+    "sections": [
+     "build",
+     "drop"
+    ],
+    "gate": 0.55,
+    "cell": [
+     -24,
+     -24,
+     -12,
+     -24,
+     -14,
+     -24,
+     -17,
+     -12,
+     -24,
+     -24,
+     -12,
+     -21,
+     -24,
+     -19,
+     -17,
+     -12
+    ]
+   }
   }
  ]
 }

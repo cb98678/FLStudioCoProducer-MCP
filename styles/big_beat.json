@@ -1,0 +1,251 @@
+{
+ "name": "big_beat",
+ "label": "Big beat (breakbeats, acid and the record's own riffs)",
+ "engine": "grammar",
+ "what": "Late-90s big beat under the original voice: a funky breakbeat (no four-on-the-floor) with ghost snares, 16th hats and a crash on every phrase, a distorted rock bass on the chord roots, a resonant acid line squelching in 16ths with octave jumps in the drops and the builds, the record's own guitar riffs sampled back in, short stabs with space around them, filter builds with an accelerating snare roll into each drop, and a tape stop out. 104 to 125 bpm; a rap voice is sped up as little as the range allows.",
+ "moods": [
+  "energetic",
+  "rowdy",
+  "defiant",
+  "party",
+  "playful",
+  "euphoric",
+  "boastful"
+ ],
+ "tempo": {
+  "bpm": 110,
+  "range": [
+   104,
+   125
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   8
+  ]
+ ],
+ "drums": {
+  "swing": 0.54,
+  "intro": {
+   "bars": {
+    "hat": "x.x.x.x.x.x.x.x.",
+    "kick": [
+     "X.........X.....",
+     "X.........X....."
+    ],
+    "shaker": "................"
+   },
+   "ramp": [
+    0.5,
+    0.9
+   ],
+   "last": {
+    "snare": "............XXXX"
+   }
+  },
+  "groove": {
+   "bars": {
+    "kick": [
+     "X.X.......XX....",
+     "X.X.......X..X.."
+    ],
+    "snare": [
+     "....X..o.o..X..o",
+     "....X..o.o..X.o."
+    ],
+    "hat": "x.xox.xox.xox.xo",
+    "ohat": "..............o.",
+    "shaker": "o.o.o.o.o.o.o.o."
+   },
+   "fill_every": 8,
+   "fill": "B"
+  },
+  "build": {
+   "bars": {
+    "kick": "X.......X.......",
+    "snare": "....X.......X...",
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ]
+  },
+  "drop": {
+   "bars": {
+    "kick": [
+     "X.X...X...XX....",
+     "X.X.......X..X.."
+    ],
+    "snare": [
+     "....X..o.o..X..o",
+     "....X..o.o..X.X."
+    ],
+    "clap": "....x.......x...",
+    "hat": "xxxXxxxXxxxXxxxX",
+    "ohat": "......o.......o.",
+    "shaker": "o.o.o.o.o.o.o.o."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "hat": "x...x...x...x...",
+    "kick": "X..............."
+   },
+   "last": {
+    "snare": "........X.X.XXXX"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X.X.......X.....",
+    "snare": "....X.......X...",
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "ramp": [
+    1.0,
+    0.3
+   ]
+  }
+ },
+ "bass": {
+  "groove": [
+   "x.x...x.x.x...o.",
+   "x.x...x.x...o.x."
+  ],
+  "build": "x.x.x.x.x.x.x.x.",
+  "drop": [
+   "X.x.x.o.X.x.x.o.",
+   "X.x.x.o.X.x.o.x."
+  ],
+  "break": "................",
+  "outro": "x.......x.......",
+  "intro": "................"
+ },
+ "sub": {
+  "groove": "x-------x-------",
+  "drop": "X-------X-------",
+  "build": "x-------x-------"
+ },
+ "sub_duck_kicks": true,
+ "chords": {
+  "intro": "................",
+  "groove": [
+   "................",
+   "......x.........",
+   "................",
+   "..........x..x.."
+  ],
+  "build": [
+   "x...............",
+   "x.......x.......",
+   "x...x...x...x...",
+   "x.x.x.x.x.x.x.x."
+  ],
+  "drop": [
+   "X..X......X.....",
+   "................",
+   "X..X......X..X..",
+   "................"
+  ],
+  "break": "x---------------",
+  "outro": "................",
+  "voicing": "open"
+ },
+ "arp": {
+  "shape": "sequence",
+  "rate": 16,
+  "sections": [
+   "build",
+   "drop"
+  ],
+  "gate": 0.55,
+  "cell": [
+   -24,
+   -24,
+   -12,
+   -24,
+   -14,
+   -24,
+   -17,
+   -12,
+   -24,
+   -24,
+   -12,
+   -21,
+   -24,
+   -19,
+   -17,
+   -12
+  ]
+ },
+ "kit": {
+  "CP_Kick": {
+   "fn": "kick",
+   "args": {
+    "f0": 50.0,
+    "punch": 1.2,
+    "length": 0.45,
+    "drive": 2.4
+   }
+  },
+  "CP_Snare": {
+   "fn": "snare",
+   "args": {
+    "body_hz": 205.0,
+    "decay": 0.22,
+    "length": 0.4
+   }
+  }
+ },
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.36,
+   "voices": 3,
+   "detune_cents": 9.0,
+   "drive": 3.2
+  },
+  "label": "Rock Bass"
+ },
+ "production_recipe": "big_beat",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "The person's request (2026-10-29): remix No Sleep Till Brooklyn and surprise with creativity; big beat chosen for a 1986 rap-rock record (its own rock riffs sampled into breakbeats is how the style was made).",
+  "Big beat as a style: breakbeat-driven dance music of the mid-to-late 1990s built on sampled breaks, rock riffs and acid lines, usually 100 to 140 bpm (https://en.wikipedia.org/wiki/Big_beat).",
+  "Acid: the Roland TB-303's squelch is a resonant low-pass filter with a short envelope and accents on a 16th sequence (https://en.wikipedia.org/wiki/Roland_TB-303); here a Serum 2 sound made by spec (serumspec.pluck, high resonance, saturation)."
+ ]
+}

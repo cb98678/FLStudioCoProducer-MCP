@@ -409,6 +409,7 @@ One folder per module. Layer counts and the exposed list come from `coproducer d
 | `skills/mastering/SKILL.md` | Use when finishing a track |
 | `skills/mix-engineer/SKILL.md` | Use for mixing decisions |
 | `skills/module-authoring/SKILL.md` | Use when writing, fixing, or reviewing one module for the FL co-producer from a task card |
+| `skills/newtime-newtone/SKILL.md` | Use when the person wants a vocal fitted to the beat, quantized or time-warped with FL Studio's Newtime, or auto-tuned, pitch-corrected, robotic, smooth or natural with Newtone, wants the tuned voice's melody as MIDI to drive t... |
 | `skills/orchestrator-guide/SKILL.md` | Use when running or planning a co-producer session |
 | `skills/remix-craft/SKILL.md` | Use before planning any remix, whenever the person asks what a remix should be or how DJs and producers approach one, and when they bring an original song with its remixes to study. |
 | `skills/remix-from-stems/SKILL.md` | Use when the user wants any song remixed into a genre (club mix, house, techno, dubstep, drum and bass, trap or rap beat, or another style pack) end to end |
@@ -443,7 +444,7 @@ One folder per module. Layer counts and the exposed list come from `coproducer d
 | `docs/REMIX_RESEARCH.md` | How DJs and producers think about remixes. Research done 2026-10-28 at the person's request, after they heard four remixes of "the curse of curves" and said the system keeps making |
 | `docs/ROADMAP.md` | Roadmap: from one tech-house remix to a full co-producer. Written 2026-10-25 at the person's request to pause and realign: pin every version, review the code for fragility and drift from the plans, |
 | `docs/SERUM_MCP.md` | Serum 2, the Serum MCP and generated sounds. Status 2026-10-28 (wavetables and the sampler added; the route below dates from 2026-10-26). |
-| `docs/STATUS.md` | Status. Updated 2026-10-29 (the vocal-led layers recipe and section-long piano rolls; song blueprints from the person's breakdowns; before that, stems by FL Studio's own Extract stems from sample at intake; before that, Newtime and New... |
+| `docs/STATUS.md` | Status. Updated 2026-10-29 (a big beat style pack and No Sleep Till Brooklyn; before that, the vocal-led layers recipe and section-long piano rolls; song blueprints from the person's breakdowns; before that, stems by FL Studio's own Ex... |
 | `docs/STEM_REMIX_PIPELINE.md` | Stem remix pipeline (requested 2026-10-22). Goal: take an MP3 dropped into the playlist, split it into stems with FL Studio's own stem separation, chop the vocals, turn the instruments into piano roll |
 | `docs/STRESS_REPORT.md` | Stress and fragility report (Gate 0 hardening). Run on 2026-10-21 against FL Studio 2026 Producer Edition v26.1.7 (build 5654, API 45) on the Windows 11 machine, plus the cloud workspace for the fake-FL runs. |
 | `docs/TARGETS_PROPOSAL.md` | Mix and master targets: proposal for your decision. Nothing here is active. |

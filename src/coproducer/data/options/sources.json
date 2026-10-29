@@ -303,6 +303,20 @@
     "https://www.mixgraph.io/tracks/real-mccoy-another-night",
     "https://acordesweb.com/cancion/real-mccoy/another-night"
    ]
+  },
+  "big_beat_style": {
+   "study": "styles/big_beat.json",
+   "title": "Big beat (the style)",
+   "artists": "The Chemical Brothers, Fatboy Slim, The Prodigy and others",
+   "year": 1996,
+   "genre": "Big beat",
+   "bpm": null,
+   "key": null,
+   "verified": "a style, not one record: breakbeat-driven 1990s dance music built on sampled breaks, rock riffs and acid lines (Wikipedia); the TB-303 acid sound is a resonant low-pass with a short envelope and accents (Wikipedia). The patterns here are ours.",
+   "urls": [
+    "https://en.wikipedia.org/wiki/Big_beat",
+    "https://en.wikipedia.org/wiki/Roland_TB-303"
+   ]
   }
  }
 }

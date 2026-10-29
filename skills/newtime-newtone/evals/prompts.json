@@ -1,0 +1,5 @@
+{"skill": "newtime-newtone", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Auto-tune this vocal robotic in the choruses and smooth in the verses, and fit it tight to the beat first.", "assertions": [{"type": "tool_called", "module": "quantize_vocal_gui"}, {"type": "tool_called", "module": "apply_vocal_tuning_gui"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Use Newtone to get the melody of the vocal as MIDI so the bass and synths can follow it.", "assertions": [{"type": "tool_called", "module": "apply_vocal_tuning_gui"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Master the remix to the club target.", "assertions": []}
+]}

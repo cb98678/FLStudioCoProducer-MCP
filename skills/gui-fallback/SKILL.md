@@ -28,7 +28,7 @@ Use the interface only when no API tool exists. Prefer a recipe over free-form c
 | Pick a piano roll script, then run it | `arm_piano_roll_script_gui`, `run_piano_roll_script_gui` |
 | Render with the command line | `render_via_cli` (no clicks) |
 | Split a song into stems with FL's own Extract stems from sample | `extract_stems_gui` (`prepare_stems_project`, recipe `extract_stems_gui`) |
-| Fit a vocal to the beat in Newtime (warp markers on its syllables, quantized) | `quantize_vocal_gui` (`detect_warp_markers`, `add_warp_markers_gui`, recipes `newtime_load_gui`, `newtime_quantize_save_gui`) |
+| Fit a vocal to the beat in Newtime (warp markers on its syllables, quantized; skill `newtime-newtone` maps it all) | `quantize_vocal_gui` (`detect_warp_markers`, `add_warp_markers_gui`, recipes `newtime_load_gui`, `newtime_quantize_save_gui`) |
 | Auto-tune a vocal in Newtone and save its notes as MIDI | `apply_vocal_tuning_gui` (styles robotic, middle, smooth, natural; recipe `newtone_tune_save_gui`) |
 
 Paths a recipe writes or opens must be inside the sandbox folder. A path outside it is refused.

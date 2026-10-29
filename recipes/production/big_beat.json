@@ -1,0 +1,87 @@
+{
+ "name": "big_beat",
+ "what": "Big beat moves: the bass ducked lightly and the music bus a little, a low-pass opening on the music bus over each build with an 8-bar noise riser, a one-beat gap and an impact into each drop, a reverse fill on the chops coming out of a drop, and a tape stop on the music bus into the break and into the outro (the record that never sleeps finally winds down).",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "bass",
+   "depth": "medium"
+  },
+  {
+   "on": "music_bus",
+   "depth_db": -4.0
+  }
+ ],
+ "transitions": {
+  "intro>groove": [
+   {
+    "synth": "impact_synth",
+    "volume": 9000
+   }
+  ],
+  "groove>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 8
+   }
+  ],
+  "build>drop": [
+   {
+    "synth": "noise_riser",
+    "bars": 8,
+    "volume": 9000
+   },
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ],
+  "drop>groove": [
+   {
+    "recipe": "reverse_fill",
+    "on": "chops",
+    "bars": 1
+   }
+  ],
+  "drop>break": [
+   {
+    "recipe": "tape_stop",
+    "on": "music_bus",
+    "bars": 1
+   }
+  ],
+  "drop>outro": [
+   {
+    "recipe": "tape_stop",
+    "on": "music_bus",
+    "bars": 2
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: after the first render read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x} (tools/remix_song.py does this)."
+}

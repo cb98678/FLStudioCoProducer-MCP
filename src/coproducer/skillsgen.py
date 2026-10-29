@@ -16,7 +16,7 @@ SKILL_LAYERS = {
     "sound-design-recipes": ("L2",), "co-producer-protocol": (), "gui-fallback": ("L6",), "track-creation": ("L3", "L5"), "editable-first": ("L2", "L3"),
     "remix-from-stems": ("L3", "L4"), "fx-chains": ("L3", "L4"), "study-reference-project": ("L3", "L4"), "genre-styles": ("L3", "L5"),
     "creative-variety": ("L3",), "remix-craft": ("L3", "L4"), "loops-and-kits": ("L4",), "serum-wavetables": ("L4", "L5"),
-    "song-blueprints": ("L3",),
+    "song-blueprints": ("L3",), "newtime-newtone": ("L4", "L6"),
 }
 RULES = {
     "LM-001": "One public function per file; file, directory and function share one name.",

@@ -9,7 +9,7 @@ parts sit under -45 dB (one is a sidechain trigger channel, the other is not exp
 they do it, how they sound, the design of the synths, everything, and develop all of the elements into choices and options in the
 recipes" (2026-10-27). No lyrics are copied; the notebooks and comments in the projects are not reproduced.
 
-The result is the option bank (`src/coproducer/data/options`, 213 options in 12 categories), the variety engine that chooses from it per song
+The result is the option bank (`src/coproducer/data/options`, 215 options in 12 categories), the variety engine that chooses from it per song
 (`src/coproducer/variety.py`, skill `creative-variety`), fifteen new style packs, and one page per song in `docs/demo_study`.
 
 ## The songs
@@ -116,7 +116,7 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `form.cinematic_cues` **Through-composed cues with meter and tempo changes.** Soundtrack writing: the music follows a story, not a loop. Short cues, a bar of 7/4 or 6/4 to make a turn, a 3/4 bar before a return, a tempo change (120 to 110) for a new scene, an ending that stops instead of fading. From: Secret Agent Rendezvous. Manual: Odd meters and tempo changes are not built by the engine yet: set the markers and the tempo clip in FL (or with the bridge) after the build.
 - `form.whole_song_turned` **The whole song at club tempo, each pass a different job.** Every sung line of the record in its own order, sped up to the style's standard tempo, with the functions turned from pass to pass: verse 1 rides the groove, chorus 1 is sung over a break with the bass out and lifts into a drop of the record's own hook, verse 2 moves into a second break, chorus 2 is sung on the drop beat, a two-bar breath, then the last hook drop. No riser builds: an empty bar before each drop does the lifting, so the drops need not be louder than the groove. A short club edit for open-format DJs (the studied one runs 2:39).
 
-### Grooves (19)
+### Grooves (20)
 
 - `drums.pack` **The style pack's own groove.** Keep the grid the style pack was written with (its sources say where it comes from): the genre's centre, chosen when the song wants the classic version.
 - `drums.trance_rolling` **Trance: three-of-four hats, syncopated percs, offbeat ride.** Four on the floor with the closed hat on the three 16ths after each kick (.xxx), the open hat and a ride on the off-beat, two percussion voices answering on the 'a' of beats, claps on 2 and 4. Builds roll the snare in 16ths with velocity climbing from soft to full. From: Exoplanet.
@@ -137,6 +137,7 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `drums.cinematic_jazz_ride` **Cinematic jazz: swung ride, toms and hits instead of a backbeat.** No backbeat: a swung ride (X.xoX.xoX.xoX.xx) and a hi-hat pedal on quarters carry the time, toms and orchestral hits (an FPC wack, a big HIT) punctuate the phrase ends, a kick only under the big moments. From: Secret Agent Rendezvous.
 - `drums.liquid_break` **Liquid break: a sliced break re-ordered, ghosted snares.** A breakbeat cut into slices (Slicex or Fruity Slicer) and played back in its own order for the first phrase, then re-ordered ('Ghost Break') so the drums move without changing sound; programmed kick and snare reinforce the break's own hits. From: Never Out ( Tars ), Song For You. Manual: The sliced break itself is placed by hand (or from the original's drum stem with Slicex); the engine plays the reinforcement.
 - `drums.house_layer_in` **House groove that layers in: kick alone, then claps and off-beat hats.** Four on the floor with nothing else for the first 8 bars of a groove (the bass carries it), then claps on 2 and 4 and an open hat on every off-beat 8th. Breaks keep a lighter, syncopated kick (hits on the 'a' of beats 3 and 4 that echo a dembow) under rolling 16th hats and one clap on beat 2. Every bar of a section is the same loop.
+- `drums.big_beat_break` **Big beat breakbeat: a funky break, ghost snares, 16th hats, a roll into the drop.** No four-on-the-floor: the kick on 1, the and of 1 and around beat 3 (X.X.......XX....), snares on 2 and 4 with ghost snares before and after, 16th hats with accents, a tambourine-like shaker on the 8ths and an open hat at the bar's end; builds strip to kick and snare with an accelerating roll; a crash on every phrase. Late-90s big beat over any voice that wants swagger instead of a club pulse.
 
 ### Bass lines (20)
 
@@ -179,7 +180,7 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `chords.tresillo_332_pluck` **3-3-2 pluck chords leaning across the beat.** Short plucked chords in 3+3+2 groups of 16ths twice a bar (steps 1, 4, 7, 9, 12, 15), accented on each group's start: four of the six hits land off the quarter notes, so the part leans forward like an acoustic guitar strum. Verses and drops; a single held chord in the break.
 - `chords.voice_led_pad` **Voice-led held pad, the bass doing the leaping.** Only a held pad, each chord in the inversion nearest the last one: shared notes stay put and the others move by a step, so the upper voices barely move while the bass line leaps underneath and tells the story. No stabs: pair it with an arp or a lead for rhythm.
 
-### Arps and sequences (12)
+### Arps and sequences (13)
 
 - `arp.pack` **The style pack's own arp.** Keep the pack's arp (the rising arp through breaks and builds, or none).
 - `arp.rise` **Rising 16th arp in breaks and builds.** The chord's notes climbing in 16ths, getting louder over the build: the existing default, best used once per song. From: Exoplanet.
@@ -193,6 +194,7 @@ with the modules after the build (apply_fx_chain, create_send_route, add_automat
 - `arp.sus_cell` **Sus-cell arp: 1 2 4 5, 1 2 2 1.** An arp on the root, second, fourth and fifth (C#5 Eb5 F#5 Ab5 C#5 Eb5 Eb5 C#5) that never states the third, so it fits major and minor; through overdrive and a love-philter it becomes the record's hook. From: Use Me.
 - `arp.octave_bounce_pluck` **Octave bounce pluck.** Root and octave alternating in a skipping 8th rhythm on a pluck: a bass-register arp that drives without chords. From: Never Out ( Tars ).
 - `arp.three_over_four` **3-over-4 lead: groups of three 16ths for three bars, resolving on the fourth.** A rising chord-tone line struck every third 16th, so it crosses the quarter-note grid and the downbeat moves each bar; after three bars (48 sixteenths, where the 3s and 4s meet again) the fourth bar resolves on the beat. The soaring, syncopated feel of a progressive-house lead.
+- `arp.acid_sequence` **Acid line: a squelching 16th sequence two octaves down, octave jumps and minor sevenths.** A TB-303 style line on its own Serum sound (a saw through a resonant low-pass with a short filter envelope and drive): sixteen 16ths over the bar's root, two octaves under the arp register, jumping the octave and touching the minor seventh, fifth and minor third, gated short so it squelches. Builds and drops.
 
 ### Harmony (21)
 

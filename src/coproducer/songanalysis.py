@@ -382,6 +382,7 @@ def draft_plan(name: str, toks: list[dict], *, source_bpm: float, key_pc: int, o
             "vocal_clips": clips, "clip_words": clip_words, "roles": roled["roles"], "notes": notes}
     plan["chop_events"] = [list(e) for e in arrange.arrange_chops(secs, roled["roles"])]
     plan["fx_cues"] = arrange.generate_fx_cues(secs)
+    plan["pattern_bars"] = 16   # one piano roll per section, up to 16 bars (the person, 2026-10-29)
     _with_variety(plan, picked_v, int(key_pc), roots, mode)
     if pack:
         plan["style"], plan["vocal_multiple"] = pack["name"], multiple
@@ -506,6 +507,7 @@ def _song_form_plan(name: str, toks: list[dict], pack: dict, bpm: float, multipl
             "carries the verse on into the chorus's first lines and " if carried else "", len(songform.STUTTER_HITS), chops["stutter"]["words"]))
     if every_part:
         notes.append("every verse and every chorus is kept (a chorus sung straight after a chorus is its own drop, with no build between)")
+    plan["pattern_bars"] = 16   # one piano roll per section, up to 16 bars, instead of a pattern a bar (the person, 2026-10-29)
     if roots:
         plan["bar_roots"] = songform.bar_roots(arr["src_bar"], roots, roots_first_bar, int(key_pc))
     if research:

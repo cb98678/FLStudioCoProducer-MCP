@@ -17,7 +17,7 @@ def skill_dirs():
 
 def test_every_planned_skill_exists_with_good_frontmatter():
     names = {p.name for p in skill_dirs()}
-    assert names == set(SKILL_LAYERS) and len(names) == 22
+    assert names == set(SKILL_LAYERS) and len(names) == 23
     for d in skill_dirs():
         text = (d / "SKILL.md").read_text(encoding="utf-8")
         m = re.match(r"---\nname: (.+)\ndescription: (.+)\n---\n", text)

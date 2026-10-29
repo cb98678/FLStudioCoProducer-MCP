@@ -16,6 +16,10 @@ Producer Edition v26.1.7 build 5654 (API level 45, embedded Python 3.12.1), Seru
 
 ## Where the work stands (2026-10-29, evening)
 
+- **No Sleep Till Brooklyn, big beat** (`sandbox\remix\nstb_big_beat_v1`, waiting for the person's ear; "surprise me"). New style pack
+  big_beat and its production recipe; the acid line is the arp part on a Serum sound made by spec (`make_acid.py` there). The arrangement
+  was written by hand from a per-bar stem map (`LESSONS_TO_RECIPES.md` rows 101 to 105).
+
 - **Girlish Type Men, vocal-led layers** (`sandbox\remix\gtm_vocal_v6`, waiting for the person's ear). The person's recipe: synths follow
   the voice's chords, long pads under spaced-out stabs, a bass that rolls and then stretches out in the drops, piano rolls up to 16 bars.
   `voiceharmony.section_loops`, chords.pad_and_spaced_stabs (a Pad part), bass.roll_then_long_drop, the plan's pattern_bars. Skill

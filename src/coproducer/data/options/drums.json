@@ -1199,6 +1199,122 @@
      }
     }
    }
+  },
+  {
+   "id": "drums.big_beat_break",
+   "label": "Big beat breakbeat: a funky break, ghost snares, 16th hats, a roll into the drop",
+   "what": "No four-on-the-floor: the kick on 1, the and of 1 and around beat 3 (X.X.......XX....), snares on 2 and 4 with ghost snares before and after, 16th hats with accents, a tambourine-like shaker on the 8ths and an open hat at the bar's end; builds strip to kick and snare with an accelerating roll; a crash on every phrase. Late-90s big beat over any voice that wants swagger instead of a club pulse.",
+   "genres": [
+    "big_beat",
+    "breakbeat",
+    "hiphop",
+    "trip_hop",
+    "electro"
+   ],
+   "moods": [
+    "energetic",
+    "rowdy",
+    "defiant",
+    "party",
+    "playful",
+    "boastful"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "big_beat_style",
+     "where": "breakbeat-driven 1990s dance music; the grid here is ours"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "intro": {
+      "bars": {
+       "hat": "x.x.x.x.x.x.x.x.",
+       "kick": [
+        "X.........X.....",
+        "X.........X....."
+       ],
+       "shaker": "................"
+      },
+      "ramp": [
+       0.5,
+       0.9
+      ],
+      "last": {
+       "snare": "............XXXX"
+      }
+     },
+     "groove": {
+      "bars": {
+       "kick": [
+        "X.X.......XX....",
+        "X.X.......X..X.."
+       ],
+       "snare": [
+        "....X..o.o..X..o",
+        "....X..o.o..X.o."
+       ],
+       "hat": "x.xox.xox.xox.xo",
+       "ohat": "..............o.",
+       "shaker": "o.o.o.o.o.o.o.o."
+      },
+      "fill_every": 8,
+      "fill": "B"
+     },
+     "build": {
+      "bars": {
+       "kick": "X.......X.......",
+       "snare": "....X.......X...",
+       "hat": "x.x.x.x.x.x.x.x."
+      },
+      "roll": "accelerate",
+      "ramp": [
+       0.6,
+       1.0
+      ]
+     },
+     "drop": {
+      "bars": {
+       "kick": [
+        "X.X...X...XX....",
+        "X.X.......X..X.."
+       ],
+       "snare": [
+        "....X..o.o..X..o",
+        "....X..o.o..X.X."
+       ],
+       "clap": "....x.......x...",
+       "hat": "xxxXxxxXxxxXxxxX",
+       "ohat": "......o.......o.",
+       "shaker": "o.o.o.o.o.o.o.o."
+      },
+      "fill_every": 8,
+      "fill": "A"
+     },
+     "break": {
+      "bars": {
+       "hat": "x...x...x...x...",
+       "kick": "X..............."
+      },
+      "last": {
+       "snare": "........X.X.XXXX"
+      }
+     },
+     "outro": {
+      "bars": {
+       "kick": "X.X.......X.....",
+       "snare": "....X.......X...",
+       "hat": "x.x.x.x.x.x.x.x."
+      },
+      "ramp": [
+       1.0,
+       0.3
+      ]
+     }
+    },
+    "swing": 0.54
+   }
   }
  ]
 }

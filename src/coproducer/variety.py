@@ -36,6 +36,7 @@ STYLE_GENRES = {
     "house": ["house", "deep_house", "garage", "nu_disco", "tech_house", "future_house", "afro_house", "pop_dance"], "club_house": ["house", "tech_house", "future_house"],
     "deep_house": ["deep_house", "house", "afro_house", "organic_house"], "tech_house": ["tech_house", "house", "minimal"],
     "tech_house_groove": ["tech_house", "house", "minimal"],
+    "big_beat": ["big_beat", "breakbeat", "electro", "hiphop", "trip_hop", "acid"],
     "techno": ["techno", "melodic_techno", "industrial_techno", "minimal"], "dnb": ["drum_and_bass", "dnb", "liquid_dnb", "jungle"],
     "dubstep": ["dubstep", "melodic_dubstep", "halftime", "bass_house"], "trap": ["trap", "drill", "hiphop"], "hiphop": ["hiphop", "boom_bap", "lofi", "trap"],
     "nu_disco": ["nu_disco", "pop_dance", "funk", "house"],
