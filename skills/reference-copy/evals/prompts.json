@@ -1,0 +1,5 @@
+{"skill": "reference-copy", "evals": [
+ {"id": 1, "should_trigger": true, "prompt": "Here's the original and a remix of it. Look at what the remixer did and make our own remix just like theirs, as practice.", "assertions": [{"type": "tool_called", "module": "extract_song_loops"}]},
+ {"id": 2, "should_trigger": true, "prompt": "Sample one note of the lead synth in this remix and use it in a piano roll for our version.", "assertions": [{"type": "tool_called", "module": "prepare_sampler_sound"}]},
+ {"id": 3, "should_trigger": false, "prompt": "Set the master limiter so the drop hits -8 LUFS.", "assertions": []}
+]}

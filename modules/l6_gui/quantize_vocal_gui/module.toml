@@ -5,7 +5,7 @@ summary = "Fit a vocal to the beat in FL's Newtime: warp markers at its syllable
 version = "1.0.0"
 
 [io]
-input = '''{"type":"object","required":["path","out_path","bpm"],"properties":{"path":{"type":"string","minLength":1,"maxLength":400},"out_path":{"type":"string","minLength":1,"maxLength":400},"bpm":{"type":"number","minimum":40,"maximum":250},"division":{"type":"integer"},"lead_s":{"type":"number","maximum":0.2},"grid_up":{"type":"integer","minimum":1,"maximum":10000},"grid_down":{"type":"integer","minimum":1,"maximum":10000}},"additionalProperties":false}'''
+input = '''{"type":"object","required":["path","out_path","bpm"],"properties":{"path":{"type":"string","minLength":1,"maxLength":400},"out_path":{"type":"string","minLength":1,"maxLength":400},"bpm":{"type":"number","minimum":40,"maximum":250},"division":{"type":"integer"},"lead_s":{"type":"number","maximum":0.2},"max_move_s":{"type":"number","minimum":0.005,"maximum":0.1},"min_share":{"type":"number","minimum":0.3,"maximum":1},"grid":{"type":"string","pattern":"^[0-9]+/[0-9]+$"}},"additionalProperties":false}'''
 output = '''{"type":"object"}'''
 
 [policy]
@@ -27,4 +27,4 @@ golden = "test_quantize_vocal_gui.py::test_detects_opens_marks_quantizes_and_sav
 failure = "test_quantize_vocal_gui.py::test_refuses_and_stops_early"
 
 [budget]
-params = 7
+params = 8

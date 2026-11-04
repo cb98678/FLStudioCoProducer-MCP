@@ -1,0 +1,177 @@
+{
+ "name": "straight_song",
+ "label": "Straight song (the singer's own form, the band around her cadence)",
+ "engine": "grammar",
+ "what": "No genre form: the song plays straight through at its own tempo, every line in order, the chords as the singer plays them, and the band breathes with her: a plain kick and backbeat under the verses, the full kit under the choruses, nothing under a whispered passage, and the band out wherever she stops (the plan's band_rests), with no risers or sweeps at all. Made for Hello Toni's second song (2026-11-03), the person's ask: recreate the song faithfully, then work upwards from there.",
+ "moods": [
+  "faithful",
+  "plain",
+  "warm"
+ ],
+ "tempo": {
+  "bpm": 118,
+  "range": [
+   60,
+   200
+  ],
+  "follow": true
+ },
+ "sections": [
+  [
+   "intro",
+   2
+  ],
+  [
+   "groove",
+   12
+  ],
+  [
+   "build",
+   1
+  ],
+  [
+   "drop",
+   12
+  ],
+  [
+   "break",
+   5
+  ],
+  [
+   "groove",
+   4
+  ],
+  [
+   "drop",
+   12
+  ],
+  [
+   "outro",
+   4
+  ]
+ ],
+ "drums": {
+  "swing": 0.5,
+  "intro": {
+   "bars": {
+    "shaker": "x.x.x.x.x.x.x.x.",
+    "rim": "....x.......x..."
+   },
+   "ramp": [
+    0.6,
+    0.9
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "x.x.x.x.x.x.x.x.",
+    "rim": "....x.......x...",
+    "shaker": "..o...o...o...o."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "x.x.x.x.x.x.x.x."
+   },
+   "roll": "accelerate",
+   "roll_voice": "tom",
+   "ramp": [
+    0.8,
+    1.0
+   ]
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": "x.x.x.x.x.x.x.x.",
+    "ohat": "..x...x...x...x.",
+    "shaker": "x.xxx.xxx.xxx.xx",
+    "perc": [
+     "..x..x.x..x..x..",
+     "..x..x.x..x..x.x"
+    ],
+    "rim": "x..x..x...x..x.."
+   },
+   "fill_every": 8,
+   "fill": "B"
+  },
+  "break": {
+   "bars": {}
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": "x.x.x.x.x.x.x.x.",
+    "rim": "....x.......x..."
+   },
+   "ramp": [
+    0.9,
+    0.6
+   ]
+  }
+ },
+ "bass": {
+  "groove": "x.......x......x",
+  "drop": [
+   "x..x..x...x..x..",
+   "x..x..x...x..x.o"
+  ],
+  "build": "x...x...x...x...",
+  "break": "................",
+  "outro": "x.......x.......",
+  "intro": "................"
+ },
+ "sub": {
+  "groove": "x-------x-------",
+  "drop": "x-------x-------",
+  "build": "x-------x-------",
+  "outro": "x-------x-------"
+ },
+ "chords": {
+  "intro": "................",
+  "groove": "..x.......x.....",
+  "drop": [
+   "..x...x...x...x.",
+   "..x...x...x..x.x"
+  ],
+  "break": "x---------------",
+  "build": "..x...x...x...x.",
+  "outro": "..x...x...x...x.",
+  "voicing": "sus2"
+ },
+ "pad": {
+  "break": "chord",
+  "groove": "chord",
+  "outro": "chord",
+  "voicing": "add9",
+  "base": 55,
+  "lead": true,
+  "max_bars": 4,
+  "velocity": {
+   "break": 90,
+   "groove": 46,
+   "outro": 70
+  }
+ },
+ "arp": {},
+ "kit": {},
+ "production_recipe": "tribal_tech",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "Hello Toni's second song as she sings it (2026-11-03): the person asked for the song recreated faithfully, the band around her cadence, her stops respected, no styles or genres",
+  "styles/tribal_tech.json for the sounds the person liked (the flute that follows her)"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 1,
+  "tail_bars": 4,
+  "intro_bars": 2,
+  "bridge": false,
+  "outro_bars": 4,
+  "gap_before_drop": "none"
+ },
+ "options": {}
+}

@@ -234,3 +234,13 @@ Renders of the Future House demo must use `FutureHouse_render_noTP.flp` (the Tra
   looks, and the live probe then saw 117 unknown ops (fixed 2026-10-25).
 - Only inject effects and clips into a project FL saved itself; `Flp.save` refuses PPQ other than 96 and saves older than FL 21.
 - FL holds a knob at a clip's last value, and a plugin plays as saved before its first clip (`REFERENCE_COVERAGE.md`).
+
+- The bass sample (CP_Reese.wav, A1 on key 60) was keyed from the song's key until 2026-10-29: every remix not in A played its reese,
+  growl or 808 part off its roots (a semitone sharp in G# minor). `remixplan.reese_key` now keys from the sample's own pitch
+  (BASS_SAMPLE_PC, or a plan's bass_sample root_midi). Remixes rendered before that need a rebuild to hear their bass in key.
+- Slide notes (note flag 0x0008) bend the notes already sounding on the channel over the slide note's length; native FL instruments only
+  (the Sampler: yes, render-checked; Serum: no). The Sampler plays a one-shot sample to its end whatever the note length.
+- A short cut of a sub-bass reads its pitch up to a quarter-tone off (YIN and a 0.3 s spectrum alike); measure tuning over the whole stem
+  (sandbox\gui_work\tuning2.py) and pass the cents to `prepare_sampler_sound` options tune.
+- A note cut from over a chord can read as the chord's common root octaves down (a B4 over a B major pad read B1): give
+  `prepare_sampler_sound` the note it is (options pitch_midi).

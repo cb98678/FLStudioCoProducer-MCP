@@ -1,6 +1,7 @@
 """Shared fixtures for module tests."""
 from __future__ import annotations
 
+from functools import lru_cache
 from pathlib import Path
 
 import pytest
@@ -12,7 +13,10 @@ from coproducer.testrig import desk, ml, procs, rig, run, wav  # noqa: F401  (fi
 ROOT = Path(__file__).resolve().parent
 
 
+@lru_cache(maxsize=None)
 def find_module_file(name: str) -> Path:
+    """The module's file (cached: a walk of the whole modules tree takes over 100 ms on Windows, which broke hypothesis' 200 ms deadline
+    for the L0 property tests that load two modules per example)."""
     hits = list(ROOT.rglob(f"{name}/{name}.py"))
     if not hits:
         raise FileNotFoundError(name)

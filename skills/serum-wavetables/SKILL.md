@@ -72,6 +72,15 @@ From sandbox\loops\sorry_freejak, section drop_a, 16 frames, run on rtxclub:
 
 The person has not heard these yet. The bass dropped to sustain 0.8 with a 3 ms attack: the stem read a 124 ms attack, the remix's pump.
 
+## Worked example: the Pickle lead's own note (2026-10-29)
+
+One B4 of the Pickle remix's lead (FL's Instruments stem, 50.44 s, a repeated note so nothing glides into it) cut 0.45 s with
+`prepare_sampler_sound` options isolate, pitch_midi 71, fade_out_s 0.15: the pad under it is 22 dB down after. That file plays the riff
+on an FL Sampler (plan sampler_lead, with slide-note glides), and `build_wavetable` (options f0_hz 493.88, start_s 0.008, end_s 0.23, the
+gated part only) reads 16 frames from it for a Serum layer: table_osc, three voices at 0.08 detune, a 0.16 s pluck on a low-pass, a small
+room (sandbox\remix\boa_pickle_style_v1\make_sounds.py). The Serum layer plays the same notes without the glides: slide notes only bend
+native FL instruments.
+
 ## Limits and what is not verified
 
 - serum-mcp writes into Serum's own folders: presets under Presets\User\sandbox\SONG, samples it copies under Samples\User\serum-mcp,

@@ -257,6 +257,8 @@ def main() -> int:
                 continue
             name = ("CP - %s %s" % (a.name.replace("_", " ").title(), part.title()))[:64]
             inst = (json.loads(plan.read_text(encoding="utf-8")).get("instruments") or {}).get(part) or {}
+            if inst.get("keep"):   # the plan keeps this demo instrument itself (a real Rhodes for the keys), not a sound generated from it
+                continue
             if part == "pad" and not inst and (pack.get("pad") or {}).get("sound"):   # a pad takes a pad's envelope and width, not the stem's notes'
                 o = variety.find(variety.load_bank(), pack["pad"]["sound"])
                 inst = {"label": o["label"], "measured": o.get("measured")}

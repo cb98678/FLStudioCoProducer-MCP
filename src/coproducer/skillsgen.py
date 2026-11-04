@@ -16,7 +16,8 @@ SKILL_LAYERS = {
     "sound-design-recipes": ("L2",), "co-producer-protocol": (), "gui-fallback": ("L6",), "track-creation": ("L3", "L5"), "editable-first": ("L2", "L3"),
     "remix-from-stems": ("L3", "L4"), "fx-chains": ("L3", "L4"), "study-reference-project": ("L3", "L4"), "genre-styles": ("L3", "L5"),
     "creative-variety": ("L3",), "remix-craft": ("L3", "L4"), "loops-and-kits": ("L4",), "serum-wavetables": ("L4", "L5"),
-    "song-blueprints": ("L3",), "newtime-newtone": ("L4", "L6"),
+    "song-blueprints": ("L3",), "newtime-newtone": ("L4", "L6"), "reference-copy": ("L3", "L4"),
+    "vocal-slice-align": ("L3", "L4"), "vocal-chunking": ("L3", "L4", "L6"),
 }
 RULES = {
     "LM-001": "One public function per file; file, directory and function share one name.",
@@ -113,7 +114,7 @@ WORDS = {"max_delta_db", "slot_index", "allow_octave", "dialog_contains", "no_di
          "contour_threshold", "tempo_source_bpm", "energy_arc", "chord_loop", "bars_per_loop", "verified_note", "hold_s", "target_peak_db",
          "levels_db", "out_dir", "result_path", "clear_first", "module_name",
          # GUI recipe step kinds, recipe fields, recipe and anchor names (gui-fallback/references/recipe-notes.md), the vocal-led plan fields
-         "click_row", "click_col", "template_click", "click_in_window", "knob_in_window", "allow_open", "newtime_load_gui",
+         "click_row", "click_col", "template_click", "click_in_window", "knob_in_window", "move_window", "allow_open", "newtime_load_gui",
          "newtime_quantize_save_gui", "newtone_tune_save_gui", "playlist_clip1_menu", "clip_menu_time_warp", "clip_menu_pitch_correct",
          "lead_notes", "lead_rows", "best_loop", "grid_up", "grid_down", "clip_menu_extract_stems", "extract_stems_button", "playlist_song_clip_header",
          # library functions named in editable-first/references/vocal-chops.md
@@ -123,7 +124,11 @@ WORDS = {"max_delta_db", "slot_index", "allow_octave", "dialog_contains", "no_di
          "analyze_sample_file", "custom_harmonics", "sample_source", "serum_states", "serum_project",
          # serum-mcp PresetSpec fields and readings named in skills/serum-wavetables
          "sample_playback_source", "sample_center_pan", "sample_frames", "sample_loop", "table_position", "granular_source", "aux_source",
-         "fx_chain", "mod_routes", "master_volume", "beat_sync", "edge_loss_db", "wrap_jump", "play_note"}
+         "fx_chain", "mod_routes", "master_volume", "beat_sync", "edge_loss_db", "wrap_jump", "play_note",
+         # plan keys, library functions and manifest fields named in vocal-slice-align, vocal-chunking, remix-from-stems and newtime-newtone
+         "her_grid_offset", "to_16th", "warp_to_grid", "renumber_channels", "band_rests", "chord_map", "fl_stretch_modes", "to_remix",
+         "audio_s", "end_s", "grid_s", "grid_16ths", "voiced_s", "on_beat", "offsets_ms", "median_offset_ms", "max_beats", "max_move_s",
+         "no_beat_line", "off_grid", "shifts_16ths", "target_ms"}
 
 IDENT = re.compile(r"`([a-z][a-z0-9]*(?:_[a-z0-9]+)+)`")
 

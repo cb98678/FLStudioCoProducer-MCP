@@ -28,3 +28,17 @@ def test_notes_land_on_the_remix_grid_and_the_lead_stays_in_key():
 
 def test_snap_moves_only_what_is_out_of_key():
     assert vh.snap(64, 4) == 64 and vh.snap(65, 4) == 64 and vh.snap(63, 4) == 62
+
+
+def test_midi_notes_read_a_newtone_file_at_the_bench_tempo(tmp_path):
+    import mido
+    mf = mido.MidiFile(ticks_per_beat=400)   # Newtone's Save as MIDI: 400 ticks a beat, no tempo message
+    tr = mido.MidiTrack()
+    tr.append(mido.Message("note_on", note=62, velocity=80, time=400))
+    tr.append(mido.Message("note_off", note=62, velocity=0, time=400))
+    mf.tracks.append(tr)
+    mf.save(str(tmp_path / "nt.mid"))
+    plain = vh.midi_notes(str(tmp_path / "nt.mid"))
+    at130 = vh.midi_notes(str(tmp_path / "nt.mid"), bpm=130.0)
+    assert plain == [{"start_s": 0.5, "end_s": 1.0, "pitch": 62, "velocity": 80}]           # mido assumes 120 bpm
+    assert at130 == [{"start_s": round(60 / 130, 4), "end_s": round(120 / 130, 4), "pitch": 62, "velocity": 80}]

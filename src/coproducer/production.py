@@ -29,7 +29,7 @@ def load_recipe(name: str) -> dict:
     return json.loads(p.read_text(encoding="utf-8"))
 
 
-TARGETS = ("music_bus", "drum_bus", "snare") + tuple(dict.fromkeys(mixroute.MUSIC_ROLES + mixroute.LEAD_ROLES + mixroute.DRUM_ROLES + ("sub", "fx")))
+TARGETS = ("music_bus", "drum_bus", "snare", "tom") + tuple(dict.fromkeys(mixroute.MUSIC_ROLES + mixroute.LEAD_ROLES + mixroute.DRUM_ROLES + ("sub", "fx")))
 
 
 def check_recipe(recipe: dict) -> list[str]:
@@ -61,6 +61,9 @@ def resolve(f: Flp, target: str) -> tuple[str, int] | None:
     if target in ("music_bus", "drum_bus"):
         t = _named_insert(f, "Music Bus" if target == "music_bus" else "Drum Bus") or (_named_insert(f, "Drums Bus") if target == "drum_bus" else None)
         return ("insert", t) if t else None
+    if target == "tom":   # the tom channel (a tribal build's roll rises in pitch, 2026-11-02)
+        toms = [c for c in f.channel_ids() if "tom" in (f.channel_info(c)["name"] or "").lower() and f.channel_info(c)["sample"]]
+        return ("channel", toms[0]) if toms else None
     if target == "snare":
         chans = [c for c in f.channel_ids() if partmix.role_of(f.channel_info(c)["name"] or "") == "clap" and f.channel_info(c)["sample"]]
         snare = [c for c in chans if "snare" in (f.channel_info(c)["name"] or "").lower()]

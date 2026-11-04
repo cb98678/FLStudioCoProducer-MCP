@@ -255,6 +255,19 @@
    "key": "E flat major (the vocal's), file tagged Fm",
    "bars": 84,
    "seconds": 159.2
+  },
+  "better_off_alone_pickle": {
+   "study": "docs/remix_studies/better_off_alone_pickle.md",
+   "file": "Better_Off_Alone_Pickle_Remix.mp3",
+   "title": "Better Off Alone (Pickle Remix)",
+   "artists": "Alice Deejay, remixed by Pickle",
+   "original": "Better Off Alone (Alice Deejay, 1998; 137 bpm, G# minor per Wikipedia)",
+   "genre": "House",
+   "bpm": 128.0,
+   "original_bpm": 137.0,
+   "key": "G# minor",
+   "bars": 118,
+   "seconds": 221.0
   }
  },
  "references": {

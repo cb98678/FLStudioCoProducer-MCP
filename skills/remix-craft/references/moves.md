@@ -44,6 +44,13 @@ and hats), chorus 1 sung over a break 7 with the bass out, a stop bar, a drop of
 chorus 2 on the drop 16, a two-bar breath, the last hook drop 13, a one-bar end. Good for a song whose every line matters and whose own
 form already lifts into a hook. Option "form.whole_song_turned".
 
+**F12 The riff kept, the glide added.** Pickle on Alice Deejay's "Better Off Alone" (2026-10-29 study): the record's riff note for note
+on a plucky mono lead that glides about 22 ms from the last note into each new one (whatever the interval, only while the last note still
+rings), a pumping tonic pedal bass with a semitone-neighbour turnaround, the title line as the only vocal in short blocks, instrumental
+drops, an 8-bar drums-only intro and 8 bars of drums and bass, a 16-bar outro. Simple on the surface: the craft is in how the melody
+moves, not in changing it. form.dj_revival, bass.pedal_pump_neighbor, drums.euro_revival_four, plan sampler_lead with glide; style
+euro_revival_house.
+
 ## Drop moves
 
 - Drop two differs from drop one: a new bass pattern, a different chord voicing, new drum fills or percussion, a new texture, a vocal

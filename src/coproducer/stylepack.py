@@ -10,7 +10,8 @@ v the fifth below, 4 the fourth, 7 the minor seventh, 3 the chord's third, b the
 . rests (the demo study's lines need them: a trance roll's seventh, a pop bass's low fifth, a trap 808's Phrygian step, 2026-10-28).
 A pattern may also be a list, played one bar after another. Bars count from 0 in a section; "last" replaces voices on its last bar (a pre-drop
 mute), "fill_every" puts a drumplan fill on every n-th bar, "roll" makes a build's snare speed up from quarters to 32nds. drums.swing (0.5 to 0.75,
-MPC-style) delays every off 16th; tempo.follow (default true) lets pick_tempo keep the source's own tempo when it is in range.
+MPC-style) delays every off 16th; tempo.follow (default true) lets pick_tempo keep the source's own tempo when it is in range. A build's
+"roll_voice" names the voice of its accelerating roll (snare by default, tom for a tribal build).
 """
 from __future__ import annotations
 
@@ -82,7 +83,7 @@ def validate(pack: dict) -> list[str]:
             if not isinstance(spec, dict):
                 out.append("drums.%s must be an object" % kind)
                 continue
-            for inst in list(spec.get("bars", {})) + list(spec.get("last", {})):
+            for inst in list(spec.get("bars", {})) + list(spec.get("last", {})) + ([spec["roll_voice"]] if "roll_voice" in spec else []):
                 if inst not in VOICES:
                     out.append("drums.%s: unknown voice %s" % (kind, inst))
             for pats in list(spec.get("bars", {}).values()) + list(spec.get("last", {}).values()):
@@ -239,7 +240,7 @@ def drums(pack: dict, sections: list[dict]) -> drumplan.Plan:
                 p = k / n
                 div = drumplan.ROLL_DIVISIONS[min(3, int(p * 4))]
                 last = k == n - 1
-                plan.roll(b, 0, 14 if last else 16, div, 0.35 + 0.35 * p if not last else 0.7, 0.55 + 0.35 * p if not last else 1.0)
+                plan.roll(b, 0, 14 if last else 16, div, 0.35 + 0.35 * p if not last else 0.7, 0.55 + 0.35 * p if not last else 1.0, str(spec.get("roll_voice", "snare")))
     for b, g in drumplan.default_crashes(sections).items():
         plan.ev(b, 0, "crash", g, 0.15 if b % 8 else -0.15)
     gap = form.get("gap_before_drop")

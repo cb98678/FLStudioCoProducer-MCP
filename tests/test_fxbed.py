@@ -39,3 +39,22 @@ def test_air_sweep_ends_at_the_bar_end_and_riser_swells():
 def test_unknown_cue_kind_refused():
     with pytest.raises(ValueError):
         F.render_bed([{"kind": "nope", "bar": 0}], 140, 8)
+
+
+def test_reverse_sample_swells_into_the_bar_end(tmp_path):
+    """The record's own sound reversed into a downbeat (tribal_tech, 2026-11-02): the cue ends on the bar line, swells towards it and keeps its level."""
+    import soundfile as sf
+    rate = 22050
+    t = np.arange(int(3.0 * rate)) / rate
+    tone = (0.5 * np.sin(2 * np.pi * 440 * t) * np.exp(-2.0 * t)).astype(np.float32)   # a plucked note that decays
+    path = tmp_path / "pluck.wav"
+    sf.write(str(path), tone, rate)
+    spb = 60 / 120
+    x = F.render_bed([{"kind": "reverse_sample", "path": str(path), "end_s": 2.0, "bar": 1, "beats": 2, "gain_db": 0.0}], 120, 12)
+    assert x.shape == (int(12 * spb * SR), 2)
+    e0 = _rms(x, 0, bpm=120)
+    half = int(1.5 * 4 * spb * SR)
+    late = float(np.sqrt(np.mean(x[half:int(2 * 4 * spb * SR)] ** 2)))
+    early = float(np.sqrt(np.mean(x[int(1 * 4 * spb * SR):half] ** 2)))
+    assert e0 == 0.0 and late > 3 * early           # nothing before its bar; the reversed decay rises into the downbeat
+    assert float(np.abs(x[int(2 * 4 * spb * SR) + 100:]).max()) == 0.0   # and nothing after it

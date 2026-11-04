@@ -19,7 +19,7 @@ SLICES: dict[str, tuple[str, ...]] = {
     "P2": ("read_project_summary", "load_targets_file", "load_genre_profile", "load_invariants_file", "build_song_plan"),
     "P3": ("prepare_remix_audio", "measure_part_sound", "match_part_sound", "generate_serum_preset", "render_serum_sound", "compare_part_sound", "write_notes_via_script", "check_notes_written", "arm_piano_roll_script_gui", "run_piano_roll_script_gui", "set_tempo_and_swing", "set_swing_verified", "set_pattern_length_verified", "clear_pattern_verified",
            "select_pattern_verified", "route_channel_to_track_verified", "set_channel_volume_verified", "set_channel_pan_verified",
-           "mute_channel_verified", "solo_channel_verified", "set_track_name_verified", "build_bus", "load_plugin_gui", "load_sample_gui", "import_audio_clip_gui", "add_audio_clip_to_playlist_gui", "detect_warp_markers", "add_warp_markers_gui", "quantize_vocal_gui",
+           "mute_channel_verified", "solo_channel_verified", "set_track_name_verified", "build_bus", "load_plugin_gui", "load_sample_gui", "import_audio_clip_gui", "add_audio_clip_to_playlist_gui", "detect_warp_markers", "add_warp_markers_gui", "quantize_vocal_gui", "split_vocal_phrases", "quantize_vocal_chunks_gui", "join_vocal_chunks", "save_session_project",
            "apply_vocal_tuning_gui", "prepare_rate_copy",
            "import_midi_gui", "generate_audio", "generate_cover", "repaint_section", "transpose_notes", "set_tempo_verified",
            "find_channel_by_name", "find_track_by_name", "add_time_marker_verified", "ensure_playing", "ensure_stopped", "ensure_loop_mode",

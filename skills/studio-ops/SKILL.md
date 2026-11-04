@@ -16,6 +16,12 @@ You work on a sandbox copy of the project, through verified tools. Tool details 
 5. One change at a time, then read it back. Stay inside the delta caps in the spec sheet.
 6. Deleting things in the open session is not supported. If asked to delete a channel, track or pattern, ask the human; do not look for a trick. The one exception is a sandbox copy of a file: `apply_project_standard` can drop channels that play nothing and sit on no mixer insert, and it lists silent channels that do sit on an insert without removing them.
 
+- The queue runner (tools/queue_runner.ps1) runs each .cmd as a batch file: never put `set PY=... && %PY% ...` on one line (the variable expands
+  empty when the line is parsed, the job hangs); write the interpreter's full path on every line. A Ctrl+C there leaves the console on
+  "Terminate batch job (Y/N)?" and every later job waits: only a person can press Y or restart the runner (LESSONS row 121).
+- The fl-bridge server imports src/coproducer once at start: after a code change, a build through it runs the old code until the server is
+  restarted. Build as a fresh process through the queue (tools/remix_song.py), or restart the bridge first.
+
 ## What `verified: false` means
 
 FL accepted the call but the value did not change (or changed to something else). This happens: some writes are ignored while FL is busy or when a control is locked. Do this:

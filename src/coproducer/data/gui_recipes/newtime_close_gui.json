@@ -1,0 +1,26 @@
+{
+ "name": "newtime_close_gui",
+ "verified": false,
+ "verified_note": "The closing click of newtime_quantize_save_gui on its own (confirmed by hand on FL 26.1.7 at 2560x1440, 2026-10-29): Newtime's X at (725, 15) of the WarpCorrection window, no question asked. Used by quantize_vocal_chunks_gui to leave a chunk that could not be fitted (markers not seen) so the next chunk can open Newtime from the clip menu again. quantize_vocal_chunks_gui presses Escape for a stuck dialog first and runs this only while the editor is open.",
+ "summary": "Close an open Newtime window without saving.",
+ "params": [],
+ "vision": false,
+ "source": "measured on this install",
+ "steps": [
+  {
+   "do": "click_in_window",
+   "title": "WarpCorrection",
+   "dx": 725,
+   "dy": 15
+  },
+  {
+   "do": "expect_no_dialog",
+   "timeout_s": 5
+  }
+ ],
+ "needs_sandbox_project": false,
+ "allow_open": [
+  "WarpCorrection",
+  "Newtone"
+ ]
+}

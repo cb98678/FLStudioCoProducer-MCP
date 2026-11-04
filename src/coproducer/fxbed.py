@@ -43,9 +43,35 @@ def cue_audio(c: dict, spb: float) -> tuple[float, np.ndarray]:
         t0 = bar * 4.0 + 4 - beats
     elif kind == "noise_wash":
         x = O.noise_wash(c.get("bars", 2) * 4 * spb, c.get("f0", 1500), c.get("f1", 7000))
+    elif kind == "reverse_sample":   # the record's own sound reversed into a downbeat (a held word, a strummed chord): no noise, no sweep (2026-11-02)
+        beats = c.get("beats", 2)
+        x = reversed_slice(c["path"], c["end_s"], beats * spb, c.get("hp", 120.0), c.get("lp", 6000.0))
+        t0 = bar * 4.0 + 4 - beats
     else:
         raise ValueError("unknown FX cue kind %r" % kind)
     return t0, x * g
+
+
+def reversed_slice(path: str, end_s: float, seconds: float, hp: float = 120.0, lp: float = 6000.0) -> np.ndarray:
+    """The `seconds` of a file that end at end_s, reversed, band-limited, with a smooth swell in and a quick fade at its end, stereo at SR."""
+    import soundfile as sf
+    y, rate = sf.read(path, always_2d=True)
+    m = y.mean(axis=1)
+    a, b = max(0, int((end_s - seconds) * rate)), min(len(m), int(end_s * rate))
+    seg = m[a:b][::-1].copy()
+    if rate != SR:
+        n = int(round(len(seg) * SR / rate))
+        seg = np.interp(np.linspace(0, len(seg) - 1, max(n, 1)), np.arange(len(seg)), seg)
+    seg = O._lp(O._hp(seg, hp), lp)
+    n = len(seg)
+    env = np.minimum(1.0, (np.arange(n) / max(n - 1, 1)) ** 1.5 * 1.1)
+    tail = int(0.02 * SR)
+    if tail and n > tail:
+        env[-tail:] *= np.linspace(1.0, 0.0, tail)
+    seg = seg * env
+    peak = float(np.abs(seg).max()) or 1.0
+    seg = seg / peak * 0.7
+    return np.stack([seg, np.roll(seg, 40)], 1)
 
 
 def render_bed(cues: list[dict], bpm: float, beats: float) -> np.ndarray:

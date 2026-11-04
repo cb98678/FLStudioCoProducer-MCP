@@ -1315,6 +1315,102 @@
     },
     "swing": 0.54
    }
+  },
+  {
+   "id": "drums.euro_revival_four",
+   "label": "Four on the floor under a captured top loop: clap 2 and 4, off-beat open hat",
+   "what": "A plain club kit under a loop captured from a record: the kick on every beat, the clap on 2 and 4, the open hat on every off-beat, closed hats in a busy 16th figure (o.Xox.XoooXox.Xo) in the drops; the breakdowns empty; builds keep the kick and roll the clap. Meant to sit under a drum loop on its own Sampler (the plan's drum_loops, high-passed so only one kick plays), the way a DJ edit keeps a remix's groove.",
+   "how": "The Pickle remix of Better Off Alone's drum bands (extract_song_loops, 2026-10-29): kick X...X...X...X..., snare band o.X.X.X.o.X.X.X., hat band o.Xox.XoooXox.Xo in the drop; o.x.X.x. and o.X.x.X.ooX.x.X. in the intro.",
+   "genres": [
+    "eurodance",
+    "house",
+    "tech_house",
+    "pop_dance",
+    "progressive_house",
+    "trance"
+   ],
+   "moods": [
+    "driving",
+    "energetic",
+    "party",
+    "nostalgic",
+    "euphoric"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "better_off_alone_pickle",
+     "where": "drum intro bars 1-8 and drop bars 51-66, loops README patterns"
+    }
+   ],
+   "engine": {
+    "sections": {
+     "intro": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "ohat": "..x...x...x...x.",
+       "hat": "o.x.x.x.oox.x.x."
+      },
+      "ramp": [
+       0.75,
+       1.0
+      ]
+     },
+     "groove": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "ohat": "..x...x...x...x.",
+       "hat": "o.x.x.x.oox.x.x."
+      },
+      "fill_every": 8,
+      "fill": "A"
+     },
+     "break": {
+      "bars": {
+       "hat": "................"
+      }
+     },
+     "build": {
+      "bars": {
+       "kick": "x...x...x...x...",
+       "clap": "....x.......x...",
+       "hat": "xoxoxoxoxoxoxoxo"
+      },
+      "roll": "accelerate",
+      "ramp": [
+       0.6,
+       1.0
+      ],
+      "last": {
+       "kick": "x...x...x.......",
+       "hat": "................"
+      }
+     },
+     "drop": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....X.......X...",
+       "ohat": "..X...X...X...X.",
+       "hat": "o.Xox.XoooXox.Xo"
+      },
+      "fill_every": 16,
+      "fill": "A"
+     },
+     "outro": {
+      "bars": {
+       "kick": "X...X...X...X...",
+       "clap": "....x.......x...",
+       "ohat": "..x...x...x...x.",
+       "hat": "o.x.x.x.oox.x.x."
+      },
+      "ramp": [
+       1.0,
+       0.85
+      ]
+     }
+    }
+   }
   }
  ]
 }

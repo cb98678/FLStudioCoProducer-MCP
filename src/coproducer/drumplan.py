@@ -35,10 +35,11 @@ class Plan:
             if clap_on:
                 self.ev(bar, s, "clap", 0.75 * gain)
 
-    def roll(self, bar: int, start: float, end: float, sub: float, v0: float, v1: float) -> None:
+    def roll(self, bar: int, start: float, end: float, sub: float, v0: float, v1: float, inst: str = "snare") -> None:
+        """A roll from `start` to `end` (steps) every `sub` steps, its velocity and key rising; inst "tom" makes it a tom roll (tribal_tech, 2026-11-02)."""
         n = len(range(int(start / sub), int(end / sub)))
         for k in range(n):
-            self.ev(bar, start + k * sub, "snare", (v0 + (v1 - v0) * k / max(n - 1, 1)) * 0.9, 0.06 * (-1) ** k, 60 + round(4 * k / max(n - 1, 1)))
+            self.ev(bar, start + k * sub, inst, (v0 + (v1 - v0) * k / max(n - 1, 1)) * 0.9, 0.06 * (-1) ** k, 60 + round(4 * k / max(n - 1, 1)))
 
     def hats(self, bar: int, mode: str, vel: float = 1.0) -> None:
         for s in range(16):

@@ -1,0 +1,30 @@
+[module]
+name = "quantize_vocal_chunks_gui"
+layer = "L6"
+summary = "Fit every chunk of a vocal manifest to the beat in FL's Newtime, one short file at a time, measuring what is left after each pass."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["manifest_path"],"properties":{"manifest_path":{"type":"string","minLength":1,"maxLength":400},"lead_s":{"type":"number","maximum":0.2},"passes":{"type":"integer","minimum":1,"maximum":4},"target_ms":{"type":"number","minimum":1,"maximum":50},"options":{"type":"object","properties":{"division":{"type":"integer"},"max_move_s":{"type":"number","minimum":0.005,"maximum":0.1},"min_share":{"type":"number","minimum":0.3,"maximum":1},"indices":{"type":"array","items":{"type":"integer"}}},"additionalProperties":false}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "gui"
+autonomy = "A2"
+cost = "minutes"
+idempotent = false
+verifier = "screenshot"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "detect_warp_markers", "quantize_vocal_gui", "run_gui_recipe", "list_open_dialogs", "press_hotkey"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_quantize_vocal_chunks_gui.py::test_fits_each_chunk_measures_and_skips_the_ones_on_the_grid"
+failure = "test_quantize_vocal_chunks_gui.py::test_a_failed_chunk_is_closed_and_reported"
+
+[budget]
+lines = 45

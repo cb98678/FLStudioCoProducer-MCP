@@ -8,3 +8,4 @@ are in the option bank (src/coproducer/data/options, sources.json "remixes") and
 | Original | Remix | Page | The move that makes it |
 | --- | --- | --- | --- |
 | Justin Bieber, Sorry (100 bpm, dancehall pop) | Freejak (Clean), 128 bpm house | [sorry_freejak.md](sorry_freejak.md) | the whole vocal at house tempo, each pass a different job, the dembow kept as a dotted-8th bass |
+| Alice Deejay, Better Off Alone (137 bpm, Eurodance) | Pickle, 128 bpm house | [better_off_alone_pickle.md](better_off_alone_pickle.md) | the riff kept note for note on a mono lead that glides into every note, over a pumping tonic pedal |

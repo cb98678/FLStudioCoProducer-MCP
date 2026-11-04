@@ -1,12 +1,12 @@
 [module]
 name = "prepare_sampler_sound"
 layer = "L4"
-summary = "Cut a vocal phrase, drum hit, bass note or melodic part into a sandbox WAV for Serum 2's sample oscillator, with its pitch, level and loop."
-version = "1.0.0"
+summary = "Cut a vocal phrase, drum hit, bass note or melodic part into a sandbox WAV for Serum 2's sample oscillator or FL's Sampler, with its pitch, bend, level and loop; isolate lifts one synth note out of a mix."
+version = "2.0.0"
 
 [io]
-input = '''{"type":"object","required":["path","out_path","role"],"properties":{"path":{"type":"string","x-path":true,"minLength":1},"out_path":{"type":"string","x-path":true,"minLength":1},"role":{"type":"string","enum":["vocal","drum","bass","melodic","texture"]},"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0},"target_midi":{"type":"number","minimum":0,"maximum":127}},"additionalProperties":false}'''
-output = '''{"type":"object","required":["path","oscillator","play_note"],"properties":{"path":{"type":"string"},"oscillator":{"type":"object"},"play_note":{"type":"integer"},"pitch_midi":{"type":"number"},"pitch_note":{"type":"string"},"seconds":{"type":"number"},"peak_dbfs":{"type":"number"},"rms_dbfs":{"type":"number"},"lr_balance_db":{"type":"number"},"warnings":{"type":"array"}}}'''
+input = '''{"type":"object","required":["path","out_path","role"],"properties":{"path":{"type":"string","x-path":true,"minLength":1},"out_path":{"type":"string","x-path":true,"minLength":1},"role":{"type":"string","enum":["vocal","drum","bass","melodic","texture"]},"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0},"options":{"type":"object","properties":{"target_midi":{"type":"number","minimum":0,"maximum":127},"isolate":{"type":"boolean"},"tune":{"type":["boolean","number"]},"pitch_midi":{"type":"number","minimum":0,"maximum":127},"fade_out_s":{"type":"number","minimum":0,"maximum":10}},"additionalProperties":false}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["path","oscillator","play_note"],"properties":{"path":{"type":"string"},"oscillator":{"type":"object"},"play_note":{"type":"integer"},"pitch_midi":{"type":"number"},"pitch_note":{"type":"string"},"seconds":{"type":"number"},"peak_dbfs":{"type":"number"},"rms_dbfs":{"type":"number"},"lr_balance_db":{"type":"number"},"warnings":{"type":"array"},"bend":{"type":"object"},"isolation_db":{"type":"number"},"tuned_cents":{"type":"number"}}}'''
 
 [policy]
 side_effect = "writes_files"

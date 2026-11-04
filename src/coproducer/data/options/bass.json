@@ -851,6 +851,58 @@
     },
     "sub_duck_kicks": true
    }
+  },
+  {
+   "id": "bass.pedal_pump_neighbor",
+   "label": "Tonic pedal, one pumped note a beat, a semitone-neighbour turnaround",
+   "what": "The bass stays on the key's tonic while the riff and the vocal carry the chords: one note on every beat, three 16ths long, so the kick's sidechain makes it swell and roll. Every fourth drop bar ends on a turnaround: the semitone above the root, the octave, the root, the semitone again (A, G#2, G#1, A in G# minor), a Phrygian lean back into the next phrase. Under the sung parts it follows the chords with the same one-note-a-beat pulse; out in the breakdowns.",
+   "how": "The Pickle remix of Better Off Alone (measured 2026-10-29): G#1 on steps 1, 5, 9 and 13 three 16ths long in the bass intro; in the drop G#1 held and pumped, then A1 (2 16ths), G#2 (2), G#1 (1), A1 (2) in the last half of every fourth bar. Put the pedal in with bar_roots (the tonic on every drop and bass-in bar); sample the bass note from the record's own bass (a one-beat slice of the averaged bass loop keeps its pump shape) with prepare_sampler_sound and the plan's bass_sample.",
+   "genres": [
+    "eurodance",
+    "house",
+    "tech_house",
+    "pop_dance",
+    "trance",
+    "progressive_house",
+    "bass_house"
+   ],
+   "moods": [
+    "driving",
+    "nostalgic",
+    "euphoric",
+    "melancholic",
+    "energetic",
+    "hypnotic"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "better_off_alone_pickle",
+     "where": "bass intro bars 9-15 (G#1 each beat) and drop bars 51-66 (held G#1, A1 G#2 G#1 A1 turnaround), loops README"
+    }
+   ],
+   "engine": {
+    "bass": {
+     "intro": "................",
+     "groove": "X--.x--.x--.x--.",
+     "build": [
+      "X--.x--.x--.x--.",
+      "X--.x--.x--.x--.",
+      "X--.x--.x--.x--.",
+      "x.x.x.x.x.x.x.x."
+     ],
+     "drop": [
+      "X--.x--.x--.x--.",
+      "X--.x--.x--.x--.",
+      "X--.x--.x--.x--.",
+      "X--.x--.b-o-xb-."
+     ],
+     "break": "................",
+     "outro": "X--.x--.x--.x--."
+    },
+    "sub": {},
+    "sub_duck_kicks": true
+   }
   }
  ]
 }

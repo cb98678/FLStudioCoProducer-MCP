@@ -74,7 +74,7 @@ def _syllables(wav):
 def test_detects_opens_marks_quantizes_and_saves(rig, desk, tmp_path, wav):
     nt = _stub(tmp_path, desk)
     src = _syllables(wav)
-    r = rig.call("quantize_vocal_gui", path=src, out_path=str(tmp_path / "warped.wav"), bpm=120.0, division=2, grid_up=1, grid_down=1)
+    r = rig.call("quantize_vocal_gui", path=src, out_path=str(tmp_path / "warped.wav"), bpm=120.0, division=2, grid="1/1")
     assert r.ok, r
     assert r.value["verified"] == r.value["markers"] >= 15 and len(nt.marks) == r.value["markers"] and (tmp_path / "warped.wav").is_file()
     typed = [e[1] for e in desk.fake.log if e[0] == "type"]

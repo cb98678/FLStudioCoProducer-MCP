@@ -28,7 +28,10 @@ SERUM_DB = {"sub": -6.5, "stab": -2.5, "arp": -4.0, "pad": -6.0}  # the person's
 SERUM_SUB_OFFSET = 7  # the Sytrus Remix Sub patch needs key = MIDI + 7; Serum plays at true pitch
 SYNTHS = (("sub", "Sub Bass", "Remix Sub"), ("stab", "Chord Stab", "Trance pluck"), ("arp", "Rising Arp", "Trance pluck #2"),
           ("pad", "Pad", "Trance pluck"))   # the pad: a generated Serum sound when there is one; the pluck patch is only a stand-in
-ROW = {"fx": 0, "vocal": 1, "drums": 2, "reese": 3, "sub": 4, "stab": 5, "arp": 6, "chops": 7, "orig": 8, "pad": 9}  # playlist rows, top to bottom (0-based)
+ROW = {"fx": 0, "vocal": 1, "drums": 2, "reese": 3, "sub": 4, "stab": 5, "arp": 6, "chops": 7, "orig": 8, "pad": 9,
+       "lead": 10, "loop": 11}  # playlist rows, top to bottom (0-based)
+LEAD_LABEL = "Lead - Sampled Note"   # "Lead" names the arp role (routing, pumps, section gains); "Perc" the loop's
+LOOP_LABEL = "Perc - Drum Loop"
 
 
 class BuildError(ValueError):
@@ -62,18 +65,29 @@ def pairs(items: list[str] | dict | None, allowed, label: str, cast=str) -> dict
 
 
 def _vocal_clips(meta: dict, origin: float, stem: str = "vocals") -> list[tuple]:
-    """Playlist positions of the plan's long clips of one stem: (position, length in ticks, start ms, end ms in the stretched file). Each clip's
-    source bar line lands on its remix bar, so a pickup sung before the bar line starts before it."""
+    """Playlist positions of the plan's long clips of one stem: (position, length in ticks, start ms, end ms in the stretched file; in the file's
+    own ms when FL stretches the channel, and the length is then what FL derives from that window through the stretch). Each clip's source
+    bar line lands on its remix bar, so a pickup sung before the bar line starts before it."""
     bar_s, spt = 240.0 / remixplan.BPM, 60.0 / remixplan.BPM / TPB
     ratio, delay = meta["stretch"], meta["delay_s"]
+    fl = bool(meta.get("fl_stretch"))   # FL stretches the channel: the clip's content window is in the file's own milliseconds
     out = []
     for (remix_bar, orig_bar, *_h), clip in zip(remixplan.VOCAL_CLIPS, meta["clips"]):
         if clip.get("stem", "vocals") != stem:
             continue
         s0, s1 = clip["orig_start_s"] / ratio + delay, clip["orig_end_s"] / ratio + delay
         anchor = (origin + orig_bar * 240.0 / remixplan.SOURCE_BPM) / ratio + delay  # stretched time of the original bar line
-        out.append((round((remix_bar * bar_s + s0 - anchor) / spt), round((s1 - s0) / spt), s0 * 1000.0, s1 * 1000.0))
+        w0, w1 = (clip["orig_start_s"] * 1000.0, clip["orig_end_s"] * 1000.0) if fl else (s0 * 1000.0, s1 * 1000.0)
+        out.append((round((remix_bar * bar_s + s0 - anchor) / spt), round((s1 - s0) / spt), w0, w1))
     return out
+
+
+def fl_stretch_beats(file_path: str, source_bpm: float) -> float:
+    """Project beats FL stretches a stem file to: its length in source beats, so one source beat plays per remix beat (the x BPM/SOURCE_BPM
+    speed-up) at any remix tempo. FL's TIME field counts 1/192 of a beat, not milliseconds (flpfile.set_stretch)."""
+    import soundfile as sf
+    info = sf.info(file_path)
+    return info.frames / info.samplerate * source_bpm / 60.0
 
 
 def start_db(grp: str, default: float, serum: bool, serum_levels: dict, style: dict | None) -> float:
@@ -108,11 +122,12 @@ def stutter_clips(meta: dict, stutter: tuple) -> list[tuple]:
     ratio, delay = meta["stretch"], meta["delay_s"]
     s0, s1 = c["orig_start_s"] / ratio + delay, c["orig_end_s"] / ratio + delay
     bar_t, spt = 4 * TPB, 60.0 / remixplan.BPM / TPB
+    k = ratio if meta.get("fl_stretch") else 1.0   # FL stretching: the window in the file's own ms
     out = []
     for b in bars:
         for start, length in hits:
             ln = min(length * bar_t, (s1 - s0) / spt)
-            out.append((round(b * bar_t + start * bar_t), max(1, round(ln)), s0 * 1000.0, (s0 + ln * spt) * 1000.0))
+            out.append((round(b * bar_t + start * bar_t), max(1, round(ln)), s0 * 1000.0 * k, (s0 + ln * spt) * 1000.0 * k))
     return out
 
 
@@ -230,7 +245,8 @@ def build(base: str, dtp: str, audio: str, out: str, *, origin: float | None = N
 
     The plan loaded in remixplan may carry a kit (KIT_PATHS: voice to sample path, a demo song's kit) and instruments (INSTRUMENTS: part
     to a demo song's channel): a part with a generated Serum sound keeps it, a part without one plays the demo instrument, imported from
-    the demo's render copy in demo_dir, its notes moved into the instrument's own register."""
+    the demo's render copy in demo_dir, its notes moved into the instrument's own register (tools/remix_song.py generates no sound for a
+    part whose instrument entry says "keep": true, so that part always plays the instrument)."""
     if "sandbox" not in [p.lower() for p in os.path.abspath(out).split(os.sep)]:
         raise BuildError("refusing to write %s: output must be under a folder named sandbox" % out)
     origin = remixplan.ORIGIN_S if origin is None else origin
@@ -304,7 +320,7 @@ def build(base: str, dtp: str, audio: str, out: str, *, origin: float | None = N
         if "reese" in imported:
             import_stack("reese", imported["reese"]["label"])
         else:
-            new_channel("reese", (style or {}).get("bass_sample", {}).get("label", "Reese Bass"), "reese", sample="CP_Reese.wav")
+            new_channel("reese", remixplan.BASS_SAMPLE.get("label") or (style or {}).get("bass_sample", {}).get("label", "Reese Bass"), "reese", sample="CP_Reese.wav")
     for key, label, sytrus_name in SYNTHS:
         if key in skip:
             continue
@@ -316,6 +332,16 @@ def build(base: str, dtp: str, audio: str, out: str, *, origin: float | None = N
                 f.set_plugin_state(ids[key], serum_blobs[key])
         else:
             new_channel(key, label, key, source=sytrus, src=find_channel(sytrus, sytrus_name))
+    lead_rows = remixplan.sampler_lead_notes()
+    if lead_rows:   # one note of a record's synth on a Sampler (skill loops-and-kits, sampled-note instrument)
+        new_channel("lead", remixplan.SAMPLER_LEAD.get("label") or LEAD_LABEL, "lead", sample=remixplan.SAMPLER_LEAD["sample"])
+    loops = []      # captured drum loops on Samplers, one note per loop
+    for i, lp in enumerate(remixplan.DRUM_LOOPS):
+        rows = remixplan.drum_loop_notes(lp)
+        if rows:
+            key = "loop" if i == 0 else "loop%d" % (i + 1)
+            new_channel(key, lp.get("label") or (LOOP_LABEL if i == 0 else "%s %d" % (LOOP_LABEL, i + 1)), "loop", sample=lp["sample"])
+            loops.append((key, rows))
     for name in meta["chops"]:
         new_channel("chop_" + name, "Chop " + name, "chops", sample=meta["chops"][name]["file"])
     vlabel = "Vocal %d bpm" % round(remixplan.BPM) if remixplan.VOCAL_MULTIPLE == 1 else "Vocal %d bpm (x%g)" % (round(remixplan.BPM * remixplan.VOCAL_MULTIPLE), remixplan.VOCAL_MULTIPLE)
@@ -323,6 +349,14 @@ def build(base: str, dtp: str, audio: str, out: str, *, origin: float | None = N
     new_channel("fx", "FX bed", "fx", sample="FX_bed.wav", src=audio_src)
     if any(c.get("stem") == "other" for c in meta["clips"]):  # the original's own instrumentation, on its own channel and insert
         new_channel("orig", "Original Instruments", "orig", sample="other_%d.wav" % round(remixplan.BPM), src=audio_src)
+    flst = meta.get("fl_stretch")
+    if flst:   # FL's own time stretching on the long clips' channels: the file at its own speed, TIME and an e3 mode on the channel
+        for key, stem_key in (("vocal", "vocals"), ("orig", "other")):
+            if key in ids:
+                fpath = os.path.join(audio, "%s_%d.wav" % (stem_key, round(remixplan.BPM)))
+                cents = int((flst.get("pitch_cents") or {}).get(stem_key, 0))
+                f.set_stretch(ids[key], fl_stretch_beats(fpath, remixplan.SOURCE_BPM), flst.get("modes", {}).get(stem_key, "e3_generic"), cents)
+                log("FL stretches %s x%.3f (%s%s)" % (key, float(flst["ratio"]), flst.get("modes", {}).get(stem_key, "e3_generic"), ", %+d cents" % cents if cents else ""))
     f.strip_notes(set(old))  # drop the stem project's own channels, notes and clips
     f.clear_playlist()
     for c in old:
@@ -360,6 +394,11 @@ def build(base: str, dtp: str, audio: str, out: str, *, origin: float | None = N
     add("Stabs", "stab", remixplan.stab_notes(offbeat=stab_offbeat))
     add("Arp", "arp", remixplan.arp_notes())
     add("Pad", "pad", remixplan.pad_notes())
+    if lead_rows:
+        parts["Lead"] = place("Lead", flpfile.notes_by_bar(lead_rows, ids["lead"]), ROW["lead"])
+    for k, (key, rows) in enumerate(loops):
+        name = "Drum Loop" if k == 0 else "Drum Loop %d" % (k + 1)
+        parts[name] = place(name, flpfile.notes_by_bar(rows, ids[key]), ROW["loop"])
     phase = {n: chop_phase(meta, n) for n in meta["chops"]}
     rows = [(max(0.0, bar * 4 + step / 4 + phase.get(name, 0.0)), 0, key, vel, ids["chop_" + name]) for bar, step, name, vel, key in remixplan.chop_events()]
     parts["Chops"] = place("Chops", flpfile.notes_by_bar_channels(rows), ROW["chops"])
@@ -379,6 +418,12 @@ def build(base: str, dtp: str, audio: str, out: str, *, origin: float | None = N
     for grp, (track, db) in remixplan.GROUPS.items():
         f.set_mixer_volume(track, remixplan.fader_raw(start_db(grp, db, grp in serum_ch, levels, style)))
     f.set_mixer_volume(0, remixplan.fader_raw(remixplan.MASTER_DB))
+    rests = 0
+    if remixplan.BAND_RESTS:   # the band rests where the singer rests: drums, bass, sub and stabs out, the pad, the lead and the voice stay
+        band = {ids[k] for k in list(KIT) + ["reese", "sub", "stab"] if k in ids}
+        for a, b in remixplan.BAND_RESTS:
+            rests += f.strip_notes_between(band, int(round(a * TPB)), int(round(b * TPB)))
+        log("band rests:", remixplan.BAND_RESTS, "notes out", rests)
     mapping = f.renumber_channels()  # ids 0..n-1: FL shows any gap as a blank sampler
     markers = add_section_markers(f, remixplan.SECTIONS)  # FL shows the sections; transition and section tools find them by name
     if organize:  # house names, colours and groups (docs/PROJECT_STANDARD.md), so every build looks the same
@@ -386,5 +431,5 @@ def build(base: str, dtp: str, audio: str, out: str, *, origin: float | None = N
     f.save(out)
     g = flpfile.Flp.load(out)
     return {"out": out, "tempo": g.tempo(), "channels": g.channel_count, "patterns": len(g.pattern_ids()), "playlist_items": len(g.playlist_items()),
-            "pattern_counts": parts, "chop_phase_beats": phase, "vocal_clips": vclips, "channel_ids": {k: mapping[v] for k, v in ids.items()}, "overlap_notes": notes, "serum": sorted(serum_ch), "serum_generated": sorted(serum_blobs),
+            "pattern_counts": parts, "chop_phase_beats": phase, "vocal_clips": vclips, "channel_ids": {k: mapping[v] for k, v in ids.items()}, "overlap_notes": notes, "band_rest_notes": rests, "serum": sorted(serum_ch), "serum_generated": sorted(serum_blobs),
             "markers": markers, "kit": sorted(kit_over), "imported": {k: {"label": v["label"], "channels": v["channels"], "shift": shifts.get(k, 0)} for k, v in imported.items()}}

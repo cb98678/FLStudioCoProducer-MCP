@@ -255,11 +255,12 @@ def loop_points(m: np.ndarray, rate: int, f0: float, t0: float, t1: float, perio
 ROLE_LOOP = {"vocal": "off", "drum": "off", "bass": "forward", "melodic": "forward", "texture": "forward"}
 
 
-def sampler_plan(x: np.ndarray, rate: int, role: str, path: str = "", target_midi: float | None = None) -> dict:
+def sampler_plan(x: np.ndarray, rate: int, role: str, path: str = "", target_midi: float | None = None, f0_hz: float = 0.0) -> dict:
     """What a file needs to play right on Serum's sample oscillator (serum-mcp sample_playback_source): its level, its left-right balance,
     its pitch, the transposition so a note plays as itself (or lands on target_midi when played on note 60), and the loop. A vocal plays
     at its own pitch on note 60 with no transposition (the person's rule: whole phrases at their own pitch); a drum too, unless
-    target_midi tunes it (a kick to the key)."""
+    target_midi tunes it (a kick to the key). f0_hz: the pitch when it is known (a note cut from over a chord can read as the chord's
+    common root, octaves down), the search then stays within a fourth of it."""
     x2 = np.asarray(x, float) if np.ndim(x) == 2 else np.asarray(x, float)[:, None]
     m = x2.mean(axis=1)
     rms = [float(np.sqrt(np.mean(x2[:, c] ** 2))) for c in range(x2.shape[1])]
@@ -267,7 +268,9 @@ def sampler_plan(x: np.ndarray, rate: int, role: str, path: str = "", target_mid
     plan = {"seconds": round(len(m) / rate, 3), "rate": rate, "channels": x2.shape[1], "peak_dbfs": round(20 * math.log10(max(peak, 1e-9)), 1),
             "rms_dbfs": round(20 * math.log10(max(float(np.sqrt(np.mean(m ** 2))), 1e-9)), 1),
             "lr_balance_db": round(20 * math.log10(max(rms[0], 1e-9) / max(rms[-1], 1e-9)), 2), "role": role, "play_note": SAMPLER_NOTE}
-    runs = voiced_runs(*f0_track(m, rate, 30.0, 1500.0))
+    runs = voiced_runs(*(f0_track(m, rate, 0.75 * f0_hz, 1.33 * f0_hz) if f0_hz else f0_track(m, rate, 30.0, 1500.0)))
+    if f0_hz and runs:
+        runs[0] = {**runs[0], "f0": float(f0_hz)}
     voiced = sum(r["t1"] - r["t0"] for r in runs) / max(plan["seconds"], 1e-9)
     osc = {"sample_playback_source": path, "sample_loop": ROLE_LOOP.get(role, "off"), "sample_center_pan": True}
     if runs and voiced > 0.2:
@@ -293,3 +296,87 @@ def sampler_plan(x: np.ndarray, rate: int, role: str, path: str = "", target_mid
         "pitch and length are coupled: notes away from 60 play faster or slower" if role in ("vocal", "drum") else "",
         "no clear pitch: played as it is on note 60" if "pitch_midi" not in plan and role in ("bass", "melodic") else "") if w]
     return plan
+
+
+# ---- one note of a synth, lifted out of a mix (the sampled-note instrument, 2026-10-29)
+
+def note_pitch(m: np.ndarray, rate: int, fmin: float = 30.0, fmax: float = 1500.0) -> float | None:
+    """The held pitch of a short cut (Hz): the longest voiced run's median, refined on the spectrum of that run (the peak within 70 cents,
+    parabolic on the log level: YIN on a pumped sub reads a quarter-tone off), None when nothing holds a pitch."""
+    runs = voiced_runs(*f0_track(m, rate, fmin, fmax, 0.005), 35.0, 0.03)
+    if not runs:
+        return None
+    f0, r = runs[0]["f0"], runs[0]
+    seg = np.asarray(m, float)[max(0, int((r["t0"] - 0.02) * rate)):int((r["t1"] + 0.02) * rate)]
+    if len(seg) < int(4 * rate / f0):
+        return f0
+    n = 1 << max(18, int(len(seg)).bit_length() + 2)
+    spec = np.log(np.abs(np.fft.rfft(seg * np.hanning(len(seg)), n)) + 1e-12)
+    lo, hi = int(f0 * 2 ** (-0.7 / 12) * n / rate), int(f0 * 2 ** (0.7 / 12) * n / rate) + 1
+    k = lo + int(np.argmax(spec[lo:hi]))
+    if not lo < k < hi - 1:
+        return f0
+    a, b, c = spec[k - 1], spec[k], spec[k + 1]
+    d = 0.5 * (a - c) / (a - 2 * b + c) if a - 2 * b + c else 0.0
+    return float((k + d) * rate / n)
+
+
+def harmonic_isolate(m: np.ndarray, rate: int, f0: float, width_cents: float = 40.0, attack_s: float = 0.012, nfft: int = 4096,
+                     follow_cents: float = 60.0) -> tuple[np.ndarray, float]:
+    """Keep only one note's harmonics: a soft STFT mask passing the bins near every multiple of the note's pitch (followed frame by frame
+    within follow_cents, so a scoop or a fall stays inside the mask) and nothing below 0.75 of the fundamental. A pad or a bass under
+    the note falls between the harmonics and is taken out, unless it shares them. The first attack_s pass untouched (the pluck's click
+    has no pitch) with a 10 ms crossfade. Returns (the note alone, how loud what was taken out was against the cut, in dB)."""
+    from scipy import signal
+    m = np.asarray(m, float)
+    hop = nfft // 8
+    fr, tt, z = signal.stft(m, rate, nperseg=nfft, noverlap=nfft - hop, boundary="even", padded=True)
+    times, track = f0_track(m, rate, max(30.0, 0.7 * f0), min(4000.0, 1.4 * f0), 0.005)
+    ok = np.isfinite(track) & (np.abs(1200 * np.log2(np.where(np.isfinite(track), track, f0) / f0)) <= follow_cents)
+    ft = np.interp(tt, times[ok], track[ok]) if ok.sum() >= 2 else np.full(len(tt), f0)
+    bin_hz = rate / nfft
+    mask = np.zeros(z.shape)
+    for j, f in enumerate(ft):
+        h = np.maximum(1, np.round(fr / f))
+        tol = np.maximum(h * f * (2 ** (width_cents / 1200.0) - 1), 1.5 * bin_hz)
+        d = np.abs(fr - h * f)
+        g = np.clip(2.0 - d / tol, 0.0, 1.0)
+        g[fr < 0.75 * f] = 0.0
+        mask[:, j] = g
+    _t, y = signal.istft(z * mask, rate, nperseg=nfft, noverlap=nfft - hop, boundary=True)
+    y = np.asarray(y[:len(m)], float)
+    if len(y) < len(m):
+        y = np.pad(y, (0, len(m) - len(y)))
+    a, x = int(attack_s * rate), int(0.01 * rate)
+    ramp = np.concatenate([np.zeros(a), np.linspace(0.0, 1.0, x), np.ones(max(0, len(m) - a - x))])[:len(m)]
+    out = (1 - ramp) * m + ramp * y
+    gone = float(np.sqrt(np.mean((m - out) ** 2))) / max(1e-12, float(np.sqrt(np.mean(m ** 2))))
+    return out, round(20 * math.log10(max(gone, 1e-9)), 1)
+
+
+def bend_profile(m: np.ndarray, rate: int, f0: float, hop_s: float = 0.005) -> dict:
+    """How a note's pitch moves against its held pitch, in cents: head (median of the first 30 ms of voiced frames), tail (median of the
+    last quarter), the range, and the contour every 10 ms. A sampled note keeps this bend wherever it is played; a slide note in the
+    piano roll adds another on top."""
+    times, track = f0_track(m, rate, max(30.0, 0.6 * f0), min(4000.0, 1.6 * f0), hop_s)
+    ok = np.isfinite(track)
+    if ok.sum() < 4:
+        return {"voiced_s": 0.0, "head_cents": 0.0, "tail_cents": 0.0, "range_cents": 0.0, "contour": []}
+    t, c = times[ok], 1200 * np.log2(track[ok] / f0)
+    keep = np.abs(c) < 700                       # an octave error or a neighbour's pitch is not the bend
+    t, c = t[keep], c[keep]
+    if len(c) < 4:
+        return {"voiced_s": 0.0, "head_cents": 0.0, "tail_cents": 0.0, "range_cents": 0.0, "contour": []}
+    head = c[t <= t[0] + 0.03]
+    tail = c[int(0.75 * len(c)):]
+    step = max(1, int(round(0.01 / hop_s)))
+    return {"voiced_s": round(float(t[-1] - t[0]), 3), "head_cents": round(float(np.median(head))), "tail_cents": round(float(np.median(tail))),
+            "range_cents": round(float(c.max() - c.min())), "contour": [[round(float(a), 3), round(float(b))] for a, b in zip(t[::step], c[::step])]}
+
+
+def retune(x: np.ndarray, ratio: float) -> np.ndarray:
+    """Play a cut `ratio` times higher (and that much shorter), as a sampler would: band-limited resampling of every channel."""
+    from scipy.signal import resample
+    x = np.asarray(x, float)
+    n = max(8, int(round(len(x) / ratio)))
+    return resample(x, n, axis=0)

@@ -35,6 +35,13 @@ EV_CH_PARAMS = 215
 EV_LINK = 227  # a controller or automation link: u16, u16 source channel, u32, u32 target, u32, u32
 CHANNEL_FILTERS = {"fast_lp": 0, "lp": 1, "bp": 2, "hp": 3, "bs": 4, "lpx2": 5, "svf_lp": 6, "svf_lpx2": 7}
 PITCH_RANGE_AT = 112  # i32 in event 215: the pitch knob's range in semitones (2 by default), read from FL 26 saves of the Future House demo
+# Sampler time stretching in event 215 (PyFLP's ChannelParameters layout, checked against the FL demo projects 2026-11-01): TIME at 96 as a
+# float32 in milliseconds (the length the sample plays over; a 126 ms kick in Thief stores 126.0), PITCH at 100 (i32 cents), MUL at 104
+# (i32, 10000 * log2 of the multiplier), MODE at 108 (i32). The e3 modes stretch offline with the pitch kept; Resample changes pitch.
+STRETCH_TIME_AT, STRETCH_PITCH_AT, STRETCH_MUL_AT, STRETCH_MODE_AT = 96, 100, 104, 108
+STRETCH_PER_BEAT = 192  # the TIME field counts 1/192 of a project beat, 768 per 4/4 bar, not milliseconds (see set_stretch)
+STRETCH_MODES = {"stretch": -1, "resample": 0, "e3_generic": 1, "e3_mono": 2, "slice_stretch": 3, "slice_map": 4, "auto": 5,
+                 "e2_generic": 6, "e2_transient": 7, "e2_mono": 8, "e2_speech": 9}
 MIXER_VOLUME = 8128
 NOTE_SIZE = 24
 PLAYLIST_ITEM_SIZE = 88
@@ -143,9 +150,14 @@ def emit(head: bytes, events: list[list], tail: bytes) -> bytes:
     return head + b"FLdt" + struct.pack("<I", len(body)) + bytes(body) + tail
 
 
-def note_bytes(pos: int, channel: int, key: int, length: int = 0, vel: int = 100, pan: int = 64) -> bytes:
-    """One 24-byte pattern note. pos is in ticks from the pattern start (96 per beat, 384 per 4/4 bar). length 0 suits one-shots."""
-    return struct.pack("<IHHIHH", pos, 0x4000, channel, length, key, 0) + bytes(
+NOTE_FLAGS = 0x4000
+SLIDE_FLAG = 0x0008  # a slide note: the channel's sounding voice glides to its key over its length (render-checked on a Sampler, 2026-10-29)
+
+
+def note_bytes(pos: int, channel: int, key: int, length: int = 0, vel: int = 100, pan: int = 64, slide: bool = False) -> bytes:
+    """One 24-byte pattern note. pos is in ticks from the pattern start (96 per beat, 384 per 4/4 bar). length 0 suits one-shots. A slide
+    note makes no sound of its own: the note already sounding on the channel glides to its key over its length (a scoop or a fall)."""
+    return struct.pack("<IHHIHH", pos, NOTE_FLAGS | (SLIDE_FLAG if slide else 0), channel, length, key, 0) + bytes(
         [0x78, 0, 0x40, 0, max(0, min(128, pan)), max(1, min(127, vel)), 0x80, 0x80]
     )
 
@@ -456,6 +468,35 @@ class Flp:
         v[PITCH_RANGE_AT : PITCH_RANGE_AT + 4] = struct.pack("<i", semitones)
         self.events[k][1] = bytes(v)
 
+    def stretch_settings(self, ch: int) -> dict:
+        """The Sampler's time stretching: time (the TIME field, 1/192 of a beat each, 0 when off) and the same as beats, pitch cents, multiplier,
+        mode (a STRETCH_MODES name or the number)."""
+        pr = bytes(self.events[self._find(ch, EV_CH_PARAMS)][1])
+        if len(pr) < STRETCH_MODE_AT + 4:
+            return {"time": 0.0, "beats": 0.0, "pitch": 0, "mult": 1.0, "mode": "resample"}
+        t = struct.unpack_from("<f", pr, STRETCH_TIME_AT)[0]
+        pitch, mul, mode = struct.unpack_from("<iii", pr, STRETCH_PITCH_AT)
+        names = {v: k for k, v in STRETCH_MODES.items()}
+        return {"time": float(t), "beats": float(t) / STRETCH_PER_BEAT, "pitch": pitch, "mult": 2 ** (mul / 10000.0), "mode": names.get(mode, mode)}
+
+    def set_stretch(self, ch: int, beats: float, mode: str | int = "stretch", pitch_cents: int = 0) -> None:
+        """Make a Sampler or audio clip channel play its whole sample over `beats` project beats with its pitch kept (mode stretch is the person's standard for a
+        voice, set 2026-11-02 with the wave file's TIME at default and then Sample > Fit to tempo; e3_mono and e3_generic are the alternatives
+        a plan may ask for; resample changes the pitch): FL's own time stretching, editable in the channel
+        settings, and like any FL audio clip it follows a tempo change. beats 0 turns it off.
+        The TIME field (event 215, float at byte 96) is not milliseconds, whatever PyFLP calls it: it counts 1/192 of a beat. A 40 s tone with
+        TIME 40000 at 129 bpm played 2.42 times slower, over 40000/192 = 208.3 beats (render test of 2026-11-02, five variants), and the demo
+        projects hold TIME 6144 (= 8 bars) on 8-bar loops at both 143 and 150 bpm, 1536 (= 2 bars) and 73736 (= 96 bars). An audio clip's
+        playlist length follows its content window (start and end in the file's own ms) through the stretch; the stored length is a cache."""
+        code = STRETCH_MODES[mode] if isinstance(mode, str) else int(mode)
+        k = self._find(ch, EV_CH_PARAMS)
+        v = bytearray(self.events[k][1])
+        if len(v) < STRETCH_MODE_AT + 4:
+            raise FlpError("channel %d has a short parameter event (not an FL 26 save)" % ch)
+        struct.pack_into("<f", v, STRETCH_TIME_AT, float(max(0.0, beats)) * STRETCH_PER_BEAT)
+        struct.pack_into("<iii", v, STRETCH_PITCH_AT, int(pitch_cents), 0, code)
+        self.events[k][1] = bytes(v)
+
     def set_channel_pitch(self, ch: int, cents: int) -> None:
         """Set the pitch knob in cents (-4800..4800), widening the knob's range when it is too small to hold the value."""
         if abs(cents) > 4800:
@@ -537,8 +578,9 @@ class Flp:
                 d["enabled"] = bool(v[0])
         return d
 
-    def pattern_notes(self) -> dict[int, list[tuple]]:
-        """{pattern_id: [(pos_ticks, channel, key, length_ticks, velocity)]} for every pattern that has notes."""
+    def pattern_notes(self, slides: bool = True) -> dict[int, list[tuple]]:
+        """{pattern_id: [(pos_ticks, channel, key, length_ticks, velocity)]} for every pattern that has notes; slides=False leaves out the
+        slide notes (they bend a sounding note and start none)."""
         out: dict[int, list[tuple]] = {}
         cur = None
         for e, v in self.events:
@@ -546,8 +588,9 @@ class Flp:
                 cur = int.from_bytes(v, "little")
             elif e == EV_PATNOTES and cur is not None:
                 for k in range(0, len(v) - NOTE_SIZE + 1, NOTE_SIZE):
-                    pos, _fl, ch, ln, key, _x = struct.unpack_from("<IHHIHH", v, k)
-                    out.setdefault(cur, []).append((pos, ch, key, ln, v[k + 21]))
+                    pos, fl, ch, ln, key, _x = struct.unpack_from("<IHHIHH", v, k)
+                    if slides or not fl & SLIDE_FLAG:
+                        out.setdefault(cur, []).append((pos, ch, key, ln, v[k + 21]))
         return out
 
     @staticmethod
@@ -577,8 +620,9 @@ class Flp:
 
     def note_ticks(self, ch: int) -> list[int]:
         """Absolute start of every note of channel ch on the playlist, in ticks: each pattern clip's position plus the note position.
-        Notes past the end of a clip are ignored (the clip plays only its own length); a clip longer than its pattern is not looped here."""
-        notes = self.pattern_notes()
+        Notes past the end of a clip are ignored (the clip plays only its own length); a clip longer than its pattern is not looped here.
+        Slide notes start no note and are left out."""
+        notes = self.pattern_notes(slides=False)
         ticks = []
         for pid, pos, length in self.pattern_clips():
             for npos, nch, _key, _ln, _vel in notes.get(pid, []):
@@ -699,6 +743,74 @@ class Flp:
                     keep += v[k : k + NOTE_SIZE]
             self.events[i][1] = bytes(keep)
         return removed
+
+    def quantize_notes(self, channels: set[int], grid_ticks: int, lengths: bool = False) -> int:
+        """Move every note start on the given channels to the nearest multiple of grid_ticks (a 16th is ppq // 4); lengths=True also rounds
+        the lengths (at least one grid step). Notes of other channels keep their timing. Returns how many notes moved. The person's guideline
+        (2026-11-02): piano, chords and bass stay quantized unless a note is off the grid on purpose."""
+        moved = 0
+        g = max(1, int(grid_ticks))
+        for i in self._note_events():
+            v = bytearray(self.events[i][1])
+            for k in range(0, len(v) - NOTE_SIZE + 1, NOTE_SIZE):
+                if struct.unpack_from("<H", v, k + 6)[0] not in channels:
+                    continue
+                pos, ln = struct.unpack_from("<I", v, k)[0], struct.unpack_from("<I", v, k + 8)[0]
+                q = int(round(pos / g)) * g
+                ql = max(g, int(round(ln / g)) * g) if lengths else ln
+                if q != pos or ql != ln:
+                    moved += 1
+                    struct.pack_into("<I", v, k, q)
+                    struct.pack_into("<I", v, k + 8, ql)
+            self.events[i][1] = bytes(v)
+        return moved
+
+    def strip_notes_between(self, channels: set[int], t0: int, t1: int) -> int:
+        """Remove the notes of the given channels that sound from tick t0 up to t1 of the song (absolute, through every pattern clip that
+        plays them; a pattern placed twice loses the note when either placement falls inside). The band resting where the singer rests
+        (plan band_rests, 2026-11-03). Returns how many notes went."""
+        hits: dict[int, set[int]] = {}
+        for pid, pos, length in self.pattern_clips():
+            for npos, nch, _k, _ln, _v in self.pattern_notes(slides=True).get(pid, []):
+                if nch in channels and npos < length and t0 <= pos + npos < t1:
+                    hits.setdefault(pid, set()).add(npos)
+        removed = 0
+        cur = None
+        for i, (e, v) in enumerate(self.events):
+            if e == EV_NEWPAT:
+                cur = int.from_bytes(v, "little")
+            elif e == EV_PATNOTES and cur in hits:
+                keep = bytearray()
+                for k in range(0, len(v) - NOTE_SIZE + 1, NOTE_SIZE):
+                    pos, ch = struct.unpack_from("<I", v, k)[0], struct.unpack_from("<H", v, k + 6)[0]
+                    if ch in channels and pos in hits[cur]:
+                        removed += 1
+                    else:
+                        keep += v[k:k + NOTE_SIZE]
+                self.events[i][1] = bytes(keep)
+        return removed
+
+    def remove_playlist_items(self, keep) -> int:
+        """Drop every playlist item for which keep(item_bytes) is False. Returns how many were removed."""
+        i = self._playlist_index()
+        items = self.playlist_items()
+        kept = [it for it in items if keep(it)]
+        self.events[i][1] = b"".join(kept)
+        return len(items) - len(kept)
+
+    def set_track_name(self, row: int, name: str) -> None:
+        """Name a playlist row (0 at the top): the row's record (event 238, u32 index) is followed by its name (event 239) when it has one."""
+        for i, (e, v) in enumerate(self.events):
+            if e == EV_TRACK and len(v) >= 4 and struct.unpack_from("<I", v)[0] == row + 1:
+                j = i + 1   # FL 2026 writes a small event 43 between the record and the name
+                while j < len(self.events) and self.events[j][0] not in (EV_TRACK, EV_TRACK_NAME) and self.events[j][0] < 64:
+                    j += 1
+                if j < len(self.events) and self.events[j][0] == EV_TRACK_NAME:
+                    self.events[j][1] = enc16(name)
+                else:
+                    self.events[j:j] = [[EV_TRACK_NAME, enc16(name)]]
+                return
+        raise FlpError("no playlist row %d" % row)
 
     def add_pattern(self, pid: int, name: str, notes: bytes) -> None:
         """Insert a named pattern after the last existing pattern notes. A reused id would silently merge patterns, so it is refused."""
@@ -962,19 +1074,21 @@ class Flp:
 
 
 def notes_by_bar(notes: list[tuple], channel: int) -> dict[int, bytes]:
-    """Group (start_beat, dur_beats, key, vel[, pan]) notes into per-bar note bytes, positions relative to the bar."""
-    return notes_by_bar_channels([(*n[:4], channel, *n[4:5]) for n in notes])
+    """Group (start_beat, dur_beats, key, vel[, pan[, slide]]) notes into per-bar note bytes, positions relative to the bar."""
+    return notes_by_bar_channels([(*n[:4], channel, *n[4:6]) for n in notes])
 
 
 def notes_by_bar_channels(notes: list[tuple]) -> dict[int, bytes]:
-    """Like notes_by_bar for several channels at once: rows are (start_beat, dur_beats, key, vel, channel[, pan]). One pattern can then hold a whole kit."""
-    rows: dict[int, list[tuple[int, int, bytes]]] = {}
+    """Like notes_by_bar for several channels at once: rows are (start_beat, dur_beats, key, vel, channel[, pan[, slide]]). One pattern can
+    then hold a whole kit. At one position a slide note comes after the notes it bends."""
+    rows: dict[int, list[tuple[int, bool, int, bytes]]] = {}
     for n in notes:
         st, dur, key, vel, channel = n[:5]
         pan = n[5] if len(n) > 5 else 64
+        slide = bool(n[6]) if len(n) > 6 else False
         tick = int(round(st * TICKS_PER_BEAT))
         bar = tick // TICKS_PER_BAR
         pos = tick - bar * TICKS_PER_BAR
         ln = 0 if dur <= 0 else max(6, int(round(dur * TICKS_PER_BEAT)))
-        rows.setdefault(bar, []).append((pos, key, note_bytes(pos, channel, key, ln, int(vel), int(pan))))
-    return {b: b"".join(r[2] for r in sorted(v, key=lambda r: (r[0], r[1]))) for b, v in rows.items()}
+        rows.setdefault(bar, []).append((pos, slide, key, note_bytes(pos, channel, key, ln, int(vel), int(pan), slide)))
+    return {b: b"".join(r[3] for r in sorted(v, key=lambda r: (r[0], r[1], r[2]))) for b, v in rows.items()}

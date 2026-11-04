@@ -30,12 +30,17 @@ LOOPS = {
 }
 
 
-def midi_notes(path: str) -> list[dict]:
-    """[{start_s, end_s, pitch, velocity}] from a MIDI file, in seconds (the file's own tempo map)."""
+def midi_notes(path: str, bpm: float | None = None) -> list[dict]:
+    """[{start_s, end_s, pitch, velocity}] from a MIDI file, in seconds: the file's own tempo map, or a steady bpm given here for a file that
+    has none. Newtone's Save as MIDI writes 400 ticks a beat at the project's tempo and no tempo message, so a reader assuming 120 bpm runs
+    its notes 8 % slow against a 130 bpm bench (the Hello Toni tune, 2026-11-02: 225 of 255 notes on the audio's pitch read at 130, 46 at
+    120); pass the bench project's tempo."""
     import mido
     t, on, out = 0.0, {}, []
-    for msg in mido.MidiFile(path):
-        t += msg.time
+    mf = mido.MidiFile(path)
+    spt = (60.0 / bpm / mf.ticks_per_beat) if bpm else None
+    for msg in (mido.merge_tracks(mf.tracks) if spt else mf):
+        t += msg.time * spt if spt else msg.time
         if msg.type == "note_on" and msg.velocity > 0:
             on[(msg.channel, msg.note)] = (t, msg.velocity)
         elif msg.type in ("note_off", "note_on") and (msg.channel, msg.note) in on:

@@ -162,9 +162,20 @@ class WinDesktop:
                 pyautogui.keyUp(key)
 
     def drag(self, x1: int, y1: int, x2: int, y2: int, seconds: float = 0.4) -> None:
+        """Press at (x1, y1), hold a moment, move in steps, release: FL's knobs take the press first and then the relative movement; one
+        pyautogui.dragTo left Newtone's CENTER knob where it was eight times running (2026-11-03)."""
+        import time
+
         import pyautogui
         pyautogui.moveTo(x1, y1)
-        pyautogui.dragTo(x2, y2, duration=seconds, button="left")
+        pyautogui.mouseDown(button="left")
+        time.sleep(0.15)
+        steps = max(4, int(abs(y2 - y1) / 8), int(abs(x2 - x1) / 8))
+        for k in range(1, steps + 1):
+            pyautogui.moveTo(x1 + (x2 - x1) * k / steps, y1 + (y2 - y1) * k / steps)
+            time.sleep(max(0.005, seconds / steps))
+        time.sleep(0.1)
+        pyautogui.mouseUp(button="left")
 
     def type_text(self, text: str, interval: float = 0.02) -> None:
         import pyautogui

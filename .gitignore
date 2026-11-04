@@ -1,0 +1,22 @@
+# Machine state, outputs and large files: never in git (sandbox holds every render, project copy and stem).
+.venv/
+sandbox/
+runs/
+logs/
+checkpoints/
+savepoints/
+Settings/
+models/envs/
+models/weights/
+models/acestep/
+.cache/
+.hypothesis/
+.ruff_cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.egg-info/
+coproducer_update.zip
+*.coproducer-*.bak
+dist/
+runtime/

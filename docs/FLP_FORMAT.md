@@ -55,6 +55,26 @@ float32 end offset into the source file, in milliseconds of the source (checked 
 together moves the content under the clip without changing its speed; changing only one changes the speed. Moving `pos` slides the
 clip on the grid. `coproducer.vocalclips` reads and writes these fields and `tools/vocal_patch.py` applies them.
 
+## Sampler time stretching (event 215, measured 2026-11-02)
+
+The Sampler's Time stretching section lives in the channel's parameters event 215 (PyFLP's `ParametersEvent`, `stretching.*`): TIME is a
+float32 at byte 96, PITCH an i32 in cents at 100, MUL an i32 at 104 (10000 times log2 of the multiplier) and MODE an i32 at 108 (Stretch -1,
+Resample 0, e3 Generic 1, e3 Mono 2, Slice stretch 3, Slice map 4, Auto 5, e2 Generic 6, e2 Transient 7, e2 Mono 8, e2 Speech 9; the pitch
+knob range at 112 follows). PyFLP calls TIME milliseconds; **it is not: TIME counts 1/192 of a project beat** (768 per 4/4 bar), the
+sample's stretched length, and 0 leaves the length alone. Measured with a time-coded tone (second s of a 40 s file holds 200 + 20 s Hz) on a
+clip at bar 2 of a 129 bpm project, five variants (sandbox\songs\hellotoni\gui\stretch_test2*.py): TIME 40000 played the tone 2.42 times
+slower (over 40000/192 = 208.3 beats), 26667 at 0.62 and 60000 at 0.275 of its speed, e3 Mono and Stretch alike, the pitch kept. The demo
+projects agree: TIME 6144 (= 8 bars) sits on 8-bar loops at both 143 bpm (Mic Check Ready) and 150 bpm (Thief), 1536 (= 2 bars) and
+73736 (= 96 bars) on Thief's consolidated clips. So a file that should keep one of its own beats per project beat at any project tempo
+gets TIME = its length in seconds times its own bpm / 60 times 192 (`Flp.set_stretch(ch, beats, mode, pitch_cents)`), and FL follows a
+tempo change the way it does for any audio clip. Two more things the test showed: the audio clip's content window (bytes 24 to 32 of the
+playlist item) stays in the **file's own milliseconds** under the stretch (the clip started at source second 10 whatever TIME was), and the
+clip plays the whole window at the stretched rate whatever playlist length is stored (550 ticks stored, 2000 played): the length is a cache
+FL derives from the window, so write it consistent with the window (window ms times the file's bpm / 60 000 times 96). Sources: the FL manual
+(chansettings_sampler.htm, Time stretching), PyFLP's channel.py (the field layout), the renders above.
+
+The person's standard for a vocal wave file (2026-11-02): mode Stretch (code -1), the TIME knob left at its default before Fit to tempo (playlist clip menu: Sample, Fit to tempo), never Resample. The build writes mode -1 and a TIME that puts the file's beats on the project's beats; the exact numbers FL stores after Fit to tempo are still to be read from a project the person saves (the open one was not saved when checked), and the render is the test. The e3 modes stay available per stem through the plan's `fl_stretch_modes`.
+
 ## Automation clips
 
 Read from projects FL Studio 26.1.7 saved after "Create automation clip" on a mixer knob, a mixer EQ knob and a plugin knob, then proven by

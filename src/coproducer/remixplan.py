@@ -47,6 +47,8 @@ GROUPS = {
     "stab": (7, 5.0), "arp": (8, 3.0), "chops": (9, -1.0), "vocal": (10, -3.0), "fx": (11, -5.0),
     "orig": (12, -8.0),  # the original's instrumentation (Demucs "other"), under the remix parts; a first guess for gain staging to replace
     "pad": (13, 0.0),    # held pad chords under the stabs (a chords option with a pad layer); a first guess, the part-level loop sets it
+    "lead": (14, -4.0),  # a sampled-note lead (SAMPLER_LEAD): one note of a record's synth on a Sampler, played from the piano roll
+    "loop": (15, -6.0),  # a captured drum loop (DRUM_LOOP) on a Sampler, one note per loop, over or instead of the kit
 }
 # Song-form remixes (the original's instrumentation under the remix): the person's own balance on the techno remix (2026-10-26) raised the
 # original's instruments 2.9 dB and lowered the FX bed 1.6 dB from the first guesses above.
@@ -66,12 +68,30 @@ KEYS_NOTES: tuple = ()  # a plan's chord-synth part from the reference MIDI (son
 LEAD_NOTES: tuple = ()  # a plan's lead line (voiceharmony.lead_rows: the tuned voice's own notes in key), played by the arp channel instead of its arp
 BAR_ROOTS: tuple = ()  # a song-form plan's root per remix bar (the original's chord on the bar it carries); None falls back to ROOTS8
 BAR_SPLITS: tuple = ()  # a harmony loop's second chord per loop bar: (step, pitch class) or None (variety.harmony_splits)
+SAMPLER_LEAD: dict = {}  # a plan's sampled-note lead (sampler_lead_notes): {sample, root_midi, notes [[beat, dur, midi, vel]], scoop, fall, label}
+DRUM_LOOPS: list = []  # a plan's captured drum loops (drum_loop_notes), each {sample, bars, sections (names or labels), vel, label}
+VOCAL_STRETCH = "rubberband"  # who stretches the long vocal (and "other") clips to the remix tempo: rubberband before the build (a file at the
+# remix tempo), or "fl": FL's own Sampler time stretching on the clip's channel (TIME and an e3 mode, the person's ask 2026-11-01: the pitch
+# kept and the stretch editable in the channel settings); the chops stay rubberband one-shots either way
+FL_STRETCH_MODES: dict = {}  # a plan's "fl_stretch_modes": {stem: mode name} overrides the default (vocals "stretch", the person's standard of 2026-11-02; other "e3_generic")
+FL_PITCH_CENTS: dict = {}  # a plan's "fl_pitch_cents": {stem: cents} on FL's stretch (Hello Toni's guitar sits 10 cents sharp of the synths, 2026-11-02)
+BAND_RESTS: list = []  # a plan's "band_rests": [[start beat, end beat], ...] where the band (drums, bass, sub, stabs) rests with the singer (2026-11-03)
+CHORD_MAP: dict = {}  # a plan's chord changes inside bars, {bar: [(16th step, pitch class), ...]}: a record whose chords change on its own
+# beats (a guitar holding a chord three beats, or changing every beat) under the voice; the first entry's root holds from its step on
 PATTERN_BARS = 1  # a plan's longest pattern: 1 is one pattern per distinct bar; 16 is one piano roll per section, up to 16 bars (remixbuild.blocks)
 
 
 def root_pc(bar: int, step: float = 0.0) -> int:
-    """The chord root at a 16th step of a remix bar: the record's root on a bar it carries, else the loop's (its second chord from the
-    split step on)."""
+    """The chord root at a 16th step of a remix bar: the plan's chord map for that bar (changes inside the bar), else the record's root on
+    a bar it carries, else the loop's (its second chord from the split step on)."""
+    cm = CHORD_MAP.get(bar)
+    if cm:
+        cur = None
+        for st, p in cm:
+            if step >= st:
+                cur = int(p)
+        if cur is not None:
+            return cur
     if 0 <= bar < len(BAR_ROOTS) and BAR_ROOTS[bar] is not None:
         return BAR_ROOTS[bar]
     sp = BAR_SPLITS[bar % 8] if len(BAR_SPLITS) == 8 else None
@@ -92,9 +112,16 @@ def sub_key(pc: int, octave: int = 1) -> int:
     return 12 * (octave + 1) + pc + 7
 
 
+BASS_SAMPLE_PC = 9  # every style's bass sample (CP_Reese.wav: reese, growl or 808) is rendered on A1 (55 Hz) and plays at that pitch on key 60
+BASS_SAMPLE: dict = {}  # a plan's own bass sample instead (a bass note cut from a record: {file, root_midi, label}); BASS_SAMPLE_PC follows it
+
+
 def reese_key(pc: int, octave_up: int = 0) -> int:
-    """Sampler key for the reese pluck, which is recorded at A1 on key 60: the nearest transposition of the root, within a tritone."""
-    d = (pc - KEY_PC + 6) % 12 - 6
+    """Sampler key for the bass sample, which plays its own pitch on key 60 (A1 for the styles' samples, the plan's root_midi for its own):
+    the nearest transposition of the root, within a tritone.
+    (Fixed 2026-10-29: the offset was taken from the song's key instead of the sample's A, so in any key but A the bass played
+    9 - key semitones off its root: a semitone sharp in G# minor, a major third up in F.)"""
+    d = (pc - BASS_SAMPLE_PC + 6) % 12 - 6
     return 60 + d + 12 * octave_up
 
 
@@ -318,6 +345,76 @@ def arp_notes() -> list[tuple]:
         chords = [chord_keys(root_pc(b), 72) + [chord_keys(root_pc(b), 84)[0]] for b in range(start, s["end"])]
         out += tension.rising_arp(start, chords, v0=64, bar_ramp=int(60 / len(chords)))
     return _clamp(out)
+
+
+SCOOP = {"semitones": 1, "beats": 0.125, "when": "phrase", "min_rest": 0.5, "min_dur": 0.75}
+GLIDE = {"beats": 0.05, "window": 1.0}  # the Pickle lead: about 22 ms at 128 bpm from the last note's pitch, while that note still rings
+FALL = {"semitones": 2, "beats": 0.25, "min_dur": 1.0}
+
+
+def _bend_wanted(when: str, rest: float, dur: float, spec: dict) -> bool:
+    if when == "all":
+        return True
+    if when == "phrase":
+        return rest >= float(spec.get("min_rest", SCOOP["min_rest"]))
+    if when == "long":
+        return dur >= float(spec.get("min_dur", SCOOP["min_dur"]))
+    if when == "phrase_or_long":
+        return rest >= float(spec.get("min_rest", SCOOP["min_rest"])) or dur >= float(spec.get("min_dur", SCOOP["min_dur"]))
+    return False
+
+
+def sampler_lead_notes(lead: dict | None = None) -> list[tuple]:
+    """The sampled-note lead's piano roll: (start, dur, key, vel, pan, slide) rows for the Sampler, key = MIDI - root_midi + 60 (the sample
+    plays at its own pitch on FL's C5). The melody's notes stay as written; every bend is a slide note. glide (the Pickle remix of Better
+    Off Alone, 2026-10-29 study: a mono lead that slides from the last note's pitch in about 22 ms, whatever the interval, while that note
+    still rings, and not after a rest): a note that starts within `window` beats of a different note starts on that note's key with a
+    slide note to its own over `beats`. scoop: a note that starts a phrase (when: phrase, long, phrase_or_long, all or none) starts
+    `semitones` low and slides up over `beats`. fall: a long note slides down at its end."""
+    lead = SAMPLER_LEAD if lead is None else lead
+    if not lead or not lead.get("notes"):
+        return []
+    root = int(round(float(lead.get("root_midi", 60))))
+    scoop = {**SCOOP, **(lead.get("scoop") or {})}
+    glide = {**GLIDE, **lead["glide"]} if isinstance(lead.get("glide"), dict) else None
+    fall = {**FALL, **lead["fall"]} if isinstance(lead.get("fall"), dict) else None
+    rows: list[tuple] = []
+    notes = sorted((float(n[0]), float(n[1]), int(n[2]), int(n[3]) if len(n) > 3 else 100) for n in lead["notes"])
+    prev_end, prev = -1e9, None
+    for st, dur, midi, vel in notes:
+        key = midi - root + 60
+        vel = max(1, min(127, vel))
+        rest = st - prev_end
+        prev_end = max(prev_end, st + dur)
+        s_semi, s_beats = int(scoop["semitones"]), float(scoop["beats"])
+        if glide and prev is not None and prev[1] != key and st - prev[0] <= float(glide["window"]) and float(glide["beats"]) < dur:
+            rows += [(st, dur, prev[1], vel, 64, False), (st, float(glide["beats"]), key, vel, 64, True)]
+        elif s_semi and _bend_wanted(str(scoop.get("when", "phrase")), rest, dur, scoop) and s_beats < dur:
+            rows += [(st, dur, key - s_semi, vel, 64, False), (st, s_beats, key, vel, 64, True)]
+        else:
+            rows.append((st, dur, key, vel, 64, False))
+        if fall and dur >= float(fall["min_dur"]) and float(fall["beats"]) < dur:
+            rows.append((st + dur - float(fall["beats"]), float(fall["beats"]), key - int(fall["semitones"]), vel, 64, True))
+        prev = (st, key)
+    return rows
+
+
+def drum_loop_notes(loop: dict) -> list[tuple]:
+    """A captured drum loop's notes: one key-60 note at the start of every loop length inside the plan's sections (named by section name or
+    label), so the Sampler plays the loop whole at the project tempo (the loop is cut, or stretched, to the remix tempo first)."""
+    if not loop or not loop.get("sample"):
+        return []
+    bars = max(1, int(loop.get("bars", 1)))
+    want = set(loop.get("sections") or ())
+    vel = int(loop.get("vel", 100))
+    out = []
+    for s in SECTIONS:
+        if want and s["name"] not in want and s.get("label") not in want:
+            continue
+        for b in range(s["start"], s["end"], bars):
+            if b + bars <= s["end"] or loop.get("allow_cut", True):
+                out.append((b * BAR_BEATS, min(bars, s["end"] - b) * BAR_BEATS, 60, vel))
+    return out
 
 
 # ---- vocal chops

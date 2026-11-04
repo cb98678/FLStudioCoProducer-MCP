@@ -143,3 +143,14 @@ def test_packs_are_found_by_the_songs_mood():
     assert {r["style"] for r in stylepack.for_mood(["angry"])} == {"dubstep", "techno"}
     assert stylepack.for_mood(["serene"]) == [] and stylepack.for_mood([]) == []
     assert all(stylepack.load(n).get("moods") for n in stylepack.names())                   # every pack says which moods it serves
+
+
+def test_a_build_can_roll_on_the_toms():
+    """tribal_tech (2026-11-02): "roll_voice": "tom" puts the accelerating roll on the toms instead of the snare; the pack validates."""
+    pack = stylepack.load("tribal_tech")
+    assert stylepack.validate(pack) == [] and pack["drums"]["build"]["roll_voice"] == "tom"
+    plan = stylepack.drums(pack, [{"name": "build", "start": 0, "end": 4}, {"name": "drop", "start": 4, "end": 8}])
+    insts = {e[2] for e in plan.events if e[0] < 4}
+    assert "tom" in insts and "snare" not in insts
+    bad = dict(pack); bad["drums"] = dict(pack["drums"]); bad["drums"]["build"] = dict(pack["drums"]["build"], roll_voice="gong")
+    assert any("unknown voice gong" in x for x in stylepack.validate(bad))

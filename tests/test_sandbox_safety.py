@@ -13,6 +13,7 @@ WRITERS = {
     "export_split_stems_gui": "path", "transcribe_to_midi": "out_midi_path", "add_automation_clip": "project", "remove_automation_clip": "project",
     "build_remix_project": "out_project", "build_song_plan": "out_plan", "apply_project_standard": "out_project", "apply_effect_from_library": "out_project", "build_volume_pump": "out_project", "add_section_markers": "out_project", "add_transition_automation": "out_project", "build_layer_channel": "out_project", "apply_drum_tuning": "out_project", "add_transition_synths": "out_project", "apply_section_gains": "out_project", "create_bus_routing": "out_project", "apply_fx_chain": "out_project", "apply_production_recipe": "out_project", "split_part_projects": "out_dir", "compare_part_levels": "out_project",
     "apply_club_master": "out_path", "prepare_remix_audio": "out_dir", "build_reference_profile": "out_file", "write_song_notes": "out_file", "extract_song_loops": "out_dir", "build_wavetable": "out_path", "prepare_sampler_sound": "out_path",
+    "split_vocal_phrases": "out_dir", "join_vocal_chunks": "out_path", "save_session_project": "out_path",
 }
 NAME_ONLY = {"write_notes_via_script": "name"}  # a file name, not a path: anything with a separator is refused
 

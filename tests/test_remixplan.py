@@ -12,6 +12,12 @@ def test_sections_are_contiguous_and_cover_the_song():
 def test_keys():
     assert R.sub_key(9) == 40  # A1 sounds as MIDI 33, the patch adds 7
     assert R.reese_key(9) == 60 and R.reese_key(11) == 62 and R.reese_key(4) == 55
+    keep = R.KEY_PC
+    try:   # the bass sample is A1 whatever the song's key: G# is a semitone below it (the No Sleep Till Brooklyn rock bass played A)
+        R.KEY_PC = 8
+        assert R.reese_key(8) == 59 and R.reese_key(6) == 57 and R.reese_key(3) == 54
+    finally:
+        R.KEY_PC = keep
     assert [k % 12 for k in R.chord_keys(4)] == [4, 8, 11]
     assert R.root_pc(0) == 9 and R.root_pc(4) == 11 and R.root_pc(6) == 4 and R.root_pc(8) == 9
 
@@ -133,3 +139,14 @@ def test_diatonic_triads_follow_the_mode():
     finally:
         R.DIATONIC, R.MODE, R.KEY_PC = keep[0], keep[1], keep[2]
         R.ROOT_QUALITY = keep[3]
+
+
+def test_a_chord_map_changes_the_root_inside_a_bar():
+    keep = (R.CHORD_MAP, R.BAR_ROOTS)
+    try:
+        R.BAR_ROOTS, R.CHORD_MAP = (), {3: [(0, 2), (8, 9)], 4: [(4, 11), (8, 7), (12, 2)]}
+        assert [R.root_pc(3, st) for st in (0, 7, 8, 15)] == [2, 2, 9, 9]
+        assert R.root_pc(4, 0) == R.ROOTS8[4] and [R.root_pc(4, st) for st in (4, 9, 12)] == [11, 7, 2]   # before its first step the loop's root
+        assert R.root_pc(5, 8) == R.ROOTS8[5]
+    finally:
+        R.CHORD_MAP, R.BAR_ROOTS = keep

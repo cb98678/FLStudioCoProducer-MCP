@@ -1,0 +1,27 @@
+[module]
+name = "save_session_project"
+layer = "L3"
+summary = "Save an FL project holding audio files on the song's clock (a Newtime or Newtone session, vocal chunks, stems) so it can be opened and adjusted later."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["bench_path","out_path","bpm","clips"],"properties":{"bench_path":{"type":"string","x-path":true,"minLength":1},"out_path":{"type":"string","x-path":true,"minLength":1},"bpm":{"type":"number","minimum":20,"maximum":999},"clips":{"type":"array","minItems":1,"items":{"type":"object","properties":{"file":{"type":"string","minLength":1},"name":{"type":"string"},"start_s":{"type":"number"},"row":{"type":"integer","minimum":0},"length_s":{"type":["number","null"]}}}}},"additionalProperties":false}'''
+output = '''{"type":"object"}'''
+
+[policy]
+side_effect = "writes_files"
+autonomy = "A2"
+cost = "instant"
+idempotent = true
+verifier = "readback"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path"]
+models = []
+binaries = []
+packages = []
+
+[tests]
+golden = "test_save_session_project.py::test_saves_clips_on_the_clock"
+failure = "test_save_session_project.py::test_refuses_bad_input"

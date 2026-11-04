@@ -918,6 +918,53 @@
      4
     ]
    ]
+  },
+  {
+   "id": "form.dj_revival",
+   "label": "DJ revival: drums alone, then bass, the riff in the breakdown, short vocal blocks, instrumental drops",
+   "what": "A DJ's edit of a classic: 8 bars of drums alone and 8 of drums and bass to mix in on, a breakdown of held pads where the record's riff comes in on its own sound, a build, the vocal in a short block with the drums, a 16-bar instrumental drop where the riff carries the song over a pedal bass, a second breakdown with the vocal over pads, a build, the vocal again, a second drop, and a 16-bar outro that takes the bass out halfway.",
+   "how": "The Pickle remix of Better Off Alone (128 bpm, about 118 bars): 0-7 drums, 8-14 drums and bass, 16-29 breakdown with the riff from about bar 26, 30-40 build, 41-48 vocal with drums, 50-65 drop, 66-77 vocal over pads, 78-85 vocal with drums, 86-101 drop, 102-117 outro (drums and bass, then drums).",
+   "genres": [
+    "eurodance",
+    "house",
+    "tech_house",
+    "pop_dance",
+    "progressive_house",
+    "trance",
+    "edm"
+   ],
+   "moods": [
+    "nostalgic",
+    "euphoric",
+    "driving",
+    "melancholic",
+    "party"
+   ],
+   "energy": "high",
+   "sources": [
+    {
+     "song": "better_off_alone_pickle",
+     "where": "the whole remix, bar map at 128 bpm"
+    }
+   ],
+   "engine": {
+    "build": "always",
+    "build_bars": 8,
+    "tail_bars": 0,
+    "intro_bars": 16,
+    "bridge": true,
+    "bridge_bars": 8,
+    "outro_bars": 16,
+    "gap_before_drop": "beat",
+    "labels": {
+     "intro": "DJ Intro",
+     "groove": "Vocal",
+     "break": "Breakdown",
+     "build": "Build",
+     "drop": "Drop",
+     "outro": "DJ Outro"
+    }
+   }
   }
  ]
 }

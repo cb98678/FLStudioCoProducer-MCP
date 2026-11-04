@@ -1,0 +1,33 @@
+{
+ "skill": "vocal-slice-align",
+ "evals": [
+  {
+   "id": 1,
+   "should_trigger": true,
+   "prompt": "I sliced the vocal by hand and moved the pieces; make them all lay in line with the grid without cutting a word, and quantize the piano and bass.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "check_vocal_edges"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "should_trigger": true,
+   "prompt": "The vocal clips in my project sound off the beat; position them across the grid as whole phrases.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "check_vocal_edges"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "should_trigger": false,
+   "prompt": "Master the remix to the club target.",
+   "assertions": []
+  }
+ ]
+}

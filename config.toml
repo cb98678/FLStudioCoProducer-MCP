@@ -1,0 +1,53 @@
+[paths]
+sandbox = "sandbox"
+models = "models"
+runs = "runs"
+weights = "models/weights"
+
+[envs]
+demucs = "C:/coproducer/models/envs/demucs/Scripts/python.exe"
+basicpitch = "C:/coproducer/models/envs/basicpitch/Scripts/python.exe"
+acestep = "C:/coproducer/models/acestep/.venv/Scripts/python.exe"
+critique = "C:/coproducer/models/envs/critique/Scripts/python.exe"
+mir = "C:/coproducer/models/envs/mir/Scripts/python.exe"
+sep = "C:/coproducer/models/envs/sep/Scripts/python.exe"
+serum = "C:/coproducer/models/envs/serum/Scripts/python.exe"
+serummcp = "C:/coproducer/sandbox/third_party/serum-mcp/.venv/Scripts/python.exe"
+
+[midi]
+out = "coproducer-in"
+in = "coproducer-out"
+
+[bridge]
+max_payload = 1024
+
+[gpu]
+budget_mb = 0
+torch_index = "https://download.pytorch.org/whl/cu128"
+
+[llm]
+endpoint = "http://127.0.0.1:11434/v1"
+model = "gemma4:12b"
+timeout_s = 300
+
+[fl]
+exe = ""
+data_dir = ""
+not_owned = ["Transient Processor"]
+
+[desktop]
+display_scale = 0.0
+action_budget = 200
+allow_unverified = false
+timeout_scale = 1.0
+
+[anchors]
+add_menu = "92,25"
+audio_clip_menu_item = "134,134"
+audio_clip_file_button = "272,292"
+playlist_track1_start = "548,165"
+playlist_clip1_menu = "552,178"
+clip_menu_pitch_correct = "757,253"
+clip_menu_time_warp = "754,272"
+mixer_strip1_name = "389,545"
+mixer_send1_switch = "389,1326"

@@ -1,0 +1,233 @@
+{
+ "name": "euro_revival_house",
+ "label": "Euro revival house (a 90s hit's own riff over modern four-on-the-floor)",
+ "engine": "grammar",
+ "what": "A late-90s Eurodance or trance-pop hit rebuilt for today's clubs the way the Pickle remix of Better Off Alone does it: the record's riff kept note for note on a plucky mono lead that glides from note to note in about 22 ms, a four-on-the-floor kit with the clap on 2 and 4 and an open hat on every off-beat, a pumping tonic pedal bass (one note a beat, ducked by every kick) with a semitone neighbour turnaround at the end of every fourth drop bar, held pads only in the breakdowns and under the sung parts, the vocal in short blocks with the drums, instrumental drops, and a DJ intro and outro (drums alone, then drums and bass). 124 to 130 bpm; the original's tempo comes down to it only within the 6 % the voice allows.",
+ "moods": [
+  "nostalgic",
+  "euphoric",
+  "melancholic",
+  "bittersweet",
+  "driving",
+  "energetic",
+  "party"
+ ],
+ "tempo": {
+  "bpm": 128,
+  "range": [
+   124,
+   130
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   8
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "groove",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "groove",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "swing": 0.52,
+  "intro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "ohat": "..x...x...x...x.",
+    "hat": "o.x.x.x.oox.x.x."
+   },
+   "ramp": [
+    0.75,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "ohat": "..x...x...x...x.",
+    "hat": "o.x.x.x.oox.x.x."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "hat": "................"
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "clap": "....x.......x...",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "ohat": "..X...X...X...X.",
+    "hat": "o.Xox.XoooXox.Xo"
+   },
+   "fill_every": 16,
+   "fill": "A"
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "ohat": "..x...x...x...x.",
+    "hat": "o.x.x.x.oox.x.x."
+   },
+   "ramp": [
+    1.0,
+    0.85
+   ]
+  }
+ },
+ "bass": {
+  "intro": "................",
+  "groove": "X--.x--.x--.x--.",
+  "build": [
+   "X--.x--.x--.x--.",
+   "X--.x--.x--.x--.",
+   "X--.x--.x--.x--.",
+   "x.x.x.x.x.x.x.x."
+  ],
+  "drop": [
+   "X--.x--.x--.x--.",
+   "X--.x--.x--.x--.",
+   "X--.x--.x--.x--.",
+   "X--.x--.b-o-xb-."
+  ],
+  "break": "................",
+  "outro": "X--.x--.x--.x--."
+ },
+ "sub": {},
+ "chords": {
+  "intro": "................",
+  "groove": "................",
+  "build": "................",
+  "drop": "................",
+  "break": "................",
+  "outro": "................",
+  "voicing": "triad"
+ },
+ "pad": {
+  "groove": "chord",
+  "break": "chord",
+  "build": "bar",
+  "voicing": "triad",
+  "base": 55,
+  "lead": true,
+  "max_bars": 4,
+  "velocity": {
+   "groove": 78,
+   "build": 90,
+   "break": 92
+  },
+  "sound": "sound.flex_simmering_pad"
+ },
+ "arp": [],
+ "kit": {},
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.34,
+   "voices": 1,
+   "detune_cents": 0.0,
+   "drive": 1.3
+  },
+  "label": "Pedal Bass"
+ },
+ "form": {
+  "build": "always",
+  "build_bars": 8,
+  "tail_bars": 0,
+  "intro_bars": 16,
+  "bridge": true,
+  "bridge_bars": 8,
+  "outro_bars": 16,
+  "gap_before_drop": "beat",
+  "labels": {
+   "intro": "DJ Intro",
+   "groove": "Vocal",
+   "break": "Breakdown",
+   "build": "Build",
+   "drop": "Drop",
+   "outro": "DJ Outro"
+  }
+ },
+ "levels_db": {
+  "vocal": -1.0,
+  "clap": -3.5,
+  "hats": -4.5,
+  "fx": -3.0,
+  "reese": 3.0,
+  "lead": -1.5,
+  "loop": -2.0,
+  "kick": -3.0
+ },
+ "levels_note": "First guesses from the tech house groove pack (the person's Friends v15 balance), then the Better Off Alone copy (2026-10-29): with the lead at -4, the loops at -6 and the bass at -5 the drops sat 1.5 LU under the vocal blocks and the kick's 42 Hz tail covered the bass between the beats (the low band 6 dB under the kick there, the Pickle remix's 2 dB), so the lead starts at -1.5, the loops at -2, the bass at +3 and the kick at its default once the kick's tail was shortened (v5).",
+ "kick_sub_shelf": {
+  "hz": 60,
+  "db": -3.0,
+  "why": "the pedal bass carries the low end between the kicks; a lighter kick sub keeps the two from stacking (the tech house pack takes 4.5 dB)"
+ },
+ "production_recipe": "club_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://en.wikipedia.org/wiki/Better_Off_Alone (the original: Alice Deejay, 1998, 137 bpm, G# minor; its riff first released as a DJ Jurgen instrumental in 1997)",
+  "measured 2026-10-29 on the person's copy of the Pickle remix (docs/remix_studies/better_off_alone_pickle.md): 128 bpm, the riff kept note for note, a mono lead gliding about 22 ms from the last note while it rings, four-on-the-floor kick, clap on 2 and 4, off-beat open hat, a G# pedal bass one note a beat with an A-G#2-G#1-A turnaround, 8-bar drums-only intro, 8 bars of drums and bass, breakdowns with held pads, vocals in 8-bar blocks with drums, instrumental drops, a 16-bar DJ outro",
+  "https://loststoriesacademy.com/blogs-and-tutorials/what-makes-a-track-dj-friendly (16 or 32 bar mix-in intro: kick, hats or percussion, minimal bass)",
+  "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/pianoroll.htm (slide notes must overlap the note they slide; the overlap sets the slide time; native FL instruments only, not VSTs)"
+ ]
+}

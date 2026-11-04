@@ -1,6 +1,6 @@
 ---
 name: song-blueprints
-description: Use when the person wants a remix or track in the manner of a known record or era (Zedd's Clarity, Tiesto's Red Lights, Real McCoy's Another Night, 90s Eurodance, 2010s progressive house), brings a written breakdown of a song to learn from, or asks to mix and match techniques (progressions, bass grooves, pluck rhythms, held pads, pumps, vocal spaces) from studied songs, including the vocal-led layers recipe (pad under spaced stabs, rolling then long bass, chords that follow the voice).
+description: Use when the person wants a remix or track in the manner of a known record or era (Zedd's Clarity, Tiesto's Red Lights, Real McCoy's Another Night, Pickle's Better Off Alone remix, 90s Eurodance and its modern house revivals, 2010s progressive house), brings a written breakdown of a song to learn from, or asks to mix and match techniques (progressions, bass grooves, pluck rhythms, held pads, pumps, vocal spaces) from studied songs, including the vocal-led layers recipe (pad under spaced stabs, rolling then long bass, chords that follow the voice).
 ---
 
 # Song blueprints
@@ -22,6 +22,7 @@ The person (2026-10-29) brought three written breakdowns, of Clarity, Red Lights
 | Clarity (Zedd feat. Foxes, 2012) | A flat major, 128 bpm; transcriptions of the chords disagree | a progression that floats and never lands on I, suspended ii and V, inverted chords keeping the bass moving, 3-over-4 lead phrasing, a pump that keeps going without a kick | references/clarity.md |
 | Red Lights (Tiesto, 2013) | Gm Eb Bb F, 125 bpm, G minor | an acoustic 3-3-2 pluck verse with empty lows, a heavy mono bass only at the drop, a voice-led pad whose upper voices barely move, a layered drop lead, an exponential pump recovery | references/red-lights.md |
 | Another Night (Real McCoy, 1993) | 126 bpm; rap verse by O-Jay, sung chorus by Karin Kasar; chords unconfirmed | the Euro-gallop bass (root, octave, octave, rest), a barking house-organ chord stab, a dry rap verse against a wide washed chorus | references/another-night.md |
+| Better Off Alone (Alice Deejay, 1998) and the Pickle remix | 137 bpm, G# minor; the remix 128 bpm, measured on the person's file | the riff kept note for note on a sampled mono lead that glides into every note, a pumping tonic pedal bass with a semitone-neighbour turnaround, captured top loops, a DJ intro and outro | references/better-off-alone.md |
 | The vocal-led layers recipe (the person's, 2026-10-29) | first built on Girlish Type Men (sandbox\remix\gtm_vocal_v6) | chords per section from the voice, a held pad under stabs with whole bars of space, a bass that rolls in verses and holds longer notes in drops, section-long piano rolls | this page, "The vocal-led layers recipe" |
 
 ## Mix and match
@@ -49,6 +50,10 @@ Each row is one move and what makes it. Lock options in `build_song_plan` (optio
 | Layered drop lead, house organ, PWM bass | references/sound-recipes.md (serum-mcp `generate_preset` specs) | Red Lights, Another Night |
 | Frequency lanes, gain staging, master targets | references/mix-guide.md | all three |
 | Fills and sweeps on the last beat of bar 4 or 8 | the drum plan's last-bar fills and the fx options' cues already land there; check the plan | all three |
+| A riff kept note for note, gliding about 22 ms into each note | plan sampler_lead with glide (slide notes on a Sampler) | Pickle's Better Off Alone |
+| Tonic pedal, one pumped note a beat, semitone-neighbour turnaround | bass.pedal_pump_neighbor | Pickle's Better Off Alone |
+| Kick, clap 2 and 4, off-beat open hat under a captured top loop | drums.euro_revival_four, plan drum_loops | Pickle's Better Off Alone |
+| DJ intro and outro, pad breakdowns, instrumental drops | form.dj_revival, style euro_revival_house | Pickle's Better Off Alone |
 | Piano rolls as long as a section | the plan's "pattern_bars": 16 (`remixbuild.blocks`, `flpfile.Flp.add_part_blocks`) | the person, 2026-10-29 |
 
 ## The vocal-led layers recipe

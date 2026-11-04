@@ -1,0 +1,236 @@
+{
+ "name": "tribal_tech",
+ "label": "Tribal tech (hand percussion, a rolling sub, dub chord stabs, no risers)",
+ "engine": "grammar",
+ "what": "Tech house with afro and tribal hands: a dry kick that opens as a three-step and settles to four on the floor, congas and a shaker swung a little, rim and wood, tom fills, a rolling sub bass on the record's own roots, dub chord stabs on the off-8ths with delay, a hollow lead that doubles the singer, and transitions from the record itself (her voice reversed, a tom roll, a beat of silence, a sub drop): no noise risers, no air sweeps, no filter sweeps. Made for Hello Toni's second song (2026-11-02), a D major I V IV V at 117 bpm.",
+ "moods": [
+  "defiant",
+  "tribal",
+  "warm",
+  "hypnotic",
+  "driving",
+  "confident"
+ ],
+ "tempo": {
+  "bpm": 122,
+  "range": [
+   120,
+   125
+  ],
+  "follow": false
+ },
+ "sections": [
+  [
+   "intro",
+   8
+  ],
+  [
+   "groove",
+   12
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "groove",
+   8
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "swing": 0.56,
+  "intro": {
+   "bars": {
+    "shaker": "x.xxx.xxx.xxx.xx",
+    "perc": "..x..x.x..x..x..",
+    "rim": [
+     "x..x..x...x..x..",
+     "x..x..x...x.x.x."
+    ],
+    "kick": [
+     "................",
+     "................",
+     "................",
+     "................",
+     "X.......X...X...",
+     "X.......X...X...",
+     "X.......X...X...",
+     "X...X...X...X..."
+    ]
+   },
+   "ramp": [
+    0.7,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": [
+     "X.......X...X...",
+     "X.......X...X...",
+     "X.......X...X...",
+     "X.......X...X..X"
+    ],
+    "shaker": "x.xxx.xxx.xxx.xx",
+    "perc": [
+     "..x..x.x..x..x..",
+     "..x..x.x..x..x.x"
+    ],
+    "rim": [
+     "x..x..x...x..x..",
+     "x..x..x...x....."
+    ],
+    "ohat": "..............o."
+   },
+   "fill_every": 8,
+   "fill": "B",
+   "ramp": [
+    0.75,
+    0.88
+   ]
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "snare": "....o.......o...",
+    "shaker": "X.xxX.xxX.xxX.xx",
+    "perc": [
+     "..x..x.x..x..x..",
+     "..x..x.x..x..x.x"
+    ],
+    "rim": [
+     "x..x..x...x..x..",
+     "x..x..x...x.x.x."
+    ],
+    "ohat": "..x...x...x...x.",
+    "hat": "....x.......x..."
+   },
+   "fill_every": 8,
+   "fill": "B"
+  },
+  "break": {
+   "bars": {
+    "shaker": "o.oo..o.o.oo..o.",
+    "perc": "..o.....o......."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "shaker": "x.xxx.xxx.xxx.xx",
+    "perc": "..x..x.x..x..x.."
+   },
+   "roll": "accelerate",
+   "roll_voice": "tom",
+   "ramp": [
+    0.7,
+    1.0
+   ],
+   "last": {
+    "kick": "X...X...X.......",
+    "shaker": "x.xxx.xxx.xx....",
+    "perc": "..x..x.x........"
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "shaker": "x.xxx.xxx.xxx.xx",
+    "perc": "..x..x.x..x..x..",
+    "rim": "x..x..x...x..x.."
+   },
+   "ramp": [
+    1.0,
+    0.7
+   ]
+  }
+ },
+ "bass": {
+  "groove": [
+   "x..x......x.....",
+   "x..x......x..x.o"
+  ],
+  "drop": [
+   "x.x.x.xxx.x.x.xx",
+   "x.x.x.xxx.x.x.ox"
+  ],
+  "build": "x...x...x...x...",
+  "break": "................",
+  "outro": "x..x..x...x....."
+ },
+ "sub": {
+  "groove": "x-------x-------",
+  "drop": "x-------x-------",
+  "build": "x-------x-------",
+  "outro": "x-------x-------"
+ },
+ "chords": {
+  "intro": "................",
+  "groove": "..x.......x.....",
+  "drop": [
+   "..x...x...x...x.",
+   "..x...x...x..x.x"
+  ],
+  "break": "x---------------",
+  "build": "..x...x...x...x.",
+  "outro": "..x...x...x...x.",
+  "voicing": "sus2"
+ },
+ "pad": {
+  "break": "chord",
+  "voicing": "add9",
+  "base": 55,
+  "lead": true,
+  "max_bars": 4,
+  "velocity": {
+   "break": 92
+  }
+ },
+ "arp": {},
+ "kit": {},
+ "production_recipe": "tribal_tech",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "Hello Toni's second song (2026-11-02): D A G A one chord a bar at 117 bpm drifting, her onsets on straight 16ths, her guitar strummed a little swung; the person asked for something tech-house adjacent with none of the usual high-end sweeps",
+  "styles/afro_house.json (Africa's Calling, FL 2026 demo): the three-step kick X.......X...X..., shaker on almost every 16th, swing 0.66, no riser drops",
+  "styles/tech_house_groove.json: four on the floor, clap on 2 and 4, open hat on the off-8ths, the rolling bass on the roots",
+  "https://blog.native-instruments.com/afro-house-production-101/ (read 2026-10-28): afro house 118 to 122 bpm, percussion loops make the groove"
+ ],
+ "form": {
+  "build": "always",
+  "build_bars": 4,
+  "tail_bars": 8,
+  "intro_bars": 8,
+  "bridge": false,
+  "outro_bars": 16,
+  "gap_before_drop": "beat"
+ },
+ "options": {
+  "form": "form.edm_two_drop",
+  "drums": "drums.pack",
+  "bass": "bass.pack",
+  "fx": "fx.silence_and_sub"
+ }
+}

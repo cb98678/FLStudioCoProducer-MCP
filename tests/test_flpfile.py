@@ -319,6 +319,26 @@ def test_channel_pitch_widens_the_knob_range_and_layers_follow_renumbering():
         f.set_channel_pitch(1, 5000)
 
 
+def test_set_stretch_counts_192_per_beat_and_keeps_the_pitch_range():
+    import struct as st
+
+    from coproducer import testflp
+    f = testflp.project({0: "Vocal", 1: "Kick"}, {1: [0, 96]})
+    assert f.stretch_settings(0) == {"time": 0.0, "beats": 0.0, "pitch": 0, "mult": 1.0, "mode": "resample"}
+    f.set_pitch_range(0, 4)
+    f.set_stretch(0, 32.0, "e3_mono")  # 8 bars: the demo projects' 8-bar loops hold TIME 6144 at 143 and at 150 bpm
+    pr = bytes(f.events[f._find(0, F.EV_CH_PARAMS)][1])
+    assert st.unpack_from("<f", pr, F.STRETCH_TIME_AT)[0] == 6144.0 and st.unpack_from("<iii", pr, F.STRETCH_PITCH_AT) == (0, 0, 2)
+    assert f.stretch_settings(0) == {"time": 6144.0, "beats": 32.0, "pitch": 0, "mult": 1.0, "mode": "e3_mono"} and f.channel_pitch(0)[1] == 4
+    f.set_stretch(0, 32.0)  # no mode named: the person's standard for a voice is FL's Stretch (2026-11-02)
+    assert f.stretch_settings(0)["mode"] == "stretch" and f.stretch_settings(0)["beats"] == 32.0
+    f.set_stretch(0, 0, "resample")
+    assert f.stretch_settings(0)["mode"] == "resample" and f.stretch_settings(0)["time"] == 0.0
+    assert f.stretch_settings(1)["mode"] == "resample"  # the other channel is untouched
+    with pytest.raises(KeyError):
+        f.set_stretch(0, 4, "warp")
+
+
 def test_window_playlist_moves_a_stretch_to_the_start_and_cuts_items_by_their_offsets():
     f = F.Flp(*F.parse(synthetic(channels=(2, 5))))
     f.events.insert(1, [156, struct.pack("<I", 120000)])   # 120 bpm: a tick is 60000 / 120 / 96 ms
@@ -382,3 +402,14 @@ def test_reset_playlist_tracks_unmutes_ungroups_and_unnames_rows():
     rows = [bytes(v) for e, v in g.events if e == F.EV_TRACK]
     assert [r[12] for r in rows] == [1, 1, 1] and [r[46] for r in rows] == [0, 0, 0] and rows[1][8:12] == bytes(4) and rows[2] == plain
     assert not any(e == F.EV_TRACK_NAME for e, _ in g.events)
+
+
+def test_strip_notes_between_takes_a_channel_s_notes_out_of_a_window_of_the_song():
+    """The band rests where the singer rests (plan band_rests, 2026-11-03): notes of the given channels inside an absolute tick window go,
+    through the pattern clips that play them; other channels and other times stay."""
+    from coproducer import testflp
+    f = testflp.project({0: "Kick", 1: "Vocal"}, {0: [0, 96, 192, 288], 1: [0, 192]}, bars=2)   # the one-bar pattern plays twice (bars 0 and 1)
+    gone = f.strip_notes_between({0}, 96, 288)        # beats 1 to 2 of the song: the kick's beats 2 and 3 of bar 0
+    assert gone == 2
+    left = [n for p in f.pattern_notes().values() for n in p]
+    assert sorted(n[0] for n in left if n[1] == 0) == [0, 288] and sorted(n[0] for n in left if n[1] == 1) == [0, 192]

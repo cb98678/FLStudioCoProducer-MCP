@@ -99,9 +99,23 @@ def _knob_in_window(s: dict, p: dict) -> Result:
         now = knobread.knob_value(np.asarray(Image.open(shot.value["path"]).convert("RGB")), x, y)
         if abs(now - target) <= float(s.get("tol", 0.03)):
             return ok({"value": now})
-        y2 = min(max(1, y + knobread.drag_pixels(now, target, float(s.get("px_per_travel", 200.0)))), at.value["height"] - 2)
+        y2 = min(max(8, y + knobread.drag_pixels(now, target, float(s.get("px_per_travel", 200.0)))), at.value["height"] - 8)   # stay inside FL's window
         call("drag_between", x1=x, y1=y, x2=x, y2=y2, seconds=0.5)
     return fail("E_NOT_VERIFIED", "the knob at (%d, %d) did not reach %.2f (it reads %.2f)" % (x, y, target, now))
+
+
+def _move_window(s: dict, p: dict) -> Result:
+    """Drag an FL window by its title bar so its top-left corner sits at (x, y) in FL main-window pixels: a Newtime left partly off the
+    screen by an earlier session hid its scroll bar's left end from the pixel readers (2026-11-03)."""
+    at = _window_point({"title": s["title"], "dx": 200, "dy": 10}, p)
+    if not at.ok:
+        return at
+    x1, y1 = at.value["x"], at.value["y"]
+    x2, y2 = int(s["x"]) + 200, int(s["y"]) + 10
+    if abs(x2 - x1) < 4 and abs(y2 - y1) < 4:
+        return ok({"moved": False})
+    r = call("drag_between", x1=x1, y1=y1, x2=x2, y2=y2, seconds=0.6)
+    return r if not r.ok else ok({"moved": True, "from": [x1 - 200, y1 - 10]})
 
 
 def _locate_click(s: dict, p: dict) -> Result:
@@ -135,9 +149,9 @@ def _expect_file(s: dict, p: dict) -> Result:
 _STEPS = {
     "hotkey": lambda s, p: call("press_hotkey", keys=s["keys"]),
     "type": lambda s, p: call("type_text", text=s["text"].format(**p)),
-    "wait": lambda s, p: (time.sleep(s["seconds"] * _cfg().get("timeout_scale", 1.0)), ok(True))[1],
+    "wait": lambda s, p: (time.sleep(float(str(s["seconds"]).format(**p)) * _cfg().get("timeout_scale", 1.0)), ok(True))[1],   # seconds may be a {param}
     "click": _click, "click_row": _click_row, "click_col": _click_col, "template_click": _template_click, "click_in_window": _click_in_window,
-    "knob_in_window": _knob_in_window, "locate_click": _locate_click, "expect_dialog": _expect_dialog, "expect_no_dialog": _expect_no_dialog,
+    "knob_in_window": _knob_in_window, "locate_click": _locate_click, "move_window": _move_window, "expect_dialog": _expect_dialog, "expect_no_dialog": _expect_no_dialog,
     "expect_title": _expect_title, "expect_file": _expect_file,
 }
 

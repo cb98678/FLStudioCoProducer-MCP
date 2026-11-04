@@ -1,0 +1,41 @@
+{
+ "skill": "vocal-chunking",
+ "evals": [
+  {
+   "id": 1,
+   "should_trigger": true,
+   "prompt": "This vocal is the whole song; split it into phrase chunks at the syllables, fit each one to the beat in Newtime, then tune it.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "split_vocal_phrases"
+    },
+    {
+     "type": "tool_called",
+     "module": "quantize_vocal_chunks_gui"
+    },
+    {
+     "type": "tool_called",
+     "module": "join_vocal_chunks"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "should_trigger": true,
+   "prompt": "Check every cut of the vocal chunks: nothing clipped at a syllable's start or end.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "split_vocal_phrases"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "should_trigger": false,
+   "prompt": "Add a riser into the second drop.",
+   "assertions": []
+  }
+ ]
+}

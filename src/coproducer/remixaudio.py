@@ -25,6 +25,18 @@ class AudioError(RuntimeError):
     """ffmpeg missing or failing, or a path outside the sandbox."""
 
 
+def _at_rate(path: str, rate: int) -> np.ndarray:
+    """A sound file as mono samples at `rate` (resampled when it differs)."""
+    from scipy.signal import resample_poly
+    x, r = sf.read(path, always_2d=True)
+    m = x.mean(axis=1)
+    if r != rate:
+        from math import gcd
+        g = gcd(int(r), int(rate))
+        m = resample_poly(m, rate // g, int(r) // g)
+    return m
+
+
 def stretch(src: str, dst: Path, tempo: float, pitch: float) -> None:
     ff = shutil.which("ffmpeg")
     if not ff:
@@ -182,8 +194,12 @@ def prepare(outdir: str | Path, vocals: str, cuts: str = "", pitch: float | None
         raise AudioError("refusing to write %s: output must be under a folder named sandbox" % out)
     out.mkdir(parents=True, exist_ok=True)
     ratio = remixplan.STRETCH
+    fl = remixplan.VOCAL_STRETCH == "fl"
     stretched = out / ("vocals_%d.wav" % round(remixplan.BPM))
-    stretch(vocals, stretched, ratio, pitch)
+    if fl:   # FL stretches the clips itself (remixbuild sets the channel's TIME and mode): the file keeps the voice's own speed and pitch
+        stretch(vocals, stretched, 1.0, pitch)
+    else:
+        stretch(vocals, stretched, ratio, pitch)
     orig, rate = sf.read(vocals, dtype="float32", always_2d=True)
     st, rate2 = sf.read(str(stretched), dtype="float32", always_2d=True)
     if rate != rate2:
@@ -193,8 +209,9 @@ def prepare(outdir: str | Path, vocals: str, cuts: str = "", pitch: float | None
         st = st * 10 ** (lift / 20)
         sf.write(str(stretched), st, rate, subtype="PCM_16")
         log("vocal stem raised %.1f dB to an active level of %.1f dB" % (lift, active_level_db(st, rate)))
-    delay = measured_delay(orig, st, rate, ratio)
-    log("stretched %.2fs -> %.2fs, expected %.2fs, delay %.1f ms" % (len(orig) / rate, len(st) / rate, len(orig) / rate / ratio, delay * 1000))
+    delay = 0.0 if fl else measured_delay(orig, st, rate, ratio)
+    log("stretched %.2fs -> %.2fs, expected %.2fs, delay %.1f ms" % (len(orig) / rate, len(st) / rate, len(orig) / rate / (1.0 if fl else ratio), delay * 1000)
+        if not fl else "the voice at its own speed (%.2fs); FL stretches the clips x%.3f" % (len(st) / rate, ratio))
 
     mono = orig.mean(axis=1)
     gp = vocalchops.gaps(mono, rate)
@@ -252,14 +269,17 @@ def prepare(outdir: str | Path, vocals: str, cuts: str = "", pitch: float | None
         src = (stems or {}).get(stem)
         if not src or not Path(src).is_file():
             raise AudioError("the plan plays the %s stem but no %s file was given" % (stem, stem))
-        stretch(src, out / ("%s_%d.wav" % (stem, round(remixplan.BPM))), ratio, pitch)
-        log("stretched the %s stem" % stem)
+        stretch(src, out / ("%s_%d.wav" % (stem, round(remixplan.BPM))), 1.0 if fl else ratio, pitch)
+        log("stretched the %s stem" % stem if not fl else "copied the %s stem (FL stretches its clips)" % stem)
 
     style = remixplan.STYLE or {}
     oneshots.write_kit(out, style.get("kit"))
     if style.get("kick_sub_shelf"):  # a style's kick with less sub (house: the person's pick by ear)
         oneshots.shelve(out / "CP_Kick.wav", float(style["kick_sub_shelf"]["hz"]), float(style["kick_sub_shelf"]["db"]))
-    oneshots.write_wav(out / "CP_Reese.wav", oneshots.voice(style["bass_sample"]) if style.get("bass_sample") else oneshots.reese_pluck(), peak_db=-1.0)
+    if remixplan.BASS_SAMPLE.get("file"):   # a bass note cut from a record (prepare_sampler_sound), played at its own pitch on key 60
+        oneshots.write_wav(out / "CP_Reese.wav", _at_rate(remixplan.BASS_SAMPLE["file"], oneshots.SR), peak_db=-1.0)
+    else:
+        oneshots.write_wav(out / "CP_Reese.wav", oneshots.voice(style["bass_sample"]) if style.get("bass_sample") else oneshots.reese_pluck(), peak_db=-1.0)
 
     bed = fxbed.render_bed(remixplan.fx_cues(), remixplan.BPM, remixplan.TOTAL_BARS * 4 + 8)
     peak = float(np.max(np.abs(bed)))
@@ -269,6 +289,8 @@ def prepare(outdir: str | Path, vocals: str, cuts: str = "", pitch: float | None
 
     info = {"stretch": ratio, "pitch": pitch, "delay_s": delay, "bpm": remixplan.BPM, "rate": rate, "chops": chops, "clips": clips,
             "fx_peak_db": round(20 * np.log10(peak + 1e-12), 1), "vocal_seconds": round(len(st) / rate, 3), "vocal_lift_db": lift if lift >= 0.5 else 0.0}
+    if fl:   # the long clips' files are at the voice's own speed; the build sets each channel's stretch and cuts the clips in the file's own ms
+        info["fl_stretch"] = {"ratio": ratio, "modes": {"vocals": "stretch", "other": "e3_generic", **remixplan.FL_STRETCH_MODES}, "pitch_cents": dict(remixplan.FL_PITCH_CENTS)}
     info["style"] = style.get("name", "tech_house")
     (out / "techhouse_audio.json").write_text(json.dumps(info, indent=1), encoding="utf-8")
     log("wrote", out, "files", len(os.listdir(out)))
