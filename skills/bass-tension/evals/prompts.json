@@ -1,0 +1,37 @@
+{
+ "skill": "bass-tension",
+ "evals": [
+  {
+   "id": 1,
+   "should_trigger": true,
+   "prompt": "Remix this as tek house: no white noise sweeps, make the tension and the drops come from the bass.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "apply_production_recipe"
+    },
+    {
+     "type": "tool_called",
+     "module": "measure_section_levels"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "should_trigger": true,
+   "prompt": "Check that the bass actually climbs into the drop and that the drums leave for the last beat.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "measure_section_levels"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "should_trigger": false,
+   "prompt": "Put a long filter sweep and a noise riser on the music bus before the second drop.",
+   "assertions": []
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "skill": "finished-track",
+ "evals": [
+  {
+   "id": 1,
+   "should_trigger": true,
+   "prompt": "Here is my finished version of the remix you built. Compare it meticulously with what you did and tell me what I changed.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "diff_flp_projects"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "should_trigger": true,
+   "prompt": "My edit is open in FL. Read the plugins I changed on the vocal and bass inserts and what I switched off.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "snapshot_project_params"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "should_trigger": false,
+   "prompt": "Separate this song into stems.",
+   "assertions": []
+  }
+ ]
+}

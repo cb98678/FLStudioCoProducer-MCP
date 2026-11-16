@@ -1,0 +1,242 @@
+{
+ "name": "meeps_dance_remix",
+ "label": "Meeps dance remix (the person's own finish)",
+ "engine": "grammar",
+ "what": "A vocal dance remix the way the person finished one by hand (Hello Toni, tech house, their final of 2026-11-15): tech_house_groove's drums, rolling bass, stabs and form as the starting grammar, at the low end of the dance tempos so the voice is not rushed, the voice inside the track with its body and a wet double beside it, the chops with the voice instead of ducked with the music, the sub a trace under a bass that already has low end, risers and impacts well under the voice, no stutter fill or tape stop, and a mix with headroom instead of a master. The balance and the switches are theirs; the sounds, the lines and the phrasing are still chosen per song (skills finished-track, creative-variety).",
+ "moods": [
+  "playful",
+  "groovy",
+  "cheeky",
+  "confident",
+  "cool",
+  "sensual",
+  "flirty",
+  "determined"
+ ],
+ "tempo": {
+  "bpm": 118,
+  "range": [
+   114,
+   124
+  ]
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "build",
+   8
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "swing": 0.58,
+  "intro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "ohat": "..o...o...o...o.",
+    "perc": "..........o....."
+   },
+   "ramp": [
+    0.75,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "snare": "....o.......o...",
+    "ohat": "..x...x...x...x.",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "rim": [
+     "......o...o.....",
+     "...o......o...o."
+    ],
+    "perc": [
+     "x..x..x...x.....",
+     "x..x..x...x..x.."
+    ]
+   },
+   "fill_every": 8,
+   "fill": "C"
+  },
+  "break": {
+   "bars": {
+    "hat": "..o...o...o...o.",
+    "perc": "o..o..o...o....."
+   }
+  },
+  "build": {
+   "bars": {
+    "kick": "x...x...x...x...",
+    "hat": "xoxoxoxoxoxoxoxo"
+   },
+   "roll": "accelerate",
+   "ramp": [
+    0.6,
+    1.0
+   ],
+   "last": {
+    "kick": "x...x...x.......",
+    "hat": "................"
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "snare": "....x.......x...",
+    "ohat": "..X...X...X...X.",
+    "hat": ".o.x.o.x.o.x.o.x",
+    "shaker": "oxooxxoooxooxxox",
+    "rim": [
+     "......o...o.....",
+     "...o......o...o."
+    ],
+    "perc": [
+     "x..x..x...x.x...",
+     "x..x..x...x..x.x"
+    ]
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "ohat": "..x...x...x...x.",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "perc": "x..x..x...x....."
+   },
+   "ramp": [
+    1.0,
+    0.85
+   ]
+  }
+ },
+ "bass": {
+  "groove": [
+   ".xxo.xxo.xxo.x5.",
+   ".xxo.xxo.xxo.x7."
+  ],
+  "build": "..x...x...x...x.",
+  "drop": [
+   ".xxo.xxo.xxo.x5o",
+   ".xxo.x5o.xxo.x7o"
+  ],
+  "outro": ".xx..xx..xx..xx."
+ },
+ "sub": {
+  "drop": ".x--.x--.x--.x--"
+ },
+ "chords": {
+  "groove": "...x......x.....",
+  "drop": [
+   "...x..x...x....x",
+   "...x..x....x..x."
+  ],
+  "break": "x---------------",
+  "voicing": "seventh"
+ },
+ "arp": [],
+ "kit": {},
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.18,
+   "voices": 2,
+   "detune_cents": 6.0,
+   "drive": 1.4
+  },
+  "label": "Rolling Bass"
+ },
+ "form": {
+  "build": "always",
+  "build_bars": 8,
+  "tail_bars": 8,
+  "intro_bars": 16,
+  "bridge": false,
+  "outro_bars": 16,
+  "gap_before_drop": "beat"
+ },
+ "levels_db": {
+  "kick": -3.9,
+  "clap": -3.9,
+  "hats": -3.2,
+  "perc": -10.0,
+  "reese": -6.5,
+  "sub": -13.8,
+  "stab": -3.7,
+  "arp": -4.9,
+  "chops": -6.8,
+  "vocal": -6.7,
+  "fx": -6.8,
+  "orig": -4.9,
+  "pad": -6.0
+ },
+ "levels_note": "The person's own faders in their finished Hello Toni project (2026-11-15), in this project's fader scale; FL shows them as kick -3.7, snare and clap -3.7, hats -3.0, perc -10.1, bass -6.4, sub -14.6, stab -3.5, lead -4.7, chops -6.7, vocal -6.5, FX -6.7, the original's instruments -4.8, pad -5.8, master -5.4 dB. The voice sits 2.8 dB under the kick's fader, not over it. A starting balance: the part-level loop and the person's ear move it per song.",
+ "kick_sub_shelf": {
+  "hz": 60,
+  "db": -4.5,
+  "why": "tech house keeps the kick light in the sub so the bassline carries the low end (Beatportal); the same shelf the person chose on house master B"
+ },
+ "production_recipe": "meeps_dance",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "docs/remix_studies/hellotoni_person_final.md (the person's finished project hellotoni_tech_house_groove_aligned_2.flp, 2026-11-15, compared with the build: every level, switch, chain and vocal placement here is read from it; tempo 114 bpm for a voice warped to 86, x1.33)",
+  "styles/tech_house_groove.json (the grammar the finished track was built on: its drum, bass, stab and form patterns and their sources)",
+  "https://www.beatportal.com/articles/692607-step-by-step-guide-to-producing-tech-house-like-fisher-chris-lake-cloonee-and-michael-bibi (most tech house at 120 to 128 bpm; a punchy kick with minimal sub because the bassline carries the low end; off-beat hats and syncopated shakers; small fills every 8 or 16 bars; short breakdowns; the bass sidechained to the kick)",
+  "https://www.attackmagazine.com/technique/beat-dissected/deep-tech-house/ (125 to 130 bpm, swing 60 to 65 %, clap and snare layered on 2 and 4, an open hat on every off-beat, shaker 16ths with velocity changes, a quiet ghost snare in unusual places)",
+  "https://theproducerschool.com/blogs/featured-blogs/5-tech-house-bass-patterns-every-producer-needs-to-master (rolling 8ths and 16ths with tight transients, syncopated off-beat notes, a move to the fourth or fifth in bar 3 of 4 resolving to the root)",
+  "https://tracksensei.com/blog/we-analyzed-563-techno-house-tracks (tech house median -8.8 LUFS)",
+  "https://loststoriesacademy.com/blogs-and-tutorials/what-makes-a-track-dj-friendly (16 or 32 bar mix-in intro: kick, hats or percussion, minimal bass)",
+  "opinion: swing 0.58 sits under Attack's 60 to 65 % for deep tech house so a straight-sung pop vocal does not fight the hats; the range 124 to 128 is where the three sources overlap"
+ ],
+ "support": {
+  "parts_from": "pack",
+  "default_mode": "band",
+  "note": "skill session-arranger (2026-11-06): the person chooses band (option 2) or band_guide (option 4) at creation; the pack's parts are fitted around the vocal: the arp in her rests, stabs held under busy phrases, nothing in her range, beat-curve velocities"
+ },
+ "master_db": -5.6,
+ "master_off": [
+  "Emphasizer"
+ ],
+ "master_note": "The person's final is a mix with headroom: master fader -5.4 dB in FL, the template's Emphasizer switched off, a little Soundgoodizer by hand. The club master is a later step (skill mastering).",
+ "finish": {
+  "vocal": "phrases keep the 16th the person chooses; weigh each phrase's syllables by 16th of the singer's own beat and move a passage sung a 16th off onto the clicks (tools/align_vocal_clips.py); cut at phrase ends, never inside a held word",
+  "echo": "the last word of a line copied onto the next beats into the throw insert (chain vocal_throw), not a chop rendered with a tail",
+  "lead": "a drop's lead gets a second voice an octave down with its own slow filter movement; the lead rests where the voice loops a hook or throws",
+  "drums": "hear the packs' snares and claps against the song before keeping a made one (the person took 909 Snare and Grv Snareclap 05)",
+  "notes": "bass, sub and chord notes start and end on the 16th grid",
+  "tempo": "every chop and the FX bed is on FL's Stretch with TIME in beats, so the tempo can change after the build"
+ }
+}

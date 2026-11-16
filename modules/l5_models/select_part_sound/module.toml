@@ -1,0 +1,31 @@
+[module]
+name = "select_part_sound"
+layer = "L5"
+summary = "Choose one part's sound for this song: library presets no other song has used and a sound made for it, each heard against the original's part, the nearest kept."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["stem","role","name","song","out_dir","subfolder","library_dir"],"properties":{"stem":{"type":"string","x-path":true,"minLength":1},"role":{"type":"string","enum":["sub","bass","stab","chords","pad","arp","pluck","lead","keys"]},"name":{"type":"string","minLength":1,"maxLength":64},"song":{"type":"string","minLength":1,"maxLength":120},"out_dir":{"type":"string","x-path":true,"minLength":1},"subfolder":{"type":"string","x-path":true,"pattern":"^sandbox(/[A-Za-z0-9 _.-]+)*$"},"library_dir":{"type":"string","x-path":true},"options":{"type":"object","properties":{"candidates":{"type":"integer","minimum":0,"maximum":24},"make":{"type":"boolean"},"seed":{"type":"string"},"start_s":{"type":"number","minimum":0},"end_s":{"type":"number","minimum":0},"rounds":{"type":"integer","minimum":1,"maximum":3},"key_pc":{"type":"integer","minimum":0,"maximum":11},"notes":{"type":"array"},"template_project":{"type":"string"},"presets_dir":{"type":"string"},"direction":{"type":"object"},"history_file":{"type":"string"}},"additionalProperties":false}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["state","wav","preset","source","candidates"],"properties":{"state":{"type":"string"},"wav":{"type":"string"},"preset":{"type":"string"},"path":{"type":"string"},"source":{"type":"string","enum":["library","made"]},"distance":{"type":"number"},"match":{"type":"boolean"},"left":{"type":"array"},"words":{"type":"array"},"candidates":{"type":"array"},"taken_elsewhere":{"type":"integer"}}}'''
+
+[policy]
+side_effect = "system"
+autonomy = "A2"
+cost = "minutes"
+idempotent = false
+verifier = "measure"
+
+[deps]
+min_api = 0
+calls = ["check_sandbox_path", "measure_part_sound", "render_serum_sound", "match_part_sound"]
+models = ["serum", "serummcp"]
+binaries = []
+packages = []
+
+[tests]
+golden = "test_select_part_sound.py::test_each_song_gets_its_own_sound_and_none_comes_back"
+failure = "test_select_part_sound.py::test_errors"
+
+[budget]
+lines = 60
+params = 8

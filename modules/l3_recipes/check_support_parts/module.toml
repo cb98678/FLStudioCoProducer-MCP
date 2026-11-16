@@ -1,0 +1,27 @@
+[module]
+name = "check_support_parts"
+layer = "L3"
+summary = "Check support parts against the arranger rules: polyphony, notes per bar, the grid, the bass cells, velocities by beat strength, no answer note while she sings."
+version = "1.0.0"
+
+[io]
+input = '''{"type":"object","required":["parts","sung"],"properties":{"parts":{"type":"object","additionalProperties":{"type":"array","items":{"type":"array","minItems":4,"maxItems":4}}},"sung":{"type":"array","items":{"type":"boolean"}},"cells":{"type":"object","additionalProperties":{"type":"string"}}},"additionalProperties":false}'''
+output = '''{"type":"object","required":["ok","fails","parts"],"properties":{"ok":{"type":"boolean"},"fails":{"type":"array"},"parts":{"type":"object"}}}'''
+
+[policy]
+side_effect = "pure"
+autonomy = "A0"
+cost = "instant"
+idempotent = true
+verifier = "none"
+
+[deps]
+min_api = 0
+calls = []
+models = []
+binaries = []
+packages = ["numpy"]
+
+[tests]
+golden = "test_check_support_parts.py::test_a_clean_part_passes_and_a_broken_one_fails"
+failure = "test_check_support_parts.py::test_unknown_cell_is_refused"

@@ -1,0 +1,46 @@
+{
+ "name": "ht Lead Vocal Fruity Stereo Enhancer",
+ "plugin": "Fruity Stereo Enhancer",
+ "source": "hellotoni_tech_house_groove_aligned_2.flp (the person's final, 2026-11-15)",
+ "from": {
+  "insert": 10,
+  "slot": 4
+ },
+ "notes": "FL's preset Subtle, last on the lead vocal and on the wet double",
+ "params": {
+  "Stereo separation": "42% separated",
+  "Phase offset": "0.2ms left",
+  "Phase effect position": "POST",
+  "Volume": "80%"
+ },
+ "events": [
+  [
+   201,
+   "4600720075006900740079002000530074006500720065006f00200045006e00680061006e006300650072000000"
+  ],
+  [
+   212,
+   "0a000000040000000200000000000000440100000000000000000000000000000000000004000000e2000000900100006e000000"
+  ],
+  [
+   203,
+   "53007500620074006c0065000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "5c656a00"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "0000000000010000d8ffffffe8ffffff0100000000000000"
+  ]
+ ]
+}

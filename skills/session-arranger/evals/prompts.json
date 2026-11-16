@@ -1,0 +1,8 @@
+{
+ "skill": "session-arranger",
+ "evals": [
+  {"id": 1, "should_trigger": true, "prompt": "Make piano, pads and a bass under her vocal that support it without copying her melody.", "assertions": [{"type": "tool_called", "module": "write_support_parts"}, {"type": "tool_called", "module": "check_support_parts"}]},
+  {"id": 2, "should_trigger": true, "prompt": "The keys you wrote sound like a transcription and are too busy, redo them so they leave space for the singer.", "assertions": [{"type": "tool_called", "module": "write_support_parts"}]},
+  {"id": 3, "should_trigger": false, "prompt": "Master this track to -8 LUFS for the club.", "assertions": []}
+ ]
+}

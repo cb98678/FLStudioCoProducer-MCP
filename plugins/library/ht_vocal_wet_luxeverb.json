@@ -1,0 +1,51 @@
+{
+ "name": "ht Vocal Wet LuxeVerb",
+ "plugin": "LuxeVerb",
+ "source": "hellotoni_tech_house_groove_aligned_2.flp (the person's final, 2026-11-15)",
+ "from": {
+  "insert": 17,
+  "slot": 2
+ },
+ "notes": "the wet double of the vocal: every vocal clip copied to a second insert at -10 dB under the dry one; LuxeVerb may not be in every FL edition (config fl.not_owned)",
+ "params": {
+  "Preset": "Male Vocal Dark",
+  "Reverb decay": "1.294s",
+  "Reverb pre-delay": "26.0ms",
+  "Reverb brightness": "30%",
+  "Reverb size": "63m",
+  "Reverb diffusion": "34%",
+  "Input high cut": "8290Hz",
+  "Input low cut": "69Hz",
+  "Input wet gain": "-0.5dB"
+ },
+ "events": [
+  [
+   201,
+   "4c0075007800650056006500720062000000"
+  ],
+  [
+   212,
+   "1100000002000000020000000000000044010000000000000000000000000000000000009cffffffd1010000ac030000c2010000"
+  ],
+  [
+   203,
+   "4d0061006c006500200056006f00630061006c0020004400610072006b000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "5c656a00"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "09000000000000000000010000d1020000e01400000002000001000000c818000075040000c00000002d010000200000003f0000004c0100000f0000005101000000000000010000000000000000000000b90b0000c0000000e8030000bf02000014000000e80300000000000060f0ffff32000000900100003200000000000000000000002d0100000a000000ea020000b4010000ac1400001dfdffffeb020000640000000000000000000000000000001800000014000000b706000014000000e8030000c0000000e8030000c00000000820"
+  ]
+ ]
+}

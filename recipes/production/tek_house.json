@@ -1,0 +1,125 @@
+{
+ "name": "tek_house",
+ "what": "Tek house production, the person's ask of 2026-11-05 for the third Hello Toni remix: no white noise sweeps, the tension and the drops come from the bass. Into every drop: the bass filter opens over the whole build (lowpass_open on the bass, the opening is the build), the bass climbs 12 semitones over the last two bars (pitch_rise on the bass: production maps a role target to that insert's own channel for a pitch rise, the clip ends neutral so the root snaps back on the downbeat), the drums leave for the last beat while the bass hangs (gap on the drum bus, not on the music bus), and her last word is thrown (reverb_throw on the vocal). The pack's own bass pattern does the rest: a four-bar density ramp to a 32nd trill. Out of a drop: the bass tape-stops into the break while the sub pedal holds, a long throw on the music bus. Back from a break: the bass returns through its filter. A music bus and a drum bus, the house chains by role, a medium pump on the music bus and on the bass, a full one on the sub. The plan's fx cues (fx.silence_and_sub: a silent beat and a sub drop; reverse_sample: her own held word reversed into the downbeat) are the only transition audio.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "medium"
+  },
+  {
+   "on": "sub",
+   "depth": "full"
+  },
+  {
+   "on": "bass",
+   "depth": "medium"
+  }
+ ],
+ "transitions": {
+  "intro>groove": [],
+  "groove>build": [],
+  "build>drop": [
+   {
+    "recipe": "lowpass_open",
+    "on": "bass",
+    "bars": 4
+   },
+   {
+    "recipe": "pitch_rise",
+    "on": "bass",
+    "bars": 2,
+    "semitones": 12
+   },
+   {
+    "recipe": "gap",
+    "on": "drum_bus",
+    "beats": 1
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "vocal",
+    "beats": 2
+   }
+  ],
+  "groove>drop": [
+   {
+    "recipe": "pitch_rise",
+    "on": "bass",
+    "bars": 2,
+    "semitones": 12
+   },
+   {
+    "recipe": "gap",
+    "on": "drum_bus",
+    "beats": 1
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "vocal",
+    "beats": 2
+   }
+  ],
+  "drop>break": [
+   {
+    "recipe": "tape_stop",
+    "on": "bass",
+    "bars": 1
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 4
+   }
+  ],
+  "break>groove": [
+   {
+    "recipe": "lowpass_open",
+    "on": "bass",
+    "bars": 2
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "bass",
+    "bars": 4
+   }
+  ],
+  "drop>groove": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "drop>outro": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "tape_stop",
+    "on": "bass",
+    "bars": 1
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: after the first render read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x} from the measured slope (tools/remix_song.py does this). A 2 to 4 dB pull-back through the build is what the section gains give the build anyway (Splice, Build the Build), so no master-gain trick is added here.",
+ "no_noise_note": "noise_riser, noise_downlifter, impact_synth, filter_sweep on the music bus and fx_swell are left out on purpose (the person, 2026-11-05 and 2026-11-02). If a build still feels short of lift, add bass before adding air: a longer pitch rise, a denser last bar in the pack, or a sub drop cue, in that order (skill bass-tension).",
+ "drop_halves_note": "The darker second half of a drop (the bass low-passed and a dip, Freejak's Sorry) is not a section change, so the recipe cannot place it; add it per song with add_automation_clip on the bass insert's filter or a lowpass_dip clip (skill bass-tension, move 7).",
+ "target_note": "Targets are roles (bass, sub, vocal, music_bus, drum_bus, snare, tom); the Sampler bass is role bass whatever its label (Tek Bass or Rolling Bass: partmix.role_of reads the word bass). lowpass_open, tape_stop, reverb_throw and gap act on the role's insert; pitch_rise is a channel pitch clip, so production._transitions rides the first channel on the role's insert (added 2026-11-05 for the bass; before that only snare and tom resolved to channels and 'pitch_rise needs a channel that exists' came back on a dry run)."
+}

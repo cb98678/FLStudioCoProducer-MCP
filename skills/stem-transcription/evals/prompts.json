@@ -1,0 +1,37 @@
+{
+ "skill": "stem-transcription",
+ "evals": [
+  {
+   "id": 1,
+   "should_trigger": true,
+   "prompt": "Listen to the vocal stem and note every note her voice hits, then make a quantized piano roll of it and of the guitar chords, and save the FLP. Do not remix.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "transcribe_vocal_melody"
+    },
+    {
+     "type": "tool_called",
+     "module": "transcribe_to_midi"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "should_trigger": true,
+   "prompt": "Write down the chords the guitar plays bar by bar and give me a bass line that follows them in a project I can edit.",
+   "assertions": [
+    {
+     "type": "tool_called",
+     "module": "transcribe_to_midi"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "should_trigger": false,
+   "prompt": "Make a tech house remix of this song with a big drop.",
+   "assertions": []
+  }
+ ]
+}

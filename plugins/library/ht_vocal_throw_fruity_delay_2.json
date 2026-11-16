@@ -1,0 +1,48 @@
+{
+ "name": "ht Vocal Throw Fruity Delay 2",
+ "plugin": "Fruity Delay 2",
+ "source": "hellotoni_tech_house_groove_aligned_2.flp (the person's final, 2026-11-15)",
+ "from": {
+  "insert": 16,
+  "slot": 0
+ },
+ "notes": "the throw insert: the last word of a line copied here, quarter-note echoes, fader -9.2 dB",
+ "params": {
+  "Input volume": "80%",
+  "Dry level": "21%",
+  "Feedback level": "50%",
+  "Time": "4:00",
+  "Feedback mode": "Normal",
+  "Cutoff freq": "46%"
+ },
+ "events": [
+  [
+   201,
+   "4600720075006900740079002000440065006c0061007900200032000000"
+  ],
+  [
+   212,
+   "100000000000000002000000000000004401000000000000000000000000000000000000720300003c0200009001000064000000"
+  ],
+  [
+   203,
+   "4600720075006900740079002000440065006c0061007900200032000000"
+  ],
+  [
+   155,
+   "00000000"
+  ],
+  [
+   128,
+   "48515600"
+  ],
+  [
+   41,
+   "00"
+  ],
+  [
+   213,
+   "00000000800000002200000040000000c000000000000000000000003b000000"
+  ]
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "name": "tek_house",
+ "label": "Tek house (raw tech house, the bass carries the tension, no noise)",
+ "engine": "grammar",
+ "what": "The raw, bass-led end of tech house (UK bass house and bassline blood): a hard dry kick, clap and snare on 2 and 4 with ghost rims, hats on the off-8ths and a swung 16th shaker, a conga figure, a ride in the drops, and one star: a driven mono saw-and-square bass in the three-note roll (tonic, fifth, octave) that pedals the tonic under the verses and follows the roots in the drops, a clean sine sub under it from the first bar, raw detuned saw stabs in small groups, a voice-led pad only in the break. Every tension move is the bass: the build is a four-bar density ramp (off-8ths, then 8ths, then 16ths with octaves, then 32nds trilling fifth and octave) with the bass filter opening and a 12-semitone pitch rise over the last two bars, the kick leaving for the last beat while the bass hangs, a sub drop under the downbeat. No noise riser, no air sweep, no filter sweep on the music bus, no snare roll. Made for the third remix of Hello Toni's second song (2026-11-05), a D major I V IV V at 117 bpm.",
+ "moods": [
+  "defiant",
+  "raw",
+  "driving",
+  "confident",
+  "cheeky",
+  "dark",
+  "hypnotic"
+ ],
+ "tempo": {
+  "bpm": 127,
+  "range": [
+   125,
+   130
+  ],
+  "follow": false
+ },
+ "sections": [
+  [
+   "intro",
+   16
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "break",
+   8
+  ],
+  [
+   "groove",
+   16
+  ],
+  [
+   "build",
+   4
+  ],
+  [
+   "drop",
+   16
+  ],
+  [
+   "outro",
+   16
+  ]
+ ],
+ "drums": {
+  "swing": 0.6,
+  "intro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "perc": [
+     "..x..x.x..x..x..",
+     "..x..x.x..x..x.x"
+    ],
+    "shaker": [
+     "................",
+     "................",
+     "................",
+     "................",
+     "................",
+     "................",
+     "................",
+     "................",
+     "x.xxx.xxx.xxx.xx",
+     "x.xxx.xxx.xxx.xx",
+     "x.xxx.xxx.xxx.xx",
+     "x.xxx.xxx.xxx.xx",
+     "x.xxx.xxx.xxx.xx",
+     "x.xxx.xxx.xxx.xx",
+     "x.xxx.xxx.xxx.xx",
+     "x.xxx.xxx.xxx.xx"
+    ],
+    "rim": [
+     "......o...o.....",
+     "...o......o...o."
+    ]
+   },
+   "ramp": [
+    0.8,
+    1.0
+   ]
+  },
+  "groove": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "snare": "....o.......o...",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "ohat": "..x...x...x...x.",
+    "shaker": "x.xxx.xxx.xxx.xx",
+    "perc": [
+     "..x..x.x..x..x..",
+     "..x..x.x..x..x.x"
+    ],
+    "rim": [
+     "x..x..x...x..x..",
+     "x..x..x...x....."
+    ]
+   },
+   "fill_every": 8,
+   "fill": "B"
+  },
+  "build": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "hat": "xoxoxoxoxoxoxoxo",
+    "shaker": "x.xxx.xxx.xxx.xx",
+    "perc": "..x..x.x..x..x.."
+   },
+   "ramp": [
+    0.85,
+    1.0
+   ],
+   "last": {
+    "kick": "X...X...........",
+    "clap": "....X...........",
+    "hat": "xoxoxoxo........",
+    "shaker": "x.xxx.xx........",
+    "perc": "..x..x.........."
+   }
+  },
+  "drop": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....X.......X...",
+    "snare": "....x.......x...",
+    "rim": [
+     "......o...o.....",
+     "...o......o...o."
+    ],
+    "hat": ".o.x.o.x.o.x.o.x",
+    "ohat": "..X...X...X...X.",
+    "shaker": "X.xxX.xxX.xxX.xx",
+    "perc": [
+     "..x..x.x..x..x..",
+     "..x..x.x..x..x.x"
+    ],
+    "ride": "o.......o......."
+   },
+   "fill_every": 8,
+   "fill": "A"
+  },
+  "break": {
+   "bars": {
+    "shaker": "o.oo..o.o.oo..o.",
+    "perc": "..o.....o......."
+   }
+  },
+  "outro": {
+   "bars": {
+    "kick": "X...X...X...X...",
+    "clap": "....x.......x...",
+    "hat": ".o.o.o.o.o.o.o.o",
+    "ohat": "..x...x...x...x.",
+    "perc": "..x..x.x..x..x.."
+   },
+   "ramp": [
+    1.0,
+    0.85
+   ]
+  }
+ },
+ "bass": {
+  "intro": "................",
+  "groove": [
+   "..x...x...x...o.",
+   "..x...x...x...5."
+  ],
+  "build": [
+   "..x...x...x...x.",
+   ".xx..xx..xx..xx.",
+   "xxoxxxoxxxoxxxox",
+   "xxxxxxxxxxxxxxxxoooooooo5o5o5o5o"
+  ],
+  "drop": [
+   "X...5xoxX...5xox",
+   "X...5xoxX...5xxx",
+   "X...5xoxX...5xox",
+   "X...5xoxX...5x7o",
+   "Xo..5xoxXo..5xox",
+   "Xo..5xoxXo..5xxx",
+   "Xo..5xoxXo..5xox",
+   "Xo..5xoxX..b5x7o"
+  ],
+  "break": "................",
+  "outro": "..x.......x.....",
+  "pedal": [
+   "groove"
+  ]
+ },
+ "sub": {
+  "intro": [
+   "................",
+   "................",
+   "................",
+   "................",
+   "................",
+   "................",
+   "................",
+   "................",
+   "x---------------",
+   "x---------------",
+   "x---------------",
+   "x---------------",
+   "x---------------",
+   "x---------------",
+   "x---------------",
+   "x---------------"
+  ],
+  "groove": "x---------------",
+  "build": "x---------------",
+  "drop": "x-------x-------",
+  "break": "x---------------",
+  "outro": "x---------------",
+  "pedal": [
+   "intro",
+   "groove",
+   "break"
+  ]
+ },
+ "chords": {
+  "intro": "................",
+  "groove": [
+   "...x.......x....",
+   "...x.......x..x."
+  ],
+  "build": [
+   "...x.......x....",
+   "...x.......x....",
+   "...x...x...x...x",
+   "................"
+  ],
+  "drop": [
+   "..x..x....x..x..",
+   "..x..x....x.....",
+   "..x..x....x..x..",
+   "..x..x..x.x....."
+  ],
+  "break": "................",
+  "outro": "..x.......x.....",
+  "voicing": "open"
+ },
+ "pad": {
+  "break": "chord",
+  "voicing": "add9",
+  "base": 50,
+  "lead": true,
+  "max_bars": 4,
+  "velocity": {
+   "break": 84
+  }
+ },
+ "arp": [],
+ "kit": {},
+ "bass_sample": {
+  "fn": "reese_pluck",
+  "args": {
+   "f0": 55.0,
+   "length": 0.2,
+   "voices": 2,
+   "detune_cents": 9.0,
+   "drive": 3.2,
+   "cut_lo": 7.0,
+   "cut_hi": 36.0,
+   "cut_tau": 0.09,
+   "saw_mix": 0.9,
+   "sub_mix": 0.35,
+   "decay": 0.26
+  },
+  "label": "Tek Bass",
+  "why": "crunch above the sub (The Producer School: a bass that is only sub cannot show a glide or a filter opening): the saw share up, the sine down, the low-pass resting at 7 f0 (385 Hz on A1) and opening to 36 f0 on each pluck, so the insert's Love Philter has a band to open over the build; measured 2026-11-05 on the first render, the old spec sat at a 141 Hz centroid in the drops"
+ },
+ "form": {
+  "build": "always",
+  "build_bars": 4,
+  "tail_bars": 8,
+  "intro_bars": 16,
+  "bridge": false,
+  "outro_bars": 16,
+  "gap_before_drop": "beat"
+ },
+ "levels_db": {
+  "vocal": -1.0,
+  "clap": -3.5,
+  "hats": -4.0,
+  "fx": -3.0,
+  "arp": -2.5
+ },
+ "levels_note": "Starts from the person's approved tech-house balance (styles/tech_house_groove.json: clap -3.5, hats -3.5, FX -2.5, arp -2.5, the vocal up 1 dB); the hats and FX sit half a dB further back so the bass reads as the lead. The bass and sub levels come from the part-level loop (skill gain-staging), never from here.",
+ "kick_sub_shelf": {
+  "hz": 60,
+  "db": -3.0,
+  "why": "tek house hits harder than tech house, but the bass still owns the low end (Beatportal: a punchy kick with minimal sub because the bassline carries it); 1.5 dB less shelf than the person's house master B (-4.5) so the kick keeps some weight"
+ },
+ "production_recipe": "tek_house",
+ "targets": "targets/club_release.toml",
+ "sources": [
+  "https://en.wikipedia.org/wiki/Styles_of_house_music (read 2026-11-05): tech house 120 to 130 bpm, few elements focused on the kick, sub bass and bass, the bass distorted to evoke techno and usually played off-beat; bass house most often around 128 bpm with heavy distortion, early versions filling the whole range on the drop with one bass pattern; bassline (from speed garage, Sheffield) 135 to 142 bpm, bass emphasised; no encyclopedia entry for \"tek house\" exists, so the pack is defined here as the raw, bass-led end of tech house with those neighbours' bass weight",
+  "https://www.beatportal.com/articles/692607-step-by-step-guide-to-producing-tech-house-like-fisher-chris-lake-cloonee-and-michael-bibi (120 to 128 bpm; a punchy kick with minimal sub because the bassline carries the low end; off-beat hats and syncopated shakers; small fills every 8 or 16 bars; short breakdowns; the bass sidechained to the kick)",
+  "https://theproducerschool.com/blogs/featured-blogs/building-a-rolling-bassline-like-chris-stussy-the-3-note-pattern-that-defines-modern-tech-house (read 2026-11-05): the three-note roll on 16th steps, tonic on 1 and 9 with the kick, fifth on 5 and 13, octave on 7 and 15, tonic on 6, 8, 14, 16, the rests often low-velocity tonics; downbeats about 60 % of a 16th, off-beats 90 to 100 %; velocities 110 downbeats, 90 off-beats, 70 to 80 the rest; mono mode on, glide 0; a sine plus a detuned saw at 30 to 40 % plus a sine sub an octave down, low-pass 24 dB at 200 Hz with a 40 % filter envelope opening to 600 to 800 Hz; swing 56 to 58 % on the bass with the kick straight; sidechain 5 to 7 dB a kick, attack 1 to 2 ms, release 90 to 130 ms, ratio 4 to 6; a chromatic fill in bar 4 of a verse cycle, the drop looping bar 1 with no fills",
+  "https://theproducerschool.com/blogs/featured-blogs/master-modern-tech-house-bass-lines-complete-tutorial-guide (read 2026-11-05): tension from the bass itself: note density from sparse off-beats to a full 16th grid, octave jumps added gradually, velocity linked to the filter cutoff, a legato glide; a bass with crunch above the sub translates these moves, a sub-only bass does not; band-mode sidechain on the low end",
+  "https://www.attackmagazine.com/technique/beat-dissected/deep-tech-house/ (125 to 130 bpm, swing 60 to 65 %, clap and snare layered on 2 and 4, an open hat on every off-beat, shaker 16ths with velocity changes, ghost snares in unusual places)",
+  "https://www.mixgraph.io/mixing-guide/tech-house (read 2026-11-05): 124 to 128 bpm; intros and outros stripped to 32 to 64 bars of rhythm for mixing; a brief silence before a downbeat creates impact, used sparingly)",
+  "https://splice.com/blog/firestarters-vol-2-build-the-build (read 2026-11-05): a 2 to 4 dB gain reduction through the build makes the drop louder by comparison without the listener noticing; a reversed reverb tail of the record's own material as a riser",
+  "https://loststoriesacademy.com/blogs-and-tutorials/what-makes-a-track-dj-friendly (16 or 32 bar mix-in intro: kick, hats or percussion, minimal bass)",
+  "the person (2026-11-05): \"No white noise sweeps, let's do something bass related for the tension and drops\"; (2026-11-02): tech-house adjacent with none of the usual high-end sweeps; Hello Toni's second song: D A G A one chord a bar at 117 bpm, her onsets on straight 16ths (LESSONS_TO_RECIPES rows 116 and 126)",
+  "opinion: 127 bpm sits where Beatportal, Attack and mixgraph overlap and lifts her 117 bpm voice by 8.5 %, well inside the 35 % rule; swing 0.60 is the low edge of Attack's deep-tech range because her 16ths are straight; the tonic pedal under the verses and roots in the drops is this remix's harmony move, kept in the pack because a pedal bass under moving stabs is a house habit, not this song's quirk"
+ ],
+ "support": {"parts_from": "pack", "default_mode": "band", "note": "skill session-arranger (2026-11-06): the person chooses band (option 2) or band_guide (option 4) at creation; the pack's parts are fitted around the vocal: the arp in her rests, stabs held under busy phrases, nothing in her range, beat-curve velocities"}
+}

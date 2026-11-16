@@ -1,0 +1,109 @@
+{
+ "name": "meeps_dance",
+ "what": "The person's own finish of a dance remix, read from their Hello Toni tech house final (2026-11-15, docs/remix_studies/hellotoni_person_final.md): the club_house moves they kept (the music bus, the effect chains by role with their own lead vocal chain, the pump on the music bus, the filter sweep, the reverb throws, the gap, the snare's pitch rise, the sub's fade in, the risers and impacts) without the ones they switched off (the stutter fill on the chops, the tape stop on the music bus, a pump of the bass or sub by itself), plus their wet double of the voice. Sections are the project's time markers.",
+ "buses": [
+  {
+   "name": "Music Bus",
+   "kind": "music"
+  },
+  {
+   "name": "Drum Bus",
+   "kind": "drums"
+  }
+ ],
+ "chains": true,
+ "pump": [
+  {
+   "on": "music_bus",
+   "depth": "deep"
+  }
+ ],
+ "vocal_wet": {
+  "name": "Vocal Wet",
+  "chain": "vocal_wet",
+  "db": -10.0
+ },
+ "transitions": {
+  "build>drop": [
+   {
+    "recipe": "filter_sweep",
+    "on": "music_bus",
+    "bars": 4
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   },
+   {
+    "recipe": "pitch_rise",
+    "on": "snare",
+    "bars": 4,
+    "semitones": 12
+   },
+   {
+    "recipe": "fade_in",
+    "on": "sub",
+    "bars": 2
+   },
+   {
+    "recipe": "gap",
+    "on": "music_bus",
+    "beats": 1
+   },
+   {
+    "synth": "noise_riser",
+    "bars": 4,
+    "volume": 10000
+   },
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ],
+  "break>build": [
+   {
+    "recipe": "lowpass_open",
+    "on": "music_bus",
+    "bars": 4
+   }
+  ],
+  "drop>break": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   },
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "drop>outro": [
+   {
+    "synth": "noise_downlifter",
+    "bars": 4,
+    "volume": 10000
+   }
+  ],
+  "groove>break": [
+   {
+    "recipe": "reverb_throw",
+    "on": "music_bus",
+    "beats": 2
+   }
+  ],
+  "intro>groove": [
+   {
+    "synth": "impact_synth",
+    "volume": 10000
+   }
+  ]
+ },
+ "section_gains": "after_render",
+ "standard": true,
+ "section_gains_how": "Not applied blind: the same map took the Friends remix's builds 3.7 LU down and the Future House demo's 6.2 (the demo's buildup ended 9 LU under its drop, twice the reference's 4.5). After the first render, read measure_section_levels' contrast and run apply_section_gains with by_role {'scale': x}, x about (target minus measured) / 5, then render and repeat.",
+ "off_note": "The person switched off both Gross Beat moves (stutter fill, tape stop) and the bass's own pump in their final, and the drum-bus flanger swell before that (2026-10-26). Add one back per song only when asked.",
+ "by_hand_note": "Not built yet, the person's own moves to offer per song: the throw (the last word of a line copied onto the next beats into chain vocal_throw, some copies in Resample mode) and a second lead voice an octave down with a slow filter LFO."
+}
